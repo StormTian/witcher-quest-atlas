@@ -46,8 +46,8 @@
   "passed": 8,
   "total": 8,
   "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9",
-  "appSha256": "fdda1a5feefe084c1ee4b93779f02bb078bc6a0ffa721e92b4a37c57e8c349c4",
-  "styleSha256": "3a2a4d6ca96536476cbfe8f2f317e1845fdf2e6024def7d98c9453c487a28b3a",
+  "appSha256": "292c052af9abf749668be8054ce1b01136f261066ed0234b3daf0fb125b4f283",
+  "styleSha256": "8a3ab02675998d4b9dedc21c308be1b2df9df4de4bd48569a1898c7c60a98aee",
   "pageErrors": [],
   "httpFailures": []
 }

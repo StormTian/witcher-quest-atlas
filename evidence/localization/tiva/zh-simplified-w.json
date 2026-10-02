@@ -1,0 +1,50 @@
+{
+    "innkeep": {
+        "inns": {
+            "whiteOrchardInn": "白果园旅馆"
+        }
+    },
+    "poi": {
+        "desc": {
+            "boss": "如果你在这里连续击杀6头牛3次，会出现27级的合唱团并攻击你；提示！当您杀死合唱团时，新的合唱团就会不断涌现。",
+            "crystalSkull": "在她的 「__quest__」 任务中解锁与叶奈法的对话。",
+			"diary": "如果在「__quest__」任务中收到，任务结束后与富米拉交谈可以获得额外收入。 "
+        },
+        "label": {
+            "boss": "神秘 老板（合唱）",
+            "crystalSkull": "水晶骷髅头",
+			"diary": "发黄的日记"
+        }
+    },
+    "shopkeeper": {
+        "desc": {
+            "gwentCraftingAndHorse": "贩卖昆特牌、工艺耗材及泰莫利亚套装；眼罩、马鞍、容量袋、护甲"
+        }
+    },
+    "signpost": {
+        "desc": {
+            "abandonedVillage": "几年前有一群拿着武器的人来到这座聚落，他们把居民全杀死，烧光房屋，那个黑暗血腥的日子之后，就没有人住在这里。",
+            "brokenBridge": "尼弗迦德军进攻时，这座桥被撤退的泰莫利亚军对摧毁，这座桥一开始就不稳固了，算是因祸得福。",
+            "cacklerBridge": "以前有个女人因为爱人不成而发了疯，这座桥就是以她起名的。她的爱人离开了她之后，她整天都在桥上跑上跑下，嘴里还歇斯底里地笑。",
+            "crossroads": "道路在此分歧，一条通往维吉玛，另一条通往诺维格瑞。",
+            "ford": "战争爆发前，商人和旅人会从这里过河，但现在只有尼弗迦德士兵会走这里。",
+            "mill": "来自附近村庄的货车会载着谷子来到白果园的磨坊。",
+            "nilfgaardianGarrison": "白果园村附近的渡口是重要的战略地点，已被尼弗迦德士兵攻下。",
+            "ransackedVillage": "日出过后不久，敌对势力攻击了这座村落，很少人生还，及时逃进森林里的人也无家可归了。",
+            "sawmill": "白果园村有名的不只是优质水果，还有狡狐树林里最高品质、家具等级的木材。",
+            "woesongBridge": "以前有个女子会站在桥上等待爱人归来，这座桥因此得名。"
+        },
+        "label": {
+            "abandonedVillage": "荒废村庄",
+            "brokenBridge": "断桥",
+            "cacklerBridge": "嘻笑者之桥",
+            "crossroads": "十字路口",
+            "ford": "渡口",
+            "mill": "磨坊",
+            "nilfgaardianGarrison": "尼弗迦德驻防地",
+            "ransackedVillage": "遭到洗劫的村庄",
+            "sawmill": "锯木厂",
+            "woesongBridge": "哀歌之桥"
+        }
+    }
+}

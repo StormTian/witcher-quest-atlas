@@ -18,6 +18,7 @@
 | --- | --- | --- |
 | 任务数据与规则 | 25/25 项；任务引用、地图资源、结局条件、流程前置 | 通过 |
 | 网页实际交互 | 19/19 项；五区地图、筛选、101 个选项、剧透与手机操作 | 通过 |
+| 中文地名与缩放体验 | 11/11 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势 | 通过 |
 | 地名与路标显示 | 8/8 项；五区 227 个路标、默认地名、缩放拖动和手机 | 通过 |
 | 报告与资源交付 | 3/3 项；报告、下载与资源加载 | 通过 |
 | 攻略事实核对 | 16 项重点核对；40 个任务／45 个节点附攻略依据 | 资料核对完成 |
@@ -32,7 +33,7 @@
 - 任务与决策引用完整性：45 nodes / 101 options, all referenced task IDs resolve。
 - 坐标与流程分类：149 positioned tasks, 118 flow/unmapped entries; no invented coordinates。
 - 独立接取点校准样例：4 independent numeric fixtures; corresponding XYZ map tiles present。
-- 地图资源完整性：5 regions / 601 PNG tiles, each 256 × 256。
+- 地图资源完整性：5 regions / 5721 native map tiles; full z4 and z5 coverage for the larger regions。
 - 目录交叉覆盖：261 normalized catalog entries matched (split phases merged); this is not an official completeness proof。
 - 希里条件：未觐见，四项全积极：witcher。
 - 希里条件：未觐见，二比二边界：witcher。
@@ -109,7 +110,34 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 - 手机首屏地名和开关可用：390 × 844; city and major place names visible immediately, toggle works and no horizontal overflow。
 - 运行与资源错误：zero page exceptions or HTTP failures。
 
-更新画面：[桌面地名](checks/landmarks-desktop.png)、[手机地名](checks/landmarks-mobile.png)。原有 19 项完整流程验收保留；本次新增地名叠加和地图操作由上述专门检查复验。
+更新画面：[桌面地名](checks/landmarks-desktop.png)、[手机地名](checks/landmarks-mobile.png)。19 项完整流程也已重新验收；新增地名叠加和地图操作由上述专门检查复验。
+
+
+### 中文地名与缩放更新验收
+
+[逐项結果](checks/navigation.json)：11/11 项通过。每次加减或单次滚轮操作只改变 0.25 级；鼠标位置为缩放锚点。选任务保留倍率，返回地区保留原视野。概览亮框显示当前窗口，点击概览可平移。
+
+- 227个地名有来源且地图无英文回退：all 227 road signs, marker titles, map labels and region subtitles display Chinese。
+- 中文译名用独立样例核对：8 fixed source-derived examples; no guessed Blackbough or Cackler translation, distinct Elverum lighthouse。
+- 加减按钮每次只改变四分之一档：2 → 2.25 → 2; map center drift at most 2 pixels。
+- 真实滚轮缩放保持鼠标下的位置：physical mouse wheel; quarter step, cursor anchor drift 0.63 pixels。
+- 大滚轮事件不会跨越多个倍率：a 3000-pixel wheel event still produces only one quarter step。
+- 连续五次点击不会漏掉缩放：5 physical clicks = 1.25 levels; queued zoom survives an in-progress animation。
+- 选任务保留倍率，换区回来保留视野：task focus retains 3.25 zoom; returning to Velen restores center within 3 pixels。
+- 放大使用原生细节图且有上限：native z5 WebP details load; maximum 5.5 prevents unlimited blurry enlargement。
+- 概览框跟随视野且点击保留倍率：overview rectangle shrinks on zoom; clicking overview moves the center without changing magnification。
+- 手机小步缩放与双指手势：390 × 844; quarter-step buttons and a real two-touch pinch both work without horizontal overflow。
+- 地图平移边界和运行错误：panning remains inside the map world; zero script exceptions or failed HTTP requests。
+
+更新画面：[桌面](checks/navigation-desktop.png)、[手机双指缩放](checks/navigation-mobile.png)。
+
+中文名称对照：[227 个逐项名称与来源](places-zh.json)、[公开中文游戏地图](https://www.tivaprojects.com/witcher3map/)。
+公开游戏中文地图的中英路标对照；繁体中文逐字转简，保留原文与来源。
+不是直接从官方简中语言文件导出；没有逐项实机比对。官中繁、简版本可能有不同用词。
+修正原来手工译名，如 Cackler Bridge 为“嘻笑者之桥”、Blackbough 为“大黑树”、Lornruk 为“孤岩”、Tesham Mutna 为“迪沙谬那”。另修正社区中文对照把 Elverum 与 Eldberg 灯塔写成同名的问题，[艾孚鲁灯塔核对](https://witcher.huijiwiki.com/wiki/艾孚鲁灯塔)。
+凯尔莫罕来源旧名通过地图相对位置对应当前路标：The Morhen Eye 为堡垒、Outpost ruins 为被毁的瞭望塔、Morhen Mine dam 为铁矿、The Lake House 为湖畔小屋。没有移动这些点的坐标。
+底图继续使用同一来源版本，较大地图增加原生 4、5 级细节瓦片，以 WebP 质量 88 压缩；总计 5721 个瓦片。白果园原生上限 4，其余地区 5；最多再放大半级，避免无限拉伸。
+首轮发现连续点击丢失一档，已修正动画期间的目标倍率队列。双指验收使用载入页面前就启用的触摸设备模式；桌面页面载入后切换触摸模拟不能证明手机手势正常。
 
 
 ### 重点事实与来源

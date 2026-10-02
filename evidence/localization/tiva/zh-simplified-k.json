@@ -1,0 +1,34 @@
+{
+    "alchemy": {
+        "desc": {
+            "keira": "如果她之前没有死，她就会出现。"
+        },
+        "popuptitle": {
+            "keira": "凯拉・梅兹"
+        }
+    },
+    "armourer": {
+        "desc": {
+            "zoltan": "只有在 「__quest__」 任务中与卓尔坦对话时才会出现。"
+        },
+        "popuptitle": {
+            "zoltan": "卓尔坦・齐瓦"
+        }
+    },
+    "signpost": {
+        "desc": {
+            "bastion": "曾经年轻的猎魔人在这里训练。现在堡垒是一个被遗忘的废墟。",
+            "ironMine": "铁矿石曾经从这个地方被提取出来用于狼学派的熔炉。",
+            "kaerMorhen": "昔日之海的要塞，狼学派猎魔人的家园。",
+            "lakesideHut": "十几年前，一位隐士住在这里，他酿造出优质的蜂蜜酒。猎魔人不时拜访他，聊聊遥远的土地。",
+            "ruinedWatchtower": "这座湖边的了望塔曾经是狼学派猎魔人的骄傲，如今却是一片废墟，只有风在石头上呼啸而过的声音。"
+        },
+        "label": {
+            "bastion": "堡垒",
+            "ironMine": "铁矿",
+            "kaerMorhen": "凯尔莫罕",
+            "lakesideHut": "湖畔小屋",
+            "ruinedWatchtower": "被毁的了望塔"
+        }
+    }
+}
