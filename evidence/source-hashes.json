@@ -1,0 +1,14 @@
+{
+  "README.md": "07f749619c85af6dbce19854164ee8bd1c554c4be7932b577b9fbee6d2bc5cd6",
+  "Witcher3MapViewer/Settings.xml": "3884c256aaaedfc26a0bf223ba858eb35fe390ab1058ffe3f0e55a89d1af0a38",
+  "Witcher3MapViewer/MapPins.xml": "2ecb73a3b14e1a47383c66e959ff0f1518f5918e7163f689aa8f790ae79f776e",
+  "Witcher3MapViewer/Quests.xml": "137bfc21a1eaff1fc3a89a75f60a3dfac2691562259077e795fcdaafd85dbd65",
+  "Witcher3MapViewer.Core/RealToGameSpaceConversion.cs": "48007602661685da8971d15dcb2eed80140f01a8e8dce541e4d6b6eec9718670",
+  "Witcher3MapViewer.Core/XMLMarkerProvider.cs": "67162000be18392d70b85e777a27ae6ec4d05a5db2016c592dd530d643cabda3",
+  "Witcher3MapViewer/MapsUIMap.cs": "6db28003edfae409e22fa08cf99b3e47af9ebb881c3650d2e8beeef7aed33d9b",
+  "Witcher3MapViewer/Maps/Skellige.mbtiles": "11bf23f51020887e7bfe134b3b936bad83e659a10168faf277e757761ce85596",
+  "Witcher3MapViewer/Maps/VelenNovigrad.mbtiles": "7453888a62d1f26c9019cd9573dda19e639e7308e4e959154267799600a826ff",
+  "Witcher3MapViewer/Maps/KaerMorhen.mbtiles": "9d317df5d664186b4ff43b1b727b67f6a2e623c0b60ba8cb8e9f485ee008a374",
+  "Witcher3MapViewer/Maps/Toussaint.mbtiles": "ee4150b43b5bf2659c4de46a7e49f2a2443c308781509511d6727b38bffb5a6a",
+  "Witcher3MapViewer/Maps/WhiteOrchard.mbtiles": "3b89f69cf2ef6f6f00cfa0ddf35cde402f85eafbc2f9ff0b6186935234c9390a"
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "category": "地图坐标",
+    "claim": "白果园的纵火犯",
+    "questId": "q37",
+    "result": "与地图建筑对齐；不是随意插点",
+    "source": "https://witcher.fandom.com/wiki/Twisted_Firestarter"
+  },
+  {
+    "category": "地图坐标",
+    "claim": "失踪的兄弟",
+    "questId": "q19",
+    "result": "标记对应洗劫村庄的接取角色",
+    "source": "https://witcher.fandom.com/wiki/Missing_in_Action"
+  },
+  {
+    "category": "地图坐标",
+    "claim": "宝剑与饺子",
+    "questId": "q263",
+    "result": "标记对应诺维格瑞的铁匠街区",
+    "source": "https://witcher.fandom.com/wiki/Of_Swords_and_Dumplings"
+  },
+  {
+    "category": "接取／目标区分",
+    "claim": "唯有一人",
+    "questId": "q424",
+    "result": "标记是告示板，试炼在湖上",
+    "source": "https://witcher.fandom.com/wiki/There_Can_Be_Only_One"
+  },
+  {
+    "category": "前置与时机",
+    "claim": "最后的愿望",
+    "questId": "q200",
+    "result": "领走乌马前处理，非一律迷雾之岛门槛",
+    "source": "https://witcher.fandom.com/wiki/The_Last_Wish_(quest)"
+  },
+  {
+    "category": "分支后果",
+    "claim": "呢喃山丘",
+    "questId": "q67",
+    "result": "提前释放与正常释放分开叙述",
+    "source": "https://witcher.fandom.com/wiki/The_Whispering_Hillock"
+  },
+  {
+    "category": "分支后果",
+    "claim": "重回驼背泥沼",
+    "questId": "q107",
+    "result": "正确娃娃不等于安娜最终存活",
+    "source": "https://witcher.fandom.com/wiki/Return_to_Crookback_Bog"
+  },
+  {
+    "category": "分支后果",
+    "claim": "以知识进步为名",
+    "questId": "q99",
+    "result": "凯拉的三种去向",
+    "source": "https://witcher.fandom.com/wiki/For_the_Advancement_of_Learning"
+  },
+  {
+    "category": "分支后果",
+    "claim": "肉体之罪",
+    "questId": "q208",
+    "result": "先问清楚再行动，保留真正凶手线",
+    "source": "https://witcher.fandom.com/wiki/Carnal_Sins"
+  },
+  {
+    "category": "跨任务条件",
+    "claim": "特莉丝恋情",
+    "questId": "q182",
+    "result": "前序亲吻＋留下＋告白",
+    "source": "https://witcher.fandom.com/wiki/Now_or_Never"
+  },
+  {
+    "category": "跨任务条件",
+    "claim": "为祖国",
+    "questId": "q301",
+    "result": "刺杀前置与外交选择共同决定",
+    "source": "https://witcher.fandom.com/wiki/The_Witcher_3_decision_checklist"
+  },
+  {
+    "category": "资料片分支",
+    "claim": "石之心终章",
+    "questId": "q361",
+    "result": "教授调查是介入救人的前提",
+    "source": "https://witcher.fandom.com/wiki/Whatsoever_a_Man_Soweth..."
+  },
+  {
+    "category": "资料片分支",
+    "claim": "血与酒终章",
+    "questId": "q416",
+    "result": "缎带生存与姐妹和解条件分开",
+    "source": "https://witcher.fandom.com/wiki/Pomp_and_Strange_Circumstance"
+  },
+  {
+    "category": "路线锁定",
+    "claim": "长牙之夜",
+    "questId": "q405",
+    "result": "寻找欧丽安娜本身不锁定路线",
+    "source": "https://witcher.fandom.com/wiki/The_Night_of_Long_Fangs"
+  },
+  {
+    "category": "支线影响",
+    "claim": "骑士的恋爱故事",
+    "questId": "q335",
+    "result": "守密／转移诅咒的长期后果",
+    "source": "https://witcher.fandom.com/wiki/The_Warble_of_a_Smitten_Knight"
+  },
+  {
+    "category": "支线影响",
+    "claim": "葡萄酒大战",
+    "questId": "q390",
+    "result": "联合并非所有和解路线的必经任务",
+    "source": "https://witcher.fandom.com/wiki/Wine_Wars:_The_Deus_in_the_Machina"
+  }
+]

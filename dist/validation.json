@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-02",
+  "status": "pass",
+  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9",
+  "summary": [
+    {
+      "name": "任务数据与规则",
+      "detail": "25/25 项；任务引用、地图资源、结局条件、流程前置",
+      "status": "通过"
+    },
+    {
+      "name": "网页实际交互",
+      "detail": "19/19 项；五区地图、筛选、101 个选项、剧透与手机操作",
+      "status": "通过"
+    },
+    {
+      "name": "报告与资源交付",
+      "detail": "3/3 项；报告、下载与资源加载",
+      "status": "通过"
+    },
+    {
+      "name": "攻略事实核对",
+      "detail": "16 项重点核对；40 个任务／45 个节点附攻略依据",
+      "status": "资料核对完成"
+    },
+    {
+      "name": "地图位置抽样",
+      "detail": "4 个独立坐标样例及地图裁切，校准社区坐标转换",
+      "status": "抽样一致"
+    },
+    {
+      "name": "实机游戏验证",
+      "detail": "没有读取游戏存档或逐任务运行游戏",
+      "status": "未执行"
+    }
+  ],
+  "automatedChecksPassed": 47,
+  "coverage": {
+    "quests": 267,
+    "main": 87,
+    "side": 180,
+    "positioned": 149,
+    "communityCoordinates": 133,
+    "landmarkAnchors": 16,
+    "flowOrUnmapped": 118,
+    "reviewedBranchTasks": 40,
+    "decisionNodes": 45,
+    "decisionOptions": 101
+  },
+  "limits": [
+    "社区坐标没有逐个在游戏中复测；移动角色位置与版本变化可能影响接取。",
+    "地标标记只定位相关地点，不代表 NPC 的精确站位。",
+    "没有坐标的流程任务仍在目录中，不会被随机放在地图上。",
+    "决策树集中于已核对的关键分支；未收录分支不代表任务没有后果。",
+    "中文名用于检索，保留英文原名以便对照不同汉化版本。",
+    "未做逐任务实机验证，也未保证所有对话、随机遭遇和版本特例都收录；可用来源链接继续核对。"
+  ],
+  "evidence": {
+    "data": "checks/data-logic.json",
+    "browser": "checks/browser.json",
+    "assets": "checks/assets.json"
+  },
+  "webMCP": {
+    "status": "unavailable",
+    "validation": "unsupported-context, not claimed as validated"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "WO": {
+    "name": "White Orchard",
+    "directory": "/private/tmp/witcher-map-research/mapviewer-deploy-xyz/WO",
+    "template": "WO/{z}/{x}/{y}.png",
+    "tms": false,
+    "tileSize": 256,
+    "minNativeZoom": 0,
+    "maxNativeZoom": 4,
+    "recommendedMaxZoom": 6,
+    "bounds": [
+      [
+        -77.6929,
+        -180.0
+      ],
+      [
+        76.5985,
+        180.0
+      ]
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "initialZoom": 2,
+    "conversion": {
+      "slope": 3.8e-05,
+      "xi": 60.0,
+      "yi": 19.2
+    },
+    "fileCount": 261,
+    "bytes": 11000797,
+    "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af"
+  },
+  "NO": {
+    "name": "Velen/Novigrad",
+    "directory": "/private/tmp/witcher-map-research/mapviewer-deploy-xyz/NO",
+    "template": "NO/{z}/{x}/{y}.png",
+    "tms": false,
+    "tileSize": 256,
+    "minNativeZoom": 0,
+    "maxNativeZoom": 3,
+    "recommendedMaxZoom": 5,
+    "bounds": [
+      [
+        -85.0511,
+        -180.0
+      ],
+      [
+        85.0511,
+        180.0
+      ]
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "initialZoom": 2,
+    "conversion": {
+      "slope": 0.000114,
+      "xi": 968.6,
+      "yi": 706.4
+    },
+    "fileCount": 85,
+    "bytes": 4515273,
+    "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af"
+  },
+  "SK": {
+    "name": "Skellige",
+    "directory": "/private/tmp/witcher-map-research/mapviewer-deploy-xyz/SK",
+    "template": "SK/{z}/{x}/{y}.png",
+    "tms": false,
+    "tileSize": 256,
+    "minNativeZoom": 0,
+    "maxNativeZoom": 3,
+    "recommendedMaxZoom": 5,
+    "bounds": [
+      [
+        -85.0511,
+        -180.0
+      ],
+      [
+        85.0511,
+        180.0
+      ]
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "initialZoom": 2,
+    "conversion": {
+      "slope": 0.000164,
+      "xi": 209.9,
+      "yi": 305.7
+    },
+    "fileCount": 85,
+    "bytes": 3416176,
+    "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af"
+  },
+  "KM": {
+    "name": "Kaer Morhen",
+    "directory": "/private/tmp/witcher-map-research/mapviewer-deploy-xyz/KM",
+    "template": "KM/{z}/{x}/{y}.png",
+    "tms": false,
+    "tileSize": 256,
+    "minNativeZoom": 0,
+    "maxNativeZoom": 3,
+    "recommendedMaxZoom": 5,
+    "bounds": [
+      [
+        -85.0511,
+        -180.0
+      ],
+      [
+        85.0511,
+        180.0
+      ]
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "initialZoom": 2,
+    "conversion": {
+      "slope": 5.68e-05,
+      "xi": 10.1,
+      "yi": 244.2
+    },
+    "fileCount": 85,
+    "bytes": 3585905,
+    "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af"
+  },
+  "TO": {
+    "name": "Toussaint",
+    "directory": "/private/tmp/witcher-map-research/mapviewer-deploy-xyz/TO",
+    "template": "TO/{z}/{x}/{y}.png",
+    "tms": false,
+    "tileSize": 256,
+    "minNativeZoom": 0,
+    "maxNativeZoom": 3,
+    "recommendedMaxZoom": 5,
+    "bounds": [
+      [
+        -85.0511,
+        -180.0
+      ],
+      [
+        85.0511,
+        180.0
+      ]
+    ],
+    "center": [
+      0,
+      0
+    ],
+    "initialZoom": 2,
+    "conversion": {
+      "slope": 8.97e-05,
+      "xi": -153.3,
+      "yi": -717.7
+    },
+    "fileCount": 85,
+    "bytes": 4531682,
+    "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af"
+  }
+}

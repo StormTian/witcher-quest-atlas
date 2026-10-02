@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Missing in Action",
+    "id": "19",
+    "world": "WO",
+    "locationRole": "quest discovery/start prompt",
+    "info": "! sign over a man talking to a dog",
+    "gameXY": [
+      476.0,
+      -106.0
+    ],
+    "projectedXY": [
+      10947368.421052631,
+      -3294736.842105263
+    ],
+    "latLng": [
+      -28.36236359369433,
+      98.34188373518971
+    ],
+    "normalizedXY": [
+      0.7731718992644159,
+      0.5822142350670789
+    ],
+    "verificationImage": "/private/tmp/witcher-map-research/verification/19-quest-pin.jpg"
+  },
+  {
+    "name": "Twisted Firestarter",
+    "id": "37",
+    "world": "WO",
+    "locationRole": "quest discovery/start prompt",
+    "info": "! sign",
+    "gameXY": [
+      4.0,
+      -37.0
+    ],
+    "projectedXY": [
+      -1473684.2105263157,
+      -1478947.3684210526
+    ],
+    "latLng": [
+      -13.16813089197448,
+      -13.238330502814001
+    ],
+    "normalizedXY": [
+      0.4632268597144055,
+      0.5369044729294715
+    ],
+    "verificationImage": "/private/tmp/witcher-map-research/verification/37-quest-pin.jpg"
+  },
+  {
+    "name": "Of Swords and Dumplings",
+    "id": "263",
+    "world": "NO",
+    "locationRole": "quest discovery/start prompt",
+    "info": "Talk to the blacksmith",
+    "gameXY": [
+      595.0,
+      1699.0
+    ],
+    "projectedXY": [
+      -3277192.98245614,
+      8707017.54385965
+    ],
+    "latLng": [
+      61.35164754147452,
+      -29.439525451495893
+    ],
+    "normalizedXY": [
+      0.4182235404125114,
+      0.2827320294792795
+    ],
+    "verificationImage": "/private/tmp/witcher-map-research/verification/263-quest-pin.jpg"
+  },
+  {
+    "name": "There Can Be Only One",
+    "id": "424",
+    "world": "TO",
+    "locationRole": "quest discovery/start prompt",
+    "info": "Notice board (Test Yourself with the Trials...)",
+    "gameXY": [
+      -504.0,
+      -1344.0
+    ],
+    "projectedXY": [
+      -3909698.996655518,
+      -6982162.76477146
+    ],
+    "latLng": [
+      -52.99548474867764,
+      -35.1214236500241
+    ],
+    "normalizedXY": [
+      0.4024404898610442,
+      0.6742273202167893
+    ],
+    "verificationImage": "/private/tmp/witcher-map-research/verification/424-quest-pin.jpg"
+  }
+]
