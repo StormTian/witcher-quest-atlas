@@ -15,6 +15,11 @@ if browser.get('datasetSha256'):
 asset=read('evidence/asset-report-validation.json') if (root/'evidence/asset-report-validation.json').exists() else None
 if asset:
  assert asset['status']=='pass' and asset['datasetSha256']==digest
+landmark=read('evidence/landmark-validation.json') if (root/'evidence/landmark-validation.json').exists() else None
+if landmark:
+ assert landmark['status']=='pass' and landmark['datasetSha256']==digest
+ assert landmark['appSha256']==hashlib.sha256((root/'dist/app.js').read_bytes()).hexdigest()
+ assert landmark['styleSha256']==hashlib.sha256((root/'dist/style.css').read_bytes()).hexdigest()
 summary=[
  {'name':'任务数据与规则','detail':f"{logic['passed']}/{logic['total']} 项；任务引用、地图资源、结局条件、流程前置",'status':'通过'},
  {'name':'网页实际交互','detail':f"{browser['passed']}/{browser['total']} 项；五区地图、筛选、101 个选项、剧透与手机操作",'status':'通过'},
@@ -23,16 +28,24 @@ summary=[
  {'name':'实机游戏验证','detail':'没有读取游戏存档或逐任务运行游戏','status':'未执行'},
 ]
 if asset:summary.insert(2,{'name':'报告与资源交付','detail':f"{asset['passed']}/{asset['total']} 项；报告、下载与资源加载",'status':'通过'})
+if landmark:summary.insert(2,{'name':'地名与路标显示','detail':f"{landmark['passed']}/{landmark['total']} 项；五区 227 个路标、默认地名、缩放拖动和手机",'status':'通过'})
 qa={'date':d['meta']['date'],'status':'pass','datasetSha256':digest,'summary':summary,
- 'automatedChecksPassed':logic['passed']+browser['passed']+(asset['passed'] if asset else 0),
+ 'automatedChecksPassed':logic['passed']+browser['passed']+(asset['passed'] if asset else 0)+(landmark['passed'] if landmark else 0),
  'coverage':{'quests':len(d['quests']),'main':87,'side':180,'positioned':149,'communityCoordinates':133,'landmarkAnchors':16,'flowOrUnmapped':118,'reviewedBranchTasks':40,'decisionNodes':45,'decisionOptions':101},
  'limits':d['meta']['limitations'],
  'evidence':{'data':'checks/data-logic.json','browser':'checks/browser.json','assets':'checks/assets.json' if asset else None},
  'webMCP':browser['webMCP']}
+if landmark:
+ qa['coverage']['roadSigns']=227
+ qa['evidence']['landmarks']='checks/landmarks.json'
 dist=root/'dist';(dist/'checks').mkdir(exist_ok=True)
 for f,target in [('data-logic-validation.json','data-logic.json'),('browser-validation.json','browser.json')]:
  shutil.copyfile(root/'evidence'/f,dist/'checks'/target)
 if asset:shutil.copyfile(root/'evidence/asset-report-validation.json',dist/'checks/assets.json')
+if landmark:
+ shutil.copyfile(root/'evidence/landmark-validation.json',dist/'checks/landmarks.json')
+ for name in ['landmarks-desktop.png','landmarks-mobile.png']:
+  shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 for name in ['desktop-final.png','mobile-final.png','decision-final.png','mobile-audit.png','text-200.png']:
  shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 (dist/'validation.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2))
@@ -88,11 +101,12 @@ lines += [
  '',
  '数值样例用于检查坐标转换；裁切用于建筑与地标的一致性抽样。没有验证全部 149 个点的游戏内 NPC 站位。',
  '',
- '### 重点事实与来源',
- '',
- '| 核对项目 | 结论 | 依据 |',
- '| --- | --- | --- |',
  ]
+if landmark:
+ lines += ['','### 本次地名更新验收','',f"[逐项结果](checks/landmarks.json)：{landmark['passed']}/{landmark['total']} 项通过。227 个原有快速旅行路标现在默认显示名称，密集处的主要地名避让后用细线指回路标；可用“地名”按钮开关。",'']
+ lines += [f"- {c['name']}：{c['detail']}。" for c in landmark['checks']]
+ lines += ['','更新画面：[桌面地名](checks/landmarks-desktop.png)、[手机地名](checks/landmarks-mobile.png)。原有 19 项完整流程验收保留；本次新增地名叠加和地图操作由上述专门检查复验。','']
+lines += ['', '### 重点事实与来源', '', '| 核对项目 | 结论 | 依据 |', '| --- | --- | --- |']
 lines += [f"| {c['claim']} | {c['result']} | [攻略]({c['source']}) |" for c in d['meta']['factChecks']]
 lines += [
  '',

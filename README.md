@@ -8,6 +8,8 @@
 
 手机底部可切换地图、任务索引和详情。右上角“资料与验证”提供实际检查结果、攻略链接、地图样例和下载。
 
+地图默认显示 227 个快速旅行路标的位置，并显示视野内可容纳的地名。主要城镇优先显示，密集处避让后以细线指回路标。放大可以看清更多附近地名；右侧“地名”按钮可以开关，任务筛选不会隐藏路标。
+
 ## 当前覆盖与正确性
 
 - 267 个目录条目：87 主线、180 支线；149 个地图定位。
@@ -33,6 +35,7 @@ python3 scripts/build-data.py
 python3 scripts/enrich-data.py
 node scripts/validate.cjs
 node scripts/browser-validate.cjs
+node scripts/validate-landmarks.cjs
 python3 scripts/build-report.py
 node scripts/validate-assets.cjs
 python3 scripts/build-report.py

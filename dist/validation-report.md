@@ -18,6 +18,7 @@
 | --- | --- | --- |
 | 任务数据与规则 | 25/25 项；任务引用、地图资源、结局条件、流程前置 | 通过 |
 | 网页实际交互 | 19/19 项；五区地图、筛选、101 个选项、剧透与手机操作 | 通过 |
+| 地名与路标显示 | 8/8 项；五区 227 个路标、默认地名、缩放拖动和手机 | 通过 |
 | 报告与资源交付 | 3/3 项；报告、下载与资源加载 | 通过 |
 | 攻略事实核对 | 16 项重点核对；40 个任务／45 个节点附攻略依据 | 资料核对完成 |
 | 地图位置抽样 | 4 个独立坐标样例及地图裁切，校准社区坐标转换 | 抽样一致 |
@@ -93,6 +94,23 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 | 唯有一人 | 鲍克兰告示板，不是湖上试炼目标 | [裁切](assets/check-424.jpg) |
 
 数值样例用于检查坐标转换；裁切用于建筑与地标的一致性抽样。没有验证全部 149 个点的游戏内 NPC 站位。
+
+
+### 本次地名更新验收
+
+[逐项结果](checks/landmarks.json)：8/8 项通过。227 个原有快速旅行路标现在默认显示名称，密集处的主要地名避让后用细线指回路标；可用“地名”按钮开关。
+
+- 地名默认显示且主城可辨认：no hover needed; Novigrad, Crow’s Perch and major landmarks labeled。
+- 五区227个路标对应原有坐标：all 227 road signs use unchanged source coordinates in all 5 regions。
+- 地名不相互遮挡且保留地图控件：actual text boxes avoid each other and map title, compass, tools, legend and attribution。
+- 缩放拖动后仍显示对应地点：zoom to Corvo Bianco and physical pointer drag update labels correctly。
+- 地名开关和任务筛选彼此独立：toggle affects only places; empty quest search still leaves orientation landmarks。
+- 路标可点开且不阻挡任务标记：physical click opens a road sign popup; q37 task marker and default spoiler protection work。
+- 手机首屏地名和开关可用：390 × 844; city and major place names visible immediately, toggle works and no horizontal overflow。
+- 运行与资源错误：zero page exceptions or HTTP failures。
+
+更新画面：[桌面地名](checks/landmarks-desktop.png)、[手机地名](checks/landmarks-mobile.png)。原有 19 项完整流程验收保留；本次新增地名叠加和地图操作由上述专门检查复验。
+
 
 ### 重点事实与来源
 

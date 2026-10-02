@@ -10,7 +10,7 @@
     {
       "name": "部署资源全部实际返回",
       "status": "pass",
-      "detail": "624 static files fetched successfully, including all 601 map tiles"
+      "detail": "627 static files fetched successfully, including all 601 map tiles"
     },
     {
       "name": "完整验证窗口可在桌面与手机操作",
