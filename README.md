@@ -10,6 +10,10 @@
 
 地图默认显示 227 个快速旅行路标的位置，并显示视野内可容纳的地名。主要城镇优先显示，密集处避让后以细线指回路标。放大可以看清更多附近地名；右侧“地名”按钮可以开关，任务筛选不会隐藏路标。
 
+地图路标现在全部显示中文，按照公开游戏中文地图的中英对照核对，并修正“大黑树”“嘻笑者之桥”“孤岩”等先前的手工译名。部分来源为繁体官中，逐字转简；没有逐项对照官方简中语言文件。逐项来源和边界保存在 `dist/places-zh.json`。
+
+缩放按钮与每次滚轮操作只改变 0.25 级，滚轮保持鼠标下的位置。选任务保留当前倍率，换区回来保留原有视野。左下地区概览用亮框显示当前窗口，点击可以重新定位；手机可用双指缩放。较大地图增加原生 4、5 级细节图片，最大仅允许再放大半级。
+
 ## 当前覆盖与正确性
 
 - 267 个目录条目：87 主线、180 支线；149 个地图定位。
@@ -33,15 +37,19 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 ```sh
 python3 scripts/build-data.py
 python3 scripts/enrich-data.py
+python3 scripts/build-places.py
 node scripts/validate.cjs
 node scripts/browser-validate.cjs
 node scripts/validate-landmarks.cjs
+node scripts/validate-navigation.cjs
 python3 scripts/build-report.py
 node scripts/validate-assets.cjs
 python3 scripts/build-report.py
 ```
 
 浏览器检查使用 Codex 随附 Playwright 和 macOS 上已安装的 Google Chrome，路径在检查脚本顶部；在其他机器上可替换为自己的 Playwright 与浏览器路径。先启动上述本地服务。`validate-assets.cjs` 检查最终报告、下载与页面资源。不得在检查未执行或失败时生成通过报告。
+
+中文地名生成使用 `evidence/localization/tiva/` 中冻结的中英对照和繁转简副本，不依赖在线接口。新增细节图片可用 Pillow 重新导出：`python3 scripts/export-detail-tiles.py --source /path/to/Witcher3MapViewer/Witcher3MapViewer/Maps`。来源必须为上述固定版本，脚本核对 MBTiles 文件指纹后才导出。
 
 ## 文件职责
 
