@@ -14,6 +14,11 @@
       "status": "通过"
     },
     {
+      "name": "中文地名与缩放体验",
+      "detail": "11/11 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势",
+      "status": "通过"
+    },
+    {
       "name": "地名与路标显示",
       "detail": "8/8 项；五区 227 个路标、默认地名、缩放拖动和手机",
       "status": "通过"
@@ -39,7 +44,7 @@
       "status": "未执行"
     }
   ],
-  "automatedChecksPassed": 55,
+  "automatedChecksPassed": 66,
   "coverage": {
     "quests": 267,
     "main": 87,
@@ -65,10 +70,18 @@
     "data": "checks/data-logic.json",
     "browser": "checks/browser.json",
     "assets": "checks/assets.json",
-    "landmarks": "checks/landmarks.json"
+    "landmarks": "checks/landmarks.json",
+    "navigation": "checks/navigation.json"
   },
   "webMCP": {
     "status": "unavailable",
     "validation": "unsupported-context, not claimed as validated"
+  },
+  "localization": {
+    "roadSigns": 227,
+    "englishFallbacks": 0,
+    "method": "公开游戏中文地图的中英路标对照；繁体中文逐字转简，保留原文与来源。",
+    "limits": "不是直接从官方简中语言文件导出；没有逐项实机比对。官中繁、简版本可能有不同用词。",
+    "source": "places-zh.json"
   }
 }

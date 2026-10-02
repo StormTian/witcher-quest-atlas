@@ -1,0 +1,2074 @@
+{
+  "date": "2026-10-02",
+  "entries": [
+    {
+      "key": "white-orchard|哀歌桥",
+      "name": "哀歌之桥",
+      "original": "Woesong bridge",
+      "sourceName": "Woesong Bridge",
+      "sourceKey": "w:signpost.label.woesongBridge",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "white-orchard|Sawmill",
+      "name": "锯木厂",
+      "original": "Sawmill",
+      "sourceName": "Sawmill",
+      "sourceKey": "w:signpost.label.sawmill",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "white-orchard|尼弗迦德驻军",
+      "name": "尼弗迦德驻防地",
+      "original": "Nilfgaardian Garrison",
+      "sourceName": "Nilfgaardian Garrison",
+      "sourceKey": "w:signpost.label.nilfgaardianGarrison",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "white-orchard|Mill",
+      "name": "磨坊",
+      "original": "Mill",
+      "sourceName": "Mill",
+      "sourceKey": "w:signpost.label.mill",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "white-orchard|Ford",
+      "name": "渡口",
+      "original": "Ford",
+      "sourceName": "Ford",
+      "sourceKey": "w:signpost.label.ford",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "white-orchard|Crossroads",
+      "name": "十字路口",
+      "original": "Crossroads",
+      "sourceName": "Crossroads",
+      "sourceKey": "w:signpost.label.crossroads",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "white-orchard|Broken Bridge",
+      "name": "断桥",
+      "original": "Broken Bridge",
+      "sourceName": "Broken Bridge",
+      "sourceKey": "w:signpost.label.brokenBridge",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "white-orchard|Ransacked Village",
+      "name": "遭到洗劫的村庄",
+      "original": "Ransacked Village",
+      "sourceName": "Ransacked Village",
+      "sourceKey": "w:signpost.label.ransackedVillage",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "white-orchard|Cackler Bridge",
+      "name": "嘻笑者之桥",
+      "original": "Cackler Bridge",
+      "sourceName": "Cackler Bridge",
+      "sourceKey": "w:signpost.label.cacklerBridge",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "white-orchard|Abandoned Village",
+      "name": "荒废村庄",
+      "original": "Abandoned Village",
+      "sourceName": "Abandoned Village",
+      "sourceKey": "w:signpost.label.abandonedVillage",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/w.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Crossroads",
+      "name": "十字路口",
+      "original": "Crossroads",
+      "sourceName": "Crossroads",
+      "sourceKey": "v:signpost.label.crossroadsVillage",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Destroyed Bastion",
+      "name": "被摧毁的堡垒",
+      "original": "Destroyed Bastion",
+      "sourceName": "Destroyed Bastion",
+      "sourceKey": "v:signpost.label.destroyedBastion",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Bald Mountain",
+      "name": "通往鲍尔德山的路",
+      "original": "Bald Mountain",
+      "sourceName": "Road to Bald Mountain",
+      "sourceKey": "v:signpost.label.roadToBaldMountain",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": true
+    },
+    {
+      "key": "velen|Nilfgaardian Army Group",
+      "name": "尼弗迦德中央军营",
+      "original": "Nilfgaardian Army Group",
+      "sourceName": "Nilfgaardian Army Group 'Center' Camp",
+      "sourceKey": "v:signpost.label.nilfgaardianArmyGroupCenterCamp",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": true
+    },
+    {
+      "key": "velen|Ruined Tower",
+      "name": "废弃的贵族高塔",
+      "original": "Ruined Tower",
+      "sourceName": "Ruined Tower",
+      "sourceKey": "v:signpost.label.ruinedTower",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|古老橡树",
+      "name": "古橡树",
+      "original": "Ancient Oak",
+      "sourceName": "Ancient Oak",
+      "sourceKey": "v:signpost.label.ancientOak",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|下瓦伦",
+      "name": "下瓦伦",
+      "original": "Downwarren",
+      "sourceName": "Downwarren",
+      "sourceKey": "v:signpost.label.downwarren",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Orphans of Crookback Bog",
+      "name": "驼背沼泽孤儿村",
+      "original": "Orphans of Crookback Bog",
+      "sourceName": "The Orphans of Crookback Bog",
+      "sourceKey": "v:signpost.label.theOrphansOfCrookbackBog",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": true
+    },
+    {
+      "key": "velen|Dragonslayer's Grotto",
+      "name": "屠龙洞窟",
+      "original": "Dragonslayer's Grotto",
+      "sourceName": "Dragonslayer's Grotto",
+      "sourceKey": "v:signpost.label.dragonslayersGrotto",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Blackbough（黑树村）",
+      "name": "大黑树",
+      "original": "Blackbough",
+      "sourceName": "Blackbough",
+      "sourceKey": "v:signpost.label.blackbough",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|乌鸦窝",
+      "name": "乌鸦窝",
+      "original": "Crow's Perch",
+      "sourceName": "Crow's Perch",
+      "sourceKey": "v:signpost.label.crowsPerch",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Claywich",
+      "name": "克莱威奇",
+      "original": "Claywich",
+      "sourceName": "Claywich",
+      "sourceKey": "v:signpost.label.claywich",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Heatherton",
+      "name": "海瑟顿",
+      "original": "Heatherton",
+      "sourceName": "Heatherton",
+      "sourceKey": "v:signpost.label.heatherton",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Wolven Glade",
+      "name": "狼之地",
+      "original": "Wolven Glade",
+      "sourceName": "Wolven Glade",
+      "sourceKey": "v:signpost.label.wolvenGlade",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Lornruk",
+      "name": "孤岩",
+      "original": "Lornruk",
+      "sourceName": "Lornruk",
+      "sourceKey": "v:signpost.label.lornruk",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Abandoned Tower",
+      "name": "废弃高塔",
+      "original": "Abandoned Tower",
+      "sourceName": "Abandoned Tower",
+      "sourceKey": "v:signpost.label.abandonedTower",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Isolated Shack",
+      "name": "偏僻的棚屋",
+      "original": "Isolated Shack",
+      "sourceName": "Isolated Shack",
+      "sourceKey": "v:signpost.label.isolatedShack",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Burned Ruins",
+      "name": "烧毁遗迹",
+      "original": "Burned Ruins",
+      "sourceName": "Burned Ruins",
+      "sourceKey": "v:signpost.label.burnedRuins",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Troll Bridge",
+      "name": "巨魔之桥",
+      "original": "Troll Bridge",
+      "sourceName": "Troll Bridge",
+      "sourceKey": "v:signpost.label.trollBridge",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Boatmaker's hut",
+      "name": "船匠小屋",
+      "original": "Boatmaker's hut",
+      "sourceName": "Boatmakers' Hut",
+      "sourceKey": "v:signpost.label.boatmakersHut",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Harpy Feeding Ground",
+      "name": "人面妖鸟的猎食场",
+      "original": "Harpy Feeding Ground",
+      "sourceName": "Harpy Feeding Ground",
+      "sourceKey": "v:signpost.label.harpyFeedingGround",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Benek",
+      "name": "班寇汉",
+      "original": "Benek",
+      "sourceName": "Benek",
+      "sourceKey": "v:signpost.label.benek",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Toderas",
+      "name": "托德拉斯",
+      "original": "Toderas",
+      "sourceName": "Toderas",
+      "sourceKey": "v:signpost.label.toderas",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Lurtch",
+      "name": "勒契",
+      "original": "Lurtch",
+      "sourceName": "Lurtch",
+      "sourceKey": "v:signpost.label.lurtch",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Marauder's Bridge",
+      "name": "掠夺者桥",
+      "original": "Marauder's Bridge",
+      "sourceName": "Marauders' Bridge",
+      "sourceKey": "v:signpost.label.maraudersBridge",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Reardon Manor",
+      "name": "里尔顿庄园",
+      "original": "Reardon Manor",
+      "sourceName": "Reardon Manor",
+      "sourceKey": "v:signpost.label.reardonManor",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Kimbolt Way",
+      "name": "金柏特之路",
+      "original": "Kimbolt Way",
+      "sourceName": "Kimbolt Way",
+      "sourceKey": "v:signpost.label.kimboltWay",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|House of Respite",
+      "name": "歇息之家",
+      "original": "House of Respite",
+      "sourceName": "House of Respite",
+      "sourceKey": "v:signpost.label.houseOfRespite",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Lindenvale",
+      "name": "林登维尔",
+      "original": "Lindenvale",
+      "sourceName": "Lindenvale",
+      "sourceKey": "v:signpost.label.lindenvale",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Grotto",
+      "name": "石窟",
+      "original": "Grotto",
+      "sourceName": "Grotto",
+      "sourceKey": "v:signpost.label.grotto",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Mulbrydale",
+      "name": "莫布里戴尔",
+      "original": "Mulbrydale",
+      "sourceName": "Mulbrydale",
+      "sourceKey": "v:signpost.label.mulbrydale",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Stonecutter's Settlement",
+      "name": "石匠的聚脚地",
+      "original": "Stonecutter's Settlement",
+      "sourceName": "Stonecutters' Settlement",
+      "sourceKey": "v:signpost.label.stonecuttersSettlement",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|恶魔之坑",
+      "name": "恶魔坑",
+      "original": "Devil's Pit",
+      "sourceName": "Devil's Pit",
+      "sourceKey": "v:signpost.label.devilsPit",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Ferry Station",
+      "name": "渡轮站",
+      "original": "Ferry Station",
+      "sourceName": "Ferry Station",
+      "sourceKey": "v:signpost.label.ferryStation",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Hindhold",
+      "name": "辛德霍",
+      "original": "Hindhold",
+      "sourceName": "Hindhold",
+      "sourceKey": "v:signpost.label.hindhold",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Codger's Quarry",
+      "name": "怪老头的采石场",
+      "original": "Codger's Quarry",
+      "sourceName": "Codgers' Quarry",
+      "sourceKey": "v:signpost.label.codgersQuarry",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|White Eagle Fort",
+      "name": "白鹰堡",
+      "original": "White Eagle Fort",
+      "sourceName": "White Eagle Fort",
+      "sourceKey": "v:signpost.label.whiteEagleFort",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Hanged Man's Tree",
+      "name": "吊死鬼之树",
+      "original": "Hanged Man's Tree",
+      "sourceName": "Hanged Man's Tree",
+      "sourceKey": "v:signpost.label.hangedMansTree",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Border Post",
+      "name": "边界哨站",
+      "original": "Border Post",
+      "sourceName": "Border Post",
+      "sourceKey": "v:signpost.label.borderPost",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Dancing Windmill",
+      "name": "舞动风车",
+      "original": "Dancing Windmill",
+      "sourceName": "Dancing Windmill",
+      "sourceKey": "v:signpost.label.dancingWindmill",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Aeramas' Abandoned Manor",
+      "name": "艾拉玛的废弃庄园",
+      "original": "Aeramas' Abandoned Manor",
+      "sourceName": "Aeramas' Abandoned Manor",
+      "sourceKey": "v:signpost.label.aeramasAbandonedManor",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Vegelbud Residence",
+      "name": "威吉布德宅邸",
+      "original": "Vegelbud Residence",
+      "sourceName": "Vegelbud Residence",
+      "sourceKey": "v:signpost.label.vegelbudResidence",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Martin Feuille's Farmstead",
+      "name": "马丁・费力的农场",
+      "original": "Martin Feuille's Farmstead",
+      "sourceName": "Martin Feuille's Farmstead",
+      "sourceKey": "v:signpost.label.martinFeuillesFarmstead",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Temerian Parison Hideout",
+      "name": "泰莫利亚游击队藏身处",
+      "original": "Temerian Parison Hideout",
+      "sourceName": "Temerian Partisan Hideout",
+      "sourceKey": "v:signpost.label.temerianPartisanHideout",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": true
+    },
+    {
+      "key": "velen|Vacant estate",
+      "name": "莫达维宅邸",
+      "original": "Vacant estate",
+      "sourceName": "Moldavie Residence",
+      "sourceKey": "v:signpost.label.moldavieResidence",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": true
+    },
+    {
+      "key": "velen|Isolated Hut",
+      "name": "偏远小屋",
+      "original": "Isolated Hut",
+      "sourceName": "Isolated Hut",
+      "sourceKey": "v:signpost.label.isolatedHut",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Sarrasin Grange",
+      "name": "撒拉辛庄园",
+      "original": "Sarrasin Grange",
+      "sourceName": "Sarrasin Grange",
+      "sourceKey": "v:signpost.label.sarrasinGrange",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Yantra",
+      "name": "洋特拉",
+      "original": "Yantra",
+      "sourceName": "Yantra",
+      "sourceKey": "v:signpost.label.yantra",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Honeyfill Meadworks",
+      "name": "蜂蜜窝酿酒厂",
+      "original": "Honeyfill Meadworks",
+      "sourceName": "Honeyfill Meadworks",
+      "sourceKey": "v:signpost.label.honeyfillMeadworks",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Gustfields Farm",
+      "name": "狂风原野农场",
+      "original": "Gustfields Farm",
+      "sourceName": "Gustfields Farm",
+      "sourceKey": "v:signpost.label.gustfieldsFarm",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Wheat Fields",
+      "name": "麦田",
+      "original": "Wheat Fields",
+      "sourceName": "Wheat Fields",
+      "sourceKey": "v:signpost.label.wheatFields",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Cavern",
+      "name": "洞穴",
+      "original": "Cavern",
+      "sourceName": "Cavern",
+      "sourceKey": "v:signpost.label.cavern",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Carsten",
+      "name": "卡斯敦",
+      "original": "Carsten",
+      "sourceName": "Carsten",
+      "sourceKey": "v:signpost.label.carsten",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Alness",
+      "name": "爱尼斯",
+      "original": "Alness",
+      "sourceName": "Alness",
+      "sourceKey": "v:signpost.label.alness",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Crossroads",
+      "name": "十字路口",
+      "original": "Crossroads",
+      "sourceName": "Crossroads",
+      "sourceKey": "v:signpost.label.crossroadsVillage",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Herbalist's Hut",
+      "name": "药草医生的小屋",
+      "original": "Herbalist's Hut",
+      "sourceName": "Herbalist's Hut",
+      "sourceKey": "v:signpost.label.herbalistsHut",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Winespring Grange",
+      "name": "弗莱庄园",
+      "original": "Winespring Grange",
+      "sourceName": "Winespring Grange",
+      "sourceKey": "v:signpost.label.winespringGrange",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Arette",
+      "name": "阿雷特",
+      "original": "Arette",
+      "sourceName": "Arette",
+      "sourceKey": "v:signpost.label.arette",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Est Tayiar",
+      "name": "埃泰叶尔",
+      "original": "Est Tayiar",
+      "sourceName": "Est Tayiar",
+      "sourceKey": "v:signpost.label.estTayiar",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Lucian's Windmill",
+      "name": "路希恩的风车",
+      "original": "Lucian's Windmill",
+      "sourceName": "Lucian's Windmill",
+      "sourceKey": "v:signpost.label.luciansWindmill",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Drahim Castle",
+      "name": "德拉希城堡",
+      "original": "Drahim Castle",
+      "sourceName": "Drahim Castle",
+      "sourceKey": "v:signpost.label.drahimCastle",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Lighthouse",
+      "name": "灯塔",
+      "original": "Lighthouse",
+      "sourceName": "Lighthouse",
+      "sourceKey": "v:signpost.label.lighthouse",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Loggers Hut",
+      "name": "伐木工的小屋",
+      "original": "Loggers Hut",
+      "sourceName": "Loggers' Hut",
+      "sourceKey": "v:signpost.label.loggersHut",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Eternal Fire Chapel",
+      "name": "永恒之火小教堂",
+      "original": "Eternal Fire Chapel",
+      "sourceName": "Eternal Fire Chapel",
+      "sourceKey": "v:signpost.label.eternalFireChapel",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Cunny of the Goose",
+      "name": "鹅阴酒吧",
+      "original": "Cunny of the Goose",
+      "sourceName": "Cunny of the Goose",
+      "sourceKey": "v:signpost.label.cunnyOfTheGoose",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Ursten",
+      "name": "伍斯坦",
+      "original": "Ursten",
+      "sourceName": "Ursten",
+      "sourceKey": "v:signpost.label.ursten",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Widows' Grotto",
+      "name": "寡妇的石窟",
+      "original": "Widows' Grotto",
+      "sourceName": "Widows' Grotto",
+      "sourceKey": "v:signpost.label.widowsGrotto",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|七只猫旅馆",
+      "name": "七只猫旅馆",
+      "original": "Seven Cats Inn",
+      "sourceName": "Seven Cats Inn",
+      "sourceKey": "v:signpost.label.sevenCatsInn",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Frischlow",
+      "name": "弗奇洛",
+      "original": "Frischlow",
+      "sourceName": "Frischlow",
+      "sourceKey": "v:signpost.label.frischlow",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Oreton",
+      "name": "奥瑞登",
+      "original": "Oreton",
+      "sourceName": "Oreton",
+      "sourceKey": "v:signpost.label.oreton",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Olena's Grove",
+      "name": "欧蕾娜的树林",
+      "original": "Olena's Grove",
+      "sourceName": "Olena's Grove",
+      "sourceKey": "v:signpost.label.olenasGrove",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Bandits' Camp",
+      "name": "强盗营地",
+      "original": "Bandits' Camp",
+      "sourceName": "Bandits' Camp",
+      "sourceKey": "v:signpost.label.banditsCamp",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|米德考普斯",
+      "name": "米德考普斯",
+      "original": "Midcopse",
+      "sourceName": "Midcopse",
+      "sourceKey": "v:signpost.label.midcopse",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Drudge",
+      "name": "苦劳村",
+      "original": "Drudge",
+      "sourceName": "Drudge",
+      "sourceKey": "v:signpost.label.drudge",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Byways",
+      "name": "拜维斯",
+      "original": "Byways",
+      "sourceName": "Byways",
+      "sourceKey": "v:signpost.label.byways",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Wastrel Manor",
+      "name": "奢华庄园",
+      "original": "Wastrel Manor",
+      "sourceName": "Wastrel Manor",
+      "sourceKey": "v:signpost.label.wastrelManor",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|费克岛",
+      "name": "费克岛",
+      "original": "Fyke Isle",
+      "sourceName": "Fyke Isle",
+      "sourceKey": "v:signpost.label.fykeIsle",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|十字路口旅店",
+      "name": "十字路口的旅馆",
+      "original": "Inn at the Crossroads",
+      "sourceName": "Inn at the Crossroads",
+      "sourceKey": "v:signpost.label.innAtTheCrossroads",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Novigrad Docks",
+      "name": "诺维格瑞港口",
+      "original": "Novigrad Docks",
+      "sourceName": "Novigrad Docks",
+      "sourceKey": "v:signpost.label.novigradDocks",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|St. Gregory's Bridge",
+      "name": "圣格列高里之桥",
+      "original": "St. Gregory's Bridge",
+      "sourceName": "St. Gregory's Bridge",
+      "sourceKey": "v:signpost.label.stGregorysBridge",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Electors' Square",
+      "name": "选民广场",
+      "original": "Electors' Square",
+      "sourceName": "Electors' Square",
+      "sourceKey": "v:signpost.label.electorsSquare",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Hierarch Square",
+      "name": "教主广场",
+      "original": "Hierarch Square",
+      "sourceName": "Hierarch Square",
+      "sourceKey": "v:signpost.label.hierarchSquare",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Tretogor Gate",
+      "name": "崔托格大门",
+      "original": "Tretogor Gate",
+      "sourceName": "Tretogor Gate",
+      "sourceKey": "v:signpost.label.tretogorGate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Portside Gate",
+      "name": "港区大门",
+      "original": "Portside Gate",
+      "sourceName": "Portside Gate",
+      "sourceKey": "v:signpost.label.portsideGate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Glory Gate",
+      "name": "光辉大门",
+      "original": "Glory Gate",
+      "sourceName": "Glory Gate",
+      "sourceKey": "v:signpost.label.gloryGate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Gate of the Hierarch",
+      "name": "教主大门",
+      "original": "Gate of the Hierarch",
+      "sourceName": "Gate of the Hierarch",
+      "sourceKey": "v:signpost.label.gateOfTheHierarch",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Southern Gate",
+      "name": "南大门",
+      "original": "Southern Gate",
+      "sourceName": "Southern Gate",
+      "sourceKey": "v:signpost.label.southernGate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|奥森弗特城门",
+      "name": "奥森佛特大门",
+      "original": "Oxenfurt Gate",
+      "sourceName": "Oxenfurt Gate",
+      "sourceKey": "v:signpost.label.oxenfurtGate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|诺维格瑞城门",
+      "name": "诺维格瑞大门",
+      "original": "Novigrad Gate",
+      "sourceName": "Novigrad Gate",
+      "sourceKey": "v:signpost.label.novigradGate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Western Gate",
+      "name": "西大门",
+      "original": "Western Gate",
+      "sourceName": "Western Gate",
+      "sourceKey": "v:signpost.label.westernGate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|奥森弗特港",
+      "name": "奥森弗特港口",
+      "original": "Oxenfurt Harbor",
+      "sourceName": "Oxenfurt Harbor",
+      "sourceKey": "v:signpost.label.oxenfurtHarbor",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Refugees' Camp",
+      "name": "难民营",
+      "original": "Refugees' Camp",
+      "sourceName": "Refugees' Camp",
+      "sourceKey": "v:signpost.label.refugeesCamp",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Hangman's Alley",
+      "name": "吊死鬼小巷",
+      "original": "Hangman's Alley",
+      "sourceName": "Hangman's Alley",
+      "sourceKey": "v:signpost.label.hangmansAlley",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Forest Hut",
+      "name": "森林小屋",
+      "original": "Forest Hut",
+      "sourceName": "Forest Hut",
+      "sourceKey": "v:signpost.label.forestHut",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Duen Hen",
+      "name": "度恩罕",
+      "original": "Duen Hen",
+      "sourceName": "Duén Hen",
+      "sourceKey": "v:signpost.label.duenHen",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Condyle",
+      "name": "康岱尔",
+      "original": "Condyle",
+      "sourceName": "Condyle",
+      "sourceKey": "v:signpost.label.condyle",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Coast of Wrecks",
+      "name": "船骸海岸",
+      "original": "Coast of Wrecks",
+      "sourceName": "Coast of Wrecks",
+      "sourceKey": "v:signpost.label.coastOfWrecks",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Brunwich",
+      "name": "布伦威奇",
+      "original": "Brunwich",
+      "sourceName": "Brunwich",
+      "sourceKey": "v:signpost.label.brun",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|加林庄园",
+      "name": "加林庄园",
+      "original": "Garin Estate",
+      "sourceName": "Garin Estate",
+      "sourceKey": "v:signpost.label.garin",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Bowdon",
+      "name": "鲍登",
+      "original": "Bowdon",
+      "sourceName": "Bowdon",
+      "sourceKey": "v:signpost.label.bowdon",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Vikk Watchtower",
+      "name": "维克了望塔",
+      "original": "Vikk Watchtower",
+      "sourceName": "Vikk Watchtower",
+      "sourceKey": "v:signpost.label.vikk",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Heddel",
+      "name": "海德尔",
+      "original": "Heddel",
+      "sourceName": "Heddel",
+      "sourceKey": "v:signpost.label.heddel",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Erde",
+      "name": "埃尔德",
+      "original": "Erde",
+      "sourceName": "Erde",
+      "sourceKey": "v:signpost.label.erde",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Von Everec Estate",
+      "name": "冯埃弗雷克庄园",
+      "original": "Von Everec Estate",
+      "sourceName": "Von Everec Estate",
+      "sourceKey": "v:signpost.label.voneverec",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Crane Cape",
+      "name": "鹤斗篷",
+      "original": "Crane Cape",
+      "sourceName": "Crane Cape",
+      "sourceKey": "v:signpost.label.crane",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Hunter's Cottage",
+      "name": "猎人小屋",
+      "original": "Hunter's Cottage",
+      "sourceName": "Hunter's Cottage",
+      "sourceKey": "v:signpost.label.hunter",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Arnskrone Castle Ruins",
+      "name": "阿恩斯克隆城堡遗址",
+      "original": "Arnskrone Castle Ruins",
+      "sourceName": "Arnskrone Castle Ruins",
+      "sourceKey": "v:signpost.label.arns",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Kilkerinn Ruins",
+      "name": "基尔克林遗址",
+      "original": "Kilkerinn Ruins",
+      "sourceName": "Kilkerinn Ruins",
+      "sourceKey": "v:signpost.label.kilker",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Draken Hollow Outpost",
+      "name": "龙谷前哨",
+      "original": "Draken Hollow Outpost",
+      "sourceName": "Draken Hollow Outpost",
+      "sourceKey": "v:signpost.label.draken",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Zuetzer Castle",
+      "name": "祖策城堡",
+      "original": "Zuetzer Castle",
+      "sourceName": "Zuetzer Castle",
+      "sourceKey": "v:signpost.label.zuetzer",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "velen|Upper Mill",
+      "name": "上磨坊",
+      "original": "Upper Mill",
+      "sourceName": "Upper Mill",
+      "sourceKey": "v:signpost.label.mill",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/v.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Bay of Winds",
+      "name": "风之湾",
+      "original": "Bay of Winds",
+      "sourceName": "Bay Of Winds",
+      "sourceKey": "s:signpost.label.bayOfWinds",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Yngvar's Fang",
+      "name": "英格瓦之牙",
+      "original": "Yngvar's Fang",
+      "sourceName": "Yngvar's Fang",
+      "sourceKey": "s:signpost.label.yngvarsFang",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Urialla Harbor",
+      "name": "尤里埃拉港口",
+      "original": "Urialla Harbor",
+      "sourceName": "Urialla Harbor",
+      "sourceKey": "s:signpost.label.uriallaHarbor",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Trail to Yngvar's Fang",
+      "name": "通往英格瓦之牙的小径",
+      "original": "Trail to Yngvar's Fang",
+      "sourceName": "Trail to Yngvar's Fang",
+      "sourceKey": "s:signpost.label.trailToYngvarsFang",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Distillery",
+      "name": "酿酒厂",
+      "original": "Distillery",
+      "sourceName": "Distillery",
+      "sourceKey": "s:signpost.label.distillery",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Fyresdal",
+      "name": "费雷思达",
+      "original": "Fyresdal",
+      "sourceName": "Fyresdal",
+      "sourceKey": "s:signpost.label.fyresdal",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|凯尔卓港",
+      "name": "凯尔卓港",
+      "original": "Kaer Trolde Harbor",
+      "sourceName": "Kaer Trolde Harbor",
+      "sourceKey": "s:signpost.label.KaerTroldeHarbor",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Kaer Gelen",
+      "name": "凯尔格伦",
+      "original": "Kaer Gelen",
+      "sourceName": "Kaer Gelen",
+      "sourceKey": "s:signpost.label.kaerGelen",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Fayrlund",
+      "name": "斐隆德",
+      "original": "Fayrlund",
+      "sourceName": "Fayrlund",
+      "sourceKey": "s:signpost.label.fayrlund",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Elverum Lighthouse",
+      "name": "艾孚鲁灯塔",
+      "original": "Elverum Lighthouse",
+      "sourceName": "Elverum Lighthouse",
+      "sourceKey": "s:signpost.label.elverumLighthouse",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Giants' Toes",
+      "name": "巨人的脚趾",
+      "original": "Giants' Toes",
+      "sourceName": "Giants' Toes",
+      "sourceKey": "s:signpost.label.giantsToes",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Crossroads",
+      "name": "十字路口",
+      "original": "Crossroads",
+      "sourceName": "Crossroads",
+      "sourceKey": "s:signpost.label.crossroads",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Yustianna's Grotto",
+      "name": "尤斯提雅那的石窟",
+      "original": "Yustianna's Grotto",
+      "sourceName": "Yustianna's Grotto",
+      "sourceKey": "s:signpost.label.yustiannasGrotto",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Eldberg Lighthouse",
+      "name": "爱德堡灯塔",
+      "original": "Eldberg Lighthouse",
+      "sourceName": "Eldberg Lighthouse",
+      "sourceKey": "s:signpost.label.eldbergLighthouse",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Kaer Muire",
+      "name": "凯尔谬雷",
+      "original": "Kaer Muire",
+      "sourceName": "Kaer Muire",
+      "sourceKey": "s:signpost.label.kaerMuire",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Abandoned sawmill",
+      "name": "废弃的锯木厂",
+      "original": "Abandoned sawmill",
+      "sourceName": "Abandoned Sawmill",
+      "sourceKey": "s:signpost.label.abandonedSawmill",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Palisade",
+      "name": "栅栏",
+      "original": "Palisade",
+      "sourceName": "Palisade",
+      "sourceKey": "s:signpost.label.palisade",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Wild Shore",
+      "name": "原始海岸",
+      "original": "Wild Shore",
+      "sourceName": "Wild Shore",
+      "sourceKey": "s:signpost.label.wildShore",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Blandare",
+      "name": "布蓝岱尔",
+      "original": "Blandare",
+      "sourceName": "Blandare",
+      "sourceKey": "s:signpost.label.blandare",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Grotto",
+      "name": "石窟",
+      "original": "Grotto",
+      "sourceName": "Grotto",
+      "sourceKey": "s:signpost.label.grotto",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|凯尔卓城堡桥",
+      "name": "通往凯尔卓的桥",
+      "original": "Bridge to Kaer Trolde",
+      "sourceName": "Bridge to Kaer Trolde",
+      "sourceKey": "s:signpost.label.bridgeToKaerTrolde",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Holmstein's Port",
+      "name": "海姆斯坦港",
+      "original": "Holmstein's Port",
+      "sourceName": "Holmstein's Port",
+      "sourceKey": "s:signpost.label.holmsteinsPort",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Boxholm",
+      "name": "巴克斯霍姆",
+      "original": "Boxholm",
+      "sourceName": "Boxholm",
+      "sourceKey": "s:signpost.label.boxholm",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Whale Graveyard",
+      "name": "鲸鱼坟场",
+      "original": "Whale Graveyard",
+      "sourceName": "Whale Graveyard",
+      "sourceKey": "s:signpost.label.whaleGraveyard",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Ancient Crypt",
+      "name": "古代墓穴",
+      "original": "Ancient Crypt",
+      "sourceName": "Ancient Crypt",
+      "sourceKey": "s:signpost.label.ancientCrypt",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Miners' Camp",
+      "name": "矿工的营地",
+      "original": "Miners' Camp",
+      "sourceName": "Miners' Camp",
+      "sourceKey": "s:signpost.label.minersCamp",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Ruined Inn",
+      "name": "废弃旅馆",
+      "original": "Ruined Inn",
+      "sourceName": "Ruined Inn",
+      "sourceKey": "s:signpost.label.ruinedInn",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Rannvaig",
+      "name": "兰维格",
+      "original": "Rannvaig",
+      "sourceName": "Rannvaig",
+      "sourceKey": "s:signpost.label.rannvaig",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Druids' Camp",
+      "name": "德鲁伊的营地",
+      "original": "Druids' Camp",
+      "sourceName": "Druids' Camp",
+      "sourceKey": "s:signpost.label.druidsCamp",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Sund",
+      "name": "桑德",
+      "original": "Sund",
+      "sourceName": "Sund",
+      "sourceKey": "s:signpost.label.sund",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Fornhala",
+      "name": "弗尔哈拉",
+      "original": "Fornhala",
+      "sourceName": "Fornhala",
+      "sourceKey": "s:signpost.label.fornhala",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Arinbjorn",
+      "name": "阿林比翁",
+      "original": "Arinbjorn",
+      "sourceName": "Arinbjorn",
+      "sourceKey": "s:signpost.label.arinbjorn",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Redgill",
+      "name": "雷吉尔",
+      "original": "Redgill",
+      "sourceName": "Redgill",
+      "sourceKey": "s:signpost.label.redgill",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Rogne",
+      "name": "罗涅",
+      "original": "Rogne",
+      "sourceName": "Rogne",
+      "sourceKey": "s:signpost.label.rogne",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|盖迪尼斯",
+      "name": "盖迪尼斯",
+      "original": "Gedyneith",
+      "sourceName": "Gedyneith",
+      "sourceKey": "s:signpost.label.gedyneith",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Harviken",
+      "name": "哈尔维肯",
+      "original": "Harviken",
+      "sourceName": "Harviken",
+      "sourceKey": "s:signpost.label.harviken",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Trottheim",
+      "name": "托特海姆",
+      "original": "Trottheim",
+      "sourceName": "Trottheim",
+      "sourceKey": "s:signpost.label.trottheim",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|罗弗敦",
+      "name": "罗伏藤",
+      "original": "Lofoten",
+      "sourceName": "Lofoten",
+      "sourceKey": "s:signpost.label.lofoten",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Isolated Hut",
+      "name": "偏远小屋",
+      "original": "Isolated Hut",
+      "sourceName": "Isolated Hut",
+      "sourceKey": "s:signpost.label.isolatedHut",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|拉尔维克",
+      "name": "拉尔维克",
+      "original": "Larvik",
+      "sourceName": "Larvik",
+      "sourceKey": "s:signpost.label.larvik",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Lofoten Cemetery",
+      "name": "罗伏藤墓园",
+      "original": "Lofoten Cemetery",
+      "sourceName": "Lofoten Cemetery",
+      "sourceKey": "s:signpost.label.lofotenCemetery",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Lurthen",
+      "name": "卢森",
+      "original": "Lurthen",
+      "sourceName": "Lurthen",
+      "sourceKey": "s:signpost.label.lurthen",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Freya's Garden",
+      "name": "弗蕾雅的花园",
+      "original": "Freya's Garden",
+      "sourceName": "Freya's Garden",
+      "sourceKey": "s:signpost.label.freyasGarden",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Kaer Almhult",
+      "name": "凯尔艾胡",
+      "original": "Kaer Almhult",
+      "sourceName": "Kaer Almhult",
+      "sourceKey": "s:signpost.label.kaerAlmhult",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Pali Gap Coast",
+      "name": "巴利峡谷海岸",
+      "original": "Pali Gap Coast",
+      "sourceName": "The Pali Gap Coast",
+      "sourceKey": "s:signpost.label.thePaliGapCoast",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": true
+    },
+    {
+      "key": "skellige|Hov",
+      "name": "霍佛",
+      "original": "Hov",
+      "sourceName": "Hov",
+      "sourceKey": "s:signpost.label.hov",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Svorlag",
+      "name": "斯瓦雷格",
+      "original": "Svorlag",
+      "sourceName": "Svorlag",
+      "sourceKey": "s:signpost.label.svorlag",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Old Watchtower",
+      "name": "旧了望塔",
+      "original": "Old Watchtower",
+      "sourceName": "Old Watchtower",
+      "sourceKey": "s:signpost.label.oldWatchtower",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Dorve Ruins",
+      "name": "朵夫遗迹",
+      "original": "Dorve Ruins",
+      "sourceName": "Dorve Ruins",
+      "sourceKey": "s:signpost.label.dorveRuins",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Tor Gvalch'ca",
+      "name": "托瓦尔奇卡",
+      "original": "Tor Gvalch'ca",
+      "sourceName": "Tor Gvalch'ca",
+      "sourceKey": "s:signpost.label.torGvalchca",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Abandoned Village",
+      "name": "荒废村庄",
+      "original": "Abandoned Village",
+      "sourceName": "Abandoned Village",
+      "sourceKey": "s:signpost.label.abandonedVillage",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Marlin Coast",
+      "name": "枪鱼海岸",
+      "original": "Marlin Coast",
+      "sourceName": "Marlin Coast",
+      "sourceKey": "s:signpost.label.marlinCoast",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Urskar",
+      "name": "乌斯卡尔",
+      "original": "Urskar",
+      "sourceName": "Urskar",
+      "sourceKey": "s:signpost.label.urskar",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Clan Tordarroch Forge",
+      "name": "托达洛曲家族的铸坊",
+      "original": "Clan Tordarroch Forge",
+      "sourceName": "Clan Tordarroch Forge",
+      "sourceKey": "s:signpost.label.clanTordarrochForge",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "skellige|Gull Point",
+      "name": "海鸥点",
+      "original": "Gull Point",
+      "sourceName": "Gull Point",
+      "sourceKey": "s:signpost.label.gullPoint",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/s.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Casteldaccia Abandoned Estate",
+      "name": "卡斯特达奇雅废弃庄园",
+      "original": "Casteldaccia Abandoned Estate",
+      "sourceName": "Casteldaccia Abandoned Estate",
+      "sourceKey": "t:signpost.label.casteldacciaabandonedestate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Mont Crane Castle",
+      "name": "鹤山城堡",
+      "original": "Mont Crane Castle",
+      "sourceName": "Mont Crane Castle",
+      "sourceKey": "t:signpost.label.montcranecastle",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Fort Ussar Ruins",
+      "name": "乌撒尔堡遗迹",
+      "original": "Fort Ussar Ruins",
+      "sourceName": "Fort Ussar Ruins",
+      "sourceKey": "t:signpost.label.fortussar",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Ardaiso Quarry",
+      "name": "亚戴索采石场",
+      "original": "Ardaiso Quarry",
+      "sourceName": "Ardaiso Quarry",
+      "sourceKey": "t:signpost.label.ardaisoquarry",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Termes Palace Ruins",
+      "name": "特默斯宫殿遗迹",
+      "original": "Termes Palace Ruins",
+      "sourceName": "Termes Palace Runins",
+      "sourceKey": "t:signpost.label.ruins",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": true
+    },
+    {
+      "key": "toussaint|Francollarts",
+      "name": "弗兰卡拉兹",
+      "original": "Francollarts",
+      "sourceName": "Francollarts",
+      "sourceKey": "t:signpost.label.francollarts",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Belgaard Vineyard",
+      "name": "贝尔迦德葡萄园",
+      "original": "Belgaard Vineyard",
+      "sourceName": "Belgaard Vineyard",
+      "sourceKey": "t:signpost.label.belgaardvineyard",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Trastamara Hunting Cottage",
+      "name": "卓斯塔玛拉猎人小屋",
+      "original": "Trastamara Hunting Cottage",
+      "sourceName": "Trastamara Hunting Cottage",
+      "sourceKey": "t:signpost.label.cottage",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Hortense Vineyard",
+      "name": "霍谭斯葡萄园",
+      "original": "Hortense Vineyard",
+      "sourceName": "Hortense Vineyard",
+      "sourceKey": "t:signpost.label.hortense",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Mere-Lachaiselongue Cemetery",
+      "name": "梅尔拉雪兹隆格公墓",
+      "original": "Mere-Lachaiselongue Cemetery",
+      "sourceName": "Mère-Lachaiselongue Cemetery",
+      "sourceKey": "t:signpost.label.cemetry",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Gelenser Farm",
+      "name": "格伦瑟农场",
+      "original": "Gelenser Farm",
+      "sourceName": "Gelenser Farm",
+      "sourceKey": "t:signpost.label.farm",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|泰沙姆穆那遗迹",
+      "name": "迪沙谬那遗迹",
+      "original": "Tesham Mutna Ruins",
+      "sourceName": "Tesham Mutna Ruins",
+      "sourceKey": "t:signpost.label.mutnaruins",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Harbor Gate",
+      "name": "海港大门",
+      "original": "Harbor Gate",
+      "sourceName": "Harbor Gate",
+      "sourceKey": "t:signpost.label.haborgate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Lower City",
+      "name": "圣赛巴斯钦",
+      "original": "Lower City",
+      "sourceName": "San Sebastian",
+      "sourceKey": "t:signpost.label.sansebastian",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": true
+    },
+    {
+      "key": "toussaint|Beauclair Palace",
+      "name": "鲍克兰宫殿",
+      "original": "Beauclair Palace",
+      "sourceName": "Beauclair Palace",
+      "sourceKey": "t:signpost.label.palace",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Palace Gardens",
+      "name": "宫廷庭园",
+      "original": "Palace Gardens",
+      "sourceName": "Palace Gardens",
+      "sourceKey": "t:signpost.label.palacegardens",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Metinna Gate",
+      "name": "马提那之门",
+      "original": "Metinna Gate",
+      "sourceName": "Metinna Gate",
+      "sourceKey": "t:signpost.label.gate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|The Gran'place",
+      "name": "格兰广场",
+      "original": "The Gran'place",
+      "sourceName": "Gran'Place",
+      "sourceKey": "t:signpost.label.granplace",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": true
+    },
+    {
+      "key": "toussaint|Coopers' Gate",
+      "name": "桶匠之门",
+      "original": "Coopers' Gate",
+      "sourceName": "Coopers Gate",
+      "sourceKey": "t:signpost.label.coopersgate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Lebioda's Gate",
+      "name": "雷比欧达之门",
+      "original": "Lebioda's Gate",
+      "sourceName": "Lebioda's Gate",
+      "sourceKey": "t:signpost.label.lebiodasgate",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Nilfgaardian Embassy",
+      "name": "尼弗迦德使馆",
+      "original": "Nilfgaardian Embassy",
+      "sourceName": "Nilfgaardian Embassy",
+      "sourceKey": "t:signpost.label.embassy",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Beauclair Port",
+      "name": "鲍克兰港",
+      "original": "Beauclair Port",
+      "sourceName": "Beauclair Port",
+      "sourceKey": "t:signpost.label.beauclairport",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Dun Tynne Crossroads",
+      "name": "唐泰恩十字路口",
+      "original": "Dun Tynne Crossroads",
+      "sourceName": "Dun Tynne Crossroads",
+      "sourceKey": "t:signpost.label.duntynnecrossroads",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Basane Farm",
+      "name": "巴善农场",
+      "original": "Basane Farm",
+      "sourceName": "Basane Farm",
+      "sourceKey": "t:signpost.label.basanefarm",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Dun Tynne Hillside",
+      "name": "唐泰恩山坡",
+      "original": "Dun Tynne Hillside",
+      "sourceName": "Dun Tynne Hillside",
+      "sourceKey": "t:signpost.label.duntynnehillside",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Dun Tynne Castle",
+      "name": "唐泰恩城堡",
+      "original": "Dun Tynne Castle",
+      "sourceName": "Dun Tynne Castle",
+      "sourceKey": "t:signpost.label.duntynnecastle",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Seidhe Llygad Amphitheater",
+      "name": "西迪力加剧场",
+      "original": "Seidhe Llygad Amphitheater",
+      "sourceName": "Seidhe Llygad Amphitheater",
+      "sourceKey": "t:signpost.label.seidhellyghadamphitheater",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Rioux-Cannes Outpost",
+      "name": "琉斯坎恩据点",
+      "original": "Rioux-Cannes Outpost",
+      "sourceName": "Rioux-Cannes Outpost",
+      "sourceKey": "t:signpost.label.riouxcannesoutpost",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Fox Hollow",
+      "name": "狐狸谷",
+      "original": "Fox Hollow",
+      "sourceName": "Fox Hollow",
+      "sourceKey": "t:signpost.label.fox",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Fort Astre Ruins",
+      "name": "爱斯翠堡遗迹",
+      "original": "Fort Astre Ruins",
+      "sourceName": "Fort Astre Ruins",
+      "sourceKey": "t:signpost.label.fort",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Chuchote Cave",
+      "name": "楚卓特洞穴",
+      "original": "Chuchote Cave",
+      "sourceName": "Chuchote Cave",
+      "sourceKey": "t:signpost.label.chuchotecave",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|The Cockatrice Inn",
+      "name": "石化鸡蛇旅馆",
+      "original": "The Cockatrice Inn",
+      "sourceName": "The Cockatrice Inn",
+      "sourceKey": "t:signpost.label.cockatrice",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Flovive",
+      "name": "弗罗维夫",
+      "original": "Flovive",
+      "sourceName": "Flovive",
+      "sourceKey": "t:signpost.label.flovive",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Toussaint Prison",
+      "name": "陶森特监狱",
+      "original": "Toussaint Prison",
+      "sourceName": "Toussaint Prison",
+      "sourceKey": "t:signpost.label.prison",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|比武场",
+      "name": "比武场",
+      "original": "Tourney Grounds",
+      "sourceName": "Tourney Grounds",
+      "sourceKey": "t:signpost.label.tunier",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Castel Ravello Vineyard",
+      "name": "拉维罗堡葡萄园",
+      "original": "Castel Ravello Vineyard",
+      "sourceName": "Castel Ravello Vineyard",
+      "sourceKey": "t:signpost.label.castelravello",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Sansretour Valley",
+      "name": "桑司雷多谷",
+      "original": "Sansretour Valley",
+      "sourceName": "Sansretour Valley",
+      "sourceKey": "t:signpost.label.sansretourvalley",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Coronata Vineyard",
+      "name": "科罗纳塔葡萄园",
+      "original": "Coronata Vineyard",
+      "sourceName": "Coronata Vineyard",
+      "sourceKey": "t:signpost.label.coronatavineyard",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Trading Post",
+      "name": "交易所",
+      "original": "Trading Post",
+      "sourceName": "Trading Post",
+      "sourceKey": "t:signpost.label.tradingpost",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|白鸦葡萄园",
+      "name": "白鸦葡萄园",
+      "original": "Corvo Bianco Vineyard",
+      "sourceName": "Corvo Bianco Vineyard",
+      "sourceKey": "t:signpost.label.corvobianco",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Prophet Lebioda Statue",
+      "name": "先知雷比欧达雕像",
+      "original": "Prophet Lebioda Statue",
+      "sourceName": "Prophet Lebioda Statue",
+      "sourceKey": "t:signpost.label.statue",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Count de la Croix's Mill",
+      "name": "拉阔司公爵的磨坊",
+      "original": "Count de la Croix's Mill",
+      "sourceName": "Count de la Croix's Mill",
+      "sourceKey": "t:signpost.label.croixmill",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Arthach Palace Ruins",
+      "name": "亚特海契宫殿遗迹",
+      "original": "Arthach Palace Ruins",
+      "sourceName": "Arthach Palace Ruins",
+      "sourceKey": "t:signpost.label.arthachpalaceruins",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|Dulcinea Windmill",
+      "name": "达辛妮亚风车",
+      "original": "Dulcinea Windmill",
+      "sourceName": "Dulcinea Windmill",
+      "sourceKey": "t:signpost.label.dulcineawindmill",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|普雷格蒙德桥",
+      "name": "普雷格蒙之桥",
+      "original": "Plegmund's Bridge",
+      "sourceName": "Plegmund's Bridge",
+      "sourceKey": "t:signpost.label.plegmundsbridge",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "toussaint|The Silver Salamander Inn",
+      "name": "银蝾螈旅馆",
+      "original": "The Silver Salamander Inn",
+      "sourceName": "The Silver Salamander Inn",
+      "sourceKey": "t:signpost.label.thesilversalamanderinn",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/t.json",
+      "aliased": false
+    },
+    {
+      "key": "kaer-morhen|凯尔莫罕",
+      "name": "凯尔莫罕",
+      "original": "Kaer Morhen",
+      "sourceName": "Kaer Morhen",
+      "sourceKey": "k:signpost.label.kaerMorhen",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/k.json",
+      "aliased": false
+    },
+    {
+      "key": "kaer-morhen|The Morhen Eye",
+      "name": "堡垒",
+      "original": "The Morhen Eye",
+      "sourceName": "Bastion",
+      "sourceKey": "k:signpost.label.bastion",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/k.json",
+      "aliased": true
+    },
+    {
+      "key": "kaer-morhen|Outpost ruins",
+      "name": "被毁的了望塔",
+      "original": "Outpost ruins",
+      "sourceName": "Ruined Watchtower",
+      "sourceKey": "k:signpost.label.ruinedWatchtower",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/k.json",
+      "aliased": true
+    },
+    {
+      "key": "kaer-morhen|Morhen Mine dam",
+      "name": "铁矿",
+      "original": "Morhen Mine dam",
+      "sourceName": "Iron Mine",
+      "sourceKey": "k:signpost.label.ironMine",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/k.json",
+      "aliased": true
+    },
+    {
+      "key": "kaer-morhen|The Lake House",
+      "name": "湖畔小屋",
+      "original": "The Lake House",
+      "sourceName": "Lakeside Hut",
+      "sourceKey": "k:signpost.label.lakesideHut",
+      "source": "https://www.tivaprojects.com/witcher3map/files/locales/zh/k.json",
+      "aliased": true
+    }
+  ],
+  "method": "公开游戏中文地图的中英路标对照；繁体中文逐字转简，保留原文与来源。",
+  "limits": "不是直接从官方简中语言文件导出；没有逐项实机比对。官中繁、简版本可能有不同用词。",
+  "corrections": [
+    {
+      "name": "艾孚鲁灯塔",
+      "source": "https://witcher.huijiwiki.com/wiki/艾孚鲁灯塔",
+      "detail": "修正社区中文地图把 Elverum 与 Eldberg 两座灯塔写成同名的问题。"
+    }
+  ],
+  "sourceHashes": {
+    "en-k.json": "89bbc9fca43bcbb78f3c61a4985f35fbb5d6aedd81db625a377e577ed6a8a969",
+    "en-s.json": "40959e7b2285973d210595da21c915adae95a9a121c2d04891eb058f6c996b62",
+    "en-t.json": "6862dd19af77ff2b719309e44516c3b4cebd9f0d0aaa99814f469d5f4176dc30",
+    "en-v.json": "6fce75959de838b769c3bcc27d3f18d946a6c29c04fdebfd901773577411b7c0",
+    "en-w.json": "894805f92033cb958123b30ae5307a3136bbe321546fff4567aaaa0d9f476399",
+    "zh-k.json": "c3c368d434b5dfec50c557784d7db55b55d4e509cee028561f5e2f6edac8ad63",
+    "zh-s.json": "70b846a199af29e73f184424caa8335439fbefbae7aba54f69090a72b823c186",
+    "zh-simplified-k.json": "8c688e5a34a9b01af082b131f2f4633a9f8f9b04cf2d6694f19875d815853c60",
+    "zh-simplified-s.json": "412d501b333e807d4181142eb1ac6a320c1feb25a56a920385c8ff53f38a6aa8",
+    "zh-simplified-t.json": "8504cbcab1857ab84678920886118a628a465ff59839d6a0cc4377e95f0fae55",
+    "zh-simplified-v.json": "8bf471fb35458cdde88e495c235ab51bce5db66b918a294238e4f94fddbbe411",
+    "zh-simplified-w.json": "23632d5c494e4a1d63617c2dbf15801714635f0ec607fb177d27c86633ca4c3a",
+    "zh-t.json": "fd9a9e5e668a2ad2fbc74ba0c4bb813d3bf3cb81a38d9aa25cd955c1524d925a",
+    "zh-v.json": "8635c878a45e7d11bc587522b484359f5fd796a265c3870281a05bd320f09dd0",
+    "zh-w.json": "44722131893196c17e3097eaefac10d21e418dc7b8ca1dd50fe29ae43e2ed495"
+  }
+}

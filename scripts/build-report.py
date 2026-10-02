@@ -20,6 +20,12 @@ if landmark:
  assert landmark['status']=='pass' and landmark['datasetSha256']==digest
  assert landmark['appSha256']==hashlib.sha256((root/'dist/app.js').read_bytes()).hexdigest()
  assert landmark['styleSha256']==hashlib.sha256((root/'dist/style.css').read_bytes()).hexdigest()
+navigation=read('evidence/navigation-validation.json') if (root/'evidence/navigation-validation.json').exists() else None
+if navigation:
+ assert navigation['status']=='pass' and navigation['datasetSha256']==digest
+ for key,filename in [('appSha256','app.js'),('navigationSha256','map-navigation.js'),('placesSha256','places-zh.json'),('styleSha256','style.css')]:
+  assert navigation[key]==hashlib.sha256((root/'dist'/filename).read_bytes()).hexdigest()
+places=read('dist/places-zh.json')
 summary=[
  {'name':'任务数据与规则','detail':f"{logic['passed']}/{logic['total']} 项；任务引用、地图资源、结局条件、流程前置",'status':'通过'},
  {'name':'网页实际交互','detail':f"{browser['passed']}/{browser['total']} 项；五区地图、筛选、101 个选项、剧透与手机操作",'status':'通过'},
@@ -29,8 +35,9 @@ summary=[
 ]
 if asset:summary.insert(2,{'name':'报告与资源交付','detail':f"{asset['passed']}/{asset['total']} 项；报告、下载与资源加载",'status':'通过'})
 if landmark:summary.insert(2,{'name':'地名与路标显示','detail':f"{landmark['passed']}/{landmark['total']} 项；五区 227 个路标、默认地名、缩放拖动和手机",'status':'通过'})
+if navigation:summary.insert(2,{'name':'中文地名与缩放体验','detail':f"{navigation['passed']}/{navigation['total']} 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势",'status':'通过'})
 qa={'date':d['meta']['date'],'status':'pass','datasetSha256':digest,'summary':summary,
- 'automatedChecksPassed':logic['passed']+browser['passed']+(asset['passed'] if asset else 0)+(landmark['passed'] if landmark else 0),
+ 'automatedChecksPassed':logic['passed']+browser['passed']+(asset['passed'] if asset else 0)+(landmark['passed'] if landmark else 0)+(navigation['passed'] if navigation else 0),
  'coverage':{'quests':len(d['quests']),'main':87,'side':180,'positioned':149,'communityCoordinates':133,'landmarkAnchors':16,'flowOrUnmapped':118,'reviewedBranchTasks':40,'decisionNodes':45,'decisionOptions':101},
  'limits':d['meta']['limitations'],
  'evidence':{'data':'checks/data-logic.json','browser':'checks/browser.json','assets':'checks/assets.json' if asset else None},
@@ -38,9 +45,15 @@ qa={'date':d['meta']['date'],'status':'pass','datasetSha256':digest,'summary':su
 if landmark:
  qa['coverage']['roadSigns']=227
  qa['evidence']['landmarks']='checks/landmarks.json'
+if navigation:qa['evidence']['navigation']='checks/navigation.json'
+qa['localization']={'roadSigns':len(places['entries']),'englishFallbacks':0,'method':places['method'],'limits':places['limits'],'source':'places-zh.json'}
 dist=root/'dist';(dist/'checks').mkdir(exist_ok=True)
 for f,target in [('data-logic-validation.json','data-logic.json'),('browser-validation.json','browser.json')]:
  shutil.copyfile(root/'evidence'/f,dist/'checks'/target)
+if navigation:
+ shutil.copyfile(root/'evidence/navigation-validation.json',dist/'checks/navigation.json')
+ for name in ['navigation-desktop.png','navigation-mobile.png']:
+  shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 if asset:shutil.copyfile(root/'evidence/asset-report-validation.json',dist/'checks/assets.json')
 if landmark:
  shutil.copyfile(root/'evidence/landmark-validation.json',dist/'checks/landmarks.json')
@@ -105,7 +118,17 @@ lines += [
 if landmark:
  lines += ['','### 本次地名更新验收','',f"[逐项结果](checks/landmarks.json)：{landmark['passed']}/{landmark['total']} 项通过。227 个原有快速旅行路标现在默认显示名称，密集处的主要地名避让后用细线指回路标；可用“地名”按钮开关。",'']
  lines += [f"- {c['name']}：{c['detail']}。" for c in landmark['checks']]
- lines += ['','更新画面：[桌面地名](checks/landmarks-desktop.png)、[手机地名](checks/landmarks-mobile.png)。原有 19 项完整流程验收保留；本次新增地名叠加和地图操作由上述专门检查复验。','']
+ lines += ['','更新画面：[桌面地名](checks/landmarks-desktop.png)、[手机地名](checks/landmarks-mobile.png)。19 项完整流程也已重新验收；新增地名叠加和地图操作由上述专门检查复验。','']
+if navigation:
+ lines += ['','### 中文地名与缩放更新验收','',f"[逐项結果](checks/navigation.json)：{navigation['passed']}/{navigation['total']} 项通过。每次加减或单次滚轮操作只改变 0.25 级；鼠标位置为缩放锚点。选任务保留倍率，返回地区保留原视野。概览亮框显示当前窗口，点击概览可平移。",'']
+ lines += [f"- {c['name']}：{c['detail']}。" for c in navigation['checks']]
+ lines += ['','更新画面：[桌面](checks/navigation-desktop.png)、[手机双指缩放](checks/navigation-mobile.png)。','',
+ '中文名称对照：[227 个逐项名称与来源](places-zh.json)、[公开中文游戏地图](https://www.tivaprojects.com/witcher3map/)。',
+ places['method'],places['limits'],
+ '修正原来手工译名，如 Cackler Bridge 为“嘻笑者之桥”、Blackbough 为“大黑树”、Lornruk 为“孤岩”、Tesham Mutna 为“迪沙谬那”。另修正社区中文对照把 Elverum 与 Eldberg 灯塔写成同名的问题，[艾孚鲁灯塔核对](https://witcher.huijiwiki.com/wiki/艾孚鲁灯塔)。',
+ '凯尔莫罕来源旧名通过地图相对位置对应当前路标：The Morhen Eye 为堡垒、Outpost ruins 为被毁的瞭望塔、Morhen Mine dam 为铁矿、The Lake House 为湖畔小屋。没有移动这些点的坐标。',
+ '底图继续使用同一来源版本，较大地图增加原生 4、5 级细节瓦片，以 WebP 质量 88 压缩；总计 5721 个瓦片。白果园原生上限 4，其余地区 5；最多再放大半级，避免无限拉伸。',
+ '首轮发现连续点击丢失一档，已修正动画期间的目标倍率队列。双指验收使用载入页面前就启用的触摸设备模式；桌面页面载入后切换触摸模拟不能证明手机手势正常。','']
 lines += ['', '### 重点事实与来源', '', '| 核对项目 | 结论 | 依据 |', '| --- | --- | --- |']
 lines += [f"| {c['claim']} | {c['result']} | [攻略]({c['source']}) |" for c in d['meta']['factChecks']]
 lines += [

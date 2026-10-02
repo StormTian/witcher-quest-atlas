@@ -25,7 +25,7 @@
     {
       "name": "地图资源完整性",
       "status": "pass",
-      "detail": "5 regions / 601 PNG tiles, each 256 × 256"
+      "detail": "5 regions / 5721 native map tiles; full z4 and z5 coverage for the larger regions"
     },
     {
       "name": "目录交叉覆盖",
