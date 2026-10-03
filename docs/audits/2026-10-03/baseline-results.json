@@ -1,0 +1,61 @@
+{
+  "executed_at": "2026-10-03T03:10:48.888397+00:00",
+  "environment": "managed-cloud-linux",
+  "source_commit": "a7abdd955c867093d6073f07078bc7a7d08f3126",
+  "browser": "Chromium 151.0.7922.173 built on Debian GNU/Linux 13 (trixie)",
+  "checks": [
+    {
+      "script": "validate.cjs",
+      "exit_code": 0,
+      "log": "validate.cjs.log"
+    },
+    {
+      "script": "browser-validate.cjs",
+      "exit_code": 0,
+      "log": "browser-validate.cjs.log"
+    },
+    {
+      "script": "validate-landmarks.cjs",
+      "exit_code": 0,
+      "log": "validate-landmarks.cjs.log"
+    },
+    {
+      "script": "validate-navigation.cjs",
+      "exit_code": 0,
+      "log": "validate-navigation.cjs.log"
+    },
+    {
+      "script": "validate-assets.cjs",
+      "exit_code": 0,
+      "log": "validate-assets.cjs.log"
+    }
+  ],
+  "status": "pass",
+  "suite_results": {
+    "data-logic-validation.json": {
+      "status": "pass",
+      "passed": 25,
+      "total": 25
+    },
+    "browser-validation.json": {
+      "status": "pass",
+      "passed": 19,
+      "total": 19
+    },
+    "landmark-validation.json": {
+      "status": "pass",
+      "passed": 8,
+      "total": 8
+    },
+    "navigation-validation.json": {
+      "status": "pass",
+      "passed": 11,
+      "total": 11
+    },
+    "asset-report-validation.json": {
+      "status": "pass",
+      "passed": 3,
+      "total": 3
+    }
+  }
+}

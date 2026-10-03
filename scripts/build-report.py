@@ -26,6 +26,18 @@ if navigation:
  for key,filename in [('appSha256','app.js'),('navigationSha256','map-navigation.js'),('placesSha256','places-zh.json'),('styleSha256','style.css')]:
   assert navigation[key]==hashlib.sha256((root/'dist'/filename).read_bytes()).hexdigest()
 cloud=read('evidence/cloud-migration.json') if (root/'evidence/cloud-migration.json').exists() else None
+current_inputs={name:hashlib.sha256((root/'dist'/name).read_bytes()).hexdigest() for name in ['app.js','index.html','style.css','exploration.js','exploration.css','exploration.json']}
+assert browser.get('runtimeInputHashes')==current_inputs, 'Browser checks must match current runtime inputs'
+if browser.get('executionEnvironment')=='cloud-linux' and browser.get('runtimeInputHashes')==current_inputs: cloud=None
+if asset and asset.get('runtimeInputHashes')!=current_inputs: asset=None
+exploration=read('dist/exploration.json')
+exploration_data=read('evidence/exploration-data-validation.json')
+exploration_browser=read('evidence/exploration-browser-validation.json')
+assert exploration_data['status']=='pass' and exploration_browser['status']=='pass'
+for result in [exploration_data,exploration_browser]:
+ assert result['explorationSha256']==current_inputs['exploration.json'] and result['datasetSha256']==digest
+for key,name in [('appSha256','app.js'),('explorationCodeSha256','exploration.js'),('explorationStyleSha256','exploration.css')]:
+ assert exploration_browser[key]==current_inputs[name]
 places=read('dist/places-zh.json')
 summary=[
  {'name':'任务数据与规则','detail':f"{logic['passed']}/{logic['total']} 项；任务引用、地图资源、结局条件、流程前置",'status':'通过'},
@@ -34,6 +46,7 @@ summary=[
  {'name':'地图位置抽样','detail':'4 个独立坐标样例及地图裁切，校准社区坐标转换','status':'抽样一致'},
  {'name':'实机游戏验证','detail':'没有读取游戏存档或逐任务运行游戏','status':'未执行'},
 ]
+summary.insert(1,{'name':'基础探索图层','detail':f"{exploration_data['passed']+exploration_browser['passed']}/{exploration_data['total']+exploration_browser['total']} 项；70 个点位（29 魔力之所、35 告示板、6 储藏箱），来源对账、32 种图层组合、手机操作",'status':'通过'})
 if asset:summary.insert(2,{'name':'报告与资源交付','detail':f"{asset['passed']}/{asset['total']} 项；报告、下载与资源加载",'status':'通过'})
 if landmark:summary.insert(2,{'name':'地名与路标显示','detail':f"{landmark['passed']}/{landmark['total']} 项；五区 227 个路标、默认地名、缩放拖动和手机",'status':'通过'})
 if navigation:summary.insert(2,{'name':'中文地名与缩放体验','detail':f"{navigation['passed']}/{navigation['total']} 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势",'status':'通过'})
@@ -43,6 +56,13 @@ qa={'date':logic['date'],'executionEnvironment':'cloud-linux','executedAt':logic
  'limits':d['meta']['limitations'],
  'evidence':{'data':'checks/data-logic.json','browser':'checks/browser.json','assets':'checks/assets.json' if asset else None},
  'webMCP':browser['webMCP']}
+qa['automatedChecksPassed']+=exploration_data['passed']+exploration_browser['passed']
+qa['runtimeInputHashes']=current_inputs
+qa['coverage']['explorationPoints']=len(exploration['points'])
+qa['coverage']['explorationTypes']={category['id']:category['count'] for category in exploration['categories']}
+qa['exploration']={'source':'exploration.json','sourceCommit':exploration['meta']['sourceCommit'],'rawRecords':exploration['meta']['rawRecords'],'included':exploration['meta']['included'],'duplicates':exploration['meta']['duplicates'],'deferred':exploration['meta']['deferred'],'limits':exploration['meta']['limits']}
+qa['evidence']['explorationData']='checks/exploration-data.json'
+qa['evidence']['explorationBrowser']='checks/exploration-browser.json'
 if landmark:
  qa['coverage']['roadSigns']=227
  qa['evidence']['landmarks']='checks/landmarks.json'
@@ -57,6 +77,10 @@ if cloud:
  summary.insert(2,{'name':'本次云端浏览器','detail':cloud['browserBlocker'],'status':'通过' if cloud['browserStatus']=='pass' else '阻碍；未通过'})
  qa['summary']=summary
 dist=root/'dist';(dist/'checks').mkdir(exist_ok=True)
+for name,target in [('exploration-data-validation.json','exploration-data.json'),('exploration-browser-validation.json','exploration-browser.json')]:
+ shutil.copyfile(root/'evidence'/name,dist/'checks'/target)
+for name in ['exploration-desktop.png','exploration-map.png','exploration-mobile.png','exploration-mobile-layers.png']:
+ shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 for f,target in [('data-logic-validation.json','data-logic.json'),('browser-validation.json','browser.json')]:
  shutil.copyfile(root/'evidence'/f,dist/'checks'/target)
 if navigation:
@@ -74,9 +98,9 @@ for name in ['desktop-final.png','mobile-final.png','decision-final.png','mobile
 lines=[
  '# 狩魔手记：互动地图验证报告',
  '',
- f"资料与验证日期：{d['meta']['date']}。目录版本：{d['meta']['catalogVersion']}。",
+ f"任务资料日期：{d['meta']['date']}；本次验证日期：{logic['date']}。目录版本：{d['meta']['catalogVersion']}。",
  '',
- '本报告分别记录本次云端检查与历史本地资料、网页交互检查；历史结果不表示本次云端浏览器验收通过。它不等于游戏实机全量验收，也不是官方任务完整性证明。',
+ '本报告记录本次云端实际数据与浏览器检查；各项结果附执行时间与文件摘要。历史本地结果独立保留。网页检查不等于游戏实机全量验收，也不是官方任务完整性证明。',
  '',
  '## 覆盖',
  '',
@@ -85,6 +109,7 @@ lines=[
  '- 五个真实地区地图：白果园、威伦／诺维格瑞、史凯利杰、凯尔莫罕、陶森特。维吉玛王宫仅显示室内剧情任务。',
  '- 40 个重点任务的 45 个决策节点、101 个选项；尚未整理分支的任务有明确提示。',
  '- 支线范围含竞赛和昆特任务；随机遭遇、狩魔委托、寻宝不在目录范围内。',
+ '- 70 个独立探索点：29 魔力之所、35 告示板、6 储藏箱。与任务目录分开统计。',
  '',
  '## 验证结果',
  '',
@@ -127,11 +152,11 @@ lines += [
  '',
  ]
 if landmark:
- lines += ['','### 历史本地地名更新验收','',f"[逐项结果](checks/landmarks.json)：{landmark['passed']}/{landmark['total']} 项通过。227 个原有快速旅行路标现在默认显示名称，密集处的主要地名避让后用细线指回路标；可用“地名”按钮开关。",'']
+ lines += ['','### 本次云端地名更新验收','',f"[逐项结果](checks/landmarks.json)：{landmark['passed']}/{landmark['total']} 项通过。227 个原有快速旅行路标现在默认显示名称，密集处的主要地名避让后用细线指回路标；可用“地名”按钮开关。",'']
  lines += [f"- {c['name']}：{c['detail']}。" for c in landmark['checks']]
  lines += ['','更新画面：[桌面地名](checks/landmarks-desktop.png)、[手机地名](checks/landmarks-mobile.png)。19 项完整流程也已重新验收；新增地名叠加和地图操作由上述专门检查复验。','']
 if navigation:
- lines += ['','### 历史本地中文地名与缩放更新验收','',f"[逐项結果](checks/navigation.json)：{navigation['passed']}/{navigation['total']} 项通过。每次加减或单次滚轮操作只改变 0.25 级；鼠标位置为缩放锚点。选任务保留倍率，返回地区保留原视野。概览亮框显示当前窗口，点击概览可平移。",'']
+ lines += ['','### 本次云端中文地名与缩放更新验收','',f"[逐项結果](checks/navigation.json)：{navigation['passed']}/{navigation['total']} 项通过。每次加减或单次滚轮操作只改变 0.25 级；鼠标位置为缩放锚点。选任务保留倍率，返回地区保留原视野。概览亮框显示当前窗口，点击概览可平移。",'']
  lines += [f"- {c['name']}：{c['detail']}。" for c in navigation['checks']]
  lines += ['','更新画面：[桌面](checks/navigation-desktop.png)、[手机双指缩放](checks/navigation-mobile.png)。','',
  '中文名称对照：[227 个逐项名称与来源](places-zh.json)、[公开中文游戏地图](https://www.tivaprojects.com/witcher3map/)。',
@@ -140,6 +165,8 @@ if navigation:
  '凯尔莫罕来源旧名通过地图相对位置对应当前路标：The Morhen Eye 为堡垒、Outpost ruins 为被毁的瞭望塔、Morhen Mine dam 为铁矿、The Lake House 为湖畔小屋。没有移动这些点的坐标。',
  '底图继续使用同一来源版本，较大地图增加原生 4、5 级细节瓦片，以 WebP 质量 88 压缩；总计 5721 个瓦片。白果园原生上限 4，其余地区 5；最多再放大半级，避免无限拉伸。',
  '首轮发现连续点击丢失一档，已修正动画期间的目标倍率队列。双指验收使用载入页面前就启用的触摸设备模式；桌面页面载入后切换触摸模拟不能证明手机手势正常。','']
+lines += ['','### 基础探索点与图层验收','',f"[数据对账](checks/exploration-data.json)：{exploration_data['passed']}/{exploration_data['total']} 项；[浏览器操作](checks/exploration-browser.json)：{exploration_browser['passed']}/{exploration_browser['total']} 项。",'', '从 72 条冻结来源记录整理得到 70 个点位：合并陶森特鸡蛇旅馆告示板的一条重复记录；带童话世界独立场景标识、位于当前区域底图范围外的一条告示板暂缓展示。整理账目见 [探索点清单](exploration.json)。', '图层支持任务、路标和三类探索点独立开关，32 种组合均按独立地区清单检查；全隐藏后恢复先前选择。点击探索点显示用途、最近参考路标和来源。', '最近路标按游戏 XY 直线距离选择，不代表可步行到达。是否开放需要结合任务阶段和游戏内状态，未逐点实机复核。', '', '验收画面：[探索地图](checks/exploration-map.png)、[点位详情](checks/exploration-desktop.png)、[手机图层](checks/exploration-mobile-layers.png)、[手机详情](checks/exploration-mobile.png)。','']
+lines += [f"- {check['name']}：{check['detail']}。" for check in exploration_data['checks']+exploration_browser['checks']]
 lines += ['', '### 重点事实与来源', '', '| 核对项目 | 结论 | 依据 |', '| --- | --- | --- |']
 lines += [f"| {c['claim']} | {c['result']} | [攻略]({c['source']}) |" for c in d['meta']['factChecks']]
 lines += [

@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-03",
+  "round": 1,
+  "status": "pass",
+  "passed": 81,
+  "total": 81,
+  "suites": [
+    {
+      "passed": 25,
+      "total": 25,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T03:57:44.866Z",
+      "file": "data-logic-validation.json"
+    },
+    {
+      "passed": 19,
+      "total": 19,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T04:09:42.367Z",
+      "file": "browser-validation.json"
+    },
+    {
+      "passed": 8,
+      "total": 8,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T04:09:19.488Z",
+      "file": "landmark-validation.json"
+    },
+    {
+      "passed": 11,
+      "total": 11,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T04:09:38.236Z",
+      "file": "navigation-validation.json"
+    },
+    {
+      "passed": 3,
+      "total": 3,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T04:10:49.166Z",
+      "file": "asset-report-validation.json"
+    },
+    {
+      "passed": 7,
+      "total": 7,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T03:54:20.785827+00:00",
+      "file": "exploration-data-validation.json"
+    },
+    {
+      "passed": 8,
+      "total": 8,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T04:09:38.053Z",
+      "file": "exploration-browser-validation.json"
+    }
+  ]
+}

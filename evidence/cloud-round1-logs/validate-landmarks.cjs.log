@@ -1,0 +1,9 @@
+PASS 地名默认显示且主城可辨认
+PASS 五区227个路标对应原有坐标
+PASS 地名不相互遮挡且保留地图控件
+PASS 缩放拖动后仍显示对应地点
+PASS 地名开关和任务筛选彼此独立
+PASS 路标可点开且不阻挡任务标记
+PASS 手机首屏地名和开关可用
+PASS 运行与资源错误
+{"date":"2026-10-03","executionEnvironment":"cloud-linux","executedAt":"2026-10-03T04:09:19.488Z","status":"pass","checks":[{"name":"地名默认显示且主城可辨认","status":"pass","detail":"no hover needed; Novigrad, Crow’s Perch and major landmarks labeled"},{"name":"五区227个路标对应原有坐标","status":"pass","detail":"all 227 road signs use unchanged source coordinates in all 5 regions"},{"name":"地名不相互遮挡且保留地图控件","status":"pass","detail":"actual text boxes avoid each other and map title, compass, tools, legend and attribution"},{"name":"缩放拖动后仍显示对应地点","status":"pass","detail":"zoom to Corvo Bianco and physical pointer drag update labels correctly"},{"name":"地名开关和任务筛选彼此独立","status":"pass","detail":"toggle affects only places; empty quest search still leaves orientation landmarks"},{"name":"路标可点开且不阻挡任务标记","status":"pass","detail":"physical click opens a road sign popup; q37 task marker and default spoiler protection work"},{"name":"手机首屏地名和开关可用","status":"pass","detail":"390 × 844; city and major place names visible immediately, toggle works and no horizontal overflow"},{"name":"运行与资源错误","status":"pass","detail":"zero page exceptions or HTTP failures"}],"passed":8,"total":8,"datasetSha256":"2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9","appSha256":"de624f28360cd2584cccac10829ac7442b225aa5602dceffcbe7f23e6877971c","styleSha256":"8a3ab02675998d4b9dedc21c308be1b2df9df4de4bd48569a1898c7c60a98aee","pageErrors":[],"httpFailures":[]}

@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T04:14:38.225Z",
+  "checks": "Final report contains all 81 checks; exploration 15/15 and assets 3/3 render on desktop/mobile",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "pageErrors": []
+}

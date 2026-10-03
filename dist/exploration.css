@@ -1,0 +1,24 @@
+#map{z-index:0}
+#layers-dialog{width:min(380px,calc(100vw - 28px))}
+#layers-dialog .dialog-top{padding:18px 22px}
+#layers-dialog .dialog-top h2{font-size:1.375rem}
+.layers-content{padding:16px 22px 20px}
+.layers-content .fine{font-size:.875rem;line-height:1.75;color:var(--muted);margin:0 0 14px}
+.layer-option{display:flex;align-items:center;gap:12px;min-height:52px;cursor:pointer;border-bottom:1px solid var(--line);font-size:1rem}
+.layer-option input{width:18px;height:18px;accent-color:var(--gold);flex-shrink:0}
+.layer-symbol{display:inline-flex;justify-content:center;align-items:center;width:25px;font-size:1.25rem;color:var(--gold)}
+.layer-symbol.power{color:#d4b8ec}.layer-symbol.board{color:#f0ce85}.layer-symbol.stash{color:#a6d8d1}
+.layer-count{margin-left:auto;color:var(--muted);font-size:.875rem;font-variant-numeric:tabular-nums}
+.layer-actions{display:flex;gap:10px;margin:20px 0 16px}
+.layer-actions button{min-height:42px;padding:8px 14px;border:1px solid var(--line);border-radius:2px;font-size:.875rem}
+.layer-actions button:disabled{opacity:.45;cursor:default}
+.map-tools .layer-toggle{font-size:.875rem;font-weight:500;color:var(--gold)}
+#exploration-count{margin-top:4px;font-size:.875rem;color:#ddd5c1}
+.exploration-marker{display:flex;align-items:center;justify-content:center}
+.exploration-pin{display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:#242232;color:#e2c9f4;border:1.5px solid #bba1cc;border-radius:5px;box-shadow:0 1px 5px #000a;font-size:1.25rem;font-weight:700}
+.exploration-pin.board{background:#332a1e;color:#f6d991;border-color:#d2b37c}
+.exploration-pin.stash{background:#192f30;color:#b7e7df;border-color:#91bdb2;font-size:1rem}
+.exploration-pin.chosen{outline:2px solid #fff4d6;outline-offset:2px}
+.exploration-marker:focus-visible .exploration-pin{outline:2px solid #fff;outline-offset:2px}
+.legend-exploration{width:10px;height:10px;border:1px solid #bba1cc;border-radius:2px;display:inline-block;background:#55425d}
+@media(max-width:700px){#layers-dialog .dialog-top{padding:16px 18px}.layers-content{padding:14px 18px 18px}.legend{gap:9px}.map-help{bottom:98px}.map-overview{bottom:126px}#exploration-count{font-size:.8125rem}}

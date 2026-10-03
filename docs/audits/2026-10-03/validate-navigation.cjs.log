@@ -1,0 +1,12 @@
+PASS 227个地名有来源且地图无英文回退
+PASS 中文译名用独立样例核对
+PASS 加减按钮每次只改变四分之一档
+PASS 真实滚轮缩放保持鼠标下的位置
+PASS 大滚轮事件不会跨越多个倍率
+PASS 连续五次点击不会漏掉缩放
+PASS 选任务保留倍率，换区回来保留视野
+PASS 放大使用原生细节图且有上限
+PASS 概览框跟随视野且点击保留倍率
+PASS 手机小步缩放与双指手势
+PASS 地图平移边界和运行错误
+{"date":"2026-10-03","executionEnvironment":"cloud-linux","executedAt":"2026-10-03T03:10:39.538Z","status":"pass","passed":11,"total":11,"checks":[{"name":"227个地名有来源且地图无英文回退","status":"pass","detail":"all 227 road signs, marker titles, map labels and region subtitles display Chinese"},{"name":"中文译名用独立样例核对","status":"pass","detail":"8 fixed source-derived examples; no guessed Blackbough or Cackler translation, distinct Elverum lighthouse"},{"name":"加减按钮每次只改变四分之一档","status":"pass","detail":"2 → 2.25 → 2; map center drift at most 2 pixels"},{"name":"真实滚轮缩放保持鼠标下的位置","status":"pass","detail":"physical mouse wheel; quarter step, cursor anchor drift 0.64 pixels"},{"name":"大滚轮事件不会跨越多个倍率","status":"pass","detail":"a 3000-pixel wheel event still produces only one quarter step"},{"name":"连续五次点击不会漏掉缩放","status":"pass","detail":"5 physical clicks = 1.25 levels; queued zoom survives an in-progress animation"},{"name":"选任务保留倍率，换区回来保留视野","status":"pass","detail":"task focus retains 3.25 zoom; returning to Velen restores center within 3 pixels"},{"name":"放大使用原生细节图且有上限","status":"pass","detail":"native z5 WebP details load; maximum 5.5 prevents unlimited blurry enlargement"},{"name":"概览框跟随视野且点击保留倍率","status":"pass","detail":"overview rectangle shrinks on zoom; clicking overview moves the center without changing magnification"},{"name":"手机小步缩放与双指手势","status":"pass","detail":"390 × 844; quarter-step buttons and a real two-touch pinch both work without horizontal overflow"},{"name":"地图平移边界和运行错误","status":"pass","detail":"panning remains inside the map world; zero script exceptions or failed HTTP requests"}],"datasetSha256":"2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9","appSha256":"292c052af9abf749668be8054ce1b01136f261066ed0234b3daf0fb125b4f283","navigationSha256":"916d33601e6664bad56ec5f9bfe54c09a760cb5fb37e99e5c33b8c70427ad259","placesSha256":"01442feaf8d61d469ad3d00afe2e31c16ead4069d558f378a002e4f61aadf742","styleSha256":"8a3ab02675998d4b9dedc21c308be1b2df9df4de4bd48569a1898c7c60a98aee","pageErrors":[],"httpFailures":[]}

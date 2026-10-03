@@ -2,6 +2,7 @@
 
 - Keep the generated site inside `dist/`; frozen inputs under `evidence/` are read-only.
 - Preserve `.openai/hosting.json` and the existing Site identity.
+- Rebuild exploration layers with `python3 scripts/build-exploration.py`. After exploration changes run `python3 scripts/validate-exploration.py` and `node scripts/validate-exploration.cjs`; retain the duplicate/deferred ledger and stable source-key IDs.
 - Source inputs are frozen in `evidence/upstream/`. Never claim full in-game verification from data checks or browser tests.
 - Use `python3 scripts/build-data.py` followed by `python3 scripts/enrich-data.py` to rebuild the catalog. These use frozen source facts and independently authored Chinese summaries.
 - After meaningful changes, run `node scripts/validate.cjs` and the applicable browser checks. Save evidence and update `dist/validation.json` and `dist/validation-report.md`.

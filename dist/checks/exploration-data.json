@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T03:54:20.785827+00:00",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "原始记录逐条对账",
+      "status": "pass",
+      "detail": "Locked source hash; all 72 raw records accounted for, with original XY retained."
+    },
+    {
+      "name": "独立分类与地区清单",
+      "status": "pass",
+      "detail": "70 audited records; exact per-category counts independently declared for all five regions."
+    },
+    {
+      "name": "重复与独立场景处理",
+      "status": "pass",
+      "detail": "Duplicate Cockatrice Inn board merged; separate-scene candidate withheld from Toussaint."
+    },
+    {
+      "name": "独立坐标样例与区域边界",
+      "status": "pass",
+      "detail": "Five predeclared coordinate fixtures match; every point has finite coordinates in its own region."
+    },
+    {
+      "name": "稳定标识与引用",
+      "status": "pass",
+      "detail": "Unique stable source identities, separate from quest IDs; all reference landmarks resolve in the same region."
+    },
+    {
+      "name": "旧任务目录保持",
+      "status": "pass",
+      "detail": "Entire 267-quest catalog retains the independently recorded v4 fingerprint."
+    },
+    {
+      "name": "来源与精度边界",
+      "status": "pass",
+      "detail": "Every point retains frozen source provenance and unknown-availability limits; no in-game verification claimed."
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "explorationSha256": "0c72d1d022d7e30500fed600c6a66eca69538dcf62bcd8e84abd8ec7dffe1c3f",
+  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9"
+}

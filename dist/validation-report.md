@@ -1,8 +1,8 @@
 # 狩魔手记：互动地图验证报告
 
-资料与验证日期：2026-10-02。目录版本：1.0。
+任务资料日期：2026-10-02；本次验证日期：2026-10-03。目录版本：1.0。
 
-本报告分别记录本次云端检查与历史本地资料、网页交互检查；历史结果不表示本次云端浏览器验收通过。它不等于游戏实机全量验收，也不是官方任务完整性证明。
+本报告记录本次云端实际数据与浏览器检查；各项结果附执行时间与文件摘要。历史本地结果独立保留。网页检查不等于游戏实机全量验收，也不是官方任务完整性证明。
 
 ## 覆盖
 
@@ -11,6 +11,7 @@
 - 五个真实地区地图：白果园、威伦／诺维格瑞、史凯利杰、凯尔莫罕、陶森特。维吉玛王宫仅显示室内剧情任务。
 - 40 个重点任务的 45 个决策节点、101 个选项；尚未整理分支的任务有明确提示。
 - 支线范围含竞赛和昆特任务；随机遭遇、狩魔委托、寻宝不在目录范围内。
+- 70 个独立探索点：29 魔力之所、35 告示板、6 储藏箱。与任务目录分开统计。
 
 ## 验证结果
 
@@ -19,12 +20,11 @@
 | 范围 | 实际检查 | 结果 |
 | --- | --- | --- |
 | 任务数据与规则 | 25/25 项；任务引用、地图资源、结局条件、流程前置 | 通过 |
-| 本次云端资源检查 | 5752 个静态文件真实 HTTP 读取；5721 个地图图块 | 通过 |
-| 本次云端浏览器 | Playwright exists but Chromium/headless-shell is absent. playwright install chromium returned truncated/non-ZIP downloads from cdn.playwright.dev; browser launch failed before page loading. No cloud browser interaction or screenshot validation is claimed. | 阻碍；未通过 |
-| 网页实际交互 | 19/19 项；五区地图、筛选、101 个选项、剧透与手机操作 | 历史本地通过；本次云端未执行 |
-| 中文地名与缩放体验 | 11/11 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势 | 历史本地通过；本次云端未执行 |
-| 地名与路标显示 | 8/8 项；五区 227 个路标、默认地名、缩放拖动和手机 | 历史本地通过；本次云端未执行 |
-| 报告与资源交付 | 3/3 项；报告、下载与资源加载 | 历史本地通过；本次云端未执行 |
+| 基础探索图层 | 15/15 项；70 个点位（29 魔力之所、35 告示板、6 储藏箱），来源对账、32 种图层组合、手机操作 | 通过 |
+| 中文地名与缩放体验 | 11/11 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势 | 通过 |
+| 地名与路标显示 | 8/8 项；五区 227 个路标、默认地名、缩放拖动和手机 | 通过 |
+| 报告与资源交付 | 3/3 项；报告、下载与资源加载 | 通过 |
+| 网页实际交互 | 19/19 项；五区地图、筛选、101 个选项、剧透与手机操作 | 通过 |
 | 攻略事实核对 | 16 项重点核对；40 个任务／45 个节点附攻略依据 | 资料核对完成 |
 | 地图位置抽样 | 4 个独立坐标样例及地图裁切，校准社区坐标转换 | 抽样一致 |
 | 实机游戏验证 | 没有读取游戏存档或逐任务运行游戏 | 未执行 |
@@ -61,7 +61,7 @@
 
 ### 浏览器实际操作与来源
 
-[逐项结果](checks/browser.json)：19/19 项通过。执行来源：historical-local-macos，日期：2026-10-02。本次云端是否通过见上述状态。
+[逐项结果](checks/browser.json)：19/19 项通过。执行来源：cloud-linux，日期：2026-10-03。本次云端是否通过见上述状态。
 
 - 桌面初始状态与剧透保护：通过。
 - 五个地区地图实际加载：通过。
@@ -101,7 +101,7 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 数值样例用于检查坐标转换；裁切用于建筑与地标的一致性抽样。没有验证全部 149 个点的游戏内 NPC 站位。
 
 
-### 历史本地地名更新验收
+### 本次云端地名更新验收
 
 [逐项结果](checks/landmarks.json)：8/8 项通过。227 个原有快速旅行路标现在默认显示名称，密集处的主要地名避让后用细线指回路标；可用“地名”按钮开关。
 
@@ -117,14 +117,14 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 更新画面：[桌面地名](checks/landmarks-desktop.png)、[手机地名](checks/landmarks-mobile.png)。19 项完整流程也已重新验收；新增地名叠加和地图操作由上述专门检查复验。
 
 
-### 历史本地中文地名与缩放更新验收
+### 本次云端中文地名与缩放更新验收
 
 [逐项結果](checks/navigation.json)：11/11 项通过。每次加减或单次滚轮操作只改变 0.25 级；鼠标位置为缩放锚点。选任务保留倍率，返回地区保留原视野。概览亮框显示当前窗口，点击概览可平移。
 
 - 227个地名有来源且地图无英文回退：all 227 road signs, marker titles, map labels and region subtitles display Chinese。
 - 中文译名用独立样例核对：8 fixed source-derived examples; no guessed Blackbough or Cackler translation, distinct Elverum lighthouse。
 - 加减按钮每次只改变四分之一档：2 → 2.25 → 2; map center drift at most 2 pixels。
-- 真实滚轮缩放保持鼠标下的位置：physical mouse wheel; quarter step, cursor anchor drift 0.63 pixels。
+- 真实滚轮缩放保持鼠标下的位置：physical mouse wheel; quarter step, cursor anchor drift 0.64 pixels。
 - 大滚轮事件不会跨越多个倍率：a 3000-pixel wheel event still produces only one quarter step。
 - 连续五次点击不会漏掉缩放：5 physical clicks = 1.25 levels; queued zoom survives an in-progress animation。
 - 选任务保留倍率，换区回来保留视野：task focus retains 3.25 zoom; returning to Velen restores center within 3 pixels。
@@ -143,6 +143,32 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 底图继续使用同一来源版本，较大地图增加原生 4、5 级细节瓦片，以 WebP 质量 88 压缩；总计 5721 个瓦片。白果园原生上限 4，其余地区 5；最多再放大半级，避免无限拉伸。
 首轮发现连续点击丢失一档，已修正动画期间的目标倍率队列。双指验收使用载入页面前就启用的触摸设备模式；桌面页面载入后切换触摸模拟不能证明手机手势正常。
 
+
+### 基础探索点与图层验收
+
+[数据对账](checks/exploration-data.json)：7/7 项；[浏览器操作](checks/exploration-browser.json)：8/8 项。
+
+从 72 条冻结来源记录整理得到 70 个点位：合并陶森特鸡蛇旅馆告示板的一条重复记录；带童话世界独立场景标识、位于当前区域底图范围外的一条告示板暂缓展示。整理账目见 [探索点清单](exploration.json)。
+图层支持任务、路标和三类探索点独立开关，32 种组合均按独立地区清单检查；全隐藏后恢复先前选择。点击探索点显示用途、最近参考路标和来源。
+最近路标按游戏 XY 直线距离选择，不代表可步行到达。是否开放需要结合任务阶段和游戏内状态，未逐点实机复核。
+
+验收画面：[探索地图](checks/exploration-map.png)、[点位详情](checks/exploration-desktop.png)、[手机图层](checks/exploration-mobile-layers.png)、[手机详情](checks/exploration-mobile.png)。
+
+- 原始记录逐条对账：Locked source hash; all 72 raw records accounted for, with original XY retained.。
+- 独立分类与地区清单：70 audited records; exact per-category counts independently declared for all five regions.。
+- 重复与独立场景处理：Duplicate Cockatrice Inn board merged; separate-scene candidate withheld from Toussaint.。
+- 独立坐标样例与区域边界：Five predeclared coordinate fixtures match; every point has finite coordinates in its own region.。
+- 稳定标识与引用：Unique stable source identities, separate from quest IDs; all reference landmarks resolve in the same region.。
+- 旧任务目录保持：Entire 267-quest catalog retains the independently recorded v4 fingerprint.。
+- 来源与精度边界：Every point retains frozen source provenance and unknown-availability limits; no in-game verification claimed.。
+- 五区探索点与来源清单数量：White Orchard 8, Velen 29, Skellige 18, Toussaint 13, Kaer Morhen 2; no fabricated Vizima point.。
+- 32种图层组合及任务索引独立性：All 32 combinations match independently declared Velen counts; the 131-quest index remains available.。
+- 全隐藏恢复原选择并隐藏任务高亮：Restores the prior partial selection; hidden quest layers stay hidden when a quest is opened from the index.。
+- 三类点位真实点击详情与键盘操作：All three types open through real marker clicks; keyboard Enter and Space open a board; provenance and availability limits remain visible.。
+- 任务筛选与探索图层互不干扰：Empty task search and DLC filtering leave exploration and road signs intact; point selection preserves filters.。
+- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 7.0ms on this cloud Chromium; map controls have their own stacking context.。
+- 手机图层与探索详情及200%文字：390×844 touch device; layer toggles, Escape/focus return, tap-to-detail and doubled text remain usable without page overflow.。
+- 探索资源与页面异常：Zero page exceptions and zero unexpected HTTP failures across the exploration interactions.。
 
 ### 重点事实与来源
 

@@ -10,6 +10,8 @@
 
 地图默认显示 227 个快速旅行路标的位置，并显示视野内可容纳的地名。主要城镇优先显示，密集处避让后以细线指回路标。放大可以看清更多附近地名；右侧“地名”按钮可以开关，任务筛选不会隐藏路标。
 
+新增 70 个探索点：29 个魔力之所、35 个告示板、6 个储藏箱。右侧“图层”可分别开关任务、路标和三类探索点，显示当前地区数量，支持全隐藏并恢复先前选择。点击探索点查看方位、用途和来源。探索点整理与开放条件的边界保存在 `dist/exploration.json`。
+
 地图路标现在全部显示中文，按照公开游戏中文地图的中英对照核对，并修正“大黑树”“嘻笑者之桥”“孤岩”等先前的手工译名。部分来源为繁体官中，逐字转简；没有逐项对照官方简中语言文件。逐项来源和边界保存在 `dist/places-zh.json`。
 
 缩放按钮与每次滚轮操作只改变 0.25 级，滚轮保持鼠标下的位置。选任务保留当前倍率，换区回来保留原有视野。左下地区概览用亮框显示当前窗口，点击可以重新定位；手机可用双指缩放。较大地图增加原生 4、5 级细节图片，最大仅允许再放大半级。
@@ -17,6 +19,7 @@
 ## 当前覆盖与正确性
 
 - 267 个目录条目：87 主线、180 支线；149 个地图定位。
+- 70 个探索点，使用与任务不同的稳定 ID；来源候选 72 条，合并重复 1 条、暂缓独立场景 1 条。
 - 40 个关键任务有已核对分支：45 节点、101 个选项。
 - 希里与血与酒结局可按选择组合演算。
 - 地图社区坐标、地标近似定位和无独立接取点的流程任务明确区分。
@@ -38,15 +41,15 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 python3 scripts/build-data.py
 python3 scripts/enrich-data.py
 python3 scripts/build-places.py
+python3 scripts/build-exploration.py
 node scripts/validate.cjs
+python3 scripts/validate-exploration.py
 node scripts/browser-validate.cjs
 node scripts/validate-landmarks.cjs
 node scripts/validate-navigation.cjs
+node scripts/validate-exploration.cjs
 python3 scripts/build-report.py
 node scripts/validate-assets.cjs
-python3 scripts/build-report.py
-# 恢复核验与资源读取（未设 ATLAS_BASE_URL 时自行启动云端测试服务）
-python3 scripts/cloud-verify.py
 python3 scripts/build-report.py
 ```
 
@@ -60,6 +63,10 @@ python3 scripts/build-report.py
 
 - `dist/`：可部署网站、地图切片、任务数据、检查结果。
 - `scripts/build-data.py`：从冻结的社区 XML 生成基础目录与坐标。
+- `scripts/build-exploration.py`：逐条整理冻结探索点，保留稳定来源键、重复／暂缓账目与位置精度。
+- `dist/exploration.js`、`dist/exploration.css`：探索图层、分类控制与样式。
+- `scripts/validate-exploration.py`、`scripts/validate-exploration.cjs`：独立来源清单、坐标样例和实际桌面／手机图层操作。
+- `docs/map-iteration-plan.md`：BWIKI 对照盘点、分轮范围与验收门槛。
 - `scripts/enrich-data.py`：资料修正、中文摘要、来源和决策规则。
 - `dist/logic.js`：两个主干结局的组合规则。
 - `evidence/`：冻结输入、地图校准、实际测试结果与验收画面。
@@ -73,4 +80,4 @@ python3 scripts/build-report.py
 
 原始云端恢复基线：`341b240bbb598db2f5f37e4c548953b046178b4f`，5,822 个版本管理文件。历史本地验收已保存在 `evidence/history/local-2026-10-02/`；本次及后续云端结果必须明确执行环境与时间，不能把历史本地 66 项通过写为本次云端结果。
 
-本次迁移的完整源码与资源检查通过，但云端 Chromium 缺失且安装下载损坏，浏览器验收未完成。详情与失败日志见 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。
+历史迁移曾因 Chromium 缺失而未完成浏览器验收，阻碍记录保留在 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。2026-10-03 已在本云环境使用 Chromium 151 完成基线与第一轮浏览器检查，第一轮共 81/81 项通过，当前结果见 `dist/validation.json`；历史阻碍不再代表当前状态。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。

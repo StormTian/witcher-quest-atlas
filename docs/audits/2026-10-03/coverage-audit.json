@@ -1,0 +1,131 @@
+{
+  "source_commit": "a7abdd955c867093d6073f07078bc7a7d08f3126",
+  "quests": 267,
+  "quest_types": {
+    "main": 87,
+    "side": 180
+  },
+  "quests_by_region": {
+    "kaer-morhen": 13,
+    "white-orchard": 10,
+    "vizima": 2,
+    "velen": 131,
+    "skellige": 56,
+    "toussaint": 55
+  },
+  "quests_by_expansion": {
+    "base": 195,
+    "hos": 16,
+    "baw": 56
+  },
+  "position_precision": {
+    "flow": 115,
+    "landmark": 16,
+    "community": 133,
+    "unmapped": 3
+  },
+  "reviewed_tasks": 40,
+  "decision_nodes": 45,
+  "decision_options": 101,
+  "field_coverage": {
+    "predecessors": 249,
+    "requirements": 238,
+    "cutoff": 36,
+    "people": 18
+  },
+  "frozen_pin_total": 1205,
+  "frozen_pin_types": {
+    "RoadSign": 227,
+    "Merchant": 8,
+    "Whetstone": 47,
+    "PlaceOfPower": 29,
+    "NoticeBoard": 37,
+    "PlayerStash": 6,
+    "BanditCampfire": 59,
+    "BossAndTreasure": 80,
+    "TreasureHuntMappin": 115,
+    "Contraband": 64,
+    "MonsterNest": 45,
+    "RescuingTown": 34,
+    "ArmorRepairTable": 31,
+    "SpoilsOfWar": 12,
+    "Herbalist": 2,
+    "SideQuest": 116,
+    "TreasureQuest": 3,
+    "Entrance": 111,
+    "Armorer": 5,
+    "Enchant": 1,
+    "GwentPlayer": 51,
+    "GwentSeller": 14,
+    "Harbor": 33,
+    "BanditCamp": 13,
+    "DungeonCrawl": 15,
+    "MagicLamp": 1,
+    "Teleport": 1,
+    "Blacksmith": 4,
+    "MonsterQuest": 1,
+    "ChapterQuest": 13,
+    "HorseRace": 1,
+    "Hideout": 3,
+    "SignalingStake": 2,
+    "KnightErrant": 3,
+    "WineContract": 5,
+    "InfestedVineyard": 5,
+    "Plegmund": 5,
+    "MutagenDismantle": 1,
+    "AlchemyTable": 1,
+    "Bed": 1
+  },
+  "currently_rendered_road_signs": 227,
+  "frozen_non_road_sign_pins": 978,
+  "frozen_raw_quest_types": {
+    "main": 54,
+    "side": 177,
+    "contract": 35,
+    "treasure": 85,
+    "event": 42,
+    "race": 7,
+    "dlcmain": 21,
+    "endgame": 14
+  },
+  "comparison_source_raw_quest_types": {
+    "Main Quest": 91,
+    "Side Quest": 160,
+    "Contract": 41,
+    "Treasure Hunt": 57,
+    "Scavenger Hunt": 35,
+    "Gwent & The Heroes' Pursuit": 30,
+    "Chance Encounter": 44
+  },
+  "limits": [
+    "Raw frozen-source counts are candidate records, not official completeness counts. Duplicate phases and categories must be reconciled.",
+    "Source XML discovery coordinates and general map pins are different datasets and must not be blindly joined.",
+    "Unmapped total includes two global/flow quests; only The Mysterious Passenger retains a generic unresolved start description."
+  ],
+  "unmapped_quests": [
+    {
+      "id": "ciri",
+      "name": "In Ciri's Footsteps",
+      "title": "追寻希里的踪迹",
+      "region": "velen",
+      "trigger": "完成觐见后开启的调查总任务，包含威伦、诺维格瑞和史凯利杰三条线索。",
+      "location": "尚未校准接取坐标"
+    },
+    {
+      "id": "collect",
+      "name": "Gwent: Collect 'Em All",
+      "title": "昆特牌：收集所有卡牌",
+      "region": "white-orchard",
+      "trigger": "在白果园酒馆首次与学者打昆特牌时开启；这是跨地区收集任务，没有单一接取地点。",
+      "location": "尚未校准接取坐标"
+    },
+    {
+      "id": "mysterious",
+      "name": "The Mysterious Passenger",
+      "title": "神秘乘客",
+      "region": "skellige",
+      "trigger": "参照任务攻略确认接取流程。",
+      "location": "尚未校准接取坐标"
+    }
+  ]
+}

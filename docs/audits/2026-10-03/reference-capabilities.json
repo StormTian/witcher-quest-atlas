@@ -1,0 +1,56 @@
+{
+  "reference_url": "https://wiki.biligame.com/ys/原神地图工具_全地标位置点",
+  "revision": 660561,
+  "inspection": "Retrieved HTML, embedded configuration and implementation; live browser interaction blocked by certificate trust.",
+  "confirmed": {
+    "category_multiselect": {
+      "present": true,
+      "evidence_snippet": "m.count.show}}）</span></span>\n\t\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t\t<span class=\"text-small btn-small\" @click.stop=\"checkAllType(typeIndex,true)\">{{nowLanguage.listC}}</span>\n\t\t\t\t\t\t\t\t<span class=\"text-small btn-small\" @click.stop=\"checkAllType("
+    },
+    "point_marking": {
+      "present": true,
+      "evidence_snippet": "sole: \"控制台\", wikiSave: \"保存数据至Wiki\", wikiLoad: \"从wiki同步数据\", listC: \"全选\", listCl: \"全消\", pointC: \"标记\", pointAC: \"全部标记\", pointCl: \"取消\", pointACl: \"全部取消\" },\n\t{ code: \"zhTW\", name: \"繁中\", mBLanguage: \"語言\", mBPurge: \"刷新\", m"
+    },
+    "personal_mark_menu": {
+      "present": true,
+      "evidence_snippet": "mBPurge: \"刷新\", mBFullscreen: \"网页全屏\", mBCFull: \"取消全屏\", mBHide: \"全隐藏\", mTList: \"点位列表\", mTMes: \"点位信息\", mTMyark: \"我的标记\", mTConsole: \"控制台\", wikiSave: \"保存数据至Wiki\", wikiLoad: \"从wiki同步数据\", listC: \"全选\", listCl: \"全消\", pointC:"
+    },
+    "wiki_save": {
+      "present": true,
+      "evidence_snippet": ", mBCFull: \"取消全屏\", mBHide: \"全隐藏\", mTList: \"点位列表\", mTMes: \"点位信息\", mTMyark: \"我的标记\", mTConsole: \"控制台\", wikiSave: \"保存数据至Wiki\", wikiLoad: \"从wiki同步数据\", listC: \"全选\", listCl: \"全消\", pointC: \"标记\", pointAC: \"全部标记\", pointCl: \"取消\", po"
+    },
+    "wiki_sync": {
+      "present": true,
+      "evidence_snippet": "de: \"全隐藏\", mTList: \"点位列表\", mTMes: \"点位信息\", mTMyark: \"我的标记\", mTConsole: \"控制台\", wikiSave: \"保存数据至Wiki\", wikiLoad: \"从wiki同步数据\", listC: \"全选\", listCl: \"全消\", pointC: \"标记\", pointAC: \"全部标记\", pointCl: \"取消\", pointACl: \"全部取消\" },\n\t{ co"
+    },
+    "local_backup": {
+      "present": true,
+      "evidence_snippet": ";width:100%;max-width:100%;text-align:left\">先单击此处备份标记点位数据</div></center></div>\n<p><script>\nfunction exportLocalStorageKeyToTxt(key) {\n  if (!key) {\n    console.warn(\"⚠️ 请输入要导出的 localStorage 键名\");\n    return;\n  }\n\n  const value"
+    },
+    "layer_scope": {
+      "present": true,
+      "evidence_snippet": "<div><input type=\"checkbox\" @change=\"reDrawLayer()\" checked=\"checked\" v-model=\"mapSet.pointLayer\" />仅显示当前图层点位</div>\n\t\t</div>\n\t\t<div id=\"map-menu\" v-if=\"mapSet.menuShow\" :style=\"{'transform': menuOption.show==t"
+    },
+    "point_details": {
+      "present": true,
+      "evidence_snippet": "er; color: #00b6ff; position: absolute; top: 4px; right: 8px\" v-if=\"daDian.show\">编辑</div>\n\t\t\t\t\t<div id=\"pointInfo\">\n\t\t\t\t\t\t<div>请选择点位</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div v-show=\"menuOption.menuTabNav==2\">\n\t\t\t\t\t<di"
+    },
+    "fullscreen": {
+      "present": true,
+      "evidence_snippet": "},\n\t};\n};\nlet multilingualDefault = [\n\t{ code: \"zhCN\", name: \"简中\", mBLanguage: \"语言\", mBPurge: \"刷新\", mBFullscreen: \"网页全屏\", mBCFull: \"取消全屏\", mBHide: \"全隐藏\", mTList: \"点位列表\", mTMes: \"点位信息\", mTMyark: \"我的标记\", mTConsole: \"控制台\", "
+    },
+    "map_search": {
+      "present": true,
+      "evidence_snippet": ":src=\"menuOption.logo\" alt=\"\" />\n\t\t\t\t\t</div>\n\t\t\t\t\t<div style=\"width: 40%\">\n\t\t\t\t\t\t<input type=\"text\" v-model=\"menuOption.searchType\" @click=\"openDadian($event)\" />\n\t\t\t\t\t</div>\n\t\t\t\t\t<i class=\"icon-search\"></i>\n\t\t\t\t</div>\n\t\t\t\t<div cla"
+    },
+    "manual_feedback": {
+      "present": true,
+      "evidence_snippet": "el=\"nofollow\" class=\"external text\" href=\"https://message.bilibili.com/#/whisper/mid15312995\">单击此处前往B站私信原神wiki地图管理员</a>或添加QQ群：759910798反馈（请注意：此群为Wiki组统筹群，若单纯想进行游戏交流，请添加下方的玩家交流群）</li>\n<li>玩家交流群：新1群：1018709157&#160;&#"
+    }
+  },
+  "not_established": [
+    "Route planning was not found on this BWIKI page; it is an optional Witcher improvement, not a confirmed BWIKI feature.",
+    "Cloud sync controls exist in the page code; no login, save or live sync action was tested.",
+    "Historical video-guide claims do not establish present per-point video coverage."
+  ]
+}

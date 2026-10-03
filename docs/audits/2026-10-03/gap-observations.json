@@ -1,0 +1,60 @@
+{
+  "executedAt": "2026-10-03T03:14:28.649Z",
+  "environment": "managed-cloud-linux",
+  "initial": {
+    "region": "velen",
+    "type": "all",
+    "exp": "all",
+    "selected": "q67",
+    "query": "",
+    "choices": {},
+    "zoom": 2,
+    "localStorageKeys": []
+  },
+  "beforeReload": {
+    "region": "toussaint",
+    "type": "all",
+    "exp": "baw",
+    "selected": "q416",
+    "query": "",
+    "choices": {
+      "q416:0": 0
+    },
+    "zoom": 2,
+    "localStorageKeys": []
+  },
+  "afterReload": {
+    "region": "velen",
+    "type": "all",
+    "exp": "all",
+    "selected": "q67",
+    "query": "",
+    "choices": {},
+    "zoom": 2,
+    "localStorageKeys": []
+  },
+  "deepLink": {
+    "region": "velen",
+    "type": "all",
+    "exp": "all",
+    "selected": "q67",
+    "query": "",
+    "choices": {},
+    "zoom": 2,
+    "localStorageKeys": []
+  },
+  "observations": {
+    "selectionAndRegionResetOnReload": true,
+    "choicesResetOnReload": true,
+    "queryParametersIgnored": true
+  },
+  "notes": [
+    "These are observations of missing capabilities, not failed baseline regression checks.",
+    "Unrecognized query parameters are ignored; a canonical shared-link format is not yet implemented."
+  ],
+  "source_inspection": {
+    "completed_or_favorite_state": "No progress/favorite state or corresponding storage code in dist/app.js.",
+    "backup_or_restore_controls": "Existing download links export dataset/reports, not personal progress.",
+    "standalone_place_search": "Search filters quest records; road-sign markers lack a separate searchable place index."
+  }
+}
