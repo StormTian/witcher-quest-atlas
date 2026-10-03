@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T03:57:44.866Z",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "目录唯一性与范围",
+      "status": "pass",
+      "detail": "267 unique quests; 87 main, 180 side"
+    },
+    {
+      "name": "任务与决策引用完整性",
+      "status": "pass",
+      "detail": "45 nodes / 101 options, all referenced task IDs resolve"
+    },
+    {
+      "name": "坐标与流程分类",
+      "status": "pass",
+      "detail": "149 positioned tasks, 118 flow/unmapped entries; no invented coordinates"
+    },
+    {
+      "name": "独立接取点校准样例",
+      "status": "pass",
+      "detail": "4 independent numeric fixtures; corresponding XYZ map tiles present"
+    },
+    {
+      "name": "地图资源完整性",
+      "status": "pass",
+      "detail": "5 regions / 5721 native map tiles; full z4 and z5 coverage for the larger regions"
+    },
+    {
+      "name": "目录交叉覆盖",
+      "status": "pass",
+      "detail": "261 normalized catalog entries matched (split phases merged); this is not an official completeness proof"
+    },
+    {
+      "name": "希里条件：未觐见，四项全积极",
+      "status": "pass",
+      "detail": "witcher"
+    },
+    {
+      "name": "希里条件：未觐见，二比二边界",
+      "status": "pass",
+      "detail": "witcher"
+    },
+    {
+      "name": "希里条件：未觐见，仅一次积极",
+      "status": "pass",
+      "detail": "tragedy"
+    },
+    {
+      "name": "希里条件：觐见，收钱但其余全积极",
+      "status": "pass",
+      "detail": "empress"
+    },
+    {
+      "name": "希里条件：觐见，二项积极并拒绝酬金",
+      "status": "pass",
+      "detail": "empress"
+    },
+    {
+      "name": "希里条件：觐见，二项积极并收钱",
+      "status": "pass",
+      "detail": "tragedy"
+    },
+    {
+      "name": "希里条件：觐见，迪科斯彻获胜",
+      "status": "pass",
+      "detail": "witcher"
+    },
+    {
+      "name": "希里条件：觐见，拉多维德获胜",
+      "status": "pass",
+      "detail": "witcher"
+    },
+    {
+      "name": "未发生的酬金节点不计分",
+      "status": "pass",
+      "detail": "16 combinations checked"
+    },
+    {
+      "name": "血与酒条件：完整条件",
+      "status": "pass",
+      "detail": "reconcile"
+    },
+    {
+      "name": "血与酒条件：缺缎带",
+      "status": "pass",
+      "detail": "syanna-dies"
+    },
+    {
+      "name": "血与酒条件：只有缎带，缺第五人调查",
+      "status": "pass",
+      "detail": "both-die"
+    },
+    {
+      "name": "血与酒条件：缺日记",
+      "status": "pass",
+      "detail": "both-die"
+    },
+    {
+      "name": "血与酒条件：缺席安娜故事",
+      "status": "pass",
+      "detail": "both-die"
+    },
+    {
+      "name": "血与酒条件：劝解失败",
+      "status": "pass",
+      "detail": "both-die"
+    },
+    {
+      "name": "血与酒条件：暗影长者不能和解",
+      "status": "pass",
+      "detail": "both-die"
+    },
+    {
+      "name": "无效输入被拒绝",
+      "status": "pass",
+      "detail": "invalid enums and types rejected"
+    },
+    {
+      "name": "关键来源边界未丢失",
+      "status": "pass",
+      "detail": "6 high-risk facts plus correct DLC starting region and palace"
+    },
+    {
+      "name": "流程前置与失败例外的独立核对",
+      "status": "pass",
+      "detail": "12 source-derived predecessor fixtures and 3 timing/failure boundaries"
+    }
+  ],
+  "passed": 25,
+  "total": 25,
+  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9"
+}

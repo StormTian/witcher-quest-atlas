@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T05:29:46.139Z",
+  "status": "fail",
+  "checks": [
+    {
+      "name": "五区探索点与来源清单数量",
+      "status": "pass",
+      "detail": "White Orchard 8, Velen 29, Skellige 18, Toussaint 13, Kaer Morhen 2; no fabricated Vizima point."
+    },
+    {
+      "name": "32种图层组合及任务索引独立性",
+      "status": "fail",
+      "detail": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#layers-toggle')\u001b[22m\n\u001b[2m    - locator resolved to <button title=\"选择地图图层\" id=\"layers-toggle\" class=\"layer-toggle\" aria-haspopup=\"dialog\">图层</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+    },
+    {
+      "name": "全隐藏恢复原选择并隐藏任务高亮",
+      "status": "pass",
+      "detail": "Restores the prior partial selection; hidden quest layers stay hidden when a quest is opened from the index."
+    },
+    {
+      "name": "三类点位真实点击详情与键盘操作",
+      "status": "fail",
+      "detail": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.exploration-marker:has([data-point=\"p-wo-power-0edde169ea5e925f\"])')\u001b[22m\n"
+    },
+    {
+      "name": "任务筛选与探索图层互不干扰",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n1 !== 29\n"
+    },
+    {
+      "name": "地图叠加与密集区渲染耗时",
+      "status": "pass",
+      "detail": "25 real Velen renders; p95 0.2ms on this cloud Chromium; map controls have their own stacking context."
+    },
+    {
+      "name": "手机图层与探索详情及200%文字",
+      "status": "pass",
+      "detail": "390×844 touch device; layer toggles, Escape/focus return, tap-to-detail and doubled text remain usable without page overflow."
+    },
+    {
+      "name": "探索资源与页面异常",
+      "status": "pass",
+      "detail": "Zero page exceptions and zero unexpected HTTP failures across the exploration interactions."
+    }
+  ],
+  "passed": 5,
+  "total": 8,
+  "pageErrors": [],
+  "httpFailures": [],
+  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9",
+  "explorationSha256": "0c72d1d022d7e30500fed600c6a66eca69538dcf62bcd8e84abd8ec7dffe1c3f",
+  "appSha256": "01e1f7801db09051b3a6e56b140f82aa821df082b4f01ae5fd19218c5cc06ebc",
+  "explorationCodeSha256": "5b729a137893e1fb839b08d4e4642b635fb1e3c9cb7634e519b814fbf0087832",
+  "explorationStyleSha256": "90beaefa0848cbd4cfcfb54ac9210b8537a774b9825c68752926b680fbb20995"
+}

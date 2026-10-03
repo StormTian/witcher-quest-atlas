@@ -11,7 +11,7 @@ const fixtures = {'white-orchard': [6, 1, 1], velen: [8, 19, 2], skellige: [9, 8
     p.on('pageerror', error => errors.push(error.message));
     p.on('response', response => { if (response.status() >= 400) httpFailures.push({url: response.url(), status: response.status()}); });
   }
-  observe(page);
+  await page.addInitScript(() => localStorage.removeItem('witcher-atlas-progress-v1')); observe(page);
   async function fresh() { await page.goto(baseURL); await page.waitForFunction(() => window.atlas?.exploration); }
   async function check(name, fn) {
     try { checks.push({name, status: 'pass', detail: await fn()}); }
@@ -110,7 +110,7 @@ const fixtures = {'white-orchard': [6, 1, 1], velen: [8, 19, 2], skellige: [9, 8
     return `25 real Velen renders; p95 ${p95.toFixed(1)}ms on this cloud Chromium; map controls have their own stacking context.`;
   });
   await check('手机图层与探索详情及200%文字', async () => {
-    await page.close(); page = await browser.newPage({viewport: {width: 390, height: 844}, hasTouch: true, isMobile: true}); observe(page);
+    await page.close(); page = await browser.newPage({viewport: {width: 390, height: 844}, hasTouch: true, isMobile: true}); await page.addInitScript(() => localStorage.removeItem('witcher-atlas-progress-v1')); observe(page);
     await fresh(); await page.locator('#layers-toggle').click();
     assert.equal(await page.locator('#layers-dialog').isVisible(), true);
     await page.locator('[data-layer="board"]').uncheck(); assert.equal(await page.locator('.exploration-pin.board').count(), 0);

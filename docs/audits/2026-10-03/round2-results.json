@@ -1,0 +1,64 @@
+{
+  "round": 2,
+  "status": "pass",
+  "passed": 93,
+  "total": 93,
+  "suites": [
+    {
+      "file": "data-logic-validation.json",
+      "passed": 25,
+      "total": 25,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T05:32:25.134Z"
+    },
+    {
+      "file": "browser-validation.json",
+      "passed": 19,
+      "total": 19,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T05:32:30.218Z"
+    },
+    {
+      "file": "landmark-validation.json",
+      "passed": 8,
+      "total": 8,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T05:32:06.230Z"
+    },
+    {
+      "file": "navigation-validation.json",
+      "passed": 11,
+      "total": 11,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T05:32:25.041Z"
+    },
+    {
+      "file": "asset-report-validation.json",
+      "passed": 3,
+      "total": 3,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T05:36:09.315Z"
+    },
+    {
+      "file": "exploration-data-validation.json",
+      "passed": 7,
+      "total": 7,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T03:54:20.785827+00:00"
+    },
+    {
+      "file": "exploration-browser-validation.json",
+      "passed": 8,
+      "total": 8,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T05:32:24.707Z"
+    },
+    {
+      "file": "progress-validation.json",
+      "passed": 12,
+      "total": 12,
+      "executionEnvironment": "cloud-linux",
+      "executedAt": "2026-10-03T05:29:03.568Z"
+    }
+  ]
+}

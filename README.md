@@ -16,6 +16,10 @@
 
 缩放按钮与每次滚轮操作只改变 0.25 级，滚轮保持鼠标下的位置。选任务保留当前倍率，换区回来保留原有视野。左下地区概览用亮框显示当前窗口，点击可以重新定位；手机可用双指缩放。较大地图增加原生 4、5 级细节图片，最大仅允许再放大半级。
 
+完成状态和收藏可在任务／探索点详情中记录，任务索引支持“我的收藏”“已完成”和隐藏已完成。进度、筛选、地图视野与决策保存在当前浏览器；每次加载仍隐藏剧透。“进度与备份”可导出个人 JSON，选择备份后先检查并预览，再恢复；不提供账号云同步。
+
+“分享定位”只带地区与对象 ID，可直达任务或探索点，并支持浏览器前进／后退。公共任务数据下载和个人进度备份为不同入口。
+
 ## 当前覆盖与正确性
 
 - 267 个目录条目：87 主线、180 支线；149 个地图定位。
@@ -48,6 +52,7 @@ node scripts/browser-validate.cjs
 node scripts/validate-landmarks.cjs
 node scripts/validate-navigation.cjs
 node scripts/validate-exploration.cjs
+node scripts/validate-progress.cjs
 python3 scripts/build-report.py
 node scripts/validate-assets.cjs
 python3 scripts/build-report.py
@@ -80,4 +85,4 @@ python3 scripts/build-report.py
 
 原始云端恢复基线：`341b240bbb598db2f5f37e4c548953b046178b4f`，5,822 个版本管理文件。历史本地验收已保存在 `evidence/history/local-2026-10-02/`；本次及后续云端结果必须明确执行环境与时间，不能把历史本地 66 项通过写为本次云端结果。
 
-历史迁移曾因 Chromium 缺失而未完成浏览器验收，阻碍记录保留在 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。2026-10-03 已在本云环境使用 Chromium 151 完成基线与第一轮浏览器检查，第一轮共 81/81 项通过，当前结果见 `dist/validation.json`；历史阻碍不再代表当前状态。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。
+历史迁移曾因 Chromium 缺失而未完成浏览器验收，阻碍记录保留在 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。2026-10-03 已在本云环境使用 Chromium 151 完成基线与第一轮浏览器检查，第二轮共 93/93 项通过，当前结果见 `dist/validation.json`；历史阻碍不再代表当前状态。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。

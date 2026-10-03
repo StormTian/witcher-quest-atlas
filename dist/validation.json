@@ -1,7 +1,7 @@
 {
   "date": "2026-10-03",
   "executionEnvironment": "cloud-linux",
-  "executedAt": "2026-10-03T03:57:44.866Z",
+  "executedAt": "2026-10-03T05:32:25.134Z",
   "status": "pass",
   "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9",
   "summary": [
@@ -31,6 +31,11 @@
       "status": "通过"
     },
     {
+      "name": "个人进度与分享",
+      "detail": "12/12 项；完成、收藏、可靠导入导出、刷新恢复、分享与前进后退",
+      "status": "通过"
+    },
+    {
       "name": "网页实际交互",
       "detail": "19/19 项；五区地图、筛选、101 个选项、剧透与手机操作",
       "status": "通过"
@@ -51,7 +56,7 @@
       "status": "未执行"
     }
   ],
-  "automatedChecksPassed": 81,
+  "automatedChecksPassed": 93,
   "coverage": {
     "quests": 267,
     "main": 87,
@@ -83,6 +88,7 @@
     "data": "checks/data-logic.json",
     "browser": "checks/browser.json",
     "assets": "checks/assets.json",
+    "progress": "checks/progress.json",
     "explorationData": "checks/exploration-data.json",
     "explorationBrowser": "checks/exploration-browser.json",
     "landmarks": "checks/landmarks.json",
@@ -92,13 +98,25 @@
     "status": "unavailable",
     "validation": "unsupported-context, not claimed as validated"
   },
+  "personalProgress": {
+    "storage": "device-local",
+    "schemaVersion": 1,
+    "spoilersPersisted": false,
+    "backup": "JSON with validated preview and unmatched-ID ledger",
+    "shareParameters": [
+      "region",
+      "quest or point"
+    ]
+  },
   "runtimeInputHashes": {
-    "app.js": "de624f28360cd2584cccac10829ac7442b225aa5602dceffcbe7f23e6877971c",
-    "index.html": "6f183fafb4a3166d9c0e1b065607441d544c50365a737cb5a19a6b0da170b201",
+    "app.js": "01e1f7801db09051b3a6e56b140f82aa821df082b4f01ae5fd19218c5cc06ebc",
+    "index.html": "c575a48e552fa0b09efb17d612a9027b833917c636578f2c20732c65e874a0c9",
     "style.css": "8a3ab02675998d4b9dedc21c308be1b2df9df4de4bd48569a1898c7c60a98aee",
-    "exploration.js": "bbf2889f81fee086f7f5cb97e5fe2a9cc4fa3fc1eeac4feabea5c48f24161d03",
+    "exploration.js": "5b729a137893e1fb839b08d4e4642b635fb1e3c9cb7634e519b814fbf0087832",
     "exploration.css": "90beaefa0848cbd4cfcfb54ac9210b8537a774b9825c68752926b680fbb20995",
-    "exploration.json": "0c72d1d022d7e30500fed600c6a66eca69538dcf62bcd8e84abd8ec7dffe1c3f"
+    "exploration.json": "0c72d1d022d7e30500fed600c6a66eca69538dcf62bcd8e84abd8ec7dffe1c3f",
+    "progress.js": "086700504f789f900d219a84aecc38101aff577672cf7e33c0894331d081408e",
+    "progress.css": "f61485024473e3f7657dbef553440248f74a65b76bbddad59e34320293ac2fe9"
   },
   "exploration": {
     "source": "exploration.json",

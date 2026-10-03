@@ -26,7 +26,7 @@ if navigation:
  for key,filename in [('appSha256','app.js'),('navigationSha256','map-navigation.js'),('placesSha256','places-zh.json'),('styleSha256','style.css')]:
   assert navigation[key]==hashlib.sha256((root/'dist'/filename).read_bytes()).hexdigest()
 cloud=read('evidence/cloud-migration.json') if (root/'evidence/cloud-migration.json').exists() else None
-current_inputs={name:hashlib.sha256((root/'dist'/name).read_bytes()).hexdigest() for name in ['app.js','index.html','style.css','exploration.js','exploration.css','exploration.json']}
+current_inputs={name:hashlib.sha256((root/'dist'/name).read_bytes()).hexdigest() for name in ['app.js','index.html','style.css','exploration.js','exploration.css','exploration.json','progress.js','progress.css']}
 assert browser.get('runtimeInputHashes')==current_inputs, 'Browser checks must match current runtime inputs'
 if browser.get('executionEnvironment')=='cloud-linux' and browser.get('runtimeInputHashes')==current_inputs: cloud=None
 if asset and asset.get('runtimeInputHashes')!=current_inputs: asset=None
@@ -38,6 +38,10 @@ for result in [exploration_data,exploration_browser]:
  assert result['explorationSha256']==current_inputs['exploration.json'] and result['datasetSha256']==digest
 for key,name in [('appSha256','app.js'),('explorationCodeSha256','exploration.js'),('explorationStyleSha256','exploration.css')]:
  assert exploration_browser[key]==current_inputs[name]
+progress=read('evidence/progress-validation.json')
+assert progress['status']=='pass'
+for name,expected in progress['runtimeInputHashes'].items():
+ assert expected==hashlib.sha256((root/'dist'/name).read_bytes()).hexdigest(), name
 places=read('dist/places-zh.json')
 summary=[
  {'name':'任务数据与规则','detail':f"{logic['passed']}/{logic['total']} 项；任务引用、地图资源、结局条件、流程前置",'status':'通过'},
@@ -46,6 +50,7 @@ summary=[
  {'name':'地图位置抽样','detail':'4 个独立坐标样例及地图裁切，校准社区坐标转换','status':'抽样一致'},
  {'name':'实机游戏验证','detail':'没有读取游戏存档或逐任务运行游戏','status':'未执行'},
 ]
+summary.insert(1,{'name':'个人进度与分享','detail':f"{progress['passed']}/{progress['total']} 项；完成、收藏、可靠导入导出、刷新恢复、分享与前进后退",'status':'通过'})
 summary.insert(1,{'name':'基础探索图层','detail':f"{exploration_data['passed']+exploration_browser['passed']}/{exploration_data['total']+exploration_browser['total']} 项；70 个点位（29 魔力之所、35 告示板、6 储藏箱），来源对账、32 种图层组合、手机操作",'status':'通过'})
 if asset:summary.insert(2,{'name':'报告与资源交付','detail':f"{asset['passed']}/{asset['total']} 项；报告、下载与资源加载",'status':'通过'})
 if landmark:summary.insert(2,{'name':'地名与路标显示','detail':f"{landmark['passed']}/{landmark['total']} 项；五区 227 个路标、默认地名、缩放拖动和手机",'status':'通过'})
@@ -56,7 +61,9 @@ qa={'date':logic['date'],'executionEnvironment':'cloud-linux','executedAt':logic
  'limits':d['meta']['limitations'],
  'evidence':{'data':'checks/data-logic.json','browser':'checks/browser.json','assets':'checks/assets.json' if asset else None},
  'webMCP':browser['webMCP']}
-qa['automatedChecksPassed']+=exploration_data['passed']+exploration_browser['passed']
+qa['automatedChecksPassed']+=exploration_data['passed']+exploration_browser['passed']+progress['passed']
+qa['evidence']['progress']='checks/progress.json'
+qa['personalProgress']={'storage':'device-local','schemaVersion':1,'spoilersPersisted':False,'backup':'JSON with validated preview and unmatched-ID ledger','shareParameters':['region','quest or point']}
 qa['runtimeInputHashes']=current_inputs
 qa['coverage']['explorationPoints']=len(exploration['points'])
 qa['coverage']['explorationTypes']={category['id']:category['count'] for category in exploration['categories']}
@@ -77,6 +84,9 @@ if cloud:
  summary.insert(2,{'name':'本次云端浏览器','detail':cloud['browserBlocker'],'status':'通过' if cloud['browserStatus']=='pass' else '阻碍；未通过'})
  qa['summary']=summary
 dist=root/'dist';(dist/'checks').mkdir(exist_ok=True)
+shutil.copyfile(root/'evidence/progress-validation.json',dist/'checks/progress.json')
+for name in ['progress-desktop.png','progress-mobile.png','progress-mobile-detail.png']:
+ shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 for name,target in [('exploration-data-validation.json','exploration-data.json'),('exploration-browser-validation.json','exploration-browser.json')]:
  shutil.copyfile(root/'evidence'/name,dist/'checks'/target)
 for name in ['exploration-desktop.png','exploration-map.png','exploration-mobile.png','exploration-mobile-layers.png']:
@@ -167,6 +177,8 @@ if navigation:
  '首轮发现连续点击丢失一档，已修正动画期间的目标倍率队列。双指验收使用载入页面前就启用的触摸设备模式；桌面页面载入后切换触摸模拟不能证明手机手势正常。','']
 lines += ['','### 基础探索点与图层验收','',f"[数据对账](checks/exploration-data.json)：{exploration_data['passed']}/{exploration_data['total']} 项；[浏览器操作](checks/exploration-browser.json)：{exploration_browser['passed']}/{exploration_browser['total']} 项。",'', '从 72 条冻结来源记录整理得到 70 个点位：合并陶森特鸡蛇旅馆告示板的一条重复记录；带童话世界独立场景标识、位于当前区域底图范围外的一条告示板暂缓展示。整理账目见 [探索点清单](exploration.json)。', '图层支持任务、路标和三类探索点独立开关，32 种组合均按独立地区清单检查；全隐藏后恢复先前选择。点击探索点显示用途、最近参考路标和来源。', '最近路标按游戏 XY 直线距离选择，不代表可步行到达。是否开放需要结合任务阶段和游戏内状态，未逐点实机复核。', '', '验收画面：[探索地图](checks/exploration-map.png)、[点位详情](checks/exploration-desktop.png)、[手机图层](checks/exploration-mobile-layers.png)、[手机详情](checks/exploration-mobile.png)。','']
 lines += [f"- {check['name']}：{check['detail']}。" for check in exploration_data['checks']+exploration_browser['checks']]
+lines += ['', '### 个人进度、备份与定位分享', '', f"[逐项结果](checks/progress.json)：{progress['passed']}/{progress['total']} 项通过。", '', '任务与探索点可完成、收藏、按个人记录筛选及隐藏已完成。记录、地区、筛选、视野和已选决策保存在当前设备浏览器；不是读取游戏存档，也没有账号云同步。', '备份恢复先预览并验证：无效 JSON、未知备份版本、非布尔标记、危险标识和过大文件不能覆盖当前记录。未知对象和决策保持在未匹配账目中，便于后续迁移。', '分享定位只包含地区、任务或探索点 ID，不夹带个人记录或决策。刷新后仍默认隐藏剧透，前进／后退可返回对应对象；未知链接显示提示。', '浏览器禁止或损坏存储时地图可使用，明确提示保存失败，并可导出本次记录。', '', '验收画面：[备份预览与恢复](checks/progress-desktop.png)、[手机记录](checks/progress-mobile-detail.png)、[手机备份](checks/progress-mobile.png)。', '']
+lines += [f"- {check['name']}：通过。" for check in progress['checks']]
 lines += ['', '### 重点事实与来源', '', '| 核对项目 | 结论 | 依据 |', '| --- | --- | --- |']
 lines += [f"| {c['claim']} | {c['result']} | [攻略]({c['source']}) |" for c in d['meta']['factChecks']]
 lines += [

@@ -1,0 +1,13 @@
+PASS 任务完成与收藏在刷新、新标签页恢复
+PASS 任务与探索点的个人筛选及图层数量一致
+PASS 地区、筛选、视野与决策持久化且剧透默认隐藏
+PASS 个人备份导出、清空与预览恢复等价
+PASS 损坏、未知版本、恶意字段和超大备份不覆盖记录
+PASS 失效 ID 与数据版本变化保留迁移账目
+PASS 任务与探索点深链接及未知链接提示
+PASS 浏览器前进后退恢复同一对象及地区
+PASS 分享链接不泄漏完成、收藏、决策或剧透状态
+PASS 存储不可用与损坏存储不阻碍地图且有明确提示
+PASS 手机直达、记录、备份与200%文字可操作
+PASS 个人进度页面与资源无异常
+{"date":"2026-10-03","executionEnvironment":"cloud-linux","executedAt":"2026-10-03T05:29:03.568Z","status":"pass","passed":12,"total":12,"checks":[{"name":"任务完成与收藏在刷新、新标签页恢复","status":"pass"},{"name":"任务与探索点的个人筛选及图层数量一致","status":"pass"},{"name":"地区、筛选、视野与决策持久化且剧透默认隐藏","status":"pass"},{"name":"个人备份导出、清空与预览恢复等价","status":"pass"},{"name":"损坏、未知版本、恶意字段和超大备份不覆盖记录","status":"pass"},{"name":"失效 ID 与数据版本变化保留迁移账目","status":"pass"},{"name":"任务与探索点深链接及未知链接提示","status":"pass"},{"name":"浏览器前进后退恢复同一对象及地区","status":"pass"},{"name":"分享链接不泄漏完成、收藏、决策或剧透状态","status":"pass"},{"name":"存储不可用与损坏存储不阻碍地图且有明确提示","status":"pass"},{"name":"手机直达、记录、备份与200%文字可操作","status":"pass"},{"name":"个人进度页面与资源无异常","status":"pass"}],"pageErrors":[],"httpFailures":[],"runtimeInputHashes":{"app.js":"01e1f7801db09051b3a6e56b140f82aa821df082b4f01ae5fd19218c5cc06ebc","index.html":"c575a48e552fa0b09efb17d612a9027b833917c636578f2c20732c65e874a0c9","style.css":"8a3ab02675998d4b9dedc21c308be1b2df9df4de4bd48569a1898c7c60a98aee","map-navigation.js":"916d33601e6664bad56ec5f9bfe54c09a760cb5fb37e99e5c33b8c70427ad259","progress.js":"086700504f789f900d219a84aecc38101aff577672cf7e33c0894331d081408e","progress.css":"f61485024473e3f7657dbef553440248f74a65b76bbddad59e34320293ac2fe9","exploration.js":"5b729a137893e1fb839b08d4e4642b635fb1e3c9cb7634e519b814fbf0087832","exploration.css":"90beaefa0848cbd4cfcfb54ac9210b8537a774b9825c68752926b680fbb20995","exploration.json":"0c72d1d022d7e30500fed600c6a66eca69538dcf62bcd8e84abd8ec7dffe1c3f","data.json":"2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9"}}

@@ -14,3 +14,5 @@
 - This project is cloud-only. Restore its complete Git repository through Sites official workflow; reuse project_id appgprj_6abf79398ea48191a2d7262e4feca3b3. Never use the user computer, remote Mac, or Local computer access, or require their computer online.
 - Use cloud Node/Python/Playwright/Chromium and configurable runtime paths. Preserve historical local evidence separately and label every new result with actual environment and timestamp. Tool unavailability must be reported, never substituted with fake browser/game validation.
 - Do not create periodic automation or delete files from the user computer.
+
+- Personal records are explicitly device-local. Preserve the versioned backup schema, stable object/decision IDs, unmatched-record ledger, validated import preview and default spoiler protection. Run `node scripts/validate-progress.cjs` after persistence or routing changes.

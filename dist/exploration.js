@@ -1,6 +1,6 @@
 'use strict';
 window.ExplorationLayers = {
-  create({data, map, state, regionMeta, placeName, esc, questCount, onSelect, onApply}) {
+  create({data, map, state, regionMeta, placeName, esc, questCount, onSelect, onApply, isEligible = () => true, isDone = () => false}) {
     const markers = L.layerGroup().addTo(map);
     const byId = Object.fromEntries(data.points.map(point => [point.id, point]));
     const categories = Object.fromEntries(data.categories.map(category => [category.id, category]));
@@ -16,19 +16,19 @@ window.ExplorationLayers = {
     ].map(category => `<label class="layer-option"><input type="checkbox" data-layer="${category.id}" checked><span class="layer-symbol ${category.id}" aria-hidden="true">${category.symbol}</span><span>${esc(category.name)}</span><span class="layer-count" data-count-for="${category.id}"></span></label>`).join('');
 
     function visible() {
-      return data.points.filter(point => point.region === state.region && state.layers[point.type]);
+      return data.points.filter(point => point.region === state.region && state.layers[point.type] && isEligible(point));
     }
     function sync() {
       document.querySelector('#layers-region').textContent = regionMeta().title + ' · 当前地区数量';
       for (const input of options.querySelectorAll('[data-layer]')) input.checked = get(input.dataset.layer);
       document.querySelector('[data-count-for="quests"]').textContent = questCount();
-      document.querySelector('[data-count-for="landmarks"]').textContent = window.atlas.DATA.landmarks.filter(point => point.region === state.region).length;
+      document.querySelector('[data-count-for="landmarks"]').textContent = window.atlas.DATA.landmarks.filter(point => point.region === state.region && isEligible(point)).length;
       for (const category of data.categories) {
-        document.querySelector(`[data-count-for="${category.id}"]`).textContent = data.points.filter(point => point.region === state.region && point.type === category.id).length;
+        document.querySelector(`[data-count-for="${category.id}"]`).textContent = data.points.filter(point => point.region === state.region && point.type === category.id && isEligible(point)).length;
       }
       document.querySelector('#hide-layers').disabled = !keys.some(get);
       document.querySelector('#restore-layers').disabled = previous === null;
-      const total = data.points.filter(point => point.region === state.region).length;
+      const total = data.points.filter(point => point.region === state.region && isEligible(point)).length;
       document.querySelector('#exploration-count').textContent = total ? `探索点 ${visible().length} / ${total}` : '';
     }
     function render() {
@@ -40,7 +40,7 @@ window.ExplorationLayers = {
           title, keyboard: true, zIndexOffset: 500,
           icon: L.divIcon({
             className: 'exploration-marker',
-            html: `<span class="exploration-pin ${point.type}${state.selectedPoint === point.id ? ' chosen' : ''}" data-point="${esc(point.id)}"><span aria-hidden="true">${category.symbol}</span></span>`,
+            html: `<span class="exploration-pin ${point.type}${isDone(point) ? ' completed' : ''}${state.selectedPoint === point.id ? ' chosen' : ''}" data-point="${esc(point.id)}"><span aria-hidden="true">${category.symbol}</span></span>`,
             iconSize: [30, 30], iconAnchor: [15, 15],
           }),
         });

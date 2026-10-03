@@ -1,0 +1,14 @@
+.personal-filters{padding:0 20px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.personal-filters select{background:#192124;color:var(--ink);border:1px solid var(--line);padding:6px;font-size:.8125rem;max-width:130px}
+.personal-filters button{border:1px solid var(--line);padding:7px 10px;font-size:.8125rem;color:var(--gold)}
+.personal-filters .check{font-size:.8125rem}.storage-notice:not(:empty){color:#efca9e;font-size:.75rem;padding:8px 20px;line-height:1.6}
+.record-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.record-actions button{padding:8px 10px;border:1px solid #52615d;font-size:.8125rem;border-radius:3px;min-height:36px}
+.record-actions button[aria-pressed=true]{color:#eee1ba;background:#38403a;border-color:var(--gold)}
+.record-badge{font-size:.75rem;color:#b9d9c9}.quest-row.completed strong{color:#aebbb0}.map-pin.completed,.exploration-pin.completed{opacity:.58}
+.share-output{margin-top:12px}.share-output[hidden]{display:none}.share-output label{font-size:.75rem;color:var(--muted);display:block}.share-url{width:100%;background:#141b1e;border:1px solid var(--line);padding:8px;color:var(--ink);margin:6px 0;font-size:.8125rem}
+#progress-dialog{width:min(560px,calc(100vw - 28px))}.progress-content{padding:18px 22px;font-size:.875rem;line-height:1.8}.progress-content p{margin:0 0 14px}.progress-content .fine{font-size:.8125rem;color:var(--muted)}
+.progress-stats{display:grid;gap:8px;margin:12px 0 20px;padding:14px;background:#172023;border:1px solid var(--line)}
+.backup-actions{display:flex;gap:12px;flex-wrap:wrap}.backup-actions button,.import-file{padding:9px 14px;border:1px solid var(--line);color:var(--gold);cursor:pointer;min-height:40px}.import-file:focus-within{outline:2px solid var(--gold);outline-offset:3px}.import-file input{width:100%;max-width:260px;display:block;font-size:.8125rem;color:var(--muted)}
+#progress-apply{margin:12px 0}#progress-apply:disabled{opacity:.45;cursor:default}#import-feedback,#progress-status,#orphaned-records{overflow-wrap:anywhere}.save-error{color:#efca9e}
+#route-notice{position:absolute;z-index:450;top:180px;left:28px;max-width:min(300px,calc(100% - 60px));background:#202a2ef5;color:#e5c796;border:1px solid var(--line);padding:12px;font-size:.8125rem;line-height:1.6}
+@media(max-width:700px){.personal-filters{padding:0 20px 12px}.progress-content{padding:16px 18px}#route-notice{top:170px;left:12px}.record-actions{gap:6px}.record-actions button{font-size:.8125rem;padding:8px}}

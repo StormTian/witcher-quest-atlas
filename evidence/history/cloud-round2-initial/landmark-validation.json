@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T05:29:18.145Z",
+  "status": "fail",
+  "checks": [
+    {
+      "name": "地名默认显示且主城可辨认",
+      "status": "pass",
+      "detail": "no hover needed; Novigrad, Crow’s Perch and major landmarks labeled"
+    },
+    {
+      "name": "五区227个路标对应原有坐标",
+      "status": "pass",
+      "detail": "all 227 road signs use unchanged source coordinates in all 5 regions"
+    },
+    {
+      "name": "地名不相互遮挡且保留地图控件",
+      "status": "pass",
+      "detail": "actual text boxes avoid each other and map title, compass, tools, legend and attribution"
+    },
+    {
+      "name": "缩放拖动后仍显示对应地点",
+      "status": "pass",
+      "detail": "zoom to Corvo Bianco and physical pointer drag update labels correctly"
+    },
+    {
+      "name": "地名开关和任务筛选彼此独立",
+      "status": "pass",
+      "detail": "toggle affects only places; empty quest search still leaves orientation landmarks"
+    },
+    {
+      "name": "路标可点开且不阻挡任务标记",
+      "status": "pass",
+      "detail": "physical click opens a road sign popup; q37 task marker and default spoiler protection work"
+    },
+    {
+      "name": "手机首屏地名和开关可用",
+      "status": "fail",
+      "detail": "The expression evaluated to a falsy value:\n\n  assert.ok((await page.locator('.place-label').allTextContents()).includes('诺维格瑞 · 教主广场'))\n"
+    },
+    {
+      "name": "运行与资源错误",
+      "status": "pass",
+      "detail": "zero page exceptions or HTTP failures"
+    }
+  ],
+  "passed": 7,
+  "total": 8,
+  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9",
+  "appSha256": "01e1f7801db09051b3a6e56b140f82aa821df082b4f01ae5fd19218c5cc06ebc",
+  "styleSha256": "8a3ab02675998d4b9dedc21c308be1b2df9df4de4bd48569a1898c7c60a98aee",
+  "pageErrors": [],
+  "httpFailures": []
+}
