@@ -25,6 +25,7 @@ if navigation:
  assert navigation['status']=='pass' and navigation['datasetSha256']==digest
  for key,filename in [('appSha256','app.js'),('navigationSha256','map-navigation.js'),('placesSha256','places-zh.json'),('styleSha256','style.css')]:
   assert navigation[key]==hashlib.sha256((root/'dist'/filename).read_bytes()).hexdigest()
+cloud=read('evidence/cloud-migration.json') if (root/'evidence/cloud-migration.json').exists() else None
 places=read('dist/places-zh.json')
 summary=[
  {'name':'任务数据与规则','detail':f"{logic['passed']}/{logic['total']} 项；任务引用、地图资源、结局条件、流程前置",'status':'通过'},
@@ -36,7 +37,7 @@ summary=[
 if asset:summary.insert(2,{'name':'报告与资源交付','detail':f"{asset['passed']}/{asset['total']} 项；报告、下载与资源加载",'status':'通过'})
 if landmark:summary.insert(2,{'name':'地名与路标显示','detail':f"{landmark['passed']}/{landmark['total']} 项；五区 227 个路标、默认地名、缩放拖动和手机",'status':'通过'})
 if navigation:summary.insert(2,{'name':'中文地名与缩放体验','detail':f"{navigation['passed']}/{navigation['total']} 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势",'status':'通过'})
-qa={'date':d['meta']['date'],'status':'pass','datasetSha256':digest,'summary':summary,
+qa={'date':logic['date'],'executionEnvironment':'cloud-linux','executedAt':logic.get('executedAt'),'status':'partial' if cloud and cloud['browserStatus']=='blocked' else 'pass','datasetSha256':digest,'summary':summary,
  'automatedChecksPassed':logic['passed']+browser['passed']+(asset['passed'] if asset else 0)+(landmark['passed'] if landmark else 0)+(navigation['passed'] if navigation else 0),
  'coverage':{'quests':len(d['quests']),'main':87,'side':180,'positioned':149,'communityCoordinates':133,'landmarkAnchors':16,'flowOrUnmapped':118,'reviewedBranchTasks':40,'decisionNodes':45,'decisionOptions':101},
  'limits':d['meta']['limitations'],
@@ -47,6 +48,14 @@ if landmark:
  qa['evidence']['landmarks']='checks/landmarks.json'
 if navigation:qa['evidence']['navigation']='checks/navigation.json'
 qa['localization']={'roadSigns':len(places['entries']),'englishFallbacks':0,'method':places['method'],'limits':places['limits'],'source':'places-zh.json'}
+if cloud:
+ qa['cloudMigration']=cloud
+ if cloud['browserStatus']!='pass': qa['automatedChecksPassed']=logic['passed']
+ for row in summary:
+  if row['status']=='通过' and row['name']!='任务数据与规则' and cloud['browserStatus']!='pass': row['status']='历史本地通过；本次云端未执行'
+ summary.insert(1,{'name':'本次云端资源检查','detail':f"{cloud['assetsFetched']} 个静态文件真实 HTTP 读取；{cloud['mapTiles']} 个地图图块",'status':'通过'})
+ summary.insert(2,{'name':'本次云端浏览器','detail':cloud['browserBlocker'],'status':'通过' if cloud['browserStatus']=='pass' else '阻碍；未通过'})
+ qa['summary']=summary
 dist=root/'dist';(dist/'checks').mkdir(exist_ok=True)
 for f,target in [('data-logic-validation.json','data-logic.json'),('browser-validation.json','browser.json')]:
  shutil.copyfile(root/'evidence'/f,dist/'checks'/target)
@@ -67,7 +76,7 @@ lines=[
  '',
  f"资料与验证日期：{d['meta']['date']}。目录版本：{d['meta']['catalogVersion']}。",
  '',
- '本报告证明所列资料检查与网页交互检查已经执行并通过。它不等于游戏实机全量验收，也不是官方任务完整性证明。',
+ '本报告分别记录本次云端检查与历史本地资料、网页交互检查；历史结果不表示本次云端浏览器验收通过。它不等于游戏实机全量验收，也不是官方任务完整性证明。',
  '',
  '## 覆盖',
  '',
@@ -78,6 +87,8 @@ lines=[
  '- 支线范围含竞赛和昆特任务；随机遭遇、狩魔委托、寻宝不在目录范围内。',
  '',
  '## 验证结果',
+ '',
+ f"本次云端检查日期：{logic['date']}。历史本地 66 项验收保存在源码 evidence/history/local-2026-10-02/，不计为本次云端通过。云端浏览器状态见下表。",
  '',
  '| 范围 | 实际检查 | 结果 |',
  '| --- | --- | --- |',
@@ -91,9 +102,9 @@ lines += [
 lines += [f"- {c['name']}：{c['detail']}。" for c in logic['checks']]
 lines += [
  '',
- '### 浏览器实际操作',
+ '### 浏览器实际操作与来源',
  '',
- f"[逐项结果](checks/browser.json)：{browser['passed']}/{browser['total']} 项通过。在 Google Chrome 中实际加载页面并执行操作。",'']
+ f"[逐项结果](checks/browser.json)：{browser['passed']}/{browser['total']} 项通过。执行来源：{browser.get('executionEnvironment','historical-local')}，日期：{browser['date']}。本次云端是否通过见上述状态。",'']
 lines += [f"- {c['name']}：通过。" for c in browser['checks']]
 lines += [
  '',
@@ -116,11 +127,11 @@ lines += [
  '',
  ]
 if landmark:
- lines += ['','### 本次地名更新验收','',f"[逐项结果](checks/landmarks.json)：{landmark['passed']}/{landmark['total']} 项通过。227 个原有快速旅行路标现在默认显示名称，密集处的主要地名避让后用细线指回路标；可用“地名”按钮开关。",'']
+ lines += ['','### 历史本地地名更新验收','',f"[逐项结果](checks/landmarks.json)：{landmark['passed']}/{landmark['total']} 项通过。227 个原有快速旅行路标现在默认显示名称，密集处的主要地名避让后用细线指回路标；可用“地名”按钮开关。",'']
  lines += [f"- {c['name']}：{c['detail']}。" for c in landmark['checks']]
  lines += ['','更新画面：[桌面地名](checks/landmarks-desktop.png)、[手机地名](checks/landmarks-mobile.png)。19 项完整流程也已重新验收；新增地名叠加和地图操作由上述专门检查复验。','']
 if navigation:
- lines += ['','### 中文地名与缩放更新验收','',f"[逐项結果](checks/navigation.json)：{navigation['passed']}/{navigation['total']} 项通过。每次加减或单次滚轮操作只改变 0.25 级；鼠标位置为缩放锚点。选任务保留倍率，返回地区保留原视野。概览亮框显示当前窗口，点击概览可平移。",'']
+ lines += ['','### 历史本地中文地名与缩放更新验收','',f"[逐项結果](checks/navigation.json)：{navigation['passed']}/{navigation['total']} 项通过。每次加减或单次滚轮操作只改变 0.25 级；鼠标位置为缩放锚点。选任务保留倍率，返回地区保留原视野。概览亮框显示当前窗口，点击概览可平移。",'']
  lines += [f"- {c['name']}：{c['detail']}。" for c in navigation['checks']]
  lines += ['','更新画面：[桌面](checks/navigation-desktop.png)、[手机双指缩放](checks/navigation-mobile.png)。','',
  '中文名称对照：[227 个逐项名称与来源](places-zh.json)、[公开中文游戏地图](https://www.tivaprojects.com/witcher3map/)。',
@@ -138,13 +149,13 @@ lines += [
  ]+[f"- {s}" for s in d['meta']['corrections']]
 lines += [
  '- “为祖国”前置保留 Wiki 关于特定阶段失败的记录；“以眼还眼”需到薇丝战斗、“瑞达尼亚的头号要犯”需取得抛光水晶。“致命阴谋”仍须完成，并需在“显而易见”中交换恩希尔情报。[详细依据](https://witcher.fandom.com/wiki/Reason_of_State)。',
- '- 初轮缩放检查在地图动画结束前读取状态，产生一次误报。改为等待动画完成后复测，缩放、拖动和复位均通过。失败画面保存在本地 evidence/failure-5.png。',
+ '- 初轮缩放检查在地图动画结束前读取状态，产生一次误报。改为等待动画完成后复测，缩放、拖动和复位均通过。失败画面保存在历史本地证据 evidence/history/local-2026-10-02/failure-5.png。',
  '',
  '## 可重复核验',
  '',
  f"最终任务数据 SHA-256：`{digest}`。",
  '',
- '地图／社区数据来源锁定为 Witcher3MapViewer commit `fb674dbff7df087d0a45f9b3938ba6d5317295af`。来源 XML 与地图清单在源码项目 evidence/ 中保留；可重新生成任务数据，执行数据检查，并在本地服务中重跑浏览器操作。',
+ '地图／社区数据来源锁定为 Witcher3MapViewer commit `fb674dbff7df087d0a45f9b3938ba6d5317295af`。来源 XML 与地图清单在源码项目 evidence/ 中保留；可重新生成任务数据，执行数据检查，并在云端测试服务中重跑浏览器操作。',
  '',
  '浏览器检查按照页面自己的选项数据逐一点击，能发现渲染、引用与条件解锁故障；它不是独立证明全部中文后果文本正确的方式。后果的事实核对依靠每节点攻略链接，两个结局规则另使用预先声明的边界样例检查。',
  '',
@@ -164,4 +175,4 @@ lines += [
  '游戏地图与游戏内容版权归 CD PROJEKT RED 所有。本工具是非官方个人研究项目；未发现所用地图仓库的独立许可声明，因此不把游戏地图宣称为可任意再分发的开源资源。Leaflet 1.9.4 为 BSD-2-Clause。中文摘要与交互界面独立编写，来源保留供复核。',
  ]
 (dist/'validation-report.md').write_text('\n'.join(lines)+'\n')
-print(json.dumps({'status':'pass','automatedChecks':qa['automatedChecksPassed'],'datasetSha256':digest}))
+print(json.dumps({'status':qa['status'],'automatedChecks':qa['automatedChecksPassed'],'datasetSha256':digest}))

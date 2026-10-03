@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-02",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "桌面初始状态与剧透保护",
+      "status": "pass",
+      "detail": "1440 × 900; plot outcomes absent until revealed"
+    },
+    {
+      "name": "五个地区地图实际加载",
+      "status": "pass",
+      "detail": "5 region views loaded their own local tiles"
+    },
+    {
+      "name": "王宫不显示虚构地图",
+      "status": "pass",
+      "detail": "2 story quests; geographic map suppressed"
+    },
+    {
+      "name": "点击真实地图标记打开任务",
+      "status": "pass",
+      "detail": "actual Leaflet marker -> quest q37"
+    },
+    {
+      "name": "缩放、拖动与地区复位",
+      "status": "pass",
+      "detail": "zoom controls, pointer drag and fit-region reset; observed after animation completion"
+    },
+    {
+      "name": "中文、英文和人物跨地区搜索",
+      "status": "pass",
+      "detail": "search and empty state verified"
+    },
+    {
+      "name": "主线、支线、资料片与分支筛选",
+      "status": "pass",
+      "detail": "87 main / 180 side / expansion and 40 decision-rich tasks"
+    },
+    {
+      "name": "仅展开本任务剧透，其他任务仍隐藏",
+      "status": "pass",
+      "detail": "local reveal remains local; linked task and doll consequence correct"
+    },
+    {
+      "name": "条件分支随前序选项解锁或清空",
+      "status": "pass",
+      "detail": "Emhyr payment and Professor routes enforce their dependencies"
+    },
+    {
+      "name": "全部101个分支选项实际点击",
+      "status": "pass",
+      "detail": "101 clicks rendered the expected authored outcome and task references"
+    },
+    {
+      "name": "希里结局演算的关键边界",
+      "status": "pass",
+      "detail": "2/4, 2/5, 3/5 and war condition all produce the correct documented result"
+    },
+    {
+      "name": "血与酒结局演算不会把缎带当作和解",
+      "status": "pass",
+      "detail": "ribbon, missing investigation and Elder route are distinguished"
+    },
+    {
+      "name": "关闭全局剧透清空所有局部展开",
+      "status": "pass",
+      "detail": "all local reveal states cleared"
+    },
+    {
+      "name": "键盘访问与快捷搜索",
+      "status": "pass",
+      "detail": "/ focuses search; visible controls carry accessible labels"
+    },
+    {
+      "name": "1280 × 720 与200%文字放大",
+      "status": "pass",
+      "detail": "responsive desktop and rem-based text resizing without page overflow"
+    },
+    {
+      "name": "手机首屏与地图",
+      "status": "pass",
+      "detail": "390 × 844; map begins immediately, no horizontal page overflow"
+    },
+    {
+      "name": "手机任务索引、详情与关闭",
+      "status": "pass",
+      "detail": "list -> selection -> reveal -> consequence -> close works on mobile"
+    },
+    {
+      "name": "验证窗口、资料来源与可检查地图证据",
+      "status": "pass",
+      "detail": "mobile dialog closes, 16 fact checks and 4 map crops inspectable"
+    },
+    {
+      "name": "页面运行与资源错误检查",
+      "status": "pass",
+      "detail": "0 page exceptions; 0 unexpected HTTP failures"
+    }
+  ],
+  "passed": 19,
+  "total": 19,
+  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9",
+  "pageErrors": [],
+  "badResponses": [],
+  "webMCP": {
+    "status": "unavailable",
+    "validation": "unsupported-context, not claimed as validated"
+  },
+  "viewports": [
+    "1440×900",
+    "1280×720",
+    "390×844"
+  ],
+  "screenshots": [
+    "decision-final.png",
+    "desktop-1280.png",
+    "desktop-audit.png",
+    "desktop-final.png",
+    "landmarks-desktop.png",
+    "landmarks-failure-6.png",
+    "landmarks-mobile.png",
+    "map-kaer-morhen.png",
+    "map-skellige.png",
+    "map-toussaint.png",
+    "map-velen.png",
+    "map-white-orchard.png",
+    "mobile-audit.png",
+    "mobile-decision.png",
+    "mobile-final.png",
+    "navigation-desktop.png",
+    "navigation-failure-10.png",
+    "navigation-failure-6.png",
+    "navigation-failure-9.png",
+    "navigation-mobile.png",
+    "text-200.png"
+  ]
+}

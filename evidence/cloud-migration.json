@@ -1,0 +1,47 @@
+{
+  "browserAttempts": [
+    {
+      "script": "browser-validate.cjs",
+      "exitCode": 1,
+      "log": "evidence/cloud-logs/browser-validate.cjs.log"
+    },
+    {
+      "script": "validate-landmarks.cjs",
+      "exitCode": 1,
+      "log": "evidence/cloud-logs/validate-landmarks.cjs.log"
+    },
+    {
+      "script": "validate-navigation.cjs",
+      "exitCode": 1,
+      "log": "evidence/cloud-logs/validate-navigation.cjs.log"
+    },
+    {
+      "script": "validate-assets.cjs",
+      "exitCode": 1,
+      "log": "evidence/cloud-logs/validate-assets.cjs.log"
+    }
+  ],
+  "date": "2026-10-03T00:54:46.632142+00:00",
+  "executionEnvironment": "cloud-linux",
+  "originalCommit": "341b240bbb598db2f5f37e4c548953b046178b4f",
+  "originalTrackedFiles": 5822,
+  "gitHistoryCommits": 17,
+  "gitFsck": "pass",
+  "assetsFetched": 5752,
+  "mapTiles": 5721,
+  "frozenSourceHashesVerified": {
+    "Witcher3MapViewer/Settings.xml": "3884c256aaaedfc26a0bf223ba858eb35fe390ab1058ffe3f0e55a89d1af0a38",
+    "Witcher3MapViewer/MapPins.xml": "2ecb73a3b14e1a47383c66e959ff0f1518f5918e7163f689aa8f790ae79f776e",
+    "Witcher3MapViewer/Quests.xml": "137bfc21a1eaff1fc3a89a75f60a3dfac2691562259077e795fcdaafd85dbd65"
+  },
+  "browserStatus": "blocked",
+  "browserBlocker": "Playwright exists but Chromium/headless-shell is absent. playwright install chromium returned truncated/non-ZIP downloads from cdn.playwright.dev; browser launch failed before page loading. No cloud browser interaction or screenshot validation is claimed.",
+  "historicalLocalChecks": 66,
+  "cloudDataChecksPassed": 25,
+  "gameVerification": "not executed",
+  "limits": [
+    "227 Chinese labels are public bilingual game-map translations, not individually verified official simplified Chinese strings.",
+    "Full tracked source recovered; original MBTiles databases are not tracked. Existing 5721 tiles are present; exporting additional tiles requires authorized original MBTiles with recorded hashes.",
+    "No user computer, remote Mac or Local computer access used."
+  ]
+}

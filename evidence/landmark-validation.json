@@ -49,5 +49,6 @@
   "appSha256": "292c052af9abf749668be8054ce1b01136f261066ed0234b3daf0fb125b4f283",
   "styleSha256": "8a3ab02675998d4b9dedc21c308be1b2df9df4de4bd48569a1898c7c60a98aee",
   "pageErrors": [],
-  "httpFailures": []
+  "httpFailures": [],
+  "executionEnvironment": "historical-local-macos"
 }

@@ -20,5 +20,6 @@
   ],
   "passed": 3,
   "total": 3,
-  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9"
+  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9",
+  "executionEnvironment": "historical-local-macos"
 }

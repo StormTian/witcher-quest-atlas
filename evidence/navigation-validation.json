@@ -66,5 +66,6 @@
   "placesSha256": "01442feaf8d61d469ad3d00afe2e31c16ead4069d558f378a002e4f61aadf742",
   "styleSha256": "8a3ab02675998d4b9dedc21c308be1b2df9df4de4bd48569a1898c7c60a98aee",
   "pageErrors": [],
-  "httpFailures": []
+  "httpFailures": [],
+  "executionEnvironment": "historical-local-macos"
 }

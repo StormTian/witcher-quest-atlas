@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-02",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "报告和下载文件可访问",
+      "status": "pass",
+      "detail": "6 published report/data files return 200; final dataset fingerprint matches"
+    },
+    {
+      "name": "部署资源全部实际返回",
+      "status": "pass",
+      "detail": "5752 static files fetched successfully, including all 5721 map tiles"
+    },
+    {
+      "name": "完整验证窗口可在桌面与手机操作",
+      "status": "pass",
+      "detail": "desktop and mobile audit shows completed results, loaded images and download links; zero resource or page errors"
+    }
+  ],
+  "passed": 3,
+  "total": 3,
+  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9"
+}

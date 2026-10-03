@@ -134,5 +134,6 @@
     "navigation-failure-9.png",
     "navigation-mobile.png",
     "text-200.png"
-  ]
+  ],
+  "executionEnvironment": "historical-local-macos"
 }

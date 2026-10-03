@@ -4,7 +4,7 @@
 
 ## 使用
 
-网站：https://witcher-quest-atlas.stormberich.chatgpt.site （默认仅拥有者可访问）。
+网站：https://witcher-quest-atlas.stormberich.chatgpt.site （保持现有公开访问权限）。
 
 手机底部可切换地图、任务索引和详情。右上角“资料与验证”提供实际检查结果、攻略链接、地图样例和下载。
 
@@ -24,7 +24,7 @@
 
 详见 [验证报告](dist/validation-report.md) 和 [可检查结果](dist/validation.json)。资料核对、网页测试与游戏实机验证是不同层次，本项目没有执行逐任务实机验证。随机遭遇、狩魔委托和寻宝不在目录范围。
 
-## 本地运行与修改
+## 云端维护与验证
 
 这是无构建依赖的静态网站，不需要安装前端框架。
 
@@ -32,7 +32,7 @@
 python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 ```
 
-打开 http://127.0.0.1:8765/ 。浏览器直接打开 HTML 文件可能无法读取 JSON，请使用本地服务。
+打开 http://127.0.0.1:8765/ 。浏览器直接打开 HTML 文件可能无法读取 JSON，请使用云端测试服务。
 
 ```sh
 python3 scripts/build-data.py
@@ -45,9 +45,14 @@ node scripts/validate-navigation.cjs
 python3 scripts/build-report.py
 node scripts/validate-assets.cjs
 python3 scripts/build-report.py
+# 恢复核验与资源读取（未设 ATLAS_BASE_URL 时自行启动云端测试服务）
+python3 scripts/cloud-verify.py
+python3 scripts/build-report.py
 ```
 
-浏览器检查使用 Codex 随附 Playwright 和 macOS 上已安装的 Google Chrome，路径在检查脚本顶部；在其他机器上可替换为自己的 Playwright 与浏览器路径。先启动上述本地服务。`validate-assets.cjs` 检查最终报告、下载与页面资源。不得在检查未执行或失败时生成通过报告。
+后续修改、检查、提交和发布只在云端执行，不依赖用户电脑在线，不使用远程 Mac 或 Local computer access。此会话是云端接续入口。用 Sites 官方 Site workflow 恢复完整源码到云端空目录，复用 `.openai/hosting.json` 中项目 ID；短期凭证只经隐藏标准输入传递，禁止写入文件或日志。
+
+浏览器脚本自动使用云端 Node 的 Playwright 或 `CODEX_PRIMARY_RUNTIME_NODE_MODULES` 中的 Playwright，默认使用其 Chromium。可通过 `PLAYWRIGHT_MODULE_PATH`、`CHROMIUM_EXECUTABLE_PATH`、`ATLAS_BASE_URL` 配置。先在云端启动上述静态测试服务，回环地址仅指云端容器。缺少工具时记录阻碍，不回落到用户电脑。`validate-assets.cjs` 检查最终报告、下载与页面资源。不得在检查未执行或失败时生成通过报告。
 
 中文地名生成使用 `evidence/localization/tiva/` 中冻结的中英对照和繁转简副本，不依赖在线接口。新增细节图片可用 Pillow 重新导出：`python3 scripts/export-detail-tiles.py --source /path/to/Witcher3MapViewer/Witcher3MapViewer/Maps`。来源必须为上述固定版本，脚本核对 MBTiles 文件指纹后才导出。
 
@@ -65,3 +70,7 @@ python3 scripts/build-report.py
 ## 来源与版权
 
 地图与基础坐标：Witcher3MapViewer commit `fb674dbff7df087d0a45f9b3938ba6d5317295af`；任务目录与攻略交叉对照见网站报告。Leaflet 1.9.4 使用 BSD-2-Clause。游戏资产 © CD PROJEKT RED。此非官方个人研究工具没有将游戏地图授予新许可。
+
+原始云端恢复基线：`341b240bbb598db2f5f37e4c548953b046178b4f`，5,822 个版本管理文件。历史本地验收已保存在 `evidence/history/local-2026-10-02/`；本次及后续云端结果必须明确执行环境与时间，不能把历史本地 66 项通过写为本次云端结果。
+
+本次迁移的完整源码与资源检查通过，但云端 Chromium 缺失且安装下载损坏，浏览器验收未完成。详情与失败日志见 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。
