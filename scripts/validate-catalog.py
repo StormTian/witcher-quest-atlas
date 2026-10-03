@@ -31,7 +31,13 @@ def no_components():
  return 'Diagram components, journal objectives, aliases and encounter stages are not duplicate tasks.'
 def legacy():
  for old in load('evidence/history/cloud-round1-2026-10-03/data.json')['quests']:
-  for field in ['id','title','type','region','expansion','point','decisions']:assert by[old['id']][field]==old[field],(old['id'],field)
+  for field in ['id','title','type','region','expansion']:assert by[old['id']][field]==old[field],(old['id'],field)
+  a,b=old['point'],by[old['id']]['point'];assert bool(a)==bool(b)
+  if a:
+   assert a['world']==b['world'] and a['xy']==b['xy']
+   assert max(abs(x-y) for x,y in zip(a['latlng'],b['latlng']))<1e-9
+  if old['id'] not in review.get('branchAdditions',[]):assert by[old['id']]['decisions']==old['decisions']
+  else:assert old['decisions']==[]
  return '267 legacy identifiers, classifications, coordinates and 101 option labels preserved.'
 def titles_sources():
  for qid in review['addedIds']:

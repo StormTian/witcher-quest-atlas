@@ -1,7 +1,7 @@
 {
   "date": "2026-10-03",
   "executionEnvironment": "cloud-linux",
-  "executedAt": "2026-10-03T06:04:57.560Z",
+  "executedAt": "2026-10-03T06:43:17.331Z",
   "status": "pass",
   "checks": [
     {
@@ -12,7 +12,7 @@
     {
       "name": "任务与决策引用完整性",
       "status": "pass",
-      "detail": "45 nodes / 101 options, all task references resolve"
+      "detail": "48 nodes / 108 options, all task references resolve"
     },
     {
       "name": "坐标与流程分类",
@@ -132,5 +132,5 @@
   ],
   "passed": 25,
   "total": 25,
-  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3"
+  "datasetSha256": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246"
 }

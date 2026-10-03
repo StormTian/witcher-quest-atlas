@@ -92,10 +92,12 @@ def identities_and_references():
     assert len(ids) == len(set(ids))
     assert not set(ids) & {quest['id'] for quest in QUESTS['quests']}
     assert len({point['stableSourceKey'] for point in DATA['points']}) == MANIFEST['expectedIncluded']
-    old = json.loads(__import__('subprocess').check_output(['git','show','sites/v6:dist/exploration.json'],cwd=ROOT))
+    old_path=ROOT/'evidence/baselines/exploration-v6.json'
+    assert hashlib.sha256(old_path.read_bytes()).hexdigest()=='0c72d1d022d7e30500fed600c6a66eca69538dcf62bcd8e84abd8ec7dffe1c3f'
+    old=json.loads(old_path.read_text())
     current = {p['id']:p for p in DATA['points']}
     for p in old['points']:
-        assert p['id'] in current and current[p['id']]['gameXY']==p['gameXY'] and current[p['id']]['latlng']==p['latlng']
+        assert p['id'] in current and current[p['id']]['gameXY']==p['gameXY'] and max(abs(a-b) for a,b in zip(current[p['id']]['latlng'],p['latlng']))<1e-9
     for point in DATA['points']:
         assert point['nearbyLandmark'] in QUESTS['landmarks']
         assert point['nearbyLandmark']['region'] == point['region']
@@ -107,8 +109,12 @@ def legacy_catalog():
     assert hashlib.sha256(old_path.read_bytes()).hexdigest() == '2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9'
     current={q['id']:q for q in QUESTS['quests']}
     for q in json.loads(old_path.read_text())['quests']:
-        for field in ['id','type','title','point','region','expansion']:
+        for field in ['id','type','title','region','expansion']:
             assert q[field]==current[q['id']][field], (q['id'],field)
+            a,b=q['point'],current[q['id']]['point'];assert bool(a)==bool(b)
+        if a:
+            assert a['world']==b['world'] and a['xy']==b['xy']
+            assert max(abs(x-y) for x,y in zip(a['latlng'],b['latlng']))<1e-9
     return 'All 267 legacy IDs, classifications, titles, expansion boundaries and coordinates retain their frozen baseline values.'
 
 

@@ -25,7 +25,9 @@ if navigation:
  for key,filename in [('appSha256','app.js'),('navigationSha256','map-navigation.js'),('placesSha256','places-zh.json'),('styleSha256','style.css')]:
   assert navigation[key]==hashlib.sha256((root/'dist'/filename).read_bytes()).hexdigest()
 cloud=read('evidence/cloud-migration.json') if (root/'evidence/cloud-migration.json').exists() else None
-current_inputs={name:hashlib.sha256((root/'dist'/name).read_bytes()).hexdigest() for name in ['app.js','index.html','style.css','exploration.js','exploration.css','exploration.json','progress.js','progress.css']}
+current_inputs={name:hashlib.sha256((root/'dist'/name).read_bytes()).hexdigest() for name in read('scripts/runtime-inputs.json')}
+for result in [landmark,navigation]:
+ if result: assert result.get('runtimeInputHashes')==current_inputs
 assert browser.get('runtimeInputHashes')==current_inputs, 'Browser checks must match current runtime inputs'
 if browser.get('executionEnvironment')=='cloud-linux' and browser.get('runtimeInputHashes')==current_inputs: cloud=None
 if asset and asset.get('runtimeInputHashes')!=current_inputs: asset=None
@@ -39,6 +41,7 @@ for key,name in [('appSha256','app.js'),('explorationCodeSha256','exploration.js
  assert exploration_browser[key]==current_inputs[name]
 progress=read('evidence/progress-validation.json')
 assert progress['status']=='pass'
+assert progress['runtimeInputHashes']==current_inputs
 for name,expected in progress['runtimeInputHashes'].items():
  assert expected==hashlib.sha256((root/'dist'/name).read_bytes()).hexdigest(), name
 places=read('dist/places-zh.json')
@@ -68,6 +71,14 @@ for name,expected in catalog_browser['runtimeInputHashes'].items(): assert expec
 summary.insert(1,{'name':'扩充目录与服务点','detail':f"{catalog_data['passed']+catalog_browser['passed']}/{catalog_data['total']+catalog_browser['total']} 项；428 条目录、615 点位、来源归并、六类筛选、密集点与旧备份",'status':'通过'})
 qa['automatedChecksPassed']+=catalog_data['passed']+catalog_browser['passed']
 qa['evidence'].update(catalogData='checks/catalog-data.json',catalogBrowser='checks/catalog-browser.json')
+guidance=read('dist/guidance.json');guidance_data=read('evidence/guidance-validation.json');guidance_browser=read('evidence/guidance-browser-validation.json')
+for result in [guidance_data,guidance_browser]:
+ assert result['status']=='pass' and result['runtimeInputHashes']==current_inputs
+qa['automatedChecksPassed']+=guidance_data['passed']+guidance_browser['passed']
+qa['evidence'].update(guidanceData='checks/guidance-data.json',guidanceBrowser='checks/guidance-browser.json')
+summary.insert(1,{'name':'防漏清单与条件联动','detail':f"{guidance_data['passed']+guidance_browser['passed']}/{guidance_data['total']+guidance_browser['total']} 项；43 条阶段提醒、未知条件、失败例外、路线互斥、备份与逐任务剧透",'status':'通过'})
+qa['coverage'].update(stageReminders=len(guidance['entries']),guidanceRules=len(guidance['rules']))
+qa['gameStateRecords']={'storage':'device-local','default':'unknown','personalDoneIsGameSuccess':False,'backupSchemaVersion':1,'source':'guidance.json'}
 qa['personalProgress']={'storage':'device-local','schemaVersion':1,'spoilersPersisted':False,'backup':'JSON with validated preview and unmatched-ID ledger','shareParameters':['region','quest or point']}
 qa['runtimeInputHashes']=current_inputs
 qa['coverage']['explorationPoints']=len(exploration['points'])
@@ -89,6 +100,8 @@ if cloud:
  summary.insert(2,{'name':'本次云端浏览器','detail':cloud['browserBlocker'],'status':'通过' if cloud['browserStatus']=='pass' else '阻碍；未通过'})
  qa['summary']=summary
 dist=root/'dist';(dist/'checks').mkdir(exist_ok=True)
+for name,target in [('guidance-validation.json','guidance-data.json'),('guidance-browser-validation.json','guidance-browser.json')]: shutil.copyfile(root/'evidence'/name,dist/'checks'/target)
+for name in ['guidance-checklist.png','guidance-conditions.png','guidance-mobile.png']: shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 for name,target in [('catalog-validation.json','catalog-data.json'),('catalog-browser-validation.json','catalog-browser.json')]: shutil.copyfile(root/'evidence'/name,dist/'checks'/target)
 for name in ['catalog-desktop.png','catalog-mobile.png']: shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 shutil.copyfile(root/'evidence/progress-validation.json',dist/'checks/progress.json')
@@ -187,6 +200,7 @@ lines += [f"- {check['name']}：{check['detail']}。" for check in exploration_d
 lines += ['', '### 第三轮目录与探索来源对账', '', f"[数据对账](checks/catalog-data.json)：{catalog_data['passed']}/{catalog_data['total']}；[浏览器](checks/catalog-browser.json)：{catalog_browser['passed']}/{catalog_browser['total']}。", '', '新增 161 条独立目录，保留原 267 个 ID。162 条 XML 候选和 177 条独立参考记录逐行绑定；套装组件、任务目标、重复阶段与旧酒商委托不重复计数。15 处推荐等级差异显式保留。', '[完整对照清单](catalog-review.json)包含合并依据与来源；其中可能包含剧情信息。没有可靠定位的条目继续从目录访问，套装售图线索不冒充所有图纸位置。', '探索来源的共享／空白标识使用维护的 ID 映射，坐标不进入永久 ID；服务点不宣称完整名单或工匠能力。', 'WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏览器仍不支持原生上下文，未宣称原生功能已验证。', '', '[桌面](checks/catalog-desktop.png) · [手机](checks/catalog-mobile.png)', '']
 lines += ['', '### 个人进度、备份与定位分享', '', f"[逐项结果](checks/progress.json)：{progress['passed']}/{progress['total']} 项通过。", '', '任务与探索点可完成、收藏、按个人记录筛选及隐藏已完成。记录、地区、筛选、视野和已选决策保存在当前设备浏览器；不是读取游戏存档，也没有账号云同步。', '备份恢复先预览并验证：无效 JSON、未知备份版本、非布尔标记、危险标识和过大文件不能覆盖当前记录。未知对象和决策保持在未匹配账目中，便于后续迁移。', '分享定位只包含地区、任务或探索点 ID，不夹带个人记录或决策。刷新后仍默认隐藏剧透，前进／后退可返回对应对象；未知链接显示提示。', '浏览器禁止或损坏存储时地图可使用，明确提示保存失败，并可导出本次记录。', '', '验收画面：[备份预览与恢复](checks/progress-desktop.png)、[手机记录](checks/progress-mobile-detail.png)、[手机备份](checks/progress-mobile.png)。', '']
 lines += [f"- {check['name']}：通过。" for check in progress['checks']]
+lines += ['', '### 第四轮防漏、条件状态与跨任务提示', '', f"[独立规则](checks/guidance-data.json)：{guidance_data['passed']}/{guidance_data['total']}；[浏览器操作](checks/guidance-browser.json)：{guidance_browser['passed']}/{guidance_browser['total']}。", '', '43 条来源明确的剧情阶段提醒；已处理记录可筛选、刷新保存并与现有个人进度共用稳定 ID。来源条件区分全部、任一和进行中，不把前序线索当成全部必须成功。任务级条件只是来源片段，未解析目标继续标明。', '个人完成标记与游戏日志成功、失败、进行中及阶段事实分开；未记录保持未知。剧情记录纳入原版本个人备份，旧备份可读取，未知故事 ID 留在迁移账目。', '刺杀线保留薇丝战斗／抛光水晶的失败阶段例外，“致命阴谋”仍须成功。教授调查与依赖节点、真正进入长者洞穴后的路线互斥、凯拉与两段恋情的条件分别核对。记录矛盾时按明确阶段事实提示，不偷偷改选择或结局演算。', '补审三个任务，共新增三个节点、七个选项，合计 43 个已审任务／48 节点／108 选项。来源包括本次成功抓取的 Gamer Guides 事实段落；Fandom 本次返回 402 的引用只沿用既有核对，不冒充重新抓取。', '已选决策的关联后果只有展开目标任务剧透后显示；无自有节点的目标也可单独展开关联提示，失效的条件节点不参与联动。', '任务／指导数据生成链两次从冻结输入重建一致；不同数学库的投影尾数允许 1e-9 度数值误差，原始 XY 和稳定 ID 严格保留。', '', '[防漏清单](checks/guidance-checklist.png) · [条件记录](checks/guidance-conditions.png) · [手机](checks/guidance-mobile.png)', '']
 lines += ['', '### 重点事实与来源', '', '| 核对项目 | 结论 | 依据 |', '| --- | --- | --- |']
 lines += [f"| {c['claim']} | {c['result']} | [攻略]({c['source']}) |" for c in d['meta']['factChecks']]
 lines += [

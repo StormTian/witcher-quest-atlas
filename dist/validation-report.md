@@ -1,6 +1,6 @@
 # 狩魔手记：互动地图验证报告
 
-任务资料日期：2026-10-03；本次验证日期：2026-10-03。目录版本：1.3。
+任务资料日期：2026-10-03；本次验证日期：2026-10-03。目录版本：1.4。
 
 本报告记录本次云端实际数据与浏览器检查；各项结果附执行时间与文件摘要。历史本地结果独立保留。网页检查不等于游戏实机全量验收，也不是官方任务完整性证明。
 
@@ -9,7 +9,7 @@
 - 428 个任务／遭遇条目。分类：contract 35、encounter 40、main 87、scavenger 29、side 180、treasure 57。原有 267 个 ID 和主线／支线分类保留。
 - 304 个地图定位：288 个社区发现／接取线索、16 个关联地标。另 124 个流程／未知坐标条目保留在索引中。
 - 五个真实地区地图：白果园、威伦／诺维格瑞、史凯利杰、凯尔莫罕、陶森特。维吉玛王宫仅显示室内剧情任务。
-- 40 个重点任务的 45 个决策节点、101 个选项；尚未整理分支的任务有明确提示。
+- 43 个重点任务的 48 个决策节点、108 个选项；尚未整理分支的任务有明确提示。
 - 目录包含主线／支线、狩魔委托、套装搜集、寻宝与随机遭遇；阶段、组件和探索资源点分别归类。
 - 615 个独立探索点，13 类：设施、服务、昆特、资源与洞穴入口。与任务目录分开统计。
 
@@ -20,14 +20,15 @@
 | 范围 | 实际检查 | 结果 |
 | --- | --- | --- |
 | 任务数据与规则 | 25/25 项；任务引用、地图资源、结局条件、流程前置 | 通过 |
+| 防漏清单与条件联动 | 24/24 项；43 条阶段提醒、未知条件、失败例外、路线互斥、备份与逐任务剧透 | 通过 |
 | 扩充目录与服务点 | 20/20 项；428 条目录、615 点位、来源归并、六类筛选、密集点与旧备份 | 通过 |
 | 探索图层 | 15/15 项；615 个点位；来源对账、基础图层 32 种组合、手机操作 | 通过 |
 | 中文地名与缩放体验 | 11/11 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势 | 通过 |
 | 地名与路标显示 | 8/8 项；五区 227 个路标、默认地名、缩放拖动和手机 | 通过 |
 | 报告与资源交付 | 3/3 项；报告、下载与资源加载 | 通过 |
 | 个人进度与分享 | 12/12 项；完成、收藏、可靠导入导出、刷新恢复、分享与前进后退 | 通过 |
-| 网页实际交互 | 19/19 项；五区地图、筛选、101 个选项、剧透与手机操作 | 通过 |
-| 攻略事实核对 | 16 项重点核对；40 个任务／45 个节点附攻略依据 | 资料核对完成 |
+| 网页实际交互 | 19/19 项；五区地图、筛选、108 个选项、剧透与手机操作 | 通过 |
+| 攻略事实核对 | 19 项重点核对；43 个任务／48 个节点附攻略依据 | 资料核对完成 |
 | 地图位置抽样 | 4 个独立坐标样例及地图裁切，校准社区坐标转换 | 抽样一致 |
 | 实机游戏验证 | 没有读取游戏存档或逐任务运行游戏 | 未执行 |
 
@@ -36,7 +37,7 @@
 [逐项结果](checks/data-logic.json)：25/25 项通过。
 
 - 目录唯一性与范围：428 unique quests; frozen source reconciliation and legacy main/side classifications match。
-- 任务与决策引用完整性：45 nodes / 101 options, all task references resolve。
+- 任务与决策引用完整性：48 nodes / 108 options, all task references resolve。
 - 坐标与流程分类：304 positioned tasks; flow/unknown entries retained without invented coordinates。
 - 独立接取点校准样例：4 independent numeric fixtures; corresponding XYZ map tiles present。
 - 地图资源完整性：5 regions / 5721 native map tiles; full z4 and z5 coverage for the larger regions。
@@ -168,7 +169,7 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 - 全隐藏恢复原选择并隐藏任务高亮：Restores the prior partial selection; hidden quest layers stay hidden when a quest is opened from the index.。
 - 三类点位真实点击详情与键盘操作：All three types open through real marker clicks; keyboard Enter and Space open a board; provenance and availability limits remain visible.。
 - 任务筛选与探索图层互不干扰：Empty task search and DLC filtering leave exploration and road signs intact; point selection preserves filters.。
-- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 37.8ms on this cloud Chromium; map controls have their own stacking context.。
+- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 33.0ms on this cloud Chromium; map controls have their own stacking context.。
 - 手机图层与探索详情及200%文字：390×844 touch device; layer toggles, Escape/focus return, tap-to-detail and doubled text remain usable without page overflow.。
 - 探索资源与页面异常：Zero page exceptions and zero unexpected HTTP failures across the exploration interactions.。
 
@@ -208,6 +209,20 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 - 手机直达、记录、备份与200%文字可操作：通过。
 - 个人进度页面与资源无异常：通过。
 
+### 第四轮防漏、条件状态与跨任务提示
+
+[独立规则](checks/guidance-data.json)：12/12；[浏览器操作](checks/guidance-browser.json)：12/12。
+
+43 条来源明确的剧情阶段提醒；已处理记录可筛选、刷新保存并与现有个人进度共用稳定 ID。来源条件区分全部、任一和进行中，不把前序线索当成全部必须成功。任务级条件只是来源片段，未解析目标继续标明。
+个人完成标记与游戏日志成功、失败、进行中及阶段事实分开；未记录保持未知。剧情记录纳入原版本个人备份，旧备份可读取，未知故事 ID 留在迁移账目。
+刺杀线保留薇丝战斗／抛光水晶的失败阶段例外，“致命阴谋”仍须成功。教授调查与依赖节点、真正进入长者洞穴后的路线互斥、凯拉与两段恋情的条件分别核对。记录矛盾时按明确阶段事实提示，不偷偷改选择或结局演算。
+补审三个任务，共新增三个节点、七个选项，合计 43 个已审任务／48 节点／108 选项。来源包括本次成功抓取的 Gamer Guides 事实段落；Fandom 本次返回 402 的引用只沿用既有核对，不冒充重新抓取。
+已选决策的关联后果只有展开目标任务剧透后显示；无自有节点的目标也可单独展开关联提示，失效的条件节点不参与联动。
+任务／指导数据生成链两次从冻结输入重建一致；不同数学库的投影尾数允许 1e-9 度数值误差，原始 XY 和稳定 ID 严格保留。
+
+[防漏清单](checks/guidance-checklist.png) · [条件记录](checks/guidance-conditions.png) · [手机](checks/guidance-mobile.png)
+
+
 ### 重点事实与来源
 
 | 核对项目 | 结论 | 依据 |
@@ -228,6 +243,9 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 | 长牙之夜 | 寻找欧丽安娜本身不锁定路线 | [攻略](https://witcher.fandom.com/wiki/The_Night_of_Long_Fangs) |
 | 骑士的恋爱故事 | 守密／转移诅咒的长期后果 | [攻略](https://witcher.fandom.com/wiki/The_Warble_of_a_Smitten_Knight) |
 | 葡萄酒大战 | 联合并非所有和解路线的必经任务 | [攻略](https://witcher.fandom.com/wiki/Wine_Wars:_The_Deus_in_the_Machina) |
+| 以眼还眼 | 薇丝生存影响任务收尾与援军；刺杀前置另看指定战斗阶段。 | [攻略](https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/an-eye-for-an-eye) |
+| 瑞达尼亚的头号要犯 | 取得抛光水晶与交付对象分开，额外背景对话不改变恋情。 | [攻略](https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/redanias-most-wanted) |
+| 致命阴谋 | 和平或战斗均可营救塔勒，须护送并结束对话才算成功。 | [攻略](https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/a-deadly-plot) |
 
 ### 已修复的资料问题
 
@@ -242,7 +260,7 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 
 ## 可重复核验
 
-最终任务数据 SHA-256：`ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3`。
+最终任务数据 SHA-256：`80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246`。
 
 地图／社区数据来源锁定为 Witcher3MapViewer commit `fb674dbff7df087d0a45f9b3938ba6d5317295af`。来源 XML 与地图清单在源码项目 evidence/ 中保留；可重新生成任务数据，执行数据检查，并在云端测试服务中重跑浏览器操作。
 
@@ -259,6 +277,9 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 - 中文新增标题为本项目译名，不宣称全部是游戏官方译名。
 - 遗忘狼的升级装备条目归并图纸任务；Griffin-in-the-Vines 与 Duchaton Crest 的别名有 XML 问号，保留待实机核对说明。
 - 来源无法读取的网页链接保留为引用，不冒充本次抓取验证。
+- 来源支持关键条件与动作影响，未建立所有任务、人物和存档状态的完整模拟。
+- 个人完成标记不等于游戏日志成功；游戏状态和阶段事实需要单独记录。
+- 条件未知时不推断可接取；来源任务条件片段不等于全部游戏触发条件。
 - 希里未觐见时二比二的边界按 Wiki 四项记分解释；其他攻略把跳过觐见计为第五项积极，得到相同结果。这个边界未实机复测。
 - 结局演算只覆盖说明中的主干条件，不读取存档，也不推断未输入的其他游戏状态。
 - 网页默认隐藏决策后果，只有主动展开或使用全局开关后才出现；验证报告自身包含剧情信息。

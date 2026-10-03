@@ -1,0 +1,2516 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "date": "2026-10-03",
+    "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+    "sourceSha256": "2ecb73a3b14e1a47383c66e959ff0f1518f5918e7163f689aa8f790ae79f776e",
+    "coordinateSystem": "与现有区域底图同源的游戏 XY 校准坐标；不是现实地理经纬度。",
+    "scope": "首批魔力之所、告示板、储藏箱；不是全游戏探索点完整性证明。",
+    "rawRecords": 72,
+    "rawCounts": {
+      "PlaceOfPower": 29,
+      "NoticeBoard": 37,
+      "PlayerStash": 6
+    },
+    "included": 70,
+    "duplicates": [
+      {
+        "sourceKey": "TO|NoticeBoard|cockatrice_inn_noticeboard",
+        "sourceIndex": 94,
+        "keptPointId": "p-to-board-6ee1613b422c7b6c",
+        "reason": "同一来源标识与坐标的重复记录，合并为一个点位。"
+      }
+    ],
+    "deferred": [
+      {
+        "sourceKey": "TO|NoticeBoard|q704_ft_fairy_tale_noticeboard",
+        "sourceIndex": 92,
+        "gameXY": [
+          2610.0,
+          1500.0
+        ],
+        "reason": "来源标识为童话世界独立场景，且坐标在陶森特区域底图范围外；没有对应场景底图，暂缓展示。"
+      }
+    ],
+    "limits": [
+      "来源坐标尚未逐点实机复核。",
+      "最近路标按游戏 XY 直线距离选择，只作为方位参考，不代表可步行到达的路线。",
+      "点位显示不代表其任务、告示或设施已在当前存档中开放。"
+    ]
+  },
+  "categories": [
+    {
+      "id": "power",
+      "name": "魔力之所",
+      "symbol": "✧",
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "count": 29
+    },
+    {
+      "id": "board",
+      "name": "告示板",
+      "symbol": "≡",
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "count": 35
+    },
+    {
+      "id": "stash",
+      "name": "储藏箱",
+      "symbol": "▣",
+      "description": "玩家储藏箱的位置。是否已开放取决于剧情与当地状态；地图不读取存档，无法判断当前可用性。",
+      "count": 6
+    }
+  ],
+  "points": [
+    {
+      "id": "p-wo-power-0edde169ea5e925f",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "white-orchard",
+      "gameXY": [
+        -94.0,
+        -324.0
+      ],
+      "latlng": [
+        -62.71859094390132,
+        -36.4054088827385
+      ],
+      "precision": "community",
+      "sourceKey": "WO|PlaceOfPower|pop_quen2_prlg",
+      "sourceName": "pop_quen2_prlg",
+      "sourceIndex": 13,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Broken Bridge",
+        "region": "white-orchard",
+        "latlng": [
+          -47.70486591930632,
+          -39.714991508442004
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-wo-board-0a7ab1849f2df3c2",
+      "type": "board",
+      "title": "告示板",
+      "region": "white-orchard",
+      "gameXY": [
+        4.0,
+        -15.0
+      ],
+      "latlng": [
+        -8.058140546210554,
+        -13.238330502814001
+      ],
+      "precision": "community",
+      "sourceKey": "WO|NoticeBoard|prologue_village_noticeboard",
+      "sourceName": "prologue_village_noticeboard",
+      "sourceIndex": 14,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "哀歌桥",
+        "region": "white-orchard",
+        "latlng": [
+          -6.651454374867342,
+          9.692349118131679
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-wo-stash-82b30c264c28584e",
+      "type": "stash",
+      "title": "储藏箱",
+      "region": "white-orchard",
+      "gameXY": [
+        50.0,
+        15.0
+      ],
+      "latlng": [
+        -0.9928250993890407,
+        -2.363987589788214
+      ],
+      "precision": "community",
+      "sourceKey": "WO|PlayerStash|MISSING_NAME_8A6C655E-425E4B28-22A5E5AD-4FE3DBBF",
+      "sourceName": "HighlightedByMedalionFX",
+      "sourceIndex": 15,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "哀歌桥",
+        "region": "white-orchard",
+        "latlng": [
+          -6.651454374867342,
+          9.692349118131679
+        ]
+      },
+      "description": "玩家储藏箱的位置。是否已开放取决于剧情与当地状态；地图不读取存档，无法判断当前可用性。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-wo-power-34ac26d48c4a72ad",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "white-orchard",
+      "gameXY": [
+        -23.0,
+        296.0
+      ],
+      "latlng": [
+        54.59787901643087,
+        -19.621096995242176
+      ],
+      "precision": "community",
+      "sourceKey": "WO|PlaceOfPower|lw_ignii_prologue_01",
+      "sourceName": "lw_ignii_prologue_01",
+      "sourceIndex": 35,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Mill",
+        "region": "white-orchard",
+        "latlng": [
+          39.98083658381913,
+          -13.238330502814001
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-wo-power-38c9dcbdc3861ae4",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "white-orchard",
+      "gameXY": [
+        -38.0,
+        424.0
+      ],
+      "latlng": [
+        68.68173309922902,
+        -23.1670783799245
+      ],
+      "precision": "community",
+      "sourceKey": "WO|PlaceOfPower|lw_aard_prologue_02",
+      "sourceName": "lw_aard_prologue_02",
+      "sourceIndex": 36,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Mill",
+        "region": "white-orchard",
+        "latlng": [
+          39.98083658381913,
+          -13.238330502814001
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-wo-power-81c647be6d7c6314",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "white-orchard",
+      "gameXY": [
+        500.0,
+        243.0
+      ],
+      "latlng": [
+        46.67677187556875,
+        104.01545395068142
+      ],
+      "precision": "community",
+      "sourceKey": "WO|PlaceOfPower|lw_quen_prologue_03",
+      "sourceName": "lw_quen_prologue_03",
+      "sourceIndex": 37,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Cackler Bridge",
+        "region": "white-orchard",
+        "latlng": [
+          42.29494153020115,
+          87.70393958114275
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-wo-power-63c76568127ea115",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "white-orchard",
+      "gameXY": [
+        -225.0,
+        168.0
+      ],
+      "latlng": [
+        33.15420081009279,
+        -67.3736463089641
+      ],
+      "precision": "community",
+      "sourceKey": "WO|PlaceOfPower|lw_axii_prologue_04",
+      "sourceName": "lw_axii_prologue_04",
+      "sourceIndex": 38,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Sawmill",
+        "region": "white-orchard",
+        "latlng": [
+          -0.9928250993890407,
+          -82.97596440156632
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-wo-power-444d5df7778ce211",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "white-orchard",
+      "gameXY": [
+        206.0,
+        -270.0
+      ],
+      "latlng": [
+        -56.26088283940828,
+        34.51421881090793
+      ],
+      "precision": "community",
+      "sourceKey": "WO|PlaceOfPower|lw_yrden_prologue_05",
+      "sourceName": "lw_yrden_prologue_05",
+      "sourceIndex": 39,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Abandoned Village",
+        "region": "white-orchard",
+        "latlng": [
+          -52.69247671913725,
+          -8.746754082216393
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-bccdb877c1180ccb",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        820.0,
+        964.0
+      ],
+      "latlng": [
+        19.88699833958599,
+        -11.70961852808429
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|MISSING_NAME_A9678008-43AE8DB6-29396CB0-409A86B6",
+      "sourceName": "Pontar Bridge Noticeboard",
+      "sourceIndex": 185,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Border Post",
+        "region": "velen",
+        "latlng": [
+          24.051206794657123,
+          -16.989190811944635
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-power-0fd64a7c49be7881",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "velen",
+      "gameXY": [
+        -196.0,
+        -719.0
+      ],
+      "latlng": [
+        -73.9701696127353,
+        -91.76999823557847
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlaceOfPower|pop_yrden2_nml_mp",
+      "sourceName": "pop_yrden2_nml_mp",
+      "sourceIndex": 186,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Byways",
+        "region": "velen",
+        "latlng": [
+          -78.3451254046515,
+          -98.07396514168038
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-power-7cc68705be349716",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "velen",
+      "gameXY": [
+        1529.0,
+        -676.0
+      ],
+      "latlng": [
+        -73.00745185898253,
+        44.159288177243845
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlaceOfPower|pop_ignii2_nml_mp",
+      "sourceName": "pop_ignii2_nml_mp",
+      "sourceIndex": 187,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "古老橡树",
+        "region": "velen",
+        "latlng": [
+          -73.05344926525228,
+          49.75405880640928
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-power-9b3698dda7d126e7",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "velen",
+      "gameXY": [
+        1168.0,
+        -1021.0
+      ],
+      "latlng": [
+        -79.37945065729666,
+        15.712637513458997
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlaceOfPower|pop_quen2_nml_mp",
+      "sourceName": "pop_quen2_nml_mp",
+      "sourceIndex": 188,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Bald Mountain",
+        "region": "velen",
+        "latlng": [
+          -80.04078887431704,
+          -0.5988768560796828
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-9056e2b6125eb33a",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        557.0,
+        1845.0
+      ],
+      "latlng": [
+        66.40190374123344,
+        -32.433909731894296
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|harbor_district_noticeboard",
+      "sourceName": "harbor_district_noticeboard",
+      "sourceIndex": 191,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Hierarch Square",
+        "region": "velen",
+        "latlng": [
+          67.3305439338979,
+          -23.371957304372813
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-20621cbfa92b44e9",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        670.0,
+        1903.0
+      ],
+      "latlng": [
+        68.16595638966729,
+        -23.52955647702536
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|market_noticeboard",
+      "sourceName": "Hierarchy Square notice board",
+      "sourceIndex": 192,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Hierarch Square",
+        "region": "velen",
+        "latlng": [
+          67.3305439338979,
+          -23.371957304372813
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-f9fc5516fbcab853",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        689.0,
+        2015.0
+      ],
+      "latlng": [
+        71.22297628991596,
+        -22.03236433682616
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|novigrad_rich_district_noticeboard",
+      "sourceName": "novigrad_rich_district_noticeboard",
+      "sourceIndex": 193,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "St. Gregory's Bridge",
+        "region": "velen",
+        "latlng": [
+          72.45070234949237,
+          -25.578345721508477
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-stash-3121ea48e411462f",
+      "type": "stash",
+      "title": "储藏箱",
+      "region": "velen",
+      "gameXY": [
+        719.0,
+        1732.0
+      ],
+      "latlng": [
+        62.57376263877185,
+        -19.668376747037943
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlayerStash|MISSING_NAME_77FFB807-40CD01B5-3EEF87B4-6099CF6E",
+      "sourceName": "HighlightedByMedalionFX",
+      "sourceIndex": 194,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Gate of the Hierarch",
+        "region": "velen",
+        "latlng": [
+          61.35164754147452,
+          -17.383188743576003
+        ]
+      },
+      "description": "玩家储藏箱的位置。是否已开放取决于剧情与当地状态；地图不读取存档，无法判断当前可用性。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-stash-c15918c5e0e95bd8",
+      "type": "stash",
+      "title": "储藏箱",
+      "region": "velen",
+      "gameXY": [
+        186.0,
+        182.0
+      ],
+      "latlng": [
+        -38.14549630928053,
+        -61.66855625894189
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlayerStash|MISSING_NAME_AA3ED6BB-4FAE7E56-37FADC93-4571C7AE",
+      "sourceName": "HighlightedByMedalionFX",
+      "sourceIndex": 195,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "乌鸦窝",
+        "region": "velen",
+        "latlng": [
+          -47.588073407160714,
+          -61.82615543159444
+        ]
+      },
+      "description": "玩家储藏箱的位置。是否已开放取决于剧情与当地状态；地图不读取存档，无法判断当前可用性。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-cc88bf7c7716cb4d",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        240.0,
+        136.0
+      ],
+      "latlng": [
+        -40.94008869294064,
+        -57.413378597323096
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|barons_village_notice_board",
+      "sourceName": "Crow's Perch notice board",
+      "sourceIndex": 214,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Burned Ruins",
+        "region": "velen",
+        "latlng": [
+          -38.88535652965611,
+          -48.272626583475336
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-bc7d5f9c410bb421",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        1409.0,
+        -319.0
+      ],
+      "latlng": [
+        -62.566502635515306,
+        34.703337818090986
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|borrows_notice_board",
+      "sourceName": "borrows_notice_board",
+      "sourceIndex": 215,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "下瓦伦",
+        "region": "velen",
+        "latlng": [
+          -62.92733794956794,
+          37.61892251216311
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-0e1c63a8d120cbf2",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        868.0,
+        1509.0
+      ],
+      "latlng": [
+        53.30894916434026,
+        -7.927238384423146
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|fat_catch_inn_noticeboard",
+      "sourceName": "fat_catch_inn_noticeboard",
+      "sourceIndex": 216,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Cunny of the Goose",
+        "region": "velen",
+        "latlng": [
+          52.06717511301607,
+          -4.302457413414552
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-62e22bcf17b2a407",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        1121.0,
+        2379.0
+      ],
+      "latlng": [
+        78.55339581701868,
+        12.009056956124125
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|farmsvillage_2_noticeboard",
+      "sourceName": "Yantra Notice board",
+      "sourceIndex": 217,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Yantra",
+        "region": "velen",
+        "latlng": [
+          78.49067432054123,
+          12.718253233060592
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-3bb459ae89e2747e",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        513.0,
+        544.0
+      ],
+      "latlng": [
+        -12.69196284165685,
+        -35.90109153025035
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|inn_crossroads_notice_board",
+      "sourceName": "inn_crossroads_notice_board",
+      "sourceIndex": 218,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "十字路口旅店",
+        "region": "velen",
+        "latlng": [
+          -11.999170754562202,
+          -35.7434923575978
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-c3bf92361584ced7",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        770.0,
+        63.0
+      ],
+      "latlng": [
+        -45.141717390782716,
+        -15.64959784439798
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|midcotts_noticeboard",
+      "sourceName": "Lindenvale notice board",
+      "sourceIndex": 219,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Lindenvale",
+        "region": "velen",
+        "latlng": [
+          -44.80725163413372,
+          -15.491998671745435
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-03df1d03d7c10f08",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        -367.0,
+        -242.0
+      ],
+      "latlng": [
+        -59.6367213297977,
+        -105.24472749737129
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|mouths_notice_board",
+      "sourceName": "mouths_notice_board",
+      "sourceIndex": 220,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "米德考普斯",
+        "region": "velen",
+        "latlng": [
+          -59.23603502086,
+          -103.82633494349835
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-9dba8be2e811ac34",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        2387.0,
+        -1052.0
+      ],
+      "latlng": [
+        -79.82035880825656,
+        111.76933324518677
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|nilfgaard_camp_notice_board",
+      "sourceName": "Nilfgaardian Camp Notice board",
+      "sourceIndex": 221,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Nilfgaardian Army Group",
+        "region": "velen",
+        "latlng": [
+          -78.721064098092,
+          113.89692207599617
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-9fe3e7f5c45d8aa7",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        930.0,
+        590.0
+      ],
+      "latlng": [
+        -9.133343723862165,
+        -3.041664032194171
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|poppystone_notice_board",
+      "sourceName": "Mulbrydale Notice board",
+      "sourceIndex": 222,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Mulbrydale",
+        "region": "velen",
+        "latlng": [
+          -10.995345285530167,
+          -5.326852035656111
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-e051bdbca6121145",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        199.0,
+        -457.0
+      ],
+      "latlng": [
+        -67.1720954105415,
+        -60.644161636700325
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|rudnik_notice_board",
+      "sourceName": "rudnik_notice_board",
+      "sourceIndex": 223,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Oreton",
+        "region": "velen",
+        "latlng": [
+          -67.04949919047226,
+          -60.80176080935287
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-de241171a251b6f5",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        1051.0,
+        1717.0
+      ],
+      "latlng": [
+        62.024322114445724,
+        6.49308591328496
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|seven_cats_noticeboard",
+      "sourceName": "InteractiveEntity",
+      "sourceIndex": 224,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "七只猫旅馆",
+        "region": "velen",
+        "latlng": [
+          61.950303014470116,
+          6.335486740632413
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-61fad983cd41211f",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        1584.0,
+        1840.0
+      ],
+      "latlng": [
+        66.24368124979998,
+        48.4932654251889
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|southern_farms_notice_board",
+      "sourceName": "southern_farms_notice_board",
+      "sourceIndex": 225,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Alness",
+        "region": "velen",
+        "latlng": [
+          66.52776587968084,
+          48.099267493557534
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-88f33adf6b520153",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        617.0,
+        1557.0
+      ],
+      "latlng": [
+        55.50959789966591,
+        -27.705934552317874
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|toderas_noticeboard",
+      "sourceName": "toderas_noticeboard",
+      "sourceIndex": 226,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Glory Gate",
+        "region": "velen",
+        "latlng": [
+          57.84624590950287,
+          -24.711550271919467
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-cdcb672cbf5f2499",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        1705.0,
+        1042.0
+      ],
+      "latlng": [
+        25.553300384962082,
+        58.02801537066803
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|whitebridge_noticeboard",
+      "sourceName": "whitebridge_noticeboard",
+      "sourceIndex": 227,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "奥森弗特港",
+        "region": "velen",
+        "latlng": [
+          24.266899878239077,
+          54.32443481333316
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-power-2d40ee7a1da1e009",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "velen",
+      "gameXY": [
+        204.0,
+        -1365.0
+      ],
+      "latlng": [
+        -83.37111868363093,
+        -60.25016370506895
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlaceOfPower|nml_pop_aard",
+      "sourceName": "nml_pop_aard",
+      "sourceIndex": 298,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Frischlow",
+        "region": "velen",
+        "latlng": [
+          -81.39811847614294,
+          -57.098180252018004
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-power-3befe77f8700d3ba",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "velen",
+      "gameXY": [
+        -270.0,
+        950.0
+      ],
+      "latlng": [
+        18.84624511442568,
+        -97.60116762372273
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlaceOfPower|lw_ancient_castle_pop",
+      "sourceName": "lw_ancient_castle_pop",
+      "sourceIndex": 299,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Lornruk",
+        "region": "velen",
+        "latlng": [
+          17.047163062803385,
+          -98.70436183229056
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-power-2fb105fdf1569c24",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "velen",
+      "gameXY": [
+        1649.0,
+        1777.0
+      ],
+      "latlng": [
+        64.16280663377103,
+        53.615238536396696
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlaceOfPower|nml_pop_axii",
+      "sourceName": "nml_pop_axii",
+      "sourceIndex": 300,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Alness",
+        "region": "velen",
+        "latlng": [
+          66.52776587968084,
+          48.099267493557534
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-power-7e828011b6846bba",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "velen",
+      "gameXY": [
+        1303.0,
+        -277.0
+      ],
+      "latlng": [
+        -61.002145212395384,
+        26.35058166750596
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlaceOfPower|nml_pop_yrden",
+      "sourceName": "nml_pop_yrden",
+      "sourceIndex": 301,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Dragonslayer's Grotto",
+        "region": "velen",
+        "latlng": [
+          -59.396879098133134,
+          19.179819311815045
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-power-d8028783c255764d",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "velen",
+      "gameXY": [
+        590.0,
+        2264.0
+      ],
+      "latlng": [
+        76.60848985782417,
+        -29.833523383127265
+      ],
+      "precision": "community",
+      "sourceKey": "NO|PlaceOfPower|nml_pop_ignii",
+      "sourceName": "nml_pop_ignii",
+      "sourceIndex": 302,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Cavern",
+        "region": "velen",
+        "latlng": [
+          77.87766124133869,
+          -21.007969714584597
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-no-board-9b936084682b71f9",
+      "type": "board",
+      "title": "告示板",
+      "region": "velen",
+      "gameXY": [
+        2248.0,
+        2475.0
+      ],
+      "latlng": [
+        79.96143427438962,
+        100.81619074583472
+      ],
+      "precision": "community",
+      "sourceKey": "NO|NoticeBoard|q602_village_noticeboard",
+      "sourceName": "q602_village_noticeboard",
+      "sourceIndex": 461,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Brunwich",
+        "region": "velen",
+        "latlng": [
+          79.93392576750789,
+          100.73739115950845
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-board-b2dbc8ceaa8275da",
+      "type": "board",
+      "title": "告示板",
+      "region": "skellige",
+      "gameXY": [
+        -612.0,
+        -289.0
+      ],
+      "latlng": [
+        -30.94970816514731,
+        -45.01983731816065
+      ],
+      "precision": "community",
+      "sourceKey": "SK|NoticeBoard|arinbjorn_noticeboard",
+      "sourceName": "arinbjorn_noticeboard",
+      "sourceIndex": 134,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Arinbjorn",
+        "region": "skellige",
+        "latlng": [
+          -31.277975670585487,
+          -45.348489251375106
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-board-eedfd9cf1e12b4bf",
+      "type": "board",
+      "title": "告示板",
+      "region": "skellige",
+      "gameXY": [
+        651.0,
+        30.0
+      ],
+      "latlng": [
+        -14.92968190262564,
+        24.161394623482984
+      ],
+      "precision": "community",
+      "sourceKey": "SK|NoticeBoard|blandare_notice_board",
+      "sourceName": "blandare_notice_board",
+      "sourceIndex": 135,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Blandare",
+        "region": "skellige",
+        "latlng": [
+          -15.774804961654931,
+          21.915606413184182
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-board-28d6e1daae9c533a",
+      "type": "board",
+      "title": "告示板",
+      "region": "skellige",
+      "gameXY": [
+        375.0,
+        -695.0
+      ],
+      "latlng": [
+        -47.969782964624976,
+        9.043405695617865
+      ],
+      "precision": "community",
+      "sourceKey": "SK|NoticeBoard|fyresdal_notice_board",
+      "sourceName": "fyresdal_notice_board",
+      "sourceIndex": 136,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Fyresdal",
+        "region": "skellige",
+        "latlng": [
+          -47.71243158293703,
+          9.372057628832325
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-board-577a3e1fc76ae72d",
+      "type": "board",
+      "title": "告示板",
+      "region": "skellige",
+      "gameXY": [
+        -212.0,
+        -1009.0
+      ],
+      "latlng": [
+        -58.2331880162151,
+        -23.109708437196712
+      ],
+      "precision": "community",
+      "sourceKey": "SK|NoticeBoard|holmstein_notice_board",
+      "sourceName": "holmstein_notice_board",
+      "sourceIndex": 137,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Holmstein's Port",
+        "region": "skellige",
+        "latlng": [
+          -60.031288906713634,
+          -26.99875631356781
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-board-8040acb4774579a5",
+      "type": "board",
+      "title": "告示板",
+      "region": "skellige",
+      "gameXY": [
+        -39.0,
+        550.0
+      ],
+      "latlng": [
+        13.261589700403915,
+        -13.633577696179811
+      ],
+      "precision": "community",
+      "sourceKey": "SK|NoticeBoard|kaer_trolde_village_notice_board",
+      "sourceName": "kaer_trolde_village_notice_board",
+      "sourceIndex": 138,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "凯尔卓港",
+        "region": "skellige",
+        "latlng": [
+          13.314898468937384,
+          -15.824590584276201
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-board-db0b7340833cd1fd",
+      "type": "board",
+      "title": "告示板",
+      "region": "skellige",
+      "gameXY": [
+        165.0,
+        94.0
+      ],
+      "latlng": [
+        -11.517574074993531,
+        -2.4594119668882026
+      ],
+      "precision": "community",
+      "sourceKey": "SK|NoticeBoard|rannvaig_noticeboard",
+      "sourceName": "rannvaig_noticeboard",
+      "sourceIndex": 139,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Rannvaig",
+        "region": "skellige",
+        "latlng": [
+          -12.962845761897864,
+          -2.7332885779002516
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-board-b390afd08102c12c",
+      "type": "board",
+      "title": "告示板",
+      "region": "skellige",
+      "gameXY": [
+        2776.0,
+        71.0
+      ],
+      "latlng": [
+        -12.74923699919969,
+        140.55895430360388
+      ],
+      "precision": "community",
+      "sourceKey": "SK|NoticeBoard|larvik_notice_board",
+      "sourceName": "larvik_notice_board",
+      "sourceIndex": 142,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "拉尔维克",
+        "region": "skellige",
+        "latlng": [
+          -13.442791548545097,
+          139.29912189294848
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-power-77d07eb767f29bf0",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "skellige",
+      "gameXY": [
+        -62.0,
+        167.0
+      ],
+      "latlng": [
+        -7.575171347166425,
+        -14.893410106835235
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlaceOfPower|skl_pop_axii2_new",
+      "sourceName": "skl_pop_axii2_new",
+      "sourceIndex": 143,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Crossroads",
+        "region": "skellige",
+        "latlng": [
+          -2.9948454674584006,
+          -7.608292253914727
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-power-5be88c9fc02f3bb4",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "skellige",
+      "gameXY": [
+        -188.0,
+        790.0
+      ],
+      "latlng": [
+        25.6277501790827,
+        -21.79510070433888
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlaceOfPower|skl_pop_quen2_new",
+      "sourceName": "skl_pop_quen2_new",
+      "sourceIndex": 144,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "凯尔卓城堡桥",
+        "region": "skellige",
+        "latlng": [
+          23.4353800630007,
+          -16.9200970283244
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-power-7e0ca1db86c3f2c1",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "skellige",
+      "gameXY": [
+        160.0,
+        789.0
+      ],
+      "latlng": [
+        25.578353274780497,
+        -2.7332885779002516
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlaceOfPower|skl_pop_ignii2_new",
+      "sourceName": "skl_pop_ignii2_new",
+      "sourceIndex": 145,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Ancient Crypt",
+        "region": "skellige",
+        "latlng": [
+          31.259248134696406,
+          1.703512520494946
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-power-bcd29e102dc4c813",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "skellige",
+      "gameXY": [
+        1021.0,
+        -11.0
+      ],
+      "latlng": [
+        -17.088226632985634,
+        44.42826383837462
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlaceOfPower|skl_pop_yrden2_new",
+      "sourceName": "skl_pop_yrden2_new",
+      "sourceIndex": 146,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Druids' Camp",
+        "region": "skellige",
+        "latlng": [
+          -16.66890193332212,
+          43.1684314277192
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-stash-d0104b9f21c82093",
+      "type": "stash",
+      "title": "储藏箱",
+      "region": "skellige",
+      "gameXY": [
+        -60.0,
+        602.0
+      ],
+      "latlng": [
+        16.017136180179804,
+        -14.783859462430414
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlayerStash|MISSING_NAME_3143E74F-4C327905-8B4B5A90-42B01ECB",
+      "sourceName": "HighlightedByMedalionFX",
+      "sourceIndex": 147,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "凯尔卓港",
+        "region": "skellige",
+        "latlng": [
+          13.314898468937384,
+          -15.824590584276201
+        ]
+      },
+      "description": "玩家储藏箱的位置。是否已开放取决于剧情与当地状态；地图不读取存档，无法判断当前可用性。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-board-0bd0f51b049cb7a1",
+      "type": "board",
+      "title": "告示板",
+      "region": "skellige",
+      "gameXY": [
+        -1614.0,
+        1388.0
+      ],
+      "latlng": [
+        50.87600818687189,
+        -99.90471016497531
+      ],
+      "precision": "community",
+      "sourceKey": "SK|NoticeBoard|brokvar_notice_board",
+      "sourceName": "brokvar_notice_board",
+      "sourceIndex": 155,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Svorlag",
+        "region": "skellige",
+        "latlng": [
+          51.79989461385,
+          -101.82184644205965
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-power-619a2ca5290da143",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "skellige",
+      "gameXY": [
+        -1805.0,
+        1459.0
+      ],
+      "latlng": [
+        53.265806479727594,
+        -110.3667967056356
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlaceOfPower|pop_mp_igniii_skellige",
+      "sourceName": "pop_mp_igniii_skellige",
+      "sourceIndex": 208,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Svorlag",
+        "region": "skellige",
+        "latlng": [
+          51.79989461385,
+          -101.82184644205965
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-power-1933aabf7437b8e3",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "skellige",
+      "gameXY": [
+        1319.0,
+        236.0
+      ],
+      "latlng": [
+        -3.81501784112025,
+        60.75130985469275
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlaceOfPower|ard_skellig_pop_aard",
+      "sourceName": "ard_skellig_pop_aard",
+      "sourceIndex": 209,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Whale Graveyard",
+        "region": "skellige",
+        "latlng": [
+          6.357285445480576,
+          54.45214780141563
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-power-9080bd2818e19cfc",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "skellige",
+      "gameXY": [
+        -312.0,
+        -766.0
+      ],
+      "latlng": [
+        -50.50819617417223,
+        -28.587240657437697
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlaceOfPower|ard_skellig_pop_axii",
+      "sourceName": "ard_skellig_pop_axii",
+      "sourceIndex": 210,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Fornhala",
+        "region": "skellige",
+        "latlng": [
+          -41.39878473838427,
+          -22.123752637553338
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-power-dc9d19202809eeca",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "skellige",
+      "gameXY": [
+        1544.0,
+        -1872.0
+      ],
+      "latlng": [
+        -75.78463242424871,
+        73.07575735023497
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlaceOfPower|pop_yrden_mp_skellige",
+      "sourceName": "pop_yrden_mp_skellige",
+      "sourceIndex": 211,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Harviken",
+        "region": "skellige",
+        "latlng": [
+          -76.23483287538305,
+          84.46902436833622
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-sk-power-23cd43eed92b1a43",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "skellige",
+      "gameXY": [
+        1437.0,
+        2041.0
+      ],
+      "latlng": [
+        68.4468925948713,
+        67.21479787457712
+      ],
+      "precision": "community",
+      "sourceKey": "SK|PlaceOfPower|pop_quen_skellige_mp",
+      "sourceName": "pop_quen_skellige_mp",
+      "sourceIndex": 212,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Yngvar's Fang",
+        "region": "skellige",
+        "latlng": [
+          68.60730081206728,
+          66.99569658576748
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-board-12ad168b32b72601",
+      "type": "board",
+      "title": "告示板",
+      "region": "toussaint",
+      "gameXY": [
+        -508.0,
+        -1338.0
+      ],
+      "latlng": [
+        -52.63231219208436,
+        -35.522010175829905
+      ],
+      "precision": "community",
+      "sourceKey": "TO|NoticeBoard|beauclair_city_noticeboard",
+      "sourceName": "beauclair_city_noticeboard",
+      "sourceIndex": 88,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "The Gran'place",
+        "region": "toussaint",
+        "latlng": [
+          -51.58678239002885,
+          -35.22157028147555
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-board-8d85f6afcc573579",
+      "type": "board",
+      "title": "告示板",
+      "region": "toussaint",
+      "gameXY": [
+        -775.0,
+        -369.0
+      ],
+      "latlng": [
+        32.940450684747404,
+        -62.26116077336751
+      ],
+      "precision": "community",
+      "sourceKey": "TO|NoticeBoard|castel_ravello_noticeboard",
+      "sourceName": "castel_ravello_noticeboard",
+      "sourceIndex": 89,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Castel Ravello Vineyard",
+        "region": "toussaint",
+        "latlng": [
+          35.42545841167862,
+          -60.05793488143557
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-board-6ee1613b422c7b6c",
+      "type": "board",
+      "title": "告示板",
+      "region": "toussaint",
+      "gameXY": [
+        -162.0,
+        -655.0
+      ],
+      "latlng": [
+        6.266661984900952,
+        -0.8712756936276284
+      ],
+      "precision": "community",
+      "sourceKey": "TO|NoticeBoard|cockatrice_inn_noticeboard",
+      "sourceName": "cockatrice_inn_noticeboard",
+      "sourceIndex": 90,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "The Cockatrice Inn",
+        "region": "toussaint",
+        "latlng": [
+          11.999016083220035,
+          3.435029458784794
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-board-43bd0943bc682f46",
+      "type": "board",
+      "title": "告示板",
+      "region": "toussaint",
+      "gameXY": [
+        -430.0,
+        -74.0
+      ],
+      "latlng": [
+        54.03159719936028,
+        -27.710572922616677
+      ],
+      "precision": "community",
+      "sourceKey": "TO|NoticeBoard|coronata_vineyard_noticeboard",
+      "sourceName": "coronata_vineyard_noticeboard",
+      "sourceIndex": 91,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "普雷格蒙德桥",
+        "region": "toussaint",
+        "latlng": [
+          54.44130195410366,
+          -28.11115944842248
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-board-cd11b08f261189fc",
+      "type": "board",
+      "title": "告示板",
+      "region": "toussaint",
+      "gameXY": [
+        694.0,
+        -760.0
+      ],
+      "latlng": [
+        -4.232348253619861,
+        84.854240828815
+      ],
+      "precision": "community",
+      "sourceKey": "TO|NoticeBoard|quarry_noticeboard_mp",
+      "sourceName": "quarry_noticeboard_mp",
+      "sourceIndex": 93,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Ardaiso Quarry",
+        "region": "toussaint",
+        "latlng": [
+          -3.3330014426465024,
+          78.74529631027644
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-board-3690dccaaba0f53e",
+      "type": "board",
+      "title": "告示板",
+      "region": "toussaint",
+      "gameXY": [
+        11.0,
+        -1691.0
+      ],
+      "latlng": [
+        -69.31903109472255,
+        16.45409154747351
+      ],
+      "precision": "community",
+      "sourceKey": "TO|NoticeBoard|trappers_trading_post_noticeboard",
+      "sourceName": "trappers_trading_post_noticeboard",
+      "sourceIndex": 95,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Francollarts",
+        "region": "toussaint",
+        "latlng": [
+          -71.68918269390176,
+          13.950425761187217
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-board-0baac037a554d4b2",
+      "type": "board",
+      "title": "告示板",
+      "region": "toussaint",
+      "gameXY": [
+        287.0,
+        -994.0
+      ],
+      "latlng": [
+        -26.65366143434471,
+        44.09456182807416
+      ],
+      "precision": "community",
+      "sourceKey": "TO|NoticeBoard|tufo_vineyard_noticeboard",
+      "sourceName": "tufo_vineyard_noticeboard",
+      "sourceIndex": 96,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Flovive",
+        "region": "toussaint",
+        "latlng": [
+          -25.664902794579938,
+          49.502479926452565
+        ]
+      },
+      "description": "查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-power-5039c7a703931793",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "toussaint",
+      "gameXY": [
+        1090.0,
+        -854.0
+      ],
+      "latlng": [
+        -13.522666380127282,
+        124.51230688358984
+      ],
+      "precision": "community",
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_igni_0001",
+      "sourceName": "bob_place_of_power_igni_0001",
+      "sourceIndex": 213,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Fort Ussar Ruins",
+        "region": "toussaint",
+        "latlng": [
+          -7.618637244143933,
+          125.71406646100729
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-power-3584290f8753180f",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "toussaint",
+      "gameXY": [
+        -184.0,
+        723.0
+      ],
+      "latlng": [
+        80.78316639898337,
+        -3.074501585559565
+      ],
+      "precision": "community",
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_yrden_0002",
+      "sourceName": "bob_place_of_power_yrden_0002",
+      "sourceIndex": 215,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Arthach Palace Ruins",
+        "region": "toussaint",
+        "latlng": [
+          77.67998441372514,
+          -1.972888639593597
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-power-29de042cefb416b6",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "toussaint",
+      "gameXY": [
+        636.0,
+        -1484.0
+      ],
+      "latlng": [
+        -60.63689277443841,
+        79.0457362046308
+      ],
+      "precision": "community",
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_quen_0002",
+      "sourceName": "bob_place_of_power_quen_0002",
+      "sourceIndex": 216,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Termes Palace Ruins",
+        "region": "toussaint",
+        "latlng": [
+          -63.585433646719466,
+          76.84251031269888
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-power-c8f114fad1dae24e",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "toussaint",
+      "gameXY": [
+        -1095.0,
+        -1073.0
+      ],
+      "latlng": [
+        -33.49341395770015,
+        -94.30808283783205
+      ],
+      "precision": "community",
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_axii_0001",
+      "sourceName": "bob_place_of_power_axii_0001",
+      "sourceIndex": 217,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Rioux-Cannes Outpost",
+        "region": "toussaint",
+        "latlng": [
+          -40.74957426103505,
+          -101.618786933788
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-power-a8fea8ca5f315da2",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "toussaint",
+      "gameXY": [
+        -643.0,
+        -1865.0
+      ],
+      "latlng": [
+        -74.66667712439445,
+        -49.04180542177588
+      ],
+      "precision": "community",
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_aard_0001",
+      "sourceName": "bob_place_of_power_aard_0001",
+      "sourceIndex": 218,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Hortense Vineyard",
+        "region": "toussaint",
+        "latlng": [
+          -75.86322212332718,
+          -24.205440821815866
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-to-stash-98a60acab10df008",
+      "type": "stash",
+      "title": "储藏箱",
+      "region": "toussaint",
+      "gameXY": [
+        -401.0,
+        -798.0
+      ],
+      "latlng": [
+        -8.015500442647314,
+        -24.806320610524576
+      ],
+      "precision": "community",
+      "sourceKey": "TO|PlayerStash|mq7024_player_stash",
+      "sourceName": "mq7024_player_stash",
+      "sourceIndex": 225,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "白鸦葡萄园",
+        "region": "toussaint",
+        "latlng": [
+          -6.823825522531668,
+          -18.39693619763167
+        ]
+      },
+      "description": "玩家储藏箱的位置。是否已开放取决于剧情与当地状态；地图不读取存档，无法判断当前可用性。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-km-power-1f4427ae7b4761ff",
+      "type": "power",
+      "title": "魔力之所",
+      "region": "kaer-morhen",
+      "gameXY": [
+        61.0,
+        969.0
+      ],
+      "latlng": [
+        74.59561180725517,
+        8.050043655225993
+      ],
+      "precision": "community",
+      "sourceKey": "KM|PlaceOfPower|km_mp_pop_igniii",
+      "sourceName": "km_mp_pop_igniii",
+      "sourceIndex": 21,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "Outpost ruins",
+        "region": "kaer-morhen",
+        "latlng": [
+          67.24200677967856,
+          -15.040454845029313
+        ]
+      },
+      "description": "探索魔力之所的位置。部分地点可能受任务阶段或入口条件影响，请结合游戏内情况确认。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    },
+    {
+      "id": "p-km-stash-ef51392c830ed251",
+      "type": "stash",
+      "title": "储藏箱",
+      "region": "kaer-morhen",
+      "gameXY": [
+        67.0,
+        11.0
+      ],
+      "latlng": [
+        -34.570262470275146,
+        8.998968251126895
+      ],
+      "precision": "community",
+      "sourceKey": "KM|PlayerStash|MISSING_NAME_5F606DEB-4ACBE41E-4DA966BD-2C74859B",
+      "sourceName": "HighlightedByMedalionFX",
+      "sourceIndex": 22,
+      "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+      "nearbyLandmark": {
+        "name": "凯尔莫罕",
+        "region": "kaer-morhen",
+        "latlng": [
+          -41.77115224116891,
+          -14.724146646395678
+        ]
+      },
+      "description": "玩家储藏箱的位置。是否已开放取决于剧情与当地状态；地图不读取存档，无法判断当前可用性。",
+      "availability": "当前来源仅给出位置，没有可解析的完整开放条件；尚未逐点实机复核。",
+      "sources": [
+        {
+          "label": "社区地图点位来源",
+          "url": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/MapPins.xml"
+        }
+      ]
+    }
+  ]
+}

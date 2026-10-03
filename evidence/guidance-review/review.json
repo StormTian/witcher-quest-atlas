@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "name": "an-eye-for-an-eye",
+      "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/an-eye-for-an-eye",
+      "retrievedAt": "2026-10-03",
+      "status": 200,
+      "sha256": "bfdee96e6148a7e8c385f28fb54e10fdd34f39817ec2f143f012a92b8fce64b8",
+      "excerpts": [
+        "Travel back to the Temerian Partisan Hideout and talk to Vernon Roche, who is hiding in the depths of the caves his partisans are occupying. Talk to him and he’ll tell you about Ves’s simmering insubordination and ask for your hell in reining her in. Agree, then head outside the cave and fast travel to the Hanged Man’s Tree signpost where you’ll find Roche waiting for you. Before you talk to him, we highly suggest that you save your game. There’s a fight ahead and Ves can die during it - if she does you’ll fail the quest. You’ll want to reload the save you make before talking to Vernon Roche if that happens until you can get things to go your way.",
+        "Defeat the Nilfgaardians while keeping Ves alive and she’ll get a stern reprimand from Vernon. Their spat is interrupted by the wounded wheezing of the Nilfgaardian Officer, who isn’t quite dead yet. When you get the chance, pick the option ”Kill him, Roche. I don’t want any trouble.” and Roche will relent and put the Nilfgaardian out of your misery. On the other hand, if you respond with ”Hard to argue with that.” Vernon will double down on his original inclinations and spare the Nilfgaardian. This choice doesn’t affect anything going forward, and whatever you choose, the quest will end afterwards, earning you 50 EXP."
+      ],
+      "method": "本次云端获取并读取正文。"
+    },
+    {
+      "name": "redanias-most-wanted",
+      "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/redanias-most-wanted",
+      "status": 200,
+      "sha256": "86734591785c5e39b4175596671189d0c05c63fc8786d960f7bdeec79e9ab0ff",
+      "bytes": 252269,
+      "retrievedAt": "2026-10-03",
+      "excerpts": [
+        "Time to search for clues! Search a chest to the northwest to find an Agate, then activate your Witcher senses to find some disinfectant near a pillar to the north, some surgical instruments on a table further north, some burnt notes to the east, and finally a megascope to the south-east. From the megascope head west over some rubble to find a Polished Crystal near a pillar. With these baubles in hand you can leave the ruins and make your report to Radovid.",
+        "If you hand over the Megascope Crystal to the Witch Hunters you’ll avoid a fight and will get 50 EXP, but when you report back to Radovid you won’t get the customary monetary reward, as the Witch Hunters will have… embellished their role at the ruins, while demeaning your own accomplishments. Radovid finds it convenient to play they-said-he-said and ultimately sends you away with nothing.",
+        "Once the Witch Hunters are dead, just take the Megascope Crystal back to Radovid and he won’t seem too concerned about the fate of his Witch Hunters. Handing over the Megascope Crystal will earn you the standard 50 EXP and well as 135 Crowns. You can do this after showing the Megascope Crystal to Triss or Yennefer and they won’t hold a grudge, so in terms of pure gameplay there’s no good reason not to give Radovid the Megascope Crystal.",
+        "Defeat the Witch Hunters and instead of heading directly back to Radovid to give him the Megascope Crystal, you can also take it to Triss or Yennefer in Novigrad or Skellige, respectively. Showing the Megascope Crystal to either sorceress will give you some extra dialog, but it’s all lore and doesn’t affect anything going forward. It’s also worth noting that if you show the Megascope Crystal to one sorceress you’ll fail an objective to show it to the other, so this dialog comes at the cost of some red ink in your quest log.",
+        "There are other complications when it comes to the sorceresses, namely progression and availability issues, which will be covered in the spoiler box below. Once you return to Radovid - with or without the Megascope Crystal - this quest will end."
+      ],
+      "method": "本次云端 HTTP 200；冻结少量支持事实的段落，完整抓取副本留在云端核查目录。"
+    },
+    {
+      "name": "a-deadly-plot",
+      "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/a-deadly-plot",
+      "status": 200,
+      "sha256": "b02e23eb4cbe80117bb162d844b3238d1df3733956a5e9b6d01884f198c1563a",
+      "bytes": 222444,
+      "retrievedAt": "2026-10-03",
+      "excerpts": [
+        "Continue to the end of the cave to reach a large cavern, where two Rock Trolls are busy abusing the foul language taught to them by their captive, Thaler, a Temerian spy from the first Witcher game. The trolls want shoes and are loathe to give up their pet cobbler until they get them… and they’re also jealous of Geralt’s fancy shoes, as well they should be. Being trolls, however, they’re not that bright, and you can talk them into letting Thaler go by picking the following dialog options:",
+        "If you pick a fight instead you’ll have to put down three Rock Trolls (Lv16) - presumably the one outside comes back in when he hears the commotion. This cavern is fairly large, but with three Rock Trolls things could still get hectic. Be prepared to dodge-spam, try to keep a troll between you and a distant troll so they’ll hit each other with the rocks they throw, use the strong attack + dodge combo to whittle down their health, and use Quen to negate the odd hit. It may take a bit of doing, but they’ll fall eventually. Aside from the somewhat rare troll materials they drop, however, there’s not much incentive for killing them.",
+        "Search the cavern for another generous chest, then leave the cave and escort Thaler back to his cobblermobile. Once back at the cart talk to Thaler and deplete his dialog options to learn about his life since Foltest’s death, which will complete the quest and earn you 25 EXP in the process.",
+        "Before you leave, talk to Thaler again and now that the quest dialog for A Deadly Plot is gone you’ll be able to challenge him to a game of Gwent. Do so and best his unremarkable Scoia’tael deck to win the Geralt of Rivia card from him, a 15 strength hero card that can (and arguably should) be used in any deck. Thaler is one of the players you need to defeat during Gwent: Old Pals, and you don’t need a recommendation or invitation to challenge him, so get it out of the way now.",
+        "Escort Thaler back to his cart and you can challenge him to a game of Gwent."
+      ],
+      "method": "本次云端 HTTP 200；冻结少量支持事实的段落，完整抓取副本留在云端核查目录。"
+    },
+    {
+      "name": "phantom-of-eldberg",
+      "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/walkthrough/skellige/the-phantom-of-eldberg",
+      "status": 200,
+      "sha256": "4c69b7fde5e5998eb4fee8c9cb9c4a22390f206b6c86441be96c3913d0928ced",
+      "bytes": 211469,
+      "retrievedAt": "2026-10-03",
+      "excerpts": [
+        "Make your way back to the Eldberg Lighthouse signpost and use it to fast-travel back to the Arinbjorn, then head into the tavern and talk to Jorund and proclaim a job well done. Jorund grants you your coin, and all is well. As you go to leave, however, the two rude Skelligers from before will return and try to pick a fight. Whatever you say, a fight ensues, with Jorund supporting you. As you and Jorund gain the upper hand, however, the two miscreants will resort to steel. Respond in kind, then check on Jorund. When you’re done talking to Jorund you’ll find yourself embroiled in the quest “Stranger in a Strange Land” ."
+      ],
+      "method": "本次云端 HTTP 200；冻结少量支持事实的段落，完整抓取副本留在云端核查目录。"
+    },
+    {
+      "name": "reason-of-state",
+      "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/walkthrough/the-wild-hunt/reason-of-state",
+      "status": 200,
+      "sha256": "e08a18a61f63d2921142f6e62c6e331bfafbcfe90641beced455d0e7c6792541",
+      "bytes": 199005,
+      "retrievedAt": "2026-10-03",
+      "excerpts": [
+        "You also need to complete other side missions like An Eye For An Eye, and Redania’s Most Wanted. It’s also worth noting that you need to be on Dijkstra’s good side. So, naturally woo the man during dialogue options, as this also plays a role in him letting you know about the plot later on.",
+        "Once those metric are checked and you get the quest after completing Blindingly Obvious, head to a warehouse along the south-eastern end of the Novigrad dock district’s crescent and knock on the door to gain access. Go upstairs and the three primary conspirators - Vernon Roche, Thaler, and Dijkstra - will lay out their plan. Agree to play your part, then head outside, where another party interested in Radovid’s demise will show up and offer you aid in the form of both advice and an item that might just increase you chances of success.",
+        "Kill the Redanian Soldiers (level twenty-nine) nearby, after which you’ll have a short chat with Roche and will get your proper weapons back. Make your way north-west across St. Gregory’s Bridge, killing Redanian Soldiers (levels twenty-seven and twenty-nine) and Witch Hunters (levels twenty-nine and thirty-three) as you go. Kill all the Redanians that stand in your way and approach the barricade at the end of the road to witness a score being settled.",
+        "Mission accomplished, although not as planned. Drink to Temeria (or not) and you’ll learn there were backstage politics at play you weren’t aware of. The party will be ruined when Dijkstra makes a theatrical entrance… and power play. You’ve got two options here, both of which affect the ending of the game and the future of the north. During a timed dialogue decision, either say “Do what you want.” to get out of politics and leave the Temerian patriots to their fate, or say “Won’t let you kill them.” to oppose Dijkstra. In the latter case you’ll have to help fight off him and his henchmen (level thirty). Either way, the quest “Reason of State” ends.",
+        "Radovid remains in power - If you never get this quest, or chose to ignore it, then Radovid stays in power and the game moves on with no real change. But, if you want to kill Radovid, there’s a juicy trophy to get. It’s also slightly Geralt friendly too, considering Radovid is a crazed mage hater. Its worth pointing out that Geralt has a taste for mages, and you’ve had quite a few scraps with mage and witch hunters now. It’s not out of the realm of possibility Geralt may remove his Witcher neutrality for this once occasion",
+        "You leave Roche and Redanian rebels to figure it out by betraying Dijkstra when he reveals he is betraying Roche and crew.",
+        "You let Djik do his thing and he takes control, and Roche and crew get got. It also stops Nilfgard getting in power and ends the witch hunts.",
+        "Vernan Roche winning sets up the possibility of Ciri becoming Emperor, but is not guaranteed thanks to other Geralt and Ciri decisions.Djik winning makes it harder for a Nilfgaard victory.Radovid remaining in power means Nilfgaard lose the war through mastering his tactics later on.If the outcome results in a better chance of a Nilfgaard victory, then it sets up a better possibility for Ciri to become Empress, as long as she goes down her Nilfgaard heritage route. Though, again, these are not guaranteed, as Geralt makes bad choices and good choices for Ciri, which could also lead her to other endings."
+      ],
+      "method": "本次云端 HTTP 200；冻结少量支持事实的段落，完整抓取副本留在云端核查目录。"
+    },
+    {
+      "name": "now-or-never",
+      "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/now-or-never",
+      "status": 200,
+      "sha256": "16e1e4b2bd2308b82693d62854d95974d5ec74b70e56edac39452035f06d495b",
+      "bytes": 247434,
+      "retrievedAt": "2026-10-03",
+      "excerpts": [
+        "Head to Triss’s hideout northeast of Hierarch Square and note the Temple Guards and the Witch Hunter outside. Probably not a good sign. Enter the leaning house and head upstairs to find Triss and her landlords arguing. The temperature in the city is rising and as the stakes have increased, so has the greed of Triss’s landlords. Head upstairs and you’ll get a timed dialog decision to either intervene (”Hands off, or I’ll cut ‘em off.”) or stay out of it ([Don’t react.]). If you don’t react the landlords will take Triss necklace, but she’ll scold you if you do intervene. Either way, it doesn’t matter all that much.",
+        "Scatter the Witch Hunters and you’ll actually get some dialog choices that matter. When Triss talks to you pick the option ”Stay with me.” followed by ”I love you.” during a timed dialog decision to rekindle your romance with Triss. Any other option will friend-zone Triss for the rest of the game. You must have kissed Triss in the hedge maze during A Matter of Life and Death for the romance to trigger. In either case, after some scenes you may find yourself talking to Dijkstra at the end of the quest. Assuming you resolved both Redania’s Most Wanted and Eye for an Eye Dijkstra will invite you to partake in the sort of high-stakes politics Geralt insists he abhors… yet which he always seems to end up embroiled in. This will start the quest [A Deadly Plot], which coincidentally is also where you can advance the quest [Gwent: Old Pals]."
+      ],
+      "method": "本次云端 HTTP 200；冻结少量支持事实的段落，完整抓取副本留在云端核查目录。"
+    }
+  ],
+  "branchAdditions": {
+    "q148": {
+      "nodes": 1,
+      "options": 2,
+      "sourceName": "an-eye-for-an-eye"
+    },
+    "q146": {
+      "nodes": 1,
+      "options": 3,
+      "sourceName": "redanias-most-wanted"
+    },
+    "q186": {
+      "nodes": 1,
+      "options": 2,
+      "sourceName": "a-deadly-plot"
+    }
+  },
+  "expectedDecisions": {
+    "reviewedTasks": 43,
+    "nodes": 48,
+    "options": 108
+  },
+  "independentFacts": [
+    {
+      "id": "assassination-stage-exception",
+      "questId": "q301",
+      "source": "https://witcher.fandom.com/wiki/Reason_of_State",
+      "claim": "沿用已核对 Wiki 阶段例外：致命阴谋须成功，以眼还眼推进到薇丝血条，瑞达尼亚头号要犯取得抛光水晶，并选择外交交换情报。后两任务之后失败不自动否定前提。",
+      "retrieval": "既有冻结文档核对；本次 Fandom HTTP 402，未声称重新抓取成功。"
+    },
+    {
+      "id": "elder-cave-lock",
+      "questId": "q406",
+      "source": "https://witcher.fandom.com/wiki/What_Lies_Unseen",
+      "claim": "真正进入暗影长者洞穴后，不能再改走童话路线；寻找欧丽安娜和血色简单期间仍可改主意。",
+      "retrieval": "沿用已有来源核对，与现有 q405/q404 分支说明一致。"
+    },
+    {
+      "id": "hos-professor",
+      "questId": "q361",
+      "source": "https://witcher.fandom.com/wiki/Whatsoever_a_Man_Soweth...",
+      "claim": "救欧吉尔德的介入路线依赖夏妮与夏克斯洛教授调查；不能把后续选项当作无条件可选。",
+      "retrieval": "沿用现有分支来源和条件锁定。"
+    },
+    {
+      "id": "eldberg-timing",
+      "questId": "q211",
+      "source": "https://witcher.fandom.com/wiki/Contract:_The_Phantom_of_Eldberg",
+      "claim": "早做委托会引出异乡人；凯尔卓宴会后再做可避开酒馆冲突，也会错过相关监狱／梦之洞窟支线。",
+      "retrieval": "冻结参考目录 228 的时机说明和可访问 Gamer Guides 的常规路线交叉；延后特例未实机复核。"
+    }
+  ],
+  "limits": [
+    "来源支持关键条件与动作影响，未建立所有任务、人物和存档状态的完整模拟。",
+    "个人完成标记不等于游戏日志成功；游戏状态和阶段事实需要单独记录。",
+    "条件未知时不推断可接取；来源任务条件片段不等于全部游戏触发条件。"
+  ]
+}

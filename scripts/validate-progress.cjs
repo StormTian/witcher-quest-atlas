@@ -1,7 +1,7 @@
 const fs = require('node:fs'), path = require('node:path'), crypto = require('node:crypto'), assert = require('node:assert/strict');
 const {chromium, launchOptions, baseURL} = require('./browser-runtime.cjs');
 const root = path.resolve(__dirname, '..'), checks = [], errors = [], failed = [];
-const files = ['app.js', 'index.html', 'style.css', 'map-navigation.js', 'progress.js', 'progress.css', 'exploration.js', 'exploration.css', 'exploration.json', 'data.json'];
+const files = require('./runtime-inputs.json');
 (async () => {
   const browser = await chromium.launch(launchOptions);
   let context, page;
@@ -31,6 +31,10 @@ const files = ['app.js', 'index.html', 'style.css', 'map-navigation.js', 'progre
     await page.locator('#hide-done').check(); assert.equal(await page.locator('[data-quest="q67"]').count(), 0);
     assert.equal(await page.evaluate(() => {let n=0; atlas.map.eachLayer(l=>{if(l instanceof L.CircleMarker)n++;});return n;}), 0);
     await page.locator('#hide-done').uncheck(); await page.locator('#progress-view').selectOption('starred'); assert.equal(await page.locator('.quest-row').count(), 1);
+    await page.locator('#layers-toggle').click();
+    assert.equal(await page.locator('[data-count-for="landmarks"]').innerText(), '111');
+    assert.equal(await page.locator('.road-sign').count(), 111);
+    await page.locator('#close-layers').click();
     await page.locator('#progress-view').selectOption('all');
     const point = await page.evaluate(() => atlas.exploration.data.points.find(p => p.region === 'velen' && p.type === 'board'));
     await page.evaluate(id => atlas.selectExploration(id), point.id); await page.locator('[data-record="done"]').click();

@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "method": "Two complete regenerations from frozen source + authored review data",
+  "hashes": {
+    "dist/data.json": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246",
+    "dist/guidance.json": "c4c10e97b9d0ba0d45b823722e955045738168609cc5387f2ab783ec88365927",
+    "dist/fact-checks.json": "ad6f00c3b327e8f85c74611b51e56c83c79e3c3faeaa38c94f703f42d176f116",
+    "dist/catalog-review.json": "5bfed2499a0fd32101b27792452f8efcbb116e2d50bddf067423a7ee0fcd18ef"
+  }
+}

@@ -23,7 +23,7 @@ window.ExplorationLayers = {
       document.querySelector('#layers-region').textContent = regionMeta().title + ' · 当前地区数量';
       for (const input of options.querySelectorAll('[data-layer]')) input.checked = get(input.dataset.layer);
       document.querySelector('[data-count-for="quests"]').textContent = questCount();
-      document.querySelector('[data-count-for="landmarks"]').textContent = window.atlas.DATA.landmarks.filter(point => point.region === state.region && isEligible(point)).length;
+      document.querySelector('[data-count-for="landmarks"]').textContent = window.atlas.DATA.landmarks.filter(point => point.region === state.region).length;
       for (const category of data.categories) {
         document.querySelector(`[data-count-for="${category.id}"]`).textContent = data.points.filter(point => point.region === state.region && point.type === category.id && isEligible(point)).length;
       }

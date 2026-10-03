@@ -134,7 +134,7 @@ const fixtures = {'white-orchard': [6, 1, 1], velen: [8, 19, 2], skellige: [9, 8
     assert.deepEqual(errors, []); assert.deepEqual(httpFailures, []);
     return 'Zero page exceptions and zero unexpected HTTP failures across the exploration interactions.';
   });
-  const output = {date: new Date().toISOString().slice(0, 10), executionEnvironment: 'cloud-linux', executedAt: new Date().toISOString(), status: checks.every(check => check.status === 'pass') ? 'pass' : 'fail', checks, passed: checks.filter(check => check.status === 'pass').length, total: checks.length, pageErrors: errors, httpFailures, datasetSha256: sha('dist/data.json'), explorationSha256: sha('dist/exploration.json'), appSha256: sha('dist/app.js'), explorationCodeSha256: sha('dist/exploration.js'), explorationStyleSha256: sha('dist/exploration.css')};
+  const output = {date: new Date().toISOString().slice(0, 10), runtimeInputHashes:require('./runtime-hashes.cjs')(),executionEnvironment: 'cloud-linux', executedAt: new Date().toISOString(), status: checks.every(check => check.status === 'pass') ? 'pass' : 'fail', checks, passed: checks.filter(check => check.status === 'pass').length, total: checks.length, pageErrors: errors, httpFailures, datasetSha256: sha('dist/data.json'), explorationSha256: sha('dist/exploration.json'), appSha256: sha('dist/app.js'), explorationCodeSha256: sha('dist/exploration.js'), explorationStyleSha256: sha('dist/exploration.css')};
   fs.writeFileSync(path.join(root, 'evidence/exploration-browser-validation.json'), JSON.stringify(output, null, 2));
   console.log(JSON.stringify(output)); await browser.close(); if (output.status !== 'pass') process.exitCode = 1;
 })().catch(error => {console.error(error); process.exitCode = 1;});

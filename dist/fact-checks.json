@@ -110,5 +110,26 @@
     "questId": "q390",
     "result": "联合并非所有和解路线的必经任务",
     "source": "https://witcher.fandom.com/wiki/Wine_Wars:_The_Deus_in_the_Machina"
+  },
+  {
+    "category": "阶段／分支",
+    "claim": "以眼还眼",
+    "questId": "q148",
+    "result": "薇丝生存影响任务收尾与援军；刺杀前置另看指定战斗阶段。",
+    "source": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/an-eye-for-an-eye"
+  },
+  {
+    "category": "阶段／分支",
+    "claim": "瑞达尼亚的头号要犯",
+    "questId": "q146",
+    "result": "取得抛光水晶与交付对象分开，额外背景对话不改变恋情。",
+    "source": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/redanias-most-wanted"
+  },
+  {
+    "category": "阶段／分支",
+    "claim": "致命阴谋",
+    "questId": "q186",
+    "result": "和平或战斗均可营救塔勒，须护送并结束对话才算成功。",
+    "source": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/a-deadly-plot"
   }
 ]

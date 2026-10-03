@@ -1,6 +1,6 @@
 'use strict';
 window.AtlasProgress = {
-  create({state, data, points, regions, navigation, esc, onUpdate, onNavigate, onRegion}) {
+  create({state, data, points, regions, navigation, guidanceConfig, esc, onUpdate, onNavigate, onRegion}) {
     const storageKey = 'witcher-atlas-progress-v1';
     const known = {quest: new Map(data.quests.map(q => [q.id, q])), point: new Map(points.points.map(p => [p.id, p]))};
     let records = {quest: {}, point: {}}, orphaned = [], pendingImport = null, timer, ready = false, routing = false, loadBlocked = false, lastRaw;
@@ -18,7 +18,17 @@ window.AtlasProgress = {
     const defaults = {region: 'velen', type: 'all', exp: 'all', query: '', global: false, branch: false, landmarks: true, layers: {quests: true, ...Object.fromEntries(points.categories.map(c => [c.id, c.defaultEnabled === true]))}, hideDone: false, progressView: 'all'};
     function parse(value) {
       if (!isObject(value) || value.app !== 'witcher-quest-atlas' || value.schemaVersion !== 1 || !isObject(value.records)) throw Error('不是支持的巫师3地图备份，或备份版本不受支持。');
-      const result = {records: {quest: Object.create(null), point: Object.create(null)}, orphaned: [], preferences: {...defaults, layers: {...defaults.layers}}, choices: {}, views: {}, selected: null, sim: {}, baw: {}};
+      const result = {records: {quest: Object.create(null), point: Object.create(null)}, orphaned: [], preferences: {...defaults, layers: {...defaults.layers}}, choices: {}, views: {}, selected: null, sim: {}, baw: {}, story:{questStates:Object.create(null),facts:Object.create(null),stage:'before-isle'}};
+      const addStoryQuest = (id, value) => {
+        if (!identifier(id) || !['unknown','not-started','active','success','failure'].includes(value)) throw Error('游戏状态记录格式不正确。');
+        if (known.quest.has(id)) result.story.questStates[id]=value;
+        else result.orphaned.push({kind:'story-quest',questId:id,value});
+      };
+      const addStoryFact = (id, value) => {
+        if (!identifier(id) || !['unknown','yes','no'].includes(value)) throw Error('剧情阶段事实格式不正确。');
+        if (guidanceConfig.facts.some(f=>f.id===id)) result.story.facts[id]=value;
+        else result.orphaned.push({kind:'story-fact',factId:id,value});
+      };
       const addRecord = (kind, id, flags) => {
         if (!['quest', 'point'].includes(kind) || !identifier(id) || !isObject(flags) || typeof flags.done !== 'boolean' || typeof flags.starred !== 'boolean') throw Error('备份中的完成或收藏记录格式不正确。');
         if (known[kind].has(id)) result.records[kind][id] = {done: flags.done, starred: flags.starred};
@@ -33,7 +43,9 @@ window.AtlasProgress = {
         if (item.kind === 'decision') {
           if (!identifier(item.questId) || !identifier(item.decisionId) || typeof item.optionLabel !== 'string' || item.optionLabel.length > 300) throw Error('未匹配决策格式不正确。');
           result.orphaned.push({...item});
-        } else addRecord(item.kind, item.id, item);
+        } else if(item.kind==='story-quest') addStoryQuest(item.questId,item.value);
+        else if(item.kind==='story-fact') addStoryFact(item.factId,item.value);
+        else addRecord(item.kind, item.id, item);
       }
       const pref = value.preferences || {};
       if (!isObject(pref)) throw Error('筛选偏好格式不正确。');
@@ -66,6 +78,12 @@ window.AtlasProgress = {
         if (isObject(view) && Array.isArray(view.center) && view.center.length === 2 && view.center.every(Number.isFinite) && Math.abs(view.center[0]) <= 85.0512 && Math.abs(view.center[1]) <= 180 && Number.isFinite(view.zoom) && view.zoom >= 1 && view.zoom <= region.max + .5) result.views[region.id] = {center: view.center, zoom: view.zoom};
       }
       if (isObject(value.selected) && ['quest', 'point'].includes(value.selected.kind) && known[value.selected.kind].has(value.selected.id)) result.selected = value.selected;
+      if (value.story !== undefined) {
+        if (!isObject(value.story) || !isObject(value.story.questStates) || !isObject(value.story.facts)) throw Error('游戏阶段记录格式不正确。');
+        for (const [id,status] of Object.entries(value.story.questStates)) addStoryQuest(id,status);
+        for (const [id,status] of Object.entries(value.story.facts)) addStoryFact(id,status);
+        if (['all',...guidanceConfig.stages.map(s=>s.id)].includes(value.story.stage)) result.story.stage=value.story.stage;
+      }
       return result;
     }
     function snapshot() {
@@ -77,7 +95,7 @@ window.AtlasProgress = {
       }
       const views = {};
       for (const [id, view] of navigation.views) views[id] = {center: Array.isArray(view.center) ? view.center : [view.center.lat, view.center.lng], zoom: view.zoom};
-      return {app: 'witcher-quest-atlas', schemaVersion: 1, dataVersion: {catalog: data.meta.catalogVersion, exploration: points.meta.schemaVersion, source: points.meta.sourceCommit}, savedAt: new Date().toISOString(), records, orphaned, preferences, choices, views, sim: state.sim, baw: state.baw, selected: state.selected ? {kind: 'quest', id: state.selected} : state.selectedPoint ? {kind: 'point', id: state.selectedPoint} : null};
+      return {app: 'witcher-quest-atlas', schemaVersion: 1, dataVersion: {catalog: data.meta.catalogVersion, exploration: points.meta.schemaVersion, source: points.meta.sourceCommit, guidance:guidanceConfig.meta.schemaVersion}, savedAt: new Date().toISOString(), records, orphaned, preferences, choices, views, sim: state.sim, baw: state.baw, story:state.story, selected: state.selected ? {kind: 'quest', id: state.selected} : state.selectedPoint ? {kind: 'point', id: state.selectedPoint} : null};
     }
     function save() {
       if (!ready || loadBlocked) return;
@@ -99,6 +117,7 @@ window.AtlasProgress = {
     function install(parsed) {
       loadBlocked = false; records = parsed.records; orphaned = parsed.orphaned;
       Object.assign(state, parsed.preferences); state.choices = parsed.choices;
+      state.story=parsed.story;
       Object.assign(state.sim, parsed.sim); Object.assign(state.baw, parsed.baw);
       state.spoilers = false; state.revealed = [];
       navigation.views.clear();
@@ -106,6 +125,7 @@ window.AtlasProgress = {
     }
     function initial() {
       Object.assign(state, defaults, {layers: {...defaults.layers}});
+      state.story={questStates:{},facts:{},stage:'before-isle'};
       let saved = null;
       try { const raw = localStorage.getItem(storageKey); lastRaw = raw; if (raw) { saved = parse(JSON.parse(raw)); install(saved); } }
       catch { loadBlocked = true; notify('无法读取本地进度；地图仍可使用。原有记录没有被覆盖，请保留备份。', true); }
@@ -159,13 +179,18 @@ window.AtlasProgress = {
         catch { input.focus(); input.select(); status.textContent = '请复制上面的链接。链接不包含个人进度或决策。'; }
       };
     }
+    function setRecord(kind,id,name,value) {
+      if (!known[kind]?.has(id) || !['done','starred'].includes(name) || typeof value!=='boolean') throw Error('Unknown progress record');
+      records[kind][id]={...(records[kind][id]||{done:false,starred:false}),[name]:value};
+      save(); onUpdate(); render();
+    }
     function render() {
       for (const [kind, label] of [['quest', '任务'], ['point', '探索点']]) {
         const list = [...known[kind].keys()], done = list.filter(id => flag(kind, id, 'done')).length, starred = list.filter(id => flag(kind, id, 'starred')).length;
         document.querySelector(`[data-progress-stat="${kind}"]`).textContent = `${label}：已完成 ${done} / ${list.length} · 收藏 ${starred}`;
       }
       document.querySelector('#orphaned-records').hidden = orphaned.length === 0;
-      document.querySelector('#orphaned-records').textContent = orphaned.length ? `${orphaned.length} 条记录暂未匹配到当前数据，仍保留在备份中：` + orphaned.map(item => item.id || item.decisionId).join('、') : '';
+      document.querySelector('#orphaned-records').textContent = orphaned.length ? `${orphaned.length} 条记录暂未匹配到当前数据，仍保留在备份中：` + orphaned.map(item => item.id || item.decisionId || item.questId || item.factId).join('、') : '';
       document.querySelector('#progress-view').value = state.progressView;
       document.querySelector('#hide-done').checked = state.hideDone;
     }
@@ -184,7 +209,7 @@ window.AtlasProgress = {
         if (file.size > 1024 * 1024) throw Error('备份文件超过 1 MB，请选择个人进度 JSON。');
         pendingImport = parse(JSON.parse(await file.text()));
         const count = Object.keys(pendingImport.records.quest).length + Object.keys(pendingImport.records.point).length;
-        feedback.textContent = `备份检查通过：${count} 个对象记录，${Object.keys(pendingImport.choices).length} 项决策，${pendingImport.orphaned.length} 条未匹配记录。点击“恢复此备份”后替换当前记录。`;
+        feedback.textContent = `备份检查通过：${count} 个对象记录，${Object.keys(pendingImport.choices).length} 项决策，${Object.keys(pendingImport.story.questStates).length} 项游戏状态，${Object.keys(pendingImport.story.facts).length} 项阶段事实，${pendingImport.orphaned.length} 条未匹配记录。点击“恢复此备份”后替换当前记录。`;
         document.querySelector('#progress-apply').disabled = false;
       } catch (error) { feedback.textContent = '导入未执行：' + error.message + ' 当前记录保持不变。'; }
     };
@@ -205,11 +230,12 @@ window.AtlasProgress = {
         if (event.newValue === null) { lastRaw = null; loadBlocked = true; notify('本地记录已在其他标签页清空，请刷新后继续。', true); return; }
         const parsed = parse(JSON.parse(event.newValue));
         records = parsed.records; orphaned = parsed.orphaned; state.choices = parsed.choices;
+        state.story=parsed.story;
         lastRaw = event.newValue; loadBlocked = false; onUpdate(); render();
       } catch { loadBlocked = true; notify('其他标签页的记录无法读取，已停止覆盖。请导出备份。', true); }
     });
     window.addEventListener('pagehide', save);
     navigation.onViewChange = touch;
-    return {initial, applyRoute, allows, flag, actions, bindActions, render, touch, save, selected, snapshot, parse, storageKey};
+    return {initial, applyRoute, allows, flag, actions, bindActions, render, touch, save, selected, snapshot, parse, storageKey,setRecord};
   },
 };

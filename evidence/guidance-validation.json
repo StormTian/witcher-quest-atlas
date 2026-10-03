@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T06:56:21.909Z",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "三值全部／任一逻辑边界",
+      "status": "pass",
+      "detail": "Six independent truth-table cases, including partial knowledge."
+    },
+    {
+      "name": "游戏成功、失败、进行中与未知分开",
+      "status": "pass",
+      "detail": "Unsupported and unrecorded states remain unknown."
+    },
+    {
+      "name": "刺杀线失败阶段例外",
+      "status": "pass",
+      "detail": "Ves/crystal stage facts survive later failures; A Deadly Plot still requires success."
+    },
+    {
+      "name": "刺杀前置缺项及外交选择",
+      "status": "pass",
+      "detail": "No missing facts or forceful Dijkstra choice silently unlock the route."
+    },
+    {
+      "name": "个人勾选不是游戏成功",
+      "status": "pass",
+      "detail": "Done-only input leaves the game success requirement unknown."
+    },
+    {
+      "name": "教授调查前提与失效节点",
+      "status": "pass",
+      "detail": "Skipped professor inquiry rejects the rescue prerequisite and stale follow-up choice."
+    },
+    {
+      "name": "血与酒路线互斥与真正进入洞穴",
+      "status": "pass",
+      "detail": "Recorded cave entry overrides a prior intention; incompatible routes never both satisfy conditions."
+    },
+    {
+      "name": "凯拉与两段恋情的前序组合",
+      "status": "pass",
+      "detail": "Keira destination and prior Triss kiss are preserved as separate facts."
+    },
+    {
+      "name": "所有条件分组与来源行对应",
+      "status": "pass",
+      "detail": "All/any/active semantics retained across every parsed source clause."
+    },
+    {
+      "name": "三条新增分支有独立攻略事实",
+      "status": "pass",
+      "detail": "Three new nodes / seven options bound to fetched source paragraphs, beyond UI self-checks."
+    },
+    {
+      "name": "阶段清单覆盖已有提醒并默认中性",
+      "status": "pass",
+      "detail": "43 sourced neutral reminders, including every existing cutoff and all priority checkpoints."
+    },
+    {
+      "name": "评估不会改选择或结局演算",
+      "status": "pass",
+      "detail": "Read-only rule evaluation, 43 reviewed tasks / 48 nodes / 108 options."
+    }
+  ],
+  "passed": 12,
+  "total": 12,
+  "runtimeInputHashes": {
+    "app.js": "8b04df96e9168bbdd139426fe82d4eb9eb190f61d1e7aaf461a2d1422a247f49",
+    "index.html": "7d6d07dc65bbb0945be7333bdffc313cf52a3cf7ae449f20298f87f57df89965",
+    "style.css": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
+    "logic.js": "3f4a76aa54ba0f4cd1a9c4c5245d26acd3ae5d86159bfa678544535028aa7072",
+    "map-navigation.js": "916d33601e6664bad56ec5f9bfe54c09a760cb5fb37e99e5c33b8c70427ad259",
+    "data.json": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246",
+    "places-zh.json": "01442feaf8d61d469ad3d00afe2e31c16ead4069d558f378a002e4f61aadf742",
+    "exploration.js": "45ea7084e5433de21165ae2202ed600042bc969bd9ddb57f38ec23ea392ef69a",
+    "exploration.css": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360",
+    "exploration.json": "f713b7133f712f08fce9f8c09e4598b75d310c9818235643b063a55a30f1c9b4",
+    "progress.js": "e5057099c85d7ab96e05bf317f15c9d1cf1132dc9f8fa4adf654572042b68073",
+    "progress.css": "f61485024473e3f7657dbef553440248f74a65b76bbddad59e34320293ac2fe9",
+    "story-logic.js": "b4b56332e4bad2e8df5d43695f0a188ccfa49c32d52dd26d89fb178e98a88303",
+    "guidance.js": "2519a8f44726993bee4db71381175186c1d47de03ac8811beb857eaf76bd2cf7",
+    "guidance.css": "e0058286cf19ae7915785b8d69c86390a6e886a481a4d4d67843f34325dd8c94",
+    "guidance.json": "c4c10e97b9d0ba0d45b823722e955045738168609cc5387f2ab783ec88365927"
+  }
+}

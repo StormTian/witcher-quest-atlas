@@ -20,11 +20,13 @@
 
 “分享定位”只带地区与对象 ID，可直达任务或探索点，并支持浏览器前进／后退。公共任务数据下载和个人进度备份为不同入口。
 
+按剧情阶段的防漏清单有 43 条来源明确的提醒，可标为已处理、筛选并打开任务。详情中的游戏日志状态与个人完成勾选分开，剧情阶段事实默认未知。已选决策的关联后果仍要逐任务展开剧透；不会自动改写其他选择或结局演算。
+
 ## 当前覆盖与正确性
 
 - 428 个目录条目：保留 87 主线、180 支线；新增 35 委托、29 套装搜集、57 其他寻宝、40 遭遇。304 个定位为发现／接取线索或关联地标。
 - 615 个探索点、13 类，使用独立稳定 ID；617 条候选合并重复 1 条、暂缓独立场景 1 条。16 条共用或空白源键有显式 ID 映射。
-- 40 个关键任务有已核对分支：45 节点、101 个选项。
+- 43 个关键任务有已核对分支：48 节点、108 个选项。
 - 希里与血与酒结局可按选择组合演算。
 - 地图社区坐标、地标近似定位和无独立接取点的流程任务明确区分。
 - 未整理的分支明确标为未收录；不表示该任务没有决策或后果。
@@ -45,6 +47,7 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 python3 scripts/build-data.py
 python3 scripts/enrich-data.py
 python3 scripts/expand-catalog.py
+python3 scripts/build-guidance.py
 python3 scripts/build-places.py
 python3 scripts/build-exploration.py
 node scripts/validate.cjs
@@ -56,6 +59,8 @@ node scripts/validate-navigation.cjs
 node scripts/validate-exploration.cjs
 node scripts/validate-progress.cjs
 node scripts/validate-catalog.cjs
+node scripts/validate-guidance.cjs
+node scripts/browser-guidance.cjs
 python3 scripts/build-report.py
 node scripts/validate-assets.cjs
 python3 scripts/build-report.py
@@ -75,6 +80,8 @@ python3 scripts/build-report.py
 - `dist/exploration.js`、`dist/exploration.css`：探索图层、分类控制与样式。
 - `scripts/validate-exploration.py`、`scripts/validate-exploration.cjs`：独立来源清单、坐标样例和实际桌面／手机图层操作。
 - `docs/map-iteration-plan.md`：BWIKI 对照盘点、分轮范围与验收门槛。
+- `scripts/build-guidance.py`：三条新增分支、剧情阶段提醒、条件来源及丢失的新目录引用。
+- `dist/guidance.js`、`dist/story-logic.js`：防漏清单、游戏阶段记录、三值条件与只读决策提示。
 - `scripts/enrich-data.py`：资料修正、中文摘要、来源和决策规则。
 - `dist/logic.js`：两个主干结局的组合规则。
 - `evidence/`：冻结输入、地图校准、实际测试结果与验收画面。
@@ -88,4 +95,4 @@ python3 scripts/build-report.py
 
 原始云端恢复基线：`341b240bbb598db2f5f37e4c548953b046178b4f`，5,822 个版本管理文件。历史本地验收已保存在 `evidence/history/local-2026-10-02/`；本次及后续云端结果必须明确执行环境与时间，不能把历史本地 66 项通过写为本次云端结果。
 
-历史迁移曾因 Chromium 缺失而未完成浏览器验收，阻碍记录保留在 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。2026-10-03 已在本云环境使用 Chromium 151 完成基线与第一轮浏览器检查，第二轮 93/93，第三轮 113/113 项通过，当前结果见 `dist/validation.json`；历史阻碍不再代表当前状态。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。
+历史迁移曾因 Chromium 缺失而未完成浏览器验收，阻碍记录保留在 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。2026-10-03 已在本云环境使用 Chromium 151 完成基线与第一轮浏览器检查，第二轮 93/93，第三轮 113/113，第四轮最终 137/137 项通过，当前结果见 `dist/validation.json`；历史阻碍不再代表当前状态。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。

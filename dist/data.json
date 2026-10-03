@@ -1,7 +1,7 @@
 {
   "meta": {
     "date": "2026-10-03",
-    "catalogVersion": "1.3",
+    "catalogVersion": "1.4",
     "scope": "本体 + 石之心 + 血与酒；保留原 267 条主线／支线，补入委托、套装搜集、寻宝与随机遭遇。按冻结来源核对，不声称全游戏完整。",
     "sources": [
       {
@@ -54,7 +54,10 @@
       "本清单核对两套冻结社区来源，未声称全游戏任务或探索点完整。",
       "中文新增标题为本项目译名，不宣称全部是游戏官方译名。",
       "遗忘狼的升级装备条目归并图纸任务；Griffin-in-the-Vines 与 Duchaton Crest 的别名有 XML 问号，保留待实机核对说明。",
-      "来源无法读取的网页链接保留为引用，不冒充本次抓取验证。"
+      "来源无法读取的网页链接保留为引用，不冒充本次抓取验证。",
+      "来源支持关键条件与动作影响，未建立所有任务、人物和存档状态的完整模拟。",
+      "个人完成标记不等于游戏日志成功；游戏状态和阶段事实需要单独记录。",
+      "条件未知时不推断可接取；来源任务条件片段不等于全部游戏触发条件。"
     ],
     "factChecks": [
       {
@@ -168,11 +171,32 @@
         "questId": "q390",
         "result": "联合并非所有和解路线的必经任务",
         "source": "https://witcher.fandom.com/wiki/Wine_Wars:_The_Deus_in_the_Machina"
+      },
+      {
+        "category": "阶段／分支",
+        "claim": "以眼还眼",
+        "questId": "q148",
+        "result": "薇丝生存影响任务收尾与援军；刺杀前置另看指定战斗阶段。",
+        "source": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/an-eye-for-an-eye"
+      },
+      {
+        "category": "阶段／分支",
+        "claim": "瑞达尼亚的头号要犯",
+        "questId": "q146",
+        "result": "取得抛光水晶与交付对象分开，额外背景对话不改变恋情。",
+        "source": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/redanias-most-wanted"
+      },
+      {
+        "category": "阶段／分支",
+        "claim": "致命阴谋",
+        "questId": "q186",
+        "result": "和平或战斗均可营救塔勒，须护送并结束对话才算成功。",
+        "source": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/a-deadly-plot"
       }
     ],
-    "reviewedTasks": 40,
-    "decisionNodes": 45,
-    "decisionOptions": 101,
+    "reviewedTasks": 43,
+    "decisionNodes": 48,
+    "decisionOptions": 108,
     "ciriRuleNote": "记分按 Witcher Wiki：未觐见时比较四项互动，积极不少于消极；觐见时加上酬金节点，共五项，至少三次积极。PC Gamer 把跳过觐见也计作积极选项，其五项写法与这里的四项写法得到相同结果。二比二边界未在游戏中复测。",
     "catalogReview": "catalog-review.json"
   },
@@ -202,7 +226,12 @@
           "url": "https://witcher.fandom.com/wiki/Kaer_Morhen_(quest)"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q3",
@@ -237,7 +266,12 @@
           "url": "https://witcher.fandom.com/wiki/Lilac_and_Gooseberries"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q44",
@@ -276,7 +310,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Beast_of_White_Orchard"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q39",
@@ -306,7 +345,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Incident_at_White_Orchard"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q19",
@@ -373,7 +417,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "离开白果园前完成"
+      "cutoff": "离开白果园前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q20",
@@ -412,7 +461,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Frying_Pan,_Spick_and_Span"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q36",
@@ -483,7 +537,12 @@
           "url": "https://witcher.fandom.com/wiki/Precious_Cargo"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q37",
@@ -545,7 +604,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "在离开白果园、前往维吉玛前完成"
+      "cutoff": "在离开白果园、前往维吉玛前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q42",
@@ -584,7 +648,12 @@
           "url": "https://witcher.fandom.com/wiki/On_Death's_Bed"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q40",
@@ -643,7 +712,12 @@
           "url": "https://witcher.fandom.com/wiki/Imperial_Audience"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q12",
@@ -688,7 +762,12 @@
           "url": "https://witcher.fandom.com/wiki/Gwent:_Velen_Players"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q22",
@@ -733,7 +812,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Truth_is_in_the_Stars"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q45",
@@ -778,7 +862,12 @@
           "url": "https://witcher.fandom.com/wiki/Funeral_Pyres"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q49",
@@ -839,7 +928,12 @@
             56.45202364414255
           ]
         }
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q68",
@@ -884,7 +978,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Dog's_Life"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q82",
@@ -930,7 +1029,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q83",
@@ -989,7 +1093,12 @@
       ],
       "reviewed": true,
       "people": "雷索 Letho",
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q84",
@@ -1034,7 +1143,12 @@
           "url": "https://witcher.fandom.com/wiki/Fools'_Gold"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q88",
@@ -1079,7 +1193,12 @@
           "url": "https://witcher.fandom.com/wiki/Lynch_Mob"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q89",
@@ -1124,7 +1243,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Greedy_God"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q93",
@@ -1197,7 +1321,12 @@
         }
       ],
       "reviewed": true,
-      "people": "尼伦 玛格丽特 Niellen Margrit"
+      "people": "尼伦 玛格丽特 Niellen Margrit",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q119",
@@ -1221,8 +1350,16 @@
       },
       "location": "接取点附近：Lindenvale",
       "precision": "community",
-      "predecessors": [],
-      "requirements": [],
+      "predecessors": [
+        "q115"
+      ],
+      "requirements": [
+        {
+          "questId": "q115",
+          "state": "JS_Success",
+          "mode": "any"
+        }
+      ],
       "decisions": [],
       "sources": [
         {
@@ -1234,7 +1371,12 @@
           "url": "https://witcher.fandom.com/wiki/Witcher_Wannabe"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q118",
@@ -1279,7 +1421,12 @@
           "url": "https://witcher.fandom.com/wiki/Defender_of_the_Faith"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q120",
@@ -1324,7 +1471,12 @@
           "url": "https://witcher.fandom.com/wiki/Love's_Cruel_Snares"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q121",
@@ -1369,7 +1521,12 @@
           "url": "https://witcher.fandom.com/wiki/Death_By_Fire"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q130",
@@ -1414,7 +1571,12 @@
           "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Velen"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q139",
@@ -1459,7 +1621,12 @@
           "url": "https://witcher.fandom.com/wiki/Blood_Ties"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q268",
@@ -1528,7 +1695,12 @@
           "url": "https://witcher.fandom.com/wiki/Where_the_Cat_and_Wolf_Play..."
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q267",
@@ -1542,8 +1714,16 @@
       "point": null,
       "location": "剧情流程；没有独立接取点",
       "precision": "flow",
-      "predecessors": [],
-      "requirements": [],
+      "predecessors": [
+        "q266"
+      ],
+      "requirements": [
+        {
+          "questId": "q266",
+          "state": "JS_Success",
+          "mode": "any"
+        }
+      ],
       "decisions": [],
       "sources": [
         {
@@ -1555,7 +1735,12 @@
           "url": "https://witcher.fandom.com/wiki/Take_What_You_Want"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q60",
@@ -1600,7 +1785,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Nilfgaardian_Connection"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q65",
@@ -1645,7 +1835,12 @@
           "url": "https://witcher.fandom.com/wiki/Hunting_a_Witch"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q73",
@@ -1680,7 +1875,12 @@
           "url": "https://witcher.fandom.com/wiki/Wandering_in_the_Dark"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q78",
@@ -1715,7 +1915,12 @@
           "url": "https://witcher.fandom.com/wiki/Magic_Lamp"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q79",
@@ -1750,7 +1955,12 @@
           "url": "https://witcher.fandom.com/wiki/An_Invitation_from_Keira_Metz"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q80",
@@ -1822,7 +2032,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q81",
@@ -1858,7 +2073,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q99",
@@ -1937,7 +2157,12 @@
       ],
       "reviewed": true,
       "cutoff": "进入“迷雾之岛”前完成",
-      "people": "凯拉 Keira 兰伯特 Lambert"
+      "people": "凯拉 Keira 兰伯特 Lambert",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q75",
@@ -1982,7 +2207,12 @@
           "url": "https://witcher.fandom.com/wiki/Bloody_Baron"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q61",
@@ -2017,7 +2247,12 @@
           "url": "https://witcher.fandom.com/wiki/Ciri's_Story:_The_King_of_the_Wolves"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q8",
@@ -2062,7 +2297,12 @@
           "url": "https://witcher.fandom.com/wiki/Races:_Crow's_Perch"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q69",
@@ -2108,7 +2348,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q74",
@@ -2182,7 +2427,12 @@
         }
       ],
       "reviewed": true,
-      "people": "男爵 安娜 塔玛拉 Baron Anna Tamara"
+      "people": "男爵 安娜 塔玛拉 Baron Anna Tamara",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q63",
@@ -2217,7 +2467,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Princess_in_Distress"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q64",
@@ -2252,7 +2507,12 @@
           "url": "https://witcher.fandom.com/wiki/Ciri's_Story:_The_Race"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q62",
@@ -2288,7 +2548,12 @@
           "url": "https://witcher.fandom.com/wiki/Ciri's_Story:_Out_of_the_Shadows"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q76",
@@ -2323,7 +2588,12 @@
           "url": "https://witcher.fandom.com/wiki/Ladies_of_the_Wood"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q67",
@@ -2406,7 +2676,12 @@
         }
       ],
       "reviewed": true,
-      "people": "树灵 老巫妪 孤儿 tree spirit Crones"
+      "people": "树灵 老巫妪 孤儿 tree spirit Crones",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q66",
@@ -2441,7 +2716,12 @@
           "url": "https://witcher.fandom.com/wiki/Ciri's_Story:_Fleeing_the_Bog"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q91",
@@ -2486,7 +2766,12 @@
           "url": "https://witcher.fandom.com/wiki/Forefathers'_Eve"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q105",
@@ -2537,7 +2822,12 @@
           "url": "https://witcher.fandom.com/wiki/Last_Rites"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q107",
@@ -2609,7 +2899,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q90",
@@ -2654,7 +2949,12 @@
           "url": "https://witcher.fandom.com/wiki/Thou_Shalt_Not_Pass"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q106",
@@ -2699,7 +2999,12 @@
           "url": "https://witcher.fandom.com/wiki/Fake_Papers"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q104",
@@ -2734,7 +3039,12 @@
           "url": "https://witcher.fandom.com/wiki/Bitter_Harvest"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q206",
@@ -2769,7 +3079,12 @@
           "url": "https://witcher.fandom.com/wiki/Destination:_Skellige"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q41",
@@ -2820,7 +3135,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Dwarven_Document_Dilemma"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q13",
@@ -2861,7 +3181,12 @@
           "url": "https://witcher.fandom.com/wiki/Gwent:_Playing_Innkeeps"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q21",
@@ -2912,7 +3237,12 @@
           "url": "https://witcher.fandom.com/wiki/Empty_Coop"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q24",
@@ -2963,7 +3293,12 @@
           "url": "https://witcher.fandom.com/wiki/Message_from_an_Old_Friend"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q77",
@@ -3014,7 +3349,12 @@
           "url": "https://witcher.fandom.com/wiki/Hey,_You_Wanna_Look_at_My_Stuff?"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q97",
@@ -3059,7 +3399,12 @@
           "url": "https://witcher.fandom.com/wiki/Hidden_Messages_of_the_Nilfgaardian_Kind"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q98",
@@ -3110,7 +3455,12 @@
           "url": "https://witcher.fandom.com/wiki/Novigrad_Hospitality"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q103",
@@ -3161,7 +3511,12 @@
           "url": "https://witcher.fandom.com/wiki/Of_Dairy_and_Darkness"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q122",
@@ -3185,8 +3540,16 @@
       },
       "location": "接取点附近：奥森弗特港",
       "precision": "community",
-      "predecessors": [],
-      "requirements": [],
+      "predecessors": [
+        "q272"
+      ],
+      "requirements": [
+        {
+          "questId": "q272",
+          "state": "JS_Success",
+          "mode": "any"
+        }
+      ],
       "decisions": [],
       "sources": [
         {
@@ -3198,7 +3561,12 @@
           "url": "https://witcher.fandom.com/wiki/Rough_Neighborhood"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q129",
@@ -3216,7 +3584,7 @@
           1454.0
         ],
         "latlng": [
-          50.640202146015135,
+          50.640202146015106,
           45.02608362683285
         ]
       },
@@ -3249,7 +3617,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Barnful_of_Trouble"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q138",
@@ -3300,7 +3673,12 @@
           "url": "https://witcher.fandom.com/wiki/Spooked_Mare"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q142",
@@ -3351,7 +3729,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Walk_on_the_Waterfront"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q157",
@@ -3396,7 +3779,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Volunteer"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q161",
@@ -3447,7 +3835,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Tome_Entombed"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q162",
@@ -3498,7 +3891,12 @@
           "url": "https://witcher.fandom.com/wiki/Warehouse_of_Woe"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q198",
@@ -3549,7 +3947,12 @@
           "url": "https://witcher.fandom.com/wiki/Little_Red"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q252",
@@ -3600,7 +4003,12 @@
           "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Novigrad"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q263",
@@ -3651,7 +4059,12 @@
           "url": "https://witcher.fandom.com/wiki/Of_Swords_and_Dumplings"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q309",
@@ -3702,7 +4115,12 @@
           "url": "https://witcher.fandom.com/wiki/Races:_Swift_as_the_Western_Winds"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q310",
@@ -3747,7 +4165,12 @@
           "url": "https://witcher.fandom.com/wiki/Without_a_Trace"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q311",
@@ -3798,7 +4221,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Taxman_Cometh"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q312",
@@ -3849,7 +4277,12 @@
           "url": "https://witcher.fandom.com/wiki/Enchanting:_Start-up_Costs"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q431",
@@ -3878,7 +4311,12 @@
           "url": "https://witcher.fandom.com/wiki/Enchanting:_Quality_Has_Its_Price"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q14",
@@ -3929,7 +4367,12 @@
           "url": "https://witcher.fandom.com/wiki/Gwent:_Big_City_Players"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q324",
@@ -3964,7 +4407,12 @@
           "url": "https://witcher.fandom.com/wiki/Envoys,_Wineboys"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q117",
@@ -4004,7 +4452,12 @@
           "url": "https://witcher.fandom.com/wiki/Pyres_of_Novigrad"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q87",
@@ -4039,7 +4492,12 @@
           "url": "https://witcher.fandom.com/wiki/Novigrad_Dreaming"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q92",
@@ -4084,7 +4542,12 @@
           "url": "https://witcher.fandom.com/wiki/Haunted_House"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q125",
@@ -4119,7 +4582,12 @@
           "url": "https://witcher.fandom.com/wiki/Broken_Flowers"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q143",
@@ -4149,7 +4617,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q147",
@@ -4221,7 +4694,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q136",
@@ -4256,7 +4734,12 @@
           "url": "https://witcher.fandom.com/wiki/Get_Junior"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q109",
@@ -4291,7 +4774,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Gangs_of_Novigrad"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q101",
@@ -4326,7 +4814,12 @@
           "url": "https://witcher.fandom.com/wiki/Ciri's_Story:_Visiting_Junior"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q137",
@@ -4372,7 +4865,12 @@
           "url": "https://witcher.fandom.com/wiki/Count_Reuven's_Treasure"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q145",
@@ -4440,7 +4938,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q131",
@@ -4485,7 +4988,12 @@
           "url": "https://witcher.fandom.com/wiki/Novigrad,_Closed_City"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q132",
@@ -4530,7 +5038,12 @@
           "url": "https://witcher.fandom.com/wiki/Novigrad,_Closed_City_II"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q186",
@@ -4554,7 +5067,35 @@
           "mode": "any"
         }
       ],
-      "decisions": [],
+      "decisions": [
+        {
+          "id": "q186-d1",
+          "title": "如何带走塔勒",
+          "options": [
+            {
+              "label": "说服巨魔让塔勒离开",
+              "effect": "可以和平救出塔勒；仍需护送回车旁并结束对话，才算完成“致命阴谋”。随后可与他打昆特牌。",
+              "links": [
+                "q17",
+                "q301"
+              ]
+            },
+            {
+              "label": "与巨魔战斗，救出塔勒",
+              "effect": "需要击败巨魔后护送塔勒并结束对话；这条路线也能成功完成任务。取得巨魔材料不额外改变刺杀前置。",
+              "links": [
+                "q17",
+                "q301"
+              ]
+            }
+          ],
+          "source": {
+            "label": "本次文档核对：Gamer Guides",
+            "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/a-deadly-plot"
+          },
+          "note": "“为祖国”要求本任务成功完成；只选择营救方式不代表已完成。塔勒的昆特对战应单独记录。"
+        }
+      ],
       "sources": [
         {
           "label": "社区任务数据",
@@ -4563,10 +5104,20 @@
         {
           "label": "任务攻略（英文）",
           "url": "https://witcher.fandom.com/wiki/A_Deadly_Plot"
+        },
+        {
+          "label": "本次分支交叉核对",
+          "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/a-deadly-plot"
         }
       ],
-      "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "reviewed": true,
+      "cutoff": "进入“迷雾之岛”前完成",
+      "people": "塔勒 迪科斯彻 Thaler Dijkstra",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q148",
@@ -4584,7 +5135,35 @@
         "q136"
       ],
       "requirements": [],
-      "decisions": [],
+      "decisions": [
+        {
+          "id": "q148-d1",
+          "title": "战斗中是否保住薇丝",
+          "options": [
+            {
+              "label": "救下薇丝，并完成战斗",
+              "effect": "保住薇丝可以成功收尾，并保留罗契与薇丝赴凯尔莫罕助战的机会；还需完成招募对话。",
+              "links": [
+                "q248",
+                "q257"
+              ]
+            },
+            {
+              "label": "薇丝在战斗中死亡",
+              "effect": "这项任务失败，并失去罗契的正常援军路线。刺杀线另按已到达的战斗阶段判断，不能只凭失败标签断定关闭。",
+              "links": [
+                "q248",
+                "q301"
+              ]
+            }
+          ],
+          "source": {
+            "label": "本次文档核对：Gamer Guides",
+            "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/an-eye-for-an-eye"
+          },
+          "note": "薇丝血条出现是“为祖国”的阶段记录之一；不等同于任务成功。战后对孤立士兵的杀／放选择，来源明确不改变后续，本节点不把它描述成新的结局条件。"
+        }
+      ],
       "sources": [
         {
           "label": "社区任务数据",
@@ -4593,10 +5172,20 @@
         {
           "label": "任务攻略（英文）",
           "url": "https://witcher.fandom.com/wiki/An_Eye_for_an_Eye"
+        },
+        {
+          "label": "本次分支交叉核对",
+          "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/an-eye-for-an-eye"
         }
       ],
-      "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "reviewed": true,
+      "cutoff": "进入“迷雾之岛”前完成",
+      "people": "弗农·罗契 薇丝 Vernon Roche Ves",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q127",
@@ -4637,7 +5226,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Play's_the_Thing"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q156",
@@ -4672,7 +5266,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Poet_Under_Pressure"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q126",
@@ -4707,7 +5306,12 @@
           "url": "https://witcher.fandom.com/wiki/Ciri's_Story:_Breakneck_Speed"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q180",
@@ -4752,7 +5356,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Nobleman_Statuette"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q179",
@@ -4787,7 +5396,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Soldier_Statuette"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q185",
@@ -4823,7 +5437,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q182",
@@ -4887,7 +5506,12 @@
       ],
       "reviewed": true,
       "cutoff": "进入“迷雾之岛”前完成",
-      "people": "特莉丝 Triss"
+      "people": "特莉丝 Triss",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q208",
@@ -4945,7 +5569,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q108",
@@ -4980,7 +5609,12 @@
           "url": "https://witcher.fandom.com/wiki/Honor_Among_Thieves"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q9",
@@ -5025,7 +5659,12 @@
           "url": "https://witcher.fandom.com/wiki/Race:_The_Great_Erasmus_Vegelbud_Memorial_Derby"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q102",
@@ -5060,7 +5699,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Favor_for_Radovid"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q146",
@@ -5084,7 +5728,41 @@
           "mode": "any"
         }
       ],
-      "decisions": [],
+      "decisions": [
+        {
+          "id": "q146-d1",
+          "title": "取得抛光水晶后：交给谁",
+          "options": [
+            {
+              "label": "交给藏身处外的女巫猎人",
+              "effect": "避免这场战斗；猎人向拉多维德抢功，报告时失去正常金钱报酬，也无法再用这枚水晶询问女术士。",
+              "links": [
+                "q301"
+              ]
+            },
+            {
+              "label": "保留水晶，先向特莉丝或叶奈法询问",
+              "effect": "可得到额外背景对话；不改变恋情或后续主线结果。角色是否有空取决于当前任务阶段；交出水晶与只展示它也不同。",
+              "links": [
+                "q182",
+                "q200"
+              ]
+            },
+            {
+              "label": "保留水晶，向拉多维德报告并交付",
+              "effect": "通常可得到金钱报酬；可先向女术士展示后再交付。取得水晶的阶段事实与最后交付对象、任务成功标签应分别记录。",
+              "links": [
+                "q301"
+              ]
+            }
+          ],
+          "source": {
+            "label": "本次文档核对：Gamer Guides",
+            "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/redanias-most-wanted"
+          },
+          "note": "本节点从取得抛光水晶之后开始。攻略记录女术士对话可能在日志中产生红叉，不应把所有红叉都解释成刺杀线失效。此处不是完整对话枚举。"
+        }
+      ],
       "sources": [
         {
           "label": "社区任务数据",
@@ -5093,10 +5771,20 @@
         {
           "label": "任务攻略（英文）",
           "url": "https://witcher.fandom.com/wiki/Redania's_Most_Wanted"
+        },
+        {
+          "label": "本次分支交叉核对",
+          "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/guide/secondary-quests/novigrad/redanias-most-wanted"
         }
       ],
-      "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "reviewed": true,
+      "cutoff": "进入“迷雾之岛”前完成",
+      "people": "菲丽芭 特莉丝 叶奈法 拉多维德 Philippa Triss Yennefer Radovid",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q181",
@@ -5120,8 +5808,16 @@
       },
       "location": "接取点附近：Hierarch Square",
       "precision": "community",
-      "predecessors": [],
-      "requirements": [],
+      "predecessors": [
+        "q191"
+      ],
+      "requirements": [
+        {
+          "questId": "q191",
+          "state": "JS_Success",
+          "mode": "any"
+        }
+      ],
       "decisions": [],
       "sources": [
         {
@@ -5133,7 +5829,12 @@
           "url": "https://witcher.fandom.com/wiki/Out_On_Your_Arse!"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q308",
@@ -5178,7 +5879,12 @@
           "url": "https://witcher.fandom.com/wiki/Evil's_Soft_First_Touches"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q316",
@@ -5213,7 +5919,12 @@
           "url": "https://witcher.fandom.com/wiki/Rose_on_a_Red_Field"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q315",
@@ -5248,7 +5959,12 @@
           "url": "https://witcher.fandom.com/wiki/Dead_Man's_Party"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q317",
@@ -5284,7 +6000,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "在离开“死人的派对”婚礼区域前完成"
+      "cutoff": "在离开“死人的派对”婚礼区域前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q320",
@@ -5319,7 +6040,12 @@
           "url": "https://witcher.fandom.com/wiki/Open_Sesame!_(Hearts_of_Stone)"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q321",
@@ -5354,7 +6080,12 @@
           "url": "https://witcher.fandom.com/wiki/Open_Sesame:_Witcher_Seasonings"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q322",
@@ -5389,7 +6120,12 @@
           "url": "https://witcher.fandom.com/wiki/Open_Sesame:_Breaking_and_Entering"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q323",
@@ -5424,7 +6160,12 @@
           "url": "https://witcher.fandom.com/wiki/Open_Sesame:_The_Safecracker"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q325",
@@ -5459,7 +6200,12 @@
           "url": "https://witcher.fandom.com/wiki/Avid_Collector"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q332",
@@ -5527,7 +6273,12 @@
         }
       ],
       "reviewed": true,
-      "people": "爱丽丝 Iris"
+      "people": "爱丽丝 Iris",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q361",
@@ -5609,7 +6360,12 @@
       "people": "镜子大师 欧吉尔德 夏妮 Gaunter Olgierd Shani",
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 38；参考目录 36。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q277",
@@ -5654,7 +6410,12 @@
           "url": "https://witcher.fandom.com/wiki/High_Stakes"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q16",
@@ -5705,7 +6466,12 @@
           "url": "https://witcher.fandom.com/wiki/Gwent:_Skellige_Style"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q23",
@@ -5750,7 +6516,12 @@
           "url": "https://witcher.fandom.com/wiki/Brave_Fools_Die_Young"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q35",
@@ -5795,7 +6566,12 @@
           "url": "https://witcher.fandom.com/wiki/Worthy_of_Trust"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q133",
@@ -5841,7 +6617,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "在“循线追查”中于七只猫旅馆与兰伯特交谈前处理"
+      "cutoff": "在“循线追查”中于七只猫旅馆与兰伯特交谈前处理",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q141",
@@ -5859,7 +6640,7 @@
           1898.0
         ],
         "latlng": [
-          68.01895237155733,
+          68.01895237155736,
           -23.765955236004185
         ]
       },
@@ -5929,7 +6710,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "在“丑陋的婴儿”中领走乌马前完成；“人口贩卖”另需在七只猫旅馆推进兰伯特对话前处理"
+      "cutoff": "在“丑陋的婴儿”中领走乌马前完成；“人口贩卖”另需在七只猫旅馆推进兰伯特对话前处理",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q140",
@@ -5947,7 +6733,7 @@
           -1009.0
         ],
         "latlng": [
-          -58.233188016215095,
+          -58.2331880162151,
           -23.109708437196712
         ]
       },
@@ -5974,7 +6760,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Hallowed_Horn"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q160",
@@ -6019,7 +6810,12 @@
           "url": "https://witcher.fandom.com/wiki/Black_Pearl"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q158",
@@ -6064,7 +6860,12 @@
           "url": "https://witcher.fandom.com/wiki/From_a_Land_Far,_Far_Away"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q159",
@@ -6109,7 +6910,12 @@
           "url": "https://witcher.fandom.com/wiki/Free_Spirit"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q177",
@@ -6154,7 +6960,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Nithing"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q178",
@@ -6199,7 +7010,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Price_of_Honor"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q193",
@@ -6244,7 +7060,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Family_Blade"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q194",
@@ -6289,7 +7110,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Bard's_Beloved"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q195",
@@ -6334,7 +7160,12 @@
           "url": "https://witcher.fandom.com/wiki/For_Fame_and_Glory"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q196",
@@ -6379,7 +7210,12 @@
           "url": "https://witcher.fandom.com/wiki/Armed_Assault"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q207",
@@ -6424,7 +7260,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Path_of_Warriors"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q184",
@@ -6438,8 +7279,16 @@
       "point": null,
       "location": "阿林比翁旅馆；随后被带到凯尔缪雷",
       "precision": "flow",
-      "predecessors": [],
-      "requirements": [],
+      "predecessors": [
+        "q211"
+      ],
+      "requirements": [
+        {
+          "questId": "q211",
+          "state": "JS_Success",
+          "mode": "any"
+        }
+      ],
       "decisions": [],
       "sources": [
         {
@@ -6452,7 +7301,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "在“国王的赌局”开始前处理"
+      "cutoff": "在“国王的赌局”开始前处理",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q183",
@@ -6487,7 +7341,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Cave_of_Dreams"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q197",
@@ -6532,7 +7391,12 @@
           "url": "https://witcher.fandom.com/wiki/An_Unpaid_Debt"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q218",
@@ -6577,7 +7441,12 @@
           "url": "https://witcher.fandom.com/wiki/Crime_and_Punishment"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q233",
@@ -6622,7 +7491,12 @@
           "url": "https://witcher.fandom.com/wiki/Iron_Maiden"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q240",
@@ -6667,7 +7541,12 @@
           "url": "https://witcher.fandom.com/wiki/Hard_Times"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q258",
@@ -6685,7 +7564,7 @@
           950.0
         ],
         "latlng": [
-          33.250931890106735,
+          33.25093189010676,
           40.539215962003524
         ]
       },
@@ -6712,7 +7591,12 @@
           "url": "https://witcher.fandom.com/wiki/Finders_Keepers"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q259",
@@ -6757,7 +7641,12 @@
           "url": "https://witcher.fandom.com/wiki/Abandoned_Sawmill"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q260",
@@ -6802,7 +7691,12 @@
           "url": "https://witcher.fandom.com/wiki/Shock_Therapy"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q262",
@@ -6847,7 +7741,12 @@
           "url": "https://witcher.fandom.com/wiki/Practicum_in_Advanced_Alchemy"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q269",
@@ -6892,7 +7791,12 @@
           "url": "https://witcher.fandom.com/wiki/Peace_Disturbed"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q270",
@@ -6937,7 +7841,12 @@
           "url": "https://witcher.fandom.com/wiki/Taken_as_a_Lass"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q275",
@@ -6955,7 +7864,7 @@
           32.0
         ],
         "latlng": [
-          -14.823803371994604,
+          -14.82380337199459,
           24.05184397907816
         ]
       },
@@ -6982,7 +7891,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Sad_Tale_of_the_Grossbart_Brothers"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q303",
@@ -7027,7 +7941,12 @@
           "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Skellige"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q128",
@@ -7072,7 +7991,12 @@
           "url": "https://witcher.fandom.com/wiki/Master_of_the_Arena"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q176",
@@ -7117,7 +8041,12 @@
           "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Champion_of_Champions"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q304",
@@ -7162,7 +8091,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Tower_Outta_Nowheres"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q420",
@@ -7207,7 +8141,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Heroes'_Pursuits:_Fayrlund"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q421",
@@ -7252,7 +8191,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Heroes'_Pursuits:_Fyresdal"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q422",
@@ -7297,7 +8241,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Heroes'_Pursuits:_Kaer_Trolde"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q423",
@@ -7342,7 +8291,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Heroes'_Pursuits:_For_the_Goddess'_Glory!"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q205",
@@ -7377,7 +8331,12 @@
           "url": "https://witcher.fandom.com/wiki/The_King_is_Dead_-_Long_Live_the_King"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q212",
@@ -7412,7 +8371,12 @@
           "url": "https://witcher.fandom.com/wiki/Echoes_of_the_Past"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q192",
@@ -7447,7 +8411,12 @@
           "url": "https://witcher.fandom.com/wiki/Missing_Persons"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q175",
@@ -7482,7 +8451,12 @@
           "url": "https://witcher.fandom.com/wiki/Nameless"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q174",
@@ -7517,7 +8491,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Calm_Before_the_Storm"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q200",
@@ -7535,7 +8514,7 @@
           58.0
         ],
         "latlng": [
-          -13.442791548545097,
+          -13.44279154854511,
           139.29912189294848
         ]
       },
@@ -7589,7 +8568,12 @@
       ],
       "reviewed": true,
       "cutoff": "在“丑陋的婴儿”中从乌鸦窝领走乌马前完成",
-      "people": "叶奈法 Yennefer Yen"
+      "people": "叶奈法 Yennefer Yen",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q199",
@@ -7634,7 +8618,12 @@
           "url": "https://witcher.fandom.com/wiki/In_Wolf's_Clothing"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q213",
@@ -7670,7 +8659,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q256",
@@ -7705,7 +8699,12 @@
           "url": "https://witcher.fandom.com/wiki/Master_Armorers"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q214",
@@ -7771,7 +8770,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q219",
@@ -7854,7 +8858,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q220",
@@ -7890,7 +8899,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q236",
@@ -7927,7 +8941,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Feast_for_Crows"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q15",
@@ -7972,7 +8991,12 @@
           "url": "https://witcher.fandom.com/wiki/Gwent:_Old_Pals"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q17",
@@ -8008,7 +9032,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "在“为祖国”中塔勒可能死亡之前打牌"
+      "cutoff": "推进“为祖国”之前，先完成塔勒的昆特对战",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q251",
@@ -8045,7 +9074,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Bastion"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q276",
@@ -8082,7 +9116,12 @@
           "url": "https://witcher.fandom.com/wiki/Monster_Slayer"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q280",
@@ -8100,7 +9139,7 @@
           4.0
         ],
         "latlng": [
-          -35.47684836339337,
+          -35.47684836339338,
           -11.561064660059333
         ]
       },
@@ -8120,7 +9159,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q281",
@@ -8157,7 +9201,12 @@
           "url": "https://witcher.fandom.com/wiki/Greenhouse_Effect"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q302",
@@ -8194,7 +9243,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Witchers'_Forge"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q229",
@@ -8241,7 +9295,12 @@
           "url": "https://witcher.fandom.com/wiki/Ugly_Baby"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q231",
@@ -8276,7 +9335,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Final_Trial"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q228",
@@ -8311,7 +9375,12 @@
           "url": "https://witcher.fandom.com/wiki/To_Bait_a_Forktail..."
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q4",
@@ -8346,7 +9415,12 @@
           "url": "https://witcher.fandom.com/wiki/Disturbance"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q232",
@@ -8381,7 +9455,12 @@
           "url": "https://witcher.fandom.com/wiki/No_Place_Like_Home"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q230",
@@ -8416,7 +9495,12 @@
           "url": "https://witcher.fandom.com/wiki/Va_Fail,_Elaine"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q245",
@@ -8452,7 +9536,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q246",
@@ -8488,7 +9577,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q247",
@@ -8524,7 +9618,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q248",
@@ -8560,7 +9659,12 @@
         }
       ],
       "reviewed": false,
-      "cutoff": "进入“迷雾之岛”前完成"
+      "cutoff": "进入“迷雾之岛”前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q249",
@@ -8632,7 +9736,12 @@
         }
       ],
       "reviewed": true,
-      "cutoff": "进入时出现不可逆进度警告；先完成相关人物支线"
+      "cutoff": "进入时出现不可逆进度警告；先完成相关人物支线",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q257",
@@ -8667,7 +9776,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Battle_of_Kaer_Morhen"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q235",
@@ -8784,7 +9898,12 @@
         }
       ],
       "reviewed": true,
-      "people": "希里 Ciri 恩希尔 Emhyr"
+      "people": "希里 Ciri 恩希尔 Emhyr",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q273",
@@ -8819,7 +9938,12 @@
           "url": "https://witcher.fandom.com/wiki/Bald_Mountain"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q144",
@@ -8854,7 +9978,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Final_Kindness"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q6",
@@ -8916,7 +10045,12 @@
         }
       ],
       "reviewed": true,
-      "people": "希里 Ciri"
+      "people": "希里 Ciri",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q274",
@@ -8951,7 +10085,12 @@
           "url": "https://witcher.fandom.com/wiki/Through_Time_and_Space"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q288",
@@ -8986,7 +10125,12 @@
           "url": "https://witcher.fandom.com/wiki/Payback"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q287",
@@ -9056,7 +10200,12 @@
         }
       ],
       "reviewed": true,
-      "people": "迪科斯彻 Dijkstra 菲丽芭 Philippa"
+      "people": "迪科斯彻 Dijkstra 菲丽芭 Philippa",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q289",
@@ -9091,7 +10240,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Great_Escape"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q301",
@@ -9172,7 +10326,12 @@
       ],
       "reviewed": true,
       "cutoff": "在“如履薄冰”主线开始前完成",
-      "people": "罗契 薇丝 塔勒 Dijkstra Roche Ves Thaler"
+      "people": "罗契 薇丝 塔勒 Dijkstra Roche Ves Thaler",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q25",
@@ -9239,7 +10398,12 @@
           "url": "https://witcher.fandom.com/wiki/Now_or_Never"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 2,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q285",
@@ -9274,7 +10438,12 @@
           "url": "https://witcher.fandom.com/wiki/Battle_Preparations"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q283",
@@ -9309,7 +10478,12 @@
           "url": "https://witcher.fandom.com/wiki/Veni_Vidi_Vigo"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q306",
@@ -9401,7 +10575,12 @@
         }
       ],
       "reviewed": true,
-      "people": "希里 Ciri 阿瓦拉克 Avallach"
+      "people": "希里 Ciri 阿瓦拉克 Avallach",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q284",
@@ -9436,7 +10615,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Sunstone"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q286",
@@ -9471,7 +10655,12 @@
           "url": "https://witcher.fandom.com/wiki/Skjall's_Grave"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q296",
@@ -9506,7 +10695,12 @@
           "url": "https://witcher.fandom.com/wiki/On_Thin_Ice"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q297",
@@ -9541,7 +10735,12 @@
           "url": "https://witcher.fandom.com/wiki/Tedd_Deireadh,_The_Final_Age"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q298",
@@ -9622,7 +10821,12 @@
           "url": "https://www.pcgamer.com/all-witcher-3-endings-ciri-blood-and-wine-how-many/"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q10",
@@ -9657,7 +10861,12 @@
           "url": "https://witcher.fandom.com/wiki/Faithful_Friend"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q333",
@@ -9692,7 +10901,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Beast_of_Toussaint"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q336",
@@ -9727,7 +10941,12 @@
           "url": "https://witcher.fandom.com/wiki/Blood_Run"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q366",
@@ -9791,7 +11010,12 @@
           "url": "https://witcher.fandom.com/wiki/La_Cage_au_Fou"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q387",
@@ -9826,7 +11050,12 @@
           "url": "https://witcher.fandom.com/wiki/Where_Children_Toil,_Toys_Waste_Away"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q388",
@@ -9861,7 +11090,12 @@
           "url": "https://witcher.fandom.com/wiki/Wine_is_Sacred"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q392",
@@ -9896,7 +11130,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Man_from_Cintra"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q403",
@@ -9931,7 +11170,12 @@
           "url": "https://witcher.fandom.com/wiki/Capture_the_Castle"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q405",
@@ -9993,7 +11237,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Night_of_Long_Fangs"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q404",
@@ -10059,7 +11308,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Night_of_Long_Fangs"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q406",
@@ -10094,7 +11348,12 @@
           "url": "https://witcher.fandom.com/wiki/What_Lies_Unseen"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q407",
@@ -10191,7 +11450,12 @@
         }
       ],
       "reviewed": true,
-      "people": "席安娜 Syanna"
+      "people": "席安娜 Syanna",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q415",
@@ -10280,7 +11544,12 @@
         }
       ],
       "reviewed": true,
-      "people": "狄拉夫 雷吉斯 席安娜 Dettlaff Regis Syanna"
+      "people": "狄拉夫 雷吉斯 席安娜 Dettlaff Regis Syanna",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q416",
@@ -10342,7 +11611,12 @@
         }
       ],
       "reviewed": true,
-      "people": "安娜 席安娜 Anna Henrietta Syanna"
+      "people": "安娜 席安娜 Anna Henrietta Syanna",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q417",
@@ -10399,7 +11673,12 @@
           "url": "https://witcher.fandom.com/wiki/Be_It_Ever_So_Humble..."
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 2,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q418",
@@ -10434,7 +11713,12 @@
           "url": "https://witcher.fandom.com/wiki/Burlap_is_the_New_Stripe"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q419",
@@ -10469,7 +11753,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Perks_of_Being_a_Jailbird"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q408",
@@ -10502,7 +11791,12 @@
           "url": "https://witcher.fandom.com/wiki/Duck,_Duck,_Goosed!"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q389",
@@ -10547,7 +11841,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Hunger_Game"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q367",
@@ -10592,7 +11891,12 @@
           "url": "https://witcher.fandom.com/wiki/Amidst_the_Mill's_Grist"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q1",
@@ -10627,7 +11931,12 @@
           "url": "https://witcher.fandom.com/wiki/No_Place_Like_Home_(Blood_and_Wine)"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q334",
@@ -10672,7 +11981,12 @@
           "url": "https://witcher.fandom.com/wiki/Turn_and_Face_the_Strange"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q335",
@@ -10743,7 +12057,12 @@
       ],
       "reviewed": true,
       "people": "薇薇恩 纪尧姆 Vivienne Guillaume",
-      "cutoff": "在“攻下城堡”主线后触发的吸血鬼袭击前完成"
+      "cutoff": "在“攻下城堡”主线后触发的吸血鬼袭击前完成",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q396",
@@ -10788,7 +12107,12 @@
           "url": "https://witcher.fandom.com/wiki/Of_Sheers_and_a_Witcher_I_Sing"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q337",
@@ -10806,7 +12130,7 @@
           -1344.0
         ],
         "latlng": [
-          -52.99548474867764,
+          -52.99548474867763,
           -35.1214236500241
         ]
       },
@@ -10833,7 +12157,12 @@
           "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Toussaint"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q371",
@@ -10868,7 +12197,12 @@
           "url": "https://witcher.fandom.com/wiki/Raging_Wolf"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q338",
@@ -10886,7 +12220,7 @@
           -1344.0
         ],
         "latlng": [
-          -52.99548474867764,
+          -52.99548474867763,
           -35.1214236500241
         ]
       },
@@ -10913,7 +12247,12 @@
           "url": "https://witcher.fandom.com/wiki/Till_Death_Do_You_Part"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q339",
@@ -10958,7 +12297,12 @@
           "url": "https://witcher.fandom.com/wiki/Paperchase"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q18",
@@ -11003,7 +12347,12 @@
           "url": "https://witcher.fandom.com/wiki/Gwent:_Never_Fear,_Skellige's_Here"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q362",
@@ -11048,7 +12397,12 @@
           "url": "https://witcher.fandom.com/wiki/Gwent:_To_Everything_-_Turn,_Turn,_Tournament!"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q340",
@@ -11066,7 +12420,7 @@
           -1344.0
         ],
         "latlng": [
-          -52.99548474867764,
+          -52.99548474867763,
           -35.1214236500241
         ]
       },
@@ -11093,7 +12447,12 @@
           "url": "https://witcher.fandom.com/wiki/Goodness,_Gracious,_Great_Balls_of_Granite!"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q345",
@@ -11111,7 +12470,7 @@
           -1344.0
         ],
         "latlng": [
-          -52.99548474867764,
+          -52.99548474867763,
           -35.1214236500241
         ]
       },
@@ -11138,7 +12497,12 @@
           "url": "https://witcher.fandom.com/wiki/Father_Knows_Worst"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q374",
@@ -11152,8 +12516,16 @@
       "point": null,
       "location": "阿尔达索采石场；工头",
       "precision": "flow",
-      "predecessors": [],
-      "requirements": [],
+      "predecessors": [
+        "q360"
+      ],
+      "requirements": [
+        {
+          "questId": "q360",
+          "state": "JS_Success",
+          "mode": "any"
+        }
+      ],
       "decisions": [],
       "sources": [
         {
@@ -11165,7 +12537,12 @@
           "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q346",
@@ -11210,7 +12587,12 @@
           "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill:_The_First_Group"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q347",
@@ -11255,7 +12637,12 @@
           "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill:_The_Second_Group"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q348",
@@ -11300,7 +12687,12 @@
           "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill:_The_Third_Group"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q349",
@@ -11345,7 +12737,12 @@
           "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill:_The_Fourth_Group"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q350",
@@ -11390,7 +12787,12 @@
           "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill:_The_Fifth_Group"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q351",
@@ -11441,7 +12843,12 @@
       ],
       "aliases": [
         "Vitner's Contract: Rivecalme Storehouse (37)"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q352",
@@ -11518,7 +12925,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Grapes_of_Wrath_Stomped"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q353",
@@ -11547,7 +12959,12 @@
           "url": "https://witcher.fandom.com/wiki/Wine_Wars:_Coronata"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q354",
@@ -11576,7 +12993,12 @@
           "url": "https://witcher.fandom.com/wiki/Wine_Wars:_Vermentino"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q390",
@@ -11654,7 +13076,12 @@
           "url": "https://witcher.fandom.com/wiki/Wine_Wars:_The_Deus_in_the_Machina"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q378",
@@ -11689,7 +13116,12 @@
           "url": "https://witcher.fandom.com/wiki/Wine_Wars:_Consorting"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q369",
@@ -11734,7 +13166,12 @@
           "url": "https://witcher.fandom.com/wiki/Knight_for_Hire"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q370",
@@ -11785,7 +13222,12 @@
       ],
       "aliases": [
         "Vitner's Contract: Dun Tynne Hillside (40)"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q377",
@@ -11836,7 +13278,12 @@
       ],
       "aliases": [
         "Vitner's Contract: Chuchote Cave (40)"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q393",
@@ -11882,15 +13329,20 @@
         }
       ],
       "reviewed": false,
+      "sourceDifferences": [
+        "推荐等级差异：冻结 XML 43；参考目录 40。显示沿用冻结 XML，当前游戏版本请自行确认。"
+      ],
       "secondaryTypes": [
         "contract"
       ],
       "aliases": [
         "Vitner's Contract: Cleaning Those Hard-to-Reach Places (40)"
       ],
-      "sourceDifferences": [
-        "推荐等级差异：冻结 XML 43；参考目录 40。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q394",
@@ -11936,16 +13388,21 @@
         }
       ],
       "reviewed": false,
+      "sourceDifferences": [
+        "推荐等级差异：冻结 XML 40；参考目录 43。显示沿用冻结 XML，当前游戏版本请自行确认。",
+        "冻结 XML 将 Duchaton Crest? 写作疑问别名，参考目录使用该别名。本目录合并入口并保留旧 ID，名称对应尚未实机核对。"
+      ],
       "secondaryTypes": [
         "contract"
       ],
       "aliases": [
         "Vitner's Contract: Duchaton Crest (43)"
       ],
-      "sourceDifferences": [
-        "冻结 XML 将 Duchaton Crest? 写作疑问别名，参考目录使用该别名。本目录合并入口并保留旧 ID，名称对应尚未实机核对。",
-        "推荐等级差异：冻结 XML 40；参考目录 43。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q372",
@@ -11990,7 +13447,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Knight's_Tales"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q373",
@@ -12035,7 +13497,12 @@
           "url": "https://witcher.fandom.com/wiki/Extreme_Cosplay"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q375",
@@ -12080,7 +13547,12 @@
           "url": "https://witcher.fandom.com/wiki/The_Words_of_the_Prophets_Are_Written_on_Sarcophagi"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q376",
@@ -12098,7 +13570,7 @@
           -1344.0
         ],
         "latlng": [
-          -52.99548474867764,
+          -52.99548474867763,
           -35.1214236500241
         ]
       },
@@ -12125,7 +13597,12 @@
           "url": "https://witcher.fandom.com/wiki/Master_Master_Master_Master!"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q395",
@@ -12170,7 +13647,12 @@
           "url": "https://witcher.fandom.com/wiki/A_Portrait_of_the_Witcher_as_an_Old_Man"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q401",
@@ -12215,7 +13697,12 @@
           "url": "https://witcher.fandom.com/wiki/Mutual_of_Beauclair's_Wild_Kingdom"
         }
       ],
-      "reviewed": false
+      "reviewed": false,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q424",
@@ -12233,7 +13720,7 @@
           -1344.0
         ],
         "latlng": [
-          -52.99548474867764,
+          -52.99548474867763,
           -35.1214236500241
         ]
       },
@@ -12288,7 +13775,12 @@
           "url": "https://witcher.fandom.com/wiki/There_Can_Be_Only_One"
         }
       ],
-      "reviewed": true
+      "reviewed": true,
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "eternal",
@@ -12383,7 +13875,7 @@
       "region": "skellige",
       "expansion": "base",
       "level": null,
-      "trigger": "参考目录记录的短流程：完成“暴风雨前的平静”后，与唐纳相关主线对话了解乌马。来源同时要求在“林中夫人”前进行；进度顺序影响是否出现，按所附攻略确认。",
+      "trigger": "参考目录记录：完成“暴风雨前的平静”后，参与有关乌马的短对话流程。来源同时要求在“林中夫人”前进行；先后顺序影响是否出现，按所附攻略核对。",
       "location": "史凯利杰主线调查中的条件性对话流程；无独立接取坐标",
       "precision": "flow",
       "point": null,
@@ -12452,6 +13944,11 @@
           6
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -12516,7 +14013,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 4；参考目录 2。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q55",
@@ -12580,7 +14082,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 4；参考目录 3。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q56",
@@ -12641,6 +14148,11 @@
           13
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -12708,6 +14220,11 @@
           15
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -12769,6 +14286,11 @@
           32
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -12830,6 +14352,11 @@
           22
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -12891,6 +14418,11 @@
           38
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -12952,6 +14484,11 @@
           33
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13013,6 +14550,11 @@
           34
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13074,6 +14616,11 @@
           24
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13135,6 +14682,11 @@
           21
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13196,6 +14748,11 @@
           102
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13257,6 +14814,11 @@
           103
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13321,7 +14883,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 4；参考目录 1。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q57",
@@ -13385,7 +14952,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 4；参考目录 1。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q59",
@@ -13446,6 +15018,11 @@
           104
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13507,6 +15084,11 @@
           23
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13568,6 +15150,11 @@
           25
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13629,6 +15216,11 @@
           52
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13690,6 +15282,11 @@
           60
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13751,6 +15348,11 @@
           90
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13812,6 +15414,11 @@
           105
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13879,6 +15486,11 @@
           131
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -13982,7 +15594,12 @@
             -36.84668656616563
           ]
         }
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q113",
@@ -14046,7 +15663,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 9；参考目录 1。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q114",
@@ -14107,6 +15729,11 @@
           106
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14168,6 +15795,11 @@
           93
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14229,6 +15861,11 @@
           92
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14290,6 +15927,11 @@
           114
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14351,6 +15993,11 @@
           94
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14412,6 +16059,11 @@
           107
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14473,6 +16125,11 @@
           201
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14534,6 +16191,11 @@
           108
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14595,6 +16257,11 @@
           109
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14656,6 +16323,11 @@
           111
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14717,6 +16389,11 @@
           95
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14778,6 +16455,11 @@
           97
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14839,6 +16521,11 @@
           86
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14900,6 +16587,11 @@
           112
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -14961,6 +16653,11 @@
           98
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15022,6 +16719,11 @@
           89
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15083,6 +16785,11 @@
           96
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15144,6 +16851,11 @@
           36
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15205,6 +16917,11 @@
           91
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15266,6 +16983,11 @@
           20
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15333,6 +17055,11 @@
           115
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15400,6 +17127,11 @@
           116
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15461,6 +17193,11 @@
           203
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15522,6 +17259,11 @@
           204
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15583,6 +17325,11 @@
           120
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15650,6 +17397,11 @@
           121
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15717,6 +17469,11 @@
           129
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15784,6 +17541,11 @@
           135
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15857,6 +17619,11 @@
           140
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15924,6 +17691,11 @@
           153
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -15991,6 +17763,11 @@
           133
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16058,6 +17835,11 @@
           126
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16125,6 +17907,11 @@
           130
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16192,6 +17979,11 @@
           41
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16259,6 +18051,11 @@
           196
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16312,6 +18109,11 @@
         "xmlId": 163,
         "referenceIds": [],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16379,6 +18181,11 @@
           154
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16446,6 +18253,11 @@
           138
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16513,6 +18325,11 @@
           197
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16580,6 +18397,11 @@
           235
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16647,6 +18469,11 @@
           198
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16714,6 +18541,11 @@
           110
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16781,6 +18613,11 @@
           202
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16854,6 +18691,11 @@
           171
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16921,6 +18763,11 @@
           199
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -16988,6 +18835,11 @@
           200
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17055,6 +18907,11 @@
           179
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17122,6 +18979,11 @@
           113
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17189,6 +19051,11 @@
           364
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17256,6 +19123,11 @@
           365
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17323,6 +19195,11 @@
           183
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17393,7 +19270,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 36；参考目录 34。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q342",
@@ -17460,6 +19342,11 @@
           366
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17527,6 +19414,11 @@
           367
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17594,6 +19486,11 @@
           368
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17661,6 +19558,11 @@
           370
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17732,6 +19634,11 @@
           181
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17787,7 +19694,12 @@
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 37；参考目录 34。显示沿用冻结 XML，当前游戏版本请自行确认。"
       ],
-      "cutoff": "“芝麻开门”拍卖阶段：先购买鸟雕像，再离开拍卖流程"
+      "cutoff": "“芝麻开门”拍卖阶段：先购买鸟雕像，再离开拍卖流程",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q278",
@@ -17860,6 +19772,11 @@
           289
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -17937,7 +19854,12 @@
           "name": "Get the steel sword",
           "note": "狮鹫学派第四部分的取钢剑目标，不是独立寻宝任务。"
         }
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q328",
@@ -18004,6 +19926,11 @@
           288
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18065,6 +19992,11 @@
           283
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18129,7 +20061,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 16；参考目录 25。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q150",
@@ -18193,7 +20130,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 12；参考目录 25。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q305",
@@ -18260,6 +20202,11 @@
           286
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18321,6 +20268,11 @@
           287
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18382,6 +20334,11 @@
           270
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18443,6 +20400,11 @@
           271
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18507,7 +20469,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 12；参考目录 13。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q152",
@@ -18568,6 +20535,11 @@
           272
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18629,6 +20601,11 @@
           226
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18690,6 +20667,11 @@
           237
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18751,6 +20733,11 @@
           273
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18812,6 +20799,11 @@
           277
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18873,6 +20865,11 @@
           278
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18934,6 +20931,11 @@
           274
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -18995,6 +20997,11 @@
           276
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19056,6 +21063,11 @@
           227
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19117,6 +21129,11 @@
           279
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19178,6 +21195,11 @@
           225
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19239,6 +21261,11 @@
           232
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19300,6 +21327,11 @@
           240
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19361,6 +21393,11 @@
           223
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19422,6 +21459,11 @@
           262
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19483,6 +21525,12 @@
           228
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "cutoff": "想保留“异乡人／梦之洞窟”支线时，留意“国王的赌局”之前的委托顺序；延后会改变相关遭遇链",
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19544,6 +21592,11 @@
           263
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19605,6 +21658,11 @@
           264
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19666,6 +21724,11 @@
           265
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19727,6 +21790,11 @@
           266
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19788,6 +21856,11 @@
           267
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19849,6 +21922,11 @@
           269
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19910,6 +21988,11 @@
           268
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -19971,6 +22054,11 @@
           281
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20032,6 +22120,11 @@
           282
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20099,6 +22192,11 @@
           85
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20158,6 +22256,11 @@
           280
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20211,6 +22314,11 @@
           313
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20272,6 +22380,11 @@
           118
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20333,6 +22446,11 @@
           314
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20400,6 +22518,11 @@
           291
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20467,6 +22590,11 @@
           315
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20534,6 +22662,11 @@
           119
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20601,6 +22734,11 @@
           292
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20654,6 +22792,11 @@
           306
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 1,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20695,6 +22838,11 @@
         "xmlId": 432,
         "referenceIds": [],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20751,7 +22899,12 @@
       },
       "sourceDifferences": [
         "发现说明写“骑士的恋爱故事”之后，XML 条件却写“无论何处都是家”成功。保留两个来源字段，无法据此判断当前存档可用。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q360",
@@ -20812,6 +22965,11 @@
           389
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20873,6 +23031,11 @@
           429
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20934,6 +23097,11 @@
           440
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -20995,6 +23163,11 @@
           438
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21056,6 +23229,11 @@
           439
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21117,6 +23295,11 @@
           387
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21178,6 +23361,11 @@
           444
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21239,6 +23427,11 @@
           442
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21300,6 +23493,11 @@
           453
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21361,6 +23559,11 @@
           454
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21422,6 +23625,11 @@
           451
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21483,6 +23691,11 @@
           452
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21544,6 +23757,11 @@
           455
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21605,6 +23823,11 @@
           443
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21666,6 +23889,11 @@
           392
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21727,6 +23955,11 @@
           445
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21788,6 +24021,11 @@
           446
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21849,6 +24087,11 @@
           435
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21910,6 +24153,11 @@
           436
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -21971,6 +24219,11 @@
           447
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -22035,7 +24288,12 @@
       },
       "sourceDifferences": [
         "推荐等级差异：冻结 XML 47；参考目录 37。显示沿用冻结 XML，当前游戏版本请自行确认。"
-      ]
+      ],
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
+      }
     },
     {
       "id": "q410",
@@ -22096,6 +24354,11 @@
           449
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -22157,6 +24420,11 @@
           448
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -22218,6 +24486,11 @@
           437
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -22279,6 +24552,11 @@
           450
         ],
         "scope": "独立命名任务／遭遇，非探索资源点"
+      },
+      "requirementsMeta": {
+        "taskLevelOnly": true,
+        "unresolvedGuidCount": 0,
+        "source": "https://github.com/reubengann/Witcher3MapViewer/blob/fb674dbff7df087d0a45f9b3938ba6d5317295af/Witcher3MapViewer/Quests.xml"
       }
     },
     {
@@ -22602,7 +24880,7 @@
       "name": "Lornruk",
       "region": "velen",
       "latlng": [
-        17.047163062803385,
+        17.04716306280337,
         -98.70436183229056
       ]
     },
@@ -22818,7 +25096,7 @@
       "name": "Vegelbud Residence",
       "region": "velen",
       "latlng": [
-        56.91176360658684,
+        56.91176360658681,
         52.906042259460236
       ]
     },
@@ -22906,7 +25184,7 @@
       "name": "Carsten",
       "region": "velen",
       "latlng": [
-        52.74021046602153,
+        52.74021046602156,
         45.65648031744304
       ]
     },
@@ -23130,7 +25408,7 @@
       "name": "Electors' Square",
       "region": "velen",
       "latlng": [
-        75.18899396486911,
+        75.18899396486908,
         -39.525872501258945
       ]
     },
@@ -23178,7 +25456,7 @@
       "name": "Southern Gate",
       "region": "velen",
       "latlng": [
-        67.98943888149165,
+        67.98943888149168,
         -6.1936474852451235
       ]
     },
@@ -23354,7 +25632,7 @@
       "name": "Draken Hollow Outpost",
       "region": "velen",
       "latlng": [
-        72.21153691828563,
+        72.21153691828566,
         84.3470772036435
       ]
     },
@@ -23410,7 +25688,7 @@
       "name": "Distillery",
       "region": "skellige",
       "latlng": [
-        -46.595018549923225,
+        -46.59501854992323,
         41.74427305045655
       ]
     },
@@ -23570,7 +25848,7 @@
       "name": "Ancient Crypt",
       "region": "skellige",
       "latlng": [
-        31.259248134696406,
+        31.25924813469643,
         1.703512520494946
       ]
     },
@@ -23578,7 +25856,7 @@
       "name": "Miners' Camp",
       "region": "skellige",
       "latlng": [
-        2.808848259789172,
+        2.808848259789185,
         15.725995004311867
       ]
     },
@@ -23690,7 +25968,7 @@
       "name": "拉尔维克",
       "region": "skellige",
       "latlng": [
-        -13.442791548545097,
+        -13.44279154854511,
         139.29912189294848
       ]
     },
@@ -23754,7 +26032,7 @@
       "name": "Old Watchtower",
       "region": "skellige",
       "latlng": [
-        43.04551616188222,
+        43.04551616188219,
         -111.57185379408861
       ]
     },
@@ -23922,7 +26200,7 @@
       "name": "Lower City",
       "region": "toussaint",
       "latlng": [
-        -41.42887715586368,
+        -41.428877155863674,
         -15.793123779893927
       ]
     },
@@ -24138,7 +26416,7 @@
       "name": "Prophet Lebioda Statue",
       "region": "toussaint",
       "latlng": [
-        58.31866736411742,
+        58.31866736411744,
         -50.2435649991933
       ]
     },
@@ -24202,7 +26480,7 @@
       "name": "Outpost ruins",
       "region": "kaer-morhen",
       "latlng": [
-        67.24200677967856,
+        67.24200677967859,
         -15.040454845029313
       ]
     },

@@ -1,0 +1,6 @@
+[
+  "app.js", "index.html", "style.css", "logic.js", "map-navigation.js",
+  "data.json", "places-zh.json", "exploration.js", "exploration.css",
+  "exploration.json", "progress.js", "progress.css", "story-logic.js",
+  "guidance.js", "guidance.css", "guidance.json"
+]
