@@ -1,9 +1,9 @@
 {
   "date": "2026-10-03",
   "executionEnvironment": "cloud-linux",
-  "executedAt": "2026-10-03T05:32:25.134Z",
+  "executedAt": "2026-10-03T06:04:57.560Z",
   "status": "pass",
-  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9",
+  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3",
   "summary": [
     {
       "name": "任务数据与规则",
@@ -11,8 +11,13 @@
       "status": "通过"
     },
     {
-      "name": "基础探索图层",
-      "detail": "15/15 项；70 个点位（29 魔力之所、35 告示板、6 储藏箱），来源对账、32 种图层组合、手机操作",
+      "name": "扩充目录与服务点",
+      "detail": "20/20 项；428 条目录、615 点位、来源归并、六类筛选、密集点与旧备份",
+      "status": "通过"
+    },
+    {
+      "name": "探索图层",
+      "detail": "15/15 项；615 个点位；来源对账、基础图层 32 种组合、手机操作",
       "status": "通过"
     },
     {
@@ -56,23 +61,41 @@
       "status": "未执行"
     }
   ],
-  "automatedChecksPassed": 93,
+  "automatedChecksPassed": 113,
   "coverage": {
-    "quests": 267,
+    "quests": 428,
     "main": 87,
     "side": 180,
-    "positioned": 149,
-    "communityCoordinates": 133,
+    "types": {
+      "contract": 35,
+      "encounter": 40,
+      "main": 87,
+      "scavenger": 29,
+      "side": 180,
+      "treasure": 57
+    },
+    "positioned": 304,
+    "communityCoordinates": 288,
     "landmarkAnchors": 16,
-    "flowOrUnmapped": 118,
+    "flowOrUnmapped": 124,
     "reviewedBranchTasks": 40,
     "decisionNodes": 45,
     "decisionOptions": 101,
-    "explorationPoints": 70,
+    "explorationPoints": 615,
     "explorationTypes": {
       "power": 29,
       "board": 35,
-      "stash": 6
+      "stash": 6,
+      "merchant": 10,
+      "blacksmith": 4,
+      "armorer": 5,
+      "gwent-player": 51,
+      "gwent-seller": 14,
+      "nest": 45,
+      "abandoned": 34,
+      "treasure-point": 207,
+      "smuggler": 64,
+      "entrance": 111
     },
     "roadSigns": 227
   },
@@ -82,13 +105,18 @@
     "没有坐标的流程任务仍在目录中，不会被随机放在地图上。",
     "决策树集中于已核对的关键分支；未收录分支不代表任务没有后果。",
     "中文名用于检索，保留英文原名以便对照不同汉化版本。",
-    "未做逐任务实机验证，也未保证所有对话、随机遭遇和版本特例都收录；可用来源链接继续核对。"
+    "本清单核对两套冻结社区来源，未声称全游戏任务或探索点完整。",
+    "中文新增标题为本项目译名，不宣称全部是游戏官方译名。",
+    "遗忘狼的升级装备条目归并图纸任务；Griffin-in-the-Vines 与 Duchaton Crest 的别名有 XML 问号，保留待实机核对说明。",
+    "来源无法读取的网页链接保留为引用，不冒充本次抓取验证。"
   ],
   "evidence": {
     "data": "checks/data-logic.json",
     "browser": "checks/browser.json",
     "assets": "checks/assets.json",
     "progress": "checks/progress.json",
+    "catalogData": "checks/catalog-data.json",
+    "catalogBrowser": "checks/catalog-browser.json",
     "explorationData": "checks/exploration-data.json",
     "explorationBrowser": "checks/exploration-browser.json",
     "landmarks": "checks/landmarks.json",
@@ -109,20 +137,20 @@
     ]
   },
   "runtimeInputHashes": {
-    "app.js": "01e1f7801db09051b3a6e56b140f82aa821df082b4f01ae5fd19218c5cc06ebc",
-    "index.html": "c575a48e552fa0b09efb17d612a9027b833917c636578f2c20732c65e874a0c9",
-    "style.css": "8a3ab02675998d4b9dedc21c308be1b2df9df4de4bd48569a1898c7c60a98aee",
-    "exploration.js": "5b729a137893e1fb839b08d4e4642b635fb1e3c9cb7634e519b814fbf0087832",
-    "exploration.css": "90beaefa0848cbd4cfcfb54ac9210b8537a774b9825c68752926b680fbb20995",
-    "exploration.json": "0c72d1d022d7e30500fed600c6a66eca69538dcf62bcd8e84abd8ec7dffe1c3f",
-    "progress.js": "086700504f789f900d219a84aecc38101aff577672cf7e33c0894331d081408e",
+    "app.js": "da1a62d022f51d9b2cba25217e9f7e65a044366874b825dfe39ca17753071a6c",
+    "index.html": "e544432e5f49254c44f0bc46f88e8ab30a2bf27e4c6e00b9f3d92c5c43ba5444",
+    "style.css": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
+    "exploration.js": "7d44430e61f7600aab074314363816b363abbdbe9ce5d6d8e792e0d054b9060d",
+    "exploration.css": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360",
+    "exploration.json": "d90e483b8a5faeadcfa053a009c7fd40d39af3816c95dfc6f2ec06d774a7200b",
+    "progress.js": "e5ad764fc603652d2f888a522b50df880395babe65f5a1c66c5497a18945f895",
     "progress.css": "f61485024473e3f7657dbef553440248f74a65b76bbddad59e34320293ac2fe9"
   },
   "exploration": {
     "source": "exploration.json",
     "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
-    "rawRecords": 72,
-    "included": 70,
+    "rawRecords": 617,
+    "included": 615,
     "duplicates": [
       {
         "sourceKey": "TO|NoticeBoard|cockatrice_inn_noticeboard",

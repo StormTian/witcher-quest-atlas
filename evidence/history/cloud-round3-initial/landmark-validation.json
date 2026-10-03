@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T06:05:44.621Z",
+  "status": "fail",
+  "checks": [
+    {
+      "name": "地名默认显示且主城可辨认",
+      "status": "fail",
+      "detail": "The expression evaluated to a falsy value:\n\n  assert.ok(await page.locator('.place-label').count()>5)\n"
+    },
+    {
+      "name": "五区227个路标对应原有坐标",
+      "status": "fail",
+      "detail": "The expression evaluated to a falsy value:\n\n  assert.ok(await page.locator('.place-label').count()>0)\n"
+    },
+    {
+      "name": "地名不相互遮挡且保留地图控件",
+      "status": "fail",
+      "detail": "The expression evaluated to a falsy value:\n\n  assert.ok(result.names>0)\n"
+    },
+    {
+      "name": "缩放拖动后仍显示对应地点",
+      "status": "fail",
+      "detail": "The expression evaluated to a falsy value:\n\n  assert.ok((await page.locator('.place-label').allTextContents()).includes('白鸦葡萄园'))\n"
+    },
+    {
+      "name": "地名开关和任务筛选彼此独立",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n'true' !== 'false'\n"
+    },
+    {
+      "name": "路标可点开且不阻挡任务标记",
+      "status": "fail",
+      "detail": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.road-sign').nth(30)\u001b[22m\n"
+    },
+    {
+      "name": "手机首屏地名和开关可用",
+      "status": "fail",
+      "detail": "The expression evaluated to a falsy value:\n\n  assert.ok((await page.locator('.place-label').allTextContents()).includes('诺维格瑞 · 教主广场'))\n"
+    },
+    {
+      "name": "运行与资源错误",
+      "status": "fail",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\"\n+ ]\n- []\n"
+    }
+  ],
+  "passed": 0,
+  "total": 8,
+  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3",
+  "appSha256": "dc0040f735dcf69eec698133d4a4054661fb93a2424518faf6c737fa9c426361",
+  "styleSha256": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
+  "pageErrors": [
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')"
+  ],
+  "httpFailures": []
+}

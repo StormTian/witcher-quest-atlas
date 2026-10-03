@@ -1,4 +1,4 @@
-"""Build the first exploration layers from frozen community map records."""
+"""Build reviewed exploration layers, keeping original and mapped variant IDs."""
 from collections import Counter
 import hashlib
 import json
@@ -17,6 +17,21 @@ CATEGORIES = {
     'NoticeBoard': {'id': 'board', 'name': '告示板', 'symbol': '≡', 'description': '查看当地告示与任务线索。这里标的是告示板位置，不代表当前剧情阶段已有全部告示或可接任务。'},
     'PlayerStash': {'id': 'stash', 'name': '储藏箱', 'symbol': '▣', 'description': '玩家储藏箱的位置。是否已开放取决于剧情与当地状态；地图不读取存档，无法判断当前可用性。'},
 }
+CATEGORIES.update({
+    'Merchant': {'id': 'merchant', 'name': '商人与草药师', 'symbol': '¤', 'description': '社区来源登记的商人或草药师位置。不是完整商人名单，不推断当前库存或开放状态。'},
+    'Blacksmith': {'id': 'blacksmith', 'name': '铁匠', 'symbol': '⚒', 'description': '社区来源登记的铁匠位置。工匠等级、营业时间及任务解锁须在游戏内确认。'},
+    'Armorer': {'id': 'armorer', 'name': '护甲匠', 'symbol': '▧', 'description': '社区来源登记的护甲匠位置。不能仅凭标记推断师匠能力或当前可用性。'},
+    'GwentPlayer': {'id': 'gwent-player', 'name': '昆特对手', 'symbol': '♠', 'description': '来源登记的昆特对战入口；不代表完整对手、独特卡牌或任何阶段均可对战。'},
+    'GwentSeller': {'id': 'gwent-seller', 'name': '昆特售牌者', 'symbol': '♣', 'description': '来源登记的售牌入口；卡牌库存及错过条件尚未逐卡核对。'},
+    'MonsterNest': {'id': 'nest', 'name': '怪物巢穴', 'symbol': '◉', 'description': '社区来源记录的怪物巢穴位置。清理状态由你记录，地图不会读取游戏存档。'},
+    'RescuingTown': {'id': 'abandoned', 'name': '废弃地点', 'symbol': '⌂', 'description': '社区来源的清理／救援地点。原始类型 RescuingTown，未逐点确认清理后的商人与人口变化。'},
+    'TreasureHuntMappin': {'id': 'treasure-point', 'name': '宝藏与战利品', 'symbol': '◆', 'description': '隐藏宝藏、守卫宝藏或战利品的社区候选位置；保留原始类型，不把资源点当成独立寻宝任务。'},
+    'Contraband': {'id': 'smuggler', 'name': '走私品', 'symbol': '▱', 'description': '社区来源登记的走私品候选位置；通常需要自行探索水域，不提供未经验证的抵达路线。'},
+    'Entrance': {'id': 'entrance', 'name': '洞穴入口', 'symbol': '∩', 'description': '只标社区记录的入口候选位置；没有洞穴内部底图，不代表通道一定开放或可连通。'},
+})
+CATEGORIES['Herbalist'] = CATEGORIES['Merchant']
+CATEGORIES['BossAndTreasure'] = CATEGORIES['TreasureHuntMappin']
+CATEGORIES['SpoilsOfWar'] = CATEGORIES['TreasureHuntMappin']
 # This source key belongs to a separate scene, outside the supported Toussaint tiles.
 DEFERRED = {'TO|NoticeBoard|q704_ft_fairy_tale_noticeboard': '来源标识为童话世界独立场景，且坐标在陶森特区域底图范围外；没有对应场景底图，暂缓展示。'}
 
@@ -29,8 +44,9 @@ def transform(world, xy):
 
 def build():
     xml = ET.parse(SOURCE).getroot()
+    id_map = json.loads((ROOT / 'evidence/exploration-id-map.json').read_text())['entries']
     landmarks = json.loads((ROOT / 'dist/data.json').read_text())['landmarks']
-    points, seen, raw_counts, duplicates, deferred = [], {}, Counter(), [], []
+    points, seen, raw_counts, duplicates, deferred, ledger = [], {}, Counter(), [], [], []
     for world in xml.findall('world'):
         code = world.get('code')
         roads = [(node.findtext('name', ''), [float(node.find('position').get(axis)) for axis in ['x', 'y']])
@@ -42,17 +58,24 @@ def build():
             raw_counts[source_type] += 1
             category = CATEGORIES[source_type]
             source_key = node.findtext('internalname', '').strip()
-            if not source_key:
-                raise ValueError(f'Missing stable source key: {code}/{index}')
             key = '|'.join([code, source_type, source_key])
+            override = id_map.get(key + '|' + str(index))
+            if override:
+                assert override['sourceName'] == node.findtext('name', ''), f'ID migration needs review: {key}/{index}'
+            stable_key = override['stableKey'] if override else key
+            if not source_key and not override:
+                raise ValueError(f'Missing curated ID mapping: {code}/{index}')
             xy = [float(node.find('position').get(axis)) for axis in ['x', 'y']]
+            record = {'world': code, 'sourceType': source_type, 'sourceKey': key, 'sourceIndex': index}
             if key in DEFERRED:
                 deferred.append({'sourceKey': key, 'sourceIndex': index, 'gameXY': xy, 'reason': DEFERRED[key]})
+                ledger.append({**record, 'action': 'defer', 'reason': DEFERRED[key]})
                 continue
-            if key in seen:
-                if seen[key]['gameXY'] != xy:
+            if stable_key in seen:
+                if seen[stable_key]['gameXY'] != xy:
                     raise ValueError(f'Conflicting source positions: {key}')
-                duplicates.append({'sourceKey': key, 'sourceIndex': index, 'keptPointId': seen[key]['id'], 'reason': '同一来源标识与坐标的重复记录，合并为一个点位。'})
+                duplicates.append({'sourceKey': key, 'sourceIndex': index, 'keptPointId': seen[stable_key]['id'], 'reason': '同一来源标识与坐标的重复记录，合并为一个点位。'})
+                ledger.append({**record, 'action': 'merge', 'pointId': seen[stable_key]['id']})
                 continue
             latlng = transform(code, xy)
             if not (-85.0512 <= latlng[0] <= 85.0512 and -180 <= latlng[1] <= 180):
@@ -62,10 +85,11 @@ def build():
             nearby = next(road for road in landmarks if road['region'] == REGIONS[code]
                           and all(abs(a - b) < 1e-8 for a, b in zip(road['latlng'], near_latlng)))
             point = {
-                'id': 'p-' + code.lower() + '-' + category['id'] + '-' + hashlib.sha256(key.encode()).hexdigest()[:16],
+                'id': 'p-' + code.lower() + '-' + category['id'] + '-' + hashlib.sha256(stable_key.encode()).hexdigest()[:16],
                 'type': category['id'], 'title': category['name'], 'region': REGIONS[code],
                 'gameXY': xy, 'latlng': latlng, 'precision': 'community',
                 'sourceKey': key, 'sourceName': node.findtext('name', '').strip(),
+                'sourceType': source_type, 'stableSourceKey': stable_key,
                 'sourceIndex': index, 'sourceCommit': SOURCE_COMMIT,
                 'nearbyLandmark': nearby,
                 'description': category['description'],
@@ -73,19 +97,22 @@ def build():
                 'sources': [{'label': '社区地图点位来源', 'url': SOURCE_URL}],
             }
             points.append(point)
-            seen[key] = point
+            seen[stable_key] = point
+            ledger.append({**record, 'action': 'include', 'pointId': point['id']})
     counts = Counter(point['type'] for point in points)
-    assert sum(raw_counts.values()) == 72
-    assert dict(counts) == {'power': 29, 'board': 35, 'stash': 6}
+    manifest = json.loads((ROOT / 'evidence/exploration-round3-manifest.json').read_text())
+    assert sum(raw_counts.values()) == manifest['rawRecords']
+    assert dict(counts) == manifest['expectedCounts']
     output = {
         'meta': {'schemaVersion': 1, 'date': '2026-10-03', 'sourceCommit': SOURCE_COMMIT,
                  'sourceSha256': hashlib.sha256(SOURCE.read_bytes()).hexdigest(),
                  'coordinateSystem': '与现有区域底图同源的游戏 XY 校准坐标；不是现实地理经纬度。',
-                 'scope': '首批魔力之所、告示板、储藏箱；不是全游戏探索点完整性证明。',
+                 'scope': '基础设施、昆特入口、探索资源及洞穴入口的冻结社区记录；不是全游戏探索点或商人完整性证明。',
                  'rawRecords': sum(raw_counts.values()), 'rawCounts': dict(raw_counts),
                  'included': len(points), 'duplicates': duplicates, 'deferred': deferred,
+                 'ledger': ledger, 'idMapping': 'source-key with explicit curated variants; no coordinate IDs',
                  'limits': ['来源坐标尚未逐点实机复核。', '最近路标按游戏 XY 直线距离选择，只作为方位参考，不代表可步行到达的路线。', '点位显示不代表其任务、告示或设施已在当前存档中开放。']},
-        'categories': [{**category, 'count': counts[category['id']]} for category in CATEGORIES.values()],
+        'categories': [{**category, 'defaultEnabled': category['id'] in ['power','board','stash'], 'count': counts[category['id']]} for category in {c['id']: c for c in CATEGORIES.values()}.values()],
         'points': points,
     }
     path = ROOT / 'dist/exploration.json'

@@ -13,7 +13,8 @@ SOURCE_PATH = ROOT / 'evidence/upstream/Witcher3MapViewer/MapPins.xml'
 DATA = json.loads(DATA_PATH.read_text())
 QUESTS = json.loads((ROOT / 'dist/data.json').read_text())
 CHECKS = []
-SOURCE_TYPES = {'PlaceOfPower': 'power', 'NoticeBoard': 'board', 'PlayerStash': 'stash'}
+MANIFEST = json.loads((ROOT / 'evidence/exploration-round3-manifest.json').read_text())
+SOURCE_TYPES = {'PlaceOfPower','NoticeBoard','PlayerStash','Merchant','Herbalist','Blacksmith','Armorer','GwentPlayer','GwentSeller','MonsterNest','RescuingTown','TreasureHuntMappin','BossAndTreasure','SpoilsOfWar','Contraband','Entrance'}
 REGIONS = {'WO': 'white-orchard', 'NO': 'velen', 'SK': 'skellige', 'KM': 'kaer-morhen', 'TO': 'toussaint'}
 EXPECTED_REGIONS = {'white-orchard': {'power': 6, 'board': 1, 'stash': 1}, 'velen': {'power': 8, 'board': 19, 'stash': 2}, 'skellige': {'power': 9, 'board': 8, 'stash': 1}, 'toussaint': {'power': 5, 'board': 7, 'stash': 1}, 'kaer-morhen': {'power': 1, 'board': 0, 'stash': 1}}
 FIXTURES = [
@@ -38,28 +39,29 @@ def source_coverage():
     source = Counter()
     positions = {}
     for world in ET.parse(SOURCE_PATH).getroot():
-        for node in world.findall('mappin'):
+        for index, node in enumerate(world.findall('mappin')):
             if node.get('type') not in SOURCE_TYPES:
                 continue
             key = '|'.join([world.get('code'), node.get('type'), node.findtext('internalname').strip()])
             source[key] += 1
-            positions[key] = [float(node.find('position').get(axis)) for axis in ['x', 'y']]
+            positions[(world.get('code'), index)] = [float(node.find('position').get(axis)) for axis in ['x', 'y']]
     included = Counter(point['sourceKey'] for point in DATA['points'])
     ledger = included + Counter(item['sourceKey'] for item in DATA['meta']['duplicates']) + Counter(item['sourceKey'] for item in DATA['meta']['deferred'])
     assert source == ledger, 'Unexplained missing or extra source records'
-    assert sum(source.values()) == 72
+    assert sum(source.values()) == MANIFEST['rawRecords']
     for point in DATA['points']:
-        assert point['gameXY'] == positions[point['sourceKey']]
-    return 'Locked source hash; all 72 raw records accounted for, with original XY retained.'
+        assert point['gameXY'] == positions[(point['sourceKey'].split('|')[0], point['sourceIndex'])]
+    assert [(r['world'],r['sourceIndex'],r['action'],r.get('pointId')) for r in DATA['meta']['ledger']] == [(r['world'],r['sourceIndex'],r['action'],r.get('pointId')) for r in MANIFEST['records']]
+    return 'Locked source hash; all 617 raw records independently accounted for, with original XY retained.'
 
 
 def audited_counts():
-    assert len(DATA['points']) == 70
-    assert Counter(point['type'] for point in DATA['points']) == {'power': 29, 'board': 35, 'stash': 6}
-    for region, counts in EXPECTED_REGIONS.items():
+    assert len(DATA['points']) == MANIFEST['expectedIncluded']
+    assert Counter(point['type'] for point in DATA['points']) == MANIFEST['expectedCounts']
+    for region, counts in MANIFEST['regions'].items():
         for category, count in counts.items():
             assert sum(point['region'] == region and point['type'] == category for point in DATA['points']) == count, (region, category)
-    return '70 audited records; exact per-category counts independently declared for all five regions.'
+    return '615 audited records; exact per-category counts independently declared for all five regions.'
 
 
 def exclusions():
@@ -89,7 +91,11 @@ def identities_and_references():
     ids = [point['id'] for point in DATA['points']]
     assert len(ids) == len(set(ids))
     assert not set(ids) & {quest['id'] for quest in QUESTS['quests']}
-    assert len({point['sourceKey'] for point in DATA['points']}) == 70
+    assert len({point['stableSourceKey'] for point in DATA['points']}) == MANIFEST['expectedIncluded']
+    old = json.loads(__import__('subprocess').check_output(['git','show','sites/v6:dist/exploration.json'],cwd=ROOT))
+    current = {p['id']:p for p in DATA['points']}
+    for p in old['points']:
+        assert p['id'] in current and current[p['id']]['gameXY']==p['gameXY'] and current[p['id']]['latlng']==p['latlng']
     for point in DATA['points']:
         assert point['nearbyLandmark'] in QUESTS['landmarks']
         assert point['nearbyLandmark']['region'] == point['region']
@@ -97,8 +103,13 @@ def identities_and_references():
 
 
 def legacy_catalog():
-    assert hashlib.sha256((ROOT / 'dist/data.json').read_bytes()).hexdigest() == '2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9'
-    return 'Entire 267-quest catalog retains the independently recorded v4 fingerprint.'
+    old_path=ROOT/'evidence/history/cloud-round1-2026-10-03/data.json'
+    assert hashlib.sha256(old_path.read_bytes()).hexdigest() == '2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9'
+    current={q['id']:q for q in QUESTS['quests']}
+    for q in json.loads(old_path.read_text())['quests']:
+        for field in ['id','type','title','point','region','expansion']:
+            assert q[field]==current[q['id']][field], (q['id'],field)
+    return 'All 267 legacy IDs, classifications, titles, expansion boundaries and coordinates retain their frozen baseline values.'
 
 
 def provenance():

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "fb674dbff7df087d0a45f9b3938ba6d5317295af",
+  "entries": {
+    "WO|Merchant|unknown|10": {
+      "stableKey": "WO|Merchant|unknown|variant-10",
+      "sourceName": "unknown merchant",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "WO|Merchant|unknown|11": {
+      "stableKey": "WO|Merchant|unknown|variant-11",
+      "sourceName": "unknown merchant",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "WO|Herbalist||45": {
+      "stableKey": "WO|Herbalist||variant-45",
+      "sourceName": "q002_herbalist_mappin",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "WO|Entrance||51": {
+      "stableKey": "WO|Entrance||variant-51",
+      "sourceName": "mq0003_mp_cave",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "WO|Entrance||52": {
+      "stableKey": "WO|Entrance||variant-52",
+      "sourceName": "mq0003_mp_cave_exit_03",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_2a|232": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2a|variant-232",
+      "sourceName": "th1005_mp_upgrade_2a",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_2a|239": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2a|variant-239",
+      "sourceName": "th1005_mp_upgrade_2a",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_2a|240": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2a|variant-240",
+      "sourceName": "th1005_mp_upgrade_2a",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_2c|233": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2c|variant-233",
+      "sourceName": "th1005_mp_upgrade_2c",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_2c|241": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2c|variant-241",
+      "sourceName": "th1005_mp_upgrade_2c",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_3a|234": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3a|variant-234",
+      "sourceName": "th1005_mp_upgrade_3a",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_3a|235": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3a|variant-235",
+      "sourceName": "th1005_mp_upgrade_3a",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_3a|236": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3a|variant-236",
+      "sourceName": "th1005_mp_upgrade_3a",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_3a|237": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3a|variant-237",
+      "sourceName": "th1005_mp_upgrade_3a",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_3c|238": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3c|variant-238",
+      "sourceName": "th1005_mp_upgrade_3c",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    },
+    "SK|TreasureHuntMappin|th1005_mp_upgrade_3c|243": {
+      "stableKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3c|variant-243",
+      "sourceName": "th1005_mp_upgrade_3c",
+      "reason": "来源键缺失或共用同一键但代表不同位置；显式维护冻结记录 ID 映射，坐标不进入永久 ID。"
+    }
+  }
+}

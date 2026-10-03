@@ -36,17 +36,17 @@ const fixtures = {'white-orchard': [6, 1, 1], velen: [8, 19, 2], skellige: [9, 8
     return 'White Orchard 8, Velen 29, Skellige 18, Toussaint 13, Kaer Morhen 2; no fabricated Vizima point.';
   });
   await check('32种图层组合及任务索引独立性', async () => {
-    await fresh(); await page.locator('#layers-toggle').click();
+    await fresh(); await page.locator('[data-type="side"]').click(); await page.locator('#layers-toggle').click();
     const keys = ['quests', 'landmarks', 'power', 'board', 'stash'];
     for (let mask = 0; mask < 32; mask++) {
       for (let index = 0; index < keys.length; index++) await page.locator(`[data-layer="${keys[index]}"]`).setChecked(Boolean(mask & (1 << index)));
-      assert.equal(await page.locator('.map-pin').count(), mask & 1 ? 64 : 0);
+      assert.equal(await page.locator('.map-pin').count(), mask & 1 ? 60 : 0);
       assert.equal(await page.locator('.road-sign').count(), mask & 2 ? 111 : 0);
       assert.equal(await page.locator('.exploration-pin').count(), (mask & 4 ? 8 : 0) + (mask & 8 ? 19 : 0) + (mask & 16 ? 2 : 0));
-      assert.equal(await page.locator('.quest-row').count(), 131);
+      assert.equal(await page.locator('.quest-row').count(), 85);
     }
     await page.locator('#close-layers').click();
-    return 'All 32 combinations match independently declared Velen counts; the 131-quest index remains available.';
+    return 'All 32 combinations match independently declared Velen counts; the preserved 85-side-quest index remains available.';
   });
   await check('全隐藏恢复原选择并隐藏任务高亮', async () => {
     await fresh(); await page.evaluate(() => atlas.selectQuest('q67'));

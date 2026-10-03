@@ -1,0 +1,57 @@
+{
+  "executionEnvironment": "cloud-linux",
+  "checks": 113,
+  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3",
+  "suites": {
+    "data-logic": {
+      "passed": 25,
+      "total": 25,
+      "executedAt": "2026-10-03T06:04:57.560Z"
+    },
+    "browser": {
+      "passed": 19,
+      "total": 19,
+      "executedAt": "2026-10-03T06:16:58.447Z"
+    },
+    "landmark": {
+      "passed": 8,
+      "total": 8,
+      "executedAt": "2026-10-03T06:14:10.791Z"
+    },
+    "navigation": {
+      "passed": 11,
+      "total": 11,
+      "executedAt": "2026-10-03T06:16:29.695Z"
+    },
+    "asset-report": {
+      "passed": 3,
+      "total": 3,
+      "executedAt": "2026-10-03T06:19:21.629Z"
+    },
+    "exploration-data": {
+      "passed": 7,
+      "total": 7,
+      "executedAt": "2026-10-03T06:04:57.623337+00:00"
+    },
+    "exploration-browser": {
+      "passed": 8,
+      "total": 8,
+      "executedAt": "2026-10-03T06:16:41.948Z"
+    },
+    "progress": {
+      "passed": 12,
+      "total": 12,
+      "executedAt": "2026-10-03T06:17:10.175Z"
+    },
+    "catalog": {
+      "passed": 10,
+      "total": 10,
+      "executedAt": "2026-10-03T06:09:55.520002+00:00"
+    },
+    "catalog-browser": {
+      "passed": 10,
+      "total": 10,
+      "executedAt": "2026-10-03T06:17:06.613Z"
+    }
+  }
+}

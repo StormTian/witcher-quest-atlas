@@ -15,7 +15,7 @@ window.AtlasProgress = {
       (state.progressView === 'all' || flag(kind, id, state.progressView === 'done' ? 'done' : 'starred'));
     const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
     const identifier = value => typeof value === 'string' && /^[a-zA-Z0-9_-]{1,100}$/.test(value) && !['__proto__', 'prototype', 'constructor'].includes(value);
-    const defaults = {region: 'velen', type: 'all', exp: 'all', query: '', global: false, branch: false, landmarks: true, layers: {quests: true, power: true, board: true, stash: true}, hideDone: false, progressView: 'all'};
+    const defaults = {region: 'velen', type: 'all', exp: 'all', query: '', global: false, branch: false, landmarks: true, layers: {quests: true, ...Object.fromEntries(points.categories.map(c => [c.id, c.defaultEnabled === true]))}, hideDone: false, progressView: 'all'};
     function parse(value) {
       if (!isObject(value) || value.app !== 'witcher-quest-atlas' || value.schemaVersion !== 1 || !isObject(value.records)) throw Error('不是支持的巫师3地图备份，或备份版本不受支持。');
       const result = {records: {quest: Object.create(null), point: Object.create(null)}, orphaned: [], preferences: {...defaults, layers: {...defaults.layers}}, choices: {}, views: {}, selected: null, sim: {}, baw: {}};

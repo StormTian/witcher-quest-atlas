@@ -1,0 +1,5017 @@
+{
+  "sourceSha256": "2ecb73a3b14e1a47383c66e959ff0f1518f5918e7163f689aa8f790ae79f776e",
+  "method": "冻结 XML 行清单与显式 ID 变体审核；预先声明地区/分类计数及合并、暂缓行，不读取运行时 exploration.json。",
+  "rawRecords": 617,
+  "expectedIncluded": 615,
+  "expectedCounts": {
+    "merchant": 10,
+    "power": 29,
+    "board": 35,
+    "stash": 6,
+    "treasure-point": 207,
+    "smuggler": 64,
+    "nest": 45,
+    "abandoned": 34,
+    "entrance": 111,
+    "armorer": 5,
+    "gwent-player": 51,
+    "gwent-seller": 14,
+    "blacksmith": 4
+  },
+  "regions": {
+    "white-orchard": {
+      "merchant": 3,
+      "power": 6,
+      "board": 1,
+      "stash": 1,
+      "treasure-point": 9,
+      "smuggler": 1,
+      "nest": 3,
+      "abandoned": 2,
+      "entrance": 2
+    },
+    "velen": {
+      "armorer": 3,
+      "merchant": 7,
+      "abandoned": 16,
+      "entrance": 29,
+      "gwent-player": 31,
+      "gwent-seller": 10,
+      "board": 19,
+      "power": 8,
+      "stash": 2,
+      "treasure-point": 78,
+      "nest": 27,
+      "smuggler": 4,
+      "blacksmith": 3
+    },
+    "skellige": {
+      "entrance": 31,
+      "gwent-player": 20,
+      "gwent-seller": 4,
+      "board": 8,
+      "power": 9,
+      "stash": 1,
+      "treasure-point": 79,
+      "abandoned": 5,
+      "nest": 5,
+      "smuggler": 59,
+      "armorer": 1
+    },
+    "toussaint": {
+      "entrance": 39,
+      "board": 7,
+      "treasure-point": 33,
+      "abandoned": 11,
+      "nest": 10,
+      "power": 5,
+      "blacksmith": 1,
+      "stash": 1,
+      "armorer": 1
+    },
+    "kaer-morhen": {
+      "treasure-point": 8,
+      "entrance": 10,
+      "power": 1,
+      "stash": 1
+    }
+  },
+  "records": [
+    {
+      "world": "WO",
+      "sourceIndex": 10,
+      "sourceKey": "WO|Merchant|unknown",
+      "category": "merchant",
+      "pointId": "p-wo-merchant-c5b71c91029c3855",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 11,
+      "sourceKey": "WO|Merchant|unknown",
+      "category": "merchant",
+      "pointId": "p-wo-merchant-ac30bea912f1952b",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 13,
+      "sourceKey": "WO|PlaceOfPower|pop_quen2_prlg",
+      "category": "power",
+      "pointId": "p-wo-power-0edde169ea5e925f",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 14,
+      "sourceKey": "WO|NoticeBoard|prologue_village_noticeboard",
+      "category": "board",
+      "pointId": "p-wo-board-0a7ab1849f2df3c2",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 15,
+      "sourceKey": "WO|PlayerStash|MISSING_NAME_8A6C655E-425E4B28-22A5E5AD-4FE3DBBF",
+      "category": "stash",
+      "pointId": "p-wo-stash-82b30c264c28584e",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 23,
+      "sourceKey": "WO|BossAndTreasure|beached_boats",
+      "category": "treasure-point",
+      "pointId": "p-wo-treasure-point-f79040d49394908a",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 24,
+      "sourceKey": "WO|BossAndTreasure|boat_wreck",
+      "category": "treasure-point",
+      "pointId": "p-wo-treasure-point-b205b83fb6fc996d",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 25,
+      "sourceKey": "WO|TreasureHuntMappin|lw_prologue_bandit_treasure",
+      "category": "treasure-point",
+      "pointId": "p-wo-treasure-point-8ef7d783d0a8ca10",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 26,
+      "sourceKey": "WO|BossAndTreasure|cemetary_wraith",
+      "category": "treasure-point",
+      "pointId": "p-wo-treasure-point-02266aa2b124d36b",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 27,
+      "sourceKey": "WO|Contraband|contraband_prologue_1",
+      "category": "smuggler",
+      "pointId": "p-wo-smuggler-9cc24f6dc5001e61",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 28,
+      "sourceKey": "WO|BossAndTreasure|dead_horses_prologue",
+      "category": "treasure-point",
+      "pointId": "p-wo-treasure-point-d1e8d166cfb8f486",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 29,
+      "sourceKey": "WO|MonsterNest|lw_ghouls_nest01",
+      "category": "nest",
+      "pointId": "p-wo-nest-7ec47cf422b498b5",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 30,
+      "sourceKey": "WO|MonsterNest|lw_monster_nest_ghoul5",
+      "category": "nest",
+      "pointId": "p-wo-nest-315fdfe70901831f",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 31,
+      "sourceKey": "WO|MonsterNest|lw_hengestone_ghoulnest_pin",
+      "category": "nest",
+      "pointId": "p-wo-nest-aadc081d6c4e76e1",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 32,
+      "sourceKey": "WO|TreasureHuntMappin|lw_prologue_temerian_treasure",
+      "category": "treasure-point",
+      "pointId": "p-wo-treasure-point-85ae41187726db2b",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 33,
+      "sourceKey": "WO|RescuingTown|lumbermill_camp_mp",
+      "category": "abandoned",
+      "pointId": "p-wo-abandoned-6bef0ec1a448e194",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 35,
+      "sourceKey": "WO|PlaceOfPower|lw_ignii_prologue_01",
+      "category": "power",
+      "pointId": "p-wo-power-34ac26d48c4a72ad",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 36,
+      "sourceKey": "WO|PlaceOfPower|lw_aard_prologue_02",
+      "category": "power",
+      "pointId": "p-wo-power-38c9dcbdc3861ae4",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 37,
+      "sourceKey": "WO|PlaceOfPower|lw_quen_prologue_03",
+      "category": "power",
+      "pointId": "p-wo-power-81c647be6d7c6314",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 38,
+      "sourceKey": "WO|PlaceOfPower|lw_axii_prologue_04",
+      "category": "power",
+      "pointId": "p-wo-power-63c76568127ea115",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 39,
+      "sourceKey": "WO|PlaceOfPower|lw_yrden_prologue_05",
+      "category": "power",
+      "pointId": "p-wo-power-444d5df7778ce211",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 40,
+      "sourceKey": "WO|RescuingTown|road_protection_shrine",
+      "category": "abandoned",
+      "pointId": "p-wo-abandoned-f54c6286db6d5b86",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 41,
+      "sourceKey": "WO|SpoilsOfWar|spoils_of_war_entity",
+      "category": "treasure-point",
+      "pointId": "p-wo-treasure-point-fa9333f2164f830f",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 42,
+      "sourceKey": "WO|BossAndTreasure|waterhag_mappin",
+      "category": "treasure-point",
+      "pointId": "p-wo-treasure-point-4154b1f924ade52f",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 43,
+      "sourceKey": "WO|TreasureHuntMappin|lw_prologue_deserter_stash",
+      "category": "treasure-point",
+      "pointId": "p-wo-treasure-point-855b05fea27e4ed5",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 45,
+      "sourceKey": "WO|Herbalist|",
+      "category": "merchant",
+      "pointId": "p-wo-merchant-c165457f64fb9590",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 51,
+      "sourceKey": "WO|Entrance|",
+      "category": "entrance",
+      "pointId": "p-wo-entrance-5c950e23dc1271e7",
+      "action": "include"
+    },
+    {
+      "world": "WO",
+      "sourceIndex": 52,
+      "sourceKey": "WO|Entrance|",
+      "category": "entrance",
+      "pointId": "p-wo-entrance-b443090da9d0a507",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 2,
+      "sourceKey": "NO|Armorer|oxenfurt_armorer",
+      "category": "armorer",
+      "pointId": "p-no-armorer-c2ee2a2badae3883",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 3,
+      "sourceKey": "NO|Armorer|novigrad_square_armorer",
+      "category": "armorer",
+      "pointId": "p-no-armorer-dad513390d574bfc",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 5,
+      "sourceKey": "NO|Merchant|affiri_merchant",
+      "category": "merchant",
+      "pointId": "p-no-merchant-c6ea06c5f8a55419",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 7,
+      "sourceKey": "NO|RescuingTown|nml_mp_de29",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-43ab0e4e5e26c327",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 8,
+      "sourceKey": "NO|Entrance|cave_entrance_01",
+      "category": "entrance",
+      "pointId": "p-no-entrance-ed5ca6ef6adfcb0a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 9,
+      "sourceKey": "NO|Entrance|cave_entrance_02",
+      "category": "entrance",
+      "pointId": "p-no-entrance-d0de4f69b35c3905",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 10,
+      "sourceKey": "NO|Entrance|cave_entrance_03",
+      "category": "entrance",
+      "pointId": "p-no-entrance-1f34e94d612834a8",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 11,
+      "sourceKey": "NO|Entrance|cave_entrance_04",
+      "category": "entrance",
+      "pointId": "p-no-entrance-1dbb0fe8cbd2339a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 12,
+      "sourceKey": "NO|Entrance|cave_entrance_06",
+      "category": "entrance",
+      "pointId": "p-no-entrance-8c5827ff0a271bc2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 13,
+      "sourceKey": "NO|Entrance|cave_entrance_07",
+      "category": "entrance",
+      "pointId": "p-no-entrance-b0f5e24e2c68177d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 14,
+      "sourceKey": "NO|Entrance|cave_entrance_08",
+      "category": "entrance",
+      "pointId": "p-no-entrance-b3ec6ef371d80b08",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 15,
+      "sourceKey": "NO|Entrance|cave_entrance_10",
+      "category": "entrance",
+      "pointId": "p-no-entrance-159f57fb377b2876",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 16,
+      "sourceKey": "NO|Entrance|cave_entrance_11",
+      "category": "entrance",
+      "pointId": "p-no-entrance-d34ae276b3e24607",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 17,
+      "sourceKey": "NO|Entrance|cave_entrance_12",
+      "category": "entrance",
+      "pointId": "p-no-entrance-e094de9c2ac15e04",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 18,
+      "sourceKey": "NO|Entrance|cave_entrance_13",
+      "category": "entrance",
+      "pointId": "p-no-entrance-5f285388900ffeb4",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 19,
+      "sourceKey": "NO|Entrance|cave_entrance_14",
+      "category": "entrance",
+      "pointId": "p-no-entrance-eb5c9c1c0fa08165",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 20,
+      "sourceKey": "NO|Entrance|cave_entrance_15",
+      "category": "entrance",
+      "pointId": "p-no-entrance-7bb5ff209e7403d4",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 21,
+      "sourceKey": "NO|Entrance|cave_entrance_16",
+      "category": "entrance",
+      "pointId": "p-no-entrance-b809425ec7af345e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 22,
+      "sourceKey": "NO|Entrance|cave_entrance_17",
+      "category": "entrance",
+      "pointId": "p-no-entrance-c9d306da292e106e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 23,
+      "sourceKey": "NO|Entrance|cave_entrance_18",
+      "category": "entrance",
+      "pointId": "p-no-entrance-7d8da8c44c353f97",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 24,
+      "sourceKey": "NO|Entrance|cave_entrance_19",
+      "category": "entrance",
+      "pointId": "p-no-entrance-99e4481bc7d59007",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 25,
+      "sourceKey": "NO|Entrance|cave_entrance_20",
+      "category": "entrance",
+      "pointId": "p-no-entrance-af0caafe1c1ae236",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 26,
+      "sourceKey": "NO|Entrance|cave_entrance_21",
+      "category": "entrance",
+      "pointId": "p-no-entrance-ad59bb9af63add07",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 27,
+      "sourceKey": "NO|Entrance|cave_entrance_22",
+      "category": "entrance",
+      "pointId": "p-no-entrance-0ec26d0fde693f74",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 28,
+      "sourceKey": "NO|Entrance|cave_entrance_23",
+      "category": "entrance",
+      "pointId": "p-no-entrance-f99037e6fd8cc53b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 29,
+      "sourceKey": "NO|Entrance|cave_entrance_24",
+      "category": "entrance",
+      "pointId": "p-no-entrance-9ceec886d1db90b5",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 30,
+      "sourceKey": "NO|Entrance|cave_entrance_25",
+      "category": "entrance",
+      "pointId": "p-no-entrance-3fcabdb0bda4880d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 31,
+      "sourceKey": "NO|Entrance|cave_entrance_26",
+      "category": "entrance",
+      "pointId": "p-no-entrance-ee56ed19c8992a08",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 32,
+      "sourceKey": "NO|Entrance|cave_entrance_27",
+      "category": "entrance",
+      "pointId": "p-no-entrance-57f217649c5263c7",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 33,
+      "sourceKey": "NO|Entrance|cave_entrance_29",
+      "category": "entrance",
+      "pointId": "p-no-entrance-8b6350c9834fd00b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 34,
+      "sourceKey": "NO|Entrance|cave_entrance_31",
+      "category": "entrance",
+      "pointId": "p-no-entrance-899780ae155cc9ba",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 35,
+      "sourceKey": "NO|Entrance|cave_entrance_32",
+      "category": "entrance",
+      "pointId": "p-no-entrance-826f95c03dcec7d2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 95,
+      "sourceKey": "NO|GwentPlayer|no_gwent_01",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-4bc421c49b6da7f8",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 96,
+      "sourceKey": "NO|GwentSeller|no_gwent_02",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-7ca166367541f2f8",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 97,
+      "sourceKey": "NO|GwentPlayer|no_gwent_03",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-b7ecfb2f2e91fd31",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 98,
+      "sourceKey": "NO|GwentPlayer|no_gwent_04",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-a0ad0c57e3b1dcdf",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 99,
+      "sourceKey": "NO|GwentPlayer|no_gwent_05",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-618442e2bfdf0b6c",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 100,
+      "sourceKey": "NO|GwentSeller|no_gwent_06",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-e69e05b6ba79085b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 101,
+      "sourceKey": "NO|GwentPlayer|no_gwent_07",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-5c37708c7619811a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 102,
+      "sourceKey": "NO|GwentPlayer|no_gwent_08",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-7d0d1e5b65cd1a51",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 103,
+      "sourceKey": "NO|GwentPlayer|no_gwent_09",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-39576e529f661dba",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 104,
+      "sourceKey": "NO|GwentPlayer|no_gwent_10",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-1e99a1bc2d66243a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 105,
+      "sourceKey": "NO|GwentSeller|no_gwent_11",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-6ad6b1c320c051e1",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 106,
+      "sourceKey": "NO|GwentPlayer|no_gwent_12",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-0603f6ee7fe6fdec",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 107,
+      "sourceKey": "NO|GwentPlayer|no_gwent_13",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-95fd6e7ed154641f",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 108,
+      "sourceKey": "NO|GwentPlayer|no_gwent_14",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-f2be372189ec8ddd",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 109,
+      "sourceKey": "NO|GwentPlayer|no_gwent_15",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-0176b9f642554c49",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 110,
+      "sourceKey": "NO|GwentPlayer|no_gwent_16",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-f5774627dadfb5b1",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 111,
+      "sourceKey": "NO|GwentPlayer|no_gwent_17",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-2e5ee8a26b926371",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 112,
+      "sourceKey": "NO|GwentPlayer|no_gwent_18",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-cdc4973bd8586a21",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 113,
+      "sourceKey": "NO|GwentPlayer|no_gwent_19",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-8dc329078a0ff659",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 114,
+      "sourceKey": "NO|GwentPlayer|no_gwent_20",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-9eb1293f448126a4",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 115,
+      "sourceKey": "NO|GwentSeller|no_gwent_21",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-e2836da9bf532c53",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 116,
+      "sourceKey": "NO|GwentSeller|no_gwent_22",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-75207430020fd390",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 117,
+      "sourceKey": "NO|GwentPlayer|no_gwent_23",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-b6f69196e55db8a8",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 118,
+      "sourceKey": "NO|GwentSeller|no_gwent_24",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-7e6964948844d9b5",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 119,
+      "sourceKey": "NO|GwentPlayer|no_gwent_25",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-bb0cfdbc0cc8e01e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 120,
+      "sourceKey": "NO|GwentSeller|no_gwent_26",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-db15bae5d9a1b163",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 121,
+      "sourceKey": "NO|GwentPlayer|no_gwent_27",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-5c0d8abe9367b274",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 122,
+      "sourceKey": "NO|GwentSeller|no_gwent_28",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-bb97fdfa8d222954",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 123,
+      "sourceKey": "NO|GwentPlayer|no_gwent_29",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-a0e579debdcaa49b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 124,
+      "sourceKey": "NO|GwentPlayer|no_gwent_30",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-018e139315c8c2a1",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 125,
+      "sourceKey": "NO|GwentPlayer|no_gwent_31",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-33252cf75043f4d5",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 126,
+      "sourceKey": "NO|GwentPlayer|no_gwent_32",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-c3e03a71b41ca2f3",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 127,
+      "sourceKey": "NO|GwentPlayer|no_gwent_33",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-be16068596360650",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 128,
+      "sourceKey": "NO|GwentSeller|no_gwent_34",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-9aa513196d422498",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 129,
+      "sourceKey": "NO|GwentSeller|no_gwent_35",
+      "category": "gwent-seller",
+      "pointId": "p-no-gwent-seller-bd1307216af35cfc",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 130,
+      "sourceKey": "NO|GwentPlayer|no_gwent_36",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-d46bdfc73e8f7971",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 131,
+      "sourceKey": "NO|GwentPlayer|no_gwent_37",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-b3563c80e296efce",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 132,
+      "sourceKey": "NO|GwentPlayer|no_gwent_38",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-78d525d0641da8ad",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 133,
+      "sourceKey": "NO|GwentPlayer|no_gwent_39",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-84db53dc3f1641a0",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 134,
+      "sourceKey": "NO|GwentPlayer|no_gwent_40",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-44bd23692aca1474",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 135,
+      "sourceKey": "NO|GwentPlayer|no_gwent_41",
+      "category": "gwent-player",
+      "pointId": "p-no-gwent-player-df78f37ed3ac5da1",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 185,
+      "sourceKey": "NO|NoticeBoard|MISSING_NAME_A9678008-43AE8DB6-29396CB0-409A86B6",
+      "category": "board",
+      "pointId": "p-no-board-bccdb877c1180ccb",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 186,
+      "sourceKey": "NO|PlaceOfPower|pop_yrden2_nml_mp",
+      "category": "power",
+      "pointId": "p-no-power-0fd64a7c49be7881",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 187,
+      "sourceKey": "NO|PlaceOfPower|pop_ignii2_nml_mp",
+      "category": "power",
+      "pointId": "p-no-power-7cc68705be349716",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 188,
+      "sourceKey": "NO|PlaceOfPower|pop_quen2_nml_mp",
+      "category": "power",
+      "pointId": "p-no-power-9b3698dda7d126e7",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 191,
+      "sourceKey": "NO|NoticeBoard|harbor_district_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-9056e2b6125eb33a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 192,
+      "sourceKey": "NO|NoticeBoard|market_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-20621cbfa92b44e9",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 193,
+      "sourceKey": "NO|NoticeBoard|novigrad_rich_district_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-f9fc5516fbcab853",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 194,
+      "sourceKey": "NO|PlayerStash|MISSING_NAME_77FFB807-40CD01B5-3EEF87B4-6099CF6E",
+      "category": "stash",
+      "pointId": "p-no-stash-3121ea48e411462f",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 195,
+      "sourceKey": "NO|PlayerStash|MISSING_NAME_AA3ED6BB-4FAE7E56-37FADC93-4571C7AE",
+      "category": "stash",
+      "pointId": "p-no-stash-c15918c5e0e95bd8",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 214,
+      "sourceKey": "NO|NoticeBoard|barons_village_notice_board",
+      "category": "board",
+      "pointId": "p-no-board-cc88bf7c7716cb4d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 215,
+      "sourceKey": "NO|NoticeBoard|borrows_notice_board",
+      "category": "board",
+      "pointId": "p-no-board-bc7d5f9c410bb421",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 216,
+      "sourceKey": "NO|NoticeBoard|fat_catch_inn_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-0e1c63a8d120cbf2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 217,
+      "sourceKey": "NO|NoticeBoard|farmsvillage_2_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-62e22bcf17b2a407",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 218,
+      "sourceKey": "NO|NoticeBoard|inn_crossroads_notice_board",
+      "category": "board",
+      "pointId": "p-no-board-3bb459ae89e2747e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 219,
+      "sourceKey": "NO|NoticeBoard|midcotts_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-c3bf92361584ced7",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 220,
+      "sourceKey": "NO|NoticeBoard|mouths_notice_board",
+      "category": "board",
+      "pointId": "p-no-board-03df1d03d7c10f08",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 221,
+      "sourceKey": "NO|NoticeBoard|nilfgaard_camp_notice_board",
+      "category": "board",
+      "pointId": "p-no-board-9dba8be2e811ac34",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 222,
+      "sourceKey": "NO|NoticeBoard|poppystone_notice_board",
+      "category": "board",
+      "pointId": "p-no-board-9fe3e7f5c45d8aa7",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 223,
+      "sourceKey": "NO|NoticeBoard|rudnik_notice_board",
+      "category": "board",
+      "pointId": "p-no-board-e051bdbca6121145",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 224,
+      "sourceKey": "NO|NoticeBoard|seven_cats_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-de241171a251b6f5",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 225,
+      "sourceKey": "NO|NoticeBoard|southern_farms_notice_board",
+      "category": "board",
+      "pointId": "p-no-board-61fad983cd41211f",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 226,
+      "sourceKey": "NO|NoticeBoard|toderas_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-88f33adf6b520153",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 227,
+      "sourceKey": "NO|NoticeBoard|whitebridge_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-cdcb672cbf5f2499",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 231,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_bm1_a",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-708a5d3187fbcfc7",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 232,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_bm1_b",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-31e06db32736f5b2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 234,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_bm3",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-b8645b856724fafd",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 235,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_bm4",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-d310108ccd87a4cd",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 236,
+      "sourceKey": "NO|MonsterNest|bm7_drowners_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-a5085b71898d0da3",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 237,
+      "sourceKey": "NO|TreasureHuntMappin|nml_cb17_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-610865ee4c92f672",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 239,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_cb19",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-c8ef97e90ac68fcb",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 240,
+      "sourceKey": "NO|MonsterNest|cp21_drowner_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-f011beb16dc45ed9",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 241,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_cp11",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-c3b693414f73855c",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 243,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_cp14",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-bc7cbff71d0ef190",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 244,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_cp30",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-822613f67f63d0cb",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 245,
+      "sourceKey": "NO|SpoilsOfWar|nml_mp_cp31",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-f7f48e4f4181944d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 246,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_cp33",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-6de4fe7f5e3eeb6d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 247,
+      "sourceKey": "NO|MonsterNest|cp34_ghouls_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-4313b9213146d51c",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 248,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_cp34",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-b81cf2a7212da282",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 249,
+      "sourceKey": "NO|MonsterNest|cp35_ghouls_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-917324bb3408c487",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 250,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_cp36",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-cb4e8b63f114ee97",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 252,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_cp38",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-7d510b2d24d3c840",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 253,
+      "sourceKey": "NO|Contraband|nml_mp_cp39",
+      "category": "smuggler",
+      "pointId": "p-no-smuggler-3305965d99d049b2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 254,
+      "sourceKey": "NO|RescuingTown|cp5_town_resc",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-62a2865b7fda24ef",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 255,
+      "sourceKey": "NO|MonsterNest|nml_cp5_nest_mp",
+      "category": "nest",
+      "pointId": "p-no-nest-b5b82c4baf930f4f",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 256,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_gr100",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-f120df4291eff3ad",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 257,
+      "sourceKey": "NO|RescuingTown|nml_mp_gr11_b",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-8e353f26e19fbbd4",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 258,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_gr12",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-9156a12f807b8ba2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 259,
+      "sourceKey": "NO|RescuingTown|nml_mp_gr12_town",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-cc4fc0aa727a807a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 261,
+      "sourceKey": "NO|BossAndTreasure|gr15b_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-9444fd566de3537b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 262,
+      "sourceKey": "NO|MonsterNest|lw_gr16_pc_nest_rotfiend",
+      "category": "nest",
+      "pointId": "p-no-nest-18b4d4b166c21014",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 263,
+      "sourceKey": "NO|MonsterNest|gr18_monster_nest_ghoul",
+      "category": "nest",
+      "pointId": "p-no-nest-d285d39c2164073d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 264,
+      "sourceKey": "NO|MonsterNest|gr18_monster_nest_ghoul_01",
+      "category": "nest",
+      "pointId": "p-no-nest-ced66952aa8d6276",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 265,
+      "sourceKey": "NO|RescuingTown|nml_mp_gr27",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-d26593fd970f7cb2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 266,
+      "sourceKey": "NO|MonsterNest|lw_gr28_harpynest_01",
+      "category": "nest",
+      "pointId": "p-no-nest-1323839cc39d6fd6",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 269,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_gr33",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-2a77f5a7fce43417",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 270,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_gr34",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-a86839f6e24964a8",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 271,
+      "sourceKey": "NO|MonsterNest|gr35_ghouls_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-57d751cb627951d6",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 272,
+      "sourceKey": "NO|MonsterNest|gr36_nekkers_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-b2821eeacdfa884d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 274,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_gr39 lw_gr39",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-e9f12e7af6b484a2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 275,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_gr40 lw_gr40",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-671cd217e3e5cb25",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 276,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_gr41",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-dbbe9d09bc8547f4",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 277,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_gr7",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-0dedecf3895f4e30",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 278,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_gr42_ponds",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-b6bfc2e55bd28e96",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 279,
+      "sourceKey": "NO|BossAndTreasure|gf200_mp_nml",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-87391a2621fe24dd",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 280,
+      "sourceKey": "NO|BossAndTreasure|gf201_mp_nml",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-c133c2af75979044",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 281,
+      "sourceKey": "NO|BossAndTreasure|gf202_mp_nml",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-d7282a8f3c238cef",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 283,
+      "sourceKey": "NO|BossAndTreasure|gf204_mp_nml",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-8b4d2cc69214142e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 286,
+      "sourceKey": "NO|Contraband|nml_mp_gf43",
+      "category": "smuggler",
+      "pointId": "p-no-smuggler-2206142f39844101",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 287,
+      "sourceKey": "NO|Contraband|nml_mp_gf44",
+      "category": "smuggler",
+      "pointId": "p-no-smuggler-e497edae8cc1fde7",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 288,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_hs11",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-56491d1d1a91e991",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 289,
+      "sourceKey": "NO|MonsterNest|hs13_rotfiend_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-3ab33442b39e77da",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 291,
+      "sourceKey": "NO|MonsterNest|lw_hs1_ursten_nest_1",
+      "category": "nest",
+      "pointId": "p-no-nest-b0cda4b8a71662a1",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 292,
+      "sourceKey": "NO|MonsterNest|lw_hs1_ursten_nest_boss",
+      "category": "nest",
+      "pointId": "p-no-nest-34c81b21264821a9",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 293,
+      "sourceKey": "NO|BossAndTreasure|hs22_mp_nml",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-bc27b533e2188ff0",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 295,
+      "sourceKey": "NO|MonsterNest|lw_mp4_rotfiend_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-7016d6497b14cca8",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 296,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_mp5",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-6a6089d0b99d528e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 298,
+      "sourceKey": "NO|PlaceOfPower|nml_pop_aard",
+      "category": "power",
+      "pointId": "p-no-power-2d40ee7a1da1e009",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 299,
+      "sourceKey": "NO|PlaceOfPower|lw_ancient_castle_pop",
+      "category": "power",
+      "pointId": "p-no-power-3befe77f8700d3ba",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 300,
+      "sourceKey": "NO|PlaceOfPower|nml_pop_axii",
+      "category": "power",
+      "pointId": "p-no-power-2fb105fdf1569c24",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 301,
+      "sourceKey": "NO|PlaceOfPower|nml_pop_yrden",
+      "category": "power",
+      "pointId": "p-no-power-7e828011b6846bba",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 302,
+      "sourceKey": "NO|PlaceOfPower|nml_pop_ignii",
+      "category": "power",
+      "pointId": "p-no-power-d8028783c255764d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 303,
+      "sourceKey": "NO|BossAndTreasure|mp_wraith_nml_sp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-b009934476349b78",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 304,
+      "sourceKey": "NO|TreasureHuntMappin|sb101_nml_mp_2",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-c27f47df46648a94",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 305,
+      "sourceKey": "NO|SpoilsOfWar|nml_mp_sb100",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-a30818e0b1599259",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 306,
+      "sourceKey": "NO|RescuingTown|nml_mp_sb10",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-c7fbd9acbe79fdb2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 307,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_sb11",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-5794c0b7ecfb7ba9",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 309,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_sb13",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-8858b8e8ee4d844a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 310,
+      "sourceKey": "NO|RescuingTown|nml_mp_sb14",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-ab508fb9fa240f02",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 311,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_sb17",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-e54eeec0664c5e2b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 313,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_sb19",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-1d939494ca40c577",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 316,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_sb24 lw_sb24",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-b78225dd73f92dbc",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 317,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_sb24_swamp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-1e6d160bb09287ea",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 318,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_sb25",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-2605d67fa71be5ba",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 319,
+      "sourceKey": "NO|Contraband|nml_mp_sb26",
+      "category": "smuggler",
+      "pointId": "p-no-smuggler-1bfd011861791b96",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 321,
+      "sourceKey": "NO|RescuingTown|nml_mp_sb3",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-0f66beb4fcadd34e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 325,
+      "sourceKey": "NO|BossAndTreasure|de100_mp_nml",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-cc084d078e68114d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 328,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_de11",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-35fa32f771ffc669",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 331,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_de27",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-84078a49a661839d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 334,
+      "sourceKey": "NO|SpoilsOfWar|nml_mp_de31",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-50025de21e378fcc",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 335,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_de32",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-eaa5ca16b3c9b38b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 336,
+      "sourceKey": "NO|TreasureHuntMappin|de6_mp_nml",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-8052d8723cab53ef",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 337,
+      "sourceKey": "NO|MonsterNest|de8_nekker_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-5da7bde0d13676c3",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 338,
+      "sourceKey": "NO|MonsterNest|lw_de_poi_032_nest_1",
+      "category": "nest",
+      "pointId": "p-no-nest-a10ee3293a7b0f3a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 339,
+      "sourceKey": "NO|MonsterNest|lw_de_poi_032_nest_2",
+      "category": "nest",
+      "pointId": "p-no-nest-5f65258d722185c6",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 340,
+      "sourceKey": "NO|MonsterNest|lw_de_poi_032_nest_4",
+      "category": "nest",
+      "pointId": "p-no-nest-a136774851718b8a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 341,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_tm100",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-c867f3e27d66fd88",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 342,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_tm101",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-7e7bb47f8a5f1147",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 344,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_tm13",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-6309cf7efbd870a7",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 345,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_tm15",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-2b0a0101a375a988",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 346,
+      "sourceKey": "NO|BossAndTreasure|mp_tm201_nml",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-05558f492f53a214",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 347,
+      "sourceKey": "NO|RescuingTown|nml_mp_tm3",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-6c3f6f07acabcc31",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 348,
+      "sourceKey": "NO|RescuingTown|nml_mp_tm4",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-9e321eabd7f12b40",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 349,
+      "sourceKey": "NO|BossAndTreasure|nml_mp_tm5",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-c7234a48b7931fc8",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 351,
+      "sourceKey": "NO|TreasureHuntMappin|nml_mp_tm6",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-ca90cb23f2c52579",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 352,
+      "sourceKey": "NO|TreasureHuntMappin|th1003_mp_armor_set",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-23b26a494690ca65",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 353,
+      "sourceKey": "NO|TreasureHuntMappin|th1003_mp_crossbow",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-7808d4156639c222",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 354,
+      "sourceKey": "NO|TreasureHuntMappin|th1003_mp_silver_sword",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-d9c6aebcd3d19ffc",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 355,
+      "sourceKey": "NO|TreasureHuntMappin|th1003_mp_steel_sword",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-36a4b3af5c08b4ee",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 356,
+      "sourceKey": "NO|TreasureHuntMappin|th1005_mp_armor_set",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-279285bc54e3c145",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 357,
+      "sourceKey": "NO|TreasureHuntMappin|th1005_mp_silver_sword",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-9156be30c319fdc1",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 358,
+      "sourceKey": "NO|TreasureHuntMappin|th1005_mp_steel_sword",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-03e0bd6363709c9d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 359,
+      "sourceKey": "NO|TreasureHuntMappin|th1007_mp_upgrade_2c",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-7f756ae8c7d02376",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 360,
+      "sourceKey": "NO|TreasureHuntMappin|th1007_mp_upgrade_2b",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-fc189fe5b9e4a488",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 361,
+      "sourceKey": "NO|TreasureHuntMappin|th1007_mp_upgrade_3a",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-8136f1aab2dbb92d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 362,
+      "sourceKey": "NO|TreasureHuntMappin|th1007_mp_upgrade_3c",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-1981c7da1af655ae",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 363,
+      "sourceKey": "NO|TreasureHuntMappin|th1007_mp_upgrade_3b",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-c5deb813168dae56",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 364,
+      "sourceKey": "NO|TreasureHuntMappin|th1007_mp_upgrade_2a",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-aa4c5b41ae6f1091",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 371,
+      "sourceKey": "NO|Blacksmith|midcopse_blacksmith",
+      "category": "blacksmith",
+      "pointId": "p-no-blacksmith-3231f85fd187dd0e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 372,
+      "sourceKey": "NO|MonsterNest|mh105_wyvern_nest_01",
+      "category": "nest",
+      "pointId": "p-no-nest-51279a46f7e37893",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 373,
+      "sourceKey": "NO|MonsterNest|mh105_wyvern_nest_02",
+      "category": "nest",
+      "pointId": "p-no-nest-878de15189bf6463",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 374,
+      "sourceKey": "NO|Armorer|mh105_wyvern_nest_02",
+      "category": "armorer",
+      "pointId": "p-no-armorer-3a3ae0d4d885cd53",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 395,
+      "sourceKey": "NO|Merchant|mq1002_start",
+      "category": "merchant",
+      "pointId": "p-no-merchant-d9be7768f6ee1ee0",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 399,
+      "sourceKey": "NO|Herbalist|herbalist",
+      "category": "merchant",
+      "pointId": "p-no-merchant-587c9089ac80f520",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 406,
+      "sourceKey": "NO|Merchant|crowsperchmerchant",
+      "category": "merchant",
+      "pointId": "p-no-merchant-54817c4e521a8e83",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 432,
+      "sourceKey": "NO|Merchant|mq3006_start",
+      "category": "merchant",
+      "pointId": "p-no-merchant-e9a328e4507514df",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 433,
+      "sourceKey": "NO|Merchant|vivaldi",
+      "category": "merchant",
+      "pointId": "p-no-merchant-9053178d907378d6",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 451,
+      "sourceKey": "NO|Merchant|q104_mappin_keira_hut",
+      "category": "merchant",
+      "pointId": "p-no-merchant-7fc233bbe92dfac0",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 457,
+      "sourceKey": "NO|Blacksmith|sq304_start",
+      "category": "blacksmith",
+      "pointId": "p-no-blacksmith-f61de042d340910a",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 458,
+      "sourceKey": "NO|Blacksmith|blackbough_blacksmith",
+      "category": "blacksmith",
+      "pointId": "p-no-blacksmith-2dfba889a43d2534",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 461,
+      "sourceKey": "NO|NoticeBoard|q602_village_noticeboard",
+      "category": "board",
+      "pointId": "p-no-board-9b936084682b71f9",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 462,
+      "sourceKey": "NO|TreasureHuntMappin|ep1_poi01_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-6b58f924500819f2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 463,
+      "sourceKey": "NO|TreasureHuntMappin|ep1_poi02_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-2ace552fe663c6dd",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 464,
+      "sourceKey": "NO|BossAndTreasure|ep1_poi03_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-3501d46ea8d48c33",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 465,
+      "sourceKey": "NO|TreasureHuntMappin|ep1_poi_04_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-839a43d0c9b54a31",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 466,
+      "sourceKey": "NO|RescuingTown|ep1_poi20_mp",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-3b2bdeb697c5027e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 467,
+      "sourceKey": "NO|TreasureHuntMappin|ep1_poi_05_start_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-66466a12ca75de7b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 468,
+      "sourceKey": "NO|RescuingTown|ep1_poi06_mp",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-04de089c00b066dc",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 469,
+      "sourceKey": "NO|RescuingTown|ep1_poi07_mp",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-4a866359b3e88e35",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 470,
+      "sourceKey": "NO|TreasureHuntMappin|ep1_poi_08_mp_bt",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-2acebbdc11455ffc",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 471,
+      "sourceKey": "NO|RescuingTown|ep1_poi_08_mp_rt",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-ea3ac9cc2aff186b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 474,
+      "sourceKey": "NO|Entrance|ep1_cave_entrance_poi10",
+      "category": "entrance",
+      "pointId": "p-no-entrance-9df4f66a602d7a0e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 475,
+      "sourceKey": "NO|TreasureHuntMappin|ep1_poi10b_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-45fce438874990cd",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 482,
+      "sourceKey": "NO|MonsterNest|ep1_poi_19_mp",
+      "category": "nest",
+      "pointId": "p-no-nest-57ff754256973519",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 486,
+      "sourceKey": "NO|BossAndTreasure|ep1_poi_24_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-6a8cf5ac9dc2e33d",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 487,
+      "sourceKey": "NO|TreasureHuntMappin|ep1_poi_26_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-2f16d8d2bcf7cedc",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 488,
+      "sourceKey": "NO|RescuingTown|ep1_poi_30_mp",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-cba8498231b3aea2",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 489,
+      "sourceKey": "NO|MonsterNest|lw_nest_ep1_poi_31_mp",
+      "category": "nest",
+      "pointId": "p-no-nest-17f6b2f84e82a5b7",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 490,
+      "sourceKey": "NO|MonsterNest|ep1_poi32_nest",
+      "category": "nest",
+      "pointId": "p-no-nest-65c4b4b8cd8751f6",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 491,
+      "sourceKey": "NO|BossAndTreasure|ep1_poi_33_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-0a56053e0362bd74",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 492,
+      "sourceKey": "NO|MonsterNest|ep1_poi_34_mp",
+      "category": "nest",
+      "pointId": "p-no-nest-dd7494897544d74b",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 493,
+      "sourceKey": "NO|BossAndTreasure|ep1_poi_35_mp",
+      "category": "treasure-point",
+      "pointId": "p-no-treasure-point-ed7d0cec69833325",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 494,
+      "sourceKey": "NO|RescuingTown|ep1_poi_37_mp",
+      "category": "abandoned",
+      "pointId": "p-no-abandoned-8af99505c289361e",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 495,
+      "sourceKey": "NO|MonsterNest|ep1_poi37_nest02",
+      "category": "nest",
+      "pointId": "p-no-nest-3a2f705647c9edb6",
+      "action": "include"
+    },
+    {
+      "world": "NO",
+      "sourceIndex": 496,
+      "sourceKey": "NO|MonsterNest|ep1_poi37_nest01",
+      "category": "nest",
+      "pointId": "p-no-nest-65b43713285c6c9c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 6,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_01",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-b2d3db33823083f2",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 7,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_02",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-4327b167c9f47a36",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 8,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_03",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-5d22892cf6d5a8ab",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 9,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_04",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-5a2b774edc65543f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 10,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_05",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-fcf6ad93e7868add",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 11,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_06",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-7857514a51ce6b35",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 12,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_07",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-2a136adcb7bf0f9b",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 13,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_08",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-a35e8ba18968795f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 14,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_09",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-67655b1616563f7f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 15,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_10",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-51787a6cdf94ae43",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 16,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_11",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-c1deab0eac87ec54",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 17,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_12",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-dbd3ad7aaa437d4f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 18,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_13",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-7686d5f228f0ffa6",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 19,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_14",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-ec01e41b1826e1fe",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 20,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_15",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-cdcc5836e66e5f2c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 21,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_16",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-ec10852f06f28b22",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 22,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_17",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-d73e0d8b100ec7a5",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 23,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_18",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-b96d608fdbcadf15",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 24,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_19",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-12821fd42cacfaee",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 25,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_20",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-5ed310517f17a2a6",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 26,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_22",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-5bfcd29114852dd1",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 27,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_23",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-aa591bb94495d861",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 28,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_24",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-cce8d719ef8b7d14",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 29,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_25",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-7c99f5698066b059",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 30,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_26",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-cd01e61cd7ed4402",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 31,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_27",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-df76706398c919f0",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 32,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_28",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-22ac2d6f6b1fa87a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 33,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_29",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-638ee4bd29c536bc",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 34,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_31",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-a918a652ad9b1e9f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 35,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_32",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-90020f23e5898ebc",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 36,
+      "sourceKey": "SK|Entrance|skellige_cave_entrance_33",
+      "category": "entrance",
+      "pointId": "p-sk-entrance-0be289692418559f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 75,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_01",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-a461150f096ccd6a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 76,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_02",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-eaf12d06dfe69ffe",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 77,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_03",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-776e153ad0945afa",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 78,
+      "sourceKey": "SK|GwentSeller|sk_gwent_04",
+      "category": "gwent-seller",
+      "pointId": "p-sk-gwent-seller-a63b6d4b895fac49",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 79,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_05",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-e406001e5fbe0c6a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 80,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_06",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-6222d39ea243e10c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 81,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_07",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-77a536e92e4702ed",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 82,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_08",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-8463019734db04ed",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 83,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_09",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-0f2b2843ce3a4e98",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 84,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_10",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-ec0c8040fd058e44",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 85,
+      "sourceKey": "SK|GwentSeller|sk_gwent_11",
+      "category": "gwent-seller",
+      "pointId": "p-sk-gwent-seller-e49266c514fb950f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 86,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_12",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-97b191b35bf3e172",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 87,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_13",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-adfbff6b2a4d4997",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 88,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_14",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-db1b60e156241054",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 89,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_15",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-b78e0f29f6138937",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 90,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_16",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-c83ef55993024d6b",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 91,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_17",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-0559dd26e699028d",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 92,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_18",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-a9d8855638a4e14e",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 93,
+      "sourceKey": "SK|GwentSeller|sk_gwent_19",
+      "category": "gwent-seller",
+      "pointId": "p-sk-gwent-seller-2f0b0258683c8573",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 94,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_20",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-9302a4bf4d519646",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 95,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_21",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-4d133becb74595b6",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 96,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_22",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-70a4442768dc49c1",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 97,
+      "sourceKey": "SK|GwentPlayer|sk_gwent_23",
+      "category": "gwent-player",
+      "pointId": "p-sk-gwent-player-7488f611b7b207a6",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 98,
+      "sourceKey": "SK|GwentSeller|sk_gwent_24",
+      "category": "gwent-seller",
+      "pointId": "p-sk-gwent-seller-8c59293281bc87d5",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 134,
+      "sourceKey": "SK|NoticeBoard|arinbjorn_noticeboard",
+      "category": "board",
+      "pointId": "p-sk-board-b2dbc8ceaa8275da",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 135,
+      "sourceKey": "SK|NoticeBoard|blandare_notice_board",
+      "category": "board",
+      "pointId": "p-sk-board-eedfd9cf1e12b4bf",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 136,
+      "sourceKey": "SK|NoticeBoard|fyresdal_notice_board",
+      "category": "board",
+      "pointId": "p-sk-board-28d6e1daae9c533a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 137,
+      "sourceKey": "SK|NoticeBoard|holmstein_notice_board",
+      "category": "board",
+      "pointId": "p-sk-board-577a3e1fc76ae72d",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 138,
+      "sourceKey": "SK|NoticeBoard|kaer_trolde_village_notice_board",
+      "category": "board",
+      "pointId": "p-sk-board-8040acb4774579a5",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 139,
+      "sourceKey": "SK|NoticeBoard|rannvaig_noticeboard",
+      "category": "board",
+      "pointId": "p-sk-board-db0b7340833cd1fd",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 142,
+      "sourceKey": "SK|NoticeBoard|larvik_notice_board",
+      "category": "board",
+      "pointId": "p-sk-board-b390afd08102c12c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 143,
+      "sourceKey": "SK|PlaceOfPower|skl_pop_axii2_new",
+      "category": "power",
+      "pointId": "p-sk-power-77d07eb767f29bf0",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 144,
+      "sourceKey": "SK|PlaceOfPower|skl_pop_quen2_new",
+      "category": "power",
+      "pointId": "p-sk-power-5be88c9fc02f3bb4",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 145,
+      "sourceKey": "SK|PlaceOfPower|skl_pop_ignii2_new",
+      "category": "power",
+      "pointId": "p-sk-power-7e0ca1db86c3f2c1",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 146,
+      "sourceKey": "SK|PlaceOfPower|skl_pop_yrden2_new",
+      "category": "power",
+      "pointId": "p-sk-power-bcd29e102dc4c813",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 147,
+      "sourceKey": "SK|PlayerStash|MISSING_NAME_3143E74F-4C327905-8B4B5A90-42B01ECB",
+      "category": "stash",
+      "pointId": "p-sk-stash-d0104b9f21c82093",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 155,
+      "sourceKey": "SK|NoticeBoard|brokvar_notice_board",
+      "category": "board",
+      "pointId": "p-sk-board-0bd0f51b049cb7a1",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 160,
+      "sourceKey": "SK|BossAndTreasure|sk1_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-04b9f4536957089c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 161,
+      "sourceKey": "SK|TreasureHuntMappin|sk3_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-cafe82a07910dc06",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 162,
+      "sourceKey": "SK|TreasureHuntMappin|sk4_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-93ab316ca25bc8e7",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 163,
+      "sourceKey": "SK|RescuingTown|sk34_mp",
+      "category": "abandoned",
+      "pointId": "p-sk-abandoned-029e09f2ec0c2d55",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 165,
+      "sourceKey": "SK|MonsterNest|lw_sk14_nest_sirens",
+      "category": "nest",
+      "pointId": "p-sk-nest-73e7f95ab34acad8",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 166,
+      "sourceKey": "SK|MonsterNest|lw_sk15_drowner_nest",
+      "category": "nest",
+      "pointId": "p-sk-nest-56501682bcf630ee",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 168,
+      "sourceKey": "SK|BossAndTreasure|sk18_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-0f107892f9a11c1f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 170,
+      "sourceKey": "SK|TreasureHuntMappin|sk20_seagull_island_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-2a1257da092cd64f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 171,
+      "sourceKey": "SK|BossAndTreasure|sk22_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-1c0adae0a9e91d05",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 172,
+      "sourceKey": "SK|BossAndTreasure|sk23_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-b3b0da3327cd4b97",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 174,
+      "sourceKey": "SK|BossAndTreasure|sk26_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-4380ac614bf012f7",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 175,
+      "sourceKey": "SK|BossAndTreasure|sk27_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-80a4d592be257af3",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 178,
+      "sourceKey": "SK|TreasureHuntMappin|sk30_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-49e1722eeddd7583",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 179,
+      "sourceKey": "SK|TreasureHuntMappin|sk31_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-7a0448435cb84616",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 180,
+      "sourceKey": "SK|BossAndTreasure|sk32_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-d3ce7ee585268c47",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 181,
+      "sourceKey": "SK|RescuingTown|sk33_mp",
+      "category": "abandoned",
+      "pointId": "p-sk-abandoned-acaad7bef3658170",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 182,
+      "sourceKey": "SK|BossAndTreasure|sk37_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-b9c2e91a25f9d4f8",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 183,
+      "sourceKey": "SK|BossAndTreasure|sk46_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-bc2ef5fbd62727be",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 184,
+      "sourceKey": "SK|RescuingTown|sk52_mp_skellige",
+      "category": "abandoned",
+      "pointId": "p-sk-abandoned-e9c497cf032b34a8",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 185,
+      "sourceKey": "SK|TreasureHuntMappin|sk57_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-87d9b7bd49478513",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 187,
+      "sourceKey": "SK|TreasureHuntMappin|sk6_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-df656efb21c15e63",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 188,
+      "sourceKey": "SK|BossAndTreasure|sk72_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-14f72a13f5d8a83f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 189,
+      "sourceKey": "SK|MonsterNest|sk74_harpy_nest",
+      "category": "nest",
+      "pointId": "p-sk-nest-782459ef5ecdda47",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 190,
+      "sourceKey": "SK|RescuingTown|sk75_mp_skellige",
+      "category": "abandoned",
+      "pointId": "p-sk-abandoned-100058761d1f4e87",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 191,
+      "sourceKey": "SK|MonsterNest|sk75_siren_nest",
+      "category": "nest",
+      "pointId": "p-sk-nest-55bdcd7bbd4764f8",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 192,
+      "sourceKey": "SK|BossAndTreasure|sk7_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-637bed59e3807a3a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 195,
+      "sourceKey": "SK|TreasureHuntMappin|sk_q210_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-38bd9472f796f0bb",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 197,
+      "sourceKey": "SK|TreasureHuntMappin|sk56_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-c58c5a02feab352d",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 198,
+      "sourceKey": "SK|MonsterNest|lw_sk_poi_107_nest",
+      "category": "nest",
+      "pointId": "p-sk-nest-b6801d061b7f0103",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 199,
+      "sourceKey": "SK|BossAndTreasure|sk110_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-07be7b3aa3450d29",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 201,
+      "sourceKey": "SK|TreasureHuntMappin|mp_lw_sk55_treasure_hunt",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-187b6a64b0efc53f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 203,
+      "sourceKey": "SK|TreasureHuntMappin|mp_lw_sk58_treasure_hunt",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-4b3bf821417f2b97",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 204,
+      "sourceKey": "SK|BossAndTreasure|sk106_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-0d0c78235c04c180",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 205,
+      "sourceKey": "SK|RescuingTown|sk51_mp_skellige",
+      "category": "abandoned",
+      "pointId": "p-sk-abandoned-ce94473633cf2b0f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 206,
+      "sourceKey": "SK|TreasureHuntMappin|sk50_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-43174c5922d833d0",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 207,
+      "sourceKey": "SK|TreasureHuntMappin|sk200_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-ecb511a9c5d6ca23",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 208,
+      "sourceKey": "SK|PlaceOfPower|pop_mp_igniii_skellige",
+      "category": "power",
+      "pointId": "p-sk-power-619a2ca5290da143",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 209,
+      "sourceKey": "SK|PlaceOfPower|ard_skellig_pop_aard",
+      "category": "power",
+      "pointId": "p-sk-power-1933aabf7437b8e3",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 210,
+      "sourceKey": "SK|PlaceOfPower|ard_skellig_pop_axii",
+      "category": "power",
+      "pointId": "p-sk-power-9080bd2818e19cfc",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 211,
+      "sourceKey": "SK|PlaceOfPower|pop_yrden_mp_skellige",
+      "category": "power",
+      "pointId": "p-sk-power-dc9d19202809eeca",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 212,
+      "sourceKey": "SK|PlaceOfPower|pop_quen_skellige_mp",
+      "category": "power",
+      "pointId": "p-sk-power-23cd43eed92b1a43",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 213,
+      "sourceKey": "SK|TreasureHuntMappin|sk153_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-3caba5f13da2a4a8",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 214,
+      "sourceKey": "SK|TreasureHuntMappin|sk38_mp_skl_mappin",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-74642a501720132c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 215,
+      "sourceKey": "SK|BossAndTreasure|sk151_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-9b9759ba227fc8d1",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 216,
+      "sourceKey": "SK|TreasureHuntMappin|sk152_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-e1eae393540a519c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 217,
+      "sourceKey": "SK|Contraband|sk181_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-70dba44145931684",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 218,
+      "sourceKey": "SK|Contraband|sk182_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-dfd706fb6f3a557a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 219,
+      "sourceKey": "SK|Contraband|sk186_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-112d7a7650a780e0",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 220,
+      "sourceKey": "SK|Contraband|sk187_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-3c734524cb733e1a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 221,
+      "sourceKey": "SK|Contraband|sk188_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-3d5c735572f521ec",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 222,
+      "sourceKey": "SK|Contraband|sk190_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-e647c5b22d082889",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 223,
+      "sourceKey": "SK|Contraband|sk193_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-097cc3ede0df1520",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 224,
+      "sourceKey": "SK|Contraband|sk197_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-6d2688cbc4d66e07",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 225,
+      "sourceKey": "SK|Contraband|sk198a_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-1ec83e88ae93bc31",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 226,
+      "sourceKey": "SK|Contraband|sk198b_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-3de159c37fe65a02",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 227,
+      "sourceKey": "SK|Contraband|sk198c_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-8dc8d2115801db85",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 228,
+      "sourceKey": "SK|Contraband|sk199_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-1844257ab3191823",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 230,
+      "sourceKey": "SK|TreasureHuntMappin|sk42_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-d7d858c6976bac46",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 231,
+      "sourceKey": "SK|TreasureHuntMappin|lw_lynx_set_mp",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-72a46540bed1b200",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 232,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2a",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-36f8f410fb0ef355",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 233,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2c",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-31cf6341aeeb422e",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 234,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3a",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-f84a0f6ea83aaab9",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 235,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3a",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-c6f7310912b1ba2f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 236,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3a",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-664552b08395e136",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 237,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3a",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-a7a94d2ee2c85a0f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 238,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3c",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-fa214ad20e657395",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 239,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2a",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-b7c4d4390f64b394",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 240,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2a",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-3301b0080173552c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 241,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2c",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-dfb54c890d461d9e",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 242,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_2b",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-7db686d7664782de",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 243,
+      "sourceKey": "SK|TreasureHuntMappin|th1005_mp_upgrade_3c",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-9d04525b92c451eb",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 244,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_armor_set",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-e94af724bce14625",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 245,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_crossbow",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-3a93e3de393ed5a0",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 246,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_steel_sword",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-f46f654f47d611b0",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 247,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_upgrade_1b",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-30abfe6468bfb405",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 248,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_upgrade_1c",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-1df439bcc6a2dcad",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 249,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_upgrade_1e",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-9f75caf2785d5174",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 250,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_upgrade_1f",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-30b2c086c13ad131",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 251,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_silver_sword",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-c2bffc2f8ed65cb9",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 252,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_upgrade_1",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-612a10c0db11ade4",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 253,
+      "sourceKey": "SK|TreasureHuntMappin|th1007_mp_upgrade_1d",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-6e8cf11795cadb1b",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 254,
+      "sourceKey": "SK|TreasureHuntMappin|sk41_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-44649e90a85c8989",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 255,
+      "sourceKey": "SK|Contraband|sk100a_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-dec013e47ea26ecb",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 256,
+      "sourceKey": "SK|Contraband|sk100b_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-81e8678eeb3a4493",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 257,
+      "sourceKey": "SK|Contraband|sk101_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-57c88263f7b867ac",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 258,
+      "sourceKey": "SK|Contraband|sk102_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-a7b45d376096bc1b",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 259,
+      "sourceKey": "SK|TreasureHuntMappin|sk103_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-32be16ac6468f15c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 260,
+      "sourceKey": "SK|Contraband|sk103_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-1ebd13af1eff9689",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 261,
+      "sourceKey": "SK|Contraband|sk104_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-aa87c7d6b1efbf54",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 262,
+      "sourceKey": "SK|Contraband|sk105_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-30d8cf828788a37f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 263,
+      "sourceKey": "SK|BossAndTreasure|sk105_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-cf0047112562cb05",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 264,
+      "sourceKey": "SK|Contraband|sk106_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-a11691ec8b2ef7b4",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 265,
+      "sourceKey": "SK|Contraband|sk107_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-f3cd3d155c16fe4b",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 266,
+      "sourceKey": "SK|SpoilsOfWar|sk108_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-6c682f8cc66c6a38",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 267,
+      "sourceKey": "SK|Contraband|sk109a_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-a30cff382842c52d",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 268,
+      "sourceKey": "SK|Contraband|sk109b_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-226751ea8af2ff0f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 269,
+      "sourceKey": "SK|Contraband|sk109c_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-e48f6e938aff028d",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 270,
+      "sourceKey": "SK|Contraband|sk109d_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-383d1ae552c674fa",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 271,
+      "sourceKey": "SK|Contraband|sk109e_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-349417531d16cde7",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 272,
+      "sourceKey": "SK|Contraband|sk110_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-9f520c6d1d7b0bf6",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 273,
+      "sourceKey": "SK|Contraband|sk111_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-3894a89059f0c15b",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 274,
+      "sourceKey": "SK|TreasureHuntMappin|sk38_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-de9f24c234c02445",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 275,
+      "sourceKey": "SK|TreasureHuntMappin|sk48_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-57002ebb7506e1fe",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 276,
+      "sourceKey": "SK|Contraband|sk59_mp_skellige",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-dbdd003eaeaf073a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 277,
+      "sourceKey": "SK|Contraband|sk60_contra_mp_skellige",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-3e0186a092ad6cee",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 278,
+      "sourceKey": "SK|Contraband|sk61_mp_skellige",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-7c187c0305b17615",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 279,
+      "sourceKey": "SK|Contraband|sk62_mp_skellige",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-91d4e261bb6eb239",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 280,
+      "sourceKey": "SK|Contraband|sk63_mp_skellige",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-4b30a51f313bcf19",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 281,
+      "sourceKey": "SK|Contraband|sk64_mp_skellige",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-5f91d92be343b366",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 282,
+      "sourceKey": "SK|Contraband|sk65_mp_skellige",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-6ad7dded9345d43d",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 283,
+      "sourceKey": "SK|Contraband|sk66_mp_skellige",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-236e2a1510a74ff6",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 284,
+      "sourceKey": "SK|Contraband|sk67_mp_skellige",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-1cac0920ab5b0591",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 285,
+      "sourceKey": "SK|SpoilsOfWar|sk68_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-12cfd78d5040f042",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 286,
+      "sourceKey": "SK|SpoilsOfWar|sk69_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-20e3b395512b8b2a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 287,
+      "sourceKey": "SK|SpoilsOfWar|sk70_mp_skellige",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-410958df3e18c0aa",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 288,
+      "sourceKey": "SK|TreasureHuntMappin|sk71_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-bcb657aa96c7c6f3",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 289,
+      "sourceKey": "SK|Contraband|sk72_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-08d3b49c2a1921fe",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 290,
+      "sourceKey": "SK|Contraband|sk73_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-36f57c3ac37b20a1",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 291,
+      "sourceKey": "SK|Contraband|sk74_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-f3c7006ef23966c7",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 292,
+      "sourceKey": "SK|TreasureHuntMappin|sk75_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-6ebfa0eed0748d9c",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 293,
+      "sourceKey": "SK|BossAndTreasure|sk76_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-01f37359b3d1a7c3",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 294,
+      "sourceKey": "SK|Contraband|sk77_map_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-6abb0e318ed9ed06",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 295,
+      "sourceKey": "SK|BossAndTreasure|sk78_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-a66a3e9867004c9a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 296,
+      "sourceKey": "SK|BossAndTreasure|sk79_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-1e65ead949662347",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 297,
+      "sourceKey": "SK|BossAndTreasure|sk80a_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-936d4a5d252fae54",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 298,
+      "sourceKey": "SK|Contraband|sk80b_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-e3552112b18bcc26",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 299,
+      "sourceKey": "SK|SpoilsOfWar|sk80c_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-0c77e49a82f59ff2",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 300,
+      "sourceKey": "SK|BossAndTreasure|sk81_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-8f541252bc29a8f5",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 301,
+      "sourceKey": "SK|BossAndTreasure|sk82_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-0ca1e883604829f1",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 302,
+      "sourceKey": "SK|Contraband|sk83_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-8fd8b62d2ade9dc7",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 303,
+      "sourceKey": "SK|TreasureHuntMappin|sk84_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-90e32b89fe789529",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 304,
+      "sourceKey": "SK|Contraband|sk85_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-88955dfdd63fe11b",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 306,
+      "sourceKey": "SK|Contraband|sk87_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-2c40733b707c04e1",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 307,
+      "sourceKey": "SK|Contraband|sk87a_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-a06387ae7c9a2d6e",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 308,
+      "sourceKey": "SK|Contraband|sk87b_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-ba725e5e9d52926b",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 309,
+      "sourceKey": "SK|Contraband|sk87c_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-9a205b07609fac00",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 310,
+      "sourceKey": "SK|SpoilsOfWar|sk88_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-31f83a8cb7f18531",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 311,
+      "sourceKey": "SK|Contraband|sk89_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-7c2c262cd5c5c041",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 312,
+      "sourceKey": "SK|BossAndTreasure|sk90_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-8bfab1266e1f37a3",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 313,
+      "sourceKey": "SK|SpoilsOfWar|sk91_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-d7d862464c1523b0",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 314,
+      "sourceKey": "SK|Contraband|sk92a_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-f3ad6f11f4cb1af2",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 315,
+      "sourceKey": "SK|Contraband|sk92b_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-d145c1f757ee469f",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 316,
+      "sourceKey": "SK|Contraband|sk93_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-477f1b9ef5345f65",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 317,
+      "sourceKey": "SK|Contraband|sk94_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-65cb112375fbae82",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 318,
+      "sourceKey": "SK|Contraband|sk95a_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-12427bdeba1ce19e",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 319,
+      "sourceKey": "SK|Contraband|sk95b_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-b6d480feada8917a",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 320,
+      "sourceKey": "SK|Contraband|sk96_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-2942a8907ccc4c88",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 321,
+      "sourceKey": "SK|Contraband|sk97_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-abeeff53147270d3",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 322,
+      "sourceKey": "SK|SpoilsOfWar|sk98_mp_skl",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-ba19e5d8db378d36",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 323,
+      "sourceKey": "SK|Contraband|sk99a_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-583b433c8f5dd657",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 324,
+      "sourceKey": "SK|Contraband|sk99b_mp_skl",
+      "category": "smuggler",
+      "pointId": "p-sk-smuggler-7bf00807716cb487",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 325,
+      "sourceKey": "SK|TreasureHuntMappin|mq2006_chest1_mappin",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-872f59a6d0f4c561",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 326,
+      "sourceKey": "SK|TreasureHuntMappin|MISSING_NAME_752BE0F1-419E7FD8-1B6BBBB6-8C97F238",
+      "category": "treasure-point",
+      "pointId": "p-sk-treasure-point-3538ffdf55b5f9e5",
+      "action": "include"
+    },
+    {
+      "world": "SK",
+      "sourceIndex": 327,
+      "sourceKey": "SK|Armorer|kaer_trolde_armorer",
+      "category": "armorer",
+      "pointId": "p-sk-armorer-113f90adeba7892d",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 50,
+      "sourceKey": "TO|Entrance|entrance_spriggan_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-21044130c438865c",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 51,
+      "sourceKey": "TO|Entrance|entrance_cave_passage",
+      "category": "entrance",
+      "pointId": "p-to-entrance-28bcd578b0d7e0f2",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 52,
+      "sourceKey": "TO|Entrance|entrance_cave_passage2",
+      "category": "entrance",
+      "pointId": "p-to-entrance-6e95880b3e6c3f41",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 53,
+      "sourceKey": "TO|Entrance|entrance_winemakers_contract_1",
+      "category": "entrance",
+      "pointId": "p-to-entrance-dcf469a89f697fe4",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 54,
+      "sourceKey": "TO|Entrance|entrance_hotspring_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-f8ead9e8a5a75ce4",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 55,
+      "sourceKey": "TO|Entrance|entrance_amphi_theater",
+      "category": "entrance",
+      "pointId": "p-to-entrance-bc8a1125f6ae3154",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 56,
+      "sourceKey": "TO|Entrance|entrance_troll_chapel_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-278c78f475cf5f09",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 57,
+      "sourceKey": "TO|Entrance|entrance_hostage_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-af60624d363b0950",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 58,
+      "sourceKey": "TO|Entrance|entrance_tesham_mutna",
+      "category": "entrance",
+      "pointId": "p-to-entrance-b5aa427736eb03d6",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 59,
+      "sourceKey": "TO|Entrance|entrance_graveyard",
+      "category": "entrance",
+      "pointId": "p-to-entrance-7c1198beda1689a4",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 60,
+      "sourceKey": "TO|Entrance|entrance_winemakers_contract_2",
+      "category": "entrance",
+      "pointId": "p-to-entrance-b388dcb34ed608c0",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 61,
+      "sourceKey": "TO|Entrance|entrance_graveyard_2",
+      "category": "entrance",
+      "pointId": "p-to-entrance-8e6510c7f94b05ef",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 62,
+      "sourceKey": "TO|Entrance|entrance_uw_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-e33767ef7be56fe2",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 63,
+      "sourceKey": "TO|Entrance|entrance_uw_cave_2",
+      "category": "entrance",
+      "pointId": "p-to-entrance-e434b5d63899194e",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 64,
+      "sourceKey": "TO|Entrance|entrance_th_cat",
+      "category": "entrance",
+      "pointId": "p-to-entrance-8e594de6385e133f",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 65,
+      "sourceKey": "TO|Entrance|entrance_elven_cave_pop",
+      "category": "entrance",
+      "pointId": "p-to-entrance-9874f2b903aedbcf",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 66,
+      "sourceKey": "TO|Entrance|entrance_cave_devils_horns",
+      "category": "entrance",
+      "pointId": "p-to-entrance-a2ecdf9b399313a5",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 67,
+      "sourceKey": "TO|Entrance|entrance_pop_ruins",
+      "category": "entrance",
+      "pointId": "p-to-entrance-67080af95d51d70e",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 68,
+      "sourceKey": "TO|Entrance|entrance_dun_tynne_infested_vineyard2",
+      "category": "entrance",
+      "pointId": "p-to-entrance-080369e8a85096c5",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 69,
+      "sourceKey": "TO|Entrance|entrance_shaelmaar_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-95eeb68528b49445",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 70,
+      "sourceKey": "TO|Entrance|entrance_shaelmaar_cave2",
+      "category": "entrance",
+      "pointId": "p-to-entrance-c06a0a157890619b",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 71,
+      "sourceKey": "TO|Entrance|entrance_elven_chef",
+      "category": "entrance",
+      "pointId": "p-to-entrance-93f126a1a3509147",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 72,
+      "sourceKey": "TO|Entrance|entrance_werewolf_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-7c2331f852551c73",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 73,
+      "sourceKey": "TO|Entrance|entrance_druid_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-dcaabd8ae3585200",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 74,
+      "sourceKey": "TO|Entrance|entrance_winemaker_contract3",
+      "category": "entrance",
+      "pointId": "p-to-entrance-de6a276753b4c7c7",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 75,
+      "sourceKey": "TO|Entrance|entrance_dun_tynne_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-eb4a40175c9a9876",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 76,
+      "sourceKey": "TO|Entrance|entrance_cave_thing",
+      "category": "entrance",
+      "pointId": "p-to-entrance-5bf4d7c39d983cc9",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 77,
+      "sourceKey": "TO|Entrance|entrance_cave_thing2",
+      "category": "entrance",
+      "pointId": "p-to-entrance-c1bb10088eb5b568",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 78,
+      "sourceKey": "TO|Entrance|entrance_olive_oil_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-c78f4463fdfa8566",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 79,
+      "sourceKey": "TO|Entrance|entrance_uw_sharley_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-49cffceae0cfa537",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 80,
+      "sourceKey": "TO|Entrance|entrance_small_treasure_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-5b3026e62d3c4722",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 81,
+      "sourceKey": "TO|Entrance|entrance_hansa_1",
+      "category": "entrance",
+      "pointId": "p-to-entrance-5cd73559f7a6ddf7",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 82,
+      "sourceKey": "TO|Entrance|entrance_hansa_2",
+      "category": "entrance",
+      "pointId": "p-to-entrance-d8a9a4d45c2c8fc5",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 83,
+      "sourceKey": "TO|Entrance|entrance_fox_hollow",
+      "category": "entrance",
+      "pointId": "p-to-entrance-f1dfba366be05212",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 84,
+      "sourceKey": "TO|Entrance|entrance_fox_hollow2",
+      "category": "entrance",
+      "pointId": "p-to-entrance-0f2867065d7f3382",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 85,
+      "sourceKey": "TO|Entrance|entrance_winemaker_contract4",
+      "category": "entrance",
+      "pointId": "p-to-entrance-87cc4c91a41b9fc5",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 86,
+      "sourceKey": "TO|Entrance|entrance_lebioda_shrine",
+      "category": "entrance",
+      "pointId": "p-to-entrance-e2e33f63bac5b086",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 87,
+      "sourceKey": "TO|Entrance|entrance_ancient_vampire_cave",
+      "category": "entrance",
+      "pointId": "p-to-entrance-68de10e4390e78b6",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 88,
+      "sourceKey": "TO|NoticeBoard|beauclair_city_noticeboard",
+      "category": "board",
+      "pointId": "p-to-board-12ad168b32b72601",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 89,
+      "sourceKey": "TO|NoticeBoard|castel_ravello_noticeboard",
+      "category": "board",
+      "pointId": "p-to-board-8d85f6afcc573579",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 90,
+      "sourceKey": "TO|NoticeBoard|cockatrice_inn_noticeboard",
+      "category": "board",
+      "pointId": "p-to-board-6ee1613b422c7b6c",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 91,
+      "sourceKey": "TO|NoticeBoard|coronata_vineyard_noticeboard",
+      "category": "board",
+      "pointId": "p-to-board-43bd0943bc682f46",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 92,
+      "sourceKey": "TO|NoticeBoard|q704_ft_fairy_tale_noticeboard",
+      "category": "board",
+      "pointId": null,
+      "action": "defer"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 93,
+      "sourceKey": "TO|NoticeBoard|quarry_noticeboard_mp",
+      "category": "board",
+      "pointId": "p-to-board-cd11b08f261189fc",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 94,
+      "sourceKey": "TO|NoticeBoard|cockatrice_inn_noticeboard",
+      "category": "board",
+      "pointId": "p-to-board-6ee1613b422c7b6c",
+      "action": "merge"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 95,
+      "sourceKey": "TO|NoticeBoard|trappers_trading_post_noticeboard",
+      "category": "board",
+      "pointId": "p-to-board-3690dccaaba0f53e",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 96,
+      "sourceKey": "TO|NoticeBoard|tufo_vineyard_noticeboard",
+      "category": "board",
+      "pointId": "p-to-board-0baac037a554d4b2",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 117,
+      "sourceKey": "TO|BossAndTreasure|poi_bar_a_02_mp_post",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-c002dfcb630dde44",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 118,
+      "sourceKey": "TO|RescuingTown|poi_bar_a_03_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-ffb056771b62ebc4",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 119,
+      "sourceKey": "TO|TreasureHuntMappin|poi_bar_a_05_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-f27138623b0ee146",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 120,
+      "sourceKey": "TO|BossAndTreasure|poi_bar_a_08_mp_post",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-73f203d10c53dee0",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 123,
+      "sourceKey": "TO|BossAndTreasure|poi_bar_a_09_mp_post",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-c7c235c5fdb8cb0b",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 124,
+      "sourceKey": "TO|TreasureHuntMappin|poi_bar_a_10_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-a4b645347c90efd0",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 125,
+      "sourceKey": "TO|BossAndTreasure|poi_bar_a_11_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-e634f8cab630d831",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 129,
+      "sourceKey": "TO|MonsterNest|poi_bar_a_13_nest",
+      "category": "nest",
+      "pointId": "p-to-nest-c9922785d246772d",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 130,
+      "sourceKey": "TO|RescuingTown|poi_bar_b_04_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-0c23cd532f8475ee",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 133,
+      "sourceKey": "TO|MonsterNest|poi_bar_b_07_mp",
+      "category": "nest",
+      "pointId": "p-to-nest-88114feaffae1e47",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 136,
+      "sourceKey": "TO|BossAndTreasure|poi_car_a_05_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-5ee4d06f2459136f",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 138,
+      "sourceKey": "TO|BossAndTreasure|poi_car_a_07_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-821e3877e9582ce7",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 139,
+      "sourceKey": "TO|RescuingTown|poi_car_b_03_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-c8b6a81c1b74c2e5",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 140,
+      "sourceKey": "TO|TreasureHuntMappin|poi_car_b_08_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-71764c7ffb959e3b",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 141,
+      "sourceKey": "TO|MonsterNest|poi_car_b_09_mp",
+      "category": "nest",
+      "pointId": "p-to-nest-da956108903d93d2",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 142,
+      "sourceKey": "TO|TreasureHuntMappin|poi_car_b_10_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-8fe85f5175ecfdc6",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 146,
+      "sourceKey": "TO|MonsterNest|poi_dun_a_04_mp",
+      "category": "nest",
+      "pointId": "p-to-nest-0dc1752b60840aaa",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 148,
+      "sourceKey": "TO|BossAndTreasure|poi_dun_b_08_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-da3a4f2fcb50f475",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 149,
+      "sourceKey": "TO|BossAndTreasure|poi_gor_a_08_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-4874c7bea71832bb",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 152,
+      "sourceKey": "TO|TreasureHuntMappin|poi_gor_a_10_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-908af69cb27f8572",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 154,
+      "sourceKey": "TO|TreasureHuntMappin|poi_gor_b_04_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-006333ce8a08a8d8",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 156,
+      "sourceKey": "TO|RescuingTown|poi_gor_b_12_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-f38c0e1945dd52d4",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 157,
+      "sourceKey": "TO|MonsterNest|poi_gor_b_13_mp",
+      "category": "nest",
+      "pointId": "p-to-nest-d3a5dea3cd5f72b7",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 158,
+      "sourceKey": "TO|RescuingTown|poi_gor_c_03_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-c5277cd8121b5ce8",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 159,
+      "sourceKey": "TO|TreasureHuntMappin|poi_gor_c_14_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-1ee0a623ef27e6ec",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 161,
+      "sourceKey": "TO|RescuingTown|poi_gor_d_06_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-f270f938cbe8ae61",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 164,
+      "sourceKey": "TO|BossAndTreasure|poi_gor_d_17_mp_post",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-18ed4d528b81b56a",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 166,
+      "sourceKey": "TO|TreasureHuntMappin|poi_gor_d_18_mp_post",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-86f6e78b2572e871",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 168,
+      "sourceKey": "TO|BossAndTreasure|poi_gor_d_19_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-476e1a37cd5b2950",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 169,
+      "sourceKey": "TO|TreasureHuntMappin|poi_gor_d_20_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-5bc01e21c2df5b11",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 175,
+      "sourceKey": "TO|TreasureHuntMappin|poi_san_a_01_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-8125b72ca6c18df4",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 176,
+      "sourceKey": "TO|MonsterNest|poi_san_a_03_mp",
+      "category": "nest",
+      "pointId": "p-to-nest-6607f3da84a00faf",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 177,
+      "sourceKey": "TO|TreasureHuntMappin|poi_san_b_02_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-7b234f40ac17fe98",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 178,
+      "sourceKey": "TO|BossAndTreasure|poi_san_b_04_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-05ab9c55983c970d",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 179,
+      "sourceKey": "TO|MonsterNest|poi_san_b_05_mp",
+      "category": "nest",
+      "pointId": "p-to-nest-5a24d062a6cea626",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 180,
+      "sourceKey": "TO|BossAndTreasure|poi_san_b_06_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-efad978b3cc26b63",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 183,
+      "sourceKey": "TO|RescuingTown|poi_ved_a_02_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-488c36b0a8fb7cf8",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 184,
+      "sourceKey": "TO|TreasureHuntMappin|poi_ved_a_03_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-fbb68de7f3bdc037",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 188,
+      "sourceKey": "TO|BossAndTreasure|poi_ved_a_07_mp_post",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-82e81c33db69904a",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 190,
+      "sourceKey": "TO|BossAndTreasure|poi_ved_a_08_mp_post",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-2f350e020525765c",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 195,
+      "sourceKey": "TO|BossAndTreasure|poi_vin_b_04_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-f90b9cfb876df2b4",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 196,
+      "sourceKey": "TO|TreasureHuntMappin|poi_vin_b_05_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-3093f5257eda3844",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 199,
+      "sourceKey": "TO|TreasureHuntMappin|lw_poi_ww_cor_4_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-372bd6d38094264f",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 200,
+      "sourceKey": "TO|BossAndTreasure|lw_poi_ww_cor_5_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-293365f9e1e6e777",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 201,
+      "sourceKey": "TO|RescuingTown|lw_poi_ww_cor_2_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-ccd11824ea6e60d6",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 202,
+      "sourceKey": "TO|BossAndTreasure|lw_poi_ww_ver_9_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-b4dad61e5ba2680a",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 204,
+      "sourceKey": "TO|RescuingTown|lw_poi_ww_ver_10_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-954a5fb7c9919aa9",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 205,
+      "sourceKey": "TO|RescuingTown|lw_poi_ww_ver_12_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-4aa6f1db87641aff",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 206,
+      "sourceKey": "TO|TreasureHuntMappin|lw_poi_ww_ver_13_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-8f3a8c8a28ba10e7",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 208,
+      "sourceKey": "TO|BossAndTreasure|lw_ww_poi_bel_6_mp",
+      "category": "treasure-point",
+      "pointId": "p-to-treasure-point-14df70f4a2cc45de",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 210,
+      "sourceKey": "TO|RescuingTown|lw_ww_poi_bel_5_mp",
+      "category": "abandoned",
+      "pointId": "p-to-abandoned-25e5f0c4b6105405",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 211,
+      "sourceKey": "TO|MonsterNest|lw_ww_poi_bel_8_mp",
+      "category": "nest",
+      "pointId": "p-to-nest-ed76232ce4b54204",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 213,
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_igni_0001",
+      "category": "power",
+      "pointId": "p-to-power-5039c7a703931793",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 214,
+      "sourceKey": "TO|Entrance|pop_cave_entrance",
+      "category": "entrance",
+      "pointId": "p-to-entrance-f6f81cbe30fff62c",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 215,
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_yrden_0002",
+      "category": "power",
+      "pointId": "p-to-power-3584290f8753180f",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 216,
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_quen_0002",
+      "category": "power",
+      "pointId": "p-to-power-29de042cefb416b6",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 217,
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_axii_0001",
+      "category": "power",
+      "pointId": "p-to-power-c8f114fad1dae24e",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 218,
+      "sourceKey": "TO|PlaceOfPower|bob_place_of_power_aard_0001",
+      "category": "power",
+      "pointId": "p-to-power-a8fea8ca5f315da2",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 224,
+      "sourceKey": "TO|Blacksmith|tourney_blacksmith",
+      "category": "blacksmith",
+      "pointId": "p-to-blacksmith-850cf8c2100527f1",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 225,
+      "sourceKey": "TO|PlayerStash|mq7024_player_stash",
+      "category": "stash",
+      "pointId": "p-to-stash-98a60acab10df008",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 226,
+      "sourceKey": "TO|MonsterNest|sq703_scolopendros_nest_01",
+      "category": "nest",
+      "pointId": "p-to-nest-466718380774e1ed",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 227,
+      "sourceKey": "TO|MonsterNest|sq703_scolopendros_nest_02",
+      "category": "nest",
+      "pointId": "p-to-nest-c3edfcce120e5738",
+      "action": "include"
+    },
+    {
+      "world": "TO",
+      "sourceIndex": 238,
+      "sourceKey": "TO|Armorer|grandmasterarmorer",
+      "category": "armorer",
+      "pointId": "p-to-armorer-f711ad2af0e66a58",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 0,
+      "sourceKey": "KM|TreasureHuntMappin|MISSING_NAME_DD0E131B-423745E8-6D9E499E-2BDD9768",
+      "category": "treasure-point",
+      "pointId": "p-km-treasure-point-7b963fdd3300ee08",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 1,
+      "sourceKey": "KM|TreasureHuntMappin|MISSING_NAME_A5F1D2BC-497F33E1-16A9B0B9-DD1FACB5",
+      "category": "treasure-point",
+      "pointId": "p-km-treasure-point-b9090cfef398f588",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 2,
+      "sourceKey": "KM|TreasureHuntMappin|MISSING_NAME_4B42C0FA-4C76A950-6DCB37A6-2177C9E3",
+      "category": "treasure-point",
+      "pointId": "p-km-treasure-point-d4757b45e3a58ab3",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 3,
+      "sourceKey": "KM|TreasureHuntMappin|MISSING_NAME_72E957E2-4096FA31-51F0B5AE-56D20C9B",
+      "category": "treasure-point",
+      "pointId": "p-km-treasure-point-8dba5c6f4243a184",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 4,
+      "sourceKey": "KM|TreasureHuntMappin|MISSING_NAME_C7BB7717-4EA990CB-8D48FF94-278B8353",
+      "category": "treasure-point",
+      "pointId": "p-km-treasure-point-2559046ee0bd7592",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 5,
+      "sourceKey": "KM|TreasureHuntMappin|MISSING_NAME_9BDA85CB-4636C33C-A52988BD-B0267976",
+      "category": "treasure-point",
+      "pointId": "p-km-treasure-point-2b83228111de90f8",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 6,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_01",
+      "category": "entrance",
+      "pointId": "p-km-entrance-9c41306ed40ab594",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 7,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_02",
+      "category": "entrance",
+      "pointId": "p-km-entrance-dff3ca6ab13e46ec",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 8,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_03",
+      "category": "entrance",
+      "pointId": "p-km-entrance-6e37cc02ccef4157",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 9,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_04",
+      "category": "entrance",
+      "pointId": "p-km-entrance-af4e84d10223bb4b",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 10,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_05",
+      "category": "entrance",
+      "pointId": "p-km-entrance-dc202606c14438e4",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 11,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_06",
+      "category": "entrance",
+      "pointId": "p-km-entrance-9afe120bcac6989d",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 12,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_07",
+      "category": "entrance",
+      "pointId": "p-km-entrance-2d9d56915536d7e1",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 13,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_08",
+      "category": "entrance",
+      "pointId": "p-km-entrance-b9aab430acde0c28",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 14,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_09",
+      "category": "entrance",
+      "pointId": "p-km-entrance-8b61183b1de550ee",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 15,
+      "sourceKey": "KM|Entrance|kaer_morhen_cave_entrance_10",
+      "category": "entrance",
+      "pointId": "p-km-entrance-fe685b4d8f2e91b6",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 21,
+      "sourceKey": "KM|PlaceOfPower|km_mp_pop_igniii",
+      "category": "power",
+      "pointId": "p-km-power-1f4427ae7b4761ff",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 22,
+      "sourceKey": "KM|PlayerStash|MISSING_NAME_5F606DEB-4ACBE41E-4DA966BD-2C74859B",
+      "category": "stash",
+      "pointId": "p-km-stash-ef51392c830ed251",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 27,
+      "sourceKey": "KM|BossAndTreasure|km_poi_leshy",
+      "category": "treasure-point",
+      "pointId": "p-km-treasure-point-b7ee2535e8722f14",
+      "action": "include"
+    },
+    {
+      "world": "KM",
+      "sourceIndex": 28,
+      "sourceKey": "KM|BossAndTreasure|km_poi_wyvern",
+      "category": "treasure-point",
+      "pointId": "p-km-treasure-point-b9ff5ee975d62782",
+      "action": "include"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T06:05:48.220Z",
+  "status": "fail",
+  "passed": 3,
+  "total": 11,
+  "checks": [
+    {
+      "name": "227个地名有来源且地图无英文回退",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n555 !== 227\n"
+    },
+    {
+      "name": "中文译名用独立样例核对",
+      "status": "pass",
+      "detail": "8 fixed source-derived examples; no guessed Blackbough or Cackler translation, distinct Elverum lighthouse"
+    },
+    {
+      "name": "加减按钮每次只改变四分之一档",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n2 !== 2.25\n"
+    },
+    {
+      "name": "真实滚轮缩放保持鼠标下的位置",
+      "status": "pass",
+      "detail": "physical mouse wheel; quarter step, cursor anchor drift 0.64 pixels"
+    },
+    {
+      "name": "大滚轮事件不会跨越多个倍率",
+      "status": "pass",
+      "detail": "a 3000-pixel wheel event still produces only one quarter step"
+    },
+    {
+      "name": "连续五次点击不会漏掉缩放",
+      "status": "fail",
+      "detail": "page.waitForFunction: Timeout 30000ms exceeded."
+    },
+    {
+      "name": "选任务保留倍率，换区回来保留视野",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at e.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at e.fire (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:5370)\n    at e._moveEnd (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:40232)\n    at e._resetView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:39794)\n    at e.setView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:28037)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:15)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "放大使用原生细节图且有上限",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at e.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at e.fire (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:5370)\n    at e._moveEnd (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:40232)\n    at e._resetView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:39794)\n    at e.setView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:28037)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:15)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "概览框跟随视野且点击保留倍率",
+      "status": "fail",
+      "detail": "The expression evaluated to a falsy value:\n\n  assert.ok(Number(await page.locator('#overview-viewport').getAttribute('width'))<w)\n"
+    },
+    {
+      "name": "手机小步缩放与双指手势",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n2 !== 2.25\n"
+    },
+    {
+      "name": "地图平移边界和运行错误",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at e.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at e.fire (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:5370)\n    at e._moveEnd (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:40253)\n    at e._resetView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:39794)\n    at e.setView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:28037)\n    at e.panTo (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:29350)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:15)\n    at UtilityScript.evaluate (<anonymous>:313:16)"
+    }
+  ],
+  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3",
+  "appSha256": "dc0040f735dcf69eec698133d4a4054661fb93a2424518faf6c737fa9c426361",
+  "navigationSha256": "916d33601e6664bad56ec5f9bfe54c09a760cb5fb37e99e5c33b8c70427ad259",
+  "placesSha256": "01442feaf8d61d469ad3d00afe2e31c16ead4069d558f378a002e4f61aadf742",
+  "styleSha256": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
+  "pageErrors": [
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')"
+  ],
+  "httpFailures": []
+}

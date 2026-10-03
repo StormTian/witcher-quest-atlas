@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T06:09:55.520002+00:00",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "独立来源完整对账",
+      "status": "pass",
+      "detail": "162 XML and 177 reference rows all have reviewed targets; no unexplained source difference."
+    },
+    {
+      "name": "新增任务计数与分类",
+      "status": "pass",
+      "detail": "161 added IDs: 35 contracts, 29 school hunts, 57 other treasure hunts, 40 encounters."
+    },
+    {
+      "name": "组件与阶段去重",
+      "status": "pass",
+      "detail": "Diagram components, journal objectives, aliases and encounter stages are not duplicate tasks."
+    },
+    {
+      "name": "旧目录稳定 ID 回归",
+      "status": "pass",
+      "detail": "267 legacy identifiers, classifications, coordinates and 101 option labels preserved."
+    },
+    {
+      "name": "中文与来源覆盖",
+      "status": "pass",
+      "detail": "Every added entry has Chinese search text, provenance, trigger context and an unreviewed-branch status."
+    },
+    {
+      "name": "接取／售图／未知位置语义",
+      "status": "pass",
+      "detail": "Vendor clue coordinates are distinct from diagram destinations; source-only entries stay accessible without invented pins."
+    },
+    {
+      "name": "新增定位独立样例",
+      "status": "pass",
+      "detail": "Four independent contract/school coordinate samples match source XY and own-region projection."
+    },
+    {
+      "name": "来源冲突保留",
+      "status": "pass",
+      "detail": "All 15 level disagreements and Naughty Feathers trigger conflict remain explicit."
+    },
+    {
+      "name": "旧酒商委托分类兼容",
+      "status": "pass",
+      "detail": "Existing Vintner entries participate in the contract filter without changing the legacy side filter or IDs."
+    },
+    {
+      "name": "条件状态与引用",
+      "status": "pass",
+      "detail": "Source all/any and game-state fields retained; active prerequisites are not rewritten as success."
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3",
+  "reviewSha256": "783c53ee203a792d091c1cef242b44ebfc8c725eef31ce12fdfb0c8cd0df8ae0"
+}

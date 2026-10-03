@@ -13,8 +13,7 @@ assert logic['datasetSha256']==digest
 if browser.get('datasetSha256'):
  assert browser['datasetSha256']==digest
 asset=read('evidence/asset-report-validation.json') if (root/'evidence/asset-report-validation.json').exists() else None
-if asset:
- assert asset['status']=='pass' and asset['datasetSha256']==digest
+if asset and (asset.get('status')!='pass' or asset.get('datasetSha256')!=digest): asset=None
 landmark=read('evidence/landmark-validation.json') if (root/'evidence/landmark-validation.json').exists() else None
 if landmark:
  assert landmark['status']=='pass' and landmark['datasetSha256']==digest
@@ -45,24 +44,30 @@ for name,expected in progress['runtimeInputHashes'].items():
 places=read('dist/places-zh.json')
 summary=[
  {'name':'任务数据与规则','detail':f"{logic['passed']}/{logic['total']} 项；任务引用、地图资源、结局条件、流程前置",'status':'通过'},
- {'name':'网页实际交互','detail':f"{browser['passed']}/{browser['total']} 项；五区地图、筛选、101 个选项、剧透与手机操作",'status':'通过'},
- {'name':'攻略事实核对','detail':'16 项重点核对；40 个任务／45 个节点附攻略依据','status':'资料核对完成'},
+ {'name':'网页实际交互','detail':f"{browser['passed']}/{browser['total']} 项；五区地图、筛选、{d['meta']['decisionOptions']} 个选项、剧透与手机操作",'status':'通过'},
+ {'name':'攻略事实核对','detail':f"{len(d['meta']['factChecks'])} 项重点核对；{d['meta']['reviewedTasks']} 个任务／{d['meta']['decisionNodes']} 个节点附攻略依据",'status':'资料核对完成'},
  {'name':'地图位置抽样','detail':'4 个独立坐标样例及地图裁切，校准社区坐标转换','status':'抽样一致'},
  {'name':'实机游戏验证','detail':'没有读取游戏存档或逐任务运行游戏','status':'未执行'},
 ]
 summary.insert(1,{'name':'个人进度与分享','detail':f"{progress['passed']}/{progress['total']} 项；完成、收藏、可靠导入导出、刷新恢复、分享与前进后退",'status':'通过'})
-summary.insert(1,{'name':'基础探索图层','detail':f"{exploration_data['passed']+exploration_browser['passed']}/{exploration_data['total']+exploration_browser['total']} 项；70 个点位（29 魔力之所、35 告示板、6 储藏箱），来源对账、32 种图层组合、手机操作",'status':'通过'})
+summary.insert(1,{'name':'探索图层','detail':f"{exploration_data['passed']+exploration_browser['passed']}/{exploration_data['total']+exploration_browser['total']} 项；{len(exploration['points'])} 个点位；来源对账、基础图层 32 种组合、手机操作",'status':'通过'})
 if asset:summary.insert(2,{'name':'报告与资源交付','detail':f"{asset['passed']}/{asset['total']} 项；报告、下载与资源加载",'status':'通过'})
 if landmark:summary.insert(2,{'name':'地名与路标显示','detail':f"{landmark['passed']}/{landmark['total']} 项；五区 227 个路标、默认地名、缩放拖动和手机",'status':'通过'})
 if navigation:summary.insert(2,{'name':'中文地名与缩放体验','detail':f"{navigation['passed']}/{navigation['total']} 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势",'status':'通过'})
 qa={'date':logic['date'],'executionEnvironment':'cloud-linux','executedAt':logic.get('executedAt'),'status':'partial' if cloud and cloud['browserStatus']=='blocked' else 'pass','datasetSha256':digest,'summary':summary,
  'automatedChecksPassed':logic['passed']+browser['passed']+(asset['passed'] if asset else 0)+(landmark['passed'] if landmark else 0)+(navigation['passed'] if navigation else 0),
- 'coverage':{'quests':len(d['quests']),'main':87,'side':180,'positioned':149,'communityCoordinates':133,'landmarkAnchors':16,'flowOrUnmapped':118,'reviewedBranchTasks':40,'decisionNodes':45,'decisionOptions':101},
+ 'coverage':{'quests':len(d['quests']),'main':sum(q['type']=='main' for q in d['quests']),'side':sum(q['type']=='side' for q in d['quests']),'types':{t:sum(q['type']==t for q in d['quests']) for t in sorted({q['type'] for q in d['quests']})},'positioned':sum(bool(q['point']) for q in d['quests']),'communityCoordinates':sum(q['precision']=='community' for q in d['quests']),'landmarkAnchors':sum(q['precision']=='landmark' for q in d['quests']),'flowOrUnmapped':sum(not q['point'] for q in d['quests']),'reviewedBranchTasks':d['meta']['reviewedTasks'],'decisionNodes':d['meta']['decisionNodes'],'decisionOptions':d['meta']['decisionOptions']},
  'limits':d['meta']['limitations'],
  'evidence':{'data':'checks/data-logic.json','browser':'checks/browser.json','assets':'checks/assets.json' if asset else None},
  'webMCP':browser['webMCP']}
 qa['automatedChecksPassed']+=exploration_data['passed']+exploration_browser['passed']+progress['passed']
 qa['evidence']['progress']='checks/progress.json'
+catalog_data=read('evidence/catalog-validation.json');catalog_browser=read('evidence/catalog-browser-validation.json')
+assert catalog_data['status']==catalog_browser['status']=='pass' and catalog_data['datasetSha256']==digest
+for name,expected in catalog_browser['runtimeInputHashes'].items(): assert expected==hashlib.sha256((root/'dist'/name).read_bytes()).hexdigest(), name
+summary.insert(1,{'name':'扩充目录与服务点','detail':f"{catalog_data['passed']+catalog_browser['passed']}/{catalog_data['total']+catalog_browser['total']} 项；428 条目录、615 点位、来源归并、六类筛选、密集点与旧备份",'status':'通过'})
+qa['automatedChecksPassed']+=catalog_data['passed']+catalog_browser['passed']
+qa['evidence'].update(catalogData='checks/catalog-data.json',catalogBrowser='checks/catalog-browser.json')
 qa['personalProgress']={'storage':'device-local','schemaVersion':1,'spoilersPersisted':False,'backup':'JSON with validated preview and unmatched-ID ledger','shareParameters':['region','quest or point']}
 qa['runtimeInputHashes']=current_inputs
 qa['coverage']['explorationPoints']=len(exploration['points'])
@@ -84,6 +89,8 @@ if cloud:
  summary.insert(2,{'name':'本次云端浏览器','detail':cloud['browserBlocker'],'status':'通过' if cloud['browserStatus']=='pass' else '阻碍；未通过'})
  qa['summary']=summary
 dist=root/'dist';(dist/'checks').mkdir(exist_ok=True)
+for name,target in [('catalog-validation.json','catalog-data.json'),('catalog-browser-validation.json','catalog-browser.json')]: shutil.copyfile(root/'evidence'/name,dist/'checks'/target)
+for name in ['catalog-desktop.png','catalog-mobile.png']: shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 shutil.copyfile(root/'evidence/progress-validation.json',dist/'checks/progress.json')
 for name in ['progress-desktop.png','progress-mobile.png','progress-mobile-detail.png']:
  shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
@@ -114,12 +121,12 @@ lines=[
  '',
  '## 覆盖',
  '',
- '- 267 个任务条目：87 个主线、180 个支线。本体 195、石之心 16、血与酒 56。',
- '- 149 个地图定位：133 个社区接取坐标、16 个相关地标。另 118 个流程／未知坐标条目保留在索引中。',
+ f"- {len(d['quests'])} 个任务／遭遇条目。分类：" + '、'.join(f"{t} {n}" for t,n in qa['coverage']['types'].items()) + '。原有 267 个 ID 和主线／支线分类保留。',
+ f"- {qa['coverage']['positioned']} 个地图定位：{qa['coverage']['communityCoordinates']} 个社区发现／接取线索、{qa['coverage']['landmarkAnchors']} 个关联地标。另 {qa['coverage']['flowOrUnmapped']} 个流程／未知坐标条目保留在索引中。",
  '- 五个真实地区地图：白果园、威伦／诺维格瑞、史凯利杰、凯尔莫罕、陶森特。维吉玛王宫仅显示室内剧情任务。',
- '- 40 个重点任务的 45 个决策节点、101 个选项；尚未整理分支的任务有明确提示。',
- '- 支线范围含竞赛和昆特任务；随机遭遇、狩魔委托、寻宝不在目录范围内。',
- '- 70 个独立探索点：29 魔力之所、35 告示板、6 储藏箱。与任务目录分开统计。',
+ f"- {d['meta']['reviewedTasks']} 个重点任务的 {d['meta']['decisionNodes']} 个决策节点、{d['meta']['decisionOptions']} 个选项；尚未整理分支的任务有明确提示。",
+ '- 目录包含主线／支线、狩魔委托、套装搜集、寻宝与随机遭遇；阶段、组件和探索资源点分别归类。',
+ f"- {len(exploration['points'])} 个独立探索点，{len(exploration['categories'])} 类：设施、服务、昆特、资源与洞穴入口。与任务目录分开统计。",
  '',
  '## 验证结果',
  '',
@@ -158,7 +165,7 @@ lines += [
  '| 宝剑与饺子 | 诺维格瑞铁匠街区 | [裁切](assets/check-263.jpg) |',
  '| 唯有一人 | 鲍克兰告示板，不是湖上试炼目标 | [裁切](assets/check-424.jpg) |',
  '',
- '数值样例用于检查坐标转换；裁切用于建筑与地标的一致性抽样。没有验证全部 149 个点的游戏内 NPC 站位。',
+ '数值样例用于检查坐标转换；裁切用于建筑与地标的一致性抽样。没有验证全部点位的游戏内 NPC 站位或开放状态。',
  '',
  ]
 if landmark:
@@ -175,8 +182,9 @@ if navigation:
  '凯尔莫罕来源旧名通过地图相对位置对应当前路标：The Morhen Eye 为堡垒、Outpost ruins 为被毁的瞭望塔、Morhen Mine dam 为铁矿、The Lake House 为湖畔小屋。没有移动这些点的坐标。',
  '底图继续使用同一来源版本，较大地图增加原生 4、5 级细节瓦片，以 WebP 质量 88 压缩；总计 5721 个瓦片。白果园原生上限 4，其余地区 5；最多再放大半级，避免无限拉伸。',
  '首轮发现连续点击丢失一档，已修正动画期间的目标倍率队列。双指验收使用载入页面前就启用的触摸设备模式；桌面页面载入后切换触摸模拟不能证明手机手势正常。','']
-lines += ['','### 基础探索点与图层验收','',f"[数据对账](checks/exploration-data.json)：{exploration_data['passed']}/{exploration_data['total']} 项；[浏览器操作](checks/exploration-browser.json)：{exploration_browser['passed']}/{exploration_browser['total']} 项。",'', '从 72 条冻结来源记录整理得到 70 个点位：合并陶森特鸡蛇旅馆告示板的一条重复记录；带童话世界独立场景标识、位于当前区域底图范围外的一条告示板暂缓展示。整理账目见 [探索点清单](exploration.json)。', '图层支持任务、路标和三类探索点独立开关，32 种组合均按独立地区清单检查；全隐藏后恢复先前选择。点击探索点显示用途、最近参考路标和来源。', '最近路标按游戏 XY 直线距离选择，不代表可步行到达。是否开放需要结合任务阶段和游戏内状态，未逐点实机复核。', '', '验收画面：[探索地图](checks/exploration-map.png)、[点位详情](checks/exploration-desktop.png)、[手机图层](checks/exploration-mobile-layers.png)、[手机详情](checks/exploration-mobile.png)。','']
+lines += ['','### 基础探索点与图层验收','',f"[数据对账](checks/exploration-data.json)：{exploration_data['passed']}/{exploration_data['total']} 项；[浏览器操作](checks/exploration-browser.json)：{exploration_browser['passed']}/{exploration_browser['total']} 项。",'', '从 617 条冻结来源记录整理得到 615 个点位：合并陶森特鸡蛇旅馆告示板的一条重复记录；带童话世界独立场景标识、位于当前区域底图范围外的一条告示板暂缓展示。整理账目见 [探索点清单](exploration.json)。', '图层支持任务、路标和 13 类探索点独立开关。基础五图层的 32 种组合仍按旧独立清单回归；新增服务和资源层默认关闭，支持搜索、全选、全隐藏和恢复，密集探索点可聚合选择。点击探索点显示用途、最近参考路标和来源。', '最近路标按游戏 XY 直线距离选择，不代表可步行到达。是否开放需要结合任务阶段和游戏内状态，未逐点实机复核。', '', '验收画面：[探索地图](checks/exploration-map.png)、[点位详情](checks/exploration-desktop.png)、[手机图层](checks/exploration-mobile-layers.png)、[手机详情](checks/exploration-mobile.png)。','']
 lines += [f"- {check['name']}：{check['detail']}。" for check in exploration_data['checks']+exploration_browser['checks']]
+lines += ['', '### 第三轮目录与探索来源对账', '', f"[数据对账](checks/catalog-data.json)：{catalog_data['passed']}/{catalog_data['total']}；[浏览器](checks/catalog-browser.json)：{catalog_browser['passed']}/{catalog_browser['total']}。", '', '新增 161 条独立目录，保留原 267 个 ID。162 条 XML 候选和 177 条独立参考记录逐行绑定；套装组件、任务目标、重复阶段与旧酒商委托不重复计数。15 处推荐等级差异显式保留。', '[完整对照清单](catalog-review.json)包含合并依据与来源；其中可能包含剧情信息。没有可靠定位的条目继续从目录访问，套装售图线索不冒充所有图纸位置。', '探索来源的共享／空白标识使用维护的 ID 映射，坐标不进入永久 ID；服务点不宣称完整名单或工匠能力。', 'WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏览器仍不支持原生上下文，未宣称原生功能已验证。', '', '[桌面](checks/catalog-desktop.png) · [手机](checks/catalog-mobile.png)', '']
 lines += ['', '### 个人进度、备份与定位分享', '', f"[逐项结果](checks/progress.json)：{progress['passed']}/{progress['total']} 项通过。", '', '任务与探索点可完成、收藏、按个人记录筛选及隐藏已完成。记录、地区、筛选、视野和已选决策保存在当前设备浏览器；不是读取游戏存档，也没有账号云同步。', '备份恢复先预览并验证：无效 JSON、未知备份版本、非布尔标记、危险标识和过大文件不能覆盖当前记录。未知对象和决策保持在未匹配账目中，便于后续迁移。', '分享定位只包含地区、任务或探索点 ID，不夹带个人记录或决策。刷新后仍默认隐藏剧透，前进／后退可返回对应对象；未知链接显示提示。', '浏览器禁止或损坏存储时地图可使用，明确提示保存失败，并可导出本次记录。', '', '验收画面：[备份预览与恢复](checks/progress-desktop.png)、[手机记录](checks/progress-mobile-detail.png)、[手机备份](checks/progress-mobile.png)。', '']
 lines += [f"- {check['name']}：通过。" for check in progress['checks']]
 lines += ['', '### 重点事实与来源', '', '| 核对项目 | 结论 | 依据 |', '| --- | --- | --- |']

@@ -1,17 +1,17 @@
 # 狩魔手记：互动地图验证报告
 
-任务资料日期：2026-10-02；本次验证日期：2026-10-03。目录版本：1.0。
+任务资料日期：2026-10-03；本次验证日期：2026-10-03。目录版本：1.3。
 
 本报告记录本次云端实际数据与浏览器检查；各项结果附执行时间与文件摘要。历史本地结果独立保留。网页检查不等于游戏实机全量验收，也不是官方任务完整性证明。
 
 ## 覆盖
 
-- 267 个任务条目：87 个主线、180 个支线。本体 195、石之心 16、血与酒 56。
-- 149 个地图定位：133 个社区接取坐标、16 个相关地标。另 118 个流程／未知坐标条目保留在索引中。
+- 428 个任务／遭遇条目。分类：contract 35、encounter 40、main 87、scavenger 29、side 180、treasure 57。原有 267 个 ID 和主线／支线分类保留。
+- 304 个地图定位：288 个社区发现／接取线索、16 个关联地标。另 124 个流程／未知坐标条目保留在索引中。
 - 五个真实地区地图：白果园、威伦／诺维格瑞、史凯利杰、凯尔莫罕、陶森特。维吉玛王宫仅显示室内剧情任务。
 - 40 个重点任务的 45 个决策节点、101 个选项；尚未整理分支的任务有明确提示。
-- 支线范围含竞赛和昆特任务；随机遭遇、狩魔委托、寻宝不在目录范围内。
-- 70 个独立探索点：29 魔力之所、35 告示板、6 储藏箱。与任务目录分开统计。
+- 目录包含主线／支线、狩魔委托、套装搜集、寻宝与随机遭遇；阶段、组件和探索资源点分别归类。
+- 615 个独立探索点，13 类：设施、服务、昆特、资源与洞穴入口。与任务目录分开统计。
 
 ## 验证结果
 
@@ -20,7 +20,8 @@
 | 范围 | 实际检查 | 结果 |
 | --- | --- | --- |
 | 任务数据与规则 | 25/25 项；任务引用、地图资源、结局条件、流程前置 | 通过 |
-| 基础探索图层 | 15/15 项；70 个点位（29 魔力之所、35 告示板、6 储藏箱），来源对账、32 种图层组合、手机操作 | 通过 |
+| 扩充目录与服务点 | 20/20 项；428 条目录、615 点位、来源归并、六类筛选、密集点与旧备份 | 通过 |
+| 探索图层 | 15/15 项；615 个点位；来源对账、基础图层 32 种组合、手机操作 | 通过 |
 | 中文地名与缩放体验 | 11/11 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势 | 通过 |
 | 地名与路标显示 | 8/8 项；五区 227 个路标、默认地名、缩放拖动和手机 | 通过 |
 | 报告与资源交付 | 3/3 项；报告、下载与资源加载 | 通过 |
@@ -34,9 +35,9 @@
 
 [逐项结果](checks/data-logic.json)：25/25 项通过。
 
-- 目录唯一性与范围：267 unique quests; 87 main, 180 side。
-- 任务与决策引用完整性：45 nodes / 101 options, all referenced task IDs resolve。
-- 坐标与流程分类：149 positioned tasks, 118 flow/unmapped entries; no invented coordinates。
+- 目录唯一性与范围：428 unique quests; frozen source reconciliation and legacy main/side classifications match。
+- 任务与决策引用完整性：45 nodes / 101 options, all task references resolve。
+- 坐标与流程分类：304 positioned tasks; flow/unknown entries retained without invented coordinates。
 - 独立接取点校准样例：4 independent numeric fixtures; corresponding XYZ map tiles present。
 - 地图资源完整性：5 regions / 5721 native map tiles; full z4 and z5 coverage for the larger regions。
 - 目录交叉覆盖：261 normalized catalog entries matched (split phases merged); this is not an official completeness proof。
@@ -73,7 +74,7 @@
 - 主线、支线、资料片与分支筛选：通过。
 - 仅展开本任务剧透，其他任务仍隐藏：通过。
 - 条件分支随前序选项解锁或清空：通过。
-- 全部101个分支选项实际点击：通过。
+- 全部已整理分支选项实际点击：通过。
 - 希里结局演算的关键边界：通过。
 - 血与酒结局演算不会把缎带当作和解：通过。
 - 关闭全局剧透清空所有局部展开：通过。
@@ -99,7 +100,7 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 | 宝剑与饺子 | 诺维格瑞铁匠街区 | [裁切](assets/check-263.jpg) |
 | 唯有一人 | 鲍克兰告示板，不是湖上试炼目标 | [裁切](assets/check-424.jpg) |
 
-数值样例用于检查坐标转换；裁切用于建筑与地标的一致性抽样。没有验证全部 149 个点的游戏内 NPC 站位。
+数值样例用于检查坐标转换；裁切用于建筑与地标的一致性抽样。没有验证全部点位的游戏内 NPC 站位或开放状态。
 
 
 ### 本次云端地名更新验收
@@ -149,27 +150,39 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 
 [数据对账](checks/exploration-data.json)：7/7 项；[浏览器操作](checks/exploration-browser.json)：8/8 项。
 
-从 72 条冻结来源记录整理得到 70 个点位：合并陶森特鸡蛇旅馆告示板的一条重复记录；带童话世界独立场景标识、位于当前区域底图范围外的一条告示板暂缓展示。整理账目见 [探索点清单](exploration.json)。
-图层支持任务、路标和三类探索点独立开关，32 种组合均按独立地区清单检查；全隐藏后恢复先前选择。点击探索点显示用途、最近参考路标和来源。
+从 617 条冻结来源记录整理得到 615 个点位：合并陶森特鸡蛇旅馆告示板的一条重复记录；带童话世界独立场景标识、位于当前区域底图范围外的一条告示板暂缓展示。整理账目见 [探索点清单](exploration.json)。
+图层支持任务、路标和 13 类探索点独立开关。基础五图层的 32 种组合仍按旧独立清单回归；新增服务和资源层默认关闭，支持搜索、全选、全隐藏和恢复，密集探索点可聚合选择。点击探索点显示用途、最近参考路标和来源。
 最近路标按游戏 XY 直线距离选择，不代表可步行到达。是否开放需要结合任务阶段和游戏内状态，未逐点实机复核。
 
 验收画面：[探索地图](checks/exploration-map.png)、[点位详情](checks/exploration-desktop.png)、[手机图层](checks/exploration-mobile-layers.png)、[手机详情](checks/exploration-mobile.png)。
 
-- 原始记录逐条对账：Locked source hash; all 72 raw records accounted for, with original XY retained.。
-- 独立分类与地区清单：70 audited records; exact per-category counts independently declared for all five regions.。
+- 原始记录逐条对账：Locked source hash; all 617 raw records independently accounted for, with original XY retained.。
+- 独立分类与地区清单：615 audited records; exact per-category counts independently declared for all five regions.。
 - 重复与独立场景处理：Duplicate Cockatrice Inn board merged; separate-scene candidate withheld from Toussaint.。
 - 独立坐标样例与区域边界：Five predeclared coordinate fixtures match; every point has finite coordinates in its own region.。
 - 稳定标识与引用：Unique stable source identities, separate from quest IDs; all reference landmarks resolve in the same region.。
-- 旧任务目录保持：Entire 267-quest catalog retains the independently recorded v4 fingerprint.。
+- 旧任务目录保持：All 267 legacy IDs, classifications, titles, expansion boundaries and coordinates retain their frozen baseline values.。
 - 来源与精度边界：Every point retains frozen source provenance and unknown-availability limits; no in-game verification claimed.。
 - 五区探索点与来源清单数量：White Orchard 8, Velen 29, Skellige 18, Toussaint 13, Kaer Morhen 2; no fabricated Vizima point.。
-- 32种图层组合及任务索引独立性：All 32 combinations match independently declared Velen counts; the 131-quest index remains available.。
+- 32种图层组合及任务索引独立性：All 32 combinations match independently declared Velen counts; the preserved 85-side-quest index remains available.。
 - 全隐藏恢复原选择并隐藏任务高亮：Restores the prior partial selection; hidden quest layers stay hidden when a quest is opened from the index.。
 - 三类点位真实点击详情与键盘操作：All three types open through real marker clicks; keyboard Enter and Space open a board; provenance and availability limits remain visible.。
 - 任务筛选与探索图层互不干扰：Empty task search and DLC filtering leave exploration and road signs intact; point selection preserves filters.。
-- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 7.5ms on this cloud Chromium; map controls have their own stacking context.。
+- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 37.8ms on this cloud Chromium; map controls have their own stacking context.。
 - 手机图层与探索详情及200%文字：390×844 touch device; layer toggles, Escape/focus return, tap-to-detail and doubled text remain usable without page overflow.。
 - 探索资源与页面异常：Zero page exceptions and zero unexpected HTTP failures across the exploration interactions.。
+
+### 第三轮目录与探索来源对账
+
+[数据对账](checks/catalog-data.json)：10/10；[浏览器](checks/catalog-browser.json)：10/10。
+
+新增 161 条独立目录，保留原 267 个 ID。162 条 XML 候选和 177 条独立参考记录逐行绑定；套装组件、任务目标、重复阶段与旧酒商委托不重复计数。15 处推荐等级差异显式保留。
+[完整对照清单](catalog-review.json)包含合并依据与来源；其中可能包含剧情信息。没有可靠定位的条目继续从目录访问，套装售图线索不冒充所有图纸位置。
+探索来源的共享／空白标识使用维护的 ID 映射，坐标不进入永久 ID；服务点不宣称完整名单或工匠能力。
+WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏览器仍不支持原生上下文，未宣称原生功能已验证。
+
+[桌面](checks/catalog-desktop.png) · [手机](checks/catalog-mobile.png)
+
 
 ### 个人进度、备份与定位分享
 
@@ -223,12 +236,13 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 - 纠正凯尔莫罕教学、觐见皇帝、丑陋的婴儿、使节与酒差、并肩作战与数条最终章任务的起始地区。
 - 纠正诺维格瑞黑帮、三人探戈与最后的善举的分类；补充 4.0 新任务、总任务与竞赛条目。
 - 补全 35 项无 XML 前置链接的触发说明；修正“为祖国”前置成功／失败状态不能一概而论的问题。
+- 第 3 轮：套装组件、取剑目标和同一挑战者后续阶段合并；五条旧酒商委托加入关联分类而不复制。追寻希里与收集所有卡牌改为总流程语义。
 - “为祖国”前置保留 Wiki 关于特定阶段失败的记录；“以眼还眼”需到薇丝战斗、“瑞达尼亚的头号要犯”需取得抛光水晶。“致命阴谋”仍须完成，并需在“显而易见”中交换恩希尔情报。[详细依据](https://witcher.fandom.com/wiki/Reason_of_State)。
 - 初轮缩放检查在地图动画结束前读取状态，产生一次误报。改为等待动画完成后复测，缩放、拖动和复位均通过。失败画面保存在历史本地证据 evidence/history/local-2026-10-02/failure-5.png。
 
 ## 可重复核验
 
-最终任务数据 SHA-256：`2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9`。
+最终任务数据 SHA-256：`ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3`。
 
 地图／社区数据来源锁定为 Witcher3MapViewer commit `fb674dbff7df087d0a45f9b3938ba6d5317295af`。来源 XML 与地图清单在源码项目 evidence/ 中保留；可重新生成任务数据，执行数据检查，并在云端测试服务中重跑浏览器操作。
 
@@ -241,7 +255,10 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 - 没有坐标的流程任务仍在目录中，不会被随机放在地图上。
 - 决策树集中于已核对的关键分支；未收录分支不代表任务没有后果。
 - 中文名用于检索，保留英文原名以便对照不同汉化版本。
-- 未做逐任务实机验证，也未保证所有对话、随机遭遇和版本特例都收录；可用来源链接继续核对。
+- 本清单核对两套冻结社区来源，未声称全游戏任务或探索点完整。
+- 中文新增标题为本项目译名，不宣称全部是游戏官方译名。
+- 遗忘狼的升级装备条目归并图纸任务；Griffin-in-the-Vines 与 Duchaton Crest 的别名有 XML 问号，保留待实机核对说明。
+- 来源无法读取的网页链接保留为引用，不冒充本次抓取验证。
 - 希里未觐见时二比二的边界按 Wiki 四项记分解释；其他攻略把跳过觐见计为第五项积极，得到相同结果。这个边界未实机复测。
 - 结局演算只覆盖说明中的主干条件，不读取存档，也不推断未输入的其他游戏状态。
 - 网页默认隐藏决策后果，只有主动展开或使用全局开关后才出现；验证报告自身包含剧情信息。

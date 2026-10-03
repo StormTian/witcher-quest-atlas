@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T06:05:49.024Z",
+  "status": "fail",
+  "checks": [
+    {
+      "name": "五区探索点与来源清单数量",
+      "status": "fail",
+      "detail": "white-orchard/power\n\n0 !== 6\n"
+    },
+    {
+      "name": "32种图层组合及任务索引独立性",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n223 !== 85\n"
+    },
+    {
+      "name": "全隐藏恢复原选择并隐藏任务高亮",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at Object.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at Object.selectQuest (http://127.0.0.1:42965/app.js:27:123)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:13)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "三类点位真实点击详情与键盘操作",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at e.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at e.fire (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:5370)\n    at e._moveEnd (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:40232)\n    at e._resetView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:39794)\n    at e.setView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:28037)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:16)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "任务筛选与探索图层互不干扰",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n0 !== 29\n"
+    },
+    {
+      "name": "地图叠加与密集区渲染耗时",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at Object.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:107)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "手机图层与探索详情及200%文字",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at e.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at e.fire (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:5370)\n    at e._moveEnd (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:40232)\n    at e._resetView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:39794)\n    at e.setView (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:28037)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:16)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "探索资源与页面异常",
+      "status": "fail",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\"\n+ ]\n- []\n"
+    }
+  ],
+  "passed": 0,
+  "total": 8,
+  "pageErrors": [
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')"
+  ],
+  "httpFailures": [],
+  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3",
+  "explorationSha256": "d90e483b8a5faeadcfa053a009c7fd40d39af3816c95dfc6f2ec06d774a7200b",
+  "appSha256": "dc0040f735dcf69eec698133d4a4054661fb93a2424518faf6c737fa9c426361",
+  "explorationCodeSha256": "d6bd70c0d63527d3dbd3e4f5b65cce86c4cb50bc8eb605d92339c0a86d1e4fb3",
+  "explorationStyleSha256": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360"
+}

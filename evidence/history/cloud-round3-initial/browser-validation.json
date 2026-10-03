@@ -1,0 +1,193 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T06:07:44.437Z",
+  "status": "fail",
+  "checks": [
+    {
+      "name": "桌面初始状态与剧透保护",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "name": "五个地区地图实际加载",
+      "status": "fail",
+      "detail": "page.waitForFunction: Timeout 30000ms exceeded."
+    },
+    {
+      "name": "王宫不显示虚构地图",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n0 !== 2\n"
+    },
+    {
+      "name": "点击真实地图标记打开任务",
+      "status": "fail",
+      "detail": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.leaflet-marker-icon[title=\"扭曲的纵火犯\"]')\u001b[22m\n"
+    },
+    {
+      "name": "缩放、拖动与地区复位",
+      "status": "fail",
+      "detail": "page.waitForFunction: Timeout 30000ms exceeded."
+    },
+    {
+      "name": "中文、英文和人物跨地区搜索",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "name": "主线、支线、资料片与分支筛选",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\n0 !== 87\n"
+    },
+    {
+      "name": "仅展开本任务剧透，其他任务仍隐藏",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at Object.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at Object.selectQuest (http://127.0.0.1:42965/app.js:27:123)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:18)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "条件分支随前序选项解锁或清空",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at Object.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at Object.selectQuest (http://127.0.0.1:42965/app.js:27:123)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:18)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "全部已整理分支选项实际点击",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at Object.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at Object.selectQuest (http://127.0.0.1:42965/app.js:27:123)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:18)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "希里结局演算的关键边界",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at Object.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at Object.selectQuest (http://127.0.0.1:42965/app.js:27:123)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:18)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "血与酒结局演算不会把缎带当作和解",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at Object.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at Object.selectQuest (http://127.0.0.1:42965/app.js:27:123)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:18)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "关闭全局剧透清空所有局部展开",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at Object.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at Object.selectQuest (http://127.0.0.1:42965/app.js:27:123)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:18)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "键盘访问与快捷搜索",
+      "status": "fail",
+      "detail": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#detail-close')\u001b[22m\n"
+    },
+    {
+      "name": "1280 × 720 与200%文字放大",
+      "status": "fail",
+      "detail": "page.evaluate: TypeError: Cannot read properties of undefined (reading '_leaflet_events')\n    at ke (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:23452)\n    at Object.S (http://127.0.0.1:42965/assets/leaflet/leaflet.js:5:22902)\n    at Object.render (http://127.0.0.1:42965/exploration.js:63:20)\n    at Object.selectQuest (http://127.0.0.1:42965/app.js:27:123)\n    at eval (eval at evaluate (:311:30), <anonymous>:1:18)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+    },
+    {
+      "name": "手机首屏与地图",
+      "status": "pass",
+      "detail": "390 × 844; map begins immediately, no horizontal page overflow"
+    },
+    {
+      "name": "手机任务索引、详情与关闭",
+      "status": "fail",
+      "detail": "Expected values to be strictly equal:\n\nfalse !== true\n"
+    },
+    {
+      "name": "验证窗口、资料来源与可检查地图证据",
+      "status": "fail",
+      "detail": "page.waitForSelector: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.review-grid img')\u001b[22m\n"
+    },
+    {
+      "name": "页面运行与资源错误检查",
+      "status": "fail",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\",\n+   \"Cannot read properties of undefined (reading '_leaflet_events')\"\n+ ]\n- []\n"
+    }
+  ],
+  "passed": 1,
+  "total": 19,
+  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3",
+  "runtimeInputHashes": {
+    "app.js": "dc0040f735dcf69eec698133d4a4054661fb93a2424518faf6c737fa9c426361",
+    "index.html": "e544432e5f49254c44f0bc46f88e8ab30a2bf27e4c6e00b9f3d92c5c43ba5444",
+    "style.css": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
+    "exploration.js": "d6bd70c0d63527d3dbd3e4f5b65cce86c4cb50bc8eb605d92339c0a86d1e4fb3",
+    "exploration.css": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360",
+    "exploration.json": "d90e483b8a5faeadcfa053a009c7fd40d39af3816c95dfc6f2ec06d774a7200b",
+    "progress.js": "e5ad764fc603652d2f888a522b50df880395babe65f5a1c66c5497a18945f895",
+    "progress.css": "f61485024473e3f7657dbef553440248f74a65b76bbddad59e34320293ac2fe9"
+  },
+  "pageErrors": [
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')",
+    "Cannot read properties of undefined (reading '_leaflet_events')"
+  ],
+  "badResponses": [],
+  "webMCP": {
+    "status": "unavailable",
+    "validation": "unsupported-context, not claimed as validated"
+  },
+  "viewports": [
+    "1440×900",
+    "1280×720",
+    "390×844"
+  ],
+  "screenshots": [
+    "decision-final.png",
+    "desktop-1280.png",
+    "desktop-audit.png",
+    "desktop-final.png",
+    "exploration-desktop.png",
+    "exploration-failure-1.png",
+    "exploration-failure-2.png",
+    "exploration-failure-3.png",
+    "exploration-failure-4.png",
+    "exploration-failure-5.png",
+    "exploration-failure-6.png",
+    "exploration-failure-7.png",
+    "exploration-failure-8.png",
+    "exploration-map.png",
+    "exploration-mobile-layers.png",
+    "exploration-mobile.png",
+    "landmarks-desktop.png",
+    "landmarks-failure-1.png",
+    "landmarks-failure-2.png",
+    "landmarks-failure-3.png",
+    "landmarks-failure-4.png",
+    "landmarks-failure-5.png",
+    "landmarks-failure-6.png",
+    "landmarks-failure-7.png",
+    "landmarks-failure-8.png",
+    "landmarks-mobile.png",
+    "map-kaer-morhen.png",
+    "map-skellige.png",
+    "map-toussaint.png",
+    "map-velen.png",
+    "map-white-orchard.png",
+    "mobile-audit.png",
+    "mobile-decision.png",
+    "mobile-final.png",
+    "navigation-desktop.png",
+    "navigation-failure-1.png",
+    "navigation-failure-10.png",
+    "navigation-failure-11.png",
+    "navigation-failure-3.png",
+    "navigation-failure-6.png",
+    "navigation-failure-7.png",
+    "navigation-failure-8.png",
+    "navigation-failure-9.png",
+    "navigation-mobile.png",
+    "progress-desktop.png",
+    "progress-failure-1.png",
+    "progress-failure-10.png",
+    "progress-failure-11.png",
+    "progress-failure-12.png",
+    "progress-failure-2.png",
+    "progress-failure-3.png",
+    "progress-failure-4.png",
+    "progress-failure-5.png",
+    "progress-failure-6.png",
+    "progress-failure-7.png",
+    "progress-failure-8.png",
+    "progress-failure-9.png",
+    "progress-mobile-detail.png",
+    "progress-mobile.png",
+    "text-200.png"
+  ]
+}

@@ -1,23 +1,23 @@
 {
   "date": "2026-10-03",
   "executionEnvironment": "cloud-linux",
-  "executedAt": "2026-10-03T05:32:25.134Z",
+  "executedAt": "2026-10-03T06:04:57.560Z",
   "status": "pass",
   "checks": [
     {
       "name": "目录唯一性与范围",
       "status": "pass",
-      "detail": "267 unique quests; 87 main, 180 side"
+      "detail": "428 unique quests; frozen source reconciliation and legacy main/side classifications match"
     },
     {
       "name": "任务与决策引用完整性",
       "status": "pass",
-      "detail": "45 nodes / 101 options, all referenced task IDs resolve"
+      "detail": "45 nodes / 101 options, all task references resolve"
     },
     {
       "name": "坐标与流程分类",
       "status": "pass",
-      "detail": "149 positioned tasks, 118 flow/unmapped entries; no invented coordinates"
+      "detail": "304 positioned tasks; flow/unknown entries retained without invented coordinates"
     },
     {
       "name": "独立接取点校准样例",
@@ -132,5 +132,5 @@
   ],
   "passed": 25,
   "total": 25,
-  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9"
+  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3"
 }

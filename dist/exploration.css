@@ -22,3 +22,5 @@
 .exploration-marker:focus-visible .exploration-pin{outline:2px solid #fff;outline-offset:2px}
 .legend-exploration{width:10px;height:10px;border:1px solid #bba1cc;border-radius:2px;display:inline-block;background:#55425d}
 @media(max-width:700px){#layers-dialog .dialog-top{padding:16px 18px}.layers-content{padding:14px 18px 18px}.legend{gap:9px}.map-help{bottom:98px}.map-overview{bottom:126px}#exploration-count{font-size:.8125rem}}
+
+.layer-option[hidden]{display:none}.exploration-pin.cluster{border-radius:50%;background:#344442;color:#f5dfac;font-size:12px;font-weight:700}.exploration-pin.merchant,.exploration-pin.blacksmith,.exploration-pin.armorer{color:#ecc49a;border-color:#a98259}.exploration-pin.gwent-player,.exploration-pin.gwent-seller{color:#cbabdf;border-color:#9977ae}.exploration-pin.nest,.exploration-pin.abandoned{color:#e8a38e;border-color:#af715e}.exploration-pin.treasure-point,.exploration-pin.smuggler{color:#f1d59b;border-color:#ad965f}.exploration-pin.entrance{color:#b2c5cc;border-color:#7c9ba6}.layers-content{max-height:74vh;overflow-y:auto}

@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-03",
+  "executionEnvironment": "cloud-linux",
+  "executedAt": "2026-10-03T06:17:06.613Z",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "新类型筛选与旧分类保留",
+      "status": "pass",
+      "detail": "Six task filters; 87 main and 180 side retained, Vintner aliases do not duplicate IDs."
+    },
+    {
+      "name": "中文检索与未知坐标直达",
+      "status": "pass",
+      "detail": "Chinese name search and source-only deep links work with hidden spoilers."
+    },
+    {
+      "name": "类型与售图位置详情",
+      "status": "pass",
+      "detail": "New primary labels, vendor-clue semantics and level disagreements shown in actual detail UI."
+    },
+    {
+      "name": "服务与探索图层清单及默认设置",
+      "status": "pass",
+      "detail": "13 exploration categories plus tasks/roads, new layers off by default; search leaves selections intact."
+    },
+    {
+      "name": "全选与五区数量匹配来源",
+      "status": "pass",
+      "detail": "Every included source point participates in the all-layers view for its own region."
+    },
+    {
+      "name": "密集点聚合、键盘选择与个人记录",
+      "status": "pass",
+      "detail": "Dense points aggregate; keyboard opens chooser and stable entity selection retains progress controls."
+    },
+    {
+      "name": "旧备份新增分类兼容",
+      "status": "pass",
+      "detail": "Version-1 backups keep old choices and initialize new service categories disabled."
+    },
+    {
+      "name": "WebMCP类型契约（接口夹具）",
+      "status": "pass",
+      "detail": "Registered-tool fixture verifies all six enum values and spoiler-free output; not a native WebMCP availability claim."
+    },
+    {
+      "name": "手机新分类与探索图层无溢出",
+      "status": "pass",
+      "detail": "390×844 touch UI: type filters, task details, service selection and no horizontal overflow."
+    },
+    {
+      "name": "页面与资源无异常",
+      "status": "pass",
+      "detail": "No page errors or unexpected HTTP failures."
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "runtimeInputHashes": {
+    "app.js": "da1a62d022f51d9b2cba25217e9f7e65a044366874b825dfe39ca17753071a6c",
+    "index.html": "e544432e5f49254c44f0bc46f88e8ab30a2bf27e4c6e00b9f3d92c5c43ba5444",
+    "style.css": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
+    "exploration.js": "7d44430e61f7600aab074314363816b363abbdbe9ce5d6d8e792e0d054b9060d",
+    "exploration.css": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360",
+    "exploration.json": "d90e483b8a5faeadcfa053a009c7fd40d39af3816c95dfc6f2ec06d774a7200b",
+    "progress.js": "e5ad764fc603652d2f888a522b50df880395babe65f5a1c66c5497a18945f895",
+    "progress.css": "f61485024473e3f7657dbef553440248f74a65b76bbddad59e34320293ac2fe9",
+    "data.json": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3"
+  }
+}

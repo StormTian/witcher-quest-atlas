@@ -1,7 +1,7 @@
 {
   "date": "2026-10-03",
   "executionEnvironment": "cloud-linux",
-  "executedAt": "2026-10-03T05:32:24.707Z",
+  "executedAt": "2026-10-03T06:16:41.948Z",
   "status": "pass",
   "checks": [
     {
@@ -12,7 +12,7 @@
     {
       "name": "32种图层组合及任务索引独立性",
       "status": "pass",
-      "detail": "All 32 combinations match independently declared Velen counts; the 131-quest index remains available."
+      "detail": "All 32 combinations match independently declared Velen counts; the preserved 85-side-quest index remains available."
     },
     {
       "name": "全隐藏恢复原选择并隐藏任务高亮",
@@ -32,7 +32,7 @@
     {
       "name": "地图叠加与密集区渲染耗时",
       "status": "pass",
-      "detail": "25 real Velen renders; p95 7.5ms on this cloud Chromium; map controls have their own stacking context."
+      "detail": "25 real Velen renders; p95 37.8ms on this cloud Chromium; map controls have their own stacking context."
     },
     {
       "name": "手机图层与探索详情及200%文字",
@@ -49,9 +49,9 @@
   "total": 8,
   "pageErrors": [],
   "httpFailures": [],
-  "datasetSha256": "2a3bb7d2b153174966ec2c4125dc2a57343b55b065884ce9ae3047f7e351faa9",
-  "explorationSha256": "0c72d1d022d7e30500fed600c6a66eca69538dcf62bcd8e84abd8ec7dffe1c3f",
-  "appSha256": "01e1f7801db09051b3a6e56b140f82aa821df082b4f01ae5fd19218c5cc06ebc",
-  "explorationCodeSha256": "5b729a137893e1fb839b08d4e4642b635fb1e3c9cb7634e519b814fbf0087832",
-  "explorationStyleSha256": "90beaefa0848cbd4cfcfb54ac9210b8537a774b9825c68752926b680fbb20995"
+  "datasetSha256": "ae66de51cf9ed9574675d04fb3d0d53a3fb4cefec13a29919dec1de5742309d3",
+  "explorationSha256": "d90e483b8a5faeadcfa053a009c7fd40d39af3816c95dfc6f2ec06d774a7200b",
+  "appSha256": "da1a62d022f51d9b2cba25217e9f7e65a044366874b825dfe39ca17753071a6c",
+  "explorationCodeSha256": "7d44430e61f7600aab074314363816b363abbdbe9ce5d6d8e792e0d054b9060d",
+  "explorationStyleSha256": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360"
 }

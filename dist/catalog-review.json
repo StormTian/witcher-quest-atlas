@@ -1,0 +1,4273 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-03",
+  "method": "按冻结源记录 ID 人工绑定，合并任务阶段／图纸组件／别名；验收清单来自来源归属，未从运行时 data.json 导出。",
+  "sourceHashes": {
+    "evidence/upstream/Witcher3MapViewer/Quests.xml": "137bfc21a1eaff1fc3a89a75f60a3dfac2691562259077e795fcdaafd85dbd65",
+    "evidence/catalog-comparison-source.json": "0582ed98bcbce55ab83e5503fc5427b3701dfe3f52ea88dde09e07621affdbfb"
+  },
+  "baselineIds": [
+    "q2",
+    "q3",
+    "q44",
+    "q39",
+    "q19",
+    "q20",
+    "q36",
+    "q37",
+    "q42",
+    "q40",
+    "q12",
+    "q22",
+    "q45",
+    "q49",
+    "q68",
+    "q82",
+    "q83",
+    "q84",
+    "q88",
+    "q89",
+    "q93",
+    "q119",
+    "q118",
+    "q120",
+    "q121",
+    "q130",
+    "q139",
+    "q268",
+    "q267",
+    "q60",
+    "q65",
+    "q73",
+    "q78",
+    "q79",
+    "q80",
+    "q81",
+    "q99",
+    "q75",
+    "q61",
+    "q8",
+    "q69",
+    "q74",
+    "q63",
+    "q64",
+    "q62",
+    "q76",
+    "q67",
+    "q66",
+    "q91",
+    "q105",
+    "q107",
+    "q90",
+    "q106",
+    "q104",
+    "q206",
+    "q41",
+    "q13",
+    "q21",
+    "q24",
+    "q77",
+    "q97",
+    "q98",
+    "q103",
+    "q122",
+    "q129",
+    "q138",
+    "q142",
+    "q157",
+    "q161",
+    "q162",
+    "q198",
+    "q252",
+    "q263",
+    "q309",
+    "q310",
+    "q311",
+    "q312",
+    "q431",
+    "q14",
+    "q324",
+    "q117",
+    "q87",
+    "q92",
+    "q125",
+    "q143",
+    "q147",
+    "q136",
+    "q109",
+    "q101",
+    "q137",
+    "q145",
+    "q131",
+    "q132",
+    "q186",
+    "q148",
+    "q127",
+    "q156",
+    "q126",
+    "q180",
+    "q179",
+    "q185",
+    "q182",
+    "q208",
+    "q108",
+    "q9",
+    "q102",
+    "q146",
+    "q181",
+    "q308",
+    "q316",
+    "q315",
+    "q317",
+    "q320",
+    "q321",
+    "q322",
+    "q323",
+    "q325",
+    "q332",
+    "q361",
+    "q277",
+    "q16",
+    "q23",
+    "q35",
+    "q133",
+    "q141",
+    "q140",
+    "q160",
+    "q158",
+    "q159",
+    "q177",
+    "q178",
+    "q193",
+    "q194",
+    "q195",
+    "q196",
+    "q207",
+    "q184",
+    "q183",
+    "q197",
+    "q218",
+    "q233",
+    "q240",
+    "q258",
+    "q259",
+    "q260",
+    "q262",
+    "q269",
+    "q270",
+    "q275",
+    "q303",
+    "q128",
+    "q176",
+    "q304",
+    "q420",
+    "q421",
+    "q422",
+    "q423",
+    "q205",
+    "q212",
+    "q192",
+    "q175",
+    "q174",
+    "q200",
+    "q199",
+    "q213",
+    "q256",
+    "q214",
+    "q219",
+    "q220",
+    "q236",
+    "q15",
+    "q17",
+    "q251",
+    "q276",
+    "q280",
+    "q281",
+    "q302",
+    "q229",
+    "q231",
+    "q228",
+    "q4",
+    "q232",
+    "q230",
+    "q245",
+    "q246",
+    "q247",
+    "q248",
+    "q249",
+    "q257",
+    "q235",
+    "q273",
+    "q144",
+    "q6",
+    "q274",
+    "q288",
+    "q287",
+    "q289",
+    "q301",
+    "q25",
+    "q285",
+    "q283",
+    "q306",
+    "q284",
+    "q286",
+    "q296",
+    "q297",
+    "q298",
+    "q10",
+    "q333",
+    "q336",
+    "q366",
+    "q387",
+    "q388",
+    "q392",
+    "q403",
+    "q405",
+    "q404",
+    "q406",
+    "q407",
+    "q415",
+    "q416",
+    "q417",
+    "q418",
+    "q419",
+    "q408",
+    "q389",
+    "q367",
+    "q1",
+    "q334",
+    "q335",
+    "q396",
+    "q337",
+    "q371",
+    "q338",
+    "q339",
+    "q18",
+    "q362",
+    "q340",
+    "q345",
+    "q374",
+    "q346",
+    "q347",
+    "q348",
+    "q349",
+    "q350",
+    "q351",
+    "q352",
+    "q353",
+    "q354",
+    "q390",
+    "q378",
+    "q369",
+    "q370",
+    "q377",
+    "q393",
+    "q394",
+    "q372",
+    "q373",
+    "q375",
+    "q376",
+    "q395",
+    "q401",
+    "q424",
+    "eternal",
+    "ciri",
+    "collect",
+    "mysterious"
+  ],
+  "addedIds": [
+    "q38",
+    "q54",
+    "q55",
+    "q56",
+    "q85",
+    "q46",
+    "q47",
+    "q425",
+    "q48",
+    "q30",
+    "q43",
+    "q50",
+    "q51",
+    "q52",
+    "q53",
+    "q57",
+    "q59",
+    "q70",
+    "q427",
+    "q428",
+    "q71",
+    "q86",
+    "q95",
+    "q100",
+    "q110",
+    "q113",
+    "q114",
+    "q115",
+    "q116",
+    "q134",
+    "q135",
+    "q154",
+    "q167",
+    "q202",
+    "q225",
+    "q226",
+    "q234",
+    "q250",
+    "q266",
+    "q290",
+    "q314",
+    "q72",
+    "q243",
+    "q433",
+    "q96",
+    "q27",
+    "q221",
+    "q222",
+    "q216",
+    "q253",
+    "q254",
+    "q293",
+    "q32",
+    "q33",
+    "q34",
+    "q26",
+    "q28",
+    "q31",
+    "q94",
+    "q123",
+    "q155",
+    "q163",
+    "q165",
+    "q188",
+    "q173",
+    "q191",
+    "q204",
+    "q223",
+    "q239",
+    "q237",
+    "q255",
+    "q265",
+    "q272",
+    "q313",
+    "q318",
+    "q319",
+    "q331",
+    "q341",
+    "q342",
+    "q343",
+    "q365",
+    "q364",
+    "q430",
+    "q355",
+    "q278",
+    "q327",
+    "q328",
+    "q238",
+    "q210",
+    "q150",
+    "q305",
+    "q326",
+    "q58",
+    "q124",
+    "q151",
+    "q152",
+    "q164",
+    "q166",
+    "q168",
+    "q169",
+    "q170",
+    "q171",
+    "q172",
+    "q187",
+    "q190",
+    "q201",
+    "q209",
+    "q215",
+    "q271",
+    "q203",
+    "q211",
+    "q217",
+    "q227",
+    "q244",
+    "q279",
+    "q282",
+    "q291",
+    "q292",
+    "q307",
+    "q413",
+    "q261",
+    "q224",
+    "q189",
+    "q241",
+    "q242",
+    "q294",
+    "q295",
+    "q329",
+    "q330",
+    "q149",
+    "q432",
+    "q429",
+    "q360",
+    "q344",
+    "q356",
+    "q357",
+    "q358",
+    "q359",
+    "q379",
+    "q380",
+    "q381",
+    "q382",
+    "q383",
+    "q384",
+    "q385",
+    "q386",
+    "q391",
+    "q397",
+    "q398",
+    "q399",
+    "q400",
+    "q402",
+    "q409",
+    "q410",
+    "q411",
+    "q412",
+    "q414",
+    "forgotten-wolf-diagrams",
+    "drakenborg-redemption",
+    "encounter-farmers-daughter-1",
+    "encounter-farmers-daughter-2"
+  ],
+  "addedTypes": {
+    "q38": "contract",
+    "q54": "treasure",
+    "q55": "treasure",
+    "q56": "treasure",
+    "q85": "scavenger",
+    "q46": "encounter",
+    "q47": "encounter",
+    "q425": "encounter",
+    "q48": "encounter",
+    "q30": "encounter",
+    "q43": "encounter",
+    "q50": "encounter",
+    "q51": "treasure",
+    "q52": "treasure",
+    "q53": "treasure",
+    "q57": "treasure",
+    "q59": "treasure",
+    "q70": "encounter",
+    "q427": "encounter",
+    "q428": "encounter",
+    "q71": "encounter",
+    "q86": "contract",
+    "q95": "treasure",
+    "q100": "encounter",
+    "q110": "encounter",
+    "q113": "treasure",
+    "q114": "treasure",
+    "q115": "contract",
+    "q116": "contract",
+    "q134": "scavenger",
+    "q135": "contract",
+    "q154": "treasure",
+    "q167": "treasure",
+    "q202": "treasure",
+    "q225": "treasure",
+    "q226": "treasure",
+    "q234": "contract",
+    "q250": "contract",
+    "q266": "contract",
+    "q290": "treasure",
+    "q314": "contract",
+    "q72": "contract",
+    "q243": "contract",
+    "q433": "encounter",
+    "q96": "contract",
+    "q27": "encounter",
+    "q221": "scavenger",
+    "q222": "scavenger",
+    "q216": "scavenger",
+    "q253": "scavenger",
+    "q254": "scavenger",
+    "q293": "scavenger",
+    "q32": "encounter",
+    "q33": "encounter",
+    "q34": "encounter",
+    "q26": "encounter",
+    "q28": "encounter",
+    "q31": "encounter",
+    "q94": "encounter",
+    "q123": "encounter",
+    "q155": "contract",
+    "q163": "encounter",
+    "q165": "encounter",
+    "q188": "encounter",
+    "q173": "contract",
+    "q191": "contract",
+    "q204": "contract",
+    "q223": "treasure",
+    "q239": "treasure",
+    "q237": "encounter",
+    "q255": "contract",
+    "q265": "contract",
+    "q272": "contract",
+    "q313": "treasure",
+    "q318": "treasure",
+    "q319": "treasure",
+    "q331": "contract",
+    "q341": "treasure",
+    "q342": "treasure",
+    "q343": "treasure",
+    "q365": "treasure",
+    "q364": "treasure",
+    "q430": "encounter",
+    "q355": "treasure",
+    "q278": "scavenger",
+    "q327": "scavenger",
+    "q328": "scavenger",
+    "q238": "scavenger",
+    "q210": "scavenger",
+    "q150": "scavenger",
+    "q305": "scavenger",
+    "q326": "scavenger",
+    "q58": "treasure",
+    "q124": "treasure",
+    "q151": "treasure",
+    "q152": "treasure",
+    "q164": "encounter",
+    "q166": "encounter",
+    "q168": "treasure",
+    "q169": "treasure",
+    "q170": "treasure",
+    "q171": "treasure",
+    "q172": "treasure",
+    "q187": "encounter",
+    "q190": "treasure",
+    "q201": "encounter",
+    "q209": "encounter",
+    "q215": "encounter",
+    "q271": "encounter",
+    "q203": "contract",
+    "q211": "contract",
+    "q217": "contract",
+    "q227": "contract",
+    "q244": "contract",
+    "q279": "contract",
+    "q282": "contract",
+    "q291": "contract",
+    "q292": "contract",
+    "q307": "treasure",
+    "q413": "treasure",
+    "q261": "contract",
+    "q224": "treasure",
+    "q189": "scavenger",
+    "q241": "scavenger",
+    "q242": "scavenger",
+    "q294": "scavenger",
+    "q295": "scavenger",
+    "q329": "scavenger",
+    "q330": "scavenger",
+    "q149": "encounter",
+    "q432": "encounter",
+    "q429": "encounter",
+    "q360": "contract",
+    "q344": "contract",
+    "q356": "treasure",
+    "q357": "treasure",
+    "q358": "treasure",
+    "q359": "treasure",
+    "q379": "treasure",
+    "q380": "treasure",
+    "q381": "scavenger",
+    "q382": "scavenger",
+    "q383": "scavenger",
+    "q384": "scavenger",
+    "q385": "scavenger",
+    "q386": "treasure",
+    "q391": "treasure",
+    "q397": "treasure",
+    "q398": "treasure",
+    "q399": "contract",
+    "q400": "contract",
+    "q402": "treasure",
+    "q409": "treasure",
+    "q410": "treasure",
+    "q411": "treasure",
+    "q412": "contract",
+    "q414": "treasure",
+    "forgotten-wolf-diagrams": "scavenger",
+    "drakenborg-redemption": "treasure",
+    "encounter-farmers-daughter-1": "encounter",
+    "encounter-farmers-daughter-2": "encounter"
+  },
+  "expectedTotal": 428,
+  "expectedTypes": {
+    "main": 87,
+    "side": 180,
+    "contract": 35,
+    "treasure": 57,
+    "scavenger": 29,
+    "encounter": 40
+  },
+  "referenceRawCounts": {
+    "Contract": 41,
+    "Treasure Hunt": 57,
+    "Scavenger Hunt": 35,
+    "Chance Encounter": 44
+  },
+  "xmlRawCounts": {
+    "contract": 35,
+    "treasure": 85,
+    "event": 42
+  },
+  "xml": [
+    {
+      "sourceId": 38,
+      "sourceName": "Devil by the Well",
+      "sourceType": "contract",
+      "targetId": "q38",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 54,
+      "sourceName": "Dirty Funds",
+      "sourceType": "treasure",
+      "targetId": "q54",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 55,
+      "sourceName": "Deserter Gold",
+      "sourceType": "treasure",
+      "targetId": "q55",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 56,
+      "sourceName": "Temerian Valuables",
+      "sourceType": "treasure",
+      "targetId": "q56",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 85,
+      "sourceName": "Scavenger Hunt: Viper School Gear",
+      "sourceType": "treasure",
+      "targetId": "q85",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 46,
+      "sourceName": "Deadly Crossing I",
+      "sourceType": "event",
+      "targetId": "q46",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 47,
+      "sourceName": "Deadly Crossing II",
+      "sourceType": "event",
+      "targetId": "q47",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 425,
+      "sourceName": "Deadly Crossing III",
+      "sourceType": "event",
+      "targetId": "q425",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 48,
+      "sourceName": "Highway Robbery",
+      "sourceType": "event",
+      "targetId": "q48",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 30,
+      "sourceName": "Highwayman's Cache",
+      "sourceType": "event",
+      "targetId": "q30",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 43,
+      "sourceName": "Harassing A Troll",
+      "sourceType": "event",
+      "targetId": "q43",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 50,
+      "sourceName": "Man's Best Friend",
+      "sourceType": "event",
+      "targetId": "q50",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 51,
+      "sourceName": "Sunken Treasure",
+      "sourceType": "treasure",
+      "targetId": "q51",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 52,
+      "sourceName": "An Unfortunate Turn of Events",
+      "sourceType": "treasure",
+      "targetId": "q52",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 53,
+      "sourceName": "Lost Goods",
+      "sourceType": "treasure",
+      "targetId": "q53",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 57,
+      "sourceName": "Queen Zuleyka's Treasure",
+      "sourceType": "treasure",
+      "targetId": "q57",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 59,
+      "sourceName": "Sunken Chest",
+      "sourceType": "treasure",
+      "targetId": "q59",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 29,
+      "sourceName": "Hazardous Goods II",
+      "sourceType": "event",
+      "targetId": "q49",
+      "action": "merge-stage",
+      "reason": "危险货物后续阶段，复用旧任务，不重复计数。"
+    },
+    {
+      "sourceId": 70,
+      "sourceName": "Caravan Attack",
+      "sourceType": "event",
+      "targetId": "q70",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 427,
+      "sourceName": "Looters I - Revolting Peasants",
+      "sourceType": "event",
+      "targetId": "q427",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 428,
+      "sourceName": "Looters II - Ghoulish Gatherers",
+      "sourceType": "event",
+      "targetId": "q428",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 71,
+      "sourceName": "Looters III - Toderas Bandits",
+      "sourceType": "event",
+      "targetId": "q71",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 86,
+      "sourceName": "Patrol Gone Missing",
+      "sourceType": "contract",
+      "targetId": "q86",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 95,
+      "sourceName": "Hidden from the World",
+      "sourceType": "treasure",
+      "targetId": "q95",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 100,
+      "sourceName": "Karmic Justice",
+      "sourceType": "event",
+      "targetId": "q100",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 110,
+      "sourceName": "Face Me if You Dare",
+      "sourceType": "event",
+      "targetId": "q110",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 113,
+      "sourceName": "Out of the Frying Pan, Into the Fire",
+      "sourceType": "treasure",
+      "targetId": "q113",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 114,
+      "sourceName": "The Dead Have No Defense",
+      "sourceType": "treasure",
+      "targetId": "q114",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 115,
+      "sourceName": "The Merry Widow",
+      "sourceType": "contract",
+      "targetId": "q115",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 116,
+      "sourceName": "Jenny o' the Woods",
+      "sourceType": "contract",
+      "targetId": "q116",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 134,
+      "sourceName": "Scavenger Hunt: Griffin School Gear",
+      "sourceType": "treasure",
+      "targetId": "q134",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 135,
+      "sourceName": "Swamp Thing",
+      "sourceType": "contract",
+      "targetId": "q135",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 154,
+      "sourceName": "The Things Men Do For Coin...",
+      "sourceType": "treasure",
+      "targetId": "q154",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 167,
+      "sourceName": "Coast of Wrecks",
+      "sourceType": "treasure",
+      "targetId": "q167",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 202,
+      "sourceName": "Don't Play with the Gods",
+      "sourceType": "treasure",
+      "targetId": "q202",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 225,
+      "sourceName": "A Costly Mistake",
+      "sourceType": "treasure",
+      "targetId": "q225",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 226,
+      "sourceName": "Tough Luck",
+      "sourceType": "treasure",
+      "targetId": "q226",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 234,
+      "sourceName": "Mysterious Tracks",
+      "sourceType": "contract",
+      "targetId": "q234",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 250,
+      "sourceName": "Phantom of the Trade Route",
+      "sourceType": "contract",
+      "targetId": "q250",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 266,
+      "sourceName": "The Beast of Honorton",
+      "sourceType": "contract",
+      "targetId": "q266",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 290,
+      "sourceName": "A Plea Ignored",
+      "sourceType": "treasure",
+      "targetId": "q290",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 314,
+      "sourceName": "Missing Brother",
+      "sourceType": "contract",
+      "targetId": "q314",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 72,
+      "sourceName": "Woodland Beast",
+      "sourceType": "contract",
+      "targetId": "q72",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 243,
+      "sourceName": "The Mystery of the Byways Murders",
+      "sourceType": "contract",
+      "targetId": "q243",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 433,
+      "sourceName": "Crow's Perch Fight",
+      "sourceType": "event",
+      "targetId": "q433",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 96,
+      "sourceName": "Shrieker",
+      "sourceType": "contract",
+      "targetId": "q96",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 27,
+      "sourceName": "At the Mercy of Strangers",
+      "sourceType": "event",
+      "targetId": "q27",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 221,
+      "sourceName": "Scavenger Hunt: Griffin School Gear Upgrade Diagrams - Part 1",
+      "sourceType": "treasure",
+      "targetId": "q221",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 222,
+      "sourceName": "Scavenger Hunt: Griffin School Gear Upgrade Diagrams - Part 2",
+      "sourceType": "treasure",
+      "targetId": "q222",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 216,
+      "sourceName": "Scavenger Hunt: Cat School Gear",
+      "sourceType": "treasure",
+      "targetId": "q216",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 253,
+      "sourceName": "Scavenger Hunt: Cat School Gear Upgrade Diagrams - Part 1",
+      "sourceType": "treasure",
+      "targetId": "q253",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 254,
+      "sourceName": "Scavenger Hunt: Cat School Gear Upgrade Diagrams - Part 2",
+      "sourceType": "treasure",
+      "targetId": "q254",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 293,
+      "sourceName": "Scavenger Hunt: Cat School Gear Upgrade Diagrams - Part 3",
+      "sourceType": "treasure",
+      "targetId": "q293",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 32,
+      "sourceName": "Strumpet In Distress",
+      "sourceType": "event",
+      "targetId": "q32",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 33,
+      "sourceName": "Suspicious Shakedown",
+      "sourceType": "event",
+      "targetId": "q33",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 34,
+      "sourceName": "The Flame Of Hatred",
+      "sourceType": "event",
+      "targetId": "q34",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 26,
+      "sourceName": "A Warm Welcome",
+      "sourceType": "event",
+      "targetId": "q26",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 28,
+      "sourceName": "Drunken Rabble",
+      "sourceType": "event",
+      "targetId": "q28",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 31,
+      "sourceName": "Racists of Novigrad I",
+      "sourceType": "event",
+      "targetId": "q31",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 94,
+      "sourceName": "Racists of Novigrad II",
+      "sourceType": "event",
+      "targetId": "q94",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 111,
+      "sourceName": "Face Me if You Dare II",
+      "sourceType": "event",
+      "targetId": "q110",
+      "action": "merge-stage",
+      "reason": "同一挑战者遭遇链的第二阶段，保留阶段坐标。"
+    },
+    {
+      "sourceId": 112,
+      "sourceName": "Face Me if You Dare III",
+      "sourceType": "event",
+      "targetId": "q110",
+      "action": "merge-stage",
+      "reason": "同一挑战者遭遇链的第三阶段，保留阶段坐标。"
+    },
+    {
+      "sourceId": 123,
+      "sourceName": "The Most Truest of Basilisks",
+      "sourceType": "event",
+      "targetId": "q123",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 155,
+      "sourceName": "An Elusive Thief",
+      "sourceType": "contract",
+      "targetId": "q155",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 163,
+      "sourceName": "Saving Moritz Diefenthal",
+      "sourceType": "event",
+      "targetId": "q163",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 165,
+      "sourceName": "Strangers in the Night",
+      "sourceType": "event",
+      "targetId": "q165",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 188,
+      "sourceName": "Never Trust Children",
+      "sourceType": "event",
+      "targetId": "q188",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 173,
+      "sourceName": "The Apiarian Phantom",
+      "sourceType": "contract",
+      "targetId": "q173",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 191,
+      "sourceName": "Deadly Delights",
+      "sourceType": "contract",
+      "targetId": "q191",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 204,
+      "sourceName": "The White Lady",
+      "sourceType": "contract",
+      "targetId": "q204",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 223,
+      "sourceName": "Blood Gold",
+      "sourceType": "treasure",
+      "targetId": "q223",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 239,
+      "sourceName": "Battlefield Loot",
+      "sourceType": "treasure",
+      "targetId": "q239",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 237,
+      "sourceName": "Witch Hunter Raids",
+      "sourceType": "event",
+      "targetId": "q237",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 255,
+      "sourceName": "Doors Slamming Shut",
+      "sourceType": "contract",
+      "targetId": "q255",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 265,
+      "sourceName": "Lord of the Wood",
+      "sourceType": "contract",
+      "targetId": "q265",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 272,
+      "sourceName": "The Oxenfurt Drunk",
+      "sourceType": "contract",
+      "targetId": "q272",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 313,
+      "sourceName": "Dowry",
+      "sourceType": "treasure",
+      "targetId": "q313",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 318,
+      "sourceName": "Tinker, Hunter, Soldier, Spy",
+      "sourceType": "treasure",
+      "targetId": "q318",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 319,
+      "sourceName": "From Ofier's Distant Shores",
+      "sourceType": "treasure",
+      "targetId": "q319",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 331,
+      "sourceName": "The Creature from Oxenfurt Forest",
+      "sourceType": "contract",
+      "targetId": "q331",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 341,
+      "sourceName": "The Cursed Chapel",
+      "sourceType": "treasure",
+      "targetId": "q341",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 342,
+      "sourceName": "The Royal Air Force",
+      "sourceType": "treasure",
+      "targetId": "q342",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 343,
+      "sourceName": "The Sword, Famine and Perfidy",
+      "sourceType": "treasure",
+      "targetId": "q343",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 365,
+      "sourceName": "The Secret Life of Count Romilly",
+      "sourceType": "treasure",
+      "targetId": "q365",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 364,
+      "sourceName": "A Surprise Inheritance",
+      "sourceType": "treasure",
+      "targetId": "q364",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 430,
+      "sourceName": "The Price of Passage",
+      "sourceType": "event",
+      "targetId": "q430",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 355,
+      "sourceName": "A Dark Legacy",
+      "sourceType": "treasure",
+      "targetId": "q355",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 278,
+      "sourceName": "Scavenger Hunt: Griffin School Gear Upgrade Diagrams - Part 3",
+      "sourceType": "treasure",
+      "targetId": "q278",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 327,
+      "sourceName": "Scavenger Hunt: Griffin School Gear Upgrade Diagrams - Part 4",
+      "sourceType": "treasure",
+      "targetId": "q327",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 451,
+      "sourceName": "Get the steel sword",
+      "sourceType": "treasure",
+      "targetId": "q327",
+      "action": "merge-stage",
+      "reason": "狮鹫学派第四部分的取钢剑目标，不是独立寻宝任务。"
+    },
+    {
+      "sourceId": 328,
+      "sourceName": "Scavenger Hunt: Cat School Gear Upgrade Diagrams - Part 4",
+      "sourceType": "treasure",
+      "targetId": "q328",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 238,
+      "sourceName": "Scavenger Hunt: Bear School Gear",
+      "sourceType": "treasure",
+      "targetId": "q238",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 210,
+      "sourceName": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 1",
+      "sourceType": "treasure",
+      "targetId": "q210",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 150,
+      "sourceName": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 2",
+      "sourceType": "treasure",
+      "targetId": "q150",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 305,
+      "sourceName": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 3",
+      "sourceType": "treasure",
+      "targetId": "q305",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 326,
+      "sourceName": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 4",
+      "sourceType": "treasure",
+      "targetId": "q326",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 35,
+      "sourceName": "Worthy of Trust",
+      "sourceType": "event",
+      "targetId": "q35",
+      "action": "retain-existing",
+      "reason": "旧目录已收录，保留 ID 和分类。"
+    },
+    {
+      "sourceId": 58,
+      "sourceName": "Freya Be Praised!",
+      "sourceType": "treasure",
+      "targetId": "q58",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 124,
+      "sourceName": "Not Only Eagles Dare",
+      "sourceType": "treasure",
+      "targetId": "q124",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 151,
+      "sourceName": "Nilfgaardian Treasure",
+      "sourceType": "treasure",
+      "targetId": "q151",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 152,
+      "sourceName": "X Marks the Spot",
+      "sourceType": "treasure",
+      "targetId": "q152",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 164,
+      "sourceName": "Siren's Call",
+      "sourceType": "event",
+      "targetId": "q164",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 166,
+      "sourceName": "Woe is Me",
+      "sourceType": "event",
+      "targetId": "q166",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 168,
+      "sourceName": "Family Fortune",
+      "sourceType": "treasure",
+      "targetId": "q168",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 169,
+      "sourceName": "Shortcut",
+      "sourceType": "treasure",
+      "targetId": "q169",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 170,
+      "sourceName": "Ironsides' Treasure",
+      "sourceType": "treasure",
+      "targetId": "q170",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 171,
+      "sourceName": "Pearls of the Coast",
+      "sourceType": "treasure",
+      "targetId": "q171",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 172,
+      "sourceName": "Precious Haul",
+      "sourceType": "treasure",
+      "targetId": "q172",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 187,
+      "sourceName": "Never Trust Children II",
+      "sourceType": "event",
+      "targetId": "q187",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 190,
+      "sourceName": "Inheritance",
+      "sourceType": "treasure",
+      "targetId": "q190",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 201,
+      "sourceName": "Call of the Wild",
+      "sourceType": "event",
+      "targetId": "q201",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 209,
+      "sourceName": "Farting Trolls",
+      "sourceType": "event",
+      "targetId": "q209",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 215,
+      "sourceName": "The Four Faces of Hemdall",
+      "sourceType": "event",
+      "targetId": "q215",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 271,
+      "sourceName": "Yustianna Disturbed",
+      "sourceType": "event",
+      "targetId": "q271",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 203,
+      "sourceName": "Strange Beast",
+      "sourceType": "contract",
+      "targetId": "q203",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 211,
+      "sourceName": "The Phantom of Eldberg",
+      "sourceType": "contract",
+      "targetId": "q211",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 217,
+      "sourceName": "Muire D'yaeblen",
+      "sourceType": "contract",
+      "targetId": "q217",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 227,
+      "sourceName": "Here Comes the Groom",
+      "sourceType": "contract",
+      "targetId": "q227",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 244,
+      "sourceName": "In the Heart of the Woods",
+      "sourceType": "contract",
+      "targetId": "q244",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 279,
+      "sourceName": "Missing Miners",
+      "sourceType": "contract",
+      "targetId": "q279",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 282,
+      "sourceName": "Dragon",
+      "sourceType": "contract",
+      "targetId": "q282",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 291,
+      "sourceName": "Missing Son",
+      "sourceType": "contract",
+      "targetId": "q291",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 292,
+      "sourceName": "Skellige's Most Wanted",
+      "sourceType": "contract",
+      "targetId": "q292",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 307,
+      "sourceName": "Hidden in the Depths",
+      "sourceType": "treasure",
+      "targetId": "q307",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 413,
+      "sourceName": "Unlucky's Treasure",
+      "sourceType": "treasure",
+      "targetId": "q413",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 261,
+      "sourceName": "The Griffin from the Highlands",
+      "sourceType": "contract",
+      "targetId": "q261",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 224,
+      "sourceName": "Ruins, Hidden Treasure, You Know...",
+      "sourceType": "treasure",
+      "targetId": "q224",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 189,
+      "sourceName": "Scavenger Hunt: Wolf School Gear",
+      "sourceType": "treasure",
+      "targetId": "q189",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 241,
+      "sourceName": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 1",
+      "sourceType": "treasure",
+      "targetId": "q241",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 242,
+      "sourceName": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 2",
+      "sourceType": "treasure",
+      "targetId": "q242",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 294,
+      "sourceName": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 3",
+      "sourceType": "treasure",
+      "targetId": "q294",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 295,
+      "sourceName": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 4",
+      "sourceType": "treasure",
+      "targetId": "q295",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 329,
+      "sourceName": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 5",
+      "sourceType": "treasure",
+      "targetId": "q329",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 330,
+      "sourceName": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 6",
+      "sourceType": "treasure",
+      "targetId": "q330",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 149,
+      "sourceName": "Trail of Echoes",
+      "sourceType": "event",
+      "targetId": "q149",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 432,
+      "sourceName": "Contract on a Witcher",
+      "sourceType": "event",
+      "targetId": "q432",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 429,
+      "sourceName": "Naughty Feathers",
+      "sourceType": "event",
+      "targetId": "q429",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 360,
+      "sourceName": "Bovine Blues",
+      "sourceType": "contract",
+      "targetId": "q360",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 344,
+      "sourceName": "Big Game Hunter",
+      "sourceType": "contract",
+      "targetId": "q344",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 356,
+      "sourceName": "The Black Widow",
+      "sourceType": "treasure",
+      "targetId": "q356",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 357,
+      "sourceName": "Coin Doesn't Stink",
+      "sourceType": "treasure",
+      "targetId": "q357",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 358,
+      "sourceName": "Don't Take Candy from a Stranger",
+      "sourceType": "treasure",
+      "targetId": "q358",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 359,
+      "sourceName": "The Last Exploits of Selina's Gang",
+      "sourceType": "treasure",
+      "targetId": "q359",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 379,
+      "sourceName": "Waiting for Goe and Doh",
+      "sourceType": "treasure",
+      "targetId": "q379",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 380,
+      "sourceName": "Applied Escapology",
+      "sourceType": "treasure",
+      "targetId": "q380",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 381,
+      "sourceName": "Scavenger Hunt: Grandmaster Manticore Gear",
+      "sourceType": "treasure",
+      "targetId": "q381",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 382,
+      "sourceName": "Scavenger Hunt: Grandmaster Ursine Gear",
+      "sourceType": "treasure",
+      "targetId": "q382",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 383,
+      "sourceName": "Scavenger Hunt: Grandmaster Feline Gear",
+      "sourceType": "treasure",
+      "targetId": "q383",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 384,
+      "sourceName": "Scavenger Hunt: Grandmaster Griffin Gear",
+      "sourceType": "treasure",
+      "targetId": "q384",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 385,
+      "sourceName": "Scavenger Hunt: Grandmaster Wolven Gear",
+      "sourceType": "treasure",
+      "targetId": "q385",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 386,
+      "sourceName": "Around the World in ... Eight Days",
+      "sourceType": "treasure",
+      "targetId": "q386",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 391,
+      "sourceName": "Spoontaneous Profits!",
+      "sourceType": "treasure",
+      "targetId": "q391",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 397,
+      "sourceName": "But Other Than That, How Did You Enjoy the Play?",
+      "sourceType": "treasure",
+      "targetId": "q397",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 398,
+      "sourceName": "What Was This About Again?",
+      "sourceType": "treasure",
+      "targetId": "q398",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 399,
+      "sourceName": "Equine Phantoms",
+      "sourceType": "contract",
+      "targetId": "q399",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 400,
+      "sourceName": "Feet as Cold as Ice",
+      "sourceType": "contract",
+      "targetId": "q400",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 402,
+      "sourceName": "The Curse of Carnarvon",
+      "sourceType": "treasure",
+      "targetId": "q402",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 409,
+      "sourceName": "The Inconstant Gardener",
+      "sourceType": "treasure",
+      "targetId": "q409",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 410,
+      "sourceName": "The Toussaint Prison Experiment",
+      "sourceType": "treasure",
+      "targetId": "q410",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 411,
+      "sourceName": "The Suffering of Young Francois",
+      "sourceType": "treasure",
+      "targetId": "q411",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 412,
+      "sourceName": "The Tufo Monster",
+      "sourceType": "contract",
+      "targetId": "q412",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    },
+    {
+      "sourceId": 414,
+      "sourceName": "Filibert Always Pays His Debts",
+      "sourceType": "treasure",
+      "targetId": "q414",
+      "action": "include",
+      "reason": "冻结 XML 中的独立命名任务／遭遇；社区分类，未逐条实机复核。"
+    }
+  ],
+  "reference": [
+    {
+      "sourceId": 6,
+      "sourceName": "Devil by the Well (2)",
+      "sourceType": "Contract",
+      "sourceLocation": "White Orchard",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Devil_by_the_Well?so=search",
+      "targetId": "q38",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Visit Temera after Devil by the Well for more lore about the fate of the villagers."
+      ]
+    },
+    {
+      "sourceId": 11,
+      "sourceName": "Dirty Funds (2)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "White Orchard",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Dirty_Funds?so=search",
+      "targetId": "q54",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 12,
+      "sourceName": "Deserter Gold (3)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "White Orchard",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Deserter_Gold?so=search",
+      "targetId": "q55",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 13,
+      "sourceName": "Temerian Valuables (4)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "White Orchard",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Temerian_Valuables?so=search",
+      "targetId": "q56",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 14,
+      "sourceName": "Viper Silver Sword (Basic) (6)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "White Orchard",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Viper_School_Gear?so=search",
+      "targetId": "q85",
+      "action": "merge-alias-or-stage",
+      "reason": "两把基础毒蛇剑图纸共属同一个套装寻宝任务。",
+      "notes": []
+    },
+    {
+      "sourceId": 15,
+      "sourceName": "Viper Steel Sword (Basic) (6)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "White Orchard",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Viper_School_Gear?so=search",
+      "targetId": "q85",
+      "action": "merge-alias-or-stage",
+      "reason": "两把基础毒蛇剑图纸共属同一个套装寻宝任务。",
+      "notes": []
+    },
+    {
+      "sourceId": 20,
+      "sourceName": "At the Mercy of Strangers",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/At_the_Mercy_of_Strangers?so=search",
+      "targetId": "q27",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-If you save John Verdun, there will be a second part to this quest. You can find him again north of Ursten (you\ncan check the map in the attached quest page link).",
+        "-If you save John Verden, during 'At the Mercy of Strangers', in the second spot that he appears, you can find a \nnote from a refugee at the back of his camp."
+      ]
+    },
+    {
+      "sourceId": 21,
+      "sourceName": "Man's Best Friend",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Man%27s_Best_Friend",
+      "targetId": "q50",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 22,
+      "sourceName": "Deadly Crossing (II)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Deadly_Crossing?so=search",
+      "targetId": "q47",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Deadly crossing 2 is triggered by going across when Nilfgaardian soldiers are alive, then coming back at \na later time.",
+        "-Where to find the powerful sword called Moonblade. It is South West of Mulbrydale, in the water West of \nthe bridge.",
+        "-The traveling merchant switches between 3 main locations. Here is a map of where they are. He has \ndialogue at each place. First spot is west of Crow's Perch near Blackbough.",
+        "-Second traveling merchant spot is east of Glory Gate.",
+        "-Third traveling merchant spot is near Carston."
+      ]
+    },
+    {
+      "sourceId": 23,
+      "sourceName": "Caravan Attack",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Caravan_Attack?so=search",
+      "targetId": "q70",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-The person you save from 'Caravan Attack' will show up as a shopkeeper at Crow's Perch."
+      ]
+    },
+    {
+      "sourceId": 24,
+      "sourceName": "Harassing a Troll",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Harassing_a_Troll?so=search",
+      "targetId": "q43",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-North West of the Inn of the Crossroads, you can pass through a Nilfgaardian camp and see a map of the \nContinent. The Redanians are on the opposite shore. On top of the hill, you can see a couple that have \ndied and are holding hands."
+      ]
+    },
+    {
+      "sourceId": 25,
+      "sourceName": "Looters (I)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Looters?so=search",
+      "targetId": "q427",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 26,
+      "sourceName": "Face Me if You Dare (I)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Face_Me_if_You_Dare!?so=search",
+      "targetId": "q110",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In 'Face me if you Dare', Ronvid is fighting for Lady Bilberry. You can find a notice on a nearby noticeboard that \nsays, \"My daughter Bilberry, a lovely girl and the apple of our eyes, died this year, the fourth of her short life. We \nburied her in the graveyard, by the crooked birch. Whoever wants to place a lump of earth or light a candle for \nher, that's where to go. — Butkins\"\nThis implies that Ronvid is Butkins and is fighting for his daughter that passed away."
+      ]
+    },
+    {
+      "sourceId": 32,
+      "sourceName": "Deadly Crossing (I)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Deadly_Crossing?so=search",
+      "targetId": "q46",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 33,
+      "sourceName": "Highway Robbery",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Highway_Robbery?so=search",
+      "targetId": "q48",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 34,
+      "sourceName": "Highwayman's Cache",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Highwayman's_Cache?so=search",
+      "targetId": "q30",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 36,
+      "sourceName": "Crow's Perch Fight",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://www.tivaprojects.com/witcher3map/v/index.html",
+      "targetId": "q433",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-This is the fight you have with the Baron during the huge fire. It is part of the 'Family Matters' questline."
+      ]
+    },
+    {
+      "sourceId": 38,
+      "sourceName": "Deadly Crossing (III)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Deadly_Crossing?so=search",
+      "targetId": "q425",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 41,
+      "sourceName": "The Most Truest of Basilisks",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Most_Truest_of_Basilisks?so=search",
+      "targetId": "q123",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In the Most Truest of Basilisks, once the fight begins, the Beast Tamer will take off running towards Novigrad Gate where he will cower in fear behind a small building. Geralt can follow him until he stops running, but \nwill not be able to interact with him."
+      ]
+    },
+    {
+      "sourceId": 52,
+      "sourceName": "Looters (II)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Looters?so=search",
+      "targetId": "q428",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Secret chest found North East of Codger's Quarry."
+      ]
+    },
+    {
+      "sourceId": 60,
+      "sourceName": "Looters (III)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Looters?so=search",
+      "targetId": "q71",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 70,
+      "sourceName": "Saving Farmer's Daughter From Soldiers (I)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://www.tivaprojects.com/witcher3map/v/index.html",
+      "targetId": "encounter-farmers-daughter-1",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-This is triggered after completing 'Return to Crookback Bog' and going back to Crow's Perch. Check the link to \nthe left to see the approximate location."
+      ]
+    },
+    {
+      "sourceId": 71,
+      "sourceName": "Saving Farmer's Daughter From Soldiers (II)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://www.tivaprojects.com/witcher3map/v/index.html",
+      "targetId": "encounter-farmers-daughter-2",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-This is triggered after completing 'Return to Crookback Bog' and going back to Crow's Perch. Check the link to \nthe left to see the approximate location."
+      ]
+    },
+    {
+      "sourceId": 84,
+      "sourceName": "The Griffin from the Highlands (24)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_Griffin_from_the_Highlands?so=search",
+      "targetId": "q261",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-This is associated with 'Components for an Armorer' (essentially the same quest, but a different name for it) \nand 'Master Armorers'."
+      ]
+    },
+    {
+      "sourceId": 85,
+      "sourceName": "Components for an Armorer (24)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://thewitcher3.wiki.fextralife.com/Contract:+Components+for+an+Armorer",
+      "targetId": "q261",
+      "action": "merge-alias-or-stage",
+      "reason": "参考目录明确写明这是高地狮鹫委托的另一名称。",
+      "notes": [
+        "-This is associated with 'The Griffin from the Highlands' (essentially the same quest, but a different name for it) \nand 'Master Armorers'."
+      ]
+    },
+    {
+      "sourceId": 86,
+      "sourceName": "The Beast of Honorton (25)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_Beast_of_Honorton",
+      "targetId": "q266",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-'The Beast of Honorton' turns into 'Where the Cat and Wolf Play'. 'The Beast of Honorton' disappears from the \nquest log and from the completed quest section."
+      ]
+    },
+    {
+      "sourceId": 89,
+      "sourceName": "Woodland Beast (6)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Woodland_Beast?so=search",
+      "targetId": "q72",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-If you decide to let the Scoia'tael be, but inform the captain about them, you can later be ambushed by\nVernossiel, the leader of the Scoia'tael group, close to the Glory Gate signpost."
+      ]
+    },
+    {
+      "sourceId": 90,
+      "sourceName": "Patrol Gone Missing (7)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Patrol_Gone_Missing?so=search",
+      "targetId": "q86",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-There is a Nilfgaardian area called The House of Respite that you can only enter while wearing \nNilfgaardian attire (can be the formal clothes). In this area, there is a section that you can't enter.",
+        "-In the House of Respite area in the Nilfgaardian camp, once you get in using Nilfgaardian armor, you can loot a \nchest with more Nilfgaardian armor, as well as a helmet that is next to the chest. This helmet can be put on as a \nmask in the inventory menu, and it appears as a helmet with the Nilfgaardian wings in-game. If you turn on the \nalternative nilfgaardian armor in the main menu option settings, your Geralt will be wearing the Season 1 Netflix \nNilfgaardian Armor set. Is it considered armor? At least it can be worn for a laugh!"
+      ]
+    },
+    {
+      "sourceId": 91,
+      "sourceName": "Shrieker (8)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Shrieker",
+      "targetId": "q96",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In 'Contract: Shrieker', you can talk to the boy, Symko, one final time after you complete the quest."
+      ]
+    },
+    {
+      "sourceId": 92,
+      "sourceName": "Jenny O' the Woods (10)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Jenny_o%27_the_Woods",
+      "targetId": "q116",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 93,
+      "sourceName": "The Merry Widow (10)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_Merry_Widow?so=search",
+      "targetId": "q115",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-After the Merry Widow contract is complete, wait a day or 2 and head back to the area you fought the \ngrave hag. You will see 2 statues that change places when you enter and exit the crypt. Their faces \nchange as well the further away you move from them. This is a reference to a Doctor Who episode."
+      ]
+    },
+    {
+      "sourceId": 94,
+      "sourceName": "Swamp Thing (12)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Swamp_Thing?so=search",
+      "targetId": "q135",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-During the Contract Swamp Thing, you will meet Leslav. He seems to have read a notice about peat and its \ndifferent properties. You can find this notice in the village of Lindenvale in Crookback Bog before speaking with \nhim. After completing the quest, you can find another notice that is looking for peat diggers now that the \nBog is clear."
+      ]
+    },
+    {
+      "sourceId": 95,
+      "sourceName": "Mysterious Tracks (20)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Mysterious_Tracks?so=search",
+      "targetId": "q234",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 96,
+      "sourceName": "The Mystery of the Byways Murders (22)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_Mystery_of_the_Byways_Murders?so=search",
+      "targetId": "q243",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In 'Contract:The Mystery of the Byways Murders', you can get different amounts of pay depending on who you \nspeak to first and what you say. To get the most coin, talk to the officer Milan first before going to Bywaters so \nthat you can haggle for more gold. When at the village and after rescuing the two survivors, say 'I'm nosy' to \nBytomir so that he doesn't know you were already hired to take care of the monster since he won't pay you if he \nknows you were hired. Once you kill the monster (after examining the soldiers' bodies, following the scent, and \ngoing into the tunnels under the hut), Bytomir will reward you with 210 coins. You can then return to Milan to \ncollect the reward from him as well."
+      ]
+    },
+    {
+      "sourceId": 97,
+      "sourceName": "Phantom of the Trade Route (23)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Phantom_of_the_Trade_Route?so=search",
+      "targetId": "q250",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 98,
+      "sourceName": "Missing Brother (33)",
+      "sourceType": "Contract",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Missing_Brother?so=search",
+      "targetId": "q314",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Loot the human body in the last chamber in the western side to get Gwyhyr. The body might be invisible,\nbut you can interact with the pile at the end."
+      ]
+    },
+    {
+      "sourceId": 99,
+      "sourceName": "Queen Zuleyka's Treasure (1)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Queen_Zuleyka's_Treasure?so=search",
+      "targetId": "q57",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 100,
+      "sourceName": "Lost Goods (1)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Lost_Goods?so=search",
+      "targetId": "q53",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 101,
+      "sourceName": "Out of the Frying Pan, Into the Fire (1)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Out_of_the_Frying_Pan,_into_the_Fire?so=search",
+      "targetId": "q113",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 102,
+      "sourceName": "Sunken Treasure (4)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Sunken_Treasure?so=search",
+      "targetId": "q51",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 103,
+      "sourceName": "An Unfortunate Turn of Events (4)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/An_Unfortunate_Turn_of_Events?so=search",
+      "targetId": "q52",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 104,
+      "sourceName": "Sunken Chest (4)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Sunken_Chest?so=search",
+      "targetId": "q59",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 105,
+      "sourceName": "Hidden from the World (7)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Hidden_from_the_World?so=search",
+      "targetId": "q95",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 106,
+      "sourceName": "The Dead Have No Defense (9)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Dead_Have_No_Defense?so=search",
+      "targetId": "q114",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-You can find a man playing the flute in a boat near the docks south of Byways."
+      ]
+    },
+    {
+      "sourceId": 107,
+      "sourceName": "The Things Men Do For Coin... (12)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Things_Men_Do_For_Coin...?so=search",
+      "targetId": "q154",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 108,
+      "sourceName": "Don't Play With Gods (15)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Don't_Play_with_the_Gods?so=search",
+      "targetId": "q202",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-After clearing the abandoned village in the Mire Landing (Cestersover), you can run into a stuttering character \nfrom the Witcher 1 (South of Byways).",
+        "-Interesting dead tree south west of Fyke Isle. It has many buried metal faces surrounding it, along with a \nchest that cannot be accessed."
+      ]
+    },
+    {
+      "sourceId": 109,
+      "sourceName": "Costly Mistake (18)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/A_Costly_Mistake",
+      "targetId": "q225",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 110,
+      "sourceName": "Blood Gold (18)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Blood_Gold?so=search",
+      "targetId": "q223",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 111,
+      "sourceName": "Tough Luck (18)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Tough_Luck?so=search",
+      "targetId": "q226",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 112,
+      "sourceName": "A Plea Ignored (28)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/A_Plea_Ignored?so=search",
+      "targetId": "q290",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 113,
+      "sourceName": "Dowry (32)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Dowry?so=search",
+      "targetId": "q313",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 114,
+      "sourceName": "Griffin School Gear (Basic) (11)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Griffin_School_Gear?so=search",
+      "targetId": "q134",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Do a Warm Welcome before looking for Witcher George's Griffin diagrams (the peasant you save \nwill tell you where it is).",
+        "-In the Abandoned Tower, West of Heatherton, you can find two chests that are somewhat hidden."
+      ]
+    },
+    {
+      "sourceId": 115,
+      "sourceName": "Griffin School Part 1 (18)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Griffin_School_Gear?so=search",
+      "targetId": "q221",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 116,
+      "sourceName": "Griffin School Part 2 (18)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Griffin_School_Gear?so=search",
+      "targetId": "q222",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 117,
+      "sourceName": "Forgotten Wolf School Gear (Basic) (20)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/In_the_Eternal_Fire's_Shadow?so=search",
+      "targetId": "eternal",
+      "action": "merge-component",
+      "reason": "参考目录明确不是独立任务：基础遗忘狼图纸是永恒之火的阴影奖励。",
+      "notes": [
+        "-This is not technically a quest, as the diagrams for the Forgotten Wolf School Gear (Basic) are given to you \nupon completion of 'In the Eternal Fire'."
+      ]
+    },
+    {
+      "sourceId": 118,
+      "sourceName": "Wolf School Part 1 (21)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Wolf_School_Gear?so=search",
+      "targetId": "q241",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 119,
+      "sourceName": "Wolf School Part 5 (34)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Wolf_School_Gear?so=search",
+      "targetId": "q329",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 120,
+      "sourceName": "Cat School Part 2 (23)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Cat_School_Gear?so=search",
+      "targetId": "q254",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 121,
+      "sourceName": "Cat School Part 3 (29)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Velen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Cat_School_Gear?so=search",
+      "targetId": "q293",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 126,
+      "sourceName": "Racists of Novigrad (I)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Racists_of_Novigrad?so=search",
+      "targetId": "q31",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Visit crematorium (north of Oxenfurt Gate) at night to have it feel creepier. Listen to more dialogue during the \nday and meet an apothecary that was in the Witcher 2."
+      ]
+    },
+    {
+      "sourceId": 129,
+      "sourceName": "Strumpet in Distress",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Strumpet_in_Distress?so=search",
+      "targetId": "q32",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Brief interaction between a role playing couple outside the Novigrad docks @4:01 \n(this is time sensitive and will fail once you've passed by the area)."
+      ]
+    },
+    {
+      "sourceId": 130,
+      "sourceName": "Racists of Novigrad (II)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Racists_of_Novigrad?so=search",
+      "targetId": "q94",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Complete after 'Racists of Novigrad (I)' and before 'An Elusive Thief'."
+      ]
+    },
+    {
+      "sourceId": 131,
+      "sourceName": "Karmic Justice",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Karmic_Justice?so=search",
+      "targetId": "q100",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Complete Karmic Justice before burning down the witch hunter's headquarters with Triss \nduring Count Reuven's Treasure.",
+        "-If Karmic Justice isn't triggering, meditate until it's between 10pm and 1am. It may only occur at these times."
+      ]
+    },
+    {
+      "sourceId": 132,
+      "sourceName": "Face Me if You Dare (II)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Face_Me_if_You_Dare!?so=search",
+      "targetId": "q110",
+      "action": "merge-alias-or-stage",
+      "reason": "同一遭遇的阶段／重复目录入口归并，不重复统计。",
+      "notes": []
+    },
+    {
+      "sourceId": 133,
+      "sourceName": "Drunken Rabble",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Drunken_Rabble?so=search",
+      "targetId": "q28",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Find the drunk barber in Novigrad @15:30 (He will give you the wrong haircut the first time around)."
+      ]
+    },
+    {
+      "sourceId": 135,
+      "sourceName": "Suspicious Shakedown (10)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Suspicious_Shakedown",
+      "targetId": "q33",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-'Suspicious Shakedown' is only available after 'Pyres of Novigrad'."
+      ]
+    },
+    {
+      "sourceId": 136,
+      "sourceName": "Witch Hunter Raids (I)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Witch_Hunter_Raids?so=search",
+      "targetId": "q237",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Complete before 'Now or Never' and it is only available AFTER 'Pyres of Novigrad'.",
+        "-Witch Hunter Raids, Find unique encounter near Glory Gate @0:45 A bunch of witch hunters \nknocking on a door (Available after the rat catching part of the Pyres of Novigrad quest with Triss, but \nunavailable after you help the mages out of Novigrad).",
+        "-Crazy cat lady outside of Novigrad has a diary that can start the hunt for the feline armor. You can follow\nher around and she'll say odd things. She also says she can't sleep and can be found outside at night. If you\nwait until around 10pm, leave the area slightly and come back, you will find a lot of dead rats near all of the cats.",
+        "-The schedule of Ciri's performer friends are quite elaborate. Valdo is the first to get up and sits by the bank. \nThe group set up the stage throughout the day before the performance at night.",
+        "-Romantic bench outside of Novigrad @2:00 (meditate to see multiple couples come by)."
+      ]
+    },
+    {
+      "sourceId": 137,
+      "sourceName": "The Flame of Hatred (I)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Flame_of_Hatred?so=search",
+      "targetId": "q34",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 138,
+      "sourceName": "Never Trust Children (I)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Never_Trust_Children?so=search",
+      "targetId": "q188",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-This quest is proximity sensitive and will fail if you leave the area."
+      ]
+    },
+    {
+      "sourceId": 140,
+      "sourceName": "The Flame of Hatred (II)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Flame_of_Hatred?so=search",
+      "targetId": "q34",
+      "action": "merge-alias-or-stage",
+      "reason": "同一遭遇的阶段／重复目录入口归并，不重复统计。",
+      "notes": []
+    },
+    {
+      "sourceId": 153,
+      "sourceName": "A Warm Welcome",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/A_Warm_Welcome?so=search",
+      "targetId": "q26",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Do a 'Warm Welcome' before looking for Witcher George's Griffin diagrams (the peasant you save \nwill tell you where it is)."
+      ]
+    },
+    {
+      "sourceId": 154,
+      "sourceName": "Strangers in the Night",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Strangers_in_the_Night_(The_Witcher_3)?so=search",
+      "targetId": "q165",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In 'Strangers in the Night', the merchant may in fact be a Nilfgaardian spy because the soldier \nfinds Nilfgaard currency on the merchant's body afterwards."
+      ]
+    },
+    {
+      "sourceId": 166,
+      "sourceName": "Face Me if You Dare (III)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Face_Me_if_You_Dare!?so=search",
+      "targetId": "q110",
+      "action": "merge-alias-or-stage",
+      "reason": "同一遭遇的阶段／重复目录入口归并，不重复统计。",
+      "notes": []
+    },
+    {
+      "sourceId": 171,
+      "sourceName": "Witch Hunter Raids (II)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://www.tivaprojects.com/witcher3map/v/index.html",
+      "targetId": "q237",
+      "action": "merge-alias-or-stage",
+      "reason": "同一遭遇的阶段／重复目录入口归并，不重复统计。",
+      "notes": [
+        "-'Witch Hunter Raids (II) can be triggered only after 'A Matter of Life and Death' and must be completed before\n'Now or Never'."
+      ]
+    },
+    {
+      "sourceId": 178,
+      "sourceName": "The Price of Passage (I)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Price_of_Passage?so=search",
+      "targetId": "q430",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-To get all 3 'The Price of Passage' quests to trigger, you must do the following: You have to give the coin to the \nguards the first time during the \"drunk\" section of 'Contract: The Oxenfurt Drunk'. Refuse to pay the second time, \nand then you can encounter them again a third time East of Oxenfurt. Wait a few days between each encounter \nto trigger the next one. The last encounter might only be at night.",
+        "-This can be found during the 'drunk' section of 'Contract: The Oxenfurt Drunk'. Give the coin to the guards for\nthis quest if you want 'The Price of Passage (II)' to trigger."
+      ]
+    },
+    {
+      "sourceId": 179,
+      "sourceName": "The Oxenfurt Drunk (26)",
+      "sourceType": "Contract",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_Oxenfurt_Drunk?so=search",
+      "targetId": "q272",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-During the Oxenfurt Drunk, you will meet 2 soldiers. You can meet them a second time after the \nquest is over. @9:54. Make sure to meet the 2 soldiers right after Geralt sings in the first highlighted section. \nThey are West of the first highlighted section and the event is the chance encounter \"The Price of Passage (I)\". \nYou can likely trigger it after the quest, but I have not tried. ",
+        "-Oxenfurt, start Rough Neighbourhood, at night and after the Oxenfurt Drunk Contract. \nDo not use your sword, or the quest will not continue properly."
+      ]
+    },
+    {
+      "sourceId": 180,
+      "sourceName": "The Price of Passage (II)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Price_of_Passage?so=search",
+      "targetId": "q430",
+      "action": "merge-alias-or-stage",
+      "reason": "同一遭遇的阶段／重复目录入口归并，不重复统计。",
+      "notes": [
+        "-The \"drunk\" section of 'Contract: The Oxenfurt Drunk' must be completed before this quest becomes available.\nIf you want 'The Price of Passage (III)' to trigger, refuse to pay the guards this time."
+      ]
+    },
+    {
+      "sourceId": 181,
+      "sourceName": "The Price of Passage (III)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Price_of_Passage?so=search",
+      "targetId": "q430",
+      "action": "merge-alias-or-stage",
+      "reason": "同一遭遇的阶段／重复目录入口归并，不重复统计。",
+      "notes": [
+        "-The \"drunk\" section of 'Contract: The Oxenfurt Drunk' must be completed before this quest becomes available.\nThis quest may only appear at night. Finish fighting the soldiers with your fists. "
+      ]
+    },
+    {
+      "sourceId": 183,
+      "sourceName": "The Creature from the Oxenfurt Forest (35)",
+      "sourceType": "Contract",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_Creature_from_Oxenfurt_Forest?so=search",
+      "targetId": "q331",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-'Contract: Creature from Oxenfurt Forest', make sure to loot the letter to show the guard in the quest to get\nsome unique dialogue. He will be the same guard that ends up holding Quinto prisoner in Hearts of Stone.",
+        "-Do 'The Creature from Oxenfurt Forest' quest before 'the Heist'. If you showed the guard holding Quinto the \nnote that you found, he will be extra annoyed when you meet him again during 'The Heist'.",
+        "-North East of the Herbalist's Hut near Oxenfurt, you can find an assortment of large stones that are somewhat \nsimilar to Stonehenge. There is also an image of a hanged witch on one of the rocks."
+      ]
+    },
+    {
+      "sourceId": 196,
+      "sourceName": "An Elusive Thief (13)",
+      "sourceType": "Contract",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_An_Elusive_Thief?so=search",
+      "targetId": "q155",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-If you want to be able to craft all of the possible decoctions, you must kill the doppler, since this is the only \nopportunity to get a doppler mutagen for the doppler decoction."
+      ]
+    },
+    {
+      "sourceId": 197,
+      "sourceName": "The Apiarian Phantom (14)",
+      "sourceType": "Contract",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_Apiarian_Phantom?so=search",
+      "targetId": "q173",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In Honeyfill Meadworks, you can find many halfling sized items in and around the house.",
+        "-One of the halflings in the northern end of Honeyfill Meadows will say \"Don't dare call me Bagginson\" which \nreferences Bilbo and Frodo Baggins from the Lord of the Rings."
+      ]
+    },
+    {
+      "sourceId": 198,
+      "sourceName": "The White Lady (16)",
+      "sourceType": "Contract",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_White_Lady?so=search",
+      "targetId": "q204",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 199,
+      "sourceName": "Doors Slamming Shut (24)",
+      "sourceType": "Contract",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Doors_Slamming_Shut?so=search",
+      "targetId": "q255",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-During Doors Slamming Shut, if you say you are from the School of the Griffin, you can haggle for \nmore money.",
+        "-During the contract: Doors Slamming Shut, Kurt Dysart (the quest giver) will die at a later time if the supports \nbreak when fighting the elemental. If they do not break, or only one breaks, Kurt will survive. If you break the \npillars, when you return to the house, you will get an extra cutscene where you learn he actually died. \nUse the strategy @13:49 to fight the elemental in the corner to try and prevent the supports from breaking."
+      ]
+    },
+    {
+      "sourceId": 200,
+      "sourceName": "Lord of the Wood (25)",
+      "sourceType": "Contract",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Lord_of_the_Wood?so=search",
+      "targetId": "q265",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In the Cunny of the Goose brothel, there is a secret area behind a curtain @14:13 (you can't \ngo into this area, but you can observe it from a window outside).",
+        "-When doing the 'Lord of the Wood', after speaking with the Dwarf, when exiting the building, you will see \na murder of crows leaving. The leshen has them as spies and will now know you are coming."
+      ]
+    },
+    {
+      "sourceId": 201,
+      "sourceName": "Coast of Wrecks (13)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Coast_of_Wrecks_(quest)?so=search",
+      "targetId": "q167",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 202,
+      "sourceName": "Battlefield Loot (20)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Battlefield_Loot?so=search",
+      "targetId": "q239",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 203,
+      "sourceName": "Cat School Gear (Basic) (17)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Cat_School_Gear?so=search",
+      "targetId": "q216",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Crazy cat lady outside of Novigrad has a diary that can start the hunt for the feline armor. You can follow\nher around and she'll say odd things."
+      ]
+    },
+    {
+      "sourceId": 204,
+      "sourceName": "Cat School Part 1 (23)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Cat_School_Gear?so=search",
+      "targetId": "q253",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 223,
+      "sourceName": "Yustianna Disturbed",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Yustianna_Disturbed?so=search",
+      "targetId": "q271",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In Yustianna's Grotto, you will encounter some bandits. You can trigger a specific cutscene if you enter \na certain way. When you enter the cave, there will be two paths, one that requires the eye of \nNahenali and the other is a regular path. Even though you would want to use the hidden path, you will get \ninteresting dialogue if you take the normal route to the bandits. The bandits will attack right away if you use \nthe hidden path. They will also attack if you give them money and then return."
+      ]
+    },
+    {
+      "sourceId": 225,
+      "sourceName": "Call of the Wild",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Call_of_the_Wild?so=search",
+      "targetId": "q201",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-'Call of the Wild' can only be triggered at night."
+      ]
+    },
+    {
+      "sourceId": 226,
+      "sourceName": "Siren's Call",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Siren's_Call?so=search",
+      "targetId": "q164",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Sailing the seas at night, you can see a ghost ship between 1am and 3am at the location in the video. ",
+        "-You can see whales in full while underwater. In the video, it also shows the spawning location of the whales."
+      ]
+    },
+    {
+      "sourceId": 227,
+      "sourceName": "Never Trust Children (II)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Never_Trust_Children?so=search",
+      "targetId": "q187",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-This quest is proximity sensitive and will fail if you leave the area."
+      ]
+    },
+    {
+      "sourceId": 228,
+      "sourceName": "The Phantom of Eldberg (17)",
+      "sourceType": "Contract",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_Phantom_of_Eldberg?so=search",
+      "targetId": "q211",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-You must complete 'The Phantom of Eldberg' in order to start a 'Stranger in a Strange Land'.",
+        "-How to save Jorund without sacrificing the children of the Jarls (the 2 men that attack you in the inn). Jorund \nis the one that triggers the 'Phantom of Eldberg' quest. One way to do this is to complete the quest AFTER the \nmassacre at Kaer Trolde. Nobody antagonizes you afterwards, and Jorund lives. It is NOT recommended to do \nthis though because certain characters die during the massacre, and if you do that first, you will miss out on \nsome interesting side quests. So unfortunately, it is best not to save Jorund and to just watch this video instead!",
+        "-In 'Phantom of Eldberg', you can find an interaction between two kids looking at a skeleton. It is on the rock \njust west of the boat symbol which is found north of Arinbjorn. The boy's name is Ove and might be the son\nof another man named Ove that was involved with some piracy business.",
+        "-In 'The Phantom of Eldberg', south of the Eldberg Lighthouse, the bridge has been fixed in the update. There \nused to be a gap that would frequently cause you to dive into the water below, but it is now fully patched up, \nliterally."
+      ]
+    },
+    {
+      "sourceId": 232,
+      "sourceName": "Farting Trolls",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Farting_Trolls?so=search",
+      "targetId": "q209",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Find the farting trolls."
+      ]
+    },
+    {
+      "sourceId": 235,
+      "sourceName": "Deadly Delights (15)",
+      "sourceType": "Contract",
+      "sourceLocation": "Novigrad/Oxenfurt",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Deadly_Delights?so=search",
+      "targetId": "q191",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Spare her to get the sword Maugrim.",
+        "-In the contract, 'Deadly Delights', you will meet a succubus named Salma. You can also find her name in the \ncreepy cult house found near one of the sign posts in White Orchard.",
+        "-Before entering Crippled Kate's brothel again after this quest, (Out on your Arse becomes available after\nDeadly Delights contract), complete the Lord of Undvik first so you can resolve the matter peacefully (option\n3 in the dialogue choices)."
+      ]
+    },
+    {
+      "sourceId": 237,
+      "sourceName": "Woe is Me",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Woe_is_Me?so=search",
+      "targetId": "q166",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 240,
+      "sourceName": "The Four Faces of Hemdall",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Four_Faces_of_Hemdall?so=search",
+      "targetId": "q215",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Location of the shrines to change the weather in Skellige @0:21",
+        "-Skellige land drawings. There are 10 in the full video."
+      ]
+    },
+    {
+      "sourceId": 262,
+      "sourceName": "Strange Beast (16)",
+      "sourceType": "Contract",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Strange_Beast?so=search",
+      "targetId": "q203",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-The 'Strange Beast' contract in Skellige might be the highest paying contract besides the ones in Blood and \nWine. This may be because of Yennefer, as it takes place in Larvik, and that's where she stays for a time. She \nmay have influenced the bounty price to help Geralt secretly."
+      ]
+    },
+    {
+      "sourceId": 263,
+      "sourceName": "Muire D'yaeblen (18)",
+      "sourceType": "Contract",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Muire_D%27yaeblen?so=search",
+      "targetId": "q217",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 264,
+      "sourceName": "Here Comes the Groom (19)",
+      "sourceType": "Contract",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Here_Comes_the_Groom?so=search",
+      "targetId": "q227",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 265,
+      "sourceName": "In the Heart of the Woods (22)",
+      "sourceType": "Contract",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/In_the_Heart_of_the_Woods?so=search",
+      "targetId": "q244",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Accept Sven's offer if you want to successfully complete the contract. Unfortunately, no matter what you do,\nthere will always be a red x for one of the objectives, even if you do part of each option."
+      ]
+    },
+    {
+      "sourceId": 266,
+      "sourceName": "Missing Miners (27)",
+      "sourceType": "Contract",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Missing_Miners?so=search",
+      "targetId": "q279",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 267,
+      "sourceName": "Dragon (28)",
+      "sourceType": "Contract",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Dragon?so=search",
+      "targetId": "q282",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-During the 'Dragon' contract, Geralt will make a comment if you are able to get the sheep to survive the \nencounter.",
+        "-During the 'Dragon' contract, if you tell the truth about the monster, you will be paid only half of what you \nagreed on."
+      ]
+    },
+    {
+      "sourceId": 268,
+      "sourceName": "Skellige's Most Wanted (29)",
+      "sourceType": "Contract",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Skellige%27s_Most_Wanted?so=search",
+      "targetId": "q292",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Show proof that you have helped monsters to get Nekker hide boots.",
+        "-During 'Skellige's Most Wanted', you can negotiate for the highest rate because the man is actually a doppler \nand believes he'll get the money back anyway."
+      ]
+    },
+    {
+      "sourceId": 269,
+      "sourceName": "Missing Son (29)",
+      "sourceType": "Contract",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Missing_Son?so=search",
+      "targetId": "q291",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-'Missing Son' contract aftermath, after the news is given, follow the father. He will go to the \ndock and start weeping."
+      ]
+    },
+    {
+      "sourceId": 270,
+      "sourceName": "Freya Be Praised! (4)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Freya_Be_Praised!?so=search",
+      "targetId": "q58",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 271,
+      "sourceName": "Not Only Eagles Dare (10)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Not_Only_Eagles_Dare?so=search",
+      "targetId": "q124",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 272,
+      "sourceName": "X Marks the Spot (12)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/X_Marks_the_Spot?so=search",
+      "targetId": "q152",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 273,
+      "sourceName": "Family Fortune (13)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Family_Fortune?so=search",
+      "targetId": "q168",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 274,
+      "sourceName": "Pearls of the Coast (13)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Pearls_of_the_Coast?so=search",
+      "targetId": "q171",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 275,
+      "sourceName": "Nilfgaardian Treasure (13)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Nilfgaardian_Treasure?so=search",
+      "targetId": "q151",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 276,
+      "sourceName": "Precious Haul (13)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Precious_Haul?so=search",
+      "targetId": "q172",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 277,
+      "sourceName": "Shortcut (13)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Shortcut?so=search",
+      "targetId": "q169",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 278,
+      "sourceName": "Ironsides' Treasure (13)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Ironsides'_Treasure?so=search",
+      "targetId": "q170",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 279,
+      "sourceName": "Inheritance (14)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Inheritance?so=search",
+      "targetId": "q190",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 280,
+      "sourceName": "Ruins, Hidden Treasure, You Know... (18)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Ruins,_Hidden_Treasure,_You_Know...?so=search",
+      "targetId": "q224",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 281,
+      "sourceName": "Hidden in the Depths (31)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Hidden_in_the_Depths?so=search",
+      "targetId": "q307",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 282,
+      "sourceName": "Unlucky's Treasure (48)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Unlucky's_Treasure?so=search",
+      "targetId": "q413",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 283,
+      "sourceName": "Ursine School Gear (Basic) (20)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Bear_School_Gear?so=search",
+      "targetId": "q238",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 284,
+      "sourceName": "Ursine School Part 1 (25)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Bear_School_Gear?so=search",
+      "targetId": "q210",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 285,
+      "sourceName": "Ursine School Part 2 (25)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Bear_School_Gear?so=search",
+      "targetId": "q150",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Find Tyrion Lannister in the sky cells."
+      ]
+    },
+    {
+      "sourceId": 286,
+      "sourceName": "Ursine School Part 3 (30)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Bear_School_Gear?so=search",
+      "targetId": "q305",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 287,
+      "sourceName": "Ursine School Part 4 (34)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Bear_School_Gear?so=search",
+      "targetId": "q326",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 288,
+      "sourceName": "Cat School Part 4 (34)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Cat_School_Gear?so=search",
+      "targetId": "q328",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 289,
+      "sourceName": "Griffin School Part 3 (26)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Griffin_School_Gear?so=search",
+      "targetId": "q278",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Do a 'Warm Welcome' before looking for Witcher George's Griffin diagrams (the peasant you save \nwill tell you where it is)."
+      ]
+    },
+    {
+      "sourceId": 290,
+      "sourceName": "Griffin School Part 4 (34)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Griffin_School_Gear?so=search",
+      "targetId": "q327",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Do a 'Warm Welcome' before looking for Witcher George's Griffin diagrams (the peasant you save \nwill tell you where it is)."
+      ]
+    },
+    {
+      "sourceId": 291,
+      "sourceName": "Wolf School Part 3 (29)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Wolf_School_Gear?so=search",
+      "targetId": "q294",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 292,
+      "sourceName": "Wolf School Part 6 (34)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Skellige",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Wolf_School_Gear?so=search",
+      "targetId": "q330",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 306,
+      "sourceName": "Trail of Echoes",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Kaer Morhen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Trail_of_Echoes?so=search",
+      "targetId": "q149",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 313,
+      "sourceName": "Wolf School Gear (Basic) (14)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Kaer Morhen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Wolf_School_Gear?so=search",
+      "targetId": "q189",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 314,
+      "sourceName": "Wolf School Part 2 (21)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Kaer Morhen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Wolf_School_Gear?so=search",
+      "targetId": "q242",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 315,
+      "sourceName": "Wolf School Part 4 (29)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Kaer Morhen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Wolf_School_Gear?so=search",
+      "targetId": "q295",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 316,
+      "sourceName": "Forgotten Wolf School Gear Part 1 (34)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Kaer Morhen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Forgotten_Wolf_School_Gear_Diagrams?so=search",
+      "targetId": "forgotten-wolf-diagrams",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 317,
+      "sourceName": "Forgotten Wolf School Gear Part 2 (40)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Kaer Morhen",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Forgotten_Wolf_School_Gear?so=search",
+      "targetId": "forgotten-wolf-diagrams",
+      "action": "merge-component",
+      "reason": "装备升级等级条目，链接指向装备总览；归并唯一明确命名的遗忘狼图纸寻宝。",
+      "notes": []
+    },
+    {
+      "sourceId": 345,
+      "sourceName": "The Cursed Chapel (34)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Cursed_Chapel?so=search",
+      "targetId": "q341",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Complete this during 'Dead Man's Party' to get unique dialogue from Vlodimir.",
+        "-In 'The Cursed Chapel', the tree behind where Ornesta was likely buried, has a tree branch that has been cut. \nThis may be the branch that she hanged herself from. You can also find the 3 skeletons of the daughters by the \npool of water in the center of the area."
+      ]
+    },
+    {
+      "sourceId": 347,
+      "sourceName": "Viper Armour Set (34)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Viper_School_Gear?so=search",
+      "targetId": "q320",
+      "action": "merge-component",
+      "reason": "拍卖时向伯爵夫人购买图纸的活动，归入芝麻开门，不另建寻宝。",
+      "notes": [
+        "-Purchase Viper armor sets from the Countess at the auction house.",
+        "-Here is a video link showing all the dye options for the Viper School Gear."
+      ]
+    },
+    {
+      "sourceId": 348,
+      "sourceName": "Venomous Viper Steel Sword (34)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Viper_School_Gear?so=search",
+      "targetId": "q320",
+      "action": "merge-component",
+      "reason": "芝麻开门金库的装备组件，归入该任务，未当作独立任务。",
+      "notes": [
+        "-This is found in the vault during 'Open Sesame'."
+      ]
+    },
+    {
+      "sourceId": 354,
+      "sourceName": "A Dark Legacy (34)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/A_Dark_Legacy?so=search",
+      "targetId": "q355",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Bird at the auction can be disassembled to start this quest."
+      ]
+    },
+    {
+      "sourceId": 357,
+      "sourceName": "Venomous Viper Silver Sword  (36)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Viper_School_Gear?so=search",
+      "targetId": "q361",
+      "action": "merge-component",
+      "reason": "石之心最终谜题场景中的装备组件，归入最终任务；剧透内容只在展开后展示。",
+      "notes": [
+        "-During Gaunter's riddle at the end of the expansion @7:14."
+      ]
+    },
+    {
+      "sourceId": 364,
+      "sourceName": "Tinker, Hunter, Soldier, Spy (33)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Tinker,_Hunter,_Soldier,_Spy?so=search",
+      "targetId": "q318",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 365,
+      "sourceName": "From Ofier's Distant Shores (33)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/From_Ofier's_Distant_Shores?so=search",
+      "targetId": "q319",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-You can purchase the Ofieri equipment set (scale armor, boots, gauntlets, sharovary, steel saber, silver sword, \nand crossbow) as well as the Ofieri horse gear (saddle, horse blinders, and saddlebags) from the Ofieri \nmerchant."
+      ]
+    },
+    {
+      "sourceId": 366,
+      "sourceName": "The Royal Air Force (36)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Royal_Air_Force?so=search",
+      "targetId": "q342",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-All the harpies in 'The Royal Air Force' wear helmets. The main scientist also caused the infestation of giant\nspiders in Hedel to the East.",
+        "-Locations of the New Moon Armor (end of 'The Heist' quest, cursed chapel, near Hedel, and during 'The \nRoyal Air Force')."
+      ]
+    },
+    {
+      "sourceId": 367,
+      "sourceName": "The Sword, Famine and Perfidy (36)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Sword,_Famine_and_Perfidy?so=search",
+      "targetId": "q343",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 368,
+      "sourceName": "The Secret Life of Count Romilly (38)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Secret_Life_of_Count_Romilly?so=search",
+      "targetId": "q365",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 369,
+      "sourceName": "The Drakenborg Redemption (38)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Drakenborg_Redemption?so=search",
+      "targetId": "drakenborg-redemption",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Southeast of the Hunter's Cottage signpost, near the herbalist hut, you can talk to a man who's locked himself \ninside an outhouse. He'll have varying pieces of dialogue and if you zoom in, it looks like he's writing something."
+      ]
+    },
+    {
+      "sourceId": 370,
+      "sourceName": "A Surprise Inheritance (38)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Hearts of Stone",
+      "sourceUrl": "https://witcher.fandom.com/wiki/A_Surprise_Inheritance?so=search",
+      "targetId": "q364",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 387,
+      "sourceName": "The Last Exploits of Selina's Gang (37)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Last_Exploits_of_Selina's_Gang?so=search",
+      "targetId": "q359",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Get the note from the lake shore to start this quest BEFORE doing 'Till Death Do You Part'. There is a chest\nin the cemetary of 'Till Death Do You Part' that if you loot it before starting 'The Last Exploits of Selina's Gang',\nthen it will be glitched and you won't be able to complete the treasure hunt. This might be fixed in the next gen\nupgrade, but it was a problem I had in a previous playthrough. \n",
+        "-You can find a grave in Toussaint that might be referring to Ciri. The name on the stone is L'Hirondelle, which \ntranslates to The Swallow. It will actually be there no matter what ending you get in the game and might be \nreferring to 'False Ciri', who is mentioned in the books, but not in the games."
+      ]
+    },
+    {
+      "sourceId": 389,
+      "sourceName": "Bovine Blues (38)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_Bovine_Blues?so=search",
+      "targetId": "q360",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In the quarry, you can find a broken stone hand that is giving the middle finger.",
+        "-If Filibert 'Fourfingers' von Wittan's hanse base at Mont Crane Castle hasn't been cleared yet, and 'Contract: \nBovine Blues' is completed without destroying the slyzard eggs at Fort Ussar Ruins, upon returning to Fort \nUssar Ruins, a bandit camp will have appeared with 2 bandits there named Mathieu Le Mièche and Mikael Le \nMièche. Once you dispose of them, you can loot their chest to find the recipe for Scrambled Slyzard Eggs. This\nis more of an interesting detail than something you should do since it will fail an objective (not the whole quest)\ninvolving not burning the slyzard eggs.\n\n"
+      ]
+    },
+    {
+      "sourceId": 392,
+      "sourceName": "Spoontaneous Profits! (42)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Spoontaneous_Profits!?so=search",
+      "targetId": "q391",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-'Spoontaneous Profits!' can only be done after 'La Cage au Fou' and can be obtained during this quest. Once \nyou enter the house with the many spoons, when you find the Spoon Key, it will begin 'Spoontaneous Profits!'",
+        "-In 'Spoontaneous Profits', Ra'mses Gor-Thon is referring to Gordon Ramsey, the master chef.",
+        "-While entering a cellar during 'Spoontaneous Profits!', you will find a cookbook written by Smigole Louis Serkis, \nwhich references the amazing Andy Serkis who portrayed Gollum/Smeagol in the Lord of the Rings movies."
+      ]
+    },
+    {
+      "sourceId": 408,
+      "sourceName": "Using Your Loaf (-)",
+      "sourceType": "Chance Encounter",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Burlap_is_the_New_Stripe",
+      "targetId": "q418",
+      "action": "merge-component",
+      "reason": "监狱主线内的昆特活动，归入麻布是新的潮流；洗衣前的时机提醒保留。",
+      "notes": [
+        "-Using your loaf (Gwent game if Syanna dies and you go to prison. Over by the entrance to the cells). This also\nmust be completed before going down to do the laundry, or it will fail."
+      ]
+    },
+    {
+      "sourceId": 429,
+      "sourceName": "Big Game Hunter (37)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Big_Game_Hunter?so=search",
+      "targetId": "q344",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In 'Big Game Hunter', face towards him when he uses his flash @1:40 (when releasing the panther).",
+        "-In 'Big Game Hunter', you can haggle for the highest price and he'll agree to it.",
+        "-In 'Big Game Hunter', if you attack or kill the animals on the expedition (bear, panthers, peacocks, and \ncentipedes), the Count will have a negative reaction and there will be no pictures/paintings at the end."
+      ]
+    },
+    {
+      "sourceId": 430,
+      "sourceName": "Vitner's Contract: Rivecalme Storehouse (37)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Vintner%27s_Contract:_Rivecalme_Storehouse",
+      "targetId": "q351",
+      "action": "retain-existing",
+      "reason": "已在旧主线／支线目录收录，保留原 ID，并加入委托关联分类。",
+      "notes": [
+        "-Find a Winnie the Pooh bear @12:36 (he drops a jar of honey when killed). I couldn't get this bear to trigger\nuntil AFTER I completed the main questline."
+      ]
+    },
+    {
+      "sourceId": 431,
+      "sourceName": "Vitner's Contract: Chuchote Cave (40)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Vintner%27s_Contract:_Chuchote_Cave",
+      "targetId": "q377",
+      "action": "retain-existing",
+      "reason": "已在旧主线／支线目录收录，保留原 ID，并加入委托关联分类。",
+      "notes": [
+        "-In the 'Vitner's Contract: Chuchote Cave', the description of the signpost when you are looking at the map, \nwill tell you that it used to be home to Whispess."
+      ]
+    },
+    {
+      "sourceId": 432,
+      "sourceName": "Vitner's Contract: Cleaning Those Hard-to-Reach Places (40)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Vintner%27s_Contract:_Cleaning_Those_Hard-to-Reach_Places",
+      "targetId": "q393",
+      "action": "retain-existing",
+      "reason": "已在旧主线／支线目录收录，保留原 ID，并加入委托关联分类。",
+      "notes": [
+        "-Girl that says an Arya Stark quote @11:27. She usually says this around 7pm."
+      ]
+    },
+    {
+      "sourceId": 433,
+      "sourceName": "Vitner's Contract: Dun Tynne Hillside (40)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Vintner%27s_Contract:_Dun_Tynne_Hillside",
+      "targetId": "q370",
+      "action": "retain-existing",
+      "reason": "已在旧主线／支线目录收录，保留原 ID，并加入委托关联分类。",
+      "notes": []
+    },
+    {
+      "sourceId": 434,
+      "sourceName": "Vitner's Contract: Duchaton Crest (43)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Vintner%27s_Contract:_Duchaton_Crest",
+      "targetId": "q394",
+      "action": "retain-existing",
+      "reason": "XML 提示另名 Duchaton Crest?，与旧 Griffin-in-the-Vines 条目合并；别名未实机核对。",
+      "notes": []
+    },
+    {
+      "sourceId": 435,
+      "sourceName": "Equine Phantoms (44)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Equine_Phantoms?so=search",
+      "targetId": "q399",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In 'Equine Phantoms', the woman you speak to has certain markings on her necklace. They may be \nrepresenting her name, though the spelling can be odd (Hanna Soieszczka Trebinska). You can also see \na whip around her shoulders with nails on the end because she is a flaggellant, which are people that \nflog/whip themselves or others.",
+        "-In 'Equine Phantoms', if you choose to accept the potatoes, you can haggle for how many you get.",
+        "-In 'Equine Phantoms', even if you accept or decline her offer of potatoes, you can go to her cellar to take \nmore of her potatoes.",
+        "-During 'Equine Phantoms', once you drink the potion, you can go around and communicate with the \nother animals in the area (wolf, 2 dogs, 2 goats (south-west of the hut), 2 cats, cow).",
+        "-In 'Equine Phantoms', there is a scenario where Roach can complete the quest on her own. This occurs if you \ntake the mushrooms, and then abandon and leave the area, then return to the woman.",
+        "-In 'Equine Phantoms', when following the umbral, if you go in a different direction, there will be a cutscene with \na different interaction with Roach where she begins to say a joke before being cut off because the potion wears \noff. Doing this will fail the quest, but you can reload a save.",
+        "-During 'Equine Phantoms', when you chase the umbra to the graveyard, it disappears for a bit and circles the \ngravestone. If you get close enough to it, you will see that this invisible spectre is called an incubus, which is \nthe male equivalent of a succubus.",
+        "-If Roach does not forgive the spirit in 'Equine Phantoms', the woman that gave you the quest dies. She can \nalso die if you fail to catch the spirit. You will find her body completely drained of blood a couple days later. \nEven though Geralt warns the woman that she will still have to watch out for the spirit and suggests to put a \nline of salt at her door (which she actually does), she still won't make it. Her dead body also has longer hair \ncompared to her original character design."
+      ]
+    },
+    {
+      "sourceId": 436,
+      "sourceName": "Feet as Cold as Ice (45)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Feet_as_Cold_as_Ice?so=search",
+      "targetId": "q400",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-There are 3 possible endings to 'Feet as Cold as Ice'. The first is if Francois died, Jacquette will be devastated \nand you will not get a reward. The second is if Francois is alive and you convinced him to return to Jacquette, \nshe will be very happy and will reward you. The third is if Francois is alive and you told him to do what he wants, \nJacquette will realize Francois' true motives, but will still pay you for your efforts."
+      ]
+    },
+    {
+      "sourceId": 437,
+      "sourceName": "The Tufo Monster (48)",
+      "sourceType": "Contract",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Contract:_The_Tufo_Monster?so=search",
+      "targetId": "q412",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-If you find the pendant during 'The Tufo Monster', there can be two different endings. One where you expose \nthe individual, or keep their secret safe."
+      ]
+    },
+    {
+      "sourceId": 438,
+      "sourceName": "Coin Doesn't Stink (37)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Coin_Doesn't_Stink?so=search",
+      "targetId": "q357",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Calvin and Hobbs easter egg @13:47 (Hobbs is a panther)."
+      ]
+    },
+    {
+      "sourceId": 439,
+      "sourceName": "Don't Take Candy from a Stranger (37)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Don't_Take_Candy_from_a_Stranger?so=search",
+      "targetId": "q358",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 440,
+      "sourceName": "The Black Widow (37)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Black_Widow?so=search",
+      "targetId": "q356",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 441,
+      "sourceName": "The Inconstant Gardener (37)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Inconstant_Gardener?so=search",
+      "targetId": "q409",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 442,
+      "sourceName": "Applied Escapology (40)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Applied_Escapology?so=search",
+      "targetId": "q380",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 443,
+      "sourceName": "Around the World in...Eight Days (40)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Around_the_World_in..._Eight_Days?so=search",
+      "targetId": "q386",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 444,
+      "sourceName": "Waiting for Goe and Doh (40)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Waiting_for_Goe_and_Doh?so=search",
+      "targetId": "q379",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 445,
+      "sourceName": "But Other Than That, How Did You Enjoy the Play? (43)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/But_Other_Than_That,_How_Did_You_Enjoy_the_Play%3F?so=search",
+      "targetId": "q397",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 446,
+      "sourceName": "What Was This About Again? (43)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/What_Was_This_About_Again%3F?so=search",
+      "targetId": "q398",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 447,
+      "sourceName": "The Curse of Carnarvon (46)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Curse_of_Carnarvon?so=search",
+      "targetId": "q402",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 448,
+      "sourceName": "The Suffering of Young Francois (47)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Suffering_of_Young_Francois?so=search",
+      "targetId": "q411",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Get the Toussaint Ducal Guard Captain's armor set after getting the diagrams. Locations @2:47.",
+        "-You can encounter a she troll camp @2:44 (collect the note of the man in the cage)."
+      ]
+    },
+    {
+      "sourceId": 449,
+      "sourceName": "The Toussaint Prison Experient (47)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/The_Toussaint_Prison_Experiment?so=search",
+      "targetId": "q410",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": []
+    },
+    {
+      "sourceId": 450,
+      "sourceName": "Filibert Always Pays His Debts (48)",
+      "sourceType": "Treasure Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Filibert_Always_Pays_His_Debts?so=search",
+      "targetId": "q414",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-In 'Filibert Always Pays His Debts', when reading the note off of the dead body, you will find out what happened \nto Maximus and his family. Outside their house, you can see the 3 nooses hanging from the tree and skeletons \nunderneath."
+      ]
+    },
+    {
+      "sourceId": 451,
+      "sourceName": "Grandmaster Feline Gear (40)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Feline_Gear",
+      "targetId": "q383",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Find a book in the Knight Errant's office.",
+        "-Here is a video link showing all the dye options for the Grandmaster Feline School Gear."
+      ]
+    },
+    {
+      "sourceId": 452,
+      "sourceName": "Grandmaster Griffin Gear (40)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Griffin_Gear",
+      "targetId": "q384",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-After obtaining the 6 piece set of Grandmaster Griffin armor, the Yrden sign will look different when the \nset is equipped.",
+        "-Here is a video link showing all the dye options for the Grandmaster Griffin School Gear."
+      ]
+    },
+    {
+      "sourceId": 453,
+      "sourceName": "Grandmaster Manticore Gear (40)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Manticore_Gear",
+      "targetId": "q381",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Basane Farm abandoned site has a werewolf with an interesting story. Loot the werewolf to find a letter, \nthen travel north to encounter wolves and a cave with another werewolf inside. Find Gisele's journal in the \ncave. Hubert and Gisele were the two werewolves. Speak with the barber after liberating the farm. In the \nDucal Camerlango (Knight's Errant area), you can find a report on the liberation of the farm afterwards.",
+        "-Here is a video link showing all the dye options for the Grandmaster Manticore School Gear."
+      ]
+    },
+    {
+      "sourceId": 454,
+      "sourceName": "Grandmaster Ursine Gear (40)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Ursine_Gear",
+      "targetId": "q382",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Here is a video link showing all the dye options for the Grandmaster Ursine School Gear."
+      ]
+    },
+    {
+      "sourceId": 455,
+      "sourceName": "Grandmaster Wolven Gear (40)",
+      "sourceType": "Scavenger Hunt",
+      "sourceLocation": "Blood and Wine",
+      "sourceUrl": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Wolven_Gear",
+      "targetId": "q385",
+      "action": "include",
+      "reason": "与冻结 XML 独立条目对齐；未把推荐等级或图纸组件当作任务数。",
+      "notes": [
+        "-Here is a video link showing all the dye options for the Grandmaster Wolf School Gear."
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "id": "forgotten-wolf-diagrams",
+      "name": "Scavenger Hunt: Forgotten Wolf School Gear Diagrams",
+      "title": "寻宝：遗忘狼学派装备图纸",
+      "type": "scavenger",
+      "region": "kaer-morhen",
+      "expansion": "base",
+      "level": 34,
+      "referenceId": 316,
+      "trigger": "4.0 次世代版内容；先完成“永恒之火的阴影”，再在凯尔莫罕查找后续装备图纸线索。基础奖励和升级装备不是各自独立的寻宝任务。",
+      "predecessors": [
+        "eternal"
+      ]
+    },
+    {
+      "id": "drakenborg-redemption",
+      "name": "The Drakenborg Redemption",
+      "title": "德拉肯伯格的救赎",
+      "type": "treasure",
+      "region": "velen",
+      "expansion": "hos",
+      "level": 38,
+      "referenceId": 369,
+      "trigger": "参考目录登记的石之心寻宝；根据所附攻略寻找相关信件与宝箱。冻结 XML 没有此条目的可靠接取坐标。",
+      "predecessors": []
+    },
+    {
+      "id": "encounter-farmers-daughter-1",
+      "name": "Saving Farmer's Daughter From Soldiers (I)",
+      "title": "从士兵手中救出农夫的女儿（1）",
+      "type": "encounter",
+      "region": "velen",
+      "expansion": "base",
+      "level": null,
+      "referenceId": 70,
+      "trigger": "参考目录记录：完成“重回驼背泥沼”后返回乌鸦窝一带触发。两个地点没有冻结接取坐标，地图不猜测其位置。",
+      "predecessors": [
+        "q107"
+      ]
+    },
+    {
+      "id": "encounter-farmers-daughter-2",
+      "name": "Saving Farmer's Daughter From Soldiers (II)",
+      "title": "从士兵手中救出农夫的女儿（2）",
+      "type": "encounter",
+      "region": "velen",
+      "expansion": "base",
+      "level": null,
+      "referenceId": 71,
+      "trigger": "参考目录记录：完成“重回驼背泥沼”后返回乌鸦窝一带触发。两个地点没有冻结接取坐标，地图不猜测其位置。",
+      "predecessors": [
+        "q107"
+      ]
+    }
+  ],
+  "levelConflicts": [
+    {
+      "targetId": "q54",
+      "referenceId": 11,
+      "xmlLevel": 4,
+      "referenceLevel": 2,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q55",
+      "referenceId": 12,
+      "xmlLevel": 4,
+      "referenceLevel": 3,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q57",
+      "referenceId": 99,
+      "xmlLevel": 4,
+      "referenceLevel": 1,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q53",
+      "referenceId": 100,
+      "xmlLevel": 4,
+      "referenceLevel": 1,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q113",
+      "referenceId": 101,
+      "xmlLevel": 9,
+      "referenceLevel": 1,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q151",
+      "referenceId": 275,
+      "xmlLevel": 12,
+      "referenceLevel": 13,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q210",
+      "referenceId": 284,
+      "xmlLevel": 16,
+      "referenceLevel": 25,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q150",
+      "referenceId": 285,
+      "xmlLevel": 12,
+      "referenceLevel": 25,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q327",
+      "referenceId": 290,
+      "xmlLevel": 26,
+      "referenceLevel": 34,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q341",
+      "referenceId": 345,
+      "xmlLevel": 36,
+      "referenceLevel": 34,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q355",
+      "referenceId": 354,
+      "xmlLevel": 37,
+      "referenceLevel": 34,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q361",
+      "referenceId": 357,
+      "xmlLevel": 38,
+      "referenceLevel": 36,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q393",
+      "referenceId": 432,
+      "xmlLevel": 43,
+      "referenceLevel": 40,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q394",
+      "referenceId": 434,
+      "xmlLevel": 40,
+      "referenceLevel": 43,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    },
+    {
+      "targetId": "q409",
+      "referenceId": 441,
+      "xmlLevel": 47,
+      "referenceLevel": 37,
+      "resolution": "保留冻结 XML 推荐等级并公开来源差异，未宣称当前版本官方推荐等级。"
+    }
+  ],
+  "limits": [
+    "本清单核对两套冻结社区来源，未声称全游戏任务或探索点完整。",
+    "中文新增标题为本项目译名，不宣称全部是游戏官方译名。",
+    "遗忘狼的升级装备条目归并图纸任务；Griffin-in-the-Vines 与 Duchaton Crest 的别名有 XML 问号，保留待实机核对说明。",
+    "来源无法读取的网页链接保留为引用，不冒充本次抓取验证。"
+  ],
+  "expectedDecisions": {
+    "reviewedTasks": 40,
+    "nodes": 45,
+    "options": 101
+  },
+  "expectedPositioned": 304
+}

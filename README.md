@@ -10,7 +10,7 @@
 
 地图默认显示 227 个快速旅行路标的位置，并显示视野内可容纳的地名。主要城镇优先显示，密集处避让后以细线指回路标。放大可以看清更多附近地名；右侧“地名”按钮可以开关，任务筛选不会隐藏路标。
 
-新增 70 个探索点：29 个魔力之所、35 个告示板、6 个储藏箱。右侧“图层”可分别开关任务、路标和三类探索点，显示当前地区数量，支持全隐藏并恢复先前选择。点击探索点查看方位、用途和来源。探索点整理与开放条件的边界保存在 `dist/exploration.json`。
+现有 615 个探索点，含原 70 个基础设施点以及商人、工匠、昆特、资源和洞穴入口。右侧“图层”可搜索、全选和分别开关，显示当前地区数量，支持全隐藏并恢复。新增分类默认关闭，密集点可聚合选择。点击探索点查看方位、用途和来源。探索点整理与开放条件的边界保存在 `dist/exploration.json`。
 
 地图路标现在全部显示中文，按照公开游戏中文地图的中英对照核对，并修正“大黑树”“嘻笑者之桥”“孤岩”等先前的手工译名。部分来源为繁体官中，逐字转简；没有逐项对照官方简中语言文件。逐项来源和边界保存在 `dist/places-zh.json`。
 
@@ -22,14 +22,14 @@
 
 ## 当前覆盖与正确性
 
-- 267 个目录条目：87 主线、180 支线；149 个地图定位。
-- 70 个探索点，使用与任务不同的稳定 ID；来源候选 72 条，合并重复 1 条、暂缓独立场景 1 条。
+- 428 个目录条目：保留 87 主线、180 支线；新增 35 委托、29 套装搜集、57 其他寻宝、40 遭遇。304 个定位为发现／接取线索或关联地标。
+- 615 个探索点、13 类，使用独立稳定 ID；617 条候选合并重复 1 条、暂缓独立场景 1 条。16 条共用或空白源键有显式 ID 映射。
 - 40 个关键任务有已核对分支：45 节点、101 个选项。
 - 希里与血与酒结局可按选择组合演算。
 - 地图社区坐标、地标近似定位和无独立接取点的流程任务明确区分。
 - 未整理的分支明确标为未收录；不表示该任务没有决策或后果。
 
-详见 [验证报告](dist/validation-report.md) 和 [可检查结果](dist/validation.json)。资料核对、网页测试与游戏实机验证是不同层次，本项目没有执行逐任务实机验证。随机遭遇、狩魔委托和寻宝不在目录范围。
+详见 [验证报告](dist/validation-report.md) 和 [可检查结果](dist/validation.json)。资料核对、网页测试与游戏实机验证是不同层次，本项目没有执行逐任务实机验证。第三轮按冻结 XML 和参考目录逐条归并，不把装备组件、阶段或资源点当作独立任务。详见 evidence/catalog-review/reconciliation.json。
 
 ## 云端维护与验证
 
@@ -44,15 +44,18 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 ```sh
 python3 scripts/build-data.py
 python3 scripts/enrich-data.py
+python3 scripts/expand-catalog.py
 python3 scripts/build-places.py
 python3 scripts/build-exploration.py
 node scripts/validate.cjs
 python3 scripts/validate-exploration.py
+python3 scripts/validate-catalog.py
 node scripts/browser-validate.cjs
 node scripts/validate-landmarks.cjs
 node scripts/validate-navigation.cjs
 node scripts/validate-exploration.cjs
 node scripts/validate-progress.cjs
+node scripts/validate-catalog.cjs
 python3 scripts/build-report.py
 node scripts/validate-assets.cjs
 python3 scripts/build-report.py
@@ -85,4 +88,4 @@ python3 scripts/build-report.py
 
 原始云端恢复基线：`341b240bbb598db2f5f37e4c548953b046178b4f`，5,822 个版本管理文件。历史本地验收已保存在 `evidence/history/local-2026-10-02/`；本次及后续云端结果必须明确执行环境与时间，不能把历史本地 66 项通过写为本次云端结果。
 
-历史迁移曾因 Chromium 缺失而未完成浏览器验收，阻碍记录保留在 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。2026-10-03 已在本云环境使用 Chromium 151 完成基线与第一轮浏览器检查，第二轮共 93/93 项通过，当前结果见 `dist/validation.json`；历史阻碍不再代表当前状态。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。
+历史迁移曾因 Chromium 缺失而未完成浏览器验收，阻碍记录保留在 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。2026-10-03 已在本云环境使用 Chromium 151 完成基线与第一轮浏览器检查，第二轮 93/93，第三轮 113/113 项通过，当前结果见 `dist/validation.json`；历史阻碍不再代表当前状态。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。
