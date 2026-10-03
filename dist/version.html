@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>网站版本与源码 · 狩魔手记</title>
+  <style>
+    :root{color-scheme:dark;font-family:system-ui,sans-serif;background:#171d20;color:#e4e0d7}
+    body{max-width:760px;margin:0 auto;padding:32px 20px;line-height:1.7}
+    h1{font-size:1.65rem;color:#d2b37c}a{color:#e6c78e}dt{margin-top:20px;color:#b9b9ad}
+    dd{margin:4px 0;overflow-wrap:anywhere}code{font-size:.95em}.fine{color:#b9b9ad}
+  </style>
+</head>
+<body>
+  <a href="./">← 返回互动地图</a>
+  <h1>网站版本与源码</h1>
+  <p id="status" role="status">正在读取当前发布版本…</p>
+  <dl id="version" hidden>
+    <dt>源码仓库</dt><dd><a id="repository" rel="noopener noreferrer" target="_blank"></a></dd>
+    <dt>对应源码提交</dt><dd><a id="commit" rel="noopener noreferrer" target="_blank"><code></code></a></dd>
+    <dt>网站打包时间</dt><dd id="built"></dd>
+    <dt>与当前页面匹配的检查</dt><dd id="checks"></dd>
+    <dt>发布记录</dt><dd><a id="run" rel="noopener noreferrer" target="_blank">查看 GitHub Actions</a></dd>
+  </dl>
+  <p class="fine">源码提交记录对应地图、任务资料和网页代码。个人进度保存在当前浏览器，通过“进度与备份”导出和恢复。</p>
+  <p><a href="version.json">查看机器可读版本信息</a> · <a href="validation-report.md">查看验证报告</a></p>
+  <script>
+    (async()=>{
+      const status=document.querySelector('#status');
+      try{
+        const response=await fetch('version.json',{cache:'no-store'});
+        if(!response.ok)throw Error('preview');
+        const version=await response.json();
+        if(!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(version.repository)||!/^[a-f0-9]{40}$/.test(version.sourceCommit))throw Error('invalid');
+        const repositoryURL='https://github.com/'+version.repository;
+        const repository=document.querySelector('#repository');repository.href=repositoryURL;repository.textContent=version.repository;
+        const commit=document.querySelector('#commit');commit.href=repositoryURL+'/commit/'+version.sourceCommit;commit.querySelector('code').textContent=version.sourceCommit;
+        document.querySelector('#built').textContent=new Date(version.builtAt).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})+'（北京时间）';
+        document.querySelector('#checks').textContent=version.verification.passed+' 项通过；检查记录与当前运行文件的 SHA-256 一致。';
+        const run=document.querySelector('#run');
+        if(version.workflowRunURL&&new RegExp('^https://github\\.com/'+version.repository.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'/actions/runs/[0-9]+$').test(version.workflowRunURL))run.href=version.workflowRunURL;
+        else run.parentElement.textContent='从上述源码提交在云端打包。';
+        document.querySelector('#version').hidden=false;status.textContent='当前网页对应以下源码版本。';
+      }catch{status.textContent='当前是源码预览，正式发布到 GitHub Pages 后会显示对应提交与打包时间。';}
+    })();
+  </script>
+</body>
+</html>

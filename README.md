@@ -4,7 +4,13 @@
 
 ## 使用
 
-网站：https://witcher-quest-atlas.stormberich.chatgpt.site （保持现有公开访问权限）。
+GitHub Pages：https://stormtian.github.io/witcher-quest-atlas/
+
+源码仓库：https://github.com/StormTian/witcher-quest-atlas
+
+原 Sites 网站：https://witcher-quest-atlas.stormberich.chatgpt.site （保持现有公开访问权限）。
+
+推送 GitHub 仓库的 `main` 后，Pages 工作流会发布已验证的静态网站；“资料与验证 → 网站版本与源码”可查看网页对应的精确提交。发布配置、版本绑定与云端打包方式见 [GitHub Pages 维护说明](docs/github-pages.md)。切换网址时先在原站导出个人进度，在新站预览并恢复备份。
 
 手机底部可切换地图、任务索引和详情。右上角“资料与验证”提供实际检查结果、攻略链接、地图样例和下载。
 

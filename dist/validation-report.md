@@ -169,7 +169,7 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 - 全隐藏恢复原选择并隐藏任务高亮：Restores the prior partial selection; hidden quest layers stay hidden when a quest is opened from the index.。
 - 三类点位真实点击详情与键盘操作：All three types open through real marker clicks; keyboard Enter and Space open a board; provenance and availability limits remain visible.。
 - 任务筛选与探索图层互不干扰：Empty task search and DLC filtering leave exploration and road signs intact; point selection preserves filters.。
-- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 33.0ms on this cloud Chromium; map controls have their own stacking context.。
+- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 3.5ms on this cloud Chromium; map controls have their own stacking context.。
 - 手机图层与探索详情及200%文字：390×844 touch device; layer toggles, Escape/focus return, tap-to-detail and doubled text remain usable without page overflow.。
 - 探索资源与页面异常：Zero page exceptions and zero unexpected HTTP failures across the exploration interactions.。
 

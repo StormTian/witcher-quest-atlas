@@ -1,7 +1,7 @@
 {
   "date": "2026-10-03",
   "executionEnvironment": "cloud-linux",
-  "executedAt": "2026-10-03T06:59:08.444Z",
+  "executedAt": "2026-10-03T11:18:48.535Z",
   "status": "pass",
   "checks": [
     {
@@ -12,7 +12,7 @@
     {
       "name": "部署资源全部实际返回",
       "status": "pass",
-      "detail": "5781 static files fetched successfully, including all 5721 map tiles"
+      "detail": "5782 static files fetched successfully, including all 5721 map tiles"
     },
     {
       "name": "完整验证窗口可在桌面与手机操作",
@@ -24,7 +24,7 @@
   "total": 3,
   "datasetSha256": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246",
   "runtimeInputHashes": {
-    "app.js": "8b04df96e9168bbdd139426fe82d4eb9eb190f61d1e7aaf461a2d1422a247f49",
+    "app.js": "1b2a24140607807d5c363dedb083007dbcdc7eddf8c35378c69310de616ca6be",
     "index.html": "7d6d07dc65bbb0945be7333bdffc313cf52a3cf7ae449f20298f87f57df89965",
     "style.css": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
     "logic.js": "3f4a76aa54ba0f4cd1a9c4c5245d26acd3ae5d86159bfa678544535028aa7072",
