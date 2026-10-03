@@ -67,6 +67,7 @@ async function request(name) {
         if (viewport.width < 700) await page.locator('#mobile-map').click();
         await page.locator('#verification').click();
         const link = page.locator('a[href="version.html"]');
+        await link.waitFor({state: 'visible'});
         assert.equal(await link.count(), 1);
         await page.goto(new URL(await link.getAttribute('href'), baseURL).href);
         await page.waitForSelector('#version:not([hidden])');
