@@ -1,7 +1,7 @@
 # Witcher Quest Atlas
 
 - Keep the generated site inside `dist/`; frozen inputs under `evidence/` are read-only.
-- Preserve `.openai/hosting.json` and the existing Site identity.
+- Publish through `.github/workflows/pages.yml`; bind every release to its exact Git source commit in `version.json`.
 - Rebuild exploration layers with `python3 scripts/build-exploration.py`. After exploration changes run `python3 scripts/validate-exploration.py` and `node scripts/validate-exploration.cjs`; retain the duplicate/deferred ledger and stable source-key IDs.
 - Source inputs are frozen in `evidence/upstream/`. Never claim full in-game verification from data checks or browser tests.
 - Use `python3 scripts/build-data.py` followed by `python3 scripts/enrich-data.py` and `python3 scripts/expand-catalog.py`, then `python3 scripts/build-guidance.py` to rebuild the catalog. These use frozen source facts and independently authored Chinese summaries.
@@ -11,9 +11,9 @@
 - Default to hidden spoilers. Reveal only the selected quest unless the user chooses the global spoiler control.
 - Preserve the existing public audience; never change access to enable publishing.
 
-- This project is cloud-only. Restore its complete Git repository through Sites official workflow; reuse project_id appgprj_6abf79398ea48191a2d7262e4feca3b3. Never use the user computer, remote Mac, or Local computer access, or require their computer online.
-- Use cloud Node/Python/Playwright/Chromium and configurable runtime paths. Preserve historical local evidence separately and label every new result with actual environment and timestamp. Tool unavailability must be reported, never substituted with fake browser/game validation.
-- Do not create periodic automation or delete files from the user computer.
+- Use https://github.com/StormTian/witcher-quest-atlas as the source repository and `origin`. Preserve the existing Git commits and tags.
+- Development may run locally or in CI. Use configurable Node/Python/Playwright/Chromium paths. Preserve historical evidence and label every new result with its actual environment and timestamp. Tool unavailability must be reported, never substituted with fake browser/game validation.
+- Do not create periodic automation unless requested.
 
 - Personal records are explicitly device-local. Preserve the versioned backup schema, stable object/decision IDs, unmatched-record ledger, validated import preview and default spoiler protection. Run `node scripts/validate-progress.cjs` after persistence or routing changes.
 

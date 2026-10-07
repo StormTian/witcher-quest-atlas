@@ -8,9 +8,7 @@ GitHub Pages：https://stormtian.github.io/witcher-quest-atlas/
 
 源码仓库：https://github.com/StormTian/witcher-quest-atlas
 
-原 Sites 网站：https://witcher-quest-atlas.stormberich.chatgpt.site （保持现有公开访问权限）。
-
-推送 GitHub 仓库的 `main` 后，Pages 工作流会发布已验证的静态网站；“资料与验证 → 网站版本与源码”可查看网页对应的精确提交。发布配置、版本绑定与云端打包方式见 [GitHub Pages 维护说明](docs/github-pages.md)。切换网址时先在原站导出个人进度，在新站预览并恢复备份。
+推送 GitHub 仓库的 `main` 后，Pages 工作流会发布已验证的静态网站；“资料与验证 → 网站版本与源码”可查看网页对应的精确提交。发布配置、版本绑定与打包方式见 [GitHub Pages 维护说明](docs/github-pages.md)。
 
 手机底部可切换地图、任务索引和详情。右上角“资料与验证”提供实际检查结果、攻略链接、地图样例和下载。
 
@@ -39,15 +37,17 @@ GitHub Pages：https://stormtian.github.io/witcher-quest-atlas/
 
 详见 [验证报告](dist/validation-report.md) 和 [可检查结果](dist/validation.json)。资料核对、网页测试与游戏实机验证是不同层次，本项目没有执行逐任务实机验证。第三轮按冻结 XML 和参考目录逐条归并，不把装备组件、阶段或资源点当作独立任务。详见 evidence/catalog-review/reconciliation.json。
 
-## 云端维护与验证
+## 开发与验证
 
 这是无构建依赖的静态网站，不需要安装前端框架。
 
 ```sh
+git clone https://github.com/StormTian/witcher-quest-atlas.git
+cd witcher-quest-atlas
 python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
 ```
 
-打开 http://127.0.0.1:8765/ 。浏览器直接打开 HTML 文件可能无法读取 JSON，请使用云端测试服务。
+打开 http://127.0.0.1:8765/ 。浏览器直接打开 HTML 文件可能无法读取 JSON，请使用上述 HTTP 服务。
 
 ```sh
 python3 scripts/build-data.py
@@ -72,9 +72,9 @@ node scripts/validate-assets.cjs
 python3 scripts/build-report.py
 ```
 
-后续修改、检查、提交和发布只在云端执行，不依赖用户电脑在线，不使用远程 Mac 或 Local computer access。此会话是云端接续入口。用 Sites 官方 Site workflow 恢复完整源码到云端空目录，复用 `.openai/hosting.json` 中项目 ID；短期凭证只经隐藏标准输入传递，禁止写入文件或日志。
+完整源码、提交历史和标签由 Git 管理，可直接从 GitHub 克隆。开发和检查可在本地或 CI 环境执行，正式发布由 GitHub Actions 完成。
 
-浏览器脚本自动使用云端 Node 的 Playwright 或 `CODEX_PRIMARY_RUNTIME_NODE_MODULES` 中的 Playwright，默认使用其 Chromium。可通过 `PLAYWRIGHT_MODULE_PATH`、`CHROMIUM_EXECUTABLE_PATH`、`ATLAS_BASE_URL` 配置。先在云端启动上述静态测试服务，回环地址仅指云端容器。缺少工具时记录阻碍，不回落到用户电脑。`validate-assets.cjs` 检查最终报告、下载与页面资源。不得在检查未执行或失败时生成通过报告。
+浏览器脚本使用当前 Node 环境中的 Playwright，默认使用其 Chromium。可通过 `PLAYWRIGHT_MODULE_PATH`、`CHROMIUM_EXECUTABLE_PATH`、`ATLAS_BASE_URL` 配置。先在实际检查环境启动上述静态测试服务；缺少工具时记录阻碍。`validate-assets.cjs` 检查最终报告、下载与页面资源。检查记录必须保留实际执行环境与时间，不得在检查未执行或失败时生成通过报告。
 
 中文地名生成使用 `evidence/localization/tiva/` 中冻结的中英对照和繁转简副本，不依赖在线接口。新增细节图片可用 Pillow 重新导出：`python3 scripts/export-detail-tiles.py --source /path/to/Witcher3MapViewer/Witcher3MapViewer/Maps`。来源必须为上述固定版本，脚本核对 MBTiles 文件指纹后才导出。
 
@@ -91,7 +91,8 @@ python3 scripts/build-report.py
 - `scripts/enrich-data.py`：资料修正、中文摘要、来源和决策规则。
 - `dist/logic.js`：两个主干结局的组合规则。
 - `evidence/`：冻结输入、地图校准、实际测试结果与验收画面。
-- `.openai/hosting.json`：已注册 Sites 身份及静态目录，请保留项目 ID。
+- `.github/workflows/pages.yml`：GitHub Actions 发布工作流。
+- `scripts/prepare-github-pages.py`：校验静态网站并生成绑定 Git 提交的发布版本信息。
 
 资料修改后先检查名称、任务 ID、坐标精度和来源，再重跑相关检查。不要把任务目标点冒充接取点，也不要把社区数据结构检查称为游戏实机正确性证明。
 
@@ -99,6 +100,6 @@ python3 scripts/build-report.py
 
 地图与基础坐标：Witcher3MapViewer commit `fb674dbff7df087d0a45f9b3938ba6d5317295af`；任务目录与攻略交叉对照见网站报告。Leaflet 1.9.4 使用 BSD-2-Clause。游戏资产 © CD PROJEKT RED。此非官方个人研究工具没有将游戏地图授予新许可。
 
-原始云端恢复基线：`341b240bbb598db2f5f37e4c548953b046178b4f`，5,822 个版本管理文件。历史本地验收已保存在 `evidence/history/local-2026-10-02/`；本次及后续云端结果必须明确执行环境与时间，不能把历史本地 66 项通过写为本次云端结果。
+历史验收已保存在 `evidence/history/`。新增检查必须明确实际执行环境与时间，不能将历史通过记录当作本次执行结果。
 
-历史迁移曾因 Chromium 缺失而未完成浏览器验收，阻碍记录保留在 `evidence/cloud-migration.json`、`evidence/cloud-logs/`。2026-10-03 已在本云环境使用 Chromium 151 完成基线与第一轮浏览器检查，第二轮 93/93，第三轮 113/113，第四轮最终 137/137 项通过，当前结果见 `dist/validation.json`；历史阻碍不再代表当前状态。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已恢复，新导出图块须另行取得指定版本的原始数据库。
+2026-10-03 的数据与浏览器验收在 Linux 环境使用 Chromium 151 执行，第二轮 93/93，第三轮 113/113，第四轮最终 137/137 项通过，具体结果与运行文件摘要见 `dist/validation.json`。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已保留，新导出图块须另行取得指定版本的原始数据库。
