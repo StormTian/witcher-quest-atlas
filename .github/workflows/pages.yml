@@ -20,9 +20,6 @@ jobs:
       contents: read
       pages: read
     env:
-      PLAYWRIGHT_HOME: ${{ runner.temp }}/witcher-playwright
-      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/witcher-browsers
-      PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/witcher-playwright/node_modules/playwright
       ATLAS_BASE_URL: http://127.0.0.1:8765/
     steps:
       - name: Check out the source commit
@@ -34,10 +31,16 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Install Playwright Chromium
+        env:
+          PLAYWRIGHT_HOME: ${{ runner.temp }}/witcher-playwright
+          PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/witcher-browsers
         run: |
           npm install --prefix "$PLAYWRIGHT_HOME" --no-save playwright@1.62.1
           "$PLAYWRIGHT_HOME/node_modules/.bin/playwright" install --with-deps chromium
       - name: Run data and browser checks against the release files
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/witcher-browsers
+          PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/witcher-playwright/node_modules/playwright
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 --directory dist > "$RUNNER_TEMP/witcher-preview.log" 2>&1 &
           server_pid=$!
@@ -98,12 +101,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      PLAYWRIGHT_HOME: ${{ runner.temp }}/witcher-playwright
-      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/witcher-browsers
-      PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/witcher-playwright/node_modules/playwright
       ATLAS_BASE_URL: ${{ needs.deploy.outputs.page_url }}
       EXPECTED_SOURCE_SHA: ${{ github.sha }}
-      PAGES_EVIDENCE_DIR: ${{ runner.temp }}/witcher-pages-evidence
     steps:
       - name: Check out the source commit
         uses: actions/checkout@v6
@@ -112,10 +111,17 @@ jobs:
         with:
           node-version: 22
       - name: Install Playwright Chromium
+        env:
+          PLAYWRIGHT_HOME: ${{ runner.temp }}/witcher-playwright
+          PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/witcher-browsers
         run: |
           npm install --prefix "$PLAYWRIGHT_HOME" --no-save playwright@1.62.1
           "$PLAYWRIGHT_HOME/node_modules/.bin/playwright" install --with-deps chromium
       - name: Verify the deployed Pages site in Chromium
+        env:
+          PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/witcher-browsers
+          PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/witcher-playwright/node_modules/playwright
+          PAGES_EVIDENCE_DIR: ${{ runner.temp }}/witcher-pages-evidence
         run: node scripts/verify-github-pages.cjs
       - name: Upload live-site browser evidence
         if: always()
