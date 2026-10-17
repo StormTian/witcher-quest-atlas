@@ -2,6 +2,8 @@
 .personal-filters select{background:#192124;color:var(--ink);border:1px solid var(--line);padding:6px;font-size:.8125rem;max-width:130px}
 .personal-filters button{border:1px solid var(--line);padding:7px 10px;font-size:.8125rem;color:var(--gold)}
 .personal-filters .check{font-size:.8125rem}.storage-notice:not(:empty){color:#efca9e;font-size:.75rem;padding:8px 20px;line-height:1.6}
+.catalog-heading{flex-wrap:wrap;row-gap:8px}.catalog-heading progress{flex:0 0 100%;width:100%;height:4px;accent-color:var(--gold);border:0;border-radius:3px;overflow:hidden}.catalog-heading progress::-webkit-progress-bar{background:#303a3d}.catalog-heading progress::-webkit-progress-value{background:var(--gold)}
+.quest-entry{display:flex;align-items:stretch;border-bottom:1px solid #30383b}.quest-entry .quest-row{flex:1;min-width:0;border-bottom:0;padding-left:3px}.quest-completion{display:flex;flex:0 0 40px;justify-content:center;align-items:flex-start;padding-top:19px;cursor:pointer}.quest-completion input{width:20px;height:20px;margin:0;accent-color:var(--gold);cursor:pointer}
 .record-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.record-actions button{padding:8px 10px;border:1px solid #52615d;font-size:.8125rem;border-radius:3px;min-height:36px}
 .record-actions button[aria-pressed=true]{color:#eee1ba;background:#38403a;border-color:var(--gold)}
 .record-badge{font-size:.75rem;color:#b9d9c9}.quest-row.completed strong{color:#aebbb0}.map-pin.completed,.exploration-pin.completed{opacity:.58}

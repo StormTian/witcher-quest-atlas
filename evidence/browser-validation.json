@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-03",
-  "executionEnvironment": "cloud-linux",
-  "executedAt": "2026-10-03T11:17:19.609Z",
+  "date": "2026-10-17",
+  "executionEnvironment": "local-macos-chromium-151.0.7922.34",
+  "executedAt": "2026-10-17T09:52:23.315Z",
   "status": "pass",
   "checks": [
     {
@@ -104,8 +104,8 @@
   "total": 19,
   "datasetSha256": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246",
   "runtimeInputHashes": {
-    "app.js": "1b2a24140607807d5c363dedb083007dbcdc7eddf8c35378c69310de616ca6be",
-    "index.html": "7d6d07dc65bbb0945be7333bdffc313cf52a3cf7ae449f20298f87f57df89965",
+    "app.js": "26262298f7b069e305fdb0bda4354a1641a0118c93568cd054cfe73d8a611758",
+    "index.html": "9fc5bc4453456ba8ad787aef364109c5b13647c912c408cd70eb7a3cf8b8d817",
     "style.css": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
     "logic.js": "3f4a76aa54ba0f4cd1a9c4c5245d26acd3ae5d86159bfa678544535028aa7072",
     "map-navigation.js": "916d33601e6664bad56ec5f9bfe54c09a760cb5fb37e99e5c33b8c70427ad259",
@@ -114,11 +114,11 @@
     "exploration.js": "45ea7084e5433de21165ae2202ed600042bc969bd9ddb57f38ec23ea392ef69a",
     "exploration.css": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360",
     "exploration.json": "f713b7133f712f08fce9f8c09e4598b75d310c9818235643b063a55a30f1c9b4",
-    "progress.js": "e5057099c85d7ab96e05bf317f15c9d1cf1132dc9f8fa4adf654572042b68073",
-    "progress.css": "f61485024473e3f7657dbef553440248f74a65b76bbddad59e34320293ac2fe9",
+    "progress.js": "b117e8e96b2edd1efd0bd4e5500393cb60a8c75d3876a5dbe8d9343934c18a05",
+    "progress.css": "845a7506c79a6b44b7dbf370099a189dd33658677e1c3044625f6ecfdbf51539",
     "story-logic.js": "b4b56332e4bad2e8df5d43695f0a188ccfa49c32d52dd26d89fb178e98a88303",
-    "guidance.js": "2519a8f44726993bee4db71381175186c1d47de03ac8811beb857eaf76bd2cf7",
-    "guidance.css": "e0058286cf19ae7915785b8d69c86390a6e886a481a4d4d67843f34325dd8c94",
+    "guidance.js": "b119a0b5496ce1dc88b95519691cbf37d7341420ec789c09ad475b4f9f8b0e9a",
+    "guidance.css": "ceb79fa57ee21dd918ca1977f0504b92968d295ea053793dbdaa209c14ce9ae1",
     "guidance.json": "c4c10e97b9d0ba0d45b823722e955045738168609cc5387f2ab783ec88365927"
   },
   "pageErrors": [],
@@ -187,6 +187,7 @@
     "progress-failure-10.png",
     "progress-failure-11.png",
     "progress-failure-12.png",
+    "progress-failure-13.png",
     "progress-failure-2.png",
     "progress-failure-3.png",
     "progress-failure-4.png",
@@ -197,6 +198,8 @@
     "progress-failure-9.png",
     "progress-mobile-detail.png",
     "progress-mobile.png",
+    "task-progress-desktop.png",
+    "task-progress-mobile.png",
     "text-200.png"
   ]
 }

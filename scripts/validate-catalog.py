@@ -1,9 +1,11 @@
 """Check round-three additions against independently reviewed frozen row bindings."""
 from pathlib import Path
+import os, sys
 import hashlib, json, math
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 ROOT=Path(__file__).resolve().parents[1]
+EXECUTION_ENVIRONMENT = os.environ.get('ATLAS_EXECUTION_ENVIRONMENT', ('github-actions-' if os.environ.get('GITHUB_ACTIONS') == 'true' else 'local-') + sys.platform)
 load=lambda p:json.loads((ROOT/p).read_text())
 review=load('evidence/catalog-review/reconciliation.json');data=load('dist/data.json');by={q['id']:q for q in data['quests']}
 source=ET.parse(ROOT/'evidence/upstream/Witcher3MapViewer/Quests.xml');xml={int(n.get('id')):n for n in source.findall('.//quest')};checks=[]
@@ -73,5 +75,5 @@ def requirements():
  assert any(r['questId']=='q392' and r['state']=='JS_Active' for r in by['q432']['requirements'])
  return 'Source all/any and game-state fields retained; active prerequisites are not rewritten as success.'
 for name,fn in [('独立来源完整对账',reconciliation),('新增任务计数与分类',inventory),('组件与阶段去重',no_components),('旧目录稳定 ID 回归',legacy),('中文与来源覆盖',titles_sources),('接取／售图／未知位置语义',position_roles),('新增定位独立样例',coordinate_samples),('来源冲突保留',source_conflicts),('旧酒商委托分类兼容',classification),('条件状态与引用',requirements)]:check(name,fn)
-result={'date':datetime.now(timezone.utc).date().isoformat(),'executionEnvironment':'cloud-linux','executedAt':datetime.now(timezone.utc).isoformat(),'status':'pass' if all(c['status']=='pass' for c in checks) else 'fail','checks':checks,'passed':sum(c['status']=='pass' for c in checks),'total':len(checks),'datasetSha256':hashlib.sha256((ROOT/'dist/data.json').read_bytes()).hexdigest(),'reviewSha256':hashlib.sha256((ROOT/'evidence/catalog-review/reconciliation.json').read_bytes()).hexdigest()}
+result={'date':datetime.now(timezone.utc).date().isoformat(),'executionEnvironment':EXECUTION_ENVIRONMENT,'executedAt':datetime.now(timezone.utc).isoformat(),'status':'pass' if all(c['status']=='pass' for c in checks) else 'fail','checks':checks,'passed':sum(c['status']=='pass' for c in checks),'total':len(checks),'datasetSha256':hashlib.sha256((ROOT/'dist/data.json').read_bytes()).hexdigest(),'reviewSha256':hashlib.sha256((ROOT/'evidence/catalog-review/reconciliation.json').read_bytes()).hexdigest()}
 (ROOT/'evidence/catalog-validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(json.dumps(result,ensure_ascii=False));raise SystemExit(result['status']!='pass')

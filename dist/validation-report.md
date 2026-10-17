@@ -1,8 +1,8 @@
 # 狩魔手记：互动地图验证报告
 
-任务资料日期：2026-10-03；本次验证日期：2026-10-03。目录版本：1.4。
+任务资料日期：2026-10-03；本次验证日期：2026-10-17。目录版本：1.4。
 
-本报告记录本次云端实际数据与浏览器检查；各项结果附执行时间与文件摘要。历史本地结果独立保留。网页检查不等于游戏实机全量验收，也不是官方任务完整性证明。
+本报告记录本次自动化环境中的实际数据与浏览器检查；各项结果附执行时间与文件摘要。历史本地结果独立保留。网页检查不等于游戏实机全量验收，也不是官方任务完整性证明。
 
 ## 覆盖
 
@@ -15,18 +15,18 @@
 
 ## 验证结果
 
-本次云端检查日期：2026-10-03。历史本地 66 项验收保存在源码 evidence/history/local-2026-10-02/，不计为本次云端通过。云端浏览器状态见下表。
+本次检查日期：2026-10-17；执行环境：local-macos-chromium-151.0.7922.34。历史本地 66 项验收保存在源码 evidence/history/local-2026-10-02/，不计为本次通过。浏览器状态见下表。
 
 | 范围 | 实际检查 | 结果 |
 | --- | --- | --- |
 | 任务数据与规则 | 25/25 项；任务引用、地图资源、结局条件、流程前置 | 通过 |
-| 防漏清单与条件联动 | 24/24 项；43 条阶段提醒、未知条件、失败例外、路线互斥、备份与逐任务剧透 | 通过 |
+| 防漏清单与条件联动 | 26/26 项；43 条阶段提醒、未知条件、失败例外、路线互斥、备份与逐任务剧透 | 通过 |
 | 扩充目录与服务点 | 20/20 项；428 条目录、615 点位、来源归并、六类筛选、密集点与旧备份 | 通过 |
 | 探索图层 | 15/15 项；615 个点位；来源对账、基础图层 32 种组合、手机操作 | 通过 |
 | 中文地名与缩放体验 | 11/11 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势 | 通过 |
 | 地名与路标显示 | 8/8 项；五区 227 个路标、默认地名、缩放拖动和手机 | 通过 |
 | 报告与资源交付 | 3/3 项；报告、下载与资源加载 | 通过 |
-| 个人进度与分享 | 12/12 项；完成、收藏、可靠导入导出、刷新恢复、分享与前进后退 | 通过 |
+| 个人进度与分享 | 13/13 项；完成、收藏、可靠导入导出、刷新恢复、分享与前进后退 | 通过 |
 | 网页实际交互 | 19/19 项；五区地图、筛选、108 个选项、剧透与手机操作 | 通过 |
 | 攻略事实核对 | 19 项重点核对；43 个任务／48 个节点附攻略依据 | 资料核对完成 |
 | 地图位置抽样 | 4 个独立坐标样例及地图裁切，校准社区坐标转换 | 抽样一致 |
@@ -64,7 +64,7 @@
 
 ### 浏览器实际操作与来源
 
-[逐项结果](checks/browser.json)：19/19 项通过。执行来源：cloud-linux，日期：2026-10-03。本次云端是否通过见上述状态。
+[逐项结果](checks/browser.json)：19/19 项通过。执行来源：local-macos-chromium-151.0.7922.34，日期：2026-10-17。当前运行结果见上述状态。
 
 - 桌面初始状态与剧透保护：通过。
 - 五个地区地图实际加载：通过。
@@ -127,7 +127,7 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 - 227个地名有来源且地图无英文回退：all 227 road signs, marker titles, map labels and region subtitles display Chinese。
 - 中文译名用独立样例核对：8 fixed source-derived examples; no guessed Blackbough or Cackler translation, distinct Elverum lighthouse。
 - 加减按钮每次只改变四分之一档：2 → 2.25 → 2; map center drift at most 2 pixels。
-- 真实滚轮缩放保持鼠标下的位置：physical mouse wheel; quarter step, cursor anchor drift 0.64 pixels。
+- 真实滚轮缩放保持鼠标下的位置：physical mouse wheel; quarter step, cursor anchor drift 0.63 pixels。
 - 大滚轮事件不会跨越多个倍率：a 3000-pixel wheel event still produces only one quarter step。
 - 连续五次点击不会漏掉缩放：5 physical clicks = 1.25 levels; queued zoom survives an in-progress animation。
 - 选任务保留倍率，换区回来保留视野：task focus retains 3.25 zoom; returning to Velen restores center within 3 pixels。
@@ -169,7 +169,7 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 - 全隐藏恢复原选择并隐藏任务高亮：Restores the prior partial selection; hidden quest layers stay hidden when a quest is opened from the index.。
 - 三类点位真实点击详情与键盘操作：All three types open through real marker clicks; keyboard Enter and Space open a board; provenance and availability limits remain visible.。
 - 任务筛选与探索图层互不干扰：Empty task search and DLC filtering leave exploration and road signs intact; point selection preserves filters.。
-- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 3.5ms on this cloud Chromium; map controls have their own stacking context.。
+- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 1.6ms on this cloud Chromium; map controls have their own stacking context.。
 - 手机图层与探索详情及200%文字：390×844 touch device; layer toggles, Escape/focus return, tap-to-detail and doubled text remain usable without page overflow.。
 - 探索资源与页面异常：Zero page exceptions and zero unexpected HTTP failures across the exploration interactions.。
 
@@ -187,15 +187,16 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 
 ### 个人进度、备份与定位分享
 
-[逐项结果](checks/progress.json)：12/12 项通过。
+[逐项结果](checks/progress.json)：13/13 项通过。
 
-任务与探索点可完成、收藏、按个人记录筛选及隐藏已完成。记录、地区、筛选、视野和已选决策保存在当前设备浏览器；不是读取游戏存档，也没有账号云同步。
+任务列表可直接勾选完成，顶部显示累计进度。新浏览器默认隐藏已完成，已有筛选偏好保留；列表与地图同步隐藏，选择“已完成”可查看并撤销误勾选。任务与探索点仍共用原有完成、收藏和个人筛选。记录、地区、筛选、视野和已选决策保存在当前设备浏览器；不是读取游戏存档，也没有账号云同步。
 备份恢复先预览并验证：无效 JSON、未知备份版本、非布尔标记、危险标识和过大文件不能覆盖当前记录。未知对象和决策保持在未匹配账目中，便于后续迁移。
 分享定位只包含地区、任务或探索点 ID，不夹带个人记录或决策。刷新后仍默认隐藏剧透，前进／后退可返回对应对象；未知链接显示提示。
 浏览器禁止或损坏存储时地图可使用，明确提示保存失败，并可导出本次记录。
 
-验收画面：[备份预览与恢复](checks/progress-desktop.png)、[手机记录](checks/progress-mobile-detail.png)、[手机备份](checks/progress-mobile.png)。
+验收画面：[桌面列表勾选](checks/task-progress-desktop.png)、[手机列表勾选](checks/task-progress-mobile.png)、[备份预览与恢复](checks/progress-desktop.png)、[手机记录](checks/progress-mobile-detail.png)、[手机备份](checks/progress-mobile.png)。
 
+- 桌面与手机列表勾选完成后隐藏、刷新恢复并可撤销：通过。
 - 任务完成与收藏在刷新、新标签页恢复：通过。
 - 任务与探索点的个人筛选及图层数量一致：通过。
 - 地区、筛选、视野与决策持久化且剧透默认隐藏：通过。
@@ -211,7 +212,7 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 
 ### 第四轮防漏、条件状态与跨任务提示
 
-[独立规则](checks/guidance-data.json)：12/12；[浏览器操作](checks/guidance-browser.json)：12/12。
+[独立规则](checks/guidance-data.json)：12/12；[浏览器操作](checks/guidance-browser.json)：14/14。
 
 43 条来源明确的剧情阶段提醒；已处理记录可筛选、刷新保存并与现有个人进度共用稳定 ID。来源条件区分全部、任一和进行中，不把前序线索当成全部必须成功。任务级条件只是来源片段，未解析目标继续标明。
 个人完成标记与游戏日志成功、失败、进行中及阶段事实分开；未记录保持未知。剧情记录纳入原版本个人备份，旧备份可读取，未知故事 ID 留在迁移账目。
@@ -220,7 +221,7 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 已选决策的关联后果只有展开目标任务剧透后显示；无自有节点的目标也可单独展开关联提示，失效的条件节点不参与联动。
 任务／指导数据生成链两次从冻结输入重建一致；不同数学库的投影尾数允许 1e-9 度数值误差，原始 XY 和稳定 ID 严格保留。
 
-[防漏清单](checks/guidance-checklist.png) · [条件记录](checks/guidance-conditions.png) · [手机](checks/guidance-mobile.png)
+[防漏清单](checks/guidance-checklist.png) · [主线流程](checks/guidance-flow.png) · [条件记录](checks/guidance-conditions.png) · [手机](checks/guidance-mobile.png)
 
 
 ### 重点事实与来源

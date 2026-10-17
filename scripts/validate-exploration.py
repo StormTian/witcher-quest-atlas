@@ -5,9 +5,11 @@ import hashlib
 import json
 import math
 from pathlib import Path
+import os, sys
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
+EXECUTION_ENVIRONMENT = os.environ.get('ATLAS_EXECUTION_ENVIRONMENT', ('github-actions-' if os.environ.get('GITHUB_ACTIONS') == 'true' else 'local-') + sys.platform)
 DATA_PATH = ROOT / 'dist/exploration.json'
 SOURCE_PATH = ROOT / 'evidence/upstream/Witcher3MapViewer/MapPins.xml'
 DATA = json.loads(DATA_PATH.read_text())
@@ -130,7 +132,7 @@ def provenance():
 
 for name, fn in [('原始记录逐条对账', source_coverage), ('独立分类与地区清单', audited_counts), ('重复与独立场景处理', exclusions), ('独立坐标样例与区域边界', coordinate_samples), ('稳定标识与引用', identities_and_references), ('旧任务目录保持', legacy_catalog), ('来源与精度边界', provenance)]:
     check(name, fn)
-output = {'date': datetime.now(timezone.utc).date().isoformat(), 'executionEnvironment': 'cloud-linux', 'executedAt': datetime.now(timezone.utc).isoformat(), 'status': 'pass' if all(item['status'] == 'pass' for item in CHECKS) else 'fail', 'checks': CHECKS, 'passed': sum(item['status'] == 'pass' for item in CHECKS), 'total': len(CHECKS), 'explorationSha256': hashlib.sha256(DATA_PATH.read_bytes()).hexdigest(), 'datasetSha256': hashlib.sha256((ROOT / 'dist/data.json').read_bytes()).hexdigest()}
+output = {'date': datetime.now(timezone.utc).date().isoformat(), 'executionEnvironment': EXECUTION_ENVIRONMENT, 'executedAt': datetime.now(timezone.utc).isoformat(), 'status': 'pass' if all(item['status'] == 'pass' for item in CHECKS) else 'fail', 'checks': CHECKS, 'passed': sum(item['status'] == 'pass' for item in CHECKS), 'total': len(CHECKS), 'explorationSha256': hashlib.sha256(DATA_PATH.read_bytes()).hexdigest(), 'datasetSha256': hashlib.sha256((ROOT / 'dist/data.json').read_bytes()).hexdigest()}
 (ROOT / 'evidence/exploration-data-validation.json').write_text(json.dumps(output, ensure_ascii=False, indent=2) + '\n')
 print(json.dumps(output, ensure_ascii=False))
 raise SystemExit(0 if output['status'] == 'pass' else 1)
