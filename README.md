@@ -24,7 +24,7 @@ GitHub Pages：https://stormtian.github.io/witcher-quest-atlas/
 
 “分享定位”只带地区与对象 ID，可直达任务或探索点，并支持浏览器前进／后退。公共任务数据下载和个人进度备份为不同入口。
 
-按剧情阶段的防漏清单有 43 条来源明确的提醒，可标为已处理、筛选并打开任务。详情中的游戏日志状态与个人完成勾选分开，剧情阶段事实默认未知。已选决策的关联后果仍要逐任务展开剧透；不会自动改写其他选择或结局演算。
+“按剧情阶段防漏”提供 43 条来源明确的提醒，可标为已处理、筛选并打开任务。“主线与支线流程”按已记录的前置关系展开直接关联任务，支持按资料片、任务类型和关键词筛选；这不是完整剧情时间线。任务详情会区分已整理的分支和未整理资料；暂无报告不代表确认没有影响。游戏日志状态与个人完成勾选分开，剧情阶段事实默认未知；已选决策的后果仍按任务剧透保护显示。
 
 ## 当前覆盖与正确性
 
@@ -74,7 +74,7 @@ python3 scripts/build-report.py
 
 完整源码、提交历史和标签由 Git 管理，可直接从 GitHub 克隆。开发和检查可在本地或 CI 环境执行，正式发布由 GitHub Actions 完成。
 
-浏览器脚本使用当前 Node 环境中的 Playwright，默认使用其 Chromium。可通过 `PLAYWRIGHT_MODULE_PATH`、`CHROMIUM_EXECUTABLE_PATH`、`ATLAS_BASE_URL` 配置。先在实际检查环境启动上述静态测试服务；缺少工具时记录阻碍。`validate-assets.cjs` 检查最终报告、下载与页面资源。检查记录必须保留实际执行环境与时间，不得在检查未执行或失败时生成通过报告。
+浏览器脚本使用 Playwright 与 Chromium，可通过 `PLAYWRIGHT_MODULE_PATH`、`CHROMIUM_EXECUTABLE_PATH`、`ATLAS_BASE_URL` 配置。Pages 工作流固定使用 Playwright 1.62.1，在 Ubuntu runner 安装 Chromium 并启动静态预览服务，生成当次验证报告；部署完成后还会访问正式 Pages 检查提交绑定与页面。`validate-assets.cjs` 检查最终报告、下载与页面资源。检查记录必须保留实际执行环境与时间，不得在检查未执行或失败时生成通过报告。
 
 中文地名生成使用 `evidence/localization/tiva/` 中冻结的中英对照和繁转简副本，不依赖在线接口。新增细节图片可用 Pillow 重新导出：`python3 scripts/export-detail-tiles.py --source /path/to/Witcher3MapViewer/Witcher3MapViewer/Maps`。来源必须为上述固定版本，脚本核对 MBTiles 文件指纹后才导出。
 
@@ -102,4 +102,4 @@ python3 scripts/build-report.py
 
 历史验收已保存在 `evidence/history/`。新增检查必须明确实际执行环境与时间，不能将历史通过记录当作本次执行结果。
 
-2026-10-03 的数据与浏览器验收在 Linux 环境使用 Chromium 151 执行，第二轮 93/93，第三轮 113/113，第四轮最终 137/137 项通过，具体结果与运行文件摘要见 `dist/validation.json`。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已保留，新导出图块须另行取得指定版本的原始数据库。
+2026-10-03 的 137/137 项验收作为历史结果保留。每次 Pages 发布现在会在 GitHub Actions 中重新运行数据和 Chromium 浏览器检查、生成与当前运行文件匹配的报告，并在部署后核对线上提交号和资源摘要。当前发布的执行环境、时间和检查数见 `dist/validation.json` 与网页版本页。地图原始 MBTiles 数据库不在版本管理源码中；现有全部图块已保留，新导出图块须另行取得指定版本的原始数据库。

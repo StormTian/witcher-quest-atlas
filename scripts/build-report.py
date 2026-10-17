@@ -29,7 +29,7 @@ current_inputs={name:hashlib.sha256((root/'dist'/name).read_bytes()).hexdigest()
 for result in [landmark,navigation]:
  if result: assert result.get('runtimeInputHashes')==current_inputs
 assert browser.get('runtimeInputHashes')==current_inputs, 'Browser checks must match current runtime inputs'
-if browser.get('executionEnvironment')=='cloud-linux' and browser.get('runtimeInputHashes')==current_inputs: cloud=None
+if browser['status']=='pass' and browser.get('runtimeInputHashes')==current_inputs: cloud=None
 if asset and asset.get('runtimeInputHashes')!=current_inputs: asset=None
 exploration=read('dist/exploration.json')
 exploration_data=read('evidence/exploration-data-validation.json')
@@ -57,7 +57,7 @@ summary.insert(1,{'name':'探索图层','detail':f"{exploration_data['passed']+e
 if asset:summary.insert(2,{'name':'报告与资源交付','detail':f"{asset['passed']}/{asset['total']} 项；报告、下载与资源加载",'status':'通过'})
 if landmark:summary.insert(2,{'name':'地名与路标显示','detail':f"{landmark['passed']}/{landmark['total']} 项；五区 227 个路标、默认地名、缩放拖动和手机",'status':'通过'})
 if navigation:summary.insert(2,{'name':'中文地名与缩放体验','detail':f"{navigation['passed']}/{navigation['total']} 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势",'status':'通过'})
-qa={'date':logic['date'],'executionEnvironment':'cloud-linux','executedAt':logic.get('executedAt'),'status':'partial' if cloud and cloud['browserStatus']=='blocked' else 'pass','datasetSha256':digest,'summary':summary,
+qa={'date':logic['date'],'executionEnvironment':logic.get('executionEnvironment','unknown'),'executedAt':logic.get('executedAt'),'status':'partial' if cloud and cloud['browserStatus']=='blocked' else 'pass','datasetSha256':digest,'summary':summary,
  'automatedChecksPassed':logic['passed']+browser['passed']+(asset['passed'] if asset else 0)+(landmark['passed'] if landmark else 0)+(navigation['passed'] if navigation else 0),
  'coverage':{'quests':len(d['quests']),'main':sum(q['type']=='main' for q in d['quests']),'side':sum(q['type']=='side' for q in d['quests']),'types':{t:sum(q['type']==t for q in d['quests']) for t in sorted({q['type'] for q in d['quests']})},'positioned':sum(bool(q['point']) for q in d['quests']),'communityCoordinates':sum(q['precision']=='community' for q in d['quests']),'landmarkAnchors':sum(q['precision']=='landmark' for q in d['quests']),'flowOrUnmapped':sum(not q['point'] for q in d['quests']),'reviewedBranchTasks':d['meta']['reviewedTasks'],'decisionNodes':d['meta']['decisionNodes'],'decisionOptions':d['meta']['decisionOptions']},
  'limits':d['meta']['limitations'],
@@ -101,7 +101,7 @@ if cloud:
  qa['summary']=summary
 dist=root/'dist';(dist/'checks').mkdir(exist_ok=True)
 for name,target in [('guidance-validation.json','guidance-data.json'),('guidance-browser-validation.json','guidance-browser.json')]: shutil.copyfile(root/'evidence'/name,dist/'checks'/target)
-for name in ['guidance-checklist.png','guidance-conditions.png','guidance-mobile.png']: shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
+for name in ['guidance-checklist.png','guidance-conditions.png','guidance-flow.png','guidance-mobile.png']: shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 for name,target in [('catalog-validation.json','catalog-data.json'),('catalog-browser-validation.json','catalog-browser.json')]: shutil.copyfile(root/'evidence'/name,dist/'checks'/target)
 for name in ['catalog-desktop.png','catalog-mobile.png']: shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 shutil.copyfile(root/'evidence/progress-validation.json',dist/'checks/progress.json')
@@ -130,7 +130,7 @@ lines=[
  '',
  f"任务资料日期：{d['meta']['date']}；本次验证日期：{logic['date']}。目录版本：{d['meta']['catalogVersion']}。",
  '',
- '本报告记录本次云端实际数据与浏览器检查；各项结果附执行时间与文件摘要。历史本地结果独立保留。网页检查不等于游戏实机全量验收，也不是官方任务完整性证明。',
+ '本报告记录本次自动化环境中的实际数据与浏览器检查；各项结果附执行时间与文件摘要。历史本地结果独立保留。网页检查不等于游戏实机全量验收，也不是官方任务完整性证明。',
  '',
  '## 覆盖',
  '',
@@ -143,7 +143,7 @@ lines=[
  '',
  '## 验证结果',
  '',
- f"本次云端检查日期：{logic['date']}。历史本地 66 项验收保存在源码 evidence/history/local-2026-10-02/，不计为本次云端通过。云端浏览器状态见下表。",
+ f"本次检查日期：{logic['date']}；执行环境：{logic.get('executionEnvironment','unknown')}。历史本地 66 项验收保存在源码 evidence/history/local-2026-10-02/，不计为本次通过。浏览器状态见下表。",
  '',
  '| 范围 | 实际检查 | 结果 |',
  '| --- | --- | --- |',
@@ -159,7 +159,7 @@ lines += [
  '',
  '### 浏览器实际操作与来源',
  '',
- f"[逐项结果](checks/browser.json)：{browser['passed']}/{browser['total']} 项通过。执行来源：{browser.get('executionEnvironment','historical-local')}，日期：{browser['date']}。本次云端是否通过见上述状态。",'']
+ f"[逐项结果](checks/browser.json)：{browser['passed']}/{browser['total']} 项通过。执行来源：{browser.get('executionEnvironment','historical-local')}，日期：{browser['date']}。当前运行结果见上述状态。",'']
 lines += [f"- {c['name']}：通过。" for c in browser['checks']]
 lines += [
  '',
@@ -200,7 +200,7 @@ lines += [f"- {check['name']}：{check['detail']}。" for check in exploration_d
 lines += ['', '### 第三轮目录与探索来源对账', '', f"[数据对账](checks/catalog-data.json)：{catalog_data['passed']}/{catalog_data['total']}；[浏览器](checks/catalog-browser.json)：{catalog_browser['passed']}/{catalog_browser['total']}。", '', '新增 161 条独立目录，保留原 267 个 ID。162 条 XML 候选和 177 条独立参考记录逐行绑定；套装组件、任务目标、重复阶段与旧酒商委托不重复计数。15 处推荐等级差异显式保留。', '[完整对照清单](catalog-review.json)包含合并依据与来源；其中可能包含剧情信息。没有可靠定位的条目继续从目录访问，套装售图线索不冒充所有图纸位置。', '探索来源的共享／空白标识使用维护的 ID 映射，坐标不进入永久 ID；服务点不宣称完整名单或工匠能力。', 'WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏览器仍不支持原生上下文，未宣称原生功能已验证。', '', '[桌面](checks/catalog-desktop.png) · [手机](checks/catalog-mobile.png)', '']
 lines += ['', '### 个人进度、备份与定位分享', '', f"[逐项结果](checks/progress.json)：{progress['passed']}/{progress['total']} 项通过。", '', '任务与探索点可完成、收藏、按个人记录筛选及隐藏已完成。记录、地区、筛选、视野和已选决策保存在当前设备浏览器；不是读取游戏存档，也没有账号云同步。', '备份恢复先预览并验证：无效 JSON、未知备份版本、非布尔标记、危险标识和过大文件不能覆盖当前记录。未知对象和决策保持在未匹配账目中，便于后续迁移。', '分享定位只包含地区、任务或探索点 ID，不夹带个人记录或决策。刷新后仍默认隐藏剧透，前进／后退可返回对应对象；未知链接显示提示。', '浏览器禁止或损坏存储时地图可使用，明确提示保存失败，并可导出本次记录。', '', '验收画面：[备份预览与恢复](checks/progress-desktop.png)、[手机记录](checks/progress-mobile-detail.png)、[手机备份](checks/progress-mobile.png)。', '']
 lines += [f"- {check['name']}：通过。" for check in progress['checks']]
-lines += ['', '### 第四轮防漏、条件状态与跨任务提示', '', f"[独立规则](checks/guidance-data.json)：{guidance_data['passed']}/{guidance_data['total']}；[浏览器操作](checks/guidance-browser.json)：{guidance_browser['passed']}/{guidance_browser['total']}。", '', '43 条来源明确的剧情阶段提醒；已处理记录可筛选、刷新保存并与现有个人进度共用稳定 ID。来源条件区分全部、任一和进行中，不把前序线索当成全部必须成功。任务级条件只是来源片段，未解析目标继续标明。', '个人完成标记与游戏日志成功、失败、进行中及阶段事实分开；未记录保持未知。剧情记录纳入原版本个人备份，旧备份可读取，未知故事 ID 留在迁移账目。', '刺杀线保留薇丝战斗／抛光水晶的失败阶段例外，“致命阴谋”仍须成功。教授调查与依赖节点、真正进入长者洞穴后的路线互斥、凯拉与两段恋情的条件分别核对。记录矛盾时按明确阶段事实提示，不偷偷改选择或结局演算。', '补审三个任务，共新增三个节点、七个选项，合计 43 个已审任务／48 节点／108 选项。来源包括本次成功抓取的 Gamer Guides 事实段落；Fandom 本次返回 402 的引用只沿用既有核对，不冒充重新抓取。', '已选决策的关联后果只有展开目标任务剧透后显示；无自有节点的目标也可单独展开关联提示，失效的条件节点不参与联动。', '任务／指导数据生成链两次从冻结输入重建一致；不同数学库的投影尾数允许 1e-9 度数值误差，原始 XY 和稳定 ID 严格保留。', '', '[防漏清单](checks/guidance-checklist.png) · [条件记录](checks/guidance-conditions.png) · [手机](checks/guidance-mobile.png)', '']
+lines += ['', '### 第四轮防漏、条件状态与跨任务提示', '', f"[独立规则](checks/guidance-data.json)：{guidance_data['passed']}/{guidance_data['total']}；[浏览器操作](checks/guidance-browser.json)：{guidance_browser['passed']}/{guidance_browser['total']}。", '', '43 条来源明确的剧情阶段提醒；已处理记录可筛选、刷新保存并与现有个人进度共用稳定 ID。来源条件区分全部、任一和进行中，不把前序线索当成全部必须成功。任务级条件只是来源片段，未解析目标继续标明。', '个人完成标记与游戏日志成功、失败、进行中及阶段事实分开；未记录保持未知。剧情记录纳入原版本个人备份，旧备份可读取，未知故事 ID 留在迁移账目。', '刺杀线保留薇丝战斗／抛光水晶的失败阶段例外，“致命阴谋”仍须成功。教授调查与依赖节点、真正进入长者洞穴后的路线互斥、凯拉与两段恋情的条件分别核对。记录矛盾时按明确阶段事实提示，不偷偷改选择或结局演算。', '补审三个任务，共新增三个节点、七个选项，合计 43 个已审任务／48 节点／108 选项。来源包括本次成功抓取的 Gamer Guides 事实段落；Fandom 本次返回 402 的引用只沿用既有核对，不冒充重新抓取。', '已选决策的关联后果只有展开目标任务剧透后显示；无自有节点的目标也可单独展开关联提示，失效的条件节点不参与联动。', '任务／指导数据生成链两次从冻结输入重建一致；不同数学库的投影尾数允许 1e-9 度数值误差，原始 XY 和稳定 ID 严格保留。', '', '[防漏清单](checks/guidance-checklist.png) · [主线流程](checks/guidance-flow.png) · [条件记录](checks/guidance-conditions.png) · [手机](checks/guidance-mobile.png)', '']
 lines += ['', '### 重点事实与来源', '', '| 核对项目 | 结论 | 依据 |', '| --- | --- | --- |']
 lines += [f"| {c['claim']} | {c['result']} | [攻略]({c['source']}) |" for c in d['meta']['factChecks']]
 lines += [

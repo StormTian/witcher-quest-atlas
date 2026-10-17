@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import posixpath
 import re
 import shutil
 import subprocess
@@ -26,8 +27,34 @@ def git(*arguments):
 source_commit = git('rev-parse', 'HEAD')
 if os.environ.get('GITHUB_SHA') and os.environ['GITHUB_SHA'] != source_commit:
     raise SystemExit('The checked-out commit differs from GITHUB_SHA')
-if git('status', '--porcelain', '--untracked-files=normal'):
-    raise SystemExit('Commit the source and verification results before packaging')
+status = subprocess.check_output(
+    ['git', 'status', '--porcelain=v1', '--untracked-files=normal', '-z'], cwd=root
+).decode()
+dirty_paths = [entry[3:] for entry in status.split('\0') if entry]
+if dirty_paths:
+    generated_reports = {
+        'evidence/asset-report-validation.json', 'evidence/browser-validation.json',
+        'evidence/catalog-browser-validation.json', 'evidence/catalog-validation.json',
+        'evidence/data-logic-validation.json', 'evidence/exploration-browser-validation.json',
+        'evidence/exploration-data-validation.json', 'evidence/guidance-browser-validation.json',
+        'evidence/guidance-validation.json', 'evidence/landmark-validation.json',
+        'evidence/navigation-validation.json', 'evidence/progress-validation.json',
+        'dist/validation.json', 'dist/validation-report.md',
+    }
+
+    def generated_path(path):
+        return (
+            path in generated_reports
+            or (path.startswith('dist/checks/') and path.count('/') >= 2)
+            or (posixpath.dirname(path) == 'evidence' and path.endswith('.png')
+                and 'failure' not in posixpath.basename(path).lower())
+        )
+
+    unexpected = [path for path in dirty_paths if not generated_path(path)]
+    if (os.environ.get('GITHUB_ACTIONS') != 'true' or not os.environ.get('GITHUB_SHA')
+            or unexpected):
+        details = ', '.join(unexpected or dirty_paths)
+        raise SystemExit(f'Only CI-generated validation outputs may be uncommitted: {details}')
 
 dist = root / 'dist'
 output = args.output.resolve()

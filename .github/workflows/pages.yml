@@ -15,15 +15,62 @@ concurrency:
 jobs:
   prepare:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     permissions:
       contents: read
       pages: read
+    env:
+      PLAYWRIGHT_HOME: ${{ runner.temp }}/witcher-playwright
+      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/witcher-browsers
+      PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/witcher-playwright/node_modules/playwright
+      ATLAS_BASE_URL: http://127.0.0.1:8765/
     steps:
       - name: Check out the source commit
         uses: actions/checkout@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Verify the checked-in results and prepare the website
+      - name: Install Playwright Chromium
+        run: |
+          npm install --prefix "$PLAYWRIGHT_HOME" --no-save playwright@1.62.1
+          "$PLAYWRIGHT_HOME/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Run data and browser checks against the release files
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory dist > "$RUNNER_TEMP/witcher-preview.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent "$ATLAS_BASE_URL" > /dev/null; then break; fi
+            sleep 1
+          done
+          curl --fail --silent "$ATLAS_BASE_URL" > /dev/null
+          node scripts/validate.cjs
+          node scripts/validate-guidance.cjs
+          node scripts/browser-validate.cjs
+          node scripts/validate-landmarks.cjs
+          node scripts/validate-navigation.cjs
+          node scripts/validate-exploration.cjs
+          node scripts/validate-progress.cjs
+          node scripts/validate-catalog.cjs
+          node scripts/browser-guidance.cjs
+          node scripts/validate-assets.cjs
+          python3 scripts/build-report.py
+      - name: Upload validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-validation-${{ github.sha }}
+          path: |
+            evidence/*-validation.json
+            evidence/*.png
+            dist/validation.json
+            dist/validation-report.md
+          if-no-files-found: ignore
+          retention-days: 30
+      - name: Verify reports and prepare the website
         run: python3 scripts/prepare-github-pages.py --output _site
       - name: Upload the website
         uses: actions/upload-pages-artifact@v4
@@ -36,6 +83,8 @@ jobs:
     permissions:
       pages: write
       id-token: write
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -43,3 +92,36 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  verify:
+    needs: [prepare, deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PLAYWRIGHT_HOME: ${{ runner.temp }}/witcher-playwright
+      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.temp }}/witcher-browsers
+      PLAYWRIGHT_MODULE_PATH: ${{ runner.temp }}/witcher-playwright/node_modules/playwright
+      ATLAS_BASE_URL: ${{ needs.deploy.outputs.page_url }}
+      EXPECTED_SOURCE_SHA: ${{ github.sha }}
+      PAGES_EVIDENCE_DIR: ${{ runner.temp }}/witcher-pages-evidence
+    steps:
+      - name: Check out the source commit
+        uses: actions/checkout@v6
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Playwright Chromium
+        run: |
+          npm install --prefix "$PLAYWRIGHT_HOME" --no-save playwright@1.62.1
+          "$PLAYWRIGHT_HOME/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Verify the deployed Pages site in Chromium
+        run: node scripts/verify-github-pages.cjs
+      - name: Upload live-site browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-live-verification-${{ github.sha }}
+          path: ${{ runner.temp }}/witcher-pages-evidence
+          if-no-files-found: ignore
+          retention-days: 30

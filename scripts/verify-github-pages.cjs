@@ -18,8 +18,19 @@ async function request(name) {
   assert.equal(response.status, 200, name);
   return Buffer.from(await response.arrayBuffer());
 }
+async function waitForPublishedCommit() {
+  for (let attempt = 0; attempt < 12; attempt++) {
+    try {
+      const response = await fetch(new URL('version.json', baseURL), {cache: 'no-store'});
+      if (response.ok && (await response.json()).sourceCommit === expectedCommit) return;
+    } catch {}
+    await new Promise(resolve => setTimeout(resolve, 5000));
+  }
+  throw new Error(`Pages did not serve the expected source commit ${expectedCommit} within 60 seconds`);
+}
 
 (async () => {
+  await waitForPublishedCommit();
   await check('发布版本对应精确源码提交及已验证运行文件', async () => {
     version = JSON.parse(await request('version.json'));
     assert.equal(version.sourceCommit, expectedCommit);

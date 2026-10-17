@@ -12,5 +12,5 @@ else {
 const launchOptions = {headless:true, args:['--no-sandbox']};
 if (process.env.CHROMIUM_EXECUTABLE_PATH) launchOptions.executablePath = process.env.CHROMIUM_EXECUTABLE_PATH;
 const baseURL = process.env.ATLAS_BASE_URL || 'http://127.0.0.1:8765/';
-const provenance = {executionEnvironment:'cloud-linux', browser:'Playwright Chromium', startedAt:new Date().toISOString()};
+const provenance = {executionEnvironment:require('./execution-environment.cjs'), browser:'Playwright Chromium', startedAt:new Date().toISOString()};
 module.exports = {chromium:playwright.chromium, launchOptions, baseURL, provenance};
