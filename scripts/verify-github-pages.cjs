@@ -47,8 +47,7 @@ async function waitForPublishedCommit() {
       const bytes = await request(name);
       assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), hash, name);
     }
-    await request('.nojekyll');
-    return `${Object.keys(hashes).length} runtime files and static hosting marker`;
+    return `${Object.keys(hashes).length} public runtime files`;
   });
   const browser = await chromium.launch(launchOptions);
   try {
