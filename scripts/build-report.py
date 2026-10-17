@@ -77,7 +77,10 @@ for result in [guidance_data,guidance_browser]:
 qa['automatedChecksPassed']+=guidance_data['passed']+guidance_browser['passed']
 qa['evidence'].update(guidanceData='checks/guidance-data.json',guidanceBrowser='checks/guidance-browser.json')
 summary.insert(1,{'name':'防漏清单与条件联动','detail':f"{guidance_data['passed']+guidance_browser['passed']}/{guidance_data['total']+guidance_browser['total']} 项；43 条阶段提醒、未知条件、失败例外、路线互斥、备份与逐任务剧透",'status':'通过'})
+qa['coverage'].update(storyIntroductions=d['meta']['stories']['count'],storyPlots=d['meta']['stories']['count'])
 qa['coverage'].update(stageReminders=len(guidance['entries']),guidanceRules=len(guidance['rules']))
+qa['questStories']=d['meta']['stories']
+summary.insert(1,{'name':'任务剧情介绍','detail':f"{d['meta']['stories']['count']} 条中文简介与任务经过；逐任务参考来源，经过默认隐藏；不等于全部分支核对",'status':'已补充'})
 qa['gameStateRecords']={'storage':'device-local','default':'unknown','personalDoneIsGameSuccess':False,'backupSchemaVersion':1,'source':'guidance.json'}
 qa['personalProgress']={'storage':'device-local','schemaVersion':1,'spoilersPersisted':False,'listCompletionCheckboxes':True,'defaultHideDone':True,'backup':'JSON with validated preview and unmatched-ID ledger','shareParameters':['region','quest or point']}
 qa['runtimeInputHashes']=current_inputs
@@ -122,7 +125,7 @@ if landmark:
  shutil.copyfile(root/'evidence/landmark-validation.json',dist/'checks/landmarks.json')
  for name in ['landmarks-desktop.png','landmarks-mobile.png']:
   shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
-for name in ['desktop-final.png','mobile-final.png','decision-final.png','mobile-audit.png','text-200.png']:
+for name in ['desktop-final.png','mobile-final.png','decision-final.png','mobile-audit.png','text-200.png','story-desktop.png','story-mobile.png']:
  shutil.copyfile(root/'evidence'/name,dist/'checks'/name)
 (dist/'validation.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2))
 lines=[
@@ -137,6 +140,7 @@ lines=[
  f"- {len(d['quests'])} 个任务／遭遇条目。分类：" + '、'.join(f"{t} {n}" for t,n in qa['coverage']['types'].items()) + '。原有 267 个 ID 和主线／支线分类保留。',
  f"- {qa['coverage']['positioned']} 个地图定位：{qa['coverage']['communityCoordinates']} 个社区发现／接取线索、{qa['coverage']['landmarkAnchors']} 个关联地标。另 {qa['coverage']['flowOrUnmapped']} 个流程／未知坐标条目保留在索引中。",
  '- 五个真实地区地图：白果园、威伦／诺维格瑞、史凯利杰、凯尔莫罕、陶森特。维吉玛王宫仅显示室内剧情任务。',
+ f"- {d['meta']['stories']['count']} 个条目有独立中文剧情简介、默认隐藏的任务经过和参考来源。剧情摘要不表示所有决策已核对。",
  f"- {d['meta']['reviewedTasks']} 个重点任务的 {d['meta']['decisionNodes']} 个决策节点、{d['meta']['decisionOptions']} 个选项；尚未整理分支的任务有明确提示。",
  '- 目录包含主线／支线、狩魔委托、套装搜集、寻宝与随机遭遇；阶段、组件和探索资源点分别归类。',
  f"- {len(exploration['points'])} 个独立探索点，{len(exploration['categories'])} 类：设施、服务、昆特、资源与洞穴入口。与任务目录分开统计。",
@@ -162,6 +166,8 @@ lines += [
  f"[逐项结果](checks/browser.json)：{browser['passed']}/{browser['total']} 项通过。执行来源：{browser.get('executionEnvironment','historical-local')}，日期：{browser['date']}。当前运行结果见上述状态。",'']
 lines += [f"- {c['name']}：通过。" for c in browser['checks']]
 lines += [
+ '',
+ '剧情画面：[桌面剧情](checks/story-desktop.png)、[手机剧情](checks/story-mobile.png)。',
  '',
  '验收画面：[桌面](checks/desktop-final.png)、[手机](checks/mobile-final.png)、[分支展开](checks/decision-final.png)、[验证窗口](checks/mobile-audit.png)、[200% 文字](checks/text-200.png)。',
  '',

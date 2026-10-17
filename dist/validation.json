@@ -1,14 +1,19 @@
 {
   "date": "2026-10-17",
   "executionEnvironment": "local-macos-chromium-151.0.7922.34",
-  "executedAt": "2026-10-17T09:52:04.008Z",
+  "executedAt": "2026-10-17T10:48:53.100Z",
   "status": "pass",
-  "datasetSha256": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246",
+  "datasetSha256": "87d7a8ef7f31547a09bcbcbc62f7f0dc79705889a4f5c3d9dc5d487c99aa6409",
   "summary": [
     {
       "name": "任务数据与规则",
-      "detail": "25/25 项；任务引用、地图资源、结局条件、流程前置",
+      "detail": "26/26 项；任务引用、地图资源、结局条件、流程前置",
       "status": "通过"
+    },
+    {
+      "name": "任务剧情介绍",
+      "detail": "428 条中文简介与任务经过；逐任务参考来源，经过默认隐藏；不等于全部分支核对",
+      "status": "已补充"
     },
     {
       "name": "防漏清单与条件联动",
@@ -47,7 +52,7 @@
     },
     {
       "name": "网页实际交互",
-      "detail": "19/19 项；五区地图、筛选、108 个选项、剧透与手机操作",
+      "detail": "21/21 项；五区地图、筛选、108 个选项、剧透与手机操作",
       "status": "通过"
     },
     {
@@ -66,7 +71,7 @@
       "status": "未执行"
     }
   ],
-  "automatedChecksPassed": 140,
+  "automatedChecksPassed": 143,
   "coverage": {
     "quests": 428,
     "main": 87,
@@ -86,6 +91,8 @@
     "reviewedBranchTasks": 43,
     "decisionNodes": 48,
     "decisionOptions": 108,
+    "storyIntroductions": 428,
+    "storyPlots": 428,
     "stageReminders": 43,
     "guidanceRules": 8,
     "explorationPoints": 615,
@@ -138,6 +145,14 @@
     "status": "unavailable",
     "validation": "unsupported-context, not claimed as validated"
   },
+  "questStories": {
+    "count": 428,
+    "date": "2026-10-17",
+    "method": "独立撰写中文简介与剧情经过；逐任务附参考来源，非游戏日志全文翻译。",
+    "spoilers": "仅简介默认显示，任务经过使用逐任务／全局剧透控制。",
+    "limits": "剧情摘要不代表已核对全部分支，也不等于逐任务游戏实机验证。",
+    "contentSha256": "1b59748d2d3fb35b91957b190fdf2b66ddfaed9906ac59b6e2c7a3d055ac2d43"
+  },
   "gameStateRecords": {
     "storage": "device-local",
     "default": "unknown",
@@ -158,12 +173,12 @@
     ]
   },
   "runtimeInputHashes": {
-    "app.js": "26262298f7b069e305fdb0bda4354a1641a0118c93568cd054cfe73d8a611758",
+    "app.js": "3b06054e63886ab80c73cec9d117755a35dc8bd28a9c92d5c5d16030491e34eb",
     "index.html": "9fc5bc4453456ba8ad787aef364109c5b13647c912c408cd70eb7a3cf8b8d817",
-    "style.css": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
+    "style.css": "d8cd25ad113baa4096ce98317ce9311c301610160c09bb684f9b78b0cd2c7141",
     "logic.js": "3f4a76aa54ba0f4cd1a9c4c5245d26acd3ae5d86159bfa678544535028aa7072",
     "map-navigation.js": "916d33601e6664bad56ec5f9bfe54c09a760cb5fb37e99e5c33b8c70427ad259",
-    "data.json": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246",
+    "data.json": "87d7a8ef7f31547a09bcbcbc62f7f0dc79705889a4f5c3d9dc5d487c99aa6409",
     "places-zh.json": "01442feaf8d61d469ad3d00afe2e31c16ead4069d558f378a002e4f61aadf742",
     "exploration.js": "45ea7084e5433de21165ae2202ed600042bc969bd9ddb57f38ec23ea392ef69a",
     "exploration.css": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360",

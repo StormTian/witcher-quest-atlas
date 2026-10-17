@@ -70,3 +70,7 @@ for s in review['limits']:
 for file,obj in [(path,data),(ROOT/'dist/guidance.json',guidance),(ROOT/'dist/fact-checks.json',data['meta']['factChecks'])]:file.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n')
 (ROOT/'dist/catalog-review.json').write_text((ROOT/'evidence/catalog-review/reconciliation.json').read_text())
 print(json.dumps({'stageEntries':len(entries),'restoredSourceReferences':restored,'reviewedTasks':data['meta']['reviewedTasks'],'decisionNodes':data['meta']['decisionNodes'],'decisionOptions':data['meta']['decisionOptions']}))
+
+# Keep authored story notes when rebuilding the full catalogue pipeline.
+import runpy
+runpy.run_path(str(ROOT / 'scripts/build-stories.py'), run_name='__main__')

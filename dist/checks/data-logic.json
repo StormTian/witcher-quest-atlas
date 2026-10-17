@@ -1,13 +1,18 @@
 {
   "date": "2026-10-17",
   "executionEnvironment": "local-macos-chromium-151.0.7922.34",
-  "executedAt": "2026-10-17T09:52:04.008Z",
+  "executedAt": "2026-10-17T10:48:53.100Z",
   "status": "pass",
   "checks": [
     {
       "name": "目录唯一性与范围",
       "status": "pass",
       "detail": "428 unique quests; frozen source reconciliation and legacy main/side classifications match"
+    },
+    {
+      "name": "剧情覆盖、来源与未核对分支的边界",
+      "status": "pass",
+      "detail": "428 sourced introductions and plots; story coverage does not upgrade branch review or game success"
     },
     {
       "name": "任务与决策引用完整性",
@@ -130,7 +135,7 @@
       "detail": "12 source-derived predecessor fixtures and 3 timing/failure boundaries"
     }
   ],
-  "passed": 25,
-  "total": 25,
-  "datasetSha256": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246"
+  "passed": 26,
+  "total": 26,
+  "datasetSha256": "87d7a8ef7f31547a09bcbcbc62f7f0dc79705889a4f5c3d9dc5d487c99aa6409"
 }

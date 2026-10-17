@@ -9,6 +9,7 @@
 - 428 个任务／遭遇条目。分类：contract 35、encounter 40、main 87、scavenger 29、side 180、treasure 57。原有 267 个 ID 和主线／支线分类保留。
 - 304 个地图定位：288 个社区发现／接取线索、16 个关联地标。另 124 个流程／未知坐标条目保留在索引中。
 - 五个真实地区地图：白果园、威伦／诺维格瑞、史凯利杰、凯尔莫罕、陶森特。维吉玛王宫仅显示室内剧情任务。
+- 428 个条目有独立中文剧情简介、默认隐藏的任务经过和参考来源。剧情摘要不表示所有决策已核对。
 - 43 个重点任务的 48 个决策节点、108 个选项；尚未整理分支的任务有明确提示。
 - 目录包含主线／支线、狩魔委托、套装搜集、寻宝与随机遭遇；阶段、组件和探索资源点分别归类。
 - 615 个独立探索点，13 类：设施、服务、昆特、资源与洞穴入口。与任务目录分开统计。
@@ -19,7 +20,8 @@
 
 | 范围 | 实际检查 | 结果 |
 | --- | --- | --- |
-| 任务数据与规则 | 25/25 项；任务引用、地图资源、结局条件、流程前置 | 通过 |
+| 任务数据与规则 | 26/26 项；任务引用、地图资源、结局条件、流程前置 | 通过 |
+| 任务剧情介绍 | 428 条中文简介与任务经过；逐任务参考来源，经过默认隐藏；不等于全部分支核对 | 已补充 |
 | 防漏清单与条件联动 | 26/26 项；43 条阶段提醒、未知条件、失败例外、路线互斥、备份与逐任务剧透 | 通过 |
 | 扩充目录与服务点 | 20/20 项；428 条目录、615 点位、来源归并、六类筛选、密集点与旧备份 | 通过 |
 | 探索图层 | 15/15 项；615 个点位；来源对账、基础图层 32 种组合、手机操作 | 通过 |
@@ -27,16 +29,17 @@
 | 地名与路标显示 | 8/8 项；五区 227 个路标、默认地名、缩放拖动和手机 | 通过 |
 | 报告与资源交付 | 3/3 项；报告、下载与资源加载 | 通过 |
 | 个人进度与分享 | 13/13 项；完成、收藏、可靠导入导出、刷新恢复、分享与前进后退 | 通过 |
-| 网页实际交互 | 19/19 项；五区地图、筛选、108 个选项、剧透与手机操作 | 通过 |
+| 网页实际交互 | 21/21 项；五区地图、筛选、108 个选项、剧透与手机操作 | 通过 |
 | 攻略事实核对 | 19 项重点核对；43 个任务／48 个节点附攻略依据 | 资料核对完成 |
 | 地图位置抽样 | 4 个独立坐标样例及地图裁切，校准社区坐标转换 | 抽样一致 |
 | 实机游戏验证 | 没有读取游戏存档或逐任务运行游戏 | 未执行 |
 
 ### 数据与结局规则
 
-[逐项结果](checks/data-logic.json)：25/25 项通过。
+[逐项结果](checks/data-logic.json)：26/26 项通过。
 
 - 目录唯一性与范围：428 unique quests; frozen source reconciliation and legacy main/side classifications match。
+- 剧情覆盖、来源与未核对分支的边界：428 sourced introductions and plots; story coverage does not upgrade branch review or game success。
 - 任务与决策引用完整性：48 nodes / 108 options, all task references resolve。
 - 坐标与流程分类：304 positioned tasks; flow/unknown entries retained without invented coordinates。
 - 独立接取点校准样例：4 independent numeric fixtures; corresponding XYZ map tiles present。
@@ -64,9 +67,10 @@
 
 ### 浏览器实际操作与来源
 
-[逐项结果](checks/browser.json)：19/19 项通过。执行来源：local-macos-chromium-151.0.7922.34，日期：2026-10-17。当前运行结果见上述状态。
+[逐项结果](checks/browser.json)：21/21 项通过。执行来源：local-macos-chromium-151.0.7922.34，日期：2026-10-17。当前运行结果见上述状态。
 
 - 桌面初始状态与剧透保护：通过。
+- 剧情简介覆盖各类条目且只展开所选任务：通过。
 - 五个地区地图实际加载：通过。
 - 王宫不显示虚构地图：通过。
 - 点击真实地图标记打开任务：通过。
@@ -82,9 +86,12 @@
 - 键盘访问与快捷搜索：通过。
 - 1280 × 720 与200%文字放大：通过。
 - 手机首屏与地图：通过。
+- 手机剧情阅读与返回后保护：通过。
 - 手机任务索引、详情与关闭：通过。
 - 验证窗口、资料来源与可检查地图证据：通过。
 - 页面运行与资源错误检查：通过。
+
+剧情画面：[桌面剧情](checks/story-desktop.png)、[手机剧情](checks/story-mobile.png)。
 
 验收画面：[桌面](checks/desktop-final.png)、[手机](checks/mobile-final.png)、[分支展开](checks/decision-final.png)、[验证窗口](checks/mobile-audit.png)、[200% 文字](checks/text-200.png)。
 
@@ -169,7 +176,7 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 - 全隐藏恢复原选择并隐藏任务高亮：Restores the prior partial selection; hidden quest layers stay hidden when a quest is opened from the index.。
 - 三类点位真实点击详情与键盘操作：All three types open through real marker clicks; keyboard Enter and Space open a board; provenance and availability limits remain visible.。
 - 任务筛选与探索图层互不干扰：Empty task search and DLC filtering leave exploration and road signs intact; point selection preserves filters.。
-- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 1.6ms on this cloud Chromium; map controls have their own stacking context.。
+- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 2.0ms on this cloud Chromium; map controls have their own stacking context.。
 - 手机图层与探索详情及200%文字：390×844 touch device; layer toggles, Escape/focus return, tap-to-detail and doubled text remain usable without page overflow.。
 - 探索资源与页面异常：Zero page exceptions and zero unexpected HTTP failures across the exploration interactions.。
 
@@ -261,7 +268,7 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 
 ## 可重复核验
 
-最终任务数据 SHA-256：`80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246`。
+最终任务数据 SHA-256：`87d7a8ef7f31547a09bcbcbc62f7f0dc79705889a4f5c3d9dc5d487c99aa6409`。
 
 地图／社区数据来源锁定为 Witcher3MapViewer commit `fb674dbff7df087d0a45f9b3938ba6d5317295af`。来源 XML 与地图清单在源码项目 evidence/ 中保留；可重新生成任务数据，执行数据检查，并在云端测试服务中重跑浏览器操作。
 

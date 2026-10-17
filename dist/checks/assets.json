@@ -1,7 +1,7 @@
 {
   "date": "2026-10-17",
   "executionEnvironment": "local-macos-chromium-151.0.7922.34",
-  "executedAt": "2026-10-17T09:55:55.017Z",
+  "executedAt": "2026-10-17T10:50:21.356Z",
   "status": "pass",
   "checks": [
     {
@@ -12,7 +12,7 @@
     {
       "name": "部署资源全部实际返回",
       "status": "pass",
-      "detail": "5788 static files fetched successfully, including all 5721 map tiles"
+      "detail": "5790 static files fetched successfully, including all 5721 map tiles"
     },
     {
       "name": "完整验证窗口可在桌面与手机操作",
@@ -22,14 +22,14 @@
   ],
   "passed": 3,
   "total": 3,
-  "datasetSha256": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246",
+  "datasetSha256": "87d7a8ef7f31547a09bcbcbc62f7f0dc79705889a4f5c3d9dc5d487c99aa6409",
   "runtimeInputHashes": {
-    "app.js": "26262298f7b069e305fdb0bda4354a1641a0118c93568cd054cfe73d8a611758",
+    "app.js": "3b06054e63886ab80c73cec9d117755a35dc8bd28a9c92d5c5d16030491e34eb",
     "index.html": "9fc5bc4453456ba8ad787aef364109c5b13647c912c408cd70eb7a3cf8b8d817",
-    "style.css": "058e50434e2f4d06314bd97a3bf9196dacd1656f0d8fa40111a0444baf5bf6f7",
+    "style.css": "d8cd25ad113baa4096ce98317ce9311c301610160c09bb684f9b78b0cd2c7141",
     "logic.js": "3f4a76aa54ba0f4cd1a9c4c5245d26acd3ae5d86159bfa678544535028aa7072",
     "map-navigation.js": "916d33601e6664bad56ec5f9bfe54c09a760cb5fb37e99e5c33b8c70427ad259",
-    "data.json": "80c2bc7810177855ecfe437b31c46dbdf9fbfd6fe4f3075c22b915378ebcd246",
+    "data.json": "87d7a8ef7f31547a09bcbcbc62f7f0dc79705889a4f5c3d9dc5d487c99aa6409",
     "places-zh.json": "01442feaf8d61d469ad3d00afe2e31c16ead4069d558f378a002e4f61aadf742",
     "exploration.js": "45ea7084e5433de21165ae2202ed600042bc969bd9ddb57f38ec23ea392ef69a",
     "exploration.css": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360",

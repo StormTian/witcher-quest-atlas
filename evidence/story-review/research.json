@@ -1,0 +1,2135 @@
+{
+  "executedAt": "2026-10-17T10:41:28.998Z",
+  "method": "Public web search retrieval; same-name and unrelated results excluded",
+  "checked": 304,
+  "references": [
+    {
+      "questId": "q3",
+      "name": "Lilac and Gooseberries",
+      "url": "https://witcher.fandom.com/wiki/Lilac_and_Gooseberries",
+      "checkedAt": "2026-10-17T10:15:09.000Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q44",
+      "name": "The Beast of White Orchard",
+      "url": "https://witcher.fandom.com/wiki/The_Beast_of_White_Orchard",
+      "checkedAt": "2026-10-17T10:15:09.000Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q39",
+      "name": "The Incident at White Orchard",
+      "url": "https://witcher.fandom.com/wiki/The_Incident_at_White_Orchard",
+      "checkedAt": "2026-10-17T10:15:09.000Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q19",
+      "name": "Missing in Action",
+      "url": "https://witcher.fandom.com/wiki/Missing_in_Action",
+      "checkedAt": "2026-10-17T10:15:09.001Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q20",
+      "name": "A Frying Pan, Spick and Span",
+      "url": "https://witcher.fandom.com/wiki/A_Frying_Pan%2C_Spick_and_Span",
+      "checkedAt": "2026-10-17T10:15:09.001Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q36",
+      "name": "Precious Cargo",
+      "url": "https://witcher.fandom.com/wiki/Precious_Cargo",
+      "checkedAt": "2026-10-17T10:15:09.001Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q37",
+      "name": "Twisted Firestarter",
+      "url": "https://witcher.fandom.com/wiki/Twisted_Firestarter",
+      "checkedAt": "2026-10-17T10:15:09.001Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q42",
+      "name": "On Death's Bed",
+      "url": "https://witcher.fandom.com/wiki/On_Death%27s_Bed",
+      "checkedAt": "2026-10-17T10:15:09.002Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q40",
+      "name": "Imperial Audience",
+      "url": "https://witcher.fandom.com/wiki/Imperial_Audience",
+      "checkedAt": "2026-10-17T10:15:09.002Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q12",
+      "name": "Gwent: Velen Players",
+      "url": "https://witcher.fandom.com/wiki/Gwent%3A_Velen_Players",
+      "checkedAt": "2026-10-17T10:15:09.002Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q22",
+      "name": "The Truth is in the Stars",
+      "url": "https://witcher.fandom.com/wiki/The_Truth_is_in_the_Stars",
+      "checkedAt": "2026-10-17T10:15:09.002Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q45",
+      "name": "Funeral Pyres",
+      "url": "https://witcher.fandom.com/wiki/Funeral_Pyres",
+      "checkedAt": "2026-10-17T10:15:09.003Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q49",
+      "name": "Hazardous Goods",
+      "url": "https://witcher.fandom.com/wiki/Hazardous_Goods",
+      "checkedAt": "2026-10-17T10:15:09.003Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q68",
+      "name": "A Dog's Life",
+      "url": "https://witcher.fandom.com/wiki/A_Dog%27s_Life",
+      "checkedAt": "2026-10-17T10:15:09.003Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q82",
+      "name": "The Fall of the House of Reardon",
+      "url": "https://witcher.fandom.com/wiki/The_Fall_of_the_House_of_Reardon",
+      "checkedAt": "2026-10-17T10:15:09.004Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q83",
+      "name": "Ghosts of the Past",
+      "url": "https://witcher.fandom.com/wiki/Ghosts_of_the_Past",
+      "checkedAt": "2026-10-17T10:15:09.005Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q84",
+      "name": "Fools' Gold",
+      "url": "https://witcher.fandom.com/wiki/Fools%27_Gold",
+      "checkedAt": "2026-10-17T10:15:09.005Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q88",
+      "name": "Lynch Mob",
+      "url": "https://witcher.fandom.com/wiki/Lynch_Mob",
+      "checkedAt": "2026-10-17T10:15:09.005Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q89",
+      "name": "A Greedy God",
+      "url": "https://witcher.fandom.com/wiki/A_Greedy_God",
+      "checkedAt": "2026-10-17T10:15:09.006Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q93",
+      "name": "Wild at Heart",
+      "url": "https://witcher.fandom.com/wiki/Wild_at_Heart",
+      "checkedAt": "2026-10-17T10:15:09.006Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q119",
+      "name": "Witcher Wannabe",
+      "url": "https://witcher.fandom.com/wiki/Witcher_Wannabe",
+      "checkedAt": "2026-10-17T10:15:09.006Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q118",
+      "name": "Defender of the Faith",
+      "url": "https://witcher.fandom.com/wiki/Defender_of_the_Faith",
+      "checkedAt": "2026-10-17T10:15:09.006Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q120",
+      "name": "Love's Cruel Snares",
+      "url": "https://witcher.fandom.com/wiki/Love%27s_Cruel_Snares",
+      "checkedAt": "2026-10-17T10:15:09.006Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q121",
+      "name": "Death By Fire",
+      "url": "https://witcher.fandom.com/wiki/Death_By_Fire",
+      "checkedAt": "2026-10-17T10:15:09.007Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q130",
+      "name": "Fists of Fury: Velen",
+      "url": "https://witcher.fandom.com/wiki/Fists_of_Fury%3A_Velen",
+      "checkedAt": "2026-10-17T10:15:09.007Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q139",
+      "name": "Blood Ties",
+      "url": "https://witcher.fandom.com/wiki/Blood_Ties",
+      "checkedAt": "2026-10-17T10:15:09.007Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q268",
+      "name": "Where the Cat and Wolf Play...",
+      "url": "https://witcher.fandom.com/wiki/Where_the_Cat_and_Wolf_Play...",
+      "checkedAt": "2026-10-17T10:15:09.007Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q267",
+      "name": "Take What You Want",
+      "url": "https://witcher.fandom.com/wiki/Take_What_You_Want",
+      "checkedAt": "2026-10-17T10:15:09.007Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q60",
+      "name": "The Nilfgaardian Connection",
+      "url": "https://witcher.fandom.com/wiki/The_Nilfgaardian_Connection",
+      "checkedAt": "2026-10-17T10:15:09.007Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q65",
+      "name": "Hunting a Witch",
+      "url": "https://witcher.fandom.com/wiki/Hunting_a_Witch",
+      "checkedAt": "2026-10-17T10:15:09.007Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q73",
+      "name": "Wandering in the Dark",
+      "url": "https://witcher.fandom.com/wiki/Wandering_in_the_Dark",
+      "checkedAt": "2026-10-17T10:15:09.007Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q78",
+      "name": "Magic Lamp",
+      "url": "https://witcher.fandom.com/wiki/Magic_Lamp_%28quest%29",
+      "checkedAt": "2026-10-17T10:17:23.988Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q79",
+      "name": "An Invitation from Keira Metz",
+      "url": "https://witcher.fandom.com/wiki/An_Invitation_from_Keira_Metz",
+      "checkedAt": "2026-10-17T10:17:23.988Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q80",
+      "name": "A Towerful of Mice",
+      "url": "https://witcher.fandom.com/wiki/A_Towerful_of_Mice",
+      "checkedAt": "2026-10-17T10:17:23.988Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q81",
+      "name": "A Favor for a Friend",
+      "url": "https://witcher.fandom.com/wiki/A_Favor_for_a_Friend",
+      "checkedAt": "2026-10-17T10:17:23.988Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q69",
+      "name": "Ciri's Room",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Room",
+      "checkedAt": "2026-10-17T10:17:23.988Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q74",
+      "name": "Family Matters",
+      "url": "https://witcher.fandom.com/wiki/Family_Matters",
+      "checkedAt": "2026-10-17T10:17:23.988Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q63",
+      "name": "A Princess in Distress",
+      "url": "https://witcher.fandom.com/wiki/A_Princess_in_Distress",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q64",
+      "name": "Ciri's Story: The Race",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story%3A_The_Race",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q62",
+      "name": "Ciri's Story: Out of the Shadows",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story%3A_Out_of_the_Shadows?file=Ciri_Kills_Basilisk_and_Saves_Bloody_Baron_%28Witcher_3-_Out_of_Shadows_Story_Quest%29",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q76",
+      "name": "Ladies of the Wood",
+      "url": "https://witcher.fandom.com/wiki/The_Ladies_of_the_Wood",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q67",
+      "name": "The Whispering Hillock",
+      "url": "https://witcher.fandom.com/wiki/The_Whispering_Hillock",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q66",
+      "name": "Ciri's Story: Fleeing the Bog",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story%3A_Fleeing_the_Bog",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q106",
+      "name": "Fake Papers",
+      "url": "https://witcher.fandom.com/wiki/Fake_Papers",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q104",
+      "name": "Bitter Harvest",
+      "url": "https://witcher.fandom.com/wiki/Bitter_Harvest",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q206",
+      "name": "Destination: Skellige",
+      "url": "https://witcher.fandom.com/wiki/Destination%3A_Skellige",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q41",
+      "name": "The Dwarven Document Dilemma",
+      "url": "https://witcher.fandom.com/wiki/The_Dwarven_Document_Dilemma",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q97",
+      "name": "Hidden Messages of the Nilfgaardian Kind",
+      "url": "https://witcher.fandom.com/wiki/Hidden_Messages_of_the_Nilfgaardian_Kind",
+      "checkedAt": "2026-10-17T10:17:23.989Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q98",
+      "name": "Novigrad Hospitality",
+      "url": "https://witcher.fandom.com/wiki/Novigrad_Hospitality",
+      "checkedAt": "2026-10-17T10:17:23.990Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q103",
+      "name": "Of Dairy and Darkness",
+      "url": "https://witcher.fandom.com/wiki/Of_Dairy_and_Darkness",
+      "checkedAt": "2026-10-17T10:17:23.990Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q122",
+      "name": "Rough Neighborhood",
+      "url": "https://witcher.fandom.com/wiki/Rough_Neighborhood",
+      "checkedAt": "2026-10-17T10:17:23.990Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q129",
+      "name": "A Barnful of Trouble",
+      "url": "https://witcher.fandom.com/wiki/A_Barnful_of_Trouble",
+      "checkedAt": "2026-10-17T10:17:23.990Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q138",
+      "name": "Spooked Mare",
+      "url": "https://witcher.fandom.com/wiki/Spooked_Mare",
+      "checkedAt": "2026-10-17T10:17:23.990Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q142",
+      "name": "A Walk on the Waterfront",
+      "url": "https://witcher.fandom.com/wiki/A_Walk_on_the_Waterfront",
+      "checkedAt": "2026-10-17T10:17:23.990Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q157",
+      "name": "The Volunteer",
+      "url": "https://witcher.fandom.com/wiki/The_Volunteer",
+      "checkedAt": "2026-10-17T10:17:23.990Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q263",
+      "name": "Of Swords and Dumplings",
+      "url": "https://witcher.fandom.com/wiki/Of_Swords_and_Dumplings",
+      "checkedAt": "2026-10-17T10:19:49.826Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q309",
+      "name": "Races: Swift as the Western Winds",
+      "url": "https://witcher.fandom.com/wiki/Races%3A_Swift_as_the_Western_Winds",
+      "checkedAt": "2026-10-17T10:19:49.826Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q310",
+      "name": "Without a Trace",
+      "url": "https://witcher.fandom.com/wiki/Without_a_Trace?page=1",
+      "checkedAt": "2026-10-17T10:19:49.826Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q311",
+      "name": "The Taxman Cometh",
+      "url": "https://witcher.fandom.com/wiki/The_Taxman_Cometh?page=2",
+      "checkedAt": "2026-10-17T10:19:49.826Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q312",
+      "name": "Enchanting: Start-up Costs",
+      "url": "https://witcher.fandom.com/wiki/Enchanting%3A_Start-up_Costs",
+      "checkedAt": "2026-10-17T10:19:49.826Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q431",
+      "name": "Enchanting: Quality Has Its Price",
+      "url": "https://witcher.fandom.com/wiki/Enchanting%3A_Quality_Has_Its_Price",
+      "checkedAt": "2026-10-17T10:19:49.826Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q14",
+      "name": "Gwent: Big City Players",
+      "url": "https://witcher.fandom.com/wiki/Gwent%3A_Big_City_Players",
+      "checkedAt": "2026-10-17T10:19:49.826Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q324",
+      "name": "Envoys, Wineboys",
+      "url": "https://witcher.fandom.com/wiki/Envoys%2C_Wineboys",
+      "checkedAt": "2026-10-17T10:19:49.826Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q117",
+      "name": "Pyres of Novigrad",
+      "url": "https://witcher.fandom.com/wiki/Pyres_of_Novigrad",
+      "checkedAt": "2026-10-17T10:19:49.827Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q87",
+      "name": "Novigrad Dreaming",
+      "url": "https://witcher.fandom.com/wiki/Novigrad_Dreaming",
+      "checkedAt": "2026-10-17T10:19:49.827Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q125",
+      "name": "Broken Flowers",
+      "url": "https://witcher.fandom.com/wiki/Broken_Flowers",
+      "checkedAt": "2026-10-17T10:19:49.827Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q143",
+      "name": "Fencing Lessons",
+      "url": "https://witcher.fandom.com/wiki/Fencing_Lessons",
+      "checkedAt": "2026-10-17T10:19:49.827Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q147",
+      "name": "A Dangerous Game",
+      "url": "https://witcher.fandom.com/wiki/A_Dangerous_Game",
+      "checkedAt": "2026-10-17T10:19:49.827Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q136",
+      "name": "Get Junior",
+      "url": "https://witcher.fandom.com/wiki/Get_Junior",
+      "checkedAt": "2026-10-17T10:19:49.827Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q109",
+      "name": "The Gangs of Novigrad",
+      "url": "https://witcher.fandom.com/wiki/The_Gangs_of_Novigrad",
+      "checkedAt": "2026-10-17T10:19:49.827Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q101",
+      "name": "Ciri's Story: Visiting Junior",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story%3A_Visiting_Junior",
+      "checkedAt": "2026-10-17T10:19:49.827Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q137",
+      "name": "Count Reuven's Treasure",
+      "url": "https://witcher.fandom.com/wiki/Count_Reuven%27s_Treasure",
+      "checkedAt": "2026-10-17T10:19:49.828Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q131",
+      "name": "Novigrad, Closed City",
+      "url": "https://witcher.fandom.com/wiki/Novigrad%2C_Closed_City",
+      "checkedAt": "2026-10-17T10:19:49.828Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q186",
+      "name": "A Deadly Plot",
+      "url": "https://witcher.fandom.com/wiki/A_Deadly_Plot",
+      "checkedAt": "2026-10-17T10:19:49.829Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q148",
+      "name": "An Eye for an Eye",
+      "url": "https://witcher.fandom.com/wiki/An_Eye_for_an_Eye",
+      "checkedAt": "2026-10-17T10:19:49.829Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q127",
+      "name": "The Play's the Thing",
+      "url": "https://witcher.fandom.com/wiki/The_Play%27s_the_Thing",
+      "checkedAt": "2026-10-17T10:19:49.829Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q156",
+      "name": "A Poet Under Pressure",
+      "url": "https://witcher.fandom.com/wiki/A_Poet_Under_Pressure",
+      "checkedAt": "2026-10-17T10:19:49.829Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q126",
+      "name": "Ciri's Story: Breakneck Speed",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story%3A_Breakneck_Speed",
+      "checkedAt": "2026-10-17T10:19:49.829Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q180",
+      "name": "The Nobleman Statuette",
+      "url": "https://witcher.fandom.com/wiki/The_Nobleman_Statuette",
+      "checkedAt": "2026-10-17T10:19:49.829Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q179",
+      "name": "The Soldier Statuette",
+      "url": "https://witcher.fandom.com/wiki/The_Soldier_Statuette",
+      "checkedAt": "2026-10-17T10:19:49.829Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q308",
+      "name": "Evil's Soft First Touches",
+      "url": "https://witcher.fandom.com/wiki/Evil%27s_Soft_First_Touches",
+      "checkedAt": "2026-10-17T10:19:49.830Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q316",
+      "name": "Rose on a Red Field",
+      "url": "https://witcher.fandom.com/wiki/Rose_on_a_Red_Field",
+      "checkedAt": "2026-10-17T10:19:49.831Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q315",
+      "name": "Dead Man's Party",
+      "url": "https://witcher.fandom.com/wiki/Dead_Man%27s_Party",
+      "checkedAt": "2026-10-17T10:19:49.831Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q317",
+      "name": "A Midnight Clear",
+      "url": "https://witcher.fandom.com/wiki/A_Midnight_Clear",
+      "checkedAt": "2026-10-17T10:19:49.831Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q321",
+      "name": "Open Sesame: Witcher Seasonings",
+      "url": "https://witcher.fandom.com/wiki/Open_Sesame%3A_Witcher_Seasonings",
+      "checkedAt": "2026-10-17T10:21:20.751Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q322",
+      "name": "Open Sesame: Breaking and Entering",
+      "url": "https://witcher.fandom.com/wiki/Open_Sesame%3A_Breaking_and_Entering",
+      "checkedAt": "2026-10-17T10:21:20.751Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q323",
+      "name": "Open Sesame: The Safecracker",
+      "url": "https://witcher.fandom.com/wiki/Open_Sesame%3A_The_Safecracker",
+      "checkedAt": "2026-10-17T10:21:20.751Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q325",
+      "name": "Avid Collector",
+      "url": "https://witcher.fandom.com/wiki/Avid_Collector",
+      "checkedAt": "2026-10-17T10:21:20.751Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q332",
+      "name": "Scenes From a Marriage",
+      "url": "https://witcher.fandom.com/wiki/Scenes_From_a_Marriage",
+      "checkedAt": "2026-10-17T10:21:20.751Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q361",
+      "name": "Whatsoever a Man Soweth...",
+      "url": "https://witcher.fandom.com/wiki/Whatsoever_a_Man_Soweth...",
+      "checkedAt": "2026-10-17T10:21:20.751Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q277",
+      "name": "High Stakes",
+      "url": "https://witcher.fandom.com/wiki/High_Stakes",
+      "checkedAt": "2026-10-17T10:21:20.752Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q16",
+      "name": "Gwent: Skellige Style",
+      "url": "https://witcher.fandom.com/wiki/Gwent%3A_Skellige_Style",
+      "checkedAt": "2026-10-17T10:21:20.752Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q23",
+      "name": "Brave Fools Die Young",
+      "url": "https://witcher.fandom.com/wiki/Brave_Fools_Die_Young",
+      "checkedAt": "2026-10-17T10:21:20.752Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q35",
+      "name": "Worthy of Trust",
+      "url": "https://witcher.fandom.com/wiki/Worthy_of_Trust",
+      "checkedAt": "2026-10-17T10:21:20.752Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q133",
+      "name": "Flesh for Sale",
+      "url": "https://witcher.fandom.com/wiki/Flesh_for_Sale",
+      "checkedAt": "2026-10-17T10:21:20.752Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q140",
+      "name": "A Hallowed Horn",
+      "url": "https://witcher.fandom.com/wiki/A_Hallowed_Horn",
+      "checkedAt": "2026-10-17T10:21:20.752Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q158",
+      "name": "From a Land Far, Far Away",
+      "url": "https://witcher.fandom.com/wiki/From_a_Land_Far%2C_Far_Away",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q159",
+      "name": "Free Spirit",
+      "url": "https://witcher.fandom.com/wiki/Free_Spirit",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q177",
+      "name": "The Nithing",
+      "url": "https://witcher.fandom.com/wiki/The_Nithing",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q178",
+      "name": "The Price of Honor",
+      "url": "https://witcher.fandom.com/wiki/The_Price_of_Honor",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q193",
+      "name": "The Family Blade",
+      "url": "https://witcher.fandom.com/wiki/The_Family_Blade",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q194",
+      "name": "A Bard's Beloved",
+      "url": "https://witcher.fandom.com/wiki/A_Bard%27s_Beloved",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q195",
+      "name": "For Fame and Glory",
+      "url": "https://witcher.fandom.com/wiki/For_Fame_and_Glory",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q196",
+      "name": "Armed Assault",
+      "url": "https://witcher.fandom.com/wiki/Armed_Assault",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q207",
+      "name": "The Path of Warriors",
+      "url": "https://witcher.fandom.com/wiki/The_Path_of_Warriors",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q184",
+      "name": "Stranger in a Strange Land",
+      "url": "https://witcher.fandom.com/wiki/Stranger_in_a_Strange_Land",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q183",
+      "name": "The Cave of Dreams",
+      "url": "https://witcher.fandom.com/wiki/The_Cave_of_Dreams",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q197",
+      "name": "An Unpaid Debt",
+      "url": "https://witcher.fandom.com/wiki/An_Unpaid_Debt",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q218",
+      "name": "Crime and Punishment",
+      "url": "https://witcher.fandom.com/wiki/Crime_and_Punishment",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q233",
+      "name": "Iron Maiden",
+      "url": "https://witcher.fandom.com/wiki/Iron_Maiden",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q240",
+      "name": "Hard Times",
+      "url": "https://witcher.fandom.com/wiki/Hard_Times",
+      "checkedAt": "2026-10-17T10:21:20.753Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q260",
+      "name": "Shock Therapy",
+      "url": "https://witcher.fandom.com/wiki/Shock_Therapy",
+      "checkedAt": "2026-10-17T10:21:20.754Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q262",
+      "name": "Practicum in Advanced Alchemy",
+      "url": "https://witcher.fandom.com/wiki/Practicum_in_Advanced_Alchemy",
+      "checkedAt": "2026-10-17T10:21:20.754Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q269",
+      "name": "Peace Disturbed",
+      "url": "https://witcher.fandom.com/wiki/Peace_Disturbed",
+      "checkedAt": "2026-10-17T10:21:20.754Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q270",
+      "name": "Taken as a Lass",
+      "url": "https://witcher.fandom.com/wiki/Taken_as_a_Lass",
+      "checkedAt": "2026-10-17T10:21:20.754Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q275",
+      "name": "The Sad Tale of the Grossbart Brothers",
+      "url": "https://witcher.fandom.com/wiki/The_Sad_Tale_of_the_Grossbart_Brothers",
+      "checkedAt": "2026-10-17T10:21:20.754Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q303",
+      "name": "Fists of Fury: Skellige",
+      "url": "https://witcher.fandom.com/wiki/Fists_of_Fury%3A_Skellige",
+      "checkedAt": "2026-10-17T10:21:20.754Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q128",
+      "name": "Master of the Arena",
+      "url": "https://witcher.fandom.com/wiki/Master_of_the_Arena",
+      "checkedAt": "2026-10-17T10:21:20.754Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q176",
+      "name": "Fists of Fury: Champion of Champions",
+      "url": "https://witcher.fandom.com/wiki/Fists_of_Fury%3A_Champion_of_Champions",
+      "checkedAt": "2026-10-17T10:21:20.754Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q304",
+      "name": "The Tower Outta Nowheres",
+      "url": "https://witcher.fandom.com/wiki/The_Tower_Outta_Nowheres",
+      "checkedAt": "2026-10-17T10:23:38.410Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q420",
+      "name": "The Heroes' Pursuits: Fayrlund",
+      "url": "https://witcher.fandom.com/wiki/The_Heroes%27_Pursuits%3A_Fayrlund",
+      "checkedAt": "2026-10-17T10:23:38.410Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q421",
+      "name": "The Heroes' Pursuits: Fyresdal",
+      "url": "https://witcher.fandom.com/wiki/The_Heroes%27_Pursuits%3A_Fyresdal",
+      "checkedAt": "2026-10-17T10:23:38.410Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q422",
+      "name": "The Heroes' Pursuits: Kaer Trolde",
+      "url": "https://witcher.fandom.com/wiki/The_Heroes%27_Pursuits%3A_Kaer_Trolde",
+      "checkedAt": "2026-10-17T10:23:38.410Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q423",
+      "name": "The Heroes' Pursuits: For the Goddess' Glory!",
+      "url": "https://witcher.fandom.com/wiki/The_Heroes%27_Pursuits%3A_For_the_Goddess%27_Glory%21",
+      "checkedAt": "2026-10-17T10:23:38.410Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q205",
+      "name": "The King is Dead - Long Live the King",
+      "url": "https://witcher.fandom.com/wiki/The_King_is_Dead_%E2%80%93_Long_Live_the_King",
+      "checkedAt": "2026-10-17T10:23:38.410Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q212",
+      "name": "Echoes of the Past",
+      "url": "https://witcher.fandom.com/wiki/Echoes_of_the_Past",
+      "checkedAt": "2026-10-17T10:23:38.410Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q192",
+      "name": "Missing Persons",
+      "url": "https://witcher.fandom.com/wiki/Missing_Persons",
+      "checkedAt": "2026-10-17T10:23:38.411Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q175",
+      "name": "Nameless",
+      "url": "https://witcher.fandom.com/wiki/Nameless",
+      "checkedAt": "2026-10-17T10:23:38.411Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q174",
+      "name": "The Calm Before the Storm",
+      "url": "https://witcher.fandom.com/wiki/The_Calm_Before_the_Storm",
+      "checkedAt": "2026-10-17T10:23:38.411Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q200",
+      "name": "The Last Wish",
+      "url": "https://witcher.fandom.com/wiki/The_Last_Wish_%28in_game%29",
+      "checkedAt": "2026-10-17T10:23:38.411Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q199",
+      "name": "In Wolf's Clothing",
+      "url": "https://witcher.fandom.com/wiki/In_Wolf%27s_Clothing",
+      "checkedAt": "2026-10-17T10:23:38.411Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q256",
+      "name": "Master Armorers",
+      "url": "https://witcher.fandom.com/wiki/Master_Armorers",
+      "checkedAt": "2026-10-17T10:23:38.412Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q219",
+      "name": "King's Gambit",
+      "url": "https://witcher.fandom.com/wiki/King%27s_Gambit",
+      "checkedAt": "2026-10-17T10:23:38.412Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q220",
+      "name": "Coronation",
+      "url": "https://witcher.fandom.com/wiki/Coronation",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q236",
+      "name": "A Feast for Crows",
+      "url": "https://witcher.fandom.com/wiki/A_Feast_for_Crows",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q15",
+      "name": "Gwent: Old Pals",
+      "url": "https://witcher.fandom.com/wiki/Gwent%3A_Old_Pals",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q17",
+      "name": "Gwent: Playing Thaler",
+      "url": "https://witcher.fandom.com/wiki/Gwent%3A_Playing_Thaler",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q251",
+      "name": "The Bastion",
+      "url": "https://witcher.fandom.com/wiki/The_Bastion",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q276",
+      "name": "Monster Slayer",
+      "url": "https://witcher.fandom.com/wiki/Monster_Slayer",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q280",
+      "name": "Berengar's Blade",
+      "url": "https://witcher.fandom.com/wiki/Berengar%27s_Blade",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q281",
+      "name": "Greenhouse Effect",
+      "url": "https://witcher.fandom.com/wiki/Greenhouse_Effect",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q302",
+      "name": "The Witchers' Forge",
+      "url": "https://witcher.fandom.com/wiki/The_Witchers%27_Forge",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q229",
+      "name": "Ugly Baby",
+      "url": "https://witcher.fandom.com/wiki/Ugly_Baby",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q231",
+      "name": "The Final Trial",
+      "url": "https://witcher.fandom.com/wiki/The_Final_Trial",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q228",
+      "name": "To Bait a Forktail...",
+      "url": "https://witcher.fandom.com/wiki/To_Bait_a_Forktail...",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q4",
+      "name": "Disturbance",
+      "url": "https://witcher.fandom.com/wiki/Disturbance",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q232",
+      "name": "No Place Like Home",
+      "url": "https://witcher.fandom.com/wiki/No_Place_Like_Home",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q230",
+      "name": "Va Fail, Elaine",
+      "url": "https://witcher.fandom.com/wiki/Va_Fail%2C_Elaine",
+      "checkedAt": "2026-10-17T10:23:38.413Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q245",
+      "name": "Brothers In Arms: Nilfgaard",
+      "url": "https://witcher.fandom.com/wiki/Brothers_In_Arms%3A_Nilfgaard",
+      "checkedAt": "2026-10-17T10:23:38.414Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q246",
+      "name": "Brothers In Arms: Skellige",
+      "url": "https://witcher.fandom.com/wiki/Brothers_In_Arms%3A_Skellige",
+      "checkedAt": "2026-10-17T10:23:38.414Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q247",
+      "name": "Brothers In Arms: Velen",
+      "url": "https://witcher.fandom.com/wiki/Brothers_In_Arms%3A_Velen",
+      "checkedAt": "2026-10-17T10:23:38.414Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q248",
+      "name": "Brothers In Arms: Novigrad",
+      "url": "https://witcher.fandom.com/wiki/Brothers_In_Arms%3A_Novigrad",
+      "checkedAt": "2026-10-17T10:23:38.414Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q257",
+      "name": "The Battle of Kaer Morhen",
+      "url": "https://witcher.fandom.com/wiki/The_Battle_of_Kaer_Morhen",
+      "checkedAt": "2026-10-17T10:23:38.414Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q235",
+      "name": "Blood on the Battlefield",
+      "url": "https://witcher.fandom.com/wiki/Blood_on_the_Battlefield",
+      "checkedAt": "2026-10-17T10:23:38.414Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q144",
+      "name": "A Final Kindness",
+      "url": "https://witcher.fandom.com/wiki/A_Final_Kindness",
+      "checkedAt": "2026-10-17T10:23:38.414Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q6",
+      "name": "Final Preparations",
+      "url": "https://witcher.fandom.com/wiki/Final_Preparations",
+      "checkedAt": "2026-10-17T10:23:38.415Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q274",
+      "name": "Through Time and Space",
+      "url": "https://witcher.fandom.com/wiki/Through_Time_and_Space",
+      "checkedAt": "2026-10-17T10:23:38.415Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q287",
+      "name": "Blindingly Obvious",
+      "url": "https://witcher.fandom.com/wiki/Blindingly_Obvious",
+      "checkedAt": "2026-10-17T10:23:38.415Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q283",
+      "name": "Veni Vidi Vigo",
+      "url": "https://witcher.fandom.com/wiki/Veni_Vidi_Vigo",
+      "checkedAt": "2026-10-17T10:26:09.984Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q306",
+      "name": "Child of the Elder Blood",
+      "url": "https://witcher.fandom.com/wiki/Child_of_the_Elder_Blood",
+      "checkedAt": "2026-10-17T10:26:09.984Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q286",
+      "name": "Skjall's Grave",
+      "url": "https://witcher.fandom.com/wiki/Skjall%27s_Grave",
+      "checkedAt": "2026-10-17T10:26:09.984Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q296",
+      "name": "On Thin Ice",
+      "url": "https://witcher.fandom.com/wiki/On_Thin_Ice",
+      "checkedAt": "2026-10-17T10:26:09.984Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q297",
+      "name": "Tedd Deireadh, The Final Age",
+      "url": "https://witcher.fandom.com/wiki/Tedd_Deireadh%2C_The_Final_Age",
+      "checkedAt": "2026-10-17T10:26:09.984Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q10",
+      "name": "Faithful Friend",
+      "url": "https://witcher.fandom.com/wiki/Faithful_Friend",
+      "checkedAt": "2026-10-17T10:26:09.984Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q333",
+      "name": "The Beast of Toussaint",
+      "url": "https://witcher.fandom.com/wiki/The_Beast_of_Toussaint",
+      "checkedAt": "2026-10-17T10:26:09.985Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q336",
+      "name": "Blood Run",
+      "url": "https://witcher.fandom.com/wiki/Blood_Run",
+      "checkedAt": "2026-10-17T10:26:09.985Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q366",
+      "name": "La Cage au Fou",
+      "url": "https://witcher.fandom.com/wiki/La_Cage_au_Fou",
+      "checkedAt": "2026-10-17T10:26:09.985Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q387",
+      "name": "Where Children Toil, Toys Waste Away",
+      "url": "https://witcher.fandom.com/wiki/Where_Children_Toil%2C_Toys_Waste_Away",
+      "checkedAt": "2026-10-17T10:26:09.985Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q404",
+      "name": "Blood Simple",
+      "url": "https://witcher.fandom.com/wiki/Blood_Simple",
+      "checkedAt": "2026-10-17T10:26:09.985Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q406",
+      "name": "What Lies Unseen",
+      "url": "https://witcher.fandom.com/wiki/What_Lies_Unseen",
+      "checkedAt": "2026-10-17T10:26:09.985Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q407",
+      "name": "Beyond Hill and Dale...",
+      "url": "https://witcher.fandom.com/wiki/Beyond_Hill_and_Dale...",
+      "checkedAt": "2026-10-17T10:26:09.985Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q415",
+      "name": "Tesham Mutna",
+      "url": "https://witcher.fandom.com/wiki/Tesham_Mutna",
+      "checkedAt": "2026-10-17T10:26:09.985Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q416",
+      "name": "Pomp and Strange Circumstance",
+      "url": "https://witcher.fandom.com/wiki/Pomp_and_Strange_Circumstance",
+      "checkedAt": "2026-10-17T10:26:09.986Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q417",
+      "name": "Be It Ever So Humble...",
+      "url": "https://witcher.fandom.com/wiki/Be_It_Ever_So_Humble...",
+      "checkedAt": "2026-10-17T10:26:09.986Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q418",
+      "name": "Burlap is the New Stripe",
+      "url": "https://witcher.fandom.com/wiki/Burlap_is_the_New_Stripe",
+      "checkedAt": "2026-10-17T10:26:09.986Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q419",
+      "name": "The Perks of Being a Jailbird",
+      "url": "https://witcher.fandom.com/wiki/The_Perks_of_Being_a_Jailbird",
+      "checkedAt": "2026-10-17T10:26:09.986Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q334",
+      "name": "Turn and Face the Strange",
+      "url": "https://witcher.fandom.com/wiki/Turn_and_Face_the_Strange",
+      "checkedAt": "2026-10-17T10:26:09.986Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q335",
+      "name": "The Warble of a Smitten Knight",
+      "url": "https://witcher.fandom.com/wiki/The_Warble_of_a_Smitten_Knight",
+      "checkedAt": "2026-10-17T10:26:09.986Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q396",
+      "name": "Of Sheers and a Witcher I Sing",
+      "url": "https://witcher.fandom.com/wiki/Of_Sheers_and_a_Witcher_I_Sing",
+      "checkedAt": "2026-10-17T10:26:09.986Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q337",
+      "name": "Fists of Fury: Toussaint",
+      "url": "https://witcher.fandom.com/wiki/Fists_of_Fury%3A_Toussaint",
+      "checkedAt": "2026-10-17T10:26:09.986Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q371",
+      "name": "Raging Wolf",
+      "url": "https://witcher.fandom.com/wiki/Raging_Wolf",
+      "checkedAt": "2026-10-17T10:26:09.986Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q338",
+      "name": "Till Death Do You Part",
+      "url": "https://witcher.fandom.com/wiki/Till_Death_Do_You_Part",
+      "checkedAt": "2026-10-17T10:26:09.987Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q339",
+      "name": "Paperchase",
+      "url": "https://witcher.fandom.com/wiki/Paperchase",
+      "checkedAt": "2026-10-17T10:26:09.987Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q18",
+      "name": "Gwent: Never Fear, Skellige's Here",
+      "url": "https://witcher.fandom.com/wiki/Gwent%3A_Never_Fear%2C_Skellige%27s_Here",
+      "checkedAt": "2026-10-17T10:26:09.987Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q362",
+      "name": "Gwent: To Everything - Turn, Turn, Tournament!",
+      "url": "https://witcher.fandom.com/wiki/Gwent%3A_To_Everything_-_Turn%2C_Turn%2C_Tournament%21",
+      "checkedAt": "2026-10-17T10:26:09.987Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q340",
+      "name": "Goodness, Gracious, Great Balls of Granite!",
+      "url": "https://witcher.fandom.com/wiki/Goodness%2C_Gracious%2C_Great_Balls_of_Granite%21",
+      "checkedAt": "2026-10-17T10:26:09.987Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q345",
+      "name": "Father Knows Worst",
+      "url": "https://witcher.fandom.com/wiki/Father_Knows_Worst",
+      "checkedAt": "2026-10-17T10:26:09.987Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q374",
+      "name": "Big Feet to Fill",
+      "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill",
+      "checkedAt": "2026-10-17T10:26:09.987Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q350",
+      "name": "Big Feet to Fill: The Fifth Group",
+      "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill%3A_The_Fifth_Group",
+      "checkedAt": "2026-10-17T10:26:09.987Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q351",
+      "name": "Vintner's Contract: Rivecalme Storehouse",
+      "url": "https://witcher.fandom.com/wiki/Vintner%27s_Contract%3A_Rivecalme_Storehouse",
+      "checkedAt": "2026-10-17T10:26:09.987Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q352",
+      "name": "Wine Wars: Belgaard",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars%3A_Belgaard",
+      "checkedAt": "2026-10-17T10:26:09.988Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q353",
+      "name": "Wine Wars: Coronata",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars%3A_Coronata",
+      "checkedAt": "2026-10-17T10:26:09.988Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q354",
+      "name": "Wine Wars: Vermentino",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars%3A_Vermentino",
+      "checkedAt": "2026-10-17T10:28:35.944Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q390",
+      "name": "Wine Wars: The Deus in the Machina",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars%3A_The_Deus_in_the_Machina",
+      "checkedAt": "2026-10-17T10:28:35.944Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q378",
+      "name": "Wine Wars: Consorting",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars%3A_Consorting",
+      "checkedAt": "2026-10-17T10:28:35.944Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q369",
+      "name": "Knight for Hire",
+      "url": "https://witcher.fandom.com/wiki/Knight_for_Hire",
+      "checkedAt": "2026-10-17T10:28:35.944Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q370",
+      "name": "Vintner's Contract: Dun Tynne Hillside",
+      "url": "https://witcher.fandom.com/wiki/Vintner%27s_Contract%3A_Dun_Tynne_Hillside",
+      "checkedAt": "2026-10-17T10:28:35.944Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q377",
+      "name": "Vintner's Contract: Chuchote Cave",
+      "url": "https://witcher.fandom.com/wiki/Vintner%27s_Contract%3A_Chuchote_Cave",
+      "checkedAt": "2026-10-17T10:28:35.944Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q393",
+      "name": "Vintner's Contract: Cleaning Those Hard-to-Reach Places",
+      "url": "https://witcher.fandom.com/wiki/Vintner%27s_Contract%3A_Cleaning_Those_Hard-to-Reach_Places",
+      "checkedAt": "2026-10-17T10:28:35.944Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q372",
+      "name": "A Knight's Tales",
+      "url": "https://witcher.fandom.com/wiki/A_Knight%27s_Tales",
+      "checkedAt": "2026-10-17T10:28:35.944Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q373",
+      "name": "Extreme Cosplay",
+      "url": "https://witcher.fandom.com/wiki/Extreme_Cosplay",
+      "checkedAt": "2026-10-17T10:28:35.944Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q375",
+      "name": "The Words of the Prophets Are Written on Sarcophagi",
+      "url": "https://witcher.fandom.com/wiki/The_Words_of_the_Prophets_Are_Written_on_Sarcophagi",
+      "checkedAt": "2026-10-17T10:28:35.945Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q376",
+      "name": "Master Master Master Master!",
+      "url": "https://witcher.fandom.com/wiki/Master_Master_Master_Master%21",
+      "checkedAt": "2026-10-17T10:28:35.945Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q395",
+      "name": "A Portrait of the Witcher as an Old Man",
+      "url": "https://witcher.fandom.com/wiki/A_Portrait_of_the_Witcher_as_an_Old_Man",
+      "checkedAt": "2026-10-17T10:28:35.945Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q401",
+      "name": "Mutual of Beauclair's Wild Kingdom",
+      "url": "https://witcher.fandom.com/wiki/Mutual_of_Beauclair%27s_Wild_Kingdom",
+      "checkedAt": "2026-10-17T10:28:35.945Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q424",
+      "name": "There Can Be Only One",
+      "url": "https://witcher.fandom.com/wiki/There_Can_Be_Only_One",
+      "checkedAt": "2026-10-17T10:28:35.945Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "eternal",
+      "name": "In the Eternal Fire's Shadow",
+      "url": "https://witcher.fandom.com/wiki/In_the_Eternal_Fire%27s_Shadow",
+      "checkedAt": "2026-10-17T10:28:35.945Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "ciri",
+      "name": "In Ciri's Footsteps",
+      "url": "https://witcher.fandom.com/wiki/In_Ciri%27s_Footsteps",
+      "checkedAt": "2026-10-17T10:28:35.945Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "mysterious",
+      "name": "A Mysterious Passenger",
+      "url": "https://witcher.fandom.com/wiki/A_Mysterious_Passenger",
+      "checkedAt": "2026-10-17T10:28:35.945Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q54",
+      "name": "Dirty Funds",
+      "url": "https://witcher.fandom.com/wiki/Dirty_Funds",
+      "checkedAt": "2026-10-17T10:28:35.945Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q55",
+      "name": "Deserter Gold",
+      "url": "https://witcher.fandom.com/wiki/Deserter_Gold",
+      "checkedAt": "2026-10-17T10:28:35.946Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q56",
+      "name": "Temerian Valuables",
+      "url": "https://witcher.fandom.com/wiki/Temerian_Valuables",
+      "checkedAt": "2026-10-17T10:28:35.946Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q85",
+      "name": "Scavenger Hunt: Viper School Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt%3A_Viper_School_Gear",
+      "checkedAt": "2026-10-17T10:28:35.946Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q48",
+      "name": "Highway Robbery",
+      "url": "https://witcher.fandom.com/wiki/Highway_Robbery",
+      "checkedAt": "2026-10-17T10:28:35.946Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q30",
+      "name": "Highwayman's Cache",
+      "url": "https://witcher.fandom.com/wiki/Highwayman%27s_Cache",
+      "checkedAt": "2026-10-17T10:28:35.947Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q43",
+      "name": "Harassing A Troll",
+      "url": "https://witcher.fandom.com/wiki/Harassing_a_Troll",
+      "checkedAt": "2026-10-17T10:28:35.947Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q50",
+      "name": "Man's Best Friend",
+      "url": "https://witcher.fandom.com/wiki/Man%27s_Best_Friend",
+      "checkedAt": "2026-10-17T10:28:35.947Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q51",
+      "name": "Sunken Treasure",
+      "url": "https://witcher.fandom.com/wiki/Sunken_Treasure",
+      "checkedAt": "2026-10-17T10:28:35.947Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q52",
+      "name": "An Unfortunate Turn of Events",
+      "url": "https://witcher.fandom.com/wiki/An_Unfortunate_Turn_of_Events",
+      "checkedAt": "2026-10-17T10:28:35.947Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q53",
+      "name": "Lost Goods",
+      "url": "https://witcher.fandom.com/wiki/Lost_Goods",
+      "checkedAt": "2026-10-17T10:28:35.947Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q57",
+      "name": "Queen Zuleyka's Treasure",
+      "url": "https://witcher.fandom.com/wiki/Queen_Zuleyka%27s_Treasure",
+      "checkedAt": "2026-10-17T10:28:35.947Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q59",
+      "name": "Sunken Chest",
+      "url": "https://witcher.fandom.com/wiki/Sunken_Chest",
+      "checkedAt": "2026-10-17T10:28:35.947Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q70",
+      "name": "Caravan Attack",
+      "url": "https://witcher.fandom.com/wiki/Caravan_Attack",
+      "checkedAt": "2026-10-17T10:28:35.947Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q86",
+      "name": "Patrol Gone Missing",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_Patrol_Gone_Missing",
+      "checkedAt": "2026-10-17T10:28:35.948Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q95",
+      "name": "Hidden from the World",
+      "url": "https://witcher.fandom.com/wiki/Hidden_from_the_World",
+      "checkedAt": "2026-10-17T10:28:35.948Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q100",
+      "name": "Karmic Justice",
+      "url": "https://witcher.fandom.com/wiki/Karmic_Justice",
+      "checkedAt": "2026-10-17T10:28:35.948Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q110",
+      "name": "Face Me if You Dare",
+      "url": "https://witcher.fandom.com/wiki/Face_Me_if_You_Dare%21",
+      "checkedAt": "2026-10-17T10:28:35.948Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q113",
+      "name": "Out of the Frying Pan, Into the Fire",
+      "url": "https://witcher.fandom.com/wiki/Out_of_the_Frying_Pan%2C_into_the_Fire",
+      "checkedAt": "2026-10-17T10:28:35.948Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q114",
+      "name": "The Dead Have No Defense",
+      "url": "https://witcher.fandom.com/wiki/The_Dead_Have_No_Defense",
+      "checkedAt": "2026-10-17T10:28:35.948Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q115",
+      "name": "The Merry Widow",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_The_Merry_Widow",
+      "checkedAt": "2026-10-17T10:28:35.948Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q202",
+      "name": "Don't Play with the Gods",
+      "url": "https://witcher.fandom.com/wiki/Don%27t_Play_with_the_Gods",
+      "checkedAt": "2026-10-17T10:31:16.973Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q225",
+      "name": "A Costly Mistake",
+      "url": "https://witcher.fandom.com/wiki/A_Costly_Mistake",
+      "checkedAt": "2026-10-17T10:31:16.973Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q226",
+      "name": "Tough Luck",
+      "url": "https://witcher.fandom.com/wiki/Tough_Luck",
+      "checkedAt": "2026-10-17T10:31:16.973Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q234",
+      "name": "Mysterious Tracks",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_Mysterious_Tracks",
+      "checkedAt": "2026-10-17T10:31:16.974Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q250",
+      "name": "Phantom of the Trade Route",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_Phantom_of_the_Trade_Route",
+      "checkedAt": "2026-10-17T10:31:16.974Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q266",
+      "name": "The Beast of Honorton",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_The_Beast_of_Honorton",
+      "checkedAt": "2026-10-17T10:31:16.974Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q290",
+      "name": "A Plea Ignored",
+      "url": "https://witcher.fandom.com/wiki/A_Plea_Ignored",
+      "checkedAt": "2026-10-17T10:31:16.974Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q314",
+      "name": "Missing Brother",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_Missing_Brother",
+      "checkedAt": "2026-10-17T10:31:16.974Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q32",
+      "name": "Strumpet In Distress",
+      "url": "https://witcher.fandom.com/wiki/Strumpet_in_Distress",
+      "checkedAt": "2026-10-17T10:31:16.976Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q33",
+      "name": "Suspicious Shakedown",
+      "url": "https://witcher.fandom.com/wiki/Suspicious_Shakedown",
+      "checkedAt": "2026-10-17T10:31:16.976Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q34",
+      "name": "The Flame Of Hatred",
+      "url": "https://witcher.fandom.com/wiki/The_Flame_of_Hatred",
+      "checkedAt": "2026-10-17T10:31:16.976Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q26",
+      "name": "A Warm Welcome",
+      "url": "https://witcher.fandom.com/wiki/A_Warm_Welcome",
+      "checkedAt": "2026-10-17T10:31:16.976Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q28",
+      "name": "Drunken Rabble",
+      "url": "https://witcher.fandom.com/wiki/Drunken_Rabble",
+      "checkedAt": "2026-10-17T10:31:16.976Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q123",
+      "name": "The Most Truest of Basilisks",
+      "url": "https://witcher.fandom.com/wiki/The_Most_Truest_of_Basilisks",
+      "checkedAt": "2026-10-17T10:31:16.977Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q155",
+      "name": "An Elusive Thief",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_An_Elusive_Thief",
+      "checkedAt": "2026-10-17T10:31:16.977Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q237",
+      "name": "Witch Hunter Raids",
+      "url": "https://witcher.fandom.com/wiki/Witch_Hunter_Raids",
+      "checkedAt": "2026-10-17T10:31:16.978Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q255",
+      "name": "Doors Slamming Shut",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_Doors_Slamming_Shut",
+      "checkedAt": "2026-10-17T10:31:16.978Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q265",
+      "name": "Lord of the Wood",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_Lord_of_the_Wood",
+      "checkedAt": "2026-10-17T10:31:16.978Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q272",
+      "name": "The Oxenfurt Drunk",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_The_Oxenfurt_Drunk",
+      "checkedAt": "2026-10-17T10:31:16.978Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q341",
+      "name": "The Cursed Chapel",
+      "url": "https://witcher.fandom.com/wiki/The_Cursed_Chapel",
+      "checkedAt": "2026-10-17T10:31:16.979Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q342",
+      "name": "The Royal Air Force",
+      "url": "https://witcher.fandom.com/wiki/The_Royal_Air_Force",
+      "checkedAt": "2026-10-17T10:31:16.979Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q343",
+      "name": "The Sword, Famine and Perfidy",
+      "url": "https://witcher.fandom.com/wiki/The_Sword%2C_Famine_and_Perfidy",
+      "checkedAt": "2026-10-17T10:31:16.979Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q365",
+      "name": "The Secret Life of Count Romilly",
+      "url": "https://witcher.fandom.com/wiki/The_Secret_Life_of_Count_Romilly",
+      "checkedAt": "2026-10-17T10:31:16.979Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q238",
+      "name": "Scavenger Hunt: Bear School Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt%3A_Bear_School_Gear",
+      "checkedAt": "2026-10-17T10:33:51.720Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q326",
+      "name": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 4",
+      "url": "https://www.gamerguides.com/the-witcher-3-wild-hunt/database/quests/treasure-hunt/scavenger-hunt-bear-school-gear-upgrade-diagrams---part-4",
+      "checkedAt": "2026-10-17T10:33:51.722Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q151",
+      "name": "Nilfgaardian Treasure",
+      "url": "https://witcher.fandom.com/wiki/Nilfgaardian_Treasure",
+      "checkedAt": "2026-10-17T10:33:51.723Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q152",
+      "name": "X Marks the Spot",
+      "url": "https://witcher.fandom.com/wiki/X_Marks_the_Spot",
+      "checkedAt": "2026-10-17T10:33:51.723Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q166",
+      "name": "Woe is Me",
+      "url": "https://witcher.fandom.com/wiki/Woe_is_Me",
+      "checkedAt": "2026-10-17T10:33:51.724Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q168",
+      "name": "Family Fortune",
+      "url": "https://www.neoseeker.com/the-witcher-3-wild-hunt/Family_Fortune",
+      "checkedAt": "2026-10-17T10:33:51.724Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q170",
+      "name": "Ironsides' Treasure",
+      "url": "https://witcher.fandom.com/wiki/Ironsides%27_Treasure",
+      "checkedAt": "2026-10-17T10:33:51.725Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q172",
+      "name": "Precious Haul",
+      "url": "https://witcher.fandom.com/wiki/Precious_Haul",
+      "checkedAt": "2026-10-17T10:33:51.726Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q209",
+      "name": "Farting Trolls",
+      "url": "https://witcher.fandom.com/wiki/Farting_Trolls",
+      "checkedAt": "2026-10-17T10:33:51.728Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q307",
+      "name": "Hidden in the Depths",
+      "url": "https://witcher.fandom.com/wiki/Hidden_in_the_Depths",
+      "checkedAt": "2026-10-17T10:33:51.730Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q413",
+      "name": "Unlucky's Treasure",
+      "url": "https://witcher.fandom.com/wiki/Unlucky%27s_Treasure",
+      "checkedAt": "2026-10-17T10:33:51.730Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q261",
+      "name": "The Griffin from the Highlands",
+      "url": "https://www.neoseeker.com/the-witcher-3-wild-hunt/The_Griffin_from_the_Highlands",
+      "checkedAt": "2026-10-17T10:33:51.730Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q224",
+      "name": "Ruins, Hidden Treasure, You Know...",
+      "url": "https://witcher.fandom.com/wiki/Ruins%2C_Hidden_Treasure%2C_You_Know...",
+      "checkedAt": "2026-10-17T10:36:01.552Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q189",
+      "name": "Scavenger Hunt: Wolf School Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt%3A_Wolf_School_Gear",
+      "checkedAt": "2026-10-17T10:36:01.553Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q149",
+      "name": "Trail of Echoes",
+      "url": "https://witcher.fandom.com/wiki/Trail_of_Echoes",
+      "checkedAt": "2026-10-17T10:36:01.555Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q432",
+      "name": "Contract on a Witcher",
+      "url": "https://witcher.fandom.com/wiki/Contract_on_a_Witcher",
+      "checkedAt": "2026-10-17T10:36:01.555Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q360",
+      "name": "Bovine Blues",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_Bovine_Blues",
+      "checkedAt": "2026-10-17T10:36:01.555Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q344",
+      "name": "Big Game Hunter",
+      "url": "https://witcher.fandom.com/wiki/Big_Game_Hunter",
+      "checkedAt": "2026-10-17T10:36:01.555Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q356",
+      "name": "The Black Widow",
+      "url": "https://witcher.fandom.com/wiki/The_Black_Widow",
+      "checkedAt": "2026-10-17T10:36:01.555Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q357",
+      "name": "Coin Doesn't Stink",
+      "url": "https://witcher.fandom.com/wiki/Coin_Doesn%27t_Stink",
+      "checkedAt": "2026-10-17T10:36:01.555Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q358",
+      "name": "Don't Take Candy from a Stranger",
+      "url": "https://witcher.fandom.com/wiki/Don%27t_Take_Candy_from_a_Stranger",
+      "checkedAt": "2026-10-17T10:36:01.555Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q359",
+      "name": "The Last Exploits of Selina's Gang",
+      "url": "https://witcher.fandom.com/wiki/The_Last_Exploits_of_Selina%27s_Gang",
+      "checkedAt": "2026-10-17T10:36:01.555Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q379",
+      "name": "Waiting for Goe and Doh",
+      "url": "https://witcher.fandom.com/wiki/Waiting_for_Goe_and_Doh",
+      "checkedAt": "2026-10-17T10:36:01.555Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q380",
+      "name": "Applied Escapology",
+      "url": "https://witcher.fandom.com/wiki/Applied_Escapology",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q381",
+      "name": "Scavenger Hunt: Grandmaster Manticore Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt%3A_Grandmaster_Manticore_Gear",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q382",
+      "name": "Scavenger Hunt: Grandmaster Ursine Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt%3A_Grandmaster_Ursine_Gear",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q383",
+      "name": "Scavenger Hunt: Grandmaster Feline Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt%3A_Grandmaster_Feline_Gear",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q384",
+      "name": "Scavenger Hunt: Grandmaster Griffin Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt%3A_Grandmaster_Griffin_Gear",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q385",
+      "name": "Scavenger Hunt: Grandmaster Wolven Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt%3A_Grandmaster_Wolven_Gear",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q386",
+      "name": "Around the World in ... Eight Days",
+      "url": "https://witcher.fandom.com/wiki/Around_the_World_in..._Eight_Days",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q391",
+      "name": "Spoontaneous Profits!",
+      "url": "https://witcher.fandom.com/wiki/Spoontaneous_Profits%21",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q397",
+      "name": "But Other Than That, How Did You Enjoy the Play?",
+      "url": "https://witcher.fandom.com/wiki/But_Other_Than_That%2C_How_Did_You_Enjoy_the_Play%3F",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q398",
+      "name": "What Was This About Again?",
+      "url": "https://witcher.fandom.com/wiki/What_Was_This_About_Again%3F",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q399",
+      "name": "Equine Phantoms",
+      "url": "https://witcher.fandom.com/wiki/Equine_Phantoms",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q400",
+      "name": "Feet as Cold as Ice",
+      "url": "https://witcher.fandom.com/wiki/Feet_as_Cold_as_Ice",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q402",
+      "name": "The Curse of Carnarvon",
+      "url": "https://witcher.fandom.com/wiki/The_Curse_of_Carnarvon",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q409",
+      "name": "The Inconstant Gardener",
+      "url": "https://witcher.fandom.com/wiki/The_Inconstant_Gardener",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q410",
+      "name": "The Toussaint Prison Experiment",
+      "url": "https://witcher.fandom.com/wiki/The_Toussaint_Prison_Experiment",
+      "checkedAt": "2026-10-17T10:36:01.556Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q411",
+      "name": "The Suffering of Young Francois",
+      "url": "https://witcher.fandom.com/wiki/The_Suffering_of_Young_Francois",
+      "checkedAt": "2026-10-17T10:36:01.557Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q412",
+      "name": "The Tufo Monster",
+      "url": "https://witcher.fandom.com/wiki/Contract%3A_The_Tufo_Monster",
+      "checkedAt": "2026-10-17T10:36:01.557Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q414",
+      "name": "Filibert Always Pays His Debts",
+      "url": "https://witcher.fandom.com/wiki/Filibert_Always_Pays_His_Debts",
+      "checkedAt": "2026-10-17T10:36:01.557Z",
+      "scope": "Retrieved task source; independently paraphrased story, not full branch or in-game verification"
+    },
+    {
+      "questId": "q394",
+      "name": "Vintner's Contract: Griffin-in-the-Vines",
+      "url": "https://witcher-games.fandom.com/wiki/Vintner%27s_Contract%3A_Griffin-in-the-Vines",
+      "checkedAt": "2026-10-17T10:46:19.615634+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    },
+    {
+      "questId": "q346",
+      "name": "Big Feet to Fill: The First Group",
+      "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill%3A_The_First_Group",
+      "checkedAt": "2026-10-17T10:46:19.616329+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    },
+    {
+      "questId": "q347",
+      "name": "Big Feet to Fill: The Second Group",
+      "url": "https://www.gamepressure.com/thewitcher3bloodandwine/big-feet-to-fill/z78e9a",
+      "checkedAt": "2026-10-17T10:46:19.616331+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    },
+    {
+      "questId": "q348",
+      "name": "Big Feet to Fill: The Third Group",
+      "url": "https://www.gamepressure.com/thewitcher3bloodandwine/big-feet-to-fill/z78e9a",
+      "checkedAt": "2026-10-17T10:46:19.616333+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    },
+    {
+      "questId": "q349",
+      "name": "Big Feet to Fill: The Fourth Group",
+      "url": "https://primagames.com/eguides/the-witcher-3-wild-hunt-the-complete-edition-eguide/secondary-quests/big-feet-to-fill-the-fourth-group-baw/killed-by-kikimores",
+      "checkedAt": "2026-10-17T10:46:19.616336+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    },
+    {
+      "questId": "q367",
+      "name": "Amidst the Mill's Grist",
+      "url": "https://witcher.fandom.com/wiki/Amidst_the_Mill%27s_Grist",
+      "checkedAt": "2026-10-17T10:46:19.616338+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    },
+    {
+      "questId": "q190",
+      "name": "Inheritance",
+      "url": "https://www.gamebanshee.com/thewitcher3/walkthrough/inheritance.php",
+      "checkedAt": "2026-10-17T10:46:19.616340+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    },
+    {
+      "questId": "q201",
+      "name": "Call of the Wild",
+      "url": "https://gamerwalkthroughs.com/witcher-3-wild-hunt/skellige/call-of-the-wild/",
+      "checkedAt": "2026-10-17T10:46:19.616341+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    },
+    {
+      "questId": "q408",
+      "name": "Duck, Duck, Goosed!",
+      "url": "https://www.neoseeker.com/the-witcher-3-blood-and-wine/Duck_Duck_Goosed",
+      "checkedAt": "2026-10-17T10:46:19.616343+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    },
+    {
+      "questId": "q355",
+      "name": "A Dark Legacy",
+      "url": "https://witcher.fandom.com/wiki/A_Dark_Legacy",
+      "checkedAt": "2026-10-17T10:46:19.616345+00:00",
+      "scope": "Supplemental source check for this story; not full branch or in-game verification"
+    }
+  ]
+}

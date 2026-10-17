@@ -1,0 +1,1719 @@
+{
+  "date": "2026-10-17",
+  "method": "按稳定任务 ID 维护的剧情参考链接；同名地点、前作任务与本作任务分开。",
+  "limits": "中文内容为简要转述，分支核对范围继续以任务 reviewed 与 decisions 为准。",
+  "quests": {
+    "q2": {
+      "title": "Kaer Morhen",
+      "url": "https://witcher.fandom.com/wiki/Kaer_Morhen_%28quest%29"
+    },
+    "q3": {
+      "title": "Lilac and Gooseberries",
+      "url": "https://witcher.fandom.com/wiki/Lilac_and_Gooseberries"
+    },
+    "q44": {
+      "title": "The Beast of White Orchard",
+      "url": "https://witcher.fandom.com/wiki/The_Beast_of_White_Orchard"
+    },
+    "q39": {
+      "title": "The Incident at White Orchard",
+      "url": "https://witcher.fandom.com/wiki/The_Incident_at_White_Orchard"
+    },
+    "q19": {
+      "title": "Missing in Action",
+      "url": "https://witcher.fandom.com/wiki/Missing_in_Action"
+    },
+    "q20": {
+      "title": "A Frying Pan, Spick and Span",
+      "url": "https://witcher.fandom.com/wiki/A_Frying_Pan%2C_Spick_and_Span"
+    },
+    "q36": {
+      "title": "Precious Cargo",
+      "url": "https://witcher.fandom.com/wiki/Precious_Cargo"
+    },
+    "q37": {
+      "title": "Twisted Firestarter",
+      "url": "https://witcher.fandom.com/wiki/Twisted_Firestarter"
+    },
+    "q42": {
+      "title": "On Death's Bed",
+      "url": "https://witcher.fandom.com/wiki/On_Death%27s_Bed"
+    },
+    "q40": {
+      "title": "Imperial Audience",
+      "url": "https://witcher.fandom.com/wiki/Imperial_Audience"
+    },
+    "q12": {
+      "title": "Gwent: Velen Players",
+      "url": "https://witcher.fandom.com/wiki/Gwent:_Velen_Players"
+    },
+    "q22": {
+      "title": "The Truth is in the Stars",
+      "url": "https://witcher.fandom.com/wiki/The_Truth_is_in_the_Stars"
+    },
+    "q45": {
+      "title": "Funeral Pyres",
+      "url": "https://witcher.fandom.com/wiki/Funeral_Pyres"
+    },
+    "q49": {
+      "title": "Hazardous Goods",
+      "url": "https://witcher.fandom.com/wiki/Hazardous_Goods"
+    },
+    "q68": {
+      "title": "A Dog's Life",
+      "url": "https://witcher.fandom.com/wiki/A_Dog%27s_Life"
+    },
+    "q82": {
+      "title": "The Fall of the House of Reardon",
+      "url": "https://witcher.fandom.com/wiki/The_Fall_of_the_House_of_Reardon"
+    },
+    "q83": {
+      "title": "Ghosts of the Past",
+      "url": "https://witcher.fandom.com/wiki/Ghosts_of_the_Past"
+    },
+    "q84": {
+      "title": "Fools' Gold",
+      "url": "https://witcher.fandom.com/wiki/Fools%27_Gold"
+    },
+    "q88": {
+      "title": "Lynch Mob",
+      "url": "https://witcher.fandom.com/wiki/Lynch_Mob"
+    },
+    "q89": {
+      "title": "A Greedy God",
+      "url": "https://witcher.fandom.com/wiki/A_Greedy_God"
+    },
+    "q93": {
+      "title": "Wild at Heart",
+      "url": "https://witcher.fandom.com/wiki/Wild_at_Heart"
+    },
+    "q119": {
+      "title": "Witcher Wannabe",
+      "url": "https://witcher.fandom.com/wiki/Witcher_Wannabe"
+    },
+    "q118": {
+      "title": "Defender of the Faith",
+      "url": "https://witcher.fandom.com/wiki/Defender_of_the_Faith"
+    },
+    "q120": {
+      "title": "Love's Cruel Snares",
+      "url": "https://witcher.fandom.com/wiki/Love%27s_Cruel_Snares"
+    },
+    "q121": {
+      "title": "Death By Fire",
+      "url": "https://witcher.fandom.com/wiki/Death_By_Fire"
+    },
+    "q130": {
+      "title": "Fists of Fury: Velen",
+      "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Velen"
+    },
+    "q139": {
+      "title": "Blood Ties",
+      "url": "https://witcher.fandom.com/wiki/Blood_Ties"
+    },
+    "q268": {
+      "title": "Where the Cat and Wolf Play...",
+      "url": "https://witcher.fandom.com/wiki/Where_the_Cat_and_Wolf_Play..."
+    },
+    "q267": {
+      "title": "Take What You Want",
+      "url": "https://witcher.fandom.com/wiki/Take_What_You_Want"
+    },
+    "q60": {
+      "title": "The Nilfgaardian Connection",
+      "url": "https://witcher.fandom.com/wiki/The_Nilfgaardian_Connection"
+    },
+    "q65": {
+      "title": "Hunting a Witch",
+      "url": "https://witcher.fandom.com/wiki/Hunting_a_Witch"
+    },
+    "q73": {
+      "title": "Wandering in the Dark",
+      "url": "https://witcher.fandom.com/wiki/Wandering_in_the_Dark"
+    },
+    "q78": {
+      "title": "Magic Lamp",
+      "url": "https://witcher.fandom.com/wiki/Magic_Lamp"
+    },
+    "q79": {
+      "title": "An Invitation from Keira Metz",
+      "url": "https://witcher.fandom.com/wiki/An_Invitation_from_Keira_Metz"
+    },
+    "q80": {
+      "title": "A Towerful of Mice",
+      "url": "https://witcher.fandom.com/wiki/A_Towerful_of_Mice"
+    },
+    "q81": {
+      "title": "A Favor for a Friend",
+      "url": "https://witcher.fandom.com/wiki/A_Favor_for_a_Friend"
+    },
+    "q99": {
+      "title": "For the Advancement of Learning",
+      "url": "https://witcher.fandom.com/wiki/For_the_Advancement_of_Learning"
+    },
+    "q75": {
+      "title": "Bloody Baron",
+      "url": "https://witcher.fandom.com/wiki/Bloody_Baron"
+    },
+    "q61": {
+      "title": "Ciri's Story: The King of the Wolves",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story:_The_King_of_the_Wolves"
+    },
+    "q8": {
+      "title": "Races: Crow's Perch",
+      "url": "https://witcher.fandom.com/wiki/Races:_Crow%27s_Perch"
+    },
+    "q69": {
+      "title": "Ciri's Room",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Room"
+    },
+    "q74": {
+      "title": "Family Matters",
+      "url": "https://witcher.fandom.com/wiki/Family_Matters"
+    },
+    "q63": {
+      "title": "A Princess in Distress",
+      "url": "https://witcher.fandom.com/wiki/A_Princess_in_Distress"
+    },
+    "q64": {
+      "title": "Ciri's Story: The Race",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story:_The_Race"
+    },
+    "q62": {
+      "title": "Ciri's Story: Out of the Shadows",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story:_Out_of_the_Shadows"
+    },
+    "q76": {
+      "title": "Ladies of the Wood",
+      "url": "https://witcher.fandom.com/wiki/Ladies_of_the_Wood"
+    },
+    "q67": {
+      "title": "The Whispering Hillock",
+      "url": "https://witcher.fandom.com/wiki/The_Whispering_Hillock"
+    },
+    "q66": {
+      "title": "Ciri's Story: Fleeing the Bog",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story:_Fleeing_the_Bog"
+    },
+    "q91": {
+      "title": "Forefathers' Eve",
+      "url": "https://witcher.fandom.com/wiki/Forefathers%27_Eve"
+    },
+    "q105": {
+      "title": "Last Rites",
+      "url": "https://witcher.fandom.com/wiki/Last_Rites"
+    },
+    "q107": {
+      "title": "Return to Crookback Bog",
+      "url": "https://witcher.fandom.com/wiki/Return_to_Crookback_Bog"
+    },
+    "q90": {
+      "title": "Thou Shalt Not Pass",
+      "url": "https://witcher.fandom.com/wiki/Thou_Shalt_Not_Pass"
+    },
+    "q106": {
+      "title": "Fake Papers",
+      "url": "https://witcher.fandom.com/wiki/Fake_Papers"
+    },
+    "q104": {
+      "title": "Bitter Harvest",
+      "url": "https://witcher.fandom.com/wiki/Bitter_Harvest"
+    },
+    "q206": {
+      "title": "Destination: Skellige",
+      "url": "https://witcher.fandom.com/wiki/Destination:_Skellige"
+    },
+    "q41": {
+      "title": "The Dwarven Document Dilemma",
+      "url": "https://witcher.fandom.com/wiki/The_Dwarven_Document_Dilemma"
+    },
+    "q13": {
+      "title": "Gwent: Playing Innkeeps",
+      "url": "https://witcher.fandom.com/wiki/Gwent:_Playing_Innkeeps"
+    },
+    "q21": {
+      "title": "Empty Coop",
+      "url": "https://witcher.fandom.com/wiki/Empty_Coop"
+    },
+    "q24": {
+      "title": "Message from an Old Friend",
+      "url": "https://witcher.fandom.com/wiki/Message_from_an_Old_Friend"
+    },
+    "q77": {
+      "title": "Hey, You Wanna Look at My Stuff?",
+      "url": "https://witcher.fandom.com/wiki/Hey%2C_You_Wanna_Look_at_My_Stuff%3F"
+    },
+    "q97": {
+      "title": "Hidden Messages of the Nilfgaardian Kind",
+      "url": "https://witcher.fandom.com/wiki/Hidden_Messages_of_the_Nilfgaardian_Kind"
+    },
+    "q98": {
+      "title": "Novigrad Hospitality",
+      "url": "https://witcher.fandom.com/wiki/Novigrad_Hospitality"
+    },
+    "q103": {
+      "title": "Of Dairy and Darkness",
+      "url": "https://witcher.fandom.com/wiki/Of_Dairy_and_Darkness"
+    },
+    "q122": {
+      "title": "Rough Neighborhood",
+      "url": "https://witcher.fandom.com/wiki/Rough_Neighborhood"
+    },
+    "q129": {
+      "title": "A Barnful of Trouble",
+      "url": "https://witcher.fandom.com/wiki/A_Barnful_of_Trouble"
+    },
+    "q138": {
+      "title": "Spooked Mare",
+      "url": "https://witcher.fandom.com/wiki/Spooked_Mare"
+    },
+    "q142": {
+      "title": "A Walk on the Waterfront",
+      "url": "https://witcher.fandom.com/wiki/A_Walk_on_the_Waterfront"
+    },
+    "q157": {
+      "title": "The Volunteer",
+      "url": "https://witcher.fandom.com/wiki/The_Volunteer"
+    },
+    "q161": {
+      "title": "A Tome Entombed",
+      "url": "https://witcher.fandom.com/wiki/A_Tome_Entombed"
+    },
+    "q162": {
+      "title": "Warehouse of Woe",
+      "url": "https://witcher.fandom.com/wiki/Warehouse_of_Woe"
+    },
+    "q198": {
+      "title": "Little Red",
+      "url": "https://witcher.fandom.com/wiki/Little_Red"
+    },
+    "q252": {
+      "title": "Fists of Fury: Novigrad",
+      "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Novigrad"
+    },
+    "q263": {
+      "title": "Of Swords and Dumplings",
+      "url": "https://witcher.fandom.com/wiki/Of_Swords_and_Dumplings"
+    },
+    "q309": {
+      "title": "Races: Swift as the Western Winds",
+      "url": "https://witcher.fandom.com/wiki/Races:_Swift_as_the_Western_Winds"
+    },
+    "q310": {
+      "title": "Without a Trace",
+      "url": "https://witcher.fandom.com/wiki/Without_a_Trace"
+    },
+    "q311": {
+      "title": "The Taxman Cometh",
+      "url": "https://witcher.fandom.com/wiki/The_Taxman_Cometh"
+    },
+    "q312": {
+      "title": "Enchanting: Start-up Costs",
+      "url": "https://witcher.fandom.com/wiki/Enchanting:_Start-up_Costs"
+    },
+    "q431": {
+      "title": "Enchanting: Quality Has Its Price",
+      "url": "https://witcher.fandom.com/wiki/Enchanting:_Quality_Has_Its_Price"
+    },
+    "q14": {
+      "title": "Gwent: Big City Players",
+      "url": "https://witcher.fandom.com/wiki/Gwent:_Big_City_Players"
+    },
+    "q324": {
+      "title": "Envoys, Wineboys",
+      "url": "https://witcher.fandom.com/wiki/Envoys%2C_Wineboys"
+    },
+    "q117": {
+      "title": "Pyres of Novigrad",
+      "url": "https://witcher.fandom.com/wiki/Pyres_of_Novigrad"
+    },
+    "q87": {
+      "title": "Novigrad Dreaming",
+      "url": "https://witcher.fandom.com/wiki/Novigrad_Dreaming"
+    },
+    "q92": {
+      "title": "Haunted House",
+      "url": "https://witcher.fandom.com/wiki/Haunted_House_%28The_Witcher_3%29"
+    },
+    "q125": {
+      "title": "Broken Flowers",
+      "url": "https://witcher.fandom.com/wiki/Broken_Flowers"
+    },
+    "q143": {
+      "title": "Fencing Lessons",
+      "url": "https://witcher.fandom.com/wiki/Fencing_Lessons"
+    },
+    "q147": {
+      "title": "A Dangerous Game",
+      "url": "https://witcher.fandom.com/wiki/A_Dangerous_Game"
+    },
+    "q136": {
+      "title": "Get Junior",
+      "url": "https://witcher.fandom.com/wiki/Get_Junior"
+    },
+    "q109": {
+      "title": "The Gangs of Novigrad",
+      "url": "https://witcher.fandom.com/wiki/The_Gangs_of_Novigrad"
+    },
+    "q101": {
+      "title": "Ciri's Story: Visiting Junior",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story:_Visiting_Junior"
+    },
+    "q137": {
+      "title": "Count Reuven's Treasure",
+      "url": "https://witcher.fandom.com/wiki/Count_Reuven%27s_Treasure"
+    },
+    "q145": {
+      "title": "A Matter of Life and Death",
+      "url": "https://witcher.fandom.com/wiki/A_Matter_of_Life_and_Death_%28The_Witcher_3%29"
+    },
+    "q131": {
+      "title": "Novigrad, Closed City",
+      "url": "https://witcher.fandom.com/wiki/Novigrad%2C_Closed_City"
+    },
+    "q132": {
+      "title": "Novigrad, Closed City II",
+      "url": "https://witcher.fandom.com/wiki/Novigrad%2C_Closed_City"
+    },
+    "q186": {
+      "title": "A Deadly Plot",
+      "url": "https://witcher.fandom.com/wiki/A_Deadly_Plot"
+    },
+    "q148": {
+      "title": "An Eye for an Eye",
+      "url": "https://witcher.fandom.com/wiki/An_Eye_for_an_Eye"
+    },
+    "q127": {
+      "title": "The Play's the Thing",
+      "url": "https://witcher.fandom.com/wiki/The_Play%27s_the_Thing"
+    },
+    "q156": {
+      "title": "A Poet Under Pressure",
+      "url": "https://witcher.fandom.com/wiki/A_Poet_Under_Pressure"
+    },
+    "q126": {
+      "title": "Ciri's Story: Breakneck Speed",
+      "url": "https://witcher.fandom.com/wiki/Ciri%27s_Story:_Breakneck_Speed"
+    },
+    "q180": {
+      "title": "The Nobleman Statuette",
+      "url": "https://witcher.fandom.com/wiki/The_Nobleman_Statuette"
+    },
+    "q179": {
+      "title": "The Soldier Statuette",
+      "url": "https://witcher.fandom.com/wiki/The_Soldier_Statuette"
+    },
+    "q185": {
+      "title": "Cabaret",
+      "url": "https://witcher.fandom.com/wiki/Cabaret"
+    },
+    "q182": {
+      "title": "Now or Never",
+      "url": "https://witcher.fandom.com/wiki/Now_or_Never"
+    },
+    "q208": {
+      "title": "Carnal Sins",
+      "url": "https://witcher.fandom.com/wiki/Carnal_Sins"
+    },
+    "q108": {
+      "title": "Honor Among Thieves",
+      "url": "https://witcher.fandom.com/wiki/Honor_Among_Thieves"
+    },
+    "q9": {
+      "title": "Race: The Great Erasmus Vegelbud Memorial Derby",
+      "url": "https://witcher.fandom.com/wiki/Race:_The_Great_Erasmus_Vegelbud_Memorial_Derby"
+    },
+    "q102": {
+      "title": "A Favor for Radovid",
+      "url": "https://witcher.fandom.com/wiki/A_Favor_for_Radovid"
+    },
+    "q146": {
+      "title": "Redania's Most Wanted",
+      "url": "https://witcher.fandom.com/wiki/Redania%27s_Most_Wanted"
+    },
+    "q181": {
+      "title": "Out On Your Arse!",
+      "url": "https://witcher.fandom.com/wiki/Out_On_Your_Arse!"
+    },
+    "q308": {
+      "title": "Evil's Soft First Touches",
+      "url": "https://witcher.fandom.com/wiki/Evil%27s_Soft_First_Touches"
+    },
+    "q316": {
+      "title": "Rose on a Red Field",
+      "url": "https://witcher.fandom.com/wiki/Rose_on_a_Red_Field"
+    },
+    "q315": {
+      "title": "Dead Man's Party",
+      "url": "https://witcher.fandom.com/wiki/Dead_Man%27s_Party"
+    },
+    "q317": {
+      "title": "A Midnight Clear",
+      "url": "https://witcher.fandom.com/wiki/A_Midnight_Clear"
+    },
+    "q320": {
+      "title": "Open Sesame!",
+      "url": "https://witcher.fandom.com/wiki/Open_Sesame!_%28Hearts_of_Stone%29"
+    },
+    "q321": {
+      "title": "Open Sesame: Witcher Seasonings",
+      "url": "https://witcher.fandom.com/wiki/Open_Sesame:_Witcher_Seasonings"
+    },
+    "q322": {
+      "title": "Open Sesame: Breaking and Entering",
+      "url": "https://witcher.fandom.com/wiki/Open_Sesame:_Breaking_and_Entering"
+    },
+    "q323": {
+      "title": "Open Sesame: The Safecracker",
+      "url": "https://witcher.fandom.com/wiki/Open_Sesame:_The_Safecracker"
+    },
+    "q325": {
+      "title": "Avid Collector",
+      "url": "https://witcher.fandom.com/wiki/Avid_Collector"
+    },
+    "q332": {
+      "title": "Scenes From a Marriage",
+      "url": "https://witcher.fandom.com/wiki/Scenes_From_a_Marriage"
+    },
+    "q361": {
+      "title": "Whatsoever a Man Soweth...",
+      "url": "https://witcher.fandom.com/wiki/Whatsoever_a_Man_Soweth..."
+    },
+    "q277": {
+      "title": "High Stakes",
+      "url": "https://witcher.fandom.com/wiki/High_Stakes"
+    },
+    "q16": {
+      "title": "Gwent: Skellige Style",
+      "url": "https://witcher.fandom.com/wiki/Gwent:_Skellige_Style"
+    },
+    "q23": {
+      "title": "Brave Fools Die Young",
+      "url": "https://witcher.fandom.com/wiki/Brave_Fools_Die_Young"
+    },
+    "q35": {
+      "title": "Worthy of Trust",
+      "url": "https://witcher.fandom.com/wiki/Worthy_of_Trust"
+    },
+    "q133": {
+      "title": "Flesh for Sale",
+      "url": "https://witcher.fandom.com/wiki/Flesh_for_Sale"
+    },
+    "q141": {
+      "title": "Following the Thread",
+      "url": "https://witcher.fandom.com/wiki/Following_the_Thread_%28The_Witcher_3%29"
+    },
+    "q140": {
+      "title": "A Hallowed Horn",
+      "url": "https://witcher.fandom.com/wiki/A_Hallowed_Horn"
+    },
+    "q160": {
+      "title": "Black Pearl",
+      "url": "https://witcher.fandom.com/wiki/Black_Pearl_%28quest%29"
+    },
+    "q158": {
+      "title": "From a Land Far, Far Away",
+      "url": "https://witcher.fandom.com/wiki/From_a_Land_Far%2C_Far_Away"
+    },
+    "q159": {
+      "title": "Free Spirit",
+      "url": "https://witcher.fandom.com/wiki/Free_Spirit"
+    },
+    "q177": {
+      "title": "The Nithing",
+      "url": "https://witcher.fandom.com/wiki/The_Nithing"
+    },
+    "q178": {
+      "title": "The Price of Honor",
+      "url": "https://witcher.fandom.com/wiki/The_Price_of_Honor"
+    },
+    "q193": {
+      "title": "The Family Blade",
+      "url": "https://witcher.fandom.com/wiki/The_Family_Blade"
+    },
+    "q194": {
+      "title": "A Bard's Beloved",
+      "url": "https://witcher.fandom.com/wiki/A_Bard%27s_Beloved"
+    },
+    "q195": {
+      "title": "For Fame and Glory",
+      "url": "https://witcher.fandom.com/wiki/For_Fame_and_Glory"
+    },
+    "q196": {
+      "title": "Armed Assault",
+      "url": "https://witcher.fandom.com/wiki/Armed_Assault"
+    },
+    "q207": {
+      "title": "The Path of Warriors",
+      "url": "https://witcher.fandom.com/wiki/The_Path_of_Warriors"
+    },
+    "q184": {
+      "title": "Stranger in a Strange Land",
+      "url": "https://witcher.fandom.com/wiki/Stranger_in_a_Strange_Land"
+    },
+    "q183": {
+      "title": "The Cave of Dreams",
+      "url": "https://witcher.fandom.com/wiki/The_Cave_of_Dreams"
+    },
+    "q197": {
+      "title": "An Unpaid Debt",
+      "url": "https://witcher.fandom.com/wiki/An_Unpaid_Debt"
+    },
+    "q218": {
+      "title": "Crime and Punishment",
+      "url": "https://witcher.fandom.com/wiki/Crime_and_Punishment"
+    },
+    "q233": {
+      "title": "Iron Maiden",
+      "url": "https://witcher.fandom.com/wiki/Iron_Maiden"
+    },
+    "q240": {
+      "title": "Hard Times",
+      "url": "https://witcher.fandom.com/wiki/Hard_Times"
+    },
+    "q258": {
+      "title": "Finders Keepers",
+      "url": "https://witcher.fandom.com/wiki/Finders_Keepers_%28The_Witcher_3%29"
+    },
+    "q259": {
+      "title": "Abandoned Sawmill",
+      "url": "https://witcher.fandom.com/wiki/Abandoned_Sawmill_%28quest%29"
+    },
+    "q260": {
+      "title": "Shock Therapy",
+      "url": "https://witcher.fandom.com/wiki/Shock_Therapy"
+    },
+    "q262": {
+      "title": "Practicum in Advanced Alchemy",
+      "url": "https://witcher.fandom.com/wiki/Practicum_in_Advanced_Alchemy"
+    },
+    "q269": {
+      "title": "Peace Disturbed",
+      "url": "https://witcher.fandom.com/wiki/Peace_Disturbed"
+    },
+    "q270": {
+      "title": "Taken as a Lass",
+      "url": "https://witcher.fandom.com/wiki/Taken_as_a_Lass"
+    },
+    "q275": {
+      "title": "The Sad Tale of the Grossbart Brothers",
+      "url": "https://witcher.fandom.com/wiki/The_Sad_Tale_of_the_Grossbart_Brothers"
+    },
+    "q303": {
+      "title": "Fists of Fury: Skellige",
+      "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Skellige"
+    },
+    "q128": {
+      "title": "Master of the Arena",
+      "url": "https://witcher.fandom.com/wiki/Master_of_the_Arena"
+    },
+    "q176": {
+      "title": "Fists of Fury: Champion of Champions",
+      "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Champion_of_Champions"
+    },
+    "q304": {
+      "title": "The Tower Outta Nowheres",
+      "url": "https://witcher.fandom.com/wiki/The_Tower_Outta_Nowheres"
+    },
+    "q420": {
+      "title": "The Heroes' Pursuits: Fayrlund",
+      "url": "https://witcher.fandom.com/wiki/The_Heroes%27_Pursuits:_Fayrlund"
+    },
+    "q421": {
+      "title": "The Heroes' Pursuits: Fyresdal",
+      "url": "https://witcher.fandom.com/wiki/The_Heroes%27_Pursuits:_Fyresdal"
+    },
+    "q422": {
+      "title": "The Heroes' Pursuits: Kaer Trolde",
+      "url": "https://witcher.fandom.com/wiki/The_Heroes%27_Pursuits:_Kaer_Trolde"
+    },
+    "q423": {
+      "title": "The Heroes' Pursuits: For the Goddess' Glory!",
+      "url": "https://witcher.fandom.com/wiki/The_Heroes%27_Pursuits:_For_the_Goddess%27_Glory!"
+    },
+    "q205": {
+      "title": "The King is Dead - Long Live the King",
+      "url": "https://witcher.fandom.com/wiki/The_King_is_Dead_-_Long_Live_the_King"
+    },
+    "q212": {
+      "title": "Echoes of the Past",
+      "url": "https://witcher.fandom.com/wiki/Echoes_of_the_Past"
+    },
+    "q192": {
+      "title": "Missing Persons",
+      "url": "https://witcher.fandom.com/wiki/Missing_Persons"
+    },
+    "q175": {
+      "title": "Nameless",
+      "url": "https://witcher.fandom.com/wiki/Nameless"
+    },
+    "q174": {
+      "title": "The Calm Before the Storm",
+      "url": "https://witcher.fandom.com/wiki/The_Calm_Before_the_Storm"
+    },
+    "q200": {
+      "title": "The Last Wish",
+      "url": "https://witcher.fandom.com/wiki/The_Last_Wish"
+    },
+    "q199": {
+      "title": "In Wolf's Clothing",
+      "url": "https://witcher.fandom.com/wiki/In_Wolf%27s_Clothing"
+    },
+    "q213": {
+      "title": "The Lord of Undvik",
+      "url": "https://witcher.fandom.com/wiki/The_Lord_of_Undvik"
+    },
+    "q256": {
+      "title": "Master Armorers",
+      "url": "https://witcher.fandom.com/wiki/Master_Armorers"
+    },
+    "q214": {
+      "title": "Possession",
+      "url": "https://witcher.fandom.com/wiki/Possession_%28quest%29"
+    },
+    "q219": {
+      "title": "King's Gambit",
+      "url": "https://witcher.fandom.com/wiki/King%27s_Gambit"
+    },
+    "q220": {
+      "title": "Coronation",
+      "url": "https://witcher.fandom.com/wiki/Coronation"
+    },
+    "q236": {
+      "title": "A Feast for Crows",
+      "url": "https://witcher.fandom.com/wiki/A_Feast_for_Crows"
+    },
+    "q15": {
+      "title": "Gwent: Old Pals",
+      "url": "https://witcher.fandom.com/wiki/Gwent:_Old_Pals"
+    },
+    "q17": {
+      "title": "Gwent: Playing Thaler",
+      "url": "https://witcher.fandom.com/wiki/Gwent:_Playing_Thaler"
+    },
+    "q251": {
+      "title": "The Bastion",
+      "url": "https://witcher.fandom.com/wiki/The_Bastion"
+    },
+    "q276": {
+      "title": "Monster Slayer",
+      "url": "https://witcher.fandom.com/wiki/Monster_Slayer"
+    },
+    "q280": {
+      "title": "Berengar's Blade",
+      "url": "https://witcher.fandom.com/wiki/Berengar%27s_Blade"
+    },
+    "q281": {
+      "title": "Greenhouse Effect",
+      "url": "https://witcher.fandom.com/wiki/Greenhouse_Effect"
+    },
+    "q302": {
+      "title": "The Witchers' Forge",
+      "url": "https://witcher.fandom.com/wiki/The_Witchers%27_Forge"
+    },
+    "q229": {
+      "title": "Ugly Baby",
+      "url": "https://witcher.fandom.com/wiki/Ugly_Baby"
+    },
+    "q231": {
+      "title": "The Final Trial",
+      "url": "https://witcher.fandom.com/wiki/The_Final_Trial"
+    },
+    "q228": {
+      "title": "To Bait a Forktail...",
+      "url": "https://witcher.fandom.com/wiki/To_Bait_a_Forktail..."
+    },
+    "q4": {
+      "title": "Disturbance",
+      "url": "https://witcher.fandom.com/wiki/Disturbance"
+    },
+    "q232": {
+      "title": "No Place Like Home",
+      "url": "https://witcher.fandom.com/wiki/No_Place_Like_Home"
+    },
+    "q230": {
+      "title": "Va Fail, Elaine",
+      "url": "https://witcher.fandom.com/wiki/Va_Fail%2C_Elaine"
+    },
+    "q245": {
+      "title": "Brothers In Arms: Nilfgaard",
+      "url": "https://witcher.fandom.com/wiki/Brothers_In_Arms:_Nilfgaard"
+    },
+    "q246": {
+      "title": "Brothers In Arms: Skellige",
+      "url": "https://witcher.fandom.com/wiki/Brothers_In_Arms:_Skellige"
+    },
+    "q247": {
+      "title": "Brothers In Arms: Velen",
+      "url": "https://witcher.fandom.com/wiki/Brothers_In_Arms:_Velen"
+    },
+    "q248": {
+      "title": "Brothers In Arms: Novigrad",
+      "url": "https://witcher.fandom.com/wiki/Brothers_In_Arms:_Novigrad"
+    },
+    "q249": {
+      "title": "The Isle of Mists",
+      "url": "https://witcher.fandom.com/wiki/The_Isle_of_Mists_%28quest%29"
+    },
+    "q257": {
+      "title": "The Battle of Kaer Morhen",
+      "url": "https://witcher.fandom.com/wiki/The_Battle_of_Kaer_Morhen"
+    },
+    "q235": {
+      "title": "Blood on the Battlefield",
+      "url": "https://witcher.fandom.com/wiki/Blood_on_the_Battlefield"
+    },
+    "q273": {
+      "title": "Bald Mountain",
+      "url": "https://witcher.fandom.com/wiki/Bald_Mountain_%28quest%29"
+    },
+    "q144": {
+      "title": "A Final Kindness",
+      "url": "https://witcher.fandom.com/wiki/A_Final_Kindness"
+    },
+    "q6": {
+      "title": "Final Preparations",
+      "url": "https://witcher.fandom.com/wiki/Final_Preparations"
+    },
+    "q274": {
+      "title": "Through Time and Space",
+      "url": "https://witcher.fandom.com/wiki/Through_Time_and_Space"
+    },
+    "q288": {
+      "title": "Payback",
+      "url": "https://witcher.fandom.com/wiki/Payback"
+    },
+    "q287": {
+      "title": "Blindingly Obvious",
+      "url": "https://witcher.fandom.com/wiki/Blindingly_Obvious"
+    },
+    "q289": {
+      "title": "The Great Escape",
+      "url": "https://witcher.fandom.com/wiki/The_Great_Escape"
+    },
+    "q301": {
+      "title": "Reason of State",
+      "url": "https://witcher.fandom.com/wiki/Reason_of_State"
+    },
+    "q25": {
+      "title": "It Takes Three to Tango",
+      "url": "https://witcher.fandom.com/wiki/It_Takes_Three_to_Tango"
+    },
+    "q285": {
+      "title": "Battle Preparations",
+      "url": "https://witcher.fandom.com/wiki/Battle_Preparations"
+    },
+    "q283": {
+      "title": "Veni Vidi Vigo",
+      "url": "https://witcher.fandom.com/wiki/Veni_Vidi_Vigo"
+    },
+    "q306": {
+      "title": "Child of the Elder Blood",
+      "url": "https://witcher.fandom.com/wiki/Child_of_the_Elder_Blood"
+    },
+    "q284": {
+      "title": "The Sunstone",
+      "url": "https://witcher.fandom.com/wiki/The_Sunstone"
+    },
+    "q286": {
+      "title": "Skjall's Grave",
+      "url": "https://witcher.fandom.com/wiki/Skjall%27s_Grave"
+    },
+    "q296": {
+      "title": "On Thin Ice",
+      "url": "https://witcher.fandom.com/wiki/On_Thin_Ice"
+    },
+    "q297": {
+      "title": "Tedd Deireadh, The Final Age",
+      "url": "https://witcher.fandom.com/wiki/Tedd_Deireadh%2C_The_Final_Age"
+    },
+    "q298": {
+      "title": "Something Ends, Something Begins",
+      "url": "https://witcher.fandom.com/wiki/Something_Ends%2C_Something_Begins_%28quest%29"
+    },
+    "q10": {
+      "title": "Faithful Friend",
+      "url": "https://witcher.fandom.com/wiki/Faithful_Friend"
+    },
+    "q333": {
+      "title": "The Beast of Toussaint",
+      "url": "https://witcher.fandom.com/wiki/The_Beast_of_Toussaint"
+    },
+    "q336": {
+      "title": "Blood Run",
+      "url": "https://witcher.fandom.com/wiki/Blood_Run"
+    },
+    "q366": {
+      "title": "La Cage au Fou",
+      "url": "https://witcher.fandom.com/wiki/La_Cage_au_Fou"
+    },
+    "q387": {
+      "title": "Where Children Toil, Toys Waste Away",
+      "url": "https://witcher.fandom.com/wiki/Where_Children_Toil%2C_Toys_Waste_Away"
+    },
+    "q388": {
+      "title": "Wine is Sacred",
+      "url": "https://witcher.fandom.com/wiki/Wine_is_Sacred"
+    },
+    "q392": {
+      "title": "The Man from Cintra",
+      "url": "https://witcher.fandom.com/wiki/The_Man_from_Cintra"
+    },
+    "q403": {
+      "title": "Capture the Castle",
+      "url": "https://witcher.fandom.com/wiki/Capture_the_Castle"
+    },
+    "q405": {
+      "title": "The Night of Long Fangs",
+      "url": "https://witcher.fandom.com/wiki/The_Night_of_Long_Fangs"
+    },
+    "q404": {
+      "title": "Blood Simple",
+      "url": "https://witcher.fandom.com/wiki/Blood_Simple"
+    },
+    "q406": {
+      "title": "What Lies Unseen",
+      "url": "https://witcher.fandom.com/wiki/What_Lies_Unseen"
+    },
+    "q407": {
+      "title": "Beyond Hill and Dale...",
+      "url": "https://witcher.fandom.com/wiki/Beyond_Hill_and_Dale..."
+    },
+    "q415": {
+      "title": "Tesham Mutna",
+      "url": "https://witcher.fandom.com/wiki/Tesham_Mutna"
+    },
+    "q416": {
+      "title": "Pomp and Strange Circumstance",
+      "url": "https://witcher.fandom.com/wiki/Pomp_and_Strange_Circumstance"
+    },
+    "q417": {
+      "title": "Be It Ever So Humble...",
+      "url": "https://witcher.fandom.com/wiki/Be_It_Ever_So_Humble..."
+    },
+    "q418": {
+      "title": "Burlap is the New Stripe",
+      "url": "https://witcher.fandom.com/wiki/Burlap_is_the_New_Stripe"
+    },
+    "q419": {
+      "title": "The Perks of Being a Jailbird",
+      "url": "https://witcher.fandom.com/wiki/The_Perks_of_Being_a_Jailbird"
+    },
+    "q408": {
+      "title": "Duck, Duck, Goosed!",
+      "url": "https://www.neoseeker.com/the-witcher-3-blood-and-wine/Duck_Duck_Goosed"
+    },
+    "q389": {
+      "title": "The Hunger Game",
+      "url": "https://witcher.fandom.com/wiki/The_Hunger_Game"
+    },
+    "q367": {
+      "title": "Amidst the Mill's Grist",
+      "url": "https://witcher.fandom.com/wiki/Amidst_the_Mill%27s_Grist"
+    },
+    "q1": {
+      "title": "No Place Like Home",
+      "url": "https://witcher.fandom.com/wiki/No_Place_Like_Home_%28Blood_and_Wine%29"
+    },
+    "q334": {
+      "title": "Turn and Face the Strange",
+      "url": "https://witcher.fandom.com/wiki/Turn_and_Face_the_Strange"
+    },
+    "q335": {
+      "title": "The Warble of a Smitten Knight",
+      "url": "https://witcher.fandom.com/wiki/The_Warble_of_a_Smitten_Knight"
+    },
+    "q396": {
+      "title": "Of Sheers and a Witcher I Sing",
+      "url": "https://witcher.fandom.com/wiki/Of_Sheers_and_a_Witcher_I_Sing"
+    },
+    "q337": {
+      "title": "Fists of Fury: Toussaint",
+      "url": "https://witcher.fandom.com/wiki/Fists_of_Fury:_Toussaint"
+    },
+    "q371": {
+      "title": "Raging Wolf",
+      "url": "https://witcher.fandom.com/wiki/Raging_Wolf"
+    },
+    "q338": {
+      "title": "Till Death Do You Part",
+      "url": "https://witcher.fandom.com/wiki/Till_Death_Do_You_Part"
+    },
+    "q339": {
+      "title": "Paperchase",
+      "url": "https://witcher.fandom.com/wiki/Paperchase"
+    },
+    "q18": {
+      "title": "Gwent: Never Fear, Skellige's Here",
+      "url": "https://witcher.fandom.com/wiki/Gwent:_Never_Fear%2C_Skellige%27s_Here"
+    },
+    "q362": {
+      "title": "Gwent: To Everything - Turn, Turn, Tournament!",
+      "url": "https://witcher.fandom.com/wiki/Gwent:_To_Everything_-_Turn%2C_Turn%2C_Tournament!"
+    },
+    "q340": {
+      "title": "Goodness, Gracious, Great Balls of Granite!",
+      "url": "https://witcher.fandom.com/wiki/Goodness%2C_Gracious%2C_Great_Balls_of_Granite!"
+    },
+    "q345": {
+      "title": "Father Knows Worst",
+      "url": "https://witcher.fandom.com/wiki/Father_Knows_Worst"
+    },
+    "q374": {
+      "title": "Big Feet to Fill",
+      "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill"
+    },
+    "q346": {
+      "title": "Big Feet to Fill: The First Group",
+      "url": "https://witcher.fandom.com/wiki/Big_Feet_to_Fill%3A_The_First_Group"
+    },
+    "q347": {
+      "title": "Big Feet to Fill: The Second Group",
+      "url": "https://www.gamepressure.com/thewitcher3bloodandwine/big-feet-to-fill/z78e9a"
+    },
+    "q348": {
+      "title": "Big Feet to Fill: The Third Group",
+      "url": "https://www.gamepressure.com/thewitcher3bloodandwine/big-feet-to-fill/z78e9a"
+    },
+    "q349": {
+      "title": "Big Feet to Fill: The Fourth Group",
+      "url": "https://primagames.com/eguides/the-witcher-3-wild-hunt-the-complete-edition-eguide/secondary-quests/big-feet-to-fill-the-fourth-group-baw/killed-by-kikimores"
+    },
+    "q350": {
+      "title": "Big Feet to Fill: The Fifth Group",
+      "url": "https://www.gamebanshee.com/thewitcher3/walkthrough/bigfeettofill.php"
+    },
+    "q351": {
+      "title": "Vintner's Contract: Rivecalme Storehouse",
+      "url": "https://witcher.fandom.com/wiki/Vintner%27s_Contract:_Rivecalme_Storehouse"
+    },
+    "q352": {
+      "title": "Wine Wars: Belgaard",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars:_Belgaard"
+    },
+    "q353": {
+      "title": "Wine Wars: Coronata",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars:_Coronata"
+    },
+    "q354": {
+      "title": "Wine Wars: Vermentino",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars:_Vermentino"
+    },
+    "q390": {
+      "title": "Wine Wars: The Deus in the Machina",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars:_The_Deus_in_the_Machina"
+    },
+    "q378": {
+      "title": "Wine Wars: Consorting",
+      "url": "https://witcher.fandom.com/wiki/Wine_Wars:_Consorting"
+    },
+    "q369": {
+      "title": "Knight for Hire",
+      "url": "https://witcher.fandom.com/wiki/Knight_for_Hire"
+    },
+    "q370": {
+      "title": "Vintner's Contract: Dun Tynne Hillside",
+      "url": "https://witcher.fandom.com/wiki/Vintner%27s_Contract:_Dun_Tynne_Hillside"
+    },
+    "q377": {
+      "title": "Vintner's Contract: Chuchote Cave",
+      "url": "https://witcher.fandom.com/wiki/Vintner%27s_Contract:_Chuchote_Cave"
+    },
+    "q393": {
+      "title": "Vintner's Contract: Cleaning Those Hard-to-Reach Places",
+      "url": "https://witcher.fandom.com/wiki/Vintner%27s_Contract:_Cleaning_Those_Hard-to-Reach_Places"
+    },
+    "q394": {
+      "title": "Vintner's Contract: Griffin-in-the-Vines",
+      "url": "https://witcher-games.fandom.com/wiki/Vintner%27s_Contract%3A_Griffin-in-the-Vines"
+    },
+    "q372": {
+      "title": "A Knight's Tales",
+      "url": "https://witcher.fandom.com/wiki/A_Knight%27s_Tales"
+    },
+    "q373": {
+      "title": "Extreme Cosplay",
+      "url": "https://witcher.fandom.com/wiki/Extreme_Cosplay"
+    },
+    "q375": {
+      "title": "The Words of the Prophets Are Written on Sarcophagi",
+      "url": "https://witcher.fandom.com/wiki/The_Words_of_the_Prophets_Are_Written_on_Sarcophagi"
+    },
+    "q376": {
+      "title": "Master Master Master Master!",
+      "url": "https://witcher.fandom.com/wiki/Master_Master_Master_Master!"
+    },
+    "q395": {
+      "title": "A Portrait of the Witcher as an Old Man",
+      "url": "https://witcher.fandom.com/wiki/A_Portrait_of_the_Witcher_as_an_Old_Man"
+    },
+    "q401": {
+      "title": "Mutual of Beauclair's Wild Kingdom",
+      "url": "https://witcher.fandom.com/wiki/Mutual_of_Beauclair%27s_Wild_Kingdom"
+    },
+    "q424": {
+      "title": "There Can Be Only One",
+      "url": "https://witcher.fandom.com/wiki/There_Can_Be_Only_One"
+    },
+    "eternal": {
+      "title": "In the Eternal Fire's Shadow",
+      "url": "https://witcher.fandom.com/wiki/In_the_Eternal_Fire%27s_Shadow"
+    },
+    "ciri": {
+      "title": "In Ciri's Footsteps",
+      "url": "https://witcher.fandom.com/wiki/In_Ciri%27s_Footsteps"
+    },
+    "collect": {
+      "title": "Gwent: Collect 'Em All",
+      "url": "https://witcher.fandom.com/wiki/Gwent:_Collect_%27Em_All"
+    },
+    "mysterious": {
+      "title": "A Mysterious Passenger",
+      "url": "https://witcher.fandom.com/wiki/A_Mysterious_Passenger"
+    },
+    "q38": {
+      "title": "Devil by the Well",
+      "url": "https://witcher.fandom.com/wiki/Contract:_Devil_by_the_Well"
+    },
+    "q54": {
+      "title": "Dirty Funds",
+      "url": "https://witcher.fandom.com/wiki/Dirty_Funds"
+    },
+    "q55": {
+      "title": "Deserter Gold",
+      "url": "https://witcher.fandom.com/wiki/Deserter_Gold"
+    },
+    "q56": {
+      "title": "Temerian Valuables",
+      "url": "https://witcher.fandom.com/wiki/Temerian_Valuables"
+    },
+    "q85": {
+      "title": "Scavenger Hunt: Viper School Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Viper_School_Gear"
+    },
+    "q46": {
+      "title": "Deadly Crossing I",
+      "url": "https://witcher.fandom.com/wiki/Deadly_Crossing"
+    },
+    "q47": {
+      "title": "Deadly Crossing II",
+      "url": "https://witcher.fandom.com/wiki/Deadly_Crossing"
+    },
+    "q425": {
+      "title": "Deadly Crossing III",
+      "url": "https://witcher.fandom.com/wiki/Deadly_Crossing"
+    },
+    "q48": {
+      "title": "Highway Robbery",
+      "url": "https://witcher.fandom.com/wiki/Highway_Robbery"
+    },
+    "q30": {
+      "title": "Highwayman's Cache",
+      "url": "https://witcher.fandom.com/wiki/Highwayman%27s_Cache"
+    },
+    "q43": {
+      "title": "Harassing A Troll",
+      "url": "https://witcher.fandom.com/wiki/Harassing_A_Troll"
+    },
+    "q50": {
+      "title": "Man's Best Friend",
+      "url": "https://witcher.fandom.com/wiki/Man%27s_Best_Friend"
+    },
+    "q51": {
+      "title": "Sunken Treasure",
+      "url": "https://witcher.fandom.com/wiki/Sunken_Treasure"
+    },
+    "q52": {
+      "title": "An Unfortunate Turn of Events",
+      "url": "https://witcher.fandom.com/wiki/An_Unfortunate_Turn_of_Events"
+    },
+    "q53": {
+      "title": "Lost Goods",
+      "url": "https://witcher.fandom.com/wiki/Lost_Goods"
+    },
+    "q57": {
+      "title": "Queen Zuleyka's Treasure",
+      "url": "https://witcher.fandom.com/wiki/Queen_Zuleyka%27s_Treasure"
+    },
+    "q59": {
+      "title": "Sunken Chest",
+      "url": "https://witcher.fandom.com/wiki/Sunken_Chest"
+    },
+    "q70": {
+      "title": "Caravan Attack",
+      "url": "https://witcher.fandom.com/wiki/Caravan_Attack"
+    },
+    "q427": {
+      "title": "Looters I - Revolting Peasants",
+      "url": "https://witcher.fandom.com/wiki/Looters"
+    },
+    "q428": {
+      "title": "Looters II - Ghoulish Gatherers",
+      "url": "https://witcher.fandom.com/wiki/Looters"
+    },
+    "q71": {
+      "title": "Looters III - Toderas Bandits",
+      "url": "https://witcher.fandom.com/wiki/Looters"
+    },
+    "q86": {
+      "title": "Patrol Gone Missing",
+      "url": "https://witcher.fandom.com/wiki/Patrol_Gone_Missing"
+    },
+    "q95": {
+      "title": "Hidden from the World",
+      "url": "https://witcher.fandom.com/wiki/Hidden_from_the_World"
+    },
+    "q100": {
+      "title": "Karmic Justice",
+      "url": "https://witcher.fandom.com/wiki/Karmic_Justice"
+    },
+    "q110": {
+      "title": "Face Me if You Dare",
+      "url": "https://witcher.fandom.com/wiki/Face_Me_if_You_Dare"
+    },
+    "q113": {
+      "title": "Out of the Frying Pan, Into the Fire",
+      "url": "https://witcher.fandom.com/wiki/Out_of_the_Frying_Pan%2C_Into_the_Fire"
+    },
+    "q114": {
+      "title": "The Dead Have No Defense",
+      "url": "https://witcher.fandom.com/wiki/The_Dead_Have_No_Defense"
+    },
+    "q115": {
+      "title": "The Merry Widow",
+      "url": "https://witcher.fandom.com/wiki/The_Merry_Widow"
+    },
+    "q116": {
+      "title": "Jenny o' the Woods",
+      "url": "https://witcher.fandom.com/wiki/Contract:_Jenny_o%27_the_Woods"
+    },
+    "q134": {
+      "title": "Scavenger Hunt: Griffin School Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Griffin_School_Gear"
+    },
+    "q135": {
+      "title": "Swamp Thing",
+      "url": "https://witcher.fandom.com/wiki/Swamp_Thing"
+    },
+    "q154": {
+      "title": "The Things Men Do For Coin...",
+      "url": "https://witcher.fandom.com/wiki/The_Things_Men_Do_For_Coin..."
+    },
+    "q167": {
+      "title": "Coast of Wrecks",
+      "url": "https://witcher.fandom.com/wiki/Coast_of_Wrecks"
+    },
+    "q202": {
+      "title": "Don't Play with the Gods",
+      "url": "https://witcher.fandom.com/wiki/Don%27t_Play_with_the_Gods"
+    },
+    "q225": {
+      "title": "A Costly Mistake",
+      "url": "https://witcher.fandom.com/wiki/A_Costly_Mistake"
+    },
+    "q226": {
+      "title": "Tough Luck",
+      "url": "https://witcher.fandom.com/wiki/Tough_Luck"
+    },
+    "q234": {
+      "title": "Mysterious Tracks",
+      "url": "https://witcher.fandom.com/wiki/Mysterious_Tracks"
+    },
+    "q250": {
+      "title": "Phantom of the Trade Route",
+      "url": "https://witcher.fandom.com/wiki/Phantom_of_the_Trade_Route"
+    },
+    "q266": {
+      "title": "The Beast of Honorton",
+      "url": "https://witcher.fandom.com/wiki/The_Beast_of_Honorton"
+    },
+    "q290": {
+      "title": "A Plea Ignored",
+      "url": "https://witcher.fandom.com/wiki/A_Plea_Ignored"
+    },
+    "q314": {
+      "title": "Missing Brother",
+      "url": "https://witcher.fandom.com/wiki/Missing_Brother"
+    },
+    "q72": {
+      "title": "Woodland Beast",
+      "url": "https://witcher.fandom.com/wiki/Woodland_Beast"
+    },
+    "q243": {
+      "title": "The Mystery of the Byways Murders",
+      "url": "https://witcher.fandom.com/wiki/The_Mystery_of_the_Byways_Murders"
+    },
+    "q433": {
+      "title": "Crow's Perch Fight",
+      "url": "https://witcher.fandom.com/wiki/Crow%27s_Perch_Fight"
+    },
+    "q96": {
+      "title": "Shrieker",
+      "url": "https://witcher.fandom.com/wiki/Shrieker"
+    },
+    "q27": {
+      "title": "At the Mercy of Strangers",
+      "url": "https://witcher.fandom.com/wiki/At_the_Mercy_of_Strangers"
+    },
+    "q221": {
+      "title": "Scavenger Hunt: Griffin School Gear Upgrade Diagrams - Part 1",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Griffin_School_Gear/Part_1"
+    },
+    "q222": {
+      "title": "Scavenger Hunt: Griffin School Gear Upgrade Diagrams - Part 2",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Griffin_School_Gear/Part_2"
+    },
+    "q216": {
+      "title": "Scavenger Hunt: Cat School Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Cat_School_Gear"
+    },
+    "q253": {
+      "title": "Scavenger Hunt: Cat School Gear Upgrade Diagrams - Part 1",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Cat_School_Gear/Part_1"
+    },
+    "q254": {
+      "title": "Scavenger Hunt: Cat School Gear Upgrade Diagrams - Part 2",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Cat_School_Gear/Part_2"
+    },
+    "q293": {
+      "title": "Scavenger Hunt: Cat School Gear Upgrade Diagrams - Part 3",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Cat_School_Gear/Part_3"
+    },
+    "q32": {
+      "title": "Strumpet In Distress",
+      "url": "https://witcher.fandom.com/wiki/Strumpet_In_Distress"
+    },
+    "q33": {
+      "title": "Suspicious Shakedown",
+      "url": "https://witcher.fandom.com/wiki/Suspicious_Shakedown"
+    },
+    "q34": {
+      "title": "The Flame Of Hatred",
+      "url": "https://witcher.fandom.com/wiki/The_Flame_Of_Hatred"
+    },
+    "q26": {
+      "title": "A Warm Welcome",
+      "url": "https://witcher.fandom.com/wiki/A_Warm_Welcome"
+    },
+    "q28": {
+      "title": "Drunken Rabble",
+      "url": "https://witcher.fandom.com/wiki/Drunken_Rabble"
+    },
+    "q31": {
+      "title": "Racists of Novigrad I",
+      "url": "https://witcher.fandom.com/wiki/Racists_of_Novigrad"
+    },
+    "q94": {
+      "title": "Racists of Novigrad II",
+      "url": "https://witcher.fandom.com/wiki/Racists_of_Novigrad"
+    },
+    "q123": {
+      "title": "The Most Truest of Basilisks",
+      "url": "https://witcher.fandom.com/wiki/The_Most_Truest_of_Basilisks"
+    },
+    "q155": {
+      "title": "An Elusive Thief",
+      "url": "https://witcher.fandom.com/wiki/An_Elusive_Thief"
+    },
+    "q163": {
+      "title": "Saving Moritz Diefenthal",
+      "url": "https://witcher.fandom.com/wiki/Saving_Moritz_Diefenthal"
+    },
+    "q165": {
+      "title": "Strangers in the Night",
+      "url": "https://witcher.fandom.com/wiki/Strangers_in_the_Night"
+    },
+    "q188": {
+      "title": "Never Trust Children",
+      "url": "https://witcher.fandom.com/wiki/Never_Trust_Children"
+    },
+    "q173": {
+      "title": "The Apiarian Phantom",
+      "url": "https://witcher.fandom.com/wiki/The_Apiarian_Phantom"
+    },
+    "q191": {
+      "title": "Deadly Delights",
+      "url": "https://witcher.fandom.com/wiki/Deadly_Delights"
+    },
+    "q204": {
+      "title": "The White Lady",
+      "url": "https://witcher.fandom.com/wiki/The_White_Lady"
+    },
+    "q223": {
+      "title": "Blood Gold",
+      "url": "https://witcher.fandom.com/wiki/Blood_Gold"
+    },
+    "q239": {
+      "title": "Battlefield Loot",
+      "url": "https://witcher.fandom.com/wiki/Battlefield_Loot"
+    },
+    "q237": {
+      "title": "Witch Hunter Raids",
+      "url": "https://witcher.fandom.com/wiki/Witch_Hunter_Raids"
+    },
+    "q255": {
+      "title": "Doors Slamming Shut",
+      "url": "https://witcher.fandom.com/wiki/Doors_Slamming_Shut"
+    },
+    "q265": {
+      "title": "Lord of the Wood",
+      "url": "https://witcher.fandom.com/wiki/Lord_of_the_Wood"
+    },
+    "q272": {
+      "title": "The Oxenfurt Drunk",
+      "url": "https://witcher.fandom.com/wiki/The_Oxenfurt_Drunk"
+    },
+    "q313": {
+      "title": "Dowry",
+      "url": "https://witcher.fandom.com/wiki/Dowry"
+    },
+    "q318": {
+      "title": "Tinker, Hunter, Soldier, Spy",
+      "url": "https://witcher.fandom.com/wiki/Tinker%2C_Hunter%2C_Soldier%2C_Spy"
+    },
+    "q319": {
+      "title": "From Ofier's Distant Shores",
+      "url": "https://witcher.fandom.com/wiki/From_Ofier%27s_Distant_Shores"
+    },
+    "q331": {
+      "title": "The Creature from Oxenfurt Forest",
+      "url": "https://witcher.fandom.com/wiki/The_Creature_from_Oxenfurt_Forest"
+    },
+    "q341": {
+      "title": "The Cursed Chapel",
+      "url": "https://witcher.fandom.com/wiki/The_Cursed_Chapel"
+    },
+    "q342": {
+      "title": "The Royal Air Force",
+      "url": "https://witcher.fandom.com/wiki/The_Royal_Air_Force"
+    },
+    "q343": {
+      "title": "The Sword, Famine and Perfidy",
+      "url": "https://witcher.fandom.com/wiki/The_Sword%2C_Famine_and_Perfidy"
+    },
+    "q365": {
+      "title": "The Secret Life of Count Romilly",
+      "url": "https://witcher.fandom.com/wiki/The_Secret_Life_of_Count_Romilly"
+    },
+    "q364": {
+      "title": "A Surprise Inheritance",
+      "url": "https://witcher.fandom.com/wiki/A_Surprise_Inheritance"
+    },
+    "q430": {
+      "title": "The Price of Passage",
+      "url": "https://witcher.fandom.com/wiki/The_Price_of_Passage"
+    },
+    "q355": {
+      "title": "A Dark Legacy",
+      "url": "https://witcher.fandom.com/wiki/A_Dark_Legacy"
+    },
+    "q278": {
+      "title": "Scavenger Hunt: Griffin School Gear Upgrade Diagrams - Part 3",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Griffin_School_Gear/Part_3"
+    },
+    "q327": {
+      "title": "Scavenger Hunt: Griffin School Gear Upgrade Diagrams - Part 4",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Griffin_School_Gear/Part_4"
+    },
+    "q328": {
+      "title": "Scavenger Hunt: Cat School Gear Upgrade Diagrams - Part 4",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Cat_School_Gear/Part_4"
+    },
+    "q238": {
+      "title": "Scavenger Hunt: Bear School Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Bear_School_Gear"
+    },
+    "q210": {
+      "title": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 1",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Bear_School_Gear/Part_1"
+    },
+    "q150": {
+      "title": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 2",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Bear_School_Gear/Part_2"
+    },
+    "q305": {
+      "title": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 3",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Bear_School_Gear/Part_3"
+    },
+    "q326": {
+      "title": "Scavenger Hunt: Bear School Gear Upgrade Diagrams - Part 4",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Bear_School_Gear/Part_4"
+    },
+    "q58": {
+      "title": "Freya Be Praised!",
+      "url": "https://witcher.fandom.com/wiki/Freya_Be_Praised!"
+    },
+    "q124": {
+      "title": "Not Only Eagles Dare",
+      "url": "https://witcher.fandom.com/wiki/Not_Only_Eagles_Dare"
+    },
+    "q151": {
+      "title": "Nilfgaardian Treasure",
+      "url": "https://witcher.fandom.com/wiki/Nilfgaardian_Treasure"
+    },
+    "q152": {
+      "title": "X Marks the Spot",
+      "url": "https://witcher.fandom.com/wiki/X_Marks_the_Spot"
+    },
+    "q164": {
+      "title": "Siren's Call",
+      "url": "https://witcher.fandom.com/wiki/Siren%27s_Call"
+    },
+    "q166": {
+      "title": "Woe is Me",
+      "url": "https://witcher.fandom.com/wiki/Woe_is_Me"
+    },
+    "q168": {
+      "title": "Family Fortune",
+      "url": "https://witcher.fandom.com/wiki/Family_Fortune"
+    },
+    "q169": {
+      "title": "Shortcut",
+      "url": "https://witcher.fandom.com/wiki/Shortcut"
+    },
+    "q170": {
+      "title": "Ironsides' Treasure",
+      "url": "https://witcher.fandom.com/wiki/Ironsides%27_Treasure"
+    },
+    "q171": {
+      "title": "Pearls of the Coast",
+      "url": "https://witcher.fandom.com/wiki/Pearls_of_the_Coast"
+    },
+    "q172": {
+      "title": "Precious Haul",
+      "url": "https://witcher.fandom.com/wiki/Precious_Haul"
+    },
+    "q187": {
+      "title": "Never Trust Children II",
+      "url": "https://witcher.fandom.com/wiki/Never_Trust_Children"
+    },
+    "q190": {
+      "title": "Inheritance",
+      "url": "https://www.gamebanshee.com/thewitcher3/walkthrough/inheritance.php"
+    },
+    "q201": {
+      "title": "Call of the Wild",
+      "url": "https://gamerwalkthroughs.com/witcher-3-wild-hunt/skellige/call-of-the-wild/"
+    },
+    "q209": {
+      "title": "Farting Trolls",
+      "url": "https://witcher.fandom.com/wiki/Farting_Trolls"
+    },
+    "q215": {
+      "title": "The Four Faces of Hemdall",
+      "url": "https://witcher.fandom.com/wiki/The_Four_Faces_of_Hemdall"
+    },
+    "q271": {
+      "title": "Yustianna Disturbed",
+      "url": "https://witcher.fandom.com/wiki/Yustianna_Disturbed"
+    },
+    "q203": {
+      "title": "Strange Beast",
+      "url": "https://witcher.fandom.com/wiki/Strange_Beast"
+    },
+    "q211": {
+      "title": "The Phantom of Eldberg",
+      "url": "https://witcher.fandom.com/wiki/The_Phantom_of_Eldberg"
+    },
+    "q217": {
+      "title": "Muire D'yaeblen",
+      "url": "https://witcher.fandom.com/wiki/Muire_D%27yaeblen"
+    },
+    "q227": {
+      "title": "Here Comes the Groom",
+      "url": "https://witcher.fandom.com/wiki/Here_Comes_the_Groom"
+    },
+    "q244": {
+      "title": "In the Heart of the Woods",
+      "url": "https://witcher.fandom.com/wiki/In_the_Heart_of_the_Woods"
+    },
+    "q279": {
+      "title": "Missing Miners",
+      "url": "https://witcher.fandom.com/wiki/Missing_Miners"
+    },
+    "q282": {
+      "title": "Dragon",
+      "url": "https://witcher.fandom.com/wiki/Dragon"
+    },
+    "q291": {
+      "title": "Missing Son",
+      "url": "https://witcher.fandom.com/wiki/Missing_Son"
+    },
+    "q292": {
+      "title": "Skellige's Most Wanted",
+      "url": "https://witcher.fandom.com/wiki/Skellige%27s_Most_Wanted"
+    },
+    "q307": {
+      "title": "Hidden in the Depths",
+      "url": "https://witcher.fandom.com/wiki/Hidden_in_the_Depths"
+    },
+    "q413": {
+      "title": "Unlucky's Treasure",
+      "url": "https://witcher.fandom.com/wiki/Unlucky%27s_Treasure"
+    },
+    "q261": {
+      "title": "The Griffin from the Highlands",
+      "url": "https://witcher.fandom.com/wiki/The_Griffin_from_the_Highlands"
+    },
+    "q224": {
+      "title": "Ruins, Hidden Treasure, You Know...",
+      "url": "https://witcher.fandom.com/wiki/Ruins%2C_Hidden_Treasure%2C_You_Know..."
+    },
+    "q189": {
+      "title": "Scavenger Hunt: Wolf School Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Wolf_School_Gear"
+    },
+    "q241": {
+      "title": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 1",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Wolf_School_Gear/Part_1"
+    },
+    "q242": {
+      "title": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 2",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Wolf_School_Gear/Part_2"
+    },
+    "q294": {
+      "title": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 3",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Wolf_School_Gear/Part_3"
+    },
+    "q295": {
+      "title": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 4",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Wolf_School_Gear/Part_4"
+    },
+    "q329": {
+      "title": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 5",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Wolf_School_Gear/Part_5"
+    },
+    "q330": {
+      "title": "Scavenger Hunt: Wolf School Gear Upgrade Diagrams - Part 6",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Wolf_School_Gear/Part_6"
+    },
+    "q149": {
+      "title": "Trail of Echoes",
+      "url": "https://witcher.fandom.com/wiki/Trail_of_Echoes"
+    },
+    "q432": {
+      "title": "Contract on a Witcher",
+      "url": "https://witcher.fandom.com/wiki/Contract_on_a_Witcher"
+    },
+    "q429": {
+      "title": "Naughty Feathers",
+      "url": "https://witcher.fandom.com/wiki/Naughty_Feathers"
+    },
+    "q360": {
+      "title": "Bovine Blues",
+      "url": "https://witcher.fandom.com/wiki/Bovine_Blues"
+    },
+    "q344": {
+      "title": "Big Game Hunter",
+      "url": "https://witcher.fandom.com/wiki/Big_Game_Hunter"
+    },
+    "q356": {
+      "title": "The Black Widow",
+      "url": "https://witcher.fandom.com/wiki/The_Black_Widow"
+    },
+    "q357": {
+      "title": "Coin Doesn't Stink",
+      "url": "https://witcher.fandom.com/wiki/Coin_Doesn%27t_Stink"
+    },
+    "q358": {
+      "title": "Don't Take Candy from a Stranger",
+      "url": "https://witcher.fandom.com/wiki/Don%27t_Take_Candy_from_a_Stranger"
+    },
+    "q359": {
+      "title": "The Last Exploits of Selina's Gang",
+      "url": "https://witcher.fandom.com/wiki/The_Last_Exploits_of_Selina%27s_Gang"
+    },
+    "q379": {
+      "title": "Waiting for Goe and Doh",
+      "url": "https://witcher.fandom.com/wiki/Waiting_for_Goe_and_Doh"
+    },
+    "q380": {
+      "title": "Applied Escapology",
+      "url": "https://witcher.fandom.com/wiki/Applied_Escapology"
+    },
+    "q381": {
+      "title": "Scavenger Hunt: Grandmaster Manticore Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Manticore_Gear"
+    },
+    "q382": {
+      "title": "Scavenger Hunt: Grandmaster Ursine Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Ursine_Gear"
+    },
+    "q383": {
+      "title": "Scavenger Hunt: Grandmaster Feline Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Feline_Gear"
+    },
+    "q384": {
+      "title": "Scavenger Hunt: Grandmaster Griffin Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Griffin_Gear"
+    },
+    "q385": {
+      "title": "Scavenger Hunt: Grandmaster Wolven Gear",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Grandmaster_Wolven_Gear"
+    },
+    "q386": {
+      "title": "Around the World in ... Eight Days",
+      "url": "https://witcher.fandom.com/wiki/Around_the_World_in_..._Eight_Days"
+    },
+    "q391": {
+      "title": "Spoontaneous Profits!",
+      "url": "https://witcher.fandom.com/wiki/Spoontaneous_Profits!"
+    },
+    "q397": {
+      "title": "But Other Than That, How Did You Enjoy the Play?",
+      "url": "https://witcher.fandom.com/wiki/But_Other_Than_That%2C_How_Did_You_Enjoy_the_Play%3F"
+    },
+    "q398": {
+      "title": "What Was This About Again?",
+      "url": "https://witcher.fandom.com/wiki/What_Was_This_About_Again%3F"
+    },
+    "q399": {
+      "title": "Equine Phantoms",
+      "url": "https://witcher.fandom.com/wiki/Equine_Phantoms"
+    },
+    "q400": {
+      "title": "Feet as Cold as Ice",
+      "url": "https://witcher.fandom.com/wiki/Feet_as_Cold_as_Ice"
+    },
+    "q402": {
+      "title": "The Curse of Carnarvon",
+      "url": "https://witcher.fandom.com/wiki/The_Curse_of_Carnarvon"
+    },
+    "q409": {
+      "title": "The Inconstant Gardener",
+      "url": "https://witcher.fandom.com/wiki/The_Inconstant_Gardener"
+    },
+    "q410": {
+      "title": "The Toussaint Prison Experiment",
+      "url": "https://witcher.fandom.com/wiki/The_Toussaint_Prison_Experiment"
+    },
+    "q411": {
+      "title": "The Suffering of Young Francois",
+      "url": "https://witcher.fandom.com/wiki/The_Suffering_of_Young_Francois"
+    },
+    "q412": {
+      "title": "The Tufo Monster",
+      "url": "https://witcher.fandom.com/wiki/The_Tufo_Monster"
+    },
+    "q414": {
+      "title": "Filibert Always Pays His Debts",
+      "url": "https://witcher.fandom.com/wiki/Filibert_Always_Pays_His_Debts"
+    },
+    "forgotten-wolf-diagrams": {
+      "title": "Scavenger Hunt: Forgotten Wolf School Gear Diagrams",
+      "url": "https://witcher.fandom.com/wiki/Scavenger_Hunt:_Forgotten_Wolf_School_Gear_Diagrams"
+    },
+    "drakenborg-redemption": {
+      "title": "The Drakenborg Redemption",
+      "url": "https://witcher.fandom.com/wiki/The_Drakenborg_Redemption"
+    },
+    "encounter-farmers-daughter-1": {
+      "title": "Saving Farmer's Daughter From Soldiers (I)",
+      "url": "https://gercius.github.io/witcher3-quest-manager/"
+    },
+    "encounter-farmers-daughter-2": {
+      "title": "Saving Farmer's Daughter From Soldiers (II)",
+      "url": "https://gercius.github.io/witcher3-quest-manager/"
+    }
+  }
+}
