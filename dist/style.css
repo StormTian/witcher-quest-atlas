@@ -7,7 +7,7 @@
 
 body{height:100dvh;display:flex;flex-direction:column}header{height:auto;min-height:84px;padding-top:12px;padding-bottom:12px;flex-shrink:0;flex-wrap:wrap;gap:12px}.region-nav{flex-shrink:0}main{height:auto;min-height:300px;flex:1}.mobile-tabs{flex-shrink:0}@media(max-width:700px){header{min-height:75px;padding-top:8px;padding-bottom:8px;gap:8px}main{height:auto;min-height:200px}.header-actions{flex-wrap:wrap}.brand{flex-shrink:0}.header-actions{max-width:100%}}
 
-.catalog{overflow-y:auto}.catalog>:not(.quest-list){flex-shrink:0}.quest-list{min-height:150px}.map-heading{max-width:calc(100% - 78px);padding-right:12px}
+.catalog{overflow:hidden;min-height:0}.catalog>:not(.quest-list){flex-shrink:0}.quest-list{min-height:0;overscroll-behavior-y:contain;scrollbar-gutter:stable}.map-heading{max-width:calc(100% - 78px);padding-right:12px}
 
 .map-heading{max-width:calc(100% - 5rem - 56px)}.map-heading h2{white-space:normal;overflow-wrap:anywhere}
 
@@ -20,3 +20,11 @@ body{height:100dvh;display:flex;flex-direction:column}header{height:auto;min-hei
 .types{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}.types button{min-width:0;padding:7px 3px}.quest-symbol.contract,.map-pin.contract{color:#edb17a;border-color:#ad784e}.quest-symbol.scavenger,.map-pin.scavenger{color:#adc896;border-color:#78966b}.quest-symbol.treasure,.map-pin.treasure{color:#d5c094;border-color:#aa9366}.quest-symbol.encounter,.map-pin.encounter{color:#a1bec8;border-color:#6f98a5}
 
 .quest-story-intro{line-height:1.8}.quest-story-plot{border-left:2px solid var(--gold);padding-left:1rem;margin-top:1rem}.quest-story-plot h4{margin:0 0 .6rem;font-size:1rem;color:var(--gold)}.quest-story-plot p{line-height:1.85}.quest-story .gold-button{max-width:100%;white-space:normal}
+
+/* Keep the task list in view; auxiliary filters and tools live in their own dialog. */
+.catalog-controls{max-height:50%;overflow-y:auto;overscroll-behavior-y:contain}.catalog>.catalog-controls{flex-shrink:1;min-height:0}
+.catalog .catalog-heading{padding:10px 16px 8px}.catalog .search{margin:0 16px}.catalog .types{margin:8px 16px;grid-template-columns:repeat(7,minmax(0,1fr));gap:0}.catalog .types button{padding:7px 1px}
+.catalog-toolbar{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:0 16px 8px}.catalog-toolbar>button{padding:8px 10px;border:1px solid var(--line);border-radius:3px;font-size:.8125rem;color:var(--gold)}.catalog-toolbar .check{font-size:.8125rem}#catalog-filter-count:not([hidden]){display:inline-block;margin-left:6px;padding:0 5px;border-radius:9px;background:#d2b37c22;color:var(--gold)}
+#catalog-settings-dialog{width:min(520px,calc(100vw - 32px))}.catalog-settings-content{padding:4px 20px 20px}.catalog-settings-content h3{font-size:.9375rem;color:var(--gold);font-weight:500;margin:18px 0 12px}.catalog-settings-content .filter-row{margin:0 0 16px;flex-wrap:wrap}.catalog-settings-content .branch-filter{margin:0 0 16px}.catalog-settings-content .personal-filters{padding:0 0 16px}.catalog-settings-content .checklist-toggle{display:block;width:100%;margin:8px 0}.catalog-settings-content .fine{margin-top:18px}
+
+.catalog .list-summary{padding:8px 16px}

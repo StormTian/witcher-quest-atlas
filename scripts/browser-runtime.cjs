@@ -13,4 +13,12 @@ const launchOptions = {headless:true, args:['--no-sandbox']};
 if (process.env.CHROMIUM_EXECUTABLE_PATH) launchOptions.executablePath = process.env.CHROMIUM_EXECUTABLE_PATH;
 const baseURL = process.env.ATLAS_BASE_URL || 'http://127.0.0.1:8765/';
 const provenance = {executionEnvironment:require('./execution-environment.cjs'), browser:'Playwright Chromium', startedAt:new Date().toISOString()};
-module.exports = {chromium:playwright.chromium, launchOptions, baseURL, provenance};
+// Exercise the settings entry point when a control is no longer in the fixed sidebar.
+async function catalogAction(page, selector, method, ...args) {
+  if (!await page.locator('#catalog').isVisible()) await page.locator('#mobile-list').click();
+  await page.locator('#catalog-settings-toggle').click();
+  const result = await page.locator(selector)[method](...args);
+  if (await page.locator('#catalog-settings-dialog').isVisible()) await page.locator('#close-catalog-settings').click();
+  return result;
+}
+module.exports = {chromium:playwright.chromium, launchOptions, baseURL, provenance, catalogAction};

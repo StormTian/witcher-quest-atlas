@@ -1,3 +1,4 @@
+const {catalogAction}=require('./browser-runtime.cjs');
 const fs = require('node:fs'), path = require('node:path'), assert = require('node:assert/strict'), crypto = require('node:crypto');
 const {chromium, launchOptions, baseURL} = require('./browser-runtime.cjs');
 const root = path.resolve(__dirname, '..'), checks = [], errors = [], httpFailures = [];
@@ -88,7 +89,7 @@ const fixtures = {'white-orchard': [6, 1, 1], velen: [8, 19, 2], skellige: [9, 8
     return 'All three types open through real marker clicks; keyboard Enter and Space open a board; provenance and availability limits remain visible.';
   });
   await check('任务筛选与探索图层互不干扰', async () => {
-    await fresh(); await page.locator('#search').fill('no such quest xyz'); await page.locator('#expansion').selectOption('hos');
+    await fresh(); await page.locator('#search').fill('no such quest xyz'); await catalogAction(page, '#expansion', 'selectOption', 'hos');
     assert.equal(await page.locator('.quest-row').count(), 0);
     assert.equal(await page.locator('.exploration-pin').count(), 29);
     assert.equal(await page.locator('.road-sign').count(), 111);
