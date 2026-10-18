@@ -15,7 +15,7 @@ window.AtlasProgress = {
       (state.progressView === 'all' || flag(kind, id, state.progressView === 'done' ? 'done' : 'starred'));
     const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
     const identifier = value => typeof value === 'string' && /^[a-zA-Z0-9_-]{1,100}$/.test(value) && !['__proto__', 'prototype', 'constructor'].includes(value);
-    const defaults = {region: 'velen', type: 'all', exp: 'all', query: '', global: false, branch: false, landmarks: true, layers: {quests: true, ...Object.fromEntries(points.categories.map(c => [c.id, c.defaultEnabled === true]))}, hideDone: true, progressView: 'all'};
+    const defaults = {region: 'velen', type: 'all', exp: 'all', query: '', global: false, branch: false, landmarks: true, layers: {quests: true, ...Object.fromEntries(points.categories.map(c => [c.id, c.defaultEnabled === true]))}, hideDone: true, progressView: 'all', questSort: 'main-first'};
     function parse(value) {
       if (!isObject(value) || value.app !== 'witcher-quest-atlas' || value.schemaVersion !== 1 || !isObject(value.records)) throw Error('不是支持的巫师3地图备份，或备份版本不受支持。');
       const result = {records: {quest: Object.create(null), point: Object.create(null)}, orphaned: [], preferences: {...defaults, layers: {...defaults.layers}}, choices: {}, views: {}, selected: null, sim: {}, baw: {}, story:{questStates:Object.create(null),facts:Object.create(null),stage:'before-isle'}};
@@ -54,6 +54,7 @@ window.AtlasProgress = {
       if (['all', 'base', 'hos', 'baw'].includes(pref.exp)) result.preferences.exp = pref.exp;
       if (typeof pref.query === 'string' && pref.query.length <= 300) result.preferences.query = pref.query;
       for (const key of ['global', 'branch', 'landmarks', 'hideDone']) if (typeof pref[key] === 'boolean') result.preferences[key] = pref[key];
+      if (['main-first', 'region', 'level-asc', 'level-desc'].includes(pref.questSort)) result.preferences.questSort = pref.questSort;
       if (['all', 'done', 'starred'].includes(pref.progressView)) result.preferences.progressView = pref.progressView;
       if (result.preferences.progressView === 'done') result.preferences.hideDone = false;
       if (isObject(pref.layers)) for (const key of ['quests', ...points.categories.map(c => c.id)]) if (typeof pref.layers[key] === 'boolean') result.preferences.layers[key] = pref.layers[key];
@@ -208,10 +209,12 @@ window.AtlasProgress = {
       document.querySelector('#orphaned-records').hidden = orphaned.length === 0;
       document.querySelector('#orphaned-records').textContent = orphaned.length ? `${orphaned.length} 条记录暂未匹配到当前数据，仍保留在备份中：` + orphaned.map(item => item.id || item.decisionId || item.questId || item.factId).join('、') : '';
       document.querySelector('#progress-view').value = state.progressView;
+      document.querySelector('#quest-sort').value = state.questSort;
       document.querySelector('#hide-done').checked = state.hideDone;
     }
     document.querySelector('#progress-toggle').onclick = () => { render(); dialog.showModal(); };
     document.querySelector('#close-progress').onclick = () => dialog.close();
+    document.querySelector('#quest-sort').onchange = event => { state.questSort = event.target.value; onUpdate(); document.querySelector('#quest-list').scrollTop = 0; save(); };
     document.querySelector('#progress-view').onchange = event => { state.progressView = event.target.value; if (state.progressView === 'done') state.hideDone = false; onUpdate(); save(); };
     document.querySelector('#hide-done').onchange = event => { state.hideDone = event.target.checked; if (state.hideDone && state.progressView === 'done') state.progressView = 'all'; onUpdate(); save(); };
     document.querySelector('#progress-export').onclick = () => {

@@ -1,13 +1,17 @@
 {
   "date": "2026-10-18",
   "executionEnvironment": "local-macos-chromium-151.0.7922.34",
-  "executedAt": "2026-10-18T03:48:52.387Z",
+  "executedAt": "2026-10-18T07:46:47.831Z",
   "status": "pass",
-  "passed": 13,
-  "total": 13,
+  "passed": 14,
+  "total": 14,
   "checks": [
     {
       "name": "桌面与手机列表勾选完成后隐藏、刷新恢复并可撤销",
+      "status": "pass"
+    },
+    {
+      "name": "任务排序刷新、新标签页与新旧备份兼容",
       "status": "pass"
     },
     {
@@ -62,9 +66,9 @@
   "pageErrors": [],
   "httpFailures": [],
   "runtimeInputHashes": {
-    "app.js": "42a09ddbfaff77910959207c42807d08e8bbf3ef95d168ab6239c3f0bd60912f",
-    "index.html": "e55451b3fb224d09cf84d73fa42c40ab5fcb51c027495995821b8cde133b41a9",
-    "style.css": "c6ad04e293ee26dc2f7d3157acd4674af83b5e3cae0bd5925a2d2e7c1de1066a",
+    "app.js": "b114726b64e39144efbf134608523423106c25e8eee39cb6f04b7474bc1851d1",
+    "index.html": "440523bfab6f09fc39b24bee3f8ba16ccf96cbc98f107075e66dbb0248f7217c",
+    "style.css": "3a6d1c08e8eff7a9ea899d3fe278e522b7a945fa0afca834891d18b60e6ecc95",
     "logic.js": "3f4a76aa54ba0f4cd1a9c4c5245d26acd3ae5d86159bfa678544535028aa7072",
     "map-navigation.js": "916d33601e6664bad56ec5f9bfe54c09a760cb5fb37e99e5c33b8c70427ad259",
     "data.json": "87d7a8ef7f31547a09bcbcbc62f7f0dc79705889a4f5c3d9dc5d487c99aa6409",
@@ -72,7 +76,7 @@
     "exploration.js": "45ea7084e5433de21165ae2202ed600042bc969bd9ddb57f38ec23ea392ef69a",
     "exploration.css": "a5326fa5f1a033f5ab529702cbd56e89f35976d34df90928ac5293a981ed3360",
     "exploration.json": "f713b7133f712f08fce9f8c09e4598b75d310c9818235643b063a55a30f1c9b4",
-    "progress.js": "b117e8e96b2edd1efd0bd4e5500393cb60a8c75d3876a5dbe8d9343934c18a05",
+    "progress.js": "dc83f447c08b0a73f7281b68c2badeb75b8666bddfa141361038d309d8d40fbe",
     "progress.css": "845a7506c79a6b44b7dbf370099a189dd33658677e1c3044625f6ecfdbf51539",
     "story-logic.js": "b4b56332e4bad2e8df5d43695f0a188ccfa49c32d52dd26d89fb178e98a88303",
     "guidance.js": "b119a0b5496ce1dc88b95519691cbf37d7341420ec789c09ad475b4f9f8b0e9a",

@@ -61,6 +61,19 @@ const files = require('./runtime-inputs.json');
       }), false);
     }
   });
+  await check('任务排序刷新、新标签页与新旧备份兼容', async () => {
+    await fresh();assert.equal(await page.locator('#quest-sort').inputValue(),'main-first');await page.locator('#quest-sort').selectOption('level-desc');await page.locator('[data-record="starred"]').click();
+    const backup=await page.evaluate(()=>atlas.progress.snapshot());assert.equal(backup.schemaVersion,1);assert.equal(backup.preferences.questSort,'level-desc');
+    await page.reload();await page.waitForFunction(()=>window.atlas?.progress);assert.equal(await page.locator('#quest-sort').inputValue(),'level-desc');assert.equal((await flags('quest','q67')).starred,true);
+    const second=await context.newPage();await second.goto(baseURL);await second.waitForFunction(()=>window.atlas?.progress);assert.equal(await second.locator('#quest-sort').inputValue(),'level-desc');await second.close();await page.reload();await page.waitForFunction(()=>window.atlas?.progress);
+    const legacy=JSON.parse(JSON.stringify(backup));delete legacy.preferences.questSort;
+    const parsed=await page.evaluate(v=>atlas.progress.parse(v).preferences.questSort,legacy);assert.equal(parsed,'main-first');
+    for(const invalid of ['random',null,42,{}]){const bad=JSON.parse(JSON.stringify(backup));bad.preferences.questSort=invalid;assert.equal(await page.evaluate(v=>atlas.progress.parse(v).preferences.questSort,bad),'main-first')}
+    await page.locator('#quest-sort').selectOption('region');
+    for(const [value,before,after] of [[backup,'region','level-desc'],[legacy,'level-desc','main-first']]){
+      await catalogAction(page,'#progress-toggle','click');await page.locator('#progress-import').setInputFiles({name:'sort-backup.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(value))});await page.waitForFunction(()=>!document.querySelector('#progress-apply').disabled);assert.equal(await page.evaluate(()=>atlas.state.questSort),before);await page.locator('#progress-apply').click();assert.equal(await page.evaluate(()=>atlas.state.questSort),after);await page.locator('#close-progress').click();assert.equal(await page.locator('#quest-sort').inputValue(),after);assert.equal((await flags('quest','q67')).starred,true);assert.equal(await page.evaluate(()=>atlas.state.spoilers),false);
+    }
+  });
   await check('任务完成与收藏在刷新、新标签页恢复', async () => {
     await fresh(); await page.locator('[data-record="done"]').click(); await page.locator('[data-record="starred"]').click();
     assert.deepEqual(await flags('quest', 'q67'), {done: true, starred: true});

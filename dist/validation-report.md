@@ -28,8 +28,8 @@
 | 中文地名与缩放体验 | 11/11 项；227 个中文地名、滚轮锚点、连续点击、概览与双指手势 | 通过 |
 | 地名与路标显示 | 8/8 项；五区 227 个路标、默认地名、缩放拖动和手机 | 通过 |
 | 报告与资源交付 | 3/3 项；报告、下载与资源加载 | 通过 |
-| 个人进度与分享 | 13/13 项；完成、收藏、可靠导入导出、刷新恢复、分享与前进后退 | 通过 |
-| 网页实际交互 | 23/23 项；五区地图、筛选、108 个选项、剧透与手机操作 | 通过 |
+| 个人进度与分享 | 14/14 项；完成、收藏、可靠导入导出、刷新恢复、分享与前进后退 | 通过 |
+| 网页实际交互 | 24/24 项；五区地图、筛选、108 个选项、剧透与手机操作 | 通过 |
 | 攻略事实核对 | 19 项重点核对；43 个任务／48 个节点附攻略依据 | 资料核对完成 |
 | 地图位置抽样 | 4 个独立坐标样例及地图裁切，校准社区坐标转换 | 抽样一致 |
 | 实机游戏验证 | 没有读取游戏存档或逐任务运行游戏 | 未执行 |
@@ -67,11 +67,12 @@
 
 ### 浏览器实际操作与来源
 
-[逐项结果](checks/browser.json)：23/23 项通过。执行来源：local-macos-chromium-151.0.7922.34，日期：2026-10-18。当前运行结果见上述状态。
+[逐项结果](checks/browser.json)：24/24 项通过。执行来源：local-macos-chromium-151.0.7922.34，日期：2026-10-18。当前运行结果见上述状态。
 
 - 桌面初始状态与剧透保护：通过。
 - 任务索引在常见窗口中保持大面积独立滚动：通过。
 - 任务筛选与工具入口、焦点及弹窗切换：通过。
+- 任务排序支持地区、等级及手机筛选组合：通过。
 - 剧情简介覆盖各类条目且只展开所选任务：通过。
 - 五个地区地图实际加载：通过。
 - 王宫不显示虚构地图：通过。
@@ -178,7 +179,7 @@ WebMCP 在验收浏览器中不可用，因此未计入通过项目。普通页�
 - 全隐藏恢复原选择并隐藏任务高亮：Restores the prior partial selection; hidden quest layers stay hidden when a quest is opened from the index.。
 - 三类点位真实点击详情与键盘操作：All three types open through real marker clicks; keyboard Enter and Space open a board; provenance and availability limits remain visible.。
 - 任务筛选与探索图层互不干扰：Empty task search and DLC filtering leave exploration and road signs intact; point selection preserves filters.。
-- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 1.5ms on this cloud Chromium; map controls have their own stacking context.。
+- 地图叠加与密集区渲染耗时：25 real Velen renders; p95 1.3ms on this cloud Chromium; map controls have their own stacking context.。
 - 手机图层与探索详情及200%文字：390×844 touch device; layer toggles, Escape/focus return, tap-to-detail and doubled text remain usable without page overflow.。
 - 探索资源与页面异常：Zero page exceptions and zero unexpected HTTP failures across the exploration interactions.。
 
@@ -194,17 +195,25 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 [桌面](checks/catalog-desktop.png) · [手机](checks/catalog-mobile.png)
 
 
+### 任务排序
+
+保留主线优先及同类任务的收录顺序；也可按顶部地区顺序、推荐等级升序或降序排列。无固定等级的任务在两种等级排序中均放在末尾，同地区或同等级时沿用主线优先和收录顺序。排序可与搜索、资料片、任务类型及个人筛选组合，跨地区搜索时每行显示所属地区。
+排序保存在当前浏览器，随版本 1 个人备份导出；导入前预览不改变当前排序，旧备份或未知排序值回退为主线优先。分享链接不带排序偏好。
+
+验收画面：[跨地区排序](checks/quest-sort-desktop.png)、[手机等级排序](checks/quest-sort-mobile.png)。
+
+
 ### 任务索引布局与滚动
 
 搜索、任务类型和隐藏已完成常驻；辅助筛选、个人备份和攻略工具移入单独窗口。任务列表占据左栏剩余高度，避免左栏与列表嵌套滚动。文字放大时，控件区域可单独滚动，不挤掉任务列表。
-1440×900: 525px; 1280×720: 345px; 1024×600: 225px; 390×844: 436px; 390×667: 259px; selection/completion preserve scroll without moving the sidebar or page
+1440×900: 520px; 1280×720: 340px; 1024×600: 220px; 390×844: 431px; 390×667: 254px; selection/completion preserve scroll without moving the sidebar or page
 
 验收画面：[桌面任务索引](checks/catalog-index-desktop.png)、[手机任务索引](checks/catalog-index-mobile.png)。
 
 
 ### 个人进度、备份与定位分享
 
-[逐项结果](checks/progress.json)：13/13 项通过。
+[逐项结果](checks/progress.json)：14/14 项通过。
 
 任务列表可直接勾选完成，顶部显示累计进度。新浏览器默认隐藏已完成，已有筛选偏好保留；列表与地图同步隐藏，选择“已完成”可查看并撤销误勾选。任务与探索点仍共用原有完成、收藏和个人筛选。记录、地区、筛选、视野和已选决策保存在当前设备浏览器；不是读取游戏存档，也没有账号云同步。
 备份恢复先预览并验证：无效 JSON、未知备份版本、非布尔标记、危险标识和过大文件不能覆盖当前记录。未知对象和决策保持在未匹配账目中，便于后续迁移。
@@ -214,6 +223,7 @@ WebMCP 新类型使用注册接口夹具验证输入与返回契约，实际浏�
 验收画面：[桌面列表勾选](checks/task-progress-desktop.png)、[手机列表勾选](checks/task-progress-mobile.png)、[备份预览与恢复](checks/progress-desktop.png)、[手机记录](checks/progress-mobile-detail.png)、[手机备份](checks/progress-mobile.png)。
 
 - 桌面与手机列表勾选完成后隐藏、刷新恢复并可撤销：通过。
+- 任务排序刷新、新标签页与新旧备份兼容：通过。
 - 任务完成与收藏在刷新、新标签页恢复：通过。
 - 任务与探索点的个人筛选及图层数量一致：通过。
 - 地区、筛选、视野与决策持久化且剧透默认隐藏：通过。
